@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/class/MclassGetHookInfo" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MclassGetHookInfo | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MclassGetHookInfo | Aurora Imaging Library"><meta data-rh="true" name="description" content="Get information about a hooked classification object event."><meta data-rh="true" property="og:description" content="Get information about a hooked classification object event."><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"class","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"},{"@type":"ListItem","position":2,"name":"MclassGetHookInfo","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Collapse sidebar category &#x27;class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAlloc"><span title="MclassAlloc" class="linkLabel_WmDU">MclassAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><span title="MclassAllocResult" class="linkLabel_WmDU">MclassAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><span title="MclassControl" class="linkLabel_WmDU">MclassControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControlEntry"><span title="MclassControlEntry" class="linkLabel_WmDU">MclassControlEntry</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassCopy"><span title="MclassCopy" class="linkLabel_WmDU">MclassCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassCopyResult"><span title="MclassCopyResult" class="linkLabel_WmDU">MclassCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassDraw"><span title="MclassDraw" class="linkLabel_WmDU">MclassDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassDrawEntry"><span title="MclassDrawEntry" class="linkLabel_WmDU">MclassDrawEntry</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassEntryAddRegion"><span title="MclassEntryAddRegion" class="linkLabel_WmDU">MclassEntryAddRegion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassExport"><span title="MclassExport" class="linkLabel_WmDU">MclassExport</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassFree"><span title="MclassFree" class="linkLabel_WmDU">MclassFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><span title="MclassGetHookInfo" class="linkLabel_WmDU">MclassGetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResult"><span title="MclassGetResult" class="linkLabel_WmDU">MclassGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultEntry"><span title="MclassGetResultEntry" class="linkLabel_WmDU">MclassGetResultEntry</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><span title="MclassGetResultStat" class="linkLabel_WmDU">MclassGetResultStat</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><span title="MclassHookFunction" class="linkLabel_WmDU">MclassHookFunction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassImport"><span title="MclassImport" class="linkLabel_WmDU">MclassImport</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassInquire"><span title="MclassInquire" class="linkLabel_WmDU">MclassInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassInquireEntry"><span title="MclassInquireEntry" class="linkLabel_WmDU">MclassInquireEntry</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPredict"><span title="MclassPredict" class="linkLabel_WmDU">MclassPredict</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPrepareData"><span title="MclassPrepareData" class="linkLabel_WmDU">MclassPrepareData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPreprocess"><span title="MclassPreprocess" class="linkLabel_WmDU">MclassPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassRestore"><span title="MclassRestore" class="linkLabel_WmDU">MclassRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassSave"><span title="MclassSave" class="linkLabel_WmDU">MclassSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassSetHookInfo"><span title="MclassSetHookInfo" class="linkLabel_WmDU">MclassSetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassSplitDataset"><span title="MclassSplitDataset" class="linkLabel_WmDU">MclassSplitDataset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassStatCalculate"><span title="MclassStatCalculate" class="linkLabel_WmDU">MclassStatCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassStream"><span title="MclassStream" class="linkLabel_WmDU">MclassStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassTrain"><span title="MclassTrain" class="linkLabel_WmDU">MclassTrain</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span>class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MclassGetHookInfo</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MclassGetHookInfo</h1></header>
+<blockquote>
+<p>Get information about a hooked classification object event.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT </span><span class="token function" style="color:#d73a49">MclassGetHookInfo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    EventId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InfoType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">   </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function retrieves information about the event that caused the hook-handler function to be called. This function should only be called within the scope of a classification object hook-handler function call (see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>MclassHookFunction</code></a>).</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="eventid-in-ail_id"><code>EventId</code> <em>(in, AIL_ID)</em><a href="#eventid-in-ail_id" class="hash-link" aria-label="Direct link to eventid-in-ail_id" title="Direct link to eventid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the classification object event identifier received by the hook-handler function. See <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>MclassHookFunction</code></a> for more information. The event will be of the type passed to the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>HookType</code></a> parameter of the hook-handler function.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="infotype-in-ail_int64"><code>InfoType</code> <em>(in, AIL_INT64)</em><a href="#infotype-in-ail_int64" class="hash-link" aria-label="Direct link to infotype-in-ail_int64" title="Direct link to infotype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of information to get.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Note that when getting parameter values, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>UserVarPtr</code></a> parameter should be of the same data type as value of the selected parameter.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-getting-information-about-a-hooked-classification-object-event">For getting information about a hooked classification object event<a href="#for-getting-information-about-a-hooked-classification-object-event" class="hash-link" aria-label="Direct link to For getting information about a hooked classification object event" title="Direct link to For getting information about a hooked classification object event" translate="no">​</a></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_datasets_prepared-event-id"><code>An M_DATASETS_PREPARED event ID</code><a href="#an-m_datasets_prepared-event-id" class="hash-link" aria-label="Direct link to an-m_datasets_prepared-event-id" title="Direct link to an-m_datasets_prepared-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a> event type on a CNN, object detection, segmentation, or anomaly detection training context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_id"><code>M_RESULT_ID</code><a href="#m_result_id" class="hash-link" aria-label="Direct link to m_result_id" title="Direct link to m_result_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the result buffer.  If the hook-handler function was called due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a> event type when training, you can pass this result buffer identifier to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassCopyResult"><code>MclassCopyResult</code></a> to get the prepared training (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassCopyResult"><code>M_PREPARED_TRAIN_DATASET</code></a>) and development (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassCopyResult"><code>M_PREPARED_DEV_DATASET</code></a>) datasets.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_epoch_trained-event-id"><code>An M_EPOCH_TRAINED event ID</code><a href="#an-m_epoch_trained-event-id" class="hash-link" aria-label="Direct link to an-m_epoch_trained-event-id" title="Direct link to an-m_epoch_trained-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_EPOCH_TRAINED</code></a> event type. Unless otherwise specified, this applies to a CNN, object detection or segmentation training context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_accuracy"><code>M_DEV_DATASET_ACCURACY</code><a href="#m_dev_dataset_accuracy" class="hash-link" aria-label="Direct link to m_dev_dataset_accuracy" title="Direct link to m_dev_dataset_accuracy" translate="no">​</a></h4>
+<p>Retrieves the accuracy on the development dataset using the trained context obtained at the end of the epoch.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the accuracy on the development dataset, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_confusion_matrix"><code>M_DEV_DATASET_CONFUSION_MATRIX</code><a href="#m_dev_dataset_confusion_matrix" class="hash-link" aria-label="Direct link to m_dev_dataset_confusion_matrix" title="Direct link to m_dev_dataset_confusion_matrix" translate="no">​</a></h4>
+<p>Retrieves an array that represents the confusion matrix calculated using the development dataset. The confusion matrix contains information about how many entries were correctly and incorrectly classified during training in the development dataset.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_confusion_matrix_size_x"><code>M_DEV_DATASET_CONFUSION_MATRIX_SIZE_X</code><a href="#m_dev_dataset_confusion_matrix_size_x" class="hash-link" aria-label="Direct link to m_dev_dataset_confusion_matrix_size_x" title="Direct link to m_dev_dataset_confusion_matrix_size_x" translate="no">​</a></h4>
+<p>Retrieves the X-dimension (number of rows) of the confusion matrix calculated using the development dataset.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 1</code></td><td>Specifies the number of rows in the confusion matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_confusion_matrix_size_y"><code>M_DEV_DATASET_CONFUSION_MATRIX_SIZE_Y</code><a href="#m_dev_dataset_confusion_matrix_size_y" class="hash-link" aria-label="Direct link to m_dev_dataset_confusion_matrix_size_y" title="Direct link to m_dev_dataset_confusion_matrix_size_y" translate="no">​</a></h4>
+<p>Retrieves the Y-dimension (number of columns) of the confusion matrix calculated using the development dataset.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 1</code></td><td>Specifies the number of columns in the confusion matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_epoch_error_entries"><code>M_DEV_DATASET_EPOCH_ERROR_ENTRIES</code><a href="#m_dev_dataset_epoch_error_entries" class="hash-link" aria-label="Direct link to m_dev_dataset_epoch_error_entries" title="Direct link to m_dev_dataset_epoch_error_entries" translate="no">​</a></h4>
+<p>Retrieves the array containing the AIL_UUIDs of each image in the development dataset that produced an error.  For segmentation, UUIDs are also listed for entries that have invalid labels. A label can be invalid if Aurora Imaging Library failed to restore a mask, if the mask size does not match the size of the entry image, if not all the pixels in the image are labeled, or if there is an overlap of pixels between different classes.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_error_rate"><code>M_DEV_DATASET_ERROR_RATE</code><a href="#m_dev_dataset_error_rate" class="hash-link" aria-label="Direct link to m_dev_dataset_error_rate" title="Direct link to m_dev_dataset_error_rate" translate="no">​</a></h4>
+<p>Retrieves the error rate on the development dataset using the trained context obtained at the end of the epoch. The error rate is a measurement of how frequently the classifier incorrectly classifies images in the dataset.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the error on the development dataset, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_id"><code>M_DEV_DATASET_ID</code><a href="#m_dev_dataset_id" class="hash-link" aria-label="Direct link to m_dev_dataset_id" title="Direct link to m_dev_dataset_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the development dataset context.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_iou_mean"><code>M_DEV_DATASET_IOU_MEAN</code><a href="#m_dev_dataset_iou_mean" class="hash-link" aria-label="Direct link to m_dev_dataset_iou_mean" title="Direct link to m_dev_dataset_iou_mean" translate="no">​</a></h4>
+<p>Retrieves the mean IOU (Intersection over Union) metric of the development dataset after the last epoch. The IOU compares the area and location of the predicted region to the ground truth region.  &gt; <strong>Note:</strong> Note, this value is only available for segmentation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_loss"><code>M_DEV_DATASET_LOSS</code><a href="#m_dev_dataset_loss" class="hash-link" aria-label="Direct link to m_dev_dataset_loss" title="Direct link to m_dev_dataset_loss" translate="no">​</a></h4>
+<p>Retrieves the loss metric of the development dataset after the last epoch. You can use the loss to evaluate the lack of confidence (doubt) associated with the training.  &gt; <strong>Note:</strong> Note, this value is not available for CNN.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_used_entries"><code>M_DEV_DATASET_USED_ENTRIES</code><a href="#m_dev_dataset_used_entries" class="hash-link" aria-label="Direct link to m_dev_dataset_used_entries" title="Direct link to m_dev_dataset_used_entries" translate="no">​</a></h4>
+<p>Retrieves the array that contains the AIL_UUID of each image in the development dataset used during training.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_epoch_index"><code>M_EPOCH_INDEX</code><a href="#m_epoch_index" class="hash-link" aria-label="Direct link to m_epoch_index" title="Direct link to m_epoch_index" translate="no">​</a></h4>
+<p>Retrieves the index of the last epoch. An epoch is one complete pass of the training dataset.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mini_batch_per_epoch"><code>M_MINI_BATCH_PER_EPOCH</code><a href="#m_mini_batch_per_epoch" class="hash-link" aria-label="Direct link to m_mini_batch_per_epoch" title="Direct link to m_mini_batch_per_epoch" translate="no">​</a></h4>
+<p>Retrieves the number of mini-batches per epoch. A mini-batch is a subset of the dataset. The weights of the classifier are updated after each mini-batch iteration.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_id-1"><code>M_RESULT_ID</code><a href="#m_result_id-1" class="hash-link" aria-label="Direct link to m_result_id-1" title="Direct link to m_result_id-1" translate="no">​</a></h4>
+<p>Retrieves the identifier of the result buffer.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_context_id"><code>M_TRAIN_CONTEXT_ID</code><a href="#m_train_context_id" class="hash-link" aria-label="Direct link to m_train_context_id" title="Direct link to m_train_context_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the training context.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_accuracy"><code>M_TRAIN_DATASET_ACCURACY</code><a href="#m_train_dataset_accuracy" class="hash-link" aria-label="Direct link to m_train_dataset_accuracy" title="Direct link to m_train_dataset_accuracy" translate="no">​</a></h4>
+<p>Retrieves the accuracy of the training dataset using the trained context obtained at the end of the epoch.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the accuracy of the training dataset, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_confusion_matrix"><code>M_TRAIN_DATASET_CONFUSION_MATRIX</code><a href="#m_train_dataset_confusion_matrix" class="hash-link" aria-label="Direct link to m_train_dataset_confusion_matrix" title="Direct link to m_train_dataset_confusion_matrix" translate="no">​</a></h4>
+<p>Retrieves an array that represents the confusion matrix calculated using the training dataset. The confusion matrix contains information about how many entries were correctly and incorrectly classified during training in the development dataset.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_confusion_matrix_size_x"><code>M_TRAIN_DATASET_CONFUSION_MATRIX_SIZE_X</code><a href="#m_train_dataset_confusion_matrix_size_x" class="hash-link" aria-label="Direct link to m_train_dataset_confusion_matrix_size_x" title="Direct link to m_train_dataset_confusion_matrix_size_x" translate="no">​</a></h4>
+<p>Retrieves the X-dimension (number of rows) of the confusion matrix calculated using the training dataset.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 1</code></td><td>Specifies the number of rows in the confusion matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_confusion_matrix_size_y"><code>M_TRAIN_DATASET_CONFUSION_MATRIX_SIZE_Y</code><a href="#m_train_dataset_confusion_matrix_size_y" class="hash-link" aria-label="Direct link to m_train_dataset_confusion_matrix_size_y" title="Direct link to m_train_dataset_confusion_matrix_size_y" translate="no">​</a></h4>
+<p>Retrieves the Y-dimension (number of columns) of the confusion matrix calculated using the training dataset.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 1</code></td><td>Specifies the number of columns in the confusion matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_epoch_error_entries"><code>M_TRAIN_DATASET_EPOCH_ERROR_ENTRIES</code><a href="#m_train_dataset_epoch_error_entries" class="hash-link" aria-label="Direct link to m_train_dataset_epoch_error_entries" title="Direct link to m_train_dataset_epoch_error_entries" translate="no">​</a></h4>
+<p>Retrieves the array containing the AIL_UUIDs of each image in the training dataset that produced an error.  For segmentation, UUIDs are also listed for entries that have invalid labels. A label can be invalid if Aurora Imaging Library failed to restore a mask, if the mask size does not match the size of the entry image, if not all the pixels in the image are labeled, or if there is an overlap of pixels between different classes.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_error_rate"><code>M_TRAIN_DATASET_ERROR_RATE</code><a href="#m_train_dataset_error_rate" class="hash-link" aria-label="Direct link to m_train_dataset_error_rate" title="Direct link to m_train_dataset_error_rate" translate="no">​</a></h4>
+<p>Retrieves the error rate of the training dataset using the trained context obtained at the end of the epoch.  &gt; <strong>Note:</strong> Note, this value is not available for object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the error of the training dataset, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_id"><code>M_TRAIN_DATASET_ID</code><a href="#m_train_dataset_id" class="hash-link" aria-label="Direct link to m_train_dataset_id" title="Direct link to m_train_dataset_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the training dataset. This is unavailable for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_iou_mean"><code>M_TRAIN_DATASET_IOU_MEAN</code><a href="#m_train_dataset_iou_mean" class="hash-link" aria-label="Direct link to m_train_dataset_iou_mean" title="Direct link to m_train_dataset_iou_mean" translate="no">​</a></h4>
+<p>Retrieves the mean IOU (Intersection over Union) metric of the training dataset after the last epoch.  &gt; <strong>Note:</strong> Note, this value is only available for segmentation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_used_entries"><code>M_TRAIN_DATASET_USED_ENTRIES</code><a href="#m_train_dataset_used_entries" class="hash-link" aria-label="Direct link to m_train_dataset_used_entries" title="Direct link to m_train_dataset_used_entries" translate="no">​</a></h4>
+<p>Retrieves the array that contains the AIL_UUID of each image in the training dataset used during the training phase.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_trained_parameters_updated"><code>M_TRAINED_PARAMETERS_UPDATED</code><a href="#m_trained_parameters_updated" class="hash-link" aria-label="Direct link to m_trained_parameters_updated" title="Direct link to m_trained_parameters_updated" translate="no">​</a></h4>
+<p>Retrieves whether the current CNN, object detection or segmentation classifier parameters are up to date.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the current parameters are not up to date.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the current parameters are up to date.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_mini_batch_trained-event-id"><code>An M_MINI_BATCH_TRAINED event ID</code><a href="#an-m_mini_batch_trained-event-id" class="hash-link" aria-label="Direct link to an-m_mini_batch_trained-event-id" title="Direct link to an-m_mini_batch_trained-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_MINI_BATCH_TRAINED</code></a> event type on a CNN, object detection, segmentation, or anomaly detection training context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_id-1"><code>M_DEV_DATASET_ID</code><a href="#m_dev_dataset_id-1" class="hash-link" aria-label="Direct link to m_dev_dataset_id-1" title="Direct link to m_dev_dataset_id-1" translate="no">​</a></h4>
+<p>Retrieves the identifier of the development dataset context. This is unavailable for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_epoch_index-1"><code>M_EPOCH_INDEX</code><a href="#m_epoch_index-1" class="hash-link" aria-label="Direct link to m_epoch_index-1" title="Direct link to m_epoch_index-1" translate="no">​</a></h4>
+<p>Retrieves the index of the last epoch.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mini_batch_index"><code>M_MINI_BATCH_INDEX</code><a href="#m_mini_batch_index" class="hash-link" aria-label="Direct link to m_mini_batch_index" title="Direct link to m_mini_batch_index" translate="no">​</a></h4>
+<p>Retrieves the index of the last mini-batch.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mini_batch_loss"><code>M_MINI_BATCH_LOSS</code><a href="#m_mini_batch_loss" class="hash-link" aria-label="Direct link to m_mini_batch_loss" title="Direct link to m_mini_batch_loss" translate="no">​</a></h4>
+<p>Retrieves the loss at the end of training a mini-batch. You can use the loss to evaluate the lack of confidence (doubt) associated with the training.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mini_batch_per_epoch-1"><code>M_MINI_BATCH_PER_EPOCH</code><a href="#m_mini_batch_per_epoch-1" class="hash-link" aria-label="Direct link to m_mini_batch_per_epoch-1" title="Direct link to m_mini_batch_per_epoch-1" translate="no">​</a></h4>
+<p>Retrieves the number of mini-batches per epoch.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_id-2"><code>M_RESULT_ID</code><a href="#m_result_id-2" class="hash-link" aria-label="Direct link to m_result_id-2" title="Direct link to m_result_id-2" translate="no">​</a></h4>
+<p>Retrieves the identifier of the result buffer.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_context_id-1"><code>M_TRAIN_CONTEXT_ID</code><a href="#m_train_context_id-1" class="hash-link" aria-label="Direct link to m_train_context_id-1" title="Direct link to m_train_context_id-1" translate="no">​</a></h4>
+<p>Retrieves the identifier of the training context. This is unavailable for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_id-1"><code>M_TRAIN_DATASET_ID</code><a href="#m_train_dataset_id-1" class="hash-link" aria-label="Direct link to m_train_dataset_id-1" title="Direct link to m_train_dataset_id-1" translate="no">​</a></h4>
+<p>Retrieves the identifier of the training dataset. This is unavailable for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_predict_entry-event-id"><code>An M_PREDICT_ENTRY event ID</code><a href="#an-m_predict_entry-event-id" class="hash-link" aria-label="Direct link to an-m_predict_entry-event-id" title="Direct link to an-m_predict_entry-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREDICT_ENTRY</code></a> event type on a CNN, object detection classifier, segmentation, anomaly detection or tree ensemble context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_best_class_index"><code>M_BEST_CLASS_INDEX</code><a href="#m_best_class_index" class="hash-link" aria-label="Direct link to m_best_class_index" title="Direct link to m_best_class_index" translate="no">​</a></h4>
+<p>Retrieves the index of the class with the highest score, for the last entry being predicted.  For image or feature classification, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_BEST_CLASS_INDEX</code></a> retrieves one index.  For segmentation, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_BEST_CLASS_INDEX</code></a> retrieves an array of values (indices) that can be arranged in a 2D image, where the size is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_PREDICTION_SIZE_X</code></a> * <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_PREDICTION_SIZE_Y</code></a>. Each value is the index of the best class score for that X- Y-pixel location. The index of the class begins at 0.  For object detection, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_BEST_CLASS_INDEX</code></a> retrieves an array of values representing the index of the best class score for each detected instance. The size of the array is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_NUMBER_OF_INSTANCES</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_4_corners"><code>M_BOX_4_CORNERS</code><a href="#m_box_4_corners" class="hash-link" aria-label="Direct link to m_box_4_corners" title="Direct link to m_box_4_corners" translate="no">​</a></h4>
+<p>Retrieves an array containing the coordinates of the four corners of the specified bounding boxes.  The 8 coordinates of the first box (b1) are grouped, followed by the 8 coordinates of the second box (b2), repeating this process for all specified boxes in the order b1x1, b1y1, b1x2, b1y2, b1x3, b1y3, b1x4, b1y4, b2x1, b2y1, b2x2, b2y2, b2x3, b2y3, b2x4, b2y4, etc.  <em>[Image: MclassBox4Corners.png]</em>  The size of the array will be equal to the number of specified instances (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_NUMBER_OF_INSTANCES</code></a>) multiplied by 8.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x"><code>M_CENTER_X</code><a href="#m_center_x" class="hash-link" aria-label="Direct link to m_center_x" title="Direct link to m_center_x" translate="no">​</a></h4>
+<p>Retrieves an array of the X-coordinates of the centers of the specified bounding boxes.  The size of the array is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_NUMBER_OF_INSTANCES</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y"><code>M_CENTER_Y</code><a href="#m_center_y" class="hash-link" aria-label="Direct link to m_center_y" title="Direct link to m_center_y" translate="no">​</a></h4>
+<p>Retrieves an array of the Y-coordinates of the centers of the specified bounding boxes.  The size of the array is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_NUMBER_OF_INSTANCES</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_entry_key"><code>M_ENTRY_KEY</code><a href="#m_entry_key" class="hash-link" aria-label="Direct link to m_entry_key" title="Direct link to m_entry_key" translate="no">​</a></h4>
+<p>Retrieves the key of the last entry being predicted.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_height"><code>M_HEIGHT</code><a href="#m_height" class="hash-link" aria-label="Direct link to m_height" title="Direct link to m_height" translate="no">​</a></h4>
+<p>Retrieves an array containing the heights of the specified bounding boxes.  The size of the array is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_NUMBER_OF_INSTANCES</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_input_dataset_id"><code>M_INPUT_DATASET_ID</code><a href="#m_input_dataset_id" class="hash-link" aria-label="Direct link to m_input_dataset_id" title="Direct link to m_input_dataset_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the dataset whose entries get predicted (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPredict"><code>MclassPredict</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPredict"><code>TargetAilObjectId</code></a>).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_entries_in_error"><code>M_NUMBER_OF_ENTRIES_IN_ERROR</code><a href="#m_number_of_entries_in_error" class="hash-link" aria-label="Direct link to m_number_of_entries_in_error" title="Direct link to m_number_of_entries_in_error" translate="no">​</a></h4>
+<p>Retrieves the current number of entries that could not be predicted.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_instances"><code>M_NUMBER_OF_INSTANCES</code><a href="#m_number_of_instances" class="hash-link" aria-label="Direct link to m_number_of_instances" title="Direct link to m_number_of_instances" translate="no">​</a></h4>
+<p>Retrieves the current number of instances in the predicted entry for object detection.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_predicted_entries"><code>M_NUMBER_OF_PREDICTED_ENTRIES</code><a href="#m_number_of_predicted_entries" class="hash-link" aria-label="Direct link to m_number_of_predicted_entries" title="Direct link to m_number_of_predicted_entries" translate="no">​</a></h4>
+<p>Retrieves the current number of entries that were predicted.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_output_dataset_id"><code>M_OUTPUT_DATASET_ID</code><a href="#m_output_dataset_id" class="hash-link" aria-label="Direct link to m_output_dataset_id" title="Direct link to m_output_dataset_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the dataset in which the entries and their predictions are written (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPredict"><code>MclassPredict</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPredict"><code>DatasetContextOrResultClassId</code></a>).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_predict_context_id"><code>M_PREDICT_CONTEXT_ID</code><a href="#m_predict_context_id" class="hash-link" aria-label="Direct link to m_predict_context_id" title="Direct link to m_predict_context_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the trained classifier context used to predict dataset entries (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPredict"><code>MclassPredict</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPredict"><code>ContextClassId</code></a>).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_predict_score"><code>M_PREDICT_SCORE</code><a href="#m_predict_score" class="hash-link" aria-label="Direct link to m_predict_score" title="Direct link to m_predict_score" translate="no">​</a></h4>
+<p>Retrieves the highest class score of the last entry being predicted.  For image or feature classification, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_PREDICT_SCORE</code></a> retrieves one score.  For segmentation, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_PREDICT_SCORE</code></a> retrieves an array of values (scores) that can be arranged in a 2D image, where the size is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_PREDICTION_SIZE_X</code></a> * <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_PREDICTION_SIZE_Y</code></a>. Each value is the highest score for that X- Y- pixel location.  For object detection, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_PREDICT_SCORE</code></a>, retrieves an array of values representing the highest class score for each detected instance. The size of the array is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_NUMBER_OF_INSTANCES</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_predict_score_average"><code>M_PREDICT_SCORE_AVERAGE</code><a href="#m_predict_score_average" class="hash-link" aria-label="Direct link to m_predict_score_average" title="Direct link to m_predict_score_average" translate="no">​</a></h4>
+<p>Retrieves the average prediction score of the predicted entries. This is not available for segmentation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_predict_score_max"><code>M_PREDICT_SCORE_MAX</code><a href="#m_predict_score_max" class="hash-link" aria-label="Direct link to m_predict_score_max" title="Direct link to m_predict_score_max" translate="no">​</a></h4>
+<p>Retrieves the maximum prediction score of the predicted entries. This is not available for segmentation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_predict_score_min"><code>M_PREDICT_SCORE_MIN</code><a href="#m_predict_score_min" class="hash-link" aria-label="Direct link to m_predict_score_min" title="Direct link to m_predict_score_min" translate="no">​</a></h4>
+<p>Retrieves the minimum prediction score of predicted entries. This is not available for segmentation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_prediction_size_x"><code>M_PREDICTION_SIZE_X</code><a href="#m_prediction_size_x" class="hash-link" aria-label="Direct link to m_prediction_size_x" title="Direct link to m_prediction_size_x" translate="no">​</a></h4>
+<p>Retrieves the number of class scores, along the X-direction. This is only available for segmentation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_prediction_size_y"><code>M_PREDICTION_SIZE_Y</code><a href="#m_prediction_size_y" class="hash-link" aria-label="Direct link to m_prediction_size_y" title="Direct link to m_prediction_size_y" translate="no">​</a></h4>
+<p>Retrieves the number of class scores, along the Y-direction. This is only available for segmentation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status"><code>M_STATUS</code><a href="#m_status" class="hash-link" aria-label="Direct link to m_status" title="Direct link to m_status" translate="no">​</a></h4>
+<p>Retrieves the status of the last predicted entry.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREDICT_ENTRY</code></a> event types can occur with CNN, segmentation, object detection, anomaly detection, or tree ensemble classifiers.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPLETE</code></td><td>Specifies that the prediction completed.</td></tr><tr><td><code>M_IMAGE_FILE_INVALID</code></td><td>Specifies that the image file associated with the source entry is not a valid image.</td></tr><tr><td><code>M_IMAGE_FILE_NOT_FOUND</code></td><td>Specifies that the image file associated with the source entry was not found.</td></tr><tr><td><code>M_INTERNAL_ERROR</code></td><td>Specifies that an internal error occurred during the current entry predict.</td></tr><tr><td><code>M_INVALID_BUFFER_SIZE</code></td><td>Specifies that the entry has invalid dimensions; the height/width of the entry does not match the size of the classifier source layer or the size of the specified target image. This applies to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREDICT_ENTRY</code></a> with a segmentation classifier.</td></tr><tr><td><code>M_INVALID_BUFFER_SIZE_BAND</code></td><td>Specifies that the entry has an invalid number of bands; the number of bands of the entry does not match the number of bands of the classifier source layer or the of the specified target image. This applies to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREDICT_ENTRY</code></a> with a segmentation classifier.</td></tr><tr><td><code>M_INVALID_BUFFER_TYPE</code></td><td>Specifies that the entry has an invalid type; the entry type does not match the classifier source layer type or the of the specified target image type.</td></tr><tr><td><code>M_INVALID_NUMBER_OF_FEATURES</code></td><td>Specifies that the entry has an invalid number of features. This applies to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREDICT_ENTRY</code></a> with a tree ensemble classifier.</td></tr><tr><td><code>M_INVALID_REGION_BUFFER</code></td><td>Specifies that the entry has no valid region of interest (ROI).</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_task_type"><code>M_TASK_TYPE</code><a href="#m_task_type" class="hash-link" aria-label="Direct link to m_task_type" title="Direct link to m_task_type" translate="no">​</a></h4>
+<p>Retrieves the type of task performed by the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREDICT_ENTRY</code></a> event.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_ANOMALY_DETECTION</code></td><td>Specifies that the prediction was for an anomaly detection task type.</td></tr><tr><td><code>M_CLASSIFICATION</code></td><td>Specifies that the prediction was for a classification task type.</td></tr><tr><td><code>M_OBJECT_DETECTION</code></td><td>Specifies that the prediction was for an object detection task type.</td></tr><tr><td><code>M_SEGMENTATION</code></td><td>Specifies that the prediction was for a segmentation task type.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_width"><code>M_WIDTH</code><a href="#m_width" class="hash-link" aria-label="Direct link to m_width" title="Direct link to m_width" translate="no">​</a></h4>
+<p>Retrieves an array containing the widths of the specified bounding boxes for object detection.  The size of the array is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_NUMBER_OF_INSTANCES</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_prepare_entry_post-event-id"><code>An M_PREPARE_ENTRY_POST event ID</code><a href="#an-m_prepare_entry_post-event-id" class="hash-link" aria-label="Direct link to an-m_prepare_entry_post-event-id" title="Direct link to an-m_prepare_entry_post-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREPARE_ENTRY_POST</code></a> event type on an object detection, CNN, or segmentation data preparation context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dst_dataset_id"><code>M_DST_DATASET_ID</code><a href="#m_dst_dataset_id" class="hash-link" aria-label="Direct link to m_dst_dataset_id" title="Direct link to m_dst_dataset_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the destination dataset.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dst_entries_start_index"><code>M_DST_ENTRIES_START_INDEX</code><a href="#m_dst_entries_start_index" class="hash-link" aria-label="Direct link to m_dst_entries_start_index" title="Direct link to m_dst_entries_start_index" translate="no">​</a></h4>
+<p>Get the destination entry start index for the last mini-batch of prepared images. That batch extends from the start index up to the end of the destination dataset.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_prepared_src_entries"><code>M_NUMBER_OF_PREPARED_SRC_ENTRIES</code><a href="#m_number_of_prepared_src_entries" class="hash-link" aria-label="Direct link to m_number_of_prepared_src_entries" title="Direct link to m_number_of_prepared_src_entries" translate="no">​</a></h4>
+<p>Retrieves the number of entries from the source dataset that have been prepared so far. You will always get a value greater than or equal to 0.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_src_dataset_id"><code>M_SRC_DATASET_ID</code><a href="#m_src_dataset_id" class="hash-link" aria-label="Direct link to m_src_dataset_id" title="Direct link to m_src_dataset_id" translate="no">​</a></h4>
+<p>Retrieves the identifier of the source dataset that is specified by the source entry index (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_SRC_ENTRY_INDEX</code></a>).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_src_entry_index"><code>M_SRC_ENTRY_INDEX</code><a href="#m_src_entry_index" class="hash-link" aria-label="Direct link to m_src_entry_index" title="Direct link to m_src_entry_index" translate="no">​</a></h4>
+<p>Retrieves the source entry index of the entry that was prepared. You will always get a value greater than or equal to 0.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status-1"><code>M_STATUS</code><a href="#m_status-1" class="hash-link" aria-label="Direct link to m_status-1" title="Direct link to m_status-1" translate="no">​</a></h4>
+<p>Retrieves the status of the last prepared entry.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREPARE_ENTRY_POST</code></a> event types can occur with object detection, CNN, or segmentation data preparation contexts.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPLETE</code></td><td>Specifies that the entry was prepared successfully.</td></tr><tr><td><code>M_FAILED_TO_SAVE_IMAGE</code></td><td>Specifies that the prepared image could not be saved at the required destination.</td></tr><tr><td><code>M_FLOAT_IMAGE_NOT_NORMALIZED</code></td><td>Specifies that float images must be normalized between 0 and 1.</td></tr><tr><td><code>M_IMAGE_FILE_INVALID</code></td><td>Specifies that the image file associated with the source entry exists but is not restorable.</td></tr><tr><td><code>M_IMAGE_FILE_NOT_FOUND</code></td><td>Specifies that the image file associated with the source entry was not found.</td></tr><tr><td><code>M_INVALID_AUG_OP_FOR_1_BAND_BUFFER</code></td><td>Specifies that not all augmentation operations were valid for 1 band buffers and a 1 band buffer was given.</td></tr><tr><td><code>M_INVALID_AUG_OP_FOR_1_BIT_BUFFER</code></td><td>Specifies that not all augmentation operations were valid for 1 bit buffers and a 1 bit buffer was given.</td></tr><tr><td><code>M_INVALID_AUG_OP_FOR_BUFFER_SIZE_BAND</code></td><td>Specifies that not all augmentation operations were valid for multi-band buffers with 2 bands or more than 3 bands and that such a buffer was given. This applies to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREPARE_ENTRY_POST</code></a> with a CNN or segmentation data preparation context.</td></tr><tr><td><code>M_INVALID_BUFFER_SIGN_FOR_AUG</code></td><td>Specifies that the augmentation required an unsigned image buffer and a signed buffer was given.</td></tr><tr><td><code>M_INVALID_BUFFER_SIZE_BAND</code></td><td>Specifies that a buffer with an invalid size band was given; specifically, multi-band buffers with 2 bands or more than 3 bands are not supported. This applies to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREPARE_ENTRY_POST</code></a> with an object detection data preparation context.</td></tr><tr><td><code>M_INVALID_CENTER</code></td><td>Specifies that the given center, for the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><code>M_CENTER_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><code>M_CENTER_Y</code></a> controls, is outside the source image.</td></tr><tr><td><code>M_MASK_FILE_NOT_FOUND</code></td><td>Specifies that one of the mask files associated with the source entry was not found. This applies to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREPARE_ENTRY_POST</code></a> with a segmentation data preparation context.</td></tr><tr><td><code>M_RESIZED_IMAGE_TOO_SMALL</code></td><td>Specifies that the size mode and resize scale factor resulted in a destination image too small to create; this can only occur when no classifier was passed.</td></tr><tr><td><code>M_SOURCE_TOO_SMALL_FOR_DERICHE_OP</code></td><td>Specifies that the source image is too small for Deriche operations; it must be at least 3 pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_prepare_entry_pre-event-id"><code>An M_PREPARE_ENTRY_PRE event ID</code><a href="#an-m_prepare_entry_pre-event-id" class="hash-link" aria-label="Direct link to an-m_prepare_entry_pre-event-id" title="Direct link to an-m_prepare_entry_pre-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_PREPARE_ENTRY_PRE</code></a> event type on a CNN or segmentation data preparation context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_image_id"><code>M_IMAGE_ID</code><a href="#m_image_id" class="hash-link" aria-label="Direct link to m_image_id" title="Direct link to m_image_id" translate="no">​</a></h4>
+<p>Retrieves the buffer identifier of the restored source entry about to be augmented. Use your algorithm (for example the Blob Analysis module) on this buffer identifier to find the center that you want to set (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassSetHookInfo"><code>M_CENTER_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassSetHookInfo"><code>M_CENTER_Y</code></a>).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_src_dataset_id-1"><code>M_SRC_DATASET_ID</code><a href="#m_src_dataset_id-1" class="hash-link" aria-label="Direct link to m_src_dataset_id-1" title="Direct link to m_src_dataset_id-1" translate="no">​</a></h4>
+<p>Retrieves the identifier of the source dataset that is specified by the source entry index (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><code>M_SRC_ENTRY_INDEX</code></a>).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_src_entry_index-1"><code>M_SRC_ENTRY_INDEX</code><a href="#m_src_entry_index-1" class="hash-link" aria-label="Direct link to m_src_entry_index-1" title="Direct link to m_src_entry_index-1" translate="no">​</a></h4>
+<p>Retrieve the source entry index of the entry that was prepared. You will always get a value greater than or equal to 0.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_sample_added-event-id"><code>An M_SAMPLE_ADDED event ID</code><a href="#an-m_sample_added-event-id" class="hash-link" aria-label="Direct link to an-m_sample_added-event-id" title="Direct link to an-m_sample_added-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_SAMPLE_ADDED</code></a>event type on an anomaly detection training context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_current_sample_index"><code>M_CURRENT_SAMPLE_INDEX</code><a href="#m_current_sample_index" class="hash-link" aria-label="Direct link to m_current_sample_index" title="Direct link to m_current_sample_index" translate="no">​</a></h4>
+<p>Retrieves the index of the newly added sample.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_current_sample_loss"><code>M_CURRENT_SAMPLE_LOSS</code><a href="#m_current_sample_loss" class="hash-link" aria-label="Direct link to m_current_sample_loss" title="Direct link to m_current_sample_loss" translate="no">​</a></h4>
+<p>Retrieves the loss of the newly added sample.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_iteration_index"><code>M_ITERATION_INDEX</code><a href="#m_iteration_index" class="hash-link" aria-label="Direct link to m_iteration_index" title="Direct link to m_iteration_index" translate="no">​</a></h4>
+<p>Retrieves the index of the current iteration.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_iterations"><code>M_NUMBER_OF_ITERATIONS</code><a href="#m_number_of_iterations" class="hash-link" aria-label="Direct link to m_number_of_iterations" title="Direct link to m_number_of_iterations" translate="no">​</a></h4>
+<p>Retrieves the total number of iterations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_id-3"><code>M_RESULT_ID</code><a href="#m_result_id-3" class="hash-link" aria-label="Direct link to m_result_id-3" title="Direct link to m_result_id-3" translate="no">​</a></h4>
+<p>Retrieves the identifier of the training result buffer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_tree_trained-event-id"><code>An M_TREE_TRAINED event ID</code><a href="#an-m_tree_trained-event-id" class="hash-link" aria-label="Direct link to an-m_tree_trained-event-id" title="Direct link to an-m_tree_trained-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_TREE_TRAINED</code></a> event type on a tree ensemble training context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dev_dataset_id-2"><code>M_DEV_DATASET_ID</code><a href="#m_dev_dataset_id-2" class="hash-link" aria-label="Direct link to m_dev_dataset_id-2" title="Direct link to m_dev_dataset_id-2" translate="no">​</a></h4>
+<p>Retrieves the identifier of the development dataset context. This is unavailable for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_id-4"><code>M_RESULT_ID</code><a href="#m_result_id-4" class="hash-link" aria-label="Direct link to m_result_id-4" title="Direct link to m_result_id-4" translate="no">​</a></h4>
+<p>Retrieves the identifier of the result buffer.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_context_id-2"><code>M_TRAIN_CONTEXT_ID</code><a href="#m_train_context_id-2" class="hash-link" aria-label="Direct link to m_train_context_id-2" title="Direct link to m_train_context_id-2" translate="no">​</a></h4>
+<p>Retrieves the identifier of the training context. This is unavailable for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_dataset_id-2"><code>M_TRAIN_DATASET_ID</code><a href="#m_train_dataset_id-2" class="hash-link" aria-label="Direct link to m_train_dataset_id-2" title="Direct link to m_train_dataset_id-2" translate="no">​</a></h4>
+<p>Retrieves the identifier of the training dataset. This is unavailable for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_DATASETS_PREPARED</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tree_depth_achieved"><code>M_TREE_DEPTH_ACHIEVED</code><a href="#m_tree_depth_achieved" class="hash-link" aria-label="Direct link to m_tree_depth_achieved" title="Direct link to m_tree_depth_achieved" translate="no">​</a></h4>
+<p>Retrieves the tree depth of the current tree. The current tree is equivalent to the last tree added to the tree ensemble.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tree_index"><code>M_TREE_INDEX</code><a href="#m_tree_index" class="hash-link" aria-label="Direct link to m_tree_index" title="Direct link to m_tree_index" translate="no">​</a></h4>
+<p>Retrieves the index of the tree being trained.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tree_number_of_leaf_nodes_achieved"><code>M_TREE_NUMBER_OF_LEAF_NODES_ACHIEVED</code><a href="#m_tree_number_of_leaf_nodes_achieved" class="hash-link" aria-label="Direct link to m_tree_number_of_leaf_nodes_achieved" title="Direct link to m_tree_number_of_leaf_nodes_achieved" translate="no">​</a></h4>
+<p>Retrieves the number of leaf nodes of the current tree. The current tree is equivalent to the last tree added to the tree ensemble.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="an-m_write_new_file-event-id"><code>An M_WRITE_NEW_FILE event ID</code><a href="#an-m_write_new_file-event-id" class="hash-link" aria-label="Direct link to an-m_write_new_file-event-id" title="Direct link to an-m_write_new_file-event-id" translate="no">​</a></h3>
+<p>Specifies that the event that called the hook-handler function was due to an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><code>M_WRITE_NEW_FILE</code></a> event type on a CNN, segmentation, or anomaly detection dataset context object.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_new_file_path"><code>M_NEW_FILE_PATH</code><a href="#m_new_file_path" class="hash-link" aria-label="Direct link to m_new_file_path" title="Direct link to m_new_file_path" translate="no">​</a></h4>
+<p>Retrieves the path of the most recently created file on disk.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>&quot;NewFilePath&quot;</code></td><td>Specifies the path.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-number-of-elements-in-the-array-array-size">Combination Constants — For determining the required number of elements in the array (array size)<a href="#combination-constants--for-determining-the-required-number-of-elements-in-the-array-array-size" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required number of elements in the array (array size)" title="Direct link to Combination Constants — For determining the required number of elements in the array (array size)" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required number of elements in the array (array size).</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-getting-the-size-of-a-string">Combination Constants — For getting the size of a string<a href="#combination-constants--for-getting-the-size-of-a-string" class="hash-link" aria-label="Direct link to Combination Constants — For getting the size of a string" title="Direct link to Combination Constants — For getting the size of a string" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the size of a string.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_size"><code>M_STRING_SIZE</code><a href="#m_string_size" class="hash-link" aria-label="Direct link to m_string_size" title="Direct link to m_string_size" translate="no">​</a></h4>
+<p>Retrieves the number of characters in the string. This number accounts for every character, including the terminating null character.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-whether-event-results-are-available-to-be-returned">Combination Constants — For determining whether event results are available to be returned<a href="#combination-constants--for-determining-whether-event-results-are-available-to-be-returned" class="hash-link" aria-label="Direct link to Combination Constants — For determining whether event results are available to be returned" title="Direct link to Combination Constants — For determining whether event results are available to be returned" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether an event result is available to be returned.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_available"><code>M_AVAILABLE</code><a href="#m_available" class="hash-link" aria-label="Direct link to m_available" title="Direct link to m_available" translate="no">​</a></h4>
+<p>Retrieves whether the requested information is available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the requested information is not available.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the requested information is available.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to a required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_id"><code>M_TYPE_AIL_ID</code><a href="#m_type_ail_id" class="hash-link" aria-label="Direct link to m_type_ail_id" title="Direct link to m_type_ail_id" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_ID</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT</code></p>
+<p>The returned value is <code>M_NULL</code> if successful. If the operation fails, a non-null (!<code>M_NULL</code>) value is returned.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassFree"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MclassFree</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResult"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MclassGetResult</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#eventid-in-ail_id" class="table-of-contents__link toc-highlight"><code>EventId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#infotype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InfoType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-getting-information-about-a-hooked-classification-object-event" class="table-of-contents__link toc-highlight">For getting information about a hooked classification object event</a></li><li><a href="#an-m_datasets_prepared-event-id" class="table-of-contents__link toc-highlight"><code>An M_DATASETS_PREPARED event ID</code></a></li><li><a href="#an-m_epoch_trained-event-id" class="table-of-contents__link toc-highlight"><code>An M_EPOCH_TRAINED event ID</code></a></li><li><a href="#an-m_mini_batch_trained-event-id" class="table-of-contents__link toc-highlight"><code>An M_MINI_BATCH_TRAINED event ID</code></a></li><li><a href="#an-m_predict_entry-event-id" class="table-of-contents__link toc-highlight"><code>An M_PREDICT_ENTRY event ID</code></a></li><li><a href="#an-m_prepare_entry_post-event-id" class="table-of-contents__link toc-highlight"><code>An M_PREPARE_ENTRY_POST event ID</code></a></li><li><a href="#an-m_prepare_entry_pre-event-id" class="table-of-contents__link toc-highlight"><code>An M_PREPARE_ENTRY_PRE event ID</code></a></li><li><a href="#an-m_sample_added-event-id" class="table-of-contents__link toc-highlight"><code>An M_SAMPLE_ADDED event ID</code></a></li><li><a href="#an-m_tree_trained-event-id" class="table-of-contents__link toc-highlight"><code>An M_TREE_TRAINED event ID</code></a></li><li><a href="#an-m_write_new_file-event-id" class="table-of-contents__link toc-highlight"><code>An M_WRITE_NEW_FILE event ID</code></a></li><li><a href="#combination-constants--for-determining-the-required-number-of-elements-in-the-array-array-size" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required number of elements in the array (array size)</a></li><li><a href="#combination-constants--for-getting-the-size-of-a-string" class="table-of-contents__link toc-highlight">Combination Constants — For getting the size of a string</a></li><li><a href="#combination-constants--for-determining-whether-event-results-are-available-to-be-returned" class="table-of-contents__link toc-highlight">Combination Constants — For determining whether event results are available to be returned</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

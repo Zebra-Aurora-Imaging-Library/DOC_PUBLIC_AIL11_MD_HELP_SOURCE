@@ -1,0 +1,1635 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dgeo/M3dgeoInquire" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dgeoInquire | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dgeoInquire | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dgeo","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"},{"@type":"ListItem","position":2,"name":"M3dgeoInquire","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Collapse sidebar category &#x27;3dgeo&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><span title="M3dgeoAlloc" class="linkLabel_WmDU">M3dgeoAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoBox"><span title="M3dgeoBox" class="linkLabel_WmDU">M3dgeoBox</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoConstruct"><span title="M3dgeoConstruct" class="linkLabel_WmDU">M3dgeoConstruct</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoCopy"><span title="M3dgeoCopy" class="linkLabel_WmDU">M3dgeoCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoCylinder"><span title="M3dgeoCylinder" class="linkLabel_WmDU">M3dgeoCylinder</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoDraw3d"><span title="M3dgeoDraw3d" class="linkLabel_WmDU">M3dgeoDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoEvalCurve"><span title="M3dgeoEvalCurve" class="linkLabel_WmDU">M3dgeoEvalCurve</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoEvalSurface"><span title="M3dgeoEvalSurface" class="linkLabel_WmDU">M3dgeoEvalSurface</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoFree"><span title="M3dgeoFree" class="linkLabel_WmDU">M3dgeoFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><span title="M3dgeoInquire" class="linkLabel_WmDU">M3dgeoInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoLine"><span title="M3dgeoLine" class="linkLabel_WmDU">M3dgeoLine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoMatrixGet"><span title="M3dgeoMatrixGet" class="linkLabel_WmDU">M3dgeoMatrixGet</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoMatrixGetTransform"><span title="M3dgeoMatrixGetTransform" class="linkLabel_WmDU">M3dgeoMatrixGetTransform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoMatrixPut"><span title="M3dgeoMatrixPut" class="linkLabel_WmDU">M3dgeoMatrixPut</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoMatrixSetTransform"><span title="M3dgeoMatrixSetTransform" class="linkLabel_WmDU">M3dgeoMatrixSetTransform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoMatrixSetWithAxes"><span title="M3dgeoMatrixSetWithAxes" class="linkLabel_WmDU">M3dgeoMatrixSetWithAxes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoPlane"><span title="M3dgeoPlane" class="linkLabel_WmDU">M3dgeoPlane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoPoint"><span title="M3dgeoPoint" class="linkLabel_WmDU">M3dgeoPoint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoRestore"><span title="M3dgeoRestore" class="linkLabel_WmDU">M3dgeoRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoSave"><span title="M3dgeoSave" class="linkLabel_WmDU">M3dgeoSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoSphere"><span title="M3dgeoSphere" class="linkLabel_WmDU">M3dgeoSphere</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoStream"><span title="M3dgeoStream" class="linkLabel_WmDU">M3dgeoStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span>3dgeo</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dgeoInquire</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dgeoInquire</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire about a 3D geometry object setting or transformation matrix object setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_DOUBLE </span><span class="token function" style="color:#d73a49">M3dgeoInquire</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    GeometryOrMatrix3dgeoId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr                </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires about a specified setting of a 3D geometry object or transformation matrix object.</p>
+<blockquote>
+<p><strong>Note:</strong> Note that if the specified 3D geometry object was transformed (for example, using the 3D image processing module), this function returns the modified coordinates and dimensions. In this case, the coordinates and dimensions returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M3dgeoInquire</code></a> might not be the same initial coordinates and dimensions used to define the 3D geometry object.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="geometryormatrix3dgeoid-in-ail_id"><code>GeometryOrMatrix3dgeoId</code> <em>(in, AIL_ID)</em><a href="#geometryormatrix3dgeoid-in-ail_id" class="hash-link" aria-label="Direct link to geometryormatrix3dgeoid-in-ail_id" title="Direct link to geometryormatrix3dgeoid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 3D geometry object or transformation matrix object about which to inquire information. The object must have been previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_TRANSFORMATION_MATRIX</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M3dgeoInquire</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-any-3d-geometry-object">For inquiring about any 3D geometry object<a href="#for-inquiring-about-any-3d-geometry-object" class="hash-link" aria-label="Direct link to For inquiring about any 3D geometry object" title="Direct link to For inquiring about any 3D geometry object" translate="no">​</a></h3>
+<p>For any 3D geometry object, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>GeometryOrMatrix3dgeoId</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>InquireType</code></a> parameters can be set to one of the following:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3d-geometry-object-id"><code>3D geometry object ID</code><a href="#3d-geometry-object-id" class="hash-link" aria-label="Direct link to 3d-geometry-object-id" title="Direct link to 3d-geometry-object-id" translate="no">​</a></h3>
+<p>Specifies a 3D geometry object, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dimension"><code>M_DIMENSION</code><a href="#m_dimension" class="hash-link" aria-label="Direct link to m_dimension" title="Direct link to m_dimension" translate="no">​</a></h4>
+<p>Inquires the dimensionality of the 3D geometry. The dimensionality specifies, for a point on the geometry, the number of coordinates you must have to determine all three coordinates. For example, for a 3D line (dimensionality of 1), if you have the X-coordinate of a point on the line, you can find the corresponding Y- and Z-coordinates. Similarly, for a plane (dimensionality of 2), if you have the X- and Y-coordinates for a point on the plane, you can find the corresponding Z-coordinate. Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoEvalCurve"><code>M3dgeoEvalCurve</code></a> to find missing coordinates for a 3D line; use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoEvalSurface"><code>M3dgeoEvalSurface</code></a> to find missing coordinates for a 3D plane or sphere.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt;= Value &lt;= 2</code></td><td>Specifies the dimensionality of the 3D geometry.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_geometry_type"><code>M_GEOMETRY_TYPE</code><a href="#m_geometry_type" class="hash-link" aria-label="Direct link to m_geometry_type" title="Direct link to m_geometry_type" translate="no">​</a></h4>
+<p>Inquires the 3D geometry type.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_BOX</code></td><td>Specifies a box.</td></tr><tr><td><code>M_CYLINDER</code></td><td>Specifies a cylinder.</td></tr><tr><td><code>M_LINE</code></td><td>Specifies a line.</td></tr><tr><td><code>M_NOT_INITIALIZED</code></td><td>Specifies that a geometry has not been defined for the 3D geometry object.</td></tr><tr><td><code>M_PLANE</code></td><td>Specifies a plane.</td></tr><tr><td><code>M_POINT</code></td><td>Specifies a point.</td></tr><tr><td><code>M_SPHERE</code></td><td>Specifies a sphere.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-specific-type-of-3d-geometry-object">For inquiring about a specific type of 3D geometry object<a href="#for-inquiring-about-a-specific-type-of-3d-geometry-object" class="hash-link" aria-label="Direct link to For inquiring about a specific type of 3D geometry object" title="Direct link to For inquiring about a specific type of 3D geometry object" translate="no">​</a></h3>
+<p>For a 3D geometry object of a specific type, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>GeometryOrMatrix3dgeoId</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>InquireType</code></a> parameters can be set to one of the following.  &gt; <strong>Note:</strong> Note that for any 3D geometry object, you can use any inquire type available for its respective geometry type, regardless of the creation mode used to define the geometry.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3d-box-geometry-object-id"><code>3D box geometry object ID</code><a href="#3d-box-geometry-object-id" class="hash-link" aria-label="Direct link to 3d-box-geometry-object-id" title="Direct link to 3d-box-geometry-object-id" translate="no">​</a></h3>
+<p>Specifies a 3D box geometry object, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a> and successfully defined as a box.  &gt; <strong>Note:</strong> Note that a box&#x27;s corners are assigned the following indices upon initially defining the box, based on the corner&#x27;s position with respect to the axes of the working coordinate system. The index of a box corner does not change based on the orientation of the box.<em>[Image: 3dgeo_box.png]</em></p>
+<h4><code>?</code></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the specified box corner, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-1"><code>?</code><a href="#-1" class="hash-link" aria-label="Direct link to -1" title="Direct link to -1" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the specified box corner, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-2"><code>?</code><a href="#-2" class="hash-link" aria-label="Direct link to -2" title="Direct link to -2" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the specified box corner, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-3"><code>?</code><a href="#-3" class="hash-link" aria-label="Direct link to -3" title="Direct link to -3" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinates of the corners of the specified box face, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-4"><code>?</code><a href="#-4" class="hash-link" aria-label="Direct link to -4" title="Direct link to -4" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinates of the corners of the specified box face, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="-5"><code>?</code><a href="#-5" class="hash-link" aria-label="Direct link to -5" title="Direct link to -5" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinates of the corners of the specified box face, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_aligned"><code>M_AXIS_ALIGNED</code><a href="#m_axis_aligned" class="hash-link" aria-label="Direct link to m_axis_aligned" title="Direct link to m_axis_aligned" translate="no">​</a></h4>
+<p>Inquires whether the box is axis-aligned with the working coordinate system.  Note that this inquire type returns the opposite of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_ROTATED</code></a> inquire type, except when an axis-aligned box is rotated by 180 degrees; in this case, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_AXIS_ALIGNED</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_ROTATED</code></a> both return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_TRUE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the box is not axis-aligned; a rotation (other than a 180 degree rotation) has been applied.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the box is axis-aligned; no rotation (or a 180 degree rotation) has been applied.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x"><code>M_CENTER_X</code><a href="#m_center_x" class="hash-link" aria-label="Direct link to m_center_x" title="Direct link to m_center_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the box&#x27;s center point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the box&#x27;s center point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y"><code>M_CENTER_Y</code><a href="#m_center_y" class="hash-link" aria-label="Direct link to m_center_y" title="Direct link to m_center_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the box&#x27;s center point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the box&#x27;s center point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z"><code>M_CENTER_Z</code><a href="#m_center_z" class="hash-link" aria-label="Direct link to m_center_z" title="Direct link to m_center_z" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the box&#x27;s center point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the box&#x27;s center point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_corner_x_all"><code>M_CORNER_X_ALL</code><a href="#m_corner_x_all" class="hash-link" aria-label="Direct link to m_corner_x_all" title="Direct link to m_corner_x_all" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of each of the box&#x27;s 8 corners, in their index order.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-component the box&#x27;s corner, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_corner_y_all"><code>M_CORNER_Y_ALL</code><a href="#m_corner_y_all" class="hash-link" aria-label="Direct link to m_corner_y_all" title="Direct link to m_corner_y_all" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of each of the box&#x27;s 8 corners, in their index order.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-component the box&#x27;s corner, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_corner_z_all"><code>M_CORNER_Z_ALL</code><a href="#m_corner_z_all" class="hash-link" aria-label="Direct link to m_corner_z_all" title="Direct link to m_corner_z_all" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of each of the box&#x27;s 8 corners, in their index order.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-component the box&#x27;s corner, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_face_n_corners_x"><code>M_FACE_n_CORNERS_X</code><a href="#m_face_n_corners_x" class="hash-link" aria-label="Direct link to m_face_n_corners_x" title="Direct link to m_face_n_corners_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinates of each corner of box face <em>n</em>, in their index order, where <em>n</em> is the box face index.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinates of the corners of the box face assigned with index <em>n</em>, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_face_n_corners_y"><code>M_FACE_n_CORNERS_Y</code><a href="#m_face_n_corners_y" class="hash-link" aria-label="Direct link to m_face_n_corners_y" title="Direct link to m_face_n_corners_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinates of each corner of box face <em>n</em>, in their index order, where <em>n</em> is the box face index.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinates of the corners of the box face assigned with index <em>n</em>, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_face_n_corners_z"><code>M_FACE_n_CORNERS_Z</code><a href="#m_face_n_corners_z" class="hash-link" aria-label="Direct link to m_face_n_corners_z" title="Direct link to m_face_n_corners_z" translate="no">​</a></h4>
+<p>Inquires the Z-coordinates of each corner of box face <em>n</em>, in their index order, where <em>n</em> is the box face index.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinates of the corners of the box face assigned with index <em>n</em>, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rotated"><code>M_ROTATED</code><a href="#m_rotated" class="hash-link" aria-label="Direct link to m_rotated" title="Direct link to m_rotated" translate="no">​</a></h4>
+<p>Inquires whether the box has been rotated. This inquire type returns true when the box&#x27;s rotation matrix is not the identity matrix. This can occur even if you did not use, for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimRotate"><code>M3dimRotate</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimMatrixTransform"><code>M3dimMatrixTransform</code></a> to explicitly rotate the box. If you copied the box from a statistics 3D image processing result buffer (after calculating a semi-oriented box) or a 3D model finder result buffer, it can have a rotation matrix other than the identity matrix.  Note that this inquire type returns the opposite of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_AXIS_ALIGNED</code></a> inquire type, except when an axis-aligned box is rotated by 180 degrees; in this case, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_AXIS_ALIGNED</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_ROTATED</code></a> both return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_TRUE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the box is not rotated; its rotation matrix is the identity matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the box is rotated; its rotation matrix is not the identity matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x"><code>M_SIZE_X</code><a href="#m_size_x" class="hash-link" aria-label="Direct link to m_size_x" title="Direct link to m_size_x" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s length along the X-axis, ignoring the box&#x27;s rotation. The length is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the length of the unrotated box, in world units, along the X-axis of the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y"><code>M_SIZE_Y</code><a href="#m_size_y" class="hash-link" aria-label="Direct link to m_size_y" title="Direct link to m_size_y" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s length along the Y-axis, ignoring the box&#x27;s rotation. The length is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the length of the unrotated box, in world units, along the Y-axis of the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_z"><code>M_SIZE_Z</code><a href="#m_size_z" class="hash-link" aria-label="Direct link to m_size_z" title="Direct link to m_size_z" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s length along the Z-axis, ignoring the box&#x27;s rotation. The length is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the length of the unrotated box, in world units, along the Z-axis of the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_max_x"><code>M_UNROTATED_MAX_X</code><a href="#m_unrotated_max_x" class="hash-link" aria-label="Direct link to m_unrotated_max_x" title="Direct link to m_unrotated_max_x" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s maximum X-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the box&#x27;s maximum X-coordinate, ignoring the box&#x27;s rotation, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_max_y"><code>M_UNROTATED_MAX_Y</code><a href="#m_unrotated_max_y" class="hash-link" aria-label="Direct link to m_unrotated_max_y" title="Direct link to m_unrotated_max_y" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s maximum Y-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the box&#x27;s maximum Y-coordinate, ignoring the box&#x27;s rotation, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_max_z"><code>M_UNROTATED_MAX_Z</code><a href="#m_unrotated_max_z" class="hash-link" aria-label="Direct link to m_unrotated_max_z" title="Direct link to m_unrotated_max_z" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s maximum Z-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the box&#x27;s maximum Z-coordinate, ignoring the box&#x27;s rotation, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_min_x"><code>M_UNROTATED_MIN_X</code><a href="#m_unrotated_min_x" class="hash-link" aria-label="Direct link to m_unrotated_min_x" title="Direct link to m_unrotated_min_x" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s minimum X-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the box&#x27;s minimum X-coordinate, ignoring the box&#x27;s rotation, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_min_y"><code>M_UNROTATED_MIN_Y</code><a href="#m_unrotated_min_y" class="hash-link" aria-label="Direct link to m_unrotated_min_y" title="Direct link to m_unrotated_min_y" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s minimum Y-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the box&#x27;s minimum Y-coordinate, ignoring the box&#x27;s rotation, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_min_z"><code>M_UNROTATED_MIN_Z</code><a href="#m_unrotated_min_z" class="hash-link" aria-label="Direct link to m_unrotated_min_z" title="Direct link to m_unrotated_min_z" translate="no">​</a></h4>
+<p>Inquires the box&#x27;s minimum Z-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the box&#x27;s minimum Z-coordinate, ignoring the box&#x27;s rotation, expressed in the working coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3d-cylinder-geometry-object-id"><code>3D cylinder geometry object ID</code><a href="#3d-cylinder-geometry-object-id" class="hash-link" aria-label="Direct link to 3d-cylinder-geometry-object-id" title="Direct link to 3d-cylinder-geometry-object-id" translate="no">​</a></h3>
+<p>Specifies a 3D cylinder geometry object, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a> and successfully defined as a cylinder.<em>[Image: 3dgeo_cylinder.png]</em></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_x"><code>M_AXIS_X</code><a href="#m_axis_x" class="hash-link" aria-label="Direct link to m_axis_x" title="Direct link to m_axis_x" translate="no">​</a></h4>
+<p>Inquires the X-component of the cylinder&#x27;s central axis unit vector. This vector does not reflect the cylinder&#x27;s length, regardless of whether a vector was used to define the cylinder&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the X-component of the cylinder&#x27;s central axis unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_y"><code>M_AXIS_Y</code><a href="#m_axis_y" class="hash-link" aria-label="Direct link to m_axis_y" title="Direct link to m_axis_y" translate="no">​</a></h4>
+<p>Inquires the Y-component of the cylinder&#x27;s central axis unit vector. This vector does not reflect the cylinder&#x27;s length, regardless of whether a vector was used to define the cylinder&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Y-component of the cylinder&#x27;s central axis unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_z"><code>M_AXIS_Z</code><a href="#m_axis_z" class="hash-link" aria-label="Direct link to m_axis_z" title="Direct link to m_axis_z" translate="no">​</a></h4>
+<p>Inquires the Z-component of the cylinder&#x27;s central axis unit vector. This vector does not reflect the cylinder&#x27;s length, regardless of whether a vector was used to define the cylinder&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Z-component of the cylinder&#x27;s central axis unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_bases"><code>M_BASES</code><a href="#m_bases" class="hash-link" aria-label="Direct link to m_bases" title="Direct link to m_bases" translate="no">​</a></h4>
+<p>Inquires whether the cylinder has bases.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_WITH_BASES</code></td><td>Specifies that the cylinder has bases.</td></tr><tr><td><code>M_WITHOUT_BASES</code></td><td>Specifies that the cylinder does not have bases.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x-1"><code>M_CENTER_X</code><a href="#m_center_x-1" class="hash-link" aria-label="Direct link to m_center_x-1" title="Direct link to m_center_x-1" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the center point on the cylinder&#x27;s central axis. This inquire type is only available if the cylinder&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the center point on the cylinder&#x27;s central axis, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y-1"><code>M_CENTER_Y</code><a href="#m_center_y-1" class="hash-link" aria-label="Direct link to m_center_y-1" title="Direct link to m_center_y-1" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the center point on the cylinder&#x27;s central axis. This inquire type is only available if the cylinder&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the center point on the cylinder&#x27;s central axis, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z-1"><code>M_CENTER_Z</code><a href="#m_center_z-1" class="hash-link" aria-label="Direct link to m_center_z-1" title="Direct link to m_center_z-1" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the center point on the cylinder&#x27;s central axis. This inquire type is only available if the cylinder&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the center point on the cylinder&#x27;s central axis, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_x"><code>M_END_POINT_X</code><a href="#m_end_point_x" class="hash-link" aria-label="Direct link to m_end_point_x" title="Direct link to m_end_point_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the cylinder&#x27;s end point, positioned at the center of the cylinder&#x27;s second circular base. This inquire type is only available if the cylinder&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the cylinder&#x27;s end point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_y"><code>M_END_POINT_Y</code><a href="#m_end_point_y" class="hash-link" aria-label="Direct link to m_end_point_y" title="Direct link to m_end_point_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the cylinder&#x27;s end point, positioned at the center of the cylinder&#x27;s second circular base. This inquire type is only available if the cylinder&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the cylinder&#x27;s end point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_z"><code>M_END_POINT_Z</code><a href="#m_end_point_z" class="hash-link" aria-label="Direct link to m_end_point_z" title="Direct link to m_end_point_z" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the cylinder&#x27;s end point, positioned at the center of the cylinder&#x27;s second circular base. This inquire type is only available if the cylinder&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the cylinder&#x27;s end point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_length"><code>M_LENGTH</code><a href="#m_length" class="hash-link" aria-label="Direct link to m_length" title="Direct link to m_length" translate="no">​</a></h4>
+<p>Inquires the cylinder&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INFINITE</code></td><td>Specifies that the cylinder is infinite.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the cylinder&#x27;s length in world units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_radius"><code>M_RADIUS</code><a href="#m_radius" class="hash-link" aria-label="Direct link to m_radius" title="Direct link to m_radius" translate="no">​</a></h4>
+<p>Inquires the cylinder&#x27;s radius.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the cylinder&#x27;s radius in world units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_x"><code>M_START_POINT_X</code><a href="#m_start_point_x" class="hash-link" aria-label="Direct link to m_start_point_x" title="Direct link to m_start_point_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the cylinder&#x27;s start point on the cylinder&#x27;s central axis.  When the cylinder&#x27;s length is infinite, this returns the X-coordinate of the first point used to define the cylinder.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the first point on the central axis used to define the cylinder, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_y"><code>M_START_POINT_Y</code><a href="#m_start_point_y" class="hash-link" aria-label="Direct link to m_start_point_y" title="Direct link to m_start_point_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the cylinder&#x27;s start point on the cylinder&#x27;s central axis.  When the cylinder&#x27;s length is infinite, this returns the Y-coordinate of the first point used to define the cylinder.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the first point on the central axis used to define the cylinder, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_z"><code>M_START_POINT_Z</code><a href="#m_start_point_z" class="hash-link" aria-label="Direct link to m_start_point_z" title="Direct link to m_start_point_z" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the cylinder&#x27;s start point on the cylinder&#x27;s central axis.  When the cylinder&#x27;s length is infinite, this returns the Z-coordinate of the first point used to define the cylinder.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the first point on the central axis used to define the cylinder, expressed in the working coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3d-line-geometry-object-id"><code>3D line geometry object ID</code><a href="#3d-line-geometry-object-id" class="hash-link" aria-label="Direct link to 3d-line-geometry-object-id" title="Direct link to 3d-line-geometry-object-id" translate="no">​</a></h3>
+<p>Specifies a 3D line geometry object, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a> and successfully defined as a line.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_x-1"><code>M_AXIS_X</code><a href="#m_axis_x-1" class="hash-link" aria-label="Direct link to m_axis_x-1" title="Direct link to m_axis_x-1" translate="no">​</a></h4>
+<p>Inquires the X-component of the line&#x27;s direction unit vector. This vector does not reflect the line&#x27;s length, regardless of whether a vector was used to define the line&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the X-component of the line&#x27;s direction unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_y-1"><code>M_AXIS_Y</code><a href="#m_axis_y-1" class="hash-link" aria-label="Direct link to m_axis_y-1" title="Direct link to m_axis_y-1" translate="no">​</a></h4>
+<p>Inquires the Y-component of the line&#x27;s direction unit vector. This vector does not reflect the line&#x27;s length, regardless of whether a vector was used to define the line&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Y-component of the line&#x27;s direction unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_z-1"><code>M_AXIS_Z</code><a href="#m_axis_z-1" class="hash-link" aria-label="Direct link to m_axis_z-1" title="Direct link to m_axis_z-1" translate="no">​</a></h4>
+<p>Inquires the Z-component of the line&#x27;s direction unit vector. This vector does not reflect the line&#x27;s length, regardless of whether a vector was used to define the line&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Z-component of the line&#x27;s direction unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x-2"><code>M_CENTER_X</code><a href="#m_center_x-2" class="hash-link" aria-label="Direct link to m_center_x-2" title="Direct link to m_center_x-2" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the line&#x27;s center point. This inquire type is only available if the line&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the center point on the line, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y-2"><code>M_CENTER_Y</code><a href="#m_center_y-2" class="hash-link" aria-label="Direct link to m_center_y-2" title="Direct link to m_center_y-2" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the line&#x27;s center point. This inquire type is only available if the line&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the center point on the line, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z-2"><code>M_CENTER_Z</code><a href="#m_center_z-2" class="hash-link" aria-label="Direct link to m_center_z-2" title="Direct link to m_center_z-2" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the line&#x27;s center point. This inquire type is only available if the line&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the center point on the line, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_x-1"><code>M_END_POINT_X</code><a href="#m_end_point_x-1" class="hash-link" aria-label="Direct link to m_end_point_x-1" title="Direct link to m_end_point_x-1" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the line&#x27;s end point. This inquire type is only available if the line&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the line&#x27;s end point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_y-1"><code>M_END_POINT_Y</code><a href="#m_end_point_y-1" class="hash-link" aria-label="Direct link to m_end_point_y-1" title="Direct link to m_end_point_y-1" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the line&#x27;s end point. This inquire type is only available if the line&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the line&#x27;s end point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_z-1"><code>M_END_POINT_Z</code><a href="#m_end_point_z-1" class="hash-link" aria-label="Direct link to m_end_point_z-1" title="Direct link to m_end_point_z-1" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the line&#x27;s end point. This inquire type is only available if the line&#x27;s length is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the line&#x27;s end point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_length-1"><code>M_LENGTH</code><a href="#m_length-1" class="hash-link" aria-label="Direct link to m_length-1" title="Direct link to m_length-1" translate="no">​</a></h4>
+<p>Inquires the line&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INFINITE</code></td><td>Specifies that the line is infinite.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the line&#x27;s length in world units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_x-1"><code>M_START_POINT_X</code><a href="#m_start_point_x-1" class="hash-link" aria-label="Direct link to m_start_point_x-1" title="Direct link to m_start_point_x-1" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the line&#x27;s start point.  When the line&#x27;s length is infinite, this returns the X-coordinate of the first point used to define the line.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the first point used to define the line, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_y-1"><code>M_START_POINT_Y</code><a href="#m_start_point_y-1" class="hash-link" aria-label="Direct link to m_start_point_y-1" title="Direct link to m_start_point_y-1" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the line&#x27;s start point.  When the line&#x27;s length is infinite, this returns the Y-coordinate of the first point used to define the line.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the first point used to define the line, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_z-1"><code>M_START_POINT_Z</code><a href="#m_start_point_z-1" class="hash-link" aria-label="Direct link to m_start_point_z-1" title="Direct link to m_start_point_z-1" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the line&#x27;s start point.  When the line&#x27;s length is infinite, this returns the Z-coordinate of the first point used to define the line.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the first point used to define the line, expressed in the working coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3d-plane-geometry-object-id"><code>3D plane geometry object ID</code><a href="#3d-plane-geometry-object-id" class="hash-link" aria-label="Direct link to 3d-plane-geometry-object-id" title="Direct link to 3d-plane-geometry-object-id" translate="no">​</a></h3>
+<p>Specifies a 3D plane geometry object, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a> and successfully defined as a plane.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_x"><code>M_CLOSEST_TO_ORIGIN_X</code><a href="#m_closest_to_origin_x" class="hash-link" aria-label="Direct link to m_closest_to_origin_x" title="Direct link to m_closest_to_origin_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the point on the plane closest to the origin of the working coordinate system.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the point on the plane closest to the origin of the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_y"><code>M_CLOSEST_TO_ORIGIN_Y</code><a href="#m_closest_to_origin_y" class="hash-link" aria-label="Direct link to m_closest_to_origin_y" title="Direct link to m_closest_to_origin_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the point on the plane closest to the origin of the working coordinate system.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the point on the plane closest to the origin of the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_z"><code>M_CLOSEST_TO_ORIGIN_Z</code><a href="#m_closest_to_origin_z" class="hash-link" aria-label="Direct link to m_closest_to_origin_z" title="Direct link to m_closest_to_origin_z" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the point on the plane closest to the origin of the working coordinate system.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the point on the plane closest to the origin of the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_a"><code>M_COEFFICIENT_A</code><a href="#m_coefficient_a" class="hash-link" aria-label="Direct link to m_coefficient_a" title="Direct link to m_coefficient_a" translate="no">​</a></h4>
+<p>Inquires the coefficient <em>A</em> of the plane equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient <em>A</em> of the plane equation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_b"><code>M_COEFFICIENT_B</code><a href="#m_coefficient_b" class="hash-link" aria-label="Direct link to m_coefficient_b" title="Direct link to m_coefficient_b" translate="no">​</a></h4>
+<p>Inquires the coefficient <em>B</em> of the plane equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient <em>B</em> of the plane equation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_c"><code>M_COEFFICIENT_C</code><a href="#m_coefficient_c" class="hash-link" aria-label="Direct link to m_coefficient_c" title="Direct link to m_coefficient_c" translate="no">​</a></h4>
+<p>Inquires the coefficient <em>C</em> of the plane equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient <em>C</em> of the plane equation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_d"><code>M_COEFFICIENT_D</code><a href="#m_coefficient_d" class="hash-link" aria-label="Direct link to m_coefficient_d" title="Direct link to m_coefficient_d" translate="no">​</a></h4>
+<p>Inquires the coefficient <em>D</em> of the plane equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the coefficient <em>D</em> of the plane equation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_x"><code>M_NORMAL_X</code><a href="#m_normal_x" class="hash-link" aria-label="Direct link to m_normal_x" title="Direct link to m_normal_x" translate="no">​</a></h4>
+<p>Inquires the X-component of the plane&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the X-component of the plane&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_y"><code>M_NORMAL_Y</code><a href="#m_normal_y" class="hash-link" aria-label="Direct link to m_normal_y" title="Direct link to m_normal_y" translate="no">​</a></h4>
+<p>Inquires the Y-component of the plane&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Y-component of the plane&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_z"><code>M_NORMAL_Z</code><a href="#m_normal_z" class="hash-link" aria-label="Direct link to m_normal_z" title="Direct link to m_normal_z" translate="no">​</a></h4>
+<p>Inquires the Z-component of the plane&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Z-component of the plane&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3d-point-geometry-object-id"><code>3D point geometry object ID</code><a href="#3d-point-geometry-object-id" class="hash-link" aria-label="Direct link to 3d-point-geometry-object-id" title="Direct link to 3d-point-geometry-object-id" translate="no">​</a></h3>
+<p>Specifies a 3D point geometry object, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a> and successfully defined as a point.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_x"><code>M_POSITION_X</code><a href="#m_position_x" class="hash-link" aria-label="Direct link to m_position_x" title="Direct link to m_position_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_y"><code>M_POSITION_Y</code><a href="#m_position_y" class="hash-link" aria-label="Direct link to m_position_y" title="Direct link to m_position_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_z"><code>M_POSITION_Z</code><a href="#m_position_z" class="hash-link" aria-label="Direct link to m_position_z" title="Direct link to m_position_z" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the point, expressed in the working coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3d-sphere-geometry-object-id"><code>3D sphere geometry object ID</code><a href="#3d-sphere-geometry-object-id" class="hash-link" aria-label="Direct link to 3d-sphere-geometry-object-id" title="Direct link to 3d-sphere-geometry-object-id" translate="no">​</a></h3>
+<p>Specifies a 3D sphere geometry object, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a> and successfully defined as a sphere.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x-3"><code>M_CENTER_X</code><a href="#m_center_x-3" class="hash-link" aria-label="Direct link to m_center_x-3" title="Direct link to m_center_x-3" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the sphere&#x27;s center point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the sphere&#x27;s center point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y-3"><code>M_CENTER_Y</code><a href="#m_center_y-3" class="hash-link" aria-label="Direct link to m_center_y-3" title="Direct link to m_center_y-3" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the sphere&#x27;s center point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the sphere&#x27;s center point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z-3"><code>M_CENTER_Z</code><a href="#m_center_z-3" class="hash-link" aria-label="Direct link to m_center_z-3" title="Direct link to m_center_z-3" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate of the sphere&#x27;s center point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Z-coordinate of the sphere&#x27;s center point, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_radius-1"><code>M_RADIUS</code><a href="#m_radius-1" class="hash-link" aria-label="Direct link to m_radius-1" title="Direct link to m_radius-1" translate="no">​</a></h4>
+<p>Inquires the sphere&#x27;s radius.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the sphere&#x27;s radius in world units.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-any-transformation-matrix-object">For inquiring about any transformation matrix object<a href="#for-inquiring-about-any-transformation-matrix-object" class="hash-link" aria-label="Direct link to For inquiring about any transformation matrix object" title="Direct link to For inquiring about any transformation matrix object" translate="no">​</a></h3>
+<p>For any transformation matrix object, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>GeometryOrMatrix3dgeoId</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>InquireType</code></a> parameters can be set to one of the following:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="transformation-matrix-object-id"><code>Transformation matrix object ID</code><a href="#transformation-matrix-object-id" class="hash-link" aria-label="Direct link to transformation-matrix-object-id" title="Direct link to transformation-matrix-object-id" translate="no">​</a></h3>
+<p>Specifies a transformation matrix object, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_TRANSFORMATION_MATRIX</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_affine"><code>M_AFFINE</code><a href="#m_affine" class="hash-link" aria-label="Direct link to m_affine" title="Direct link to m_affine" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is an affine transformation matrix.  An affine transformation matrix has translation and/or rotation and/or scale transformations. The scale can be uniform or non-uniform.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not an affine transformation matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is an affine transformation matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_aligned-1"><code>M_AXIS_ALIGNED</code><a href="#m_axis_aligned-1" class="hash-link" aria-label="Direct link to m_axis_aligned-1" title="Direct link to m_axis_aligned-1" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is an axis-aligned transformation matrix.  An axis-aligned transformation matrix has translation and/or scale transformations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not an axis-aligned transformation matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is an axis-aligned transformation matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_identity"><code>M_IDENTITY</code><a href="#m_identity" class="hash-link" aria-label="Direct link to m_identity" title="Direct link to m_identity" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is an identity transformation matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not an identity matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is an identity matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mirror"><code>M_MIRROR</code><a href="#m_mirror" class="hash-link" aria-label="Direct link to m_mirror" title="Direct link to m_mirror" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object preserves the handedness of the coordinate system. If true, applying the matrix will flip the handedness of the coordinate system.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that applying the transformation matrix object will flip the handedness of the coordinate system.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that applying the transformation matrix object preserves the handedness of the coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rigid"><code>M_RIGID</code><a href="#m_rigid" class="hash-link" aria-label="Direct link to m_rigid" title="Direct link to m_rigid" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is a rigid transformation matrix.  A rigid transformation matrix has translation and/or rotation transformations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not a rigid transformation matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is a rigid transformation matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rotation"><code>M_ROTATION</code><a href="#m_rotation" class="hash-link" aria-label="Direct link to m_rotation" title="Direct link to m_rotation" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is a rotation transformation matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not a rotation transformation matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is a rotation transformation matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale"><code>M_SCALE</code><a href="#m_scale" class="hash-link" aria-label="Direct link to m_scale" title="Direct link to m_scale" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is a scale transformation matrix. The scale can be uniform or non-uniform.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not a scale transformation matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is a scale transformation matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_uniform"><code>M_SCALE_UNIFORM</code><a href="#m_scale_uniform" class="hash-link" aria-label="Direct link to m_scale_uniform" title="Direct link to m_scale_uniform" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is a uniform scale transformation matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not a uniform scale transformation matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is a uniform scale transformation matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_similarity"><code>M_SIMILARITY</code><a href="#m_similarity" class="hash-link" aria-label="Direct link to m_similarity" title="Direct link to m_similarity" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is a similarity transformation matrix.  A similarity transformation matrix has translation and/or rotation and/or uniform scale transformations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not a similarity transformation matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is a similarity transformation matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformation_type"><code>M_TRANSFORMATION_TYPE</code><a href="#m_transformation_type" class="hash-link" aria-label="Direct link to m_transformation_type" title="Direct link to m_transformation_type" translate="no">​</a></h4>
+<p>Inquires the transformation matrix object&#x27;s transformation type.  &gt; <strong>Note:</strong> Note that this inquire type will return the strictest type that matches the transformation matrix object. For example, if the transformation matrix object is a rotation transformation matrix, it will return true for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_ROTATION</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_RIGID</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_SIMILARITY</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_AFFINE</code></a>, but <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_TRANSFORMATION_TYPE</code></a> will return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_ROTATION</code></a>.<em>[Image: 3dgeo_matrix_types.png]</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_AFFINE</code></td><td>Specifies an affine transformation matrix. This is returned if the transformation matrix object has a non-uniform scale transformation, and at least one other type of transformation, including translation or rotation.</td></tr><tr><td><code>M_AXIS_ALIGNED</code></td><td>Specifies an axis-aligned transformation matrix. This is returned if the transformation matrix object has translation and scale transformations.</td></tr><tr><td><code>M_IDENTITY</code></td><td>Specifies an identity transformation matrix.</td></tr><tr><td><code>M_PROJECTION</code></td><td>Specifies a projection transformation matrix.</td></tr><tr><td><code>M_RIGID</code></td><td>Specifies a rigid transformation matrix. This is returned if the transformation matrix object has rotation and translation transformations.</td></tr><tr><td><code>M_ROTATION</code></td><td>Specifies a rotation transformation matrix.</td></tr><tr><td><code>M_SCALE</code></td><td>Specifies a scale transformation matrix. This is returned if the transformation matrix object has a non-uniform transformation.</td></tr><tr><td><code>M_SCALE_UNIFORM</code></td><td>Specifies a uniform scale transformation matrix.</td></tr><tr><td><code>M_SIMILARITY</code></td><td>Specifies a similarity transformation matrix. This is returned if the transformation matrix object has a uniform scale transformation, and at least one other type of transformation, including translation or rotation.</td></tr><tr><td><code>M_TRANSLATION</code></td><td>Specifies a translation transformation matrix.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_translation"><code>M_TRANSLATION</code><a href="#m_translation" class="hash-link" aria-label="Direct link to m_translation" title="Direct link to m_translation" translate="no">​</a></h4>
+<p>Inquires whether the transformation matrix object is a translation transformation matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the transformation matrix object is not a translation transformation matrix.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the transformation matrix object is a translation transformation matrix.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-whether-an-inquire-type-is-supported">Combination Constants — For inquiring whether an inquire type is supported<a href="#combination-constants--for-inquiring-whether-an-inquire-type-is-supported" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring whether an inquire type is supported" title="Direct link to Combination Constants — For inquiring whether an inquire type is supported" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether an inquire type is supported.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_supported"><code>M_SUPPORTED</code><a href="#m_supported" class="hash-link" aria-label="Direct link to m_supported" title="Direct link to m_supported" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is supported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not supported.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is supported.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_float"><code>M_TYPE_AIL_FLOAT</code><a href="#m_type_ail_float" class="hash-link" aria-label="Direct link to m_type_ail_float" title="Direct link to m_type_ail_float" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_FLOAT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_DOUBLE</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_DOUBLE</em>. If the requested information does not fit into an <em>AIL_DOUBLE</em>, this function will return <code>M_NULL</code>or truncate the information.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoFree"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dgeoFree</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoLine"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dgeoLine</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#geometryormatrix3dgeoid-in-ail_id" class="table-of-contents__link toc-highlight"><code>GeometryOrMatrix3dgeoId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-about-any-3d-geometry-object" class="table-of-contents__link toc-highlight">For inquiring about any 3D geometry object</a></li><li><a href="#3d-geometry-object-id" class="table-of-contents__link toc-highlight"><code>3D geometry object ID</code></a></li><li><a href="#for-inquiring-about-a-specific-type-of-3d-geometry-object" class="table-of-contents__link toc-highlight">For inquiring about a specific type of 3D geometry object</a></li><li><a href="#3d-box-geometry-object-id" class="table-of-contents__link toc-highlight"><code>3D box geometry object ID</code></a></li><li><a href="#3d-cylinder-geometry-object-id" class="table-of-contents__link toc-highlight"><code>3D cylinder geometry object ID</code></a></li><li><a href="#3d-line-geometry-object-id" class="table-of-contents__link toc-highlight"><code>3D line geometry object ID</code></a></li><li><a href="#3d-plane-geometry-object-id" class="table-of-contents__link toc-highlight"><code>3D plane geometry object ID</code></a></li><li><a href="#3d-point-geometry-object-id" class="table-of-contents__link toc-highlight"><code>3D point geometry object ID</code></a></li><li><a href="#3d-sphere-geometry-object-id" class="table-of-contents__link toc-highlight"><code>3D sphere geometry object ID</code></a></li><li><a href="#for-inquiring-about-any-transformation-matrix-object" class="table-of-contents__link toc-highlight">For inquiring about any transformation matrix object</a></li><li><a href="#transformation-matrix-object-id" class="table-of-contents__link toc-highlight"><code>Transformation matrix object ID</code></a></li><li><a href="#combination-constants--for-inquiring-whether-an-inquire-type-is-supported" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring whether an inquire type is supported</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

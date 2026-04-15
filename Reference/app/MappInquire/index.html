@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/app/MappInquire" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MappInquire | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MappInquire | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"app","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"},{"@type":"ListItem","position":2,"name":"MappInquire","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Collapse sidebar category &#x27;app&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappAlloc"><span title="MappAlloc" class="linkLabel_WmDU">MappAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappAllocDefault"><span title="MappAllocDefault" class="linkLabel_WmDU">MappAllocDefault</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappCloseConnection"><span title="MappCloseConnection" class="linkLabel_WmDU">MappCloseConnection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControl"><span title="MappControl" class="linkLabel_WmDU">MappControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControlMp"><span title="MappControlMp" class="linkLabel_WmDU">MappControlMp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappFileOperation"><span title="MappFileOperation" class="linkLabel_WmDU">MappFileOperation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappFree"><span title="MappFree" class="linkLabel_WmDU">MappFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappFreeDefault"><span title="MappFreeDefault" class="linkLabel_WmDU">MappFreeDefault</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappGetError"><span title="MappGetError" class="linkLabel_WmDU">MappGetError</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappGetHookInfo"><span title="MappGetHookInfo" class="linkLabel_WmDU">MappGetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappHookFunction"><span title="MappHookFunction" class="linkLabel_WmDU">MappHookFunction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><span title="MappInquire" class="linkLabel_WmDU">MappInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquireConnection"><span title="MappInquireConnection" class="linkLabel_WmDU">MappInquireConnection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquireMp"><span title="MappInquireMp" class="linkLabel_WmDU">MappInquireMp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappOpenConnection"><span title="MappOpenConnection" class="linkLabel_WmDU">MappOpenConnection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappTimer"><span title="MappTimer" class="linkLabel_WmDU">MappTimer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappTrace"><span title="MappTrace" class="linkLabel_WmDU">MappTrace</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span>app</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MappInquire</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MappInquire</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Partial</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Partial</td></tr><tr><td>Concord PoE</td><td>Partial</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Partial</td></tr><tr><td>GigE Vision</td><td>Partial</td></tr><tr><td>Indio</td><td>Partial</td></tr><tr><td>Iris GTX</td><td>Partial</td></tr><tr><td>Radient eV-CL</td><td>Partial</td></tr><tr><td>Rapixo CL</td><td>Partial</td></tr><tr><td>Rapixo CoF</td><td>Partial</td></tr><tr><td>Rapixo CXP</td><td>Partial</td></tr><tr><td>USB3 Vision</td><td>Partial</td></tr></tbody></table>
+<blockquote>
+<p>Inquire about an application setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT </span><span class="token function" style="color:#d73a49">MappInquire</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    ContextAppId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">   </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr     </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires about the specified application setting.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextappid-in-ail_id"><code>ContextAppId</code> <em>(in, AIL_ID)</em><a href="#contextappid-in-ail_id" class="hash-link" aria-label="Direct link to contextappid-in-ail_id" title="Direct link to contextappid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the application context to use.</p>
+<p><em>For specifying the application context</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the application context of the current process.</td></tr><tr><td><code>Application context identifier</code></td><td>Specifies the application context of the current process.</td></tr></tbody></table>
+<p>Typically specifying an application context identifier is used to specify a remote application on a remote computer. However, it can be used for a remote application on the local computer, or the current process. When you explicitly specify the identifier of the current process, it is equivalent to specifying <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_DEFAULT</code></a>. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of application setting about which to inquire. This parameter can be set to one of the values below.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>MappInquire</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-general-types-of-application-settings">For inquiring about general types of application settings<a href="#for-inquiring-about-general-types-of-application-settings" class="hash-link" aria-label="Direct link to For inquiring about general types of application settings" title="Direct link to For inquiring about general types of application settings" translate="no">​</a></h3>
+<p>The following inquire types allow you to inquire about general types of application settings.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ail_directory_contexts"><code>M_AIL_DIRECTORY_CONTEXTS</code><a href="#m_ail_directory_contexts" class="hash-link" aria-label="Direct link to m_ail_directory_contexts" title="Direct link to m_ail_directory_contexts" translate="no">​</a></h3>
+<p>Inquires the path to the local contexts directory. The returned value is equivalent to the string constant <strong>M_CONTEXT_PATH</strong>.  By default on a Windows platform, this path is <em>C:\Program Files\Aurora Imaging Library&amp;lt;version number&gt;\Library\Contexts</em>.  By default on a Linux platform, this path is <em>/opt/aurora_imaging_library/&lt;version&gt;/contexts</em>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ail_directory_examples"><code>M_AIL_DIRECTORY_EXAMPLES</code><a href="#m_ail_directory_examples" class="hash-link" aria-label="Direct link to m_ail_directory_examples" title="Direct link to m_ail_directory_examples" translate="no">​</a></h3>
+<p>Inquires the path to the local examples directory.  By default on a Windows platform, this path is <em>C:\Program Files\Aurora Imaging Library&amp;lt;version number&gt;\Library\Examples</em>.  By default on a Linux platform, this path is <em>/opt/aurora_imaging_library/&lt;version&gt;/examples</em>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ail_directory_images"><code>M_AIL_DIRECTORY_IMAGES</code><a href="#m_ail_directory_images" class="hash-link" aria-label="Direct link to m_ail_directory_images" title="Direct link to m_ail_directory_images" translate="no">​</a></h3>
+<p>Inquires the path to the local images directory. The returned value is equivalent to the string constant <strong>M_IMAGE_PATH</strong>.  By default on a Windows platform, this path is <em>C:\Program Files\Aurora Imaging Library&amp;lt;version number&gt;\Library\Images</em>.  By default on a Linux platform, this path is <em>/opt/aurora_imaging_library/&lt;version&gt;/images</em>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ail_directory_install"><code>M_AIL_DIRECTORY_INSTALL</code><a href="#m_ail_directory_install" class="hash-link" aria-label="Direct link to m_ail_directory_install" title="Direct link to m_ail_directory_install" translate="no">​</a></h3>
+<p>Inquires the path to the root directory of the local Aurora Imaging Library installation. The returned value is equivalent to the string constant <strong>M_INSTALL_DIR</strong>.  By default on a Windows platform, this path is <em>C:\Program Files\Aurora Imaging Library&amp;lt;version number&gt;\Library</em>.  By default on a Linux platform, this path is <em>/opt/aurora_imaging_library/&lt;version&gt;/library</em>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_auto_reselect"><code>M_COMPONENT_AUTO_RESELECT</code><a href="#m_component_auto_reselect" class="hash-link" aria-label="Direct link to m_component_auto_reselect" title="Direct link to m_component_auto_reselect" translate="no">​</a></h3>
+<p>Inquires whether image buffer components are automatically reselected to 2D displays when they are reallocated.  &gt; <strong>Note:</strong> This setting does not affect containers shown in 3D displays.  &gt; <strong>Note:</strong> If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_THREAD_CURRENT</code></a> was specified, this inquires the setting for the current thread. Otherwise, it inquires the setting of the application environment.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPONENT_AUTO_RESELECT_DISABLE</code></td><td>Specifies not to automatically reselect image buffer components to 2D displays.</td></tr><tr><td><code>M_COMPONENT_AUTO_RESELECT_ENABLE</code> <em>(default)</em></td><td>Specifies to automatically reselect image buffer components to 2D displays when they are reallocated.</td></tr><tr><td><code>M_DEFAULT</code></td><td>Specifies that the global application setting is used for the current thread. Note that this value is only returned if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_THREAD_CURRENT</code></a> was specified.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_auto_reselect_enabled"><code>M_COMPONENT_AUTO_RESELECT_ENABLED</code><a href="#m_component_auto_reselect_enabled" class="hash-link" aria-label="Direct link to m_component_auto_reselect_enabled" title="Direct link to m_component_auto_reselect_enabled" translate="no">​</a></h3>
+<p>Inquires whether<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_COMPONENT_AUTO_RESELECT</code></a> is enabled for the current thread.  This always returns whether <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_COMPONENT_AUTO_RESELECT</code></a> is enabled for the current thread (regardless of whether it is enabled because it was set for the application environment, or because you enabled it explicitly for the thread using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControl"><code>MappControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControl"><code>M_COMPONENT_AUTO_RESELECT</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControl"><code>M_THREAD_CURRENT</code></a>).  &gt; <strong>Note:</strong> To inquire the setting for the application environment (instead of the current thread), use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_COMPONENT_AUTO_RESELECT</code></a> instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NO</code></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_COMPONENT_AUTO_RESELECT</code></a> is not enabled in the current thread.</td></tr><tr><td><code>M_YES</code></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_COMPONENT_AUTO_RESELECT</code></a> is enabled in the current thread.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_current_application"><code>M_CURRENT_APPLICATION</code><a href="#m_current_application" class="hash-link" aria-label="Direct link to m_current_application" title="Direct link to m_current_application" translate="no">​</a></h3>
+<p>Inquires the identifier of the current Aurora Imaging Library application, if any.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td>Specifies that no application is allocated. Note that no error is generated.</td></tr><tr><td><code>Application identifier</code></td><td>Specifies the identifier of the current application.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dail_connection"><code>M_DAIL_CONNECTION</code><a href="#m_dail_connection" class="hash-link" aria-label="Direct link to m_dail_connection" title="Direct link to m_dail_connection" translate="no">​</a></h3>
+<p>Inquires the Distributed Aurora Imaging Library monitoring configuration permission level.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DAIL_CONTROL</code></td><td>Specifies that objects in the current application can be accessed with either read only or read/write permission, depending on how that object was specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjControl"><code>MobjControl</code></a>.</td></tr><tr><td><code>M_DAIL_MONITOR</code></td><td>Specifies that objects in the current application can be accessed only with read only permission, regardless of how that object was specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjControl"><code>MobjControl</code></a>.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that Distributed Aurora Imaging Library monitoring configuration is disabled in the current application.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dail_connection_port"><code>M_DAIL_CONNECTION_PORT</code><a href="#m_dail_connection_port" class="hash-link" aria-label="Direct link to m_dail_connection_port" title="Direct link to m_dail_connection_port" translate="no">​</a></h3>
+<p>Inquires the listening port of a publishing application in the Distributed Aurora Imaging Library monitoring configuration.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Listening port</code></td><td>Specifies the listening port (an integer between 0 and 65535) that the current application will use to listen for connections from a monitoring application.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_error"><code>M_ERROR</code><a href="#m_error" class="hash-link" aria-label="Direct link to m_error" title="Direct link to m_error" translate="no">​</a></h3>
+<p>Inquires the error printing mode in effect for the current thread.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_PRINT_ENABLE</code></a>, unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_THREAD_CURRENT</code></a> is specified, in which case this setting specifies that the current thread uses the setting of the application environment.</td></tr><tr><td><code>M_PRINT_DISABLE</code></td><td>Specifies not to print error messages.</td></tr><tr><td><code>M_PRINT_ENABLE</code></td><td>Specifies to print error messages.</td></tr><tr><td><code>M_THROW_EXCEPTION</code></td><td>Specifies that when an error occurs, a .NET or Python exception will be thrown instead of a message box being displayed.</td></tr><tr><td><code>M_THROW_EXCEPTION</code></td><td>Specifies that when an error occurs, a .NET exception will be thrown instead of a message box being displayed.  &gt; <strong>Note:</strong> <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_THROW_EXCEPTION</code></a> is only valid when working in a  .NET environment.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_error_hooks"><code>M_ERROR_HOOKS</code><a href="#m_error_hooks" class="hash-link" aria-label="Direct link to m_error_hooks" title="Direct link to m_error_hooks" translate="no">​</a></h3>
+<p>Inquires whether errors generated in the current thread will trigger the user-defined function that you specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappHookFunction"><code>MappHookFunction</code></a> (with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappHookFunction"><code>M_ERROR_CURRENT</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappHookFunction"><code>M_ERROR_FATAL</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies to not trigger the user-defined function (hooked using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappHookFunction"><code>MappHookFunction</code></a>) when an error event occurs.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to trigger the user-defined function when an error event occurs, as specified in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappHookFunction"><code>MappHookFunction</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gentl_producer_count"><code>M_GENTL_PRODUCER_COUNT</code><a href="#m_gentl_producer_count" class="hash-link" aria-label="Direct link to m_gentl_producer_count" title="Direct link to m_gentl_producer_count" translate="no">​</a></h3>
+<p><strong>Board availability:</strong> GenTL, V4L2</p>
+<p>Inquires the number of different GenTL producers installed during Aurora Imaging Library installation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the number of different GenTL producers installed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gentl_producer_descriptor--n"><code>M_GENTL_PRODUCER_DESCRIPTOR + n</code><a href="#m_gentl_producer_descriptor--n" class="hash-link" aria-label="Direct link to m_gentl_producer_descriptor--n" title="Direct link to m_gentl_producer_descriptor--n" translate="no">​</a></h3>
+<p><strong>Board availability:</strong> GenTL, V4L2</p>
+<p>Inquires the path and file name of the_n_ <sup>th</sup> GenTL producer, where <em>n</em> is a number between 0 and the value returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_GENTL_PRODUCER_COUNT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>&quot;PathAndFilename&quot;</code></td><td>Specifies the path and file name of the specified GenTL producer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_installed_system_count"><code>M_INSTALLED_SYSTEM_COUNT</code><a href="#m_installed_system_count" class="hash-link" aria-label="Direct link to m_installed_system_count" title="Direct link to m_installed_system_count" translate="no">​</a></h3>
+<p>Inquires the number of different system types (drivers) installed during Aurora Imaging Library installation and the number of Distributed Aurora Imaging Library systems that are registered.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of different system types installed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_installed_system_descriptor--n"><code>M_INSTALLED_SYSTEM_DESCRIPTOR + n</code><a href="#m_installed_system_descriptor--n" class="hash-link" aria-label="Direct link to m_installed_system_descriptor--n" title="Direct link to m_installed_system_descriptor--n" translate="no">​</a></h3>
+<p>Inquires the descriptor of system type <em>n</em>, where <em>n</em> is a number between 0 and the value returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_INSTALLED_SYSTEM_COUNT</code></a>. The descriptor can be passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysAlloc"><code>MsysAlloc</code></a> to allocate the system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_installed_system_device_count--n"><code>M_INSTALLED_SYSTEM_DEVICE_COUNT + n</code><a href="#m_installed_system_device_count--n" class="hash-link" aria-label="Direct link to m_installed_system_device_count--n" title="Direct link to m_installed_system_device_count--n" translate="no">​</a></h3>
+<p>Inquires the number of installed devices of the same type as system type n, where n is a number between 0 and the value returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_INSTALLED_SYSTEM_COUNT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNKNOWN</code></td><td>Specifies that the number of devices is unknown.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the number of devices of the specified type. Note that although the driver for a system type is installed, this inquire type returns 0 if a corresponding physical device is not installed. In addition, for a GigE system type and USB3 system type, this inquire type will return 1.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_installed_system_print_name--n"><code>M_INSTALLED_SYSTEM_PRINT_NAME + n</code><a href="#m_installed_system_print_name--n" class="hash-link" aria-label="Direct link to m_installed_system_print_name--n" title="Direct link to m_installed_system_print_name--n" translate="no">​</a></h3>
+<p>Inquires the printable name of system type <em>n</em> (for example, Zebra Radient), where <em>n</em> is a number between 0 and the value returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_INSTALLED_SYSTEM_COUNT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>String</code></td><td>Specifies the printable name of system type <em>n</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_installed_system_type--n"><code>M_INSTALLED_SYSTEM_TYPE + n</code><a href="#m_installed_system_type--n" class="hash-link" aria-label="Direct link to m_installed_system_type--n" title="Direct link to m_installed_system_type--n" translate="no">​</a></h3>
+<p>Inquires the type of system type <em>n</em>, where <em>n</em> is a number between 0 and the value returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_INSTALLED_SYSTEM_COUNT</code></a>.  If a Distributed Aurora Imaging Library remote system has been registered, you can use the following macros to further inquire about the system:  - To determine whether the system is a Distributed Aurora Imaging Library remote system, use the <strong>M_IS_SYSTEM_DISTRIBUTED</strong> macro. This macro returns a non-zero value if the system is a remote system and zero if the system is local. - To remove the bit flag for Distributed Aurora Imaging Library remote systems, use the<strong>M_REAL_SYSTEM_TYPE</strong> macro. This macro returns only the system type and not the system type and remote system bit flag.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_SYSTEM_CLARITY_UHD_TYPE</code></td><td>Specifies an Aurora Imaging Library Clarity UHD system.</td></tr><tr><td><code>M_SYSTEM_CONCORD_POE_TYPE</code></td><td>Specifies an Aurora Imaging Library Concord POE system.</td></tr><tr><td><code>M_SYSTEM_GENTL_TYPE</code></td><td>Specifies an Aurora Imaging Library GenTL system.</td></tr><tr><td><code>M_SYSTEM_GEVIQ_TYPE</code></td><td>Specifies an Aurora Imaging Library GevIQ system.</td></tr><tr><td><code>M_SYSTEM_GIGE_VISION_TYPE</code></td><td>Specifies an Aurora Imaging Library GigE Vision system.</td></tr><tr><td><code>M_SYSTEM_HOST_TYPE</code></td><td>Specifies the Host.</td></tr><tr><td><code>M_SYSTEM_INDIO_TYPE</code></td><td>Specifies an Aurora Imaging Library Indio system.</td></tr><tr><td><code>M_SYSTEM_IRIS_GTX_TYPE</code></td><td>Specifies an Aurora Imaging Library Iris GTX system.</td></tr><tr><td><code>M_SYSTEM_RADIENTEVCL_TYPE</code></td><td>Specifies an Aurora Imaging Library Radient eV-CL system.</td></tr><tr><td><code>M_SYSTEM_RAPIXOCL_TYPE</code></td><td>Specifies an Aurora Imaging Library Rapixo Pro CL system.</td></tr><tr><td><code>M_SYSTEM_RAPIXOCOF_TYPE</code></td><td>Specifies an Aurora Imaging Library Rapixo CoF system.</td></tr><tr><td><code>M_SYSTEM_RAPIXOCXP_TYPE</code></td><td>Specifies an Aurora Imaging Library Rapixo CXP system.</td></tr><tr><td><code>M_SYSTEM_USB3_VISION_TYPE</code></td><td>Specifies an Aurora Imaging Library USB3 Vision system.</td></tr><tr><td><code>M_SYSTEM_V4L2_TYPE</code></td><td>Specifies an Aurora Imaging Library Video4Linux2 system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_key_serial_number--n"><code>M_KEY_SERIAL_NUMBER + n</code><a href="#m_key_serial_number--n" class="hash-link" aria-label="Direct link to m_key_serial_number--n" title="Direct link to m_key_serial_number--n" translate="no">​</a></h3>
+<p>Inquires the serial number of the_n_ <sup>th</sup>Wibu-Systems dongle, where_n_ is a number between 0 and the value returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_NUMBER_OF_KEYS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>String</code></td><td>Specifies the inquired Wibu-Systems dongle serial number.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_license_modules"><code>M_LICENSE_MODULES</code><a href="#m_license_modules" class="hash-link" aria-label="Direct link to m_license_modules" title="Direct link to m_license_modules" translate="no">​</a></h3>
+<p>Inquires the modules for which there is a valid license. The value returned will be a bitwise combination of the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_LICENSE_3DCA</code></td><td>Specifies a Camera Calibration module license that supports 3D-based camera calibration modes.</td></tr><tr><td><code>M_LICENSE_3DSUP</code></td><td>Specifies a 3D Supplement module license.</td></tr><tr><td><code>M_LICENSE_BEAD</code></td><td>Specifies a Bead module license.</td></tr><tr><td><code>M_LICENSE_BLOB</code></td><td>Specifies a Blob analysis module license.</td></tr><tr><td><code>M_LICENSE_CAL</code></td><td>Specifies a Camera Calibration module license that supports 2D-based camera calibration modes.</td></tr><tr><td><code>M_LICENSE_CLASS</code></td><td>Specifies a Classification module license.</td></tr><tr><td><code>M_LICENSE_CODE</code></td><td>Specifies a Code read/write module license.</td></tr><tr><td><code>M_LICENSE_COL</code></td><td>Specifies a Color Analysis module license.</td></tr><tr><td><code>M_LICENSE_COM</code></td><td>Specifies an industrial communication license.</td></tr><tr><td><code>M_LICENSE_DAIL</code></td><td>Specifies a Distributed Aurora Imaging Library license.</td></tr><tr><td><code>M_LICENSE_DEBUG</code></td><td>Specifies a development license.</td></tr><tr><td><code>M_LICENSE_DMR</code></td><td>Specifies a SureDotOCR module license.</td></tr><tr><td><code>M_LICENSE_EDGE</code></td><td>Specifies an Edge Finder module license.</td></tr><tr><td><code>M_LICENSE_IM</code></td><td>Specifies an Image Processing module license.</td></tr><tr><td><code>M_LICENSE_INTERFACE</code></td><td>Specifies a Zebra GigE Vision driver license.</td></tr><tr><td><code>M_LICENSE_JPEG2000</code></td><td>Specifies a JPEG2000 compression license.</td></tr><tr><td><code>M_LICENSE_JPEGSTD</code></td><td>Specifies a JPEG compression license.</td></tr><tr><td><code>M_LICENSE_LITE</code></td><td>Specifies an Aurora Imaging Library Lite module license.</td></tr><tr><td><code>M_LICENSE_MEAS</code></td><td>Specifies a Measurement module license.</td></tr><tr><td><code>M_LICENSE_MET</code></td><td>Specifies a Metrology module license.</td></tr><tr><td><code>M_LICENSE_MOD</code></td><td>Specifies a Geometric Model Finder module license.</td></tr><tr><td><code>M_LICENSE_OCR</code></td><td>Specifies an OCR module license.</td></tr><tr><td><code>M_LICENSE_PAT</code></td><td>Specifies a Pattern Matching module license.</td></tr><tr><td><code>M_LICENSE_REG</code></td><td>Specifies a Registration module license.</td></tr><tr><td><code>M_LICENSE_STR</code></td><td>Specifies a String Reader module license.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_memory"><code>M_MEMORY</code><a href="#m_memory" class="hash-link" aria-label="Direct link to m_memory" title="Direct link to m_memory" translate="no">​</a></h3>
+<p>Inquires the memory compensation mode in effect for the current thread.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_COMPENSATION_ENABLE</code></a>, unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_THREAD_CURRENT</code></a> is specified, in which case this setting specifies that the current thread uses the setting of the application environment.</td></tr><tr><td><code>M_COMPENSATION_DISABLE</code></td><td>Specifies that on-board memory compensation is disabled.</td></tr><tr><td><code>M_COMPENSATION_ENABLE</code></td><td>Specifies that on-board memory compensation is enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_non_paged_memory_free"><code>M_NON_PAGED_MEMORY_FREE</code><a href="#m_non_paged_memory_free" class="hash-link" aria-label="Direct link to m_non_paged_memory_free" title="Direct link to m_non_paged_memory_free" translate="no">​</a></h3>
+<p>Inquires the amount of free non-paged memory reserved for Aurora Imaging Library (at installation time or using the Aurora Imaging Configurator utility).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the amount of free non-paged memory, in bytes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_non_paged_memory_largest_free"><code>M_NON_PAGED_MEMORY_LARGEST_FREE</code><a href="#m_non_paged_memory_largest_free" class="hash-link" aria-label="Direct link to m_non_paged_memory_largest_free" title="Direct link to m_non_paged_memory_largest_free" translate="no">​</a></h3>
+<p>Inquires the size of the largest contiguous block of free non-paged memory reserved for Aurora Imaging Library (at installation time or using the Aurora Imaging Configurator utility).  You cannot allocate a buffer larger than this size using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc1d"><code>MbufAlloc...</code></a>function, even if the total amount of free non-paged memory is sufficient. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C23_Data_buffers/S18_Advanced_memory_management">Large non-paged Aurora Imaging Library buffers</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the size of the largest contiguous block of free non-paged memory reserved for Aurora Imaging Library.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_non_paged_memory_size"><code>M_NON_PAGED_MEMORY_SIZE</code><a href="#m_non_paged_memory_size" class="hash-link" aria-label="Direct link to m_non_paged_memory_size" title="Direct link to m_non_paged_memory_size" translate="no">​</a></h3>
+<p>Inquires the amount of the non-paged memory (DMA) reserved for Aurora Imaging Library.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the amount of the non-paged memory (DMA) reserved for Aurora Imaging Library, in bytes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_non_paged_memory_used"><code>M_NON_PAGED_MEMORY_USED</code><a href="#m_non_paged_memory_used" class="hash-link" aria-label="Direct link to m_non_paged_memory_used" title="Direct link to m_non_paged_memory_used" translate="no">​</a></h3>
+<p>Inquires the amount of non-paged memory being used.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the amount of non-paged memory being used, in bytes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_keys"><code>M_NUMBER_OF_KEYS</code><a href="#m_number_of_keys" class="hash-link" aria-label="Direct link to m_number_of_keys" title="Direct link to m_number_of_keys" translate="no">​</a></h3>
+<p>Inquires the number of Wibu-Systems dongles detected.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of Wibu-Systems dongles detected.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_parameter"><code>M_PARAMETER</code><a href="#m_parameter" class="hash-link" aria-label="Direct link to m_parameter" title="Direct link to m_parameter" translate="no">​</a></h3>
+<p>Inquires the parameter checking mode in effect for the current thread.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_CHECK_ENABLE</code></a>, unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_THREAD_CURRENT</code></a> is specified, in which case this setting specifies that the current thread uses the setting of the application environment.</td></tr><tr><td><code>M_CHECK_DISABLE</code></td><td>Specifies that checking of parameters is disabled.</td></tr><tr><td><code>M_CHECK_ENABLE</code></td><td>Specifies that checking of parameters is enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_platform_bitness"><code>M_PLATFORM_BITNESS</code><a href="#m_platform_bitness" class="hash-link" aria-label="Direct link to m_platform_bitness" title="Direct link to m_platform_bitness" translate="no">​</a></h3>
+<p>Inquires the bitness for which the application has been compiled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>32</code></td><td>Specifies that the specified application is 32-bit.</td></tr><tr><td><code>64</code></td><td>Specifies that the specified application is 64-bit.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_platform_os_type"><code>M_PLATFORM_OS_TYPE</code><a href="#m_platform_os_type" class="hash-link" aria-label="Direct link to m_platform_os_type" title="Direct link to m_platform_os_type" translate="no">​</a></h3>
+<p>Inquires the operating system under which the specified application is running.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_OS_LINUX</code></td><td>Specifies that the specified application is running under a Linux operating system.</td></tr><tr><td><code>M_OS_WINDOWS</code></td><td>Specifies that the specified application is running under a Microsoft Windows operating system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_processing"><code>M_PROCESSING</code><a href="#m_processing" class="hash-link" aria-label="Direct link to m_processing" title="Direct link to m_processing" translate="no">​</a></h3>
+<p>Inquires the processing compensation mode in effect for the current thread.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_COMPENSATION_ENABLE</code></a>, unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_THREAD_CURRENT</code></a> is specified, in which case this setting specifies that the current thread uses the setting of the application environment.</td></tr><tr><td><code>M_COMPENSATION_DISABLE</code></td><td>Specifies that on-board processing compensation is disabled.</td></tr><tr><td><code>M_COMPENSATION_ENABLE</code></td><td>Specifies that on-board processing compensation is enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_selected_version"><code>M_SELECTED_VERSION</code><a href="#m_selected_version" class="hash-link" aria-label="Direct link to m_selected_version" title="Direct link to m_selected_version" translate="no">​</a></h3>
+<p>Inquires the selected version of Aurora Imaging Library.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the version number of Aurora Imaging Library.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_trace"><code>M_TRACE</code><a href="#m_trace" class="hash-link" aria-label="Direct link to m_trace" title="Direct link to m_trace" translate="no">​</a></h3>
+<p>Inquires the trace setting, which is used to start or stop generating a trace log.  &gt; <strong>Note:</strong> Note that this inquire type can return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControl"><code>M_DEFAULT</code></a>, a trace setting which can signify either to start or to stop generating a trace log. Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_TRACE_ACTIVE</code></a> to determine if a trace log is currently being generated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default trace setting, which either enables or disables generating a trace log, based on whether Aurora Imaging Profiler (or the Interactive log) was used to start generating the log.</td></tr><tr><td><code>M_LOG_DISABLE</code></td><td>Specifies the log disable setting, which stops generating the trace log.</td></tr><tr><td><code>M_LOG_ENABLE</code></td><td>Specifies the log enable setting, which starts generating the trace log.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_trace_active"><code>M_TRACE_ACTIVE</code><a href="#m_trace_active" class="hash-link" aria-label="Direct link to m_trace_active" title="Direct link to m_trace_active" translate="no">​</a></h3>
+<p>Inquires whether a trace log is currently being generated in the current thread.  &gt; <strong>Note:</strong> Note that adding the combination constant <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>M_THREAD_CURRENT</code></a> to this inquire will result in an error.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NO</code></td><td>Specifies that a trace log is not currently being generated in the current thread.</td></tr><tr><td><code>M_YES</code></td><td>Specifies that a trace log is currently being generated in the current thread.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_version"><code>M_VERSION</code><a href="#m_version" class="hash-link" aria-label="Direct link to m_version" title="Direct link to m_version" translate="no">​</a></h3>
+<p>Inquires the version of Aurora Imaging Library.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the version of Aurora Imaging Library.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_version_string"><code>M_VERSION_STRING</code><a href="#m_version_string" class="hash-link" aria-label="Direct link to m_version_string" title="Direct link to m_version_string" translate="no">​</a></h3>
+<p>Inquires the version of Aurora Imaging Library, as a string.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>&quot;nn.nn.nnnn&quot;</code></td><td>Specifies the version of Aurora Imaging Library, as a string.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_web_connection"><code>M_WEB_CONNECTION</code><a href="#m_web_connection" class="hash-link" aria-label="Direct link to m_web_connection" title="Direct link to m_web_connection" translate="no">​</a></h3>
+<p>Inquires whether Aurora Imaging Web Library server functionality is enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that Aurora Imaging Web Library server functionality is disabled in the current application.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that Aurora Imaging Web Library server functionality is enabled in the current application.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_web_connection_port"><code>M_WEB_CONNECTION_PORT</code><a href="#m_web_connection_port" class="hash-link" aria-label="Direct link to m_web_connection_port" title="Direct link to m_web_connection_port" translate="no">​</a></h3>
+<p>Inquires the listening port used for Aurora Imaging Web Library server functionality.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt;= Value &lt;=65535</code> <em>(default)</em></td><td>Specifies the port number.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_xorg_acceleration"><code>M_XORG_ACCELERATION</code><a href="#m_xorg_acceleration" class="hash-link" aria-label="Direct link to m_xorg_acceleration" title="Direct link to m_xorg_acceleration" translate="no">​</a></h3>
+<p>Inquires whether Aurora Imaging Library can use X11 (Xorg) acceleration for display under Linux. This determines the hardware acceleration display mode.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <code>M_X11_ACCELERATION Status</code>)</em></td><td></td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-if-a-system-is-remote">Combination Constants — For inquiring if a system is remote<a href="#combination-constants--for-inquiring-if-a-system-is-remote" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring if a system is remote" title="Direct link to Combination Constants — For inquiring if a system is remote" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine if the inquired system type is remote.</p>
+</blockquote>
+<p>By default, an installed systems that is remote will have a distributed flag appended to the returned system type.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_SYSTEM_DISTRIBUTED_FLAG</code></td><td>Specifies that the system is remote.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for">Combination Constants — For<a href="#combination-constants--for" class="hash-link" aria-label="Direct link to Combination Constants — For" title="Direct link to Combination Constants — For" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify that the inquire should be limited to the current thread.</p>
+</blockquote>
+<p>In multi-thread environments, by default, you can inquire about an application setting from any thread.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_THREAD_CURRENT</code></td><td>Specifies that data to be returned should relate to the current thread.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-the-size-of-a-string">Combination Constants — For inquiring the size of a string<a href="#combination-constants--for-inquiring-the-size-of-a-string" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring the size of a string" title="Direct link to Combination Constants — For inquiring the size of a string" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the string&#x27;s length.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_size"><code>M_STRING_SIZE</code><a href="#m_string_size" class="hash-link" aria-label="Direct link to m_string_size" title="Direct link to m_string_size" translate="no">​</a></h4>
+<p>Inquires the number of characters in the string. This number accounts for every character, including the terminating null character.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-system-fingerprints">For inquiring system fingerprints<a href="#for-inquiring-system-fingerprints" class="hash-link" aria-label="Direct link to For inquiring system fingerprints" title="Direct link to For inquiring system fingerprints" translate="no">​</a></h3>
+<p>When inquired and present, the requested system fingerprint is returned. If that specific fingerprint is not present, 0 is returned. For more information about system fingerprints, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C69_Distribution_and_licensing/S10_Protecting_your_own_software_application">Protecting your own Aurora Imaging Library software application using a Zebra hardware fingerprint</a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_any_fingerprint"><code>M_ANY_FINGERPRINT</code><a href="#m_any_fingerprint" class="hash-link" aria-label="Direct link to m_any_fingerprint" title="Direct link to m_any_fingerprint" translate="no">​</a></h3>
+<p>Inquires any hardware fingerprint.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td>Specifies that no hardware that has been correctly installed has a fingerprint.</td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_concord_gige_fingerprint"><code>M_CONCORD_GIGE_FINGERPRINT</code><a href="#m_concord_gige_fingerprint" class="hash-link" aria-label="Direct link to m_concord_gige_fingerprint" title="Direct link to m_concord_gige_fingerprint" translate="no">​</a></h3>
+<p>Inquires the hardware fingerprint of a Zebra Concord GigE Vision board.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td></td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_concordpoe_fingerprint"><code>M_CONCORDPOE_FINGERPRINT</code><a href="#m_concordpoe_fingerprint" class="hash-link" aria-label="Direct link to m_concordpoe_fingerprint" title="Direct link to m_concordpoe_fingerprint" translate="no">​</a></h3>
+<p>Inquires the hardware fingerprint of a Zebra Concord PoE board.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td></td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_id_key_fingerprint"><code>M_ID_KEY_FINGERPRINT</code><a href="#m_id_key_fingerprint" class="hash-link" aria-label="Direct link to m_id_key_fingerprint" title="Direct link to m_id_key_fingerprint" translate="no">​</a></h3>
+<p>Inquires the hardware fingerprint of a hardware identification key. The hardware identification key is the device, which when connected to your USB or parallel port, you can use as a hardware fingerprint to generate a software license.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td>Specifies that the hardware identification key is not connected to the computer, or that it is not correctly installed.</td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_indio_fingerprint"><code>M_INDIO_FINGERPRINT</code><a href="#m_indio_fingerprint" class="hash-link" aria-label="Direct link to m_indio_fingerprint" title="Direct link to m_indio_fingerprint" translate="no">​</a></h3>
+<p>Inquires the hardware fingerprint of a Zebra Indio board.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td></td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_irisgtx_fingerprint"><code>M_IRISGTX_FINGERPRINT</code><a href="#m_irisgtx_fingerprint" class="hash-link" aria-label="Direct link to m_irisgtx_fingerprint" title="Direct link to m_irisgtx_fingerprint" translate="no">​</a></h3>
+<p>Inquires the hardware fingerprint of a Zebra Iris GTX smart camera.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td>Specifies that the current computer is not a Zebra Iris GTX smart camera.</td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mseries_fingerprint"><code>M_MSERIES_FINGERPRINT</code><a href="#m_mseries_fingerprint" class="hash-link" aria-label="Direct link to m_mseries_fingerprint" title="Direct link to m_mseries_fingerprint" translate="no">​</a></h3>
+<p>Inquires the hardware fingerprint of a Zebra M-Series graphics board.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td></td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_radient_fingerprint"><code>M_RADIENT_FINGERPRINT</code><a href="#m_radient_fingerprint" class="hash-link" aria-label="Direct link to m_radient_fingerprint" title="Direct link to m_radient_fingerprint" translate="no">​</a></h3>
+<p>Inquires the hardware fingerprint of a Zebra Radient board.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td></td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rapixocxp_fingerprint"><code>M_RAPIXOCXP_FINGERPRINT</code><a href="#m_rapixocxp_fingerprint" class="hash-link" aria-label="Direct link to m_rapixocxp_fingerprint" title="Direct link to m_rapixocxp_fingerprint" translate="no">​</a></h3>
+<p>Inquires the hardware fingerprint of a Zebra Rapixo CXP board.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td></td></tr><tr><td><code>Value</code></td><td>Specifies the hardware fingerprint.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-which-zebra-product-to-take-a-fingerprint-from">Combination Constants — For specifying which Zebra product to take a fingerprint from<a href="#combination-constants--for-specifying-which-zebra-product-to-take-a-fingerprint-from" class="hash-link" aria-label="Direct link to Combination Constants — For specifying which Zebra product to take a fingerprint from" title="Direct link to Combination Constants — For specifying which Zebra product to take a fingerprint from" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify which Zebra product to take the fingerprint from when there are more than one available.</p>
+</blockquote>
+<p>When multiple fingerprints of the same type are present, all similar fingerprints can be inquired using the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt;= Value &lt; 16</code></td><td>Specifies the number of fingerprints of the same type that can be inquired about.</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT</em>. If the requested information does not fit into an <em>AIL_INT</em>, this function will return <code>M_NULL</code>or truncate the information.</p>
+<p>Specifies that the board is not present in the computer, or that the board is incorrectly installed.</p>
+<p>Typically, you should not use this setting if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>ContextAppId</code></a>specifies an application context allocated on a remote computer, accessed using Distributed Aurora Imaging Library. The result will return information about a thread on the remote computer, rather than the current thread.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappHookFunction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MappHookFunction</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquireConnection"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MappInquireConnection</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextappid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ContextAppId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-about-general-types-of-application-settings" class="table-of-contents__link toc-highlight">For inquiring about general types of application settings</a></li><li><a href="#m_ail_directory_contexts" class="table-of-contents__link toc-highlight"><code>M_AIL_DIRECTORY_CONTEXTS</code></a></li><li><a href="#m_ail_directory_examples" class="table-of-contents__link toc-highlight"><code>M_AIL_DIRECTORY_EXAMPLES</code></a></li><li><a href="#m_ail_directory_images" class="table-of-contents__link toc-highlight"><code>M_AIL_DIRECTORY_IMAGES</code></a></li><li><a href="#m_ail_directory_install" class="table-of-contents__link toc-highlight"><code>M_AIL_DIRECTORY_INSTALL</code></a></li><li><a href="#m_component_auto_reselect" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_AUTO_RESELECT</code></a></li><li><a href="#m_component_auto_reselect_enabled" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_AUTO_RESELECT_ENABLED</code></a></li><li><a href="#m_current_application" class="table-of-contents__link toc-highlight"><code>M_CURRENT_APPLICATION</code></a></li><li><a href="#m_dail_connection" class="table-of-contents__link toc-highlight"><code>M_DAIL_CONNECTION</code></a></li><li><a href="#m_dail_connection_port" class="table-of-contents__link toc-highlight"><code>M_DAIL_CONNECTION_PORT</code></a></li><li><a href="#m_error" class="table-of-contents__link toc-highlight"><code>M_ERROR</code></a></li><li><a href="#m_error_hooks" class="table-of-contents__link toc-highlight"><code>M_ERROR_HOOKS</code></a></li><li><a href="#m_gentl_producer_count" class="table-of-contents__link toc-highlight"><code>M_GENTL_PRODUCER_COUNT</code></a></li><li><a href="#m_gentl_producer_descriptor--n" class="table-of-contents__link toc-highlight"><code>M_GENTL_PRODUCER_DESCRIPTOR + n</code></a></li><li><a href="#m_installed_system_count" class="table-of-contents__link toc-highlight"><code>M_INSTALLED_SYSTEM_COUNT</code></a></li><li><a href="#m_installed_system_descriptor--n" class="table-of-contents__link toc-highlight"><code>M_INSTALLED_SYSTEM_DESCRIPTOR + n</code></a></li><li><a href="#m_installed_system_device_count--n" class="table-of-contents__link toc-highlight"><code>M_INSTALLED_SYSTEM_DEVICE_COUNT + n</code></a></li><li><a href="#m_installed_system_print_name--n" class="table-of-contents__link toc-highlight"><code>M_INSTALLED_SYSTEM_PRINT_NAME + n</code></a></li><li><a href="#m_installed_system_type--n" class="table-of-contents__link toc-highlight"><code>M_INSTALLED_SYSTEM_TYPE + n</code></a></li><li><a href="#m_key_serial_number--n" class="table-of-contents__link toc-highlight"><code>M_KEY_SERIAL_NUMBER + n</code></a></li><li><a href="#m_license_modules" class="table-of-contents__link toc-highlight"><code>M_LICENSE_MODULES</code></a></li><li><a href="#m_memory" class="table-of-contents__link toc-highlight"><code>M_MEMORY</code></a></li><li><a href="#m_non_paged_memory_free" class="table-of-contents__link toc-highlight"><code>M_NON_PAGED_MEMORY_FREE</code></a></li><li><a href="#m_non_paged_memory_largest_free" class="table-of-contents__link toc-highlight"><code>M_NON_PAGED_MEMORY_LARGEST_FREE</code></a></li><li><a href="#m_non_paged_memory_size" class="table-of-contents__link toc-highlight"><code>M_NON_PAGED_MEMORY_SIZE</code></a></li><li><a href="#m_non_paged_memory_used" class="table-of-contents__link toc-highlight"><code>M_NON_PAGED_MEMORY_USED</code></a></li><li><a href="#m_number_of_keys" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_KEYS</code></a></li><li><a href="#m_parameter" class="table-of-contents__link toc-highlight"><code>M_PARAMETER</code></a></li><li><a href="#m_platform_bitness" class="table-of-contents__link toc-highlight"><code>M_PLATFORM_BITNESS</code></a></li><li><a href="#m_platform_os_type" class="table-of-contents__link toc-highlight"><code>M_PLATFORM_OS_TYPE</code></a></li><li><a href="#m_processing" class="table-of-contents__link toc-highlight"><code>M_PROCESSING</code></a></li><li><a href="#m_selected_version" class="table-of-contents__link toc-highlight"><code>M_SELECTED_VERSION</code></a></li><li><a href="#m_trace" class="table-of-contents__link toc-highlight"><code>M_TRACE</code></a></li><li><a href="#m_trace_active" class="table-of-contents__link toc-highlight"><code>M_TRACE_ACTIVE</code></a></li><li><a href="#m_version" class="table-of-contents__link toc-highlight"><code>M_VERSION</code></a></li><li><a href="#m_version_string" class="table-of-contents__link toc-highlight"><code>M_VERSION_STRING</code></a></li><li><a href="#m_web_connection" class="table-of-contents__link toc-highlight"><code>M_WEB_CONNECTION</code></a></li><li><a href="#m_web_connection_port" class="table-of-contents__link toc-highlight"><code>M_WEB_CONNECTION_PORT</code></a></li><li><a href="#m_xorg_acceleration" class="table-of-contents__link toc-highlight"><code>M_XORG_ACCELERATION</code></a></li><li><a href="#combination-constants--for-inquiring-if-a-system-is-remote" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring if a system is remote</a></li><li><a href="#combination-constants--for" class="table-of-contents__link toc-highlight">Combination Constants — For</a></li><li><a href="#combination-constants--for-inquiring-the-size-of-a-string" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring the size of a string</a></li><li><a href="#for-inquiring-system-fingerprints" class="table-of-contents__link toc-highlight">For inquiring system fingerprints</a></li><li><a href="#m_any_fingerprint" class="table-of-contents__link toc-highlight"><code>M_ANY_FINGERPRINT</code></a></li><li><a href="#m_concord_gige_fingerprint" class="table-of-contents__link toc-highlight"><code>M_CONCORD_GIGE_FINGERPRINT</code></a></li><li><a href="#m_concordpoe_fingerprint" class="table-of-contents__link toc-highlight"><code>M_CONCORDPOE_FINGERPRINT</code></a></li><li><a href="#m_id_key_fingerprint" class="table-of-contents__link toc-highlight"><code>M_ID_KEY_FINGERPRINT</code></a></li><li><a href="#m_indio_fingerprint" class="table-of-contents__link toc-highlight"><code>M_INDIO_FINGERPRINT</code></a></li><li><a href="#m_irisgtx_fingerprint" class="table-of-contents__link toc-highlight"><code>M_IRISGTX_FINGERPRINT</code></a></li><li><a href="#m_mseries_fingerprint" class="table-of-contents__link toc-highlight"><code>M_MSERIES_FINGERPRINT</code></a></li><li><a href="#m_radient_fingerprint" class="table-of-contents__link toc-highlight"><code>M_RADIENT_FINGERPRINT</code></a></li><li><a href="#m_rapixocxp_fingerprint" class="table-of-contents__link toc-highlight"><code>M_RAPIXOCXP_FINGERPRINT</code></a></li><li><a href="#combination-constants--for-specifying-which-zebra-product-to-take-a-fingerprint-from" class="table-of-contents__link toc-highlight">Combination Constants — For specifying which Zebra product to take a fingerprint from</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

@@ -1,0 +1,2207 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/disp/MdispInquire" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MdispInquire | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MdispInquire | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"disp","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"},{"@type":"ListItem","position":2,"name":"MdispInquire","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Collapse sidebar category &#x27;disp&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispAlloc"><span title="MdispAlloc" class="linkLabel_WmDU">MdispAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><span title="MdispControl" class="linkLabel_WmDU">MdispControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispFree"><span title="MdispFree" class="linkLabel_WmDU">MdispFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispGetHookInfo"><span title="MdispGetHookInfo" class="linkLabel_WmDU">MdispGetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispHookFunction"><span title="MdispHookFunction" class="linkLabel_WmDU">MdispHookFunction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><span title="MdispInquire" class="linkLabel_WmDU">MdispInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispLut"><span title="MdispLut" class="linkLabel_WmDU">MdispLut</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispPan"><span title="MdispPan" class="linkLabel_WmDU">MdispPan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><span title="MdispSelect" class="linkLabel_WmDU">MdispSelect</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelectWindow"><span title="MdispSelectWindow" class="linkLabel_WmDU">MdispSelectWindow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispZoom"><span title="MdispZoom" class="linkLabel_WmDU">MdispZoom</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span>disp</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MdispInquire</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MdispInquire</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire about a display setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT </span><span class="token function" style="color:#d73a49">MdispInquire</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    DisplayId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr    </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires about a specified display setting.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="displayid-in-ail_id"><code>DisplayId</code> <em>(in, AIL_ID)</em><a href="#displayid-in-ail_id" class="hash-link" aria-label="Direct link to displayid-in-ail_id" title="Direct link to displayid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the display.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of display setting about which to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>MdispInquire</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-all-types-of-displays">For all types of displays<a href="#for-all-types-of-displays" class="hash-link" aria-label="Direct link to For all types of displays" title="Direct link to For all types of displays" translate="no">​</a></h3>
+<p>Unless otherwise specified, the following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>InquireType</code></a> parameter settings are available for all types of displays.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_associated_graphic_list_id"><code>M_ASSOCIATED_GRAPHIC_LIST_ID</code><a href="#m_associated_graphic_list_id" class="hash-link" aria-label="Direct link to m_associated_graphic_list_id" title="Direct link to m_associated_graphic_list_id" translate="no">​</a></h3>
+<p>Inquires the identifier of the 2D graphics list.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code> <em>(default)</em></td><td>Specifies that no 2D graphics list is associated with the display.</td></tr><tr><td><code>2D graphics list identifier</code></td><td>Specifies the identifier of the 2D graphics list that is associated with the display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_background_color"><code>M_BACKGROUND_COLOR</code><a href="#m_background_color" class="hash-link" aria-label="Direct link to m_background_color" title="Direct link to m_background_color" translate="no">​</a></h3>
+<p>Inquires the background color of the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_RGB888</code></td><td>Specifies the RGB value to which the background color will be set.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code> <em>(default)</em></td><td>Specifies the color white.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>Byte-encoded RGB value</code></td><td>Specifies an encoded RGB value. To verify if the value is a byte-encoded RGB value, use the<strong>M_IS_RGB888</strong> macro. To retrieve the R, G, and B bands, use the <strong>M_RGB888_R</strong>, <strong>M_RGB888_G</strong>, and <strong>M_RGB888_B</strong> macros.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_display"><code>M_CENTER_DISPLAY</code><a href="#m_center_display" class="hash-link" aria-label="Direct link to m_center_display" title="Direct link to m_center_display" translate="no">​</a></h3>
+<p>Inquires whether a selected image buffer should be centered in the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the image buffer will not be centered in the display.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the image buffer will always be centered in the display, both in X and Y.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_display_type"><code>M_DISPLAY_TYPE</code><a href="#m_display_type" class="hash-link" aria-label="Direct link to m_display_type" title="Direct link to m_display_type" translate="no">​</a></h3>
+<p>Inquires the display type.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_EXCLUSIVE</code></td><td>Specifies that the display is an exclusive display.  &gt; <strong>Note:</strong> This display type requires <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a> to display images.</td></tr><tr><td><code>M_WEB</code></td><td>Specifies that the display is an Aurora Imaging Web Library display.  &gt; <strong>Note:</strong> This display type requires <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a> to display images.</td></tr><tr><td><code>M_WINDOWED</code></td><td>Specifies that the display is a windowed display.  &gt; <strong>Note:</strong> This display type can be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelectWindow"><code>MdispSelectWindow</code></a>. A remote display requires<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a> to display images. To inquire if a display is remote, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_EXTENDED_INIT_FLAG</code></a>.</td></tr><tr><td><code>M_WPF</code></td><td>Specifies that the display is a WPF display.  &gt; <strong>Note:</strong> This display type requires <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a> to display images.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extended_init_flag"><code>M_EXTENDED_INIT_FLAG</code><a href="#m_extended_init_flag" class="hash-link" aria-label="Direct link to m_extended_init_flag" title="Direct link to m_extended_init_flag" translate="no">​</a></h3>
+<p>Inquires the initialization flag specified upon allocating the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default display type, which can be set using the Aurora Imaging Configurator utility.</td></tr><tr><td><code>M_EXCLUSIVE</code></td><td>Specifies to present the image buffer selected for display full-screen, without a windowed border, in one of Windows desktop screens.</td></tr><tr><td><code>M_WEB</code></td><td>Specifies to present the image buffer selected for display in one or more instances of an Aurora Imaging Web Library client application (for example, running in a compatible web browser).</td></tr><tr><td><code>M_WINDOWED</code></td><td>Specifies to present the image buffer selected for display in its own window on the Windows desktop screen(s).</td></tr><tr><td><code>M_WPF</code></td><td>Specifies to present the image buffer selected for display using an AILWPFDisplay control.</td></tr><tr><td><code>M_REMOTE_DISPLAY</code></td><td>Specifies that the display is displayed on the remote computer in a Distributed Aurora Imaging Library application.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_format"><code>M_FORMAT</code><a href="#m_format" class="hash-link" aria-label="Direct link to m_format" title="Direct link to m_format" translate="no">​</a></h3>
+<p>Inquires the display&#x27;s data format.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>&quot;M_DEFAULT&quot;</code></td><td>Specifies the default display format.</td></tr><tr><td><code>M_CURRENT_RESOLUTION</code></td><td>Specifies to use the current resolution of the screen.</td></tr><tr><td><code>&quot;vcf-file-name.vcf&quot;</code></td><td>Specifies the name of the video configuration format (VCF) that defines the resolution and refresh rate to use.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_graphic_list_interactive"><code>M_GRAPHIC_LIST_INTERACTIVE</code><a href="#m_graphic_list_interactive" class="hash-link" aria-label="Direct link to m_graphic_list_interactive" title="Direct link to m_graphic_list_interactive" translate="no">​</a></h3>
+<p>Inquires whether a user can interactively modify the graphics in the 2D graphics list associated with the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the 2D graphics list associated with the display cannot be affected by user interaction.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the 2D graphics list associated with the display can be affected by user interaction.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_graphic_list_opacity"><code>M_GRAPHIC_LIST_OPACITY</code><a href="#m_graphic_list_opacity" class="hash-link" aria-label="Direct link to m_graphic_list_opacity" title="Direct link to m_graphic_list_opacity" translate="no">​</a></h3>
+<p>Inquires the opacity of annotations generated from the 2D graphics list associated with the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>M_GRAPHIC_LIST_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_interpolation_mode"><code>M_INTERPOLATION_MODE</code><a href="#m_interpolation_mode" class="hash-link" aria-label="Direct link to m_interpolation_mode" title="Direct link to m_interpolation_mode" translate="no">​</a></h3>
+<p>Inquires the type of interpolation used to display a zoomed image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AVERAGE</code></td><td>Specifies averaging interpolation.</td></tr><tr><td><code>M_INTERPOLATE</code></td><td>Specifies interpolated resizing.</td></tr><tr><td><code>M_MAX</code></td><td>Specifies an interpolation based on the maximum pixel value in the specified source image.</td></tr><tr><td><code>M_MIN</code></td><td>Specifies an interpolation based on the minimum pixel value in the specified source image.</td></tr><tr><td><code>M_NEAREST_NEIGHBOR</code> <em>(default)</em></td><td>Specifies nearest neighbor interpolation.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_keyboard_use"><code>M_KEYBOARD_USE</code><a href="#m_keyboard_use" class="hash-link" aria-label="Direct link to m_keyboard_use" title="Direct link to m_keyboard_use" translate="no">​</a></h3>
+<p>Inquires whether the user can interactively pan and zoom the display using the keyboard.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>For user-defined windowed displays, this value is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_DISABLE</code></a>; for Aurora Imaging Library windowed and exclusive displays, this value is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_ENABLE</code></a>.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that using the keyboard to perform panning and zooming is disabled.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that using the keyboard to perform panning and zooming is enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_lut_id"><code>M_LUT_ID</code><a href="#m_lut_id" class="hash-link" aria-label="Direct link to m_lut_id" title="Direct link to m_lut_id" translate="no">​</a></h3>
+<p>Inquires the identifier of the LUT buffer associated with the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that any association to a LUT buffer is removed from the specified display.</td></tr><tr><td><code>M_COLORMAP_DISTINCT_256</code></td><td>Specifies the LUT buffer with a distinct colormap as the LUT buffer that is associated with the display.</td></tr><tr><td><code>M_COLORMAP_GRAYSCALE</code></td><td>Specifies the LUT buffer with a grayscale colormap as the LUT buffer that is associated with the display.</td></tr><tr><td><code>M_COLORMAP_HOT</code></td><td>Specifies the LUT buffer with a hot colormap as the LUT buffer that is associated with the display.</td></tr><tr><td><code>M_COLORMAP_HUE</code></td><td>Specifies the LUT buffer with a hue colormap as the LUT buffer that is associated with the display.</td></tr><tr><td><code>M_COLORMAP_JET</code></td><td>Specifies the LUT buffer with a jet colormap as the LUT buffer that is associated with the display.</td></tr><tr><td><code>M_COLORMAP_SPECTRUM</code></td><td>Specifies the LUT buffer with a spectrum colormap as the LUT buffer that is associated with the display.</td></tr><tr><td><code>M_COLORMAP_TURBO</code></td><td>Specifies the LUT buffer with a turbo colormap as the LUT buffer that is associated with the display.</td></tr><tr><td><code>M_COLORMAP_WHEEL</code></td><td>Specifies the LUT buffer with a colorwheel colormap as the LUT buffer that is associated with the display.</td></tr><tr><td><code>M_PSEUDO</code></td><td>Specifies the default pseudo-color LUT buffer as the LUT buffer that is associated with the display.</td></tr><tr><td><code>LUT buffer identifier</code></td><td>Specifies the identifier of the custom LUT buffer (allocated with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc1d"><code>MbufAlloc1d</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocColor"><code>MbufAllocColor</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocColor"><code>M_LUT</code></a>) that is associated with the display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_lut_supported"><code>M_LUT_SUPPORTED</code><a href="#m_lut_supported" class="hash-link" aria-label="Direct link to m_lut_supported" title="Direct link to m_lut_supported" translate="no">​</a></h3>
+<p>Inquires whether LUTs are supported by the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NO</code></td><td>Specifies that LUTs are not supported.</td></tr><tr><td><code>M_YES</code></td><td>Specifies that LUTs are supported.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mouse_cursor_change"><code>M_MOUSE_CURSOR_CHANGE</code><a href="#m_mouse_cursor_change" class="hash-link" aria-label="Direct link to m_mouse_cursor_change" title="Direct link to m_mouse_cursor_change" translate="no">​</a></h3>
+<p>Inquires whether the mouse cursor changes shape in a display with mouse-interaction enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>For user-defined windowed displays, this value is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_DISABLE</code></a>; for Aurora Imaging Library windowed and exclusive displays, this value is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_ENABLE</code></a>.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that mouse cursor change is disabled.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that mouse cursor change is enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mouse_use"><code>M_MOUSE_USE</code><a href="#m_mouse_use" class="hash-link" aria-label="Direct link to m_mouse_use" title="Direct link to m_mouse_use" translate="no">​</a></h3>
+<p>Inquires whether the user can interactively pan and zoom the display using the mouse.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>For user-defined windowed displays, this value is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_DISABLE</code></a>; for Aurora Imaging Library windowed and exclusive displays, this value is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_ENABLE</code></a>.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that mouse-interaction will not work inside a display.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that mouse-interaction will work inside a display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number"><code>M_NUMBER</code><a href="#m_number" class="hash-link" aria-label="Direct link to m_number" title="Direct link to m_number" translate="no">​</a></h3>
+<p>Inquires the display device&#x27;s rank in the system. Note that the returned value can also be a combination of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispAlloc"><code>M_TOP</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispAlloc"><code>M_BOTTOM</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispAlloc"><code>M_CENTER</code></a>+ <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispAlloc"><code>M_LEFT</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispAlloc"><code>M_RIGHT</code></a>, specifying the position of the display device in screen arrangements of up to 3x3 screens.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that Aurora Imaging Library will use the most appropriate device for display purposes.</td></tr><tr><td><code>M_BOTTOM</code></td><td>Specifies to use the bottom-most device for an exclusive display.</td></tr><tr><td><code>M_CENTER</code></td><td>Specifies to use the center device for an exclusive display.</td></tr><tr><td><code>M_LEFT</code></td><td>Specifies to use the left-most device for an exclusive display.</td></tr><tr><td><code>M_RIGHT</code></td><td>Specifies to use the right-most device for an exclusive display.</td></tr><tr><td><code>M_TOP</code></td><td>Specifies to use the top-most device for an exclusive display.</td></tr><tr><td><code>M_BOTTOM + M_LEFT</code></td><td>Specifies to use the bottom left device for an exclusive display.</td></tr><tr><td><code>M_BOTTOM + M_RIGHT</code></td><td>Specifies to use the bottom right device for an exclusive display.</td></tr><tr><td><code>M_CENTER + M_LEFT</code></td><td>Specifies to use the center left device for an exclusive display.</td></tr><tr><td><code>M_CENTER + M_RIGHT</code></td><td>Specifies to use the center right device for an exclusive display.</td></tr><tr><td><code>M_TOP + M_LEFT</code></td><td>Specifies to use the top left device for an exclusive display.</td></tr><tr><td><code>M_TOP + M_RIGHT</code></td><td>Specifies to use the top right device for an exclusive display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overlay"><code>M_OVERLAY</code><a href="#m_overlay" class="hash-link" aria-label="Direct link to m_overlay" title="Direct link to m_overlay" translate="no">​</a></h3>
+<p>Inquires whether or not the overlay mechanism is enabled for the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to disable the overlay mechanism.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to enable the overlay mechanism.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overlay_id"><code>M_OVERLAY_ID</code><a href="#m_overlay_id" class="hash-link" aria-label="Direct link to m_overlay_id" title="Direct link to m_overlay_id" translate="no">​</a></h3>
+<p>Inquires the identifier of the overlay buffer associated with the display.  Note that the overlay buffer is a normal buffer and, knowing its Aurora Imaging Library identifier, you can perform operations on it as you would on a normal buffer (except for grabbing).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code></td><td>Specifies that there is no overlay buffer associated with the display.</td></tr><tr><td><code>Buffer identifier</code></td><td>Specifies the Aurora Imaging Library identifier of the overlay buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overlay_opacity"><code>M_OVERLAY_OPACITY</code><a href="#m_overlay_opacity" class="hash-link" aria-label="Direct link to m_overlay_opacity" title="Direct link to m_overlay_opacity" translate="no">​</a></h3>
+<p>Inquires the opacity of the display&#x27;s overlay buffer.  &gt; <strong>Note:</strong> Any pixels in the overlay image which have the keying color (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_TRANSPARENT_COLOR</code></a>) are always transparent, regardless of this setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to use partial opacity.</td></tr><tr><td><code>0 &lt;= Value &lt;= 100</code></td><td>Specifies the opacity (as a percentage), where 0 is completely transparent and 100 is completely opaque.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overlay_show"><code>M_OVERLAY_SHOW</code><a href="#m_overlay_show" class="hash-link" aria-label="Direct link to m_overlay_show" title="Direct link to m_overlay_show" translate="no">​</a></h3>
+<p>Inquires the visible state of the overlay.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the overlay buffer is not visible.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the overlay buffer is visible.</td></tr><tr><td><code>M_OPAQUE</code></td><td>Specifies that only the overlay buffer is visible.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system"><code>M_OWNER_SYSTEM</code><a href="#m_owner_system" class="hash-link" aria-label="Direct link to m_owner_system" title="Direct link to m_owner_system" translate="no">​</a></h3>
+<p>Inquires the identifier of the system on which the display has been allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT_HOST</code></td><td>Specifies the default Host system of the current Aurora Imaging Library application.</td></tr><tr><td><code>System identifier</code></td><td>Specifies a valid system identifier, previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysAlloc"><code>MsysAlloc</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pan_offset_x"><code>M_PAN_OFFSET_X</code><a href="#m_pan_offset_x" class="hash-link" aria-label="Direct link to m_pan_offset_x" title="Direct link to m_pan_offset_x" translate="no">​</a></h3>
+<p>Inquires the number of pixels in X by which the image buffer is panned.  Note that when you interactively pan the image with the mouse or keyboard, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_PAN_OFFSET_X</code></a> will reflect the offset of the image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of pixels by which the image is panned horizontally.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pan_offset_y"><code>M_PAN_OFFSET_Y</code><a href="#m_pan_offset_y" class="hash-link" aria-label="Direct link to m_pan_offset_y" title="Direct link to m_pan_offset_y" translate="no">​</a></h3>
+<p>Inquires the number of pixels in Y by which to the image buffer is panned.  Note that when you interactively pan the image with the mouse or keyboard, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_PAN_OFFSET_Y</code></a> will reflect the offset of the image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of pixels by which the image is panned vertically.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_format"><code>M_PIXEL_FORMAT</code><a href="#m_pixel_format" class="hash-link" aria-label="Direct link to m_pixel_format" title="Direct link to m_pixel_format" translate="no">​</a></h3>
+<p>Inquires the pixel format of the current display resolution set by your graphics controller. Allocating a displayable image buffer with the same format will ensure maximum performance with regards to display updates.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_BGR24</code></td><td>Specifies 24-bit BGR format.</td></tr><tr><td><code>M_BGR32</code></td><td>Specifies 32-bit BGR format.</td></tr><tr><td><code>M_MONO8</code></td><td>Specifies 8-bit monochrome format.</td></tr><tr><td><code>M_RGB15</code></td><td>Specifies 15-bit RGB format.</td></tr><tr><td><code>M_RGB16</code></td><td>Specifies 16-bit RGB format.</td></tr><tr><td><code>M_YUV16_UYVY</code></td><td>Specifies YUV16 format, stored in the UYVY order.</td></tr><tr><td><code>M_YUV16_YUYV</code></td><td>Specifies YUV16 format, stored in the YUYV order.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_region_inside_color"><code>M_REGION_INSIDE_COLOR</code><a href="#m_region_inside_color" class="hash-link" aria-label="Direct link to m_region_inside_color" title="Direct link to m_region_inside_color" translate="no">​</a></h3>
+<p>Inquires the color that will be used to clear the pixels that are part of a region of interest associated with the selected buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_RGB888</code></td><td>Specifies the RGB value to which the pixels that are part of a region will be cleared for a non 8-bit display mode.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code> <em>(default)</em></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code></td><td>Specifies the color white.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>Byte-encoded RGB value</code></td><td>Specifies an encoded RGB value. To verify if the value is a byte-encoded RGB value, use the<strong>M_IS_RGB888</strong> macro. To retrieve the R, G, and B bands, use the <strong>M_RGB888_R</strong>, <strong>M_RGB888_G</strong>, and <strong>M_RGB888_B</strong> macros.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_region_inside_show"><code>M_REGION_INSIDE_SHOW</code><a href="#m_region_inside_show" class="hash-link" aria-label="Direct link to m_region_inside_show" title="Direct link to m_region_inside_show" translate="no">​</a></h3>
+<p>Inquires how to display the pixels that are part of a region of interest associated with the selected buffer, if such a region exist.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_GRAPHIC_LIST_OPACITY</code></td><td>Specifies that pixels in the region are displayed with a color overlay using the opacity specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_GRAPHIC_LIST_OPACITY</code></a>.</td></tr><tr><td><code>M_OPAQUE</code></td><td>Specifies that pixels in the region are cleared to the color specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_REGION_INSIDE_COLOR</code></a>.</td></tr><tr><td><code>M_TRANSPARENT</code> <em>(default)</em></td><td>Specifies that pixels in the region are displayed as is.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_region_outside_color"><code>M_REGION_OUTSIDE_COLOR</code><a href="#m_region_outside_color" class="hash-link" aria-label="Direct link to m_region_outside_color" title="Direct link to m_region_outside_color" translate="no">​</a></h3>
+<p>Inquires the color that will be used to clear the pixels that are not part of a region of interest associated with the selected buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_RGB888</code></td><td>Specifies the RGB value to which the pixels that are part of a region will be cleared for a non 8-bit display mode.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code> <em>(default)</em></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code></td><td>Specifies the color white.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>Byte-encoded RGB value</code></td><td>Specifies an encoded RGB value. To verify if the value is a byte-encoded RGB value, use the<strong>M_IS_RGB888</strong> macro. To retrieve the R, G, and B bands, use the <strong>M_RGB888_R</strong>, <strong>M_RGB888_G</strong>, and <strong>M_RGB888_B</strong> macros.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_region_outside_show"><code>M_REGION_OUTSIDE_SHOW</code><a href="#m_region_outside_show" class="hash-link" aria-label="Direct link to m_region_outside_show" title="Direct link to m_region_outside_show" translate="no">​</a></h3>
+<p>Inquires how to display the pixels that are not part of a region of interest associated with the selected buffer, if such a region exist.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_GRAPHIC_LIST_OPACITY</code></td><td>Specifies that pixels outside of the region are displayed with a color overlay using the opacity specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_GRAPHIC_LIST_OPACITY</code></a>.</td></tr><tr><td><code>M_OPAQUE</code></td><td>Specifies that pixels outside of the region are cleared to the color specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_REGION_OUTSIDE_COLOR</code></a>.</td></tr><tr><td><code>M_TRANSPARENT</code> <em>(default)</em></td><td>Specifies that pixels outside of the region are displayed as is.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_restrict_cursor"><code>M_RESTRICT_CURSOR</code><a href="#m_restrict_cursor" class="hash-link" aria-label="Direct link to m_restrict_cursor" title="Direct link to m_restrict_cursor" translate="no">​</a></h3>
+<p>Inquires whether the mouse cursor is restricted so that it cannot move over the exclusive display. This inquire type is only applicable to exclusive displays.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies to permit the mouse cursor to move over the display.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to restrict the mouse cursor so that it cannot move over the display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_display"><code>M_SCALE_DISPLAY</code><a href="#m_scale_display" class="hash-link" aria-label="Direct link to m_scale_display" title="Direct link to m_scale_display" translate="no">​</a></h3>
+<p>Inquires whether a selected buffer will fill the display, maintaining its aspect ratio.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the image will not be scaled to fit the display.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to always scale the selected image buffer to fit the display, while keeping the same aspect ratio.</td></tr><tr><td><code>M_ONCE</code></td><td>Specifies to compute the scale factors corresponding to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_ENABLE</code></a> and call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispZoom"><code>MdispZoom</code></a> with these factors.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_selected"><code>M_SELECTED</code><a href="#m_selected" class="hash-link" aria-label="Direct link to m_selected" title="Direct link to m_selected" translate="no">​</a></h3>
+<p>Inquires the identifier of the image buffer currently displayed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code></td><td>Specifies that no buffer is currently being displayed.</td></tr><tr><td><code>Buffer identifier</code></td><td>Specifies the Aurora Imaging Library identifier of the image buffer selected to the display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_band"><code>M_SIZE_BAND</code><a href="#m_size_band" class="hash-link" aria-label="Direct link to m_size_band" title="Direct link to m_size_band" translate="no">​</a></h3>
+<p>Inquires the number of color bands that the display is capable of displaying.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of color bands.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_band_lut"><code>M_SIZE_BAND_LUT</code><a href="#m_size_band_lut" class="hash-link" aria-label="Direct link to m_size_band_lut" title="Direct link to m_size_band_lut" translate="no">​</a></h3>
+<p>Inquires the number of color bands of the LUT (if any) associated with the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of color bands.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_bit"><code>M_SIZE_BIT</code><a href="#m_size_bit" class="hash-link" aria-label="Direct link to m_size_bit" title="Direct link to m_size_bit" translate="no">​</a></h3>
+<p>Inquires the number of bits (depth) of the display per band.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the depth per band, in bits.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x"><code>M_SIZE_X</code><a href="#m_size_x" class="hash-link" aria-label="Direct link to m_size_x" title="Direct link to m_size_x" translate="no">​</a></h3>
+<p>Inquires the display&#x27;s width. For windowed displays, the returned value is equal to the width of the client area of the window. For exclusive displays, the returned width is the width specified in the VCF file. For Aurora Imaging Web Library displays, the returned value is equal to the width (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_SIZE_X</code></a>) of the image buffer currently selected to the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the display&#x27;s width, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y"><code>M_SIZE_Y</code><a href="#m_size_y" class="hash-link" aria-label="Direct link to m_size_y" title="Direct link to m_size_y" translate="no">​</a></h3>
+<p>Inquires the display&#x27;s height. For windowed displays, the returned value is equal to the height of the client area of the window. For exclusive displays, the returned height is the height specified in the VCF file. For Aurora Imaging Web Library displays, the returned value is equal to the height (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_SIZE_Y</code></a>) of the image buffer currently selected to the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the display&#x27;s height, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_title"><code>M_TITLE</code><a href="#m_title" class="hash-link" aria-label="Direct link to m_title" title="Direct link to m_title" translate="no">​</a></h3>
+<p>Inquires the display&#x27;s title.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>&quot;Title&quot;</code></td><td>Specifies the title of the display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transparent_color"><code>M_TRANSPARENT_COLOR</code><a href="#m_transparent_color" class="hash-link" aria-label="Direct link to m_transparent_color" title="Direct link to m_transparent_color" translate="no">​</a></h3>
+<p>Inquires the transparency (keying) color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the optimal transparency color.</td></tr><tr><td><code>M_RGB888</code></td><td>Specifies the RGB value to which to set the transparency color for a non 8-bit display mode.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code></td><td>Specifies the color white.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>Byte-encoded RGB value</code></td><td>Specifies an encoded RGB value. To verify if the value is a byte-encoded RGB value, use the<strong>M_IS_RGB888</strong> macro. To retrieve the R, G, and B bands, use the <strong>M_RGB888_R</strong>, <strong>M_RGB888_G</strong>, and <strong>M_RGB888_B</strong> macros.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_update"><code>M_UPDATE</code><a href="#m_update" class="hash-link" aria-label="Direct link to m_update" title="Direct link to m_update" translate="no">​</a></h3>
+<p>Inquires whether Aurora Imaging Library should update the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies not to update the display.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to update the display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_update_graphic_list"><code>M_UPDATE_GRAPHIC_LIST</code><a href="#m_update_graphic_list" class="hash-link" aria-label="Direct link to m_update_graphic_list" title="Direct link to m_update_graphic_list" translate="no">​</a></h3>
+<p>Inquires whether Aurora Imaging Library should update the display when modifications are made to the display&#x27;s associated 2D graphics list.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the display is not updated when the associated 2D graphics list is modified.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the display is immediately updated when the associated 2D graphics list is modified (refresh not required).</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_update_rate"><code>M_UPDATE_RATE</code><a href="#m_update_rate" class="hash-link" aria-label="Direct link to m_update_rate" title="Direct link to m_update_rate" translate="no">​</a></h3>
+<p>Inquires the display update rate. This is the number of display updates that occurred during the last second.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0</code></td><td>Specifies that the buffer selected to the display was not modified.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the display update rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_update_rate_divider"><code>M_UPDATE_RATE_DIVIDER</code><a href="#m_update_rate_divider" class="hash-link" aria-label="Direct link to m_update_rate_divider" title="Direct link to m_update_rate_divider" translate="no">​</a></h3>
+<p>Inquires how often the display should be updated with buffer modifications.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the frequency of the update.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_update_rate_max"><code>M_UPDATE_RATE_MAX</code><a href="#m_update_rate_max" class="hash-link" aria-label="Direct link to m_update_rate_max" title="Direct link to m_update_rate_max" translate="no">​</a></h3>
+<p>Inquires the maximum rate at which to perform updates.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies to perform updates as fast as possible (limited by the available bandwidth and transmission delay).</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the maximum number of updates per second.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_update_synchronization"><code>M_UPDATE_SYNCHRONIZATION</code><a href="#m_update_synchronization" class="hash-link" aria-label="Direct link to m_update_synchronization" title="Direct link to m_update_synchronization" translate="no">​</a></h3>
+<p>Inquires the update mode currently used by the display for Windows paint messages.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default update mode.</td></tr><tr><td><code>M_ASYNCHRONOUS</code></td><td>Specifies that the display is updated when possible.</td></tr><tr><td><code>M_SYNCHRONOUS</code></td><td>Specifies that the display is updated immediately.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_view_bit_shift"><code>M_VIEW_BIT_SHIFT</code><a href="#m_view_bit_shift" class="hash-link" aria-label="Direct link to m_view_bit_shift" title="Direct link to m_view_bit_shift" translate="no">​</a></h3>
+<p>Inquires the number of bits by which the buffer data gets shifted when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>M_VIEW_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>M_BIT_SHIFT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the number of bits.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_view_mode"><code>M_VIEW_MODE</code><a href="#m_view_mode" class="hash-link" aria-label="Direct link to m_view_mode" title="Direct link to m_view_mode" translate="no">​</a></h3>
+<p>Inquires how a buffer gets remapped to the display (view mode).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.</td></tr><tr><td><code>M_AUTO_SCALE</code></td><td>Specifies to remap the pixel values to the display so that the minimum and maximum values in the image (not the full range of the image buffer) are set to 0 and 255, respectively.</td></tr><tr><td><code>M_BIT_SHIFT</code></td><td>Specifies to bit-shift the pixel values of the image buffer by the specified number of bits upon updating the display.</td></tr><tr><td><code>M_MULTI_BYTES</code></td><td>Specifies to display each byte of the image buffer in separate display pixels.</td></tr><tr><td><code>M_TRANSPARENT</code></td><td>Specifies that no pixel remapping will be performed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_zoom_factor_x"><code>M_ZOOM_FACTOR_X</code><a href="#m_zoom_factor_x" class="hash-link" aria-label="Direct link to m_zoom_factor_x" title="Direct link to m_zoom_factor_x" translate="no">​</a></h3>
+<p>Inquires the zoom factor in the X-direction.  Note that when you interactively zoom the image with the mouse or keyboard, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_ZOOM_FACTOR_X</code></a> will reflect the zoom of the image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the zoom factor for the X-direction of the display.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_zoom_factor_y"><code>M_ZOOM_FACTOR_Y</code><a href="#m_zoom_factor_y" class="hash-link" aria-label="Direct link to m_zoom_factor_y" title="Direct link to m_zoom_factor_y" translate="no">​</a></h3>
+<p>Inquires the zoom factor in the Y-direction.  Note that when you interactively zoom the image with the mouse or keyboard, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>M_ZOOM_FACTOR_Y</code></a> will reflect the zoom of the image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the zoom factor for the Y-direction of the display.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-whether-the-display-was-allocated-on-a-remote-computer">Combination Constants — Returns whether the display was allocated on a remote computer<a href="#combination-constants--returns-whether-the-display-was-allocated-on-a-remote-computer" class="hash-link" aria-label="Direct link to Combination Constants — Returns whether the display was allocated on a remote computer" title="Direct link to Combination Constants — Returns whether the display was allocated on a remote computer" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether the display was allocated on a remote computer.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_REMOTE_DISPLAY</code></td><td>Specifies that the display is displayed on the remote computer in a Distributed Aurora Imaging Library application.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-getting-the-string-size">Combination Constants — For getting the string size<a href="#combination-constants--for-getting-the-string-size" class="hash-link" aria-label="Direct link to Combination Constants — For getting the string size" title="Direct link to Combination Constants — For getting the string size" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the string&#x27;s length.</p>
+</blockquote>
+<blockquote>
+<p><strong>Board availability:</strong> Clarity UHD, GenTL, GevIQ, GigE Vision, Host System, Iris GTX, Radient eV-CL, Rapixo CL, Rapixo CXP, Rapixo CoF, USB3 Vision, V4L2</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_size"><code>M_STRING_SIZE</code><a href="#m_string_size" class="hash-link" aria-label="Direct link to m_string_size" title="Direct link to m_string_size" translate="no">​</a></h4>
+<p>Retrieves the length of the string, including the terminating null character (&quot;\0&quot;).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-whether-the-display-is-an-aurora-imaging-library-window-or-a-user-defined-window">Combination Constants — Returns whether the display is an Aurora Imaging Library window or a user-defined window<a href="#combination-constants--returns-whether-the-display-is-an-aurora-imaging-library-window-or-a-user-defined-window" class="hash-link" aria-label="Direct link to Combination Constants — Returns whether the display is an Aurora Imaging Library window or a user-defined window" title="Direct link to Combination Constants — Returns whether the display is an Aurora Imaging Library window or a user-defined window" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify whether the display is an Aurora Imaging Library window or a user-defined window.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_AIL_WINDOW</code></td><td>Specifies that the display is an Aurora Imaging Library display, selected using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a>.</td></tr><tr><td><code>M_USER_WINDOW</code></td><td>Specifies that the display is a user-defined display, selected using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelectWindow"><code>MdispSelectWindow</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-all-windowed-displays">For all windowed displays<a href="#for-all-windowed-displays" class="hash-link" aria-label="Direct link to For all windowed displays" title="Direct link to For all windowed displays" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>InquireType</code></a> parameter settings are available for all windowed displays.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_annotations"><code>M_WINDOW_ANNOTATIONS</code><a href="#m_window_annotations" class="hash-link" aria-label="Direct link to m_window_annotations" title="Direct link to m_window_annotations" translate="no">​</a></h3>
+<p>Inquires whether annotations will be drawn directly to the window&#x27;s device context (DC) using GDI functions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NULL</code></td><td>Specifies to advise Aurora Imaging Library that the X display connection has not been set.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw directly to the window&#x27;s device context using GDI functions.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw directly to the window&#x27;s device context using GDI functions.</td></tr><tr><td><code>Value</code></td><td>Specifies the pointer to the X display connection.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_update_on_paint"><code>M_WINDOW_UPDATE_ON_PAINT</code><a href="#m_window_update_on_paint" class="hash-link" aria-label="Direct link to m_window_update_on_paint" title="Direct link to m_window_update_on_paint" translate="no">​</a></h3>
+<p>Inquires when the display will be updated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Allows Aurora Imaging Library to decide which message to receive before updating the display.</td></tr><tr><td><code>M_DISABLE</code></td><td>Updates the display on reception of a <code>WM_ERASEBKGND</code> message in Windows.</td></tr><tr><td><code>M_ENABLE</code></td><td>Updates the display on reception of a <code>WM_PAINT</code> message in Windows.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-aurora-imaging-library-windowed-displays">For Aurora Imaging Library windowed displays<a href="#for-aurora-imaging-library-windowed-displays" class="hash-link" aria-label="Direct link to For Aurora Imaging Library windowed displays" title="Direct link to For Aurora Imaging Library windowed displays" translate="no">​</a></h3>
+<p>The following are only available for Aurora Imaging Library windowed displays (selected using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a>) and are not available for user windowed displays (selected using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelectWindow"><code>MdispSelectWindow</code></a>):</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_full_screen"><code>M_FULL_SCREEN</code><a href="#m_full_screen" class="hash-link" aria-label="Direct link to m_full_screen" title="Direct link to m_full_screen" translate="no">​</a></h3>
+<p>Inquires whether the window should be maximized and shown without the title bar or menu (full screen mode).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the window will not be maximized and shown with the title bar and menu.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the window will be maximized and shown without the title bar or menu.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_handle"><code>M_WINDOW_HANDLE</code><a href="#m_window_handle" class="hash-link" aria-label="Direct link to m_window_handle" title="Direct link to m_window_handle" translate="no">​</a></h3>
+<p>Inquires the Windows handle (<em>HWND</em>) of the display&#x27;s window.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Windows handle of the display&#x27;s window.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_initial_position_x"><code>M_WINDOW_INITIAL_POSITION_X</code><a href="#m_window_initial_position_x" class="hash-link" aria-label="Direct link to m_window_initial_position_x" title="Direct link to m_window_initial_position_x" translate="no">​</a></h3>
+<p>Inquires the initial, left-most, X-coordinate specified for the window.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_initial_position_y"><code>M_WINDOW_INITIAL_POSITION_Y</code><a href="#m_window_initial_position_y" class="hash-link" aria-label="Direct link to m_window_initial_position_y" title="Direct link to m_window_initial_position_y" translate="no">​</a></h3>
+<p>Inquires the initial, left-most, Y-coordinate specified for the window.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_initial_size_x"><code>M_WINDOW_INITIAL_SIZE_X</code><a href="#m_window_initial_size_x" class="hash-link" aria-label="Direct link to m_window_initial_size_x" title="Direct link to m_window_initial_size_x" translate="no">​</a></h3>
+<p>Inquires the initial width of the window.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that Aurora Imaging Library will calculate the optimal width.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the width, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_initial_size_y"><code>M_WINDOW_INITIAL_SIZE_Y</code><a href="#m_window_initial_size_y" class="hash-link" aria-label="Direct link to m_window_initial_size_y" title="Direct link to m_window_initial_size_y" translate="no">​</a></h3>
+<p>Inquires the initial height of the window.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that Aurora Imaging Library will calculate the optimal height.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the height, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_maxbutton"><code>M_WINDOW_MAXBUTTON</code><a href="#m_window_maxbutton" class="hash-link" aria-label="Direct link to m_window_maxbutton" title="Direct link to m_window_maxbutton" translate="no">​</a></h3>
+<p>Inquires whether the window&#x27;s maximize button should be visible.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the button is not visible.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the button is visible.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_minbutton"><code>M_WINDOW_MINBUTTON</code><a href="#m_window_minbutton" class="hash-link" aria-label="Direct link to m_window_minbutton" title="Direct link to m_window_minbutton" translate="no">​</a></h3>
+<p>Inquires whether the window&#x27;s minimize button should be visible.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the button is not visible.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the button is visible.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_move"><code>M_WINDOW_MOVE</code><a href="#m_window_move" class="hash-link" aria-label="Direct link to m_window_move" title="Direct link to m_window_move" translate="no">​</a></h3>
+<p>Inquires whether window movement is allowed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies not to allow window movement.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to allow window movement.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_overlap"><code>M_WINDOW_OVERLAP</code><a href="#m_window_overlap" class="hash-link" aria-label="Direct link to m_window_overlap" title="Direct link to m_window_overlap" translate="no">​</a></h3>
+<p>Inquires whether the window can be overlapped by another.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies not to allow the window to be overlapped by another (keep window on top).</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to allow the window to be overlapped by another.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_resize"><code>M_WINDOW_RESIZE</code><a href="#m_window_resize" class="hash-link" aria-label="Direct link to m_window_resize" title="Direct link to m_window_resize" translate="no">​</a></h3>
+<p>Inquires whether window resizing is allowed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies not to allow window resizing.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to allow window resizing.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_show"><code>M_WINDOW_SHOW</code><a href="#m_window_show" class="hash-link" aria-label="Direct link to m_window_show" title="Direct link to m_window_show" translate="no">​</a></h3>
+<p>Inquires whether to show or hide the window.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the window should be hidden.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the window should be shown.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_size_auto_reset"><code>M_WINDOW_SIZE_AUTO_RESET</code><a href="#m_window_size_auto_reset" class="hash-link" aria-label="Direct link to m_window_size_auto_reset" title="Direct link to m_window_size_auto_reset" translate="no">​</a></h3>
+<p>Inquires whether the window should be resized when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a>.  By default, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a> automatically resizes the Aurora Imaging Library display window to be the same size of the selected buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that Aurora Imaging Library will not resize the window.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that Aurora Imaging Library will resize the window to be the same size of the selected buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_sysbutton"><code>M_WINDOW_SYSBUTTON</code><a href="#m_window_sysbutton" class="hash-link" aria-label="Direct link to m_window_sysbutton" title="Direct link to m_window_sysbutton" translate="no">​</a></h3>
+<p>Inquires whether the window system buttons (minimize, maximize, and close buttons) should be visible.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the button is not visible.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the button is visible.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_title_bar"><code>M_WINDOW_TITLE_BAR</code><a href="#m_window_title_bar" class="hash-link" aria-label="Direct link to m_window_title_bar" title="Direct link to m_window_title_bar" translate="no">​</a></h3>
+<p>Inquires whether the title bar should be visible.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the title bar is not visible.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the title bar is visible.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_window_title_bar_change"><code>M_WINDOW_TITLE_BAR_CHANGE</code><a href="#m_window_title_bar_change" class="hash-link" aria-label="Direct link to m_window_title_bar_change" title="Direct link to m_window_title_bar_change" translate="no">​</a></h3>
+<p>Inquires whether the presence of the window&#x27;s title bar can be toggled with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>M_WINDOW_TITLE_BAR</code></a> control type.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies not to allow toggling.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to allow toggling.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-user-windowed-displays">For user windowed displays<a href="#for-user-windowed-displays" class="hash-link" aria-label="Direct link to For user windowed displays" title="Direct link to For user windowed displays" translate="no">​</a></h3>
+<p>The following are only available for user windowed displays (selected using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelectWindow"><code>MdispSelectWindow</code></a>) and are not available for Aurora Imaging Library windowed displays (selected using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a>):</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gtk_mode"><code>M_GTK_MODE</code><a href="#m_gtk_mode" class="hash-link" aria-label="Direct link to m_gtk_mode" title="Direct link to m_gtk_mode" translate="no">​</a></h3>
+<p>Inquires whether the display is configured for use in a window created using the third-party GTK framework.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to configure the display for use in a window created using the GTK framework.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies not to configure the display for use in a window created using the GTK framework.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_qt_mode"><code>M_QT_MODE</code><a href="#m_qt_mode" class="hash-link" aria-label="Direct link to m_qt_mode" title="Direct link to m_qt_mode" translate="no">​</a></h3>
+<p>Inquires whether the display is configured for use in a window created using the third-party Qt framework.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to configure the display for use in a window created using the Qt framework.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to configure the display for use in a window created using the Qt framework.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tk_mode"><code>M_TK_MODE</code><a href="#m_tk_mode" class="hash-link" aria-label="Direct link to m_tk_mode" title="Direct link to m_tk_mode" translate="no">​</a></h3>
+<p>Inquires whether the display is configured for use in a window created using the third-party Tk framework.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to configure the display for use in a window created using the Tk framework.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to configure the display for use in a window created using the Tk framework.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-displays-allocated-on-a-distributed-aurora-imaging-library-remote-system-but-displayed-on-the-local-computer">For displays allocated on a Distributed Aurora Imaging Library remote system but displayed on the local computer<a href="#for-displays-allocated-on-a-distributed-aurora-imaging-library-remote-system-but-displayed-on-the-local-computer" class="hash-link" aria-label="Direct link to For displays allocated on a Distributed Aurora Imaging Library remote system but displayed on the local computer" title="Direct link to For displays allocated on a Distributed Aurora Imaging Library remote system but displayed on the local computer" translate="no">​</a></h3>
+<p>The following inquire types are only available with windowed displays allocated on a remote system but displayed on the local computer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_async_update"><code>M_ASYNC_UPDATE</code><a href="#m_async_update" class="hash-link" aria-label="Direct link to m_async_update" title="Direct link to m_async_update" translate="no">​</a></h3>
+<p>Inquires whether the data from the remote computer is transmitted to the local computer asynchronously or synchronously for display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies to use the default mode, which can be selected using the Aurora Imaging Configurator utility.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to send display updates in synchronous mode.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that data will be sent asynchronously.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_compression_type"><code>M_COMPRESSION_TYPE</code><a href="#m_compression_type" class="hash-link" aria-label="Direct link to m_compression_type" title="Direct link to m_compression_type" translate="no">​</a></h3>
+<p>Inquires the way in which data is compressed when transmitted from the remote computer to the local computer for display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies to use the default compression type, which can be selected using the Aurora Imaging Configurator utility.</td></tr><tr><td><code>M_NULL</code></td><td>Specifies that compression is disabled.</td></tr><tr><td><code>M_JPEG2000_LOSSLESS</code></td><td>Specifies that JPEG2000 lossless compression will be used.</td></tr><tr><td><code>M_JPEG2000_LOSSY</code></td><td>Specifies JPEG2000 lossy compression will be used.</td></tr><tr><td><code>M_JPEG_LOSSLESS</code></td><td>Specifies JPEG lossless compression will be used.</td></tr><tr><td><code>M_JPEG_LOSSLESS_INTERLACED</code></td><td>Specifies that JPEG lossless compression will be used in separate fields.</td></tr><tr><td><code>M_JPEG_LOSSY</code></td><td>Specifies that JPEG lossy compression will be used.</td></tr><tr><td><code>M_JPEG_LOSSY_INTERLACED</code></td><td>Specifies that JPEG lossy compression will be used in separate fields.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_q_factor"><code>M_Q_FACTOR</code><a href="#m_q_factor" class="hash-link" aria-label="Direct link to m_q_factor" title="Direct link to m_q_factor" translate="no">​</a></h3>
+<p>Inquires the quantization factor used when compressing data transmitted from the remote computer to the local computer using a lossy compression.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>1 &lt;= Value &lt;= 99</code> <em>(default)</em></td><td>Specifies the quantization factor.</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT</em>. If the requested information does not fit into an <em>AIL_INT</em>, this function will return <code>M_NULL</code>or truncate the information.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="remarks">Remarks<a href="#remarks" class="hash-link" aria-label="Direct link to Remarks" title="Direct link to Remarks" translate="no">​</a></h2>
+<blockquote>
+<p>Note that during development and at runtime, compression support requires the presence of an Aurora Imaging Library license that grants access to the compression/decompression package. This access is only granted by default with the development license dongle for the full version of Aurora Imaging Library. In other cases, you must purchase access to this package separately.</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispHookFunction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MdispHookFunction</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispLut"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MdispLut</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#displayid-in-ail_id" class="table-of-contents__link toc-highlight"><code>DisplayId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-all-types-of-displays" class="table-of-contents__link toc-highlight">For all types of displays</a></li><li><a href="#m_associated_graphic_list_id" class="table-of-contents__link toc-highlight"><code>M_ASSOCIATED_GRAPHIC_LIST_ID</code></a></li><li><a href="#m_background_color" class="table-of-contents__link toc-highlight"><code>M_BACKGROUND_COLOR</code></a></li><li><a href="#m_center_display" class="table-of-contents__link toc-highlight"><code>M_CENTER_DISPLAY</code></a></li><li><a href="#m_display_type" class="table-of-contents__link toc-highlight"><code>M_DISPLAY_TYPE</code></a></li><li><a href="#m_extended_init_flag" class="table-of-contents__link toc-highlight"><code>M_EXTENDED_INIT_FLAG</code></a></li><li><a href="#m_format" class="table-of-contents__link toc-highlight"><code>M_FORMAT</code></a></li><li><a href="#m_graphic_list_interactive" class="table-of-contents__link toc-highlight"><code>M_GRAPHIC_LIST_INTERACTIVE</code></a></li><li><a href="#m_graphic_list_opacity" class="table-of-contents__link toc-highlight"><code>M_GRAPHIC_LIST_OPACITY</code></a></li><li><a href="#m_interpolation_mode" class="table-of-contents__link toc-highlight"><code>M_INTERPOLATION_MODE</code></a></li><li><a href="#m_keyboard_use" class="table-of-contents__link toc-highlight"><code>M_KEYBOARD_USE</code></a></li><li><a href="#m_lut_id" class="table-of-contents__link toc-highlight"><code>M_LUT_ID</code></a></li><li><a href="#m_lut_supported" class="table-of-contents__link toc-highlight"><code>M_LUT_SUPPORTED</code></a></li><li><a href="#m_mouse_cursor_change" class="table-of-contents__link toc-highlight"><code>M_MOUSE_CURSOR_CHANGE</code></a></li><li><a href="#m_mouse_use" class="table-of-contents__link toc-highlight"><code>M_MOUSE_USE</code></a></li><li><a href="#m_number" class="table-of-contents__link toc-highlight"><code>M_NUMBER</code></a></li><li><a href="#m_overlay" class="table-of-contents__link toc-highlight"><code>M_OVERLAY</code></a></li><li><a href="#m_overlay_id" class="table-of-contents__link toc-highlight"><code>M_OVERLAY_ID</code></a></li><li><a href="#m_overlay_opacity" class="table-of-contents__link toc-highlight"><code>M_OVERLAY_OPACITY</code></a></li><li><a href="#m_overlay_show" class="table-of-contents__link toc-highlight"><code>M_OVERLAY_SHOW</code></a></li><li><a href="#m_owner_system" class="table-of-contents__link toc-highlight"><code>M_OWNER_SYSTEM</code></a></li><li><a href="#m_pan_offset_x" class="table-of-contents__link toc-highlight"><code>M_PAN_OFFSET_X</code></a></li><li><a href="#m_pan_offset_y" class="table-of-contents__link toc-highlight"><code>M_PAN_OFFSET_Y</code></a></li><li><a href="#m_pixel_format" class="table-of-contents__link toc-highlight"><code>M_PIXEL_FORMAT</code></a></li><li><a href="#m_region_inside_color" class="table-of-contents__link toc-highlight"><code>M_REGION_INSIDE_COLOR</code></a></li><li><a href="#m_region_inside_show" class="table-of-contents__link toc-highlight"><code>M_REGION_INSIDE_SHOW</code></a></li><li><a href="#m_region_outside_color" class="table-of-contents__link toc-highlight"><code>M_REGION_OUTSIDE_COLOR</code></a></li><li><a href="#m_region_outside_show" class="table-of-contents__link toc-highlight"><code>M_REGION_OUTSIDE_SHOW</code></a></li><li><a href="#m_restrict_cursor" class="table-of-contents__link toc-highlight"><code>M_RESTRICT_CURSOR</code></a></li><li><a href="#m_scale_display" class="table-of-contents__link toc-highlight"><code>M_SCALE_DISPLAY</code></a></li><li><a href="#m_selected" class="table-of-contents__link toc-highlight"><code>M_SELECTED</code></a></li><li><a href="#m_size_band" class="table-of-contents__link toc-highlight"><code>M_SIZE_BAND</code></a></li><li><a href="#m_size_band_lut" class="table-of-contents__link toc-highlight"><code>M_SIZE_BAND_LUT</code></a></li><li><a href="#m_size_bit" class="table-of-contents__link toc-highlight"><code>M_SIZE_BIT</code></a></li><li><a href="#m_size_x" class="table-of-contents__link toc-highlight"><code>M_SIZE_X</code></a></li><li><a href="#m_size_y" class="table-of-contents__link toc-highlight"><code>M_SIZE_Y</code></a></li><li><a href="#m_title" class="table-of-contents__link toc-highlight"><code>M_TITLE</code></a></li><li><a href="#m_transparent_color" class="table-of-contents__link toc-highlight"><code>M_TRANSPARENT_COLOR</code></a></li><li><a href="#m_update" class="table-of-contents__link toc-highlight"><code>M_UPDATE</code></a></li><li><a href="#m_update_graphic_list" class="table-of-contents__link toc-highlight"><code>M_UPDATE_GRAPHIC_LIST</code></a></li><li><a href="#m_update_rate" class="table-of-contents__link toc-highlight"><code>M_UPDATE_RATE</code></a></li><li><a href="#m_update_rate_divider" class="table-of-contents__link toc-highlight"><code>M_UPDATE_RATE_DIVIDER</code></a></li><li><a href="#m_update_rate_max" class="table-of-contents__link toc-highlight"><code>M_UPDATE_RATE_MAX</code></a></li><li><a href="#m_update_synchronization" class="table-of-contents__link toc-highlight"><code>M_UPDATE_SYNCHRONIZATION</code></a></li><li><a href="#m_view_bit_shift" class="table-of-contents__link toc-highlight"><code>M_VIEW_BIT_SHIFT</code></a></li><li><a href="#m_view_mode" class="table-of-contents__link toc-highlight"><code>M_VIEW_MODE</code></a></li><li><a href="#m_zoom_factor_x" class="table-of-contents__link toc-highlight"><code>M_ZOOM_FACTOR_X</code></a></li><li><a href="#m_zoom_factor_y" class="table-of-contents__link toc-highlight"><code>M_ZOOM_FACTOR_Y</code></a></li><li><a href="#combination-constants--returns-whether-the-display-was-allocated-on-a-remote-computer" class="table-of-contents__link toc-highlight">Combination Constants — Returns whether the display was allocated on a remote computer</a></li><li><a href="#combination-constants--for-getting-the-string-size" class="table-of-contents__link toc-highlight">Combination Constants — For getting the string size</a></li><li><a href="#combination-constants--returns-whether-the-display-is-an-aurora-imaging-library-window-or-a-user-defined-window" class="table-of-contents__link toc-highlight">Combination Constants — Returns whether the display is an Aurora Imaging Library window or a user-defined window</a></li><li><a href="#for-all-windowed-displays" class="table-of-contents__link toc-highlight">For all windowed displays</a></li><li><a href="#m_window_annotations" class="table-of-contents__link toc-highlight"><code>M_WINDOW_ANNOTATIONS</code></a></li><li><a href="#m_window_update_on_paint" class="table-of-contents__link toc-highlight"><code>M_WINDOW_UPDATE_ON_PAINT</code></a></li><li><a href="#for-aurora-imaging-library-windowed-displays" class="table-of-contents__link toc-highlight">For Aurora Imaging Library windowed displays</a></li><li><a href="#m_full_screen" class="table-of-contents__link toc-highlight"><code>M_FULL_SCREEN</code></a></li><li><a href="#m_window_handle" class="table-of-contents__link toc-highlight"><code>M_WINDOW_HANDLE</code></a></li><li><a href="#m_window_initial_position_x" class="table-of-contents__link toc-highlight"><code>M_WINDOW_INITIAL_POSITION_X</code></a></li><li><a href="#m_window_initial_position_y" class="table-of-contents__link toc-highlight"><code>M_WINDOW_INITIAL_POSITION_Y</code></a></li><li><a href="#m_window_initial_size_x" class="table-of-contents__link toc-highlight"><code>M_WINDOW_INITIAL_SIZE_X</code></a></li><li><a href="#m_window_initial_size_y" class="table-of-contents__link toc-highlight"><code>M_WINDOW_INITIAL_SIZE_Y</code></a></li><li><a href="#m_window_maxbutton" class="table-of-contents__link toc-highlight"><code>M_WINDOW_MAXBUTTON</code></a></li><li><a href="#m_window_minbutton" class="table-of-contents__link toc-highlight"><code>M_WINDOW_MINBUTTON</code></a></li><li><a href="#m_window_move" class="table-of-contents__link toc-highlight"><code>M_WINDOW_MOVE</code></a></li><li><a href="#m_window_overlap" class="table-of-contents__link toc-highlight"><code>M_WINDOW_OVERLAP</code></a></li><li><a href="#m_window_resize" class="table-of-contents__link toc-highlight"><code>M_WINDOW_RESIZE</code></a></li><li><a href="#m_window_show" class="table-of-contents__link toc-highlight"><code>M_WINDOW_SHOW</code></a></li><li><a href="#m_window_size_auto_reset" class="table-of-contents__link toc-highlight"><code>M_WINDOW_SIZE_AUTO_RESET</code></a></li><li><a href="#m_window_sysbutton" class="table-of-contents__link toc-highlight"><code>M_WINDOW_SYSBUTTON</code></a></li><li><a href="#m_window_title_bar" class="table-of-contents__link toc-highlight"><code>M_WINDOW_TITLE_BAR</code></a></li><li><a href="#m_window_title_bar_change" class="table-of-contents__link toc-highlight"><code>M_WINDOW_TITLE_BAR_CHANGE</code></a></li><li><a href="#for-user-windowed-displays" class="table-of-contents__link toc-highlight">For user windowed displays</a></li><li><a href="#m_gtk_mode" class="table-of-contents__link toc-highlight"><code>M_GTK_MODE</code></a></li><li><a href="#m_qt_mode" class="table-of-contents__link toc-highlight"><code>M_QT_MODE</code></a></li><li><a href="#m_tk_mode" class="table-of-contents__link toc-highlight"><code>M_TK_MODE</code></a></li><li><a href="#for-displays-allocated-on-a-distributed-aurora-imaging-library-remote-system-but-displayed-on-the-local-computer" class="table-of-contents__link toc-highlight">For displays allocated on a Distributed Aurora Imaging Library remote system but displayed on the local computer</a></li><li><a href="#m_async_update" class="table-of-contents__link toc-highlight"><code>M_ASYNC_UPDATE</code></a></li><li><a href="#m_compression_type" class="table-of-contents__link toc-highlight"><code>M_COMPRESSION_TYPE</code></a></li><li><a href="#m_q_factor" class="table-of-contents__link toc-highlight"><code>M_Q_FACTOR</code></a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li><li><a href="#remarks" class="table-of-contents__link toc-highlight">Remarks</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

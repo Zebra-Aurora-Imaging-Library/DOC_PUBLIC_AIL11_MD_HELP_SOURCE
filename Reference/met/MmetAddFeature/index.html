@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/met/MmetAddFeature" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MmetAddFeature | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MmetAddFeature | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"met","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"},{"@type":"ListItem","position":2,"name":"MmetAddFeature","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Collapse sidebar category &#x27;met&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><span title="MmetAddFeature" class="linkLabel_WmDU">MmetAddFeature</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddTolerance"><span title="MmetAddTolerance" class="linkLabel_WmDU">MmetAddTolerance</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAlloc"><span title="MmetAlloc" class="linkLabel_WmDU">MmetAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAllocResult"><span title="MmetAllocResult" class="linkLabel_WmDU">MmetAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetCalculate"><span title="MmetCalculate" class="linkLabel_WmDU">MmetCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><span title="MmetControl" class="linkLabel_WmDU">MmetControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetDraw"><span title="MmetDraw" class="linkLabel_WmDU">MmetDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetFree"><span title="MmetFree" class="linkLabel_WmDU">MmetFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetGetResult"><span title="MmetGetResult" class="linkLabel_WmDU">MmetGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetInquire"><span title="MmetInquire" class="linkLabel_WmDU">MmetInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetName"><span title="MmetName" class="linkLabel_WmDU">MmetName</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetPut"><span title="MmetPut" class="linkLabel_WmDU">MmetPut</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetRestore"><span title="MmetRestore" class="linkLabel_WmDU">MmetRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSave"><span title="MmetSave" class="linkLabel_WmDU">MmetSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetPosition"><span title="MmetSetPosition" class="linkLabel_WmDU">MmetSetPosition</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><span title="MmetSetRegion" class="linkLabel_WmDU">MmetSetRegion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetStream"><span title="MmetStream" class="linkLabel_WmDU">MmetStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span>met</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MmetAddFeature</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MmetAddFeature</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Add a feature to, or modify a feature of, the metrology template of a metrology context.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MmetAddFeature</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID          ContextId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">                </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64       FeatureType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64       Geometry</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">                 </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT         FeatureLabel</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">             </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64       BuildOperation</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">           </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> AIL_INT </span><span class="token operator" style="color:#393A34">*</span><span class="token plain"> FeatureLabelArrayPtr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">     </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> AIL_INT </span><span class="token operator" style="color:#393A34">*</span><span class="token plain"> SubFeatureIndexArrayPtr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT         SizeOfArray</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64       ControlFlag               </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function adds a feature to the metrology template of the specified metrology context. This function can also modify an existing feature of a metrology template. To delete features, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_DELETE</code></a>.</p>
+<p>To add several features to the template, you must call this function for each feature to add.</p>
+<p>Features can either be physically measured from the target image or constructed from a set of other features, which can be referred to as base features. When a feature is composed of several instances of the same feature type, it is considered a multiple feature. Every instance of the feature type is a subfeature of the multiple feature. A single feature is a feature that has only one instance of the feature type. All supported features are single features, except for the edgel feature (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_MEASURED</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CONSTRUCTED</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_EDGEL</code></a>) and the measured multiple point feature (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_MEASURED</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_POINT</code></a>). When adding a constructed feature that requires a point, it is possible to isolate and use a specific point subfeature of a measured multiple point feature. This is not true for the edgel feature since it is always used as a group.</p>
+<p>Every feature has a position in the metrology template. For a physically measured feature, its position can be considered to be set according to the metrology region in which it is expected to be established (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>MmetSetRegion</code></a>). By default, the metrology region is infinite (the whole target image). For a constructed feature, its position in the template is defined by the position of the features used to construct it (its base features). The position of a feature is relative to a reference coordinate system, referred to as the reference frame. The global frame is the default. If the target image is not calibrated, the global frame&#x27;s default origin (0,0) is aligned with the center of the top-left corner pixel of the target image. If the target image is calibrated, the global frame&#x27;s default origin is aligned with the origin of the relative (world) coordinate system. To change the reference frame to a local frame, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_REFERENCE_FRAME</code></a>. Local frames are coordinate systems located anywhere within the metrology template and defined as metrology features.</p>
+<p>Once a feature is added to the template, it is possible to change its position using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetPosition"><code>MmetSetPosition</code></a>. In addition, you can modify the feature so that it is constructed from a new set of base features and/or a new build operation; to do so, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>MmetAddFeature</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_MODIFY</code></a>. Note that you cannot modify a feature&#x27;s geometry.</p>
+<p>To define the acceptable geometric relationship between several features in the template or the acceptable deviation from the definition of a feature, add a geometric tolerance, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddTolerance"><code>MmetAddTolerance</code></a>. To calculate the added features and validate the geometric tolerances in the target image, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetCalculate"><code>MmetCalculate</code></a>. To change the settings of a feature in the template, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a>.</p>
+<p>When adding a constructed feature with a fit operation, or when adding a constructed edgel feature with the clone operation, you can specify base features that have a delimited metrology region (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>MmetSetRegion</code></a>). By default, Aurora Imaging Library uses an infinite metrology region (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>M_INFINITE</code></a>).</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextid-out-ail_id"><code>ContextId</code> <em>(out, AIL_ID)</em><a href="#contextid-out-ail_id" class="hash-link" aria-label="Direct link to contextid-out-ail_id" title="Direct link to contextid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the metrology context containing the template. The metrology context must have been previously allocated on the required system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAlloc"><code>MmetAlloc</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="featuretype-in-ail_int64"><code>FeatureType</code> <em>(in, AIL_INT64)</em><a href="#featuretype-in-ail_int64" class="hash-link" aria-label="Direct link to featuretype-in-ail_int64" title="Direct link to featuretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of feature to add (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CONSTRUCTED</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_MEASURED</code></a>) or specifies to modify a feature (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_MODIFY</code></a>).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="geometry-in-ail_int64"><code>Geometry</code> <em>(in, AIL_INT64)</em><a href="#geometry-in-ail_int64" class="hash-link" aria-label="Direct link to geometry-in-ail_int64" title="Direct link to geometry-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the geometric shape of the feature to add. If modifying a feature (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_MODIFY</code></a>), this parameter must be set to <code>M_DEFAULT</code>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="featurelabel-in-ail_int"><code>FeatureLabel</code> <em>(in, AIL_INT)</em><a href="#featurelabel-in-ail_int" class="hash-link" aria-label="Direct link to featurelabel-in-ail_int" title="Direct link to featurelabel-in-ail_int" translate="no">​</a></h3>
+<p>Specifies the label of the feature.</p>
+<p><em>For specifying label values</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that Aurora Imaging Library automatically selects the feature&#x27;s label value. Once a feature is added, you can inquire its label using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetInquire"><code>MmetInquire</code></a> with the feature&#x27;s index and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetInquire"><code>M_LABEL_VALUE</code></a>.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the label value. Each feature must have a unique label otherwise you will get an error. You can have an extremely high number of labels (up to <strong>M_MET_FEATURE_ID_MAX</strong>).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="buildoperation-in-ail_int64"><code>BuildOperation</code> <em>(in, AIL_INT64)</em><a href="#buildoperation-in-ail_int64" class="hash-link" aria-label="Direct link to buildoperation-in-ail_int64" title="Direct link to buildoperation-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the operation to use to build the feature.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="featurelabelarrayptr-in-ail_int"><code>FeatureLabelArrayPtr</code> *(in, <em>AIL_INT)</em><a href="#featurelabelarrayptr-in-ail_int" class="hash-link" aria-label="Direct link to featurelabelarrayptr-in-ail_int" title="Direct link to featurelabelarrayptr-in-ail_int" translate="no">​</a></h3>
+<p>Specifies the array that holds the label of every feature to use to construct the feature. Features used to construct a feature are considered to be its base features.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="subfeatureindexarrayptr-in-ail_int"><code>SubFeatureIndexArrayPtr</code> *(in, <em>AIL_INT)</em><a href="#subfeatureindexarrayptr-in-ail_int" class="hash-link" aria-label="Direct link to subfeatureindexarrayptr-in-ail_int" title="Direct link to subfeatureindexarrayptr-in-ail_int" translate="no">​</a></h3>
+<p>Specifies the array that holds the index of every subfeature to use to construct the feature. Features used to construct a feature are considered to be its base features.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sizeofarray-in-ail_int"><code>SizeOfArray</code> <em>(in, AIL_INT)</em><a href="#sizeofarray-in-ail_int" class="hash-link" aria-label="Direct link to sizeofarray-in-ail_int" title="Direct link to sizeofarray-in-ail_int" translate="no">​</a></h3>
+<p>Specifies the size of the arrays that hold the information that will be used to construct the feature (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureLabelArrayPtr</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>SubFeatureIndexArrayPtr</code></a>). When setting the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureLabelArrayPtr</code></a> parameter to <code>M_NULL</code>, set this parameter to 0.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlflag-in-ail_int64"><code>ControlFlag</code> <em>(in, AIL_INT64)</em><a href="#controlflag-in-ail_int64" class="hash-link" aria-label="Direct link to controlflag-in-ail_int64" title="Direct link to controlflag-in-ail_int64" translate="no">​</a></h3>
+<p>Reserved for future expansion and must be set to <code>M_DEFAULT</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-adding-a-constructed-feature">For adding a constructed feature<a href="#for-adding-a-constructed-feature" class="hash-link" aria-label="Direct link to For adding a constructed feature" title="Direct link to For adding a constructed feature" translate="no">​</a></h3>
+<p>To add a constructed feature, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureType</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>Geometry</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>BuildOperation</code></a> parameters can be set to the following values. Note that certain build operations for constructed features require base features, which you can specify using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureLabelArrayPtr</code></a> parameter and, if necessary, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>SubFeatureIndexArrayPtr</code></a> parameter.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_constructed"><code>M_CONSTRUCTED</code><a href="#m_constructed" class="hash-link" aria-label="Direct link to m_constructed" title="Direct link to m_constructed" translate="no">​</a></h3>
+<p>Adds a constructed feature.  Constructed features are geometrically built using base features (other features added using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>MmetAddFeature</code></a>), or they are defined by their parametric controls (set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a>). In the latter case, they are referred to as parametrically constructed features (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_PARAMETRIC</code></a>).  Constructed features built using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CLONE_FEATURE</code></a> operation are cloned from the specified base feature (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureLabelArrayPtr</code></a>). For example, an arc can be cloned from an arc feature. Cloned features can be scaled, rotated, and/or moved using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_CLONE_...</code></a>.  The base features of constructed features built using a fit operation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_FIT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_INNER_FIT</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_OUTER_FIT</code></a>) can be delimited by a metrology region. You must call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>MmetSetRegion</code></a> to specify the metrology region for each base feature. The base feature of a constructed edgel feature built using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CLONE_FEATURE</code></a> can also be delimited by a metrology region. Aurora Imaging Library only uses the edgels or points within the delimited region of the base feature to build the constructed feature; edgels or points outside the region are clipped.  For constructed features that require several points or edgels, the actual number of point and edgel features can vary. For example, if 3 points are needed to construct a feature, it is possible to provide one multiple point feature containing three points, three separate point features, or one multiple point feature containing two points and one point subfeature. Only the total number of elements is important, not the number of features. If you do not specify the subfeature indices, then all subfeatures are used.  Constructed features built with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_FIT</code></a> depend on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_FIT_TYPE</code></a> and the settings related to the type of fit selected. All fit operations will fail if their coverage is less than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_FIT_COVERAGE_MIN</code></a>.  If the constructed feature uses edgels as a source, then the fit operations are also affected by the gradient angle settings. You can adjust these using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_EDGEL_ANGLE_RANGE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_EDGEL_RELATIVE_ANGLE</code></a>. When performing a standard best fit (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a>), more importance is typically given to the edgels whose gradient orientation follows the region&#x27;s orientation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_arc"><code>M_ARC</code><a href="#m_arc" class="hash-link" aria-label="Direct link to m_arc" title="Direct link to m_arc" translate="no">​</a></h4>
+<p>Adds a constructed arc feature.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CLONE_FEATURE</code></td><td>Specifies that the arc feature is cloned from the specified base feature.</td></tr><tr><td><code>M_CONSTRUCTION</code></td><td>Specifies that the arc feature is built from a geometric construction using the specified base features. You can specify any three of the following as base features: points, circles, arcs, or local frames. For example, you can specify three point features, or one point, one circle, and one local frame feature. In all cases, Aurora Imaging Library requires three points to construct the arc. If you specify a circle or arc feature, Aurora Imaging Library takes its center point. If you specify a local frame feature, Aurora Imaging Library takes its origin point.  To build the arc, Aurora Imaging Library uses the first, second, and third point as the center, the start, and the end of the arc, respectively. If the radius formed by the first and second points is not equal to the radius formed by the first and third points, the constructed arc will pass as close as possible to both the second and third points. This occurs because arc features are circular arcs, which are portions of a circle. Therefore, every point on the arc must have the same radius. Note that arcs follow the counter-clockwise convention.  <em>[Image: MetArcConstruction.png]</em></td></tr><tr><td><code>M_FIT</code></td><td>Specifies that the arc feature is built from the arc that best fits the specified base features. You can specify three or more edgels or points as base features. It is possible to have a combination of edgels and points. The best fit arc passes as close to as much data as possible while not necessarily touching it. Note that arcs follow the counter-clockwise convention.  The angular constraints are ignored for the base features which do not have angle information.  <em>[Image: MetArcFit.png]</em></td></tr><tr><td><code>M_PARAMETRIC</code> <em>(default)</em></td><td>Specifies that the arc feature is built from the following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> parametric controls: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE_START</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE_END</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_RADIUS</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle"><code>M_CIRCLE</code><a href="#m_circle" class="hash-link" aria-label="Direct link to m_circle" title="Direct link to m_circle" translate="no">​</a></h4>
+<p>Adds a constructed circle feature.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CLONE_FEATURE</code></td><td>Specifies that the circle feature is cloned from the specified base feature.</td></tr><tr><td><code>M_CONSTRUCTION</code></td><td>Specifies that the circle feature is built from a geometric construction using the specified base features. You can specify any two of the following as base features: points, circles, arcs, or local frames. For example, you can specify two point features, or one point and one circle. In all cases, Aurora Imaging Library requires two points to construct the circle. If you specify a circle or arc feature, Aurora Imaging Library takes its center point. If you specify a local frame feature, Aurora Imaging Library takes its origin point.  To build the circle, Aurora Imaging Library uses the first point as the center of the circle, while the second point is considered to be on the circle&#x27;s contour. The distance between the two points is the new circle&#x27;s radius.</td></tr><tr><td><code>M_FIT</code></td><td>Specifies that the circle feature is built from the circle that best fits the specified base features. You can specify three or more edgels or points as base features. It is possible to have a combination of edgels and points. The best fit circle passes as close to as much data as possible while not necessarily touching it.  The angular constraints are ignored for the base features which do not have angle information.  <em>[Image: MetCircleFit.png]</em></td></tr><tr><td><code>M_INNER_FIT</code></td><td>Specifies that the circle feature is built from the best inner fit of a circle around the specified base features. You can specify three or more edgels or points as base features. It is possible to have a combination of edgels and points. The inner fit for a circle feature is the largest possible circle that does not contain any edgels or points. The circle feature is fit to the edgels or points using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a> mode. Therefore, all settings related to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a> will affect the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_INNER_FIT</code></a> circle.  The angular constraints are ignored for the base features which do not have angle information.  <em>[Image: MetCircleInnerFit.png]</em></td></tr><tr><td><code>M_OUTER_FIT</code></td><td>Specifies that the circle feature is built from the best outer fit of a circle around the specified base features. You can specify three or more edgels or points as base features. It is possible to have a combination of edgels and points. The outer fit for a circle feature is the smallest possible circle that contains all the edgels or points. The circle feature is fit to the edgels or points using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a> mode. Therefore, all settings related to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a> will affect the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_OUTER_FIT</code></a> circle.  The angular constraints are ignored for the base features which do not have angle information.  <em>[Image: MetCircleOuterFit.png]</em></td></tr><tr><td><code>M_PARAMETRIC</code> <em>(default)</em></td><td>Specifies that the circle feature is built from the following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> parametric controls: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_Y</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_RADIUS</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edgel"><code>M_EDGEL</code><a href="#m_edgel" class="hash-link" aria-label="Direct link to m_edgel" title="Direct link to m_edgel" translate="no">​</a></h4>
+<p>Adds a constructed edgel feature.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CLONE_FEATURE</code></td><td>Specifies that the edgel feature is cloned from the specified base feature.</td></tr><tr><td><code>M_COPY_FEATURE_EDGELS</code> <em>(default)</em></td><td>Specifies that the edgel feature is constructed by copying the edgels of the specified base features. You can specify physically measured features or constructed edgel features as base features.  For physically measured base features, you can restrict the operation to copy only the active edgels or only the fitted edgels of the base features, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_EDGEL_TYPE</code></a>. For constructed edgel base features, Aurora Imaging Library considers the edgels active (not fitted).</td></tr><tr><td><code>M_EXTERNAL_FEATURE</code></td><td>Specifies that the edgel feature is constructed from edgels or points established using other Aurora Imaging Library modules or third party software. Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetPut"><code>MmetPut</code></a>to add the edgels/points to the feature.</td></tr><tr><td><code>M_GROUP_EDGELS</code></td><td>Specifies that the edgel feature is constructed by grouping the edgels of the specified base features. By default, Aurora Imaging Library uses all edgels. To change this (for example, to group edgels according to the distance to a point), call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_GROUP_SELECTION_MODE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_line"><code>M_LINE</code><a href="#m_line" class="hash-link" aria-label="Direct link to m_line" title="Direct link to m_line" translate="no">​</a></h4>
+<p>Adds a constructed line feature.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANGLE</code></td><td>Specifies that the line feature is built at a specified angle from the specified linear base feature (segment or line), and passing through the specified point base feature. You can specify one or two base features.  If one base feature is specified, it must be a point. In this case, the reference line from which the angle is measured is the X-axis of the reference frame.  If two base features are specified, one must be a point and the other must be a line or a segment. The order in which you specify the base features does not matter.  To specify the angle, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE</code></a> and set a value between 0° and 360°. The angle is measured counter-clockwise, relative to the linear feature (from start to end).  <em>[Image: MetLineAngle.png]</em></td></tr><tr><td><code>M_BISECTOR</code></td><td>Specifies that the line feature is built by dividing an angle formed by the specified base features. You can specify three points or two lines as base features. By default, Aurora Imaging Library builds the feature by dividing the angle, formed by the base features, in two equal parts.  If three points are specified, the first point is used as the vertex of the angle.  <em>[Image: MetLineBisector.png]</em>  If two lines are specified, the bisector line is built where it divides the angle formed by the first line and the second line in the counter-clockwise direction.  <em>[Image: MetLineBisectorTwoLines.png]</em>  If specifying two lines as base features, you can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_LINE_BISECTOR_TYPE</code></a> to alter how the new line is built. For example, you can build the bisector line at the middle of the smallest or biggest angle formed by the two line base features.</td></tr><tr><td><code>M_CLONE_FEATURE</code></td><td>Specifies that the line feature is cloned from the specified base feature.</td></tr><tr><td><code>M_CONSTRUCTION</code></td><td>Specifies that the line feature is built from a geometric construction using the specified base features. You can specify any two of the following as base features: points, circles, arcs, or local frames. For example, you can specify two point features, or one point and one circle. In all cases, Aurora Imaging Library requires two points to construct the line. If you specify a circle or arc feature, Aurora Imaging Library takes its center point. If you specify a local frame feature, Aurora Imaging Library takes its origin point.  To build the line, Aurora Imaging Library ensures that it passes through the two points specified.</td></tr><tr><td><code>M_FIT</code></td><td>Specifies that the line feature is built from the resulting best fit of the specified base feature. You can specify a segment as the base feature.</td></tr><tr><td><code>M_PARALLEL</code></td><td>Specifies that the line feature is built parallel to the specified linear base feature (segment or line), and passing through the specified point base feature. You can specify one or two base features.  If one base feature is specified, it must be a point. In this case, the line feature is built parallel to the X-axis of the reference frame.  If two base features are specified, one must be a point and the other must be a line or a segment. The order in which you specify the base features does not matter.  <em>[Image: MetLineParallel.png]</em></td></tr><tr><td><code>M_PARAMETRIC</code> <em>(default)</em></td><td>Specifies that the line feature is built from the following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> parametric controls: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_LINE_A</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_LINE_B</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_LINE_C</code></a>.</td></tr><tr><td><code>M_PERPENDICULAR</code></td><td>Specifies that the line feature is built perpendicular to the specified linear base feature (segment or line), and passing through the specified point base feature. You can specify one or two base features.  If one base feature is specified, it must be a point. In this case, the line feature is built perpendicular to the X-axis of the reference frame.  If two base features are specified, one must be a point and the other must be a line or a segment. The order in which you specify the base features does not matter.  <em>[Image: MetLinePerpendicular.png]</em></td></tr><tr><td><code>M_SECTOR_RELATIVE</code></td><td>Specifies that the line feature is built where it divides, in two parts, an angle formed by the specified base features. You can specify three points as base features. The first point is used as the vertex of the angle.  Specify the size of the angle between the line and the first pair of points (first and second points) using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE</code></a>. Express the angle as a percentage of the total angle of all three points.  <em>[Image: MetLineSectorRelative.png]</em></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_local_frame"><code>M_LOCAL_FRAME</code><a href="#m_local_frame" class="hash-link" aria-label="Direct link to m_local_frame" title="Direct link to m_local_frame" translate="no">​</a></h4>
+<p>Adds a constructed local frame feature.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CLONE_FEATURE</code></td><td>Specifies that the local frame feature is cloned from the specified base feature.</td></tr><tr><td><code>M_CONSTRUCTION</code></td><td>Specifies that the local frame feature is built from a geometric construction using one or two specified base features. You can specify one or two of the following as base features: points, circles, arcs, or local frames. You also specify a segment if it is the only base feature.  When you specify two base features, the local frame&#x27;s origin is set at the center of the first base feature, and the local frame&#x27;s X-axis is set to pass through and in the direction of the center of the second base feature. If you specify a local frame as a base feature, Aurora Imaging Library uses its origin to construct the local frame.  <em>[Image: MetLocalFrameConstruction.png]</em>  You can also build a local frame by specifying only one base feature. Aurora Imaging Library uses the center of the specified feature as the origin of the local frame. Aurora Imaging Library sets the local frame&#x27;s X-axis at a specified angle from the X-axis of the reference frame; use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE</code></a> to specify the local frame&#x27;s angle. The angle is applied in the counter-clockwise direction. When the base feature is a segment, the origin of the local frame is set at the segment&#x27;s center; the local frame&#x27;s X-axis is aligned with the segment, pointing in the direction from the segment&#x27;s first point to its second point.  <em>[Image: MetLocalFrameConstructionPoint.png]</em></td></tr><tr><td><code>M_PARAMETRIC</code> <em>(default)</em></td><td>Specifies that the local frame feature is built from the following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> parametric controls: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_Y</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE</code></a>. Note that the angle is measured counter-clockwise, and is relative to the global frame.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_point"><code>M_POINT</code><a href="#m_point" class="hash-link" aria-label="Direct link to m_point" title="Direct link to m_point" translate="no">​</a></h4>
+<p>Adds a constructed point feature.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANGLE_ABSOLUTE</code></td><td>Specifies that the point feature is built at the specified absolute angle, on the contour of the specified base feature. You can specify either an arc or a circle as the base feature. The angle, in degrees, is relative to the start of the contour of the specified feature and is set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE</code></a>. The angle is measured counter-clockwise.  <em>[Image: MetPointAngleAbsolute.png]</em></td></tr><tr><td><code>M_ANGLE_RELATIVE</code></td><td>Specifies that the point feature is built at the specified relative angle, on the contour of the specified base feature. You can specify either an arc or a circle as the base feature. Specify the angle as a percentage, relative to the start of the contour using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE</code></a>.  <em>[Image: MetPointAngleRelative.png]</em></td></tr><tr><td><code>M_CENTER</code></td><td>Specifies that the point feature is built at the center of the specified base feature(s). You can specify one, or a combination, of the following as base features: arc, circle, edgel, local frame, point, or segment. If multiple features are provided, the point feature is built at the center of gravity of the centers of all the features.  <em>[Image: MetPointCenter.png]</em>  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CENTER</code></a> does not necessarily build a point on the feature&#x27;s edge. Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_MIDDLE</code></a> if you want to build a point at the edge&#x27;s midpoint.</td></tr><tr><td><code>M_CLONE_FEATURE</code></td><td>Specifies that the point feature is cloned from the specified base feature.</td></tr><tr><td><code>M_CLOSEST</code></td><td>Specifies that the point feature is built at the point on the first specified base feature that is, by default, closest to the other (one or more) specified base features.  <em>[Image: MetPointClosest.png]</em>  You can specify any features as the base features.  You can explicitly specify an angle at which to build the closest point between the features, by calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_DISTANCE_MODE</code></a>. This can be seen as a type of caliper feature. Aurora Imaging Library considers the specified distance mode angle at which to measure the closest distance to be relative to the first base feature. Aurora Imaging Library applies the angle counter-clockwise.</td></tr><tr><td><code>M_CLOSEST_TO_INFINITE_POINT</code></td><td>Specifies that the point feature is built, at the position on the base feature, that is the closest to an infinite point. This is a virtual point that Aurora Imaging Library establishes, at infinity, along the direction (X-axis) of the local frame. To change the angle along which to establish the infinite point, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_ANGLE</code></a>. Aurora Imaging Library measures this angle counter-clockwise, relative to the X-axis of the local frame.  <em>[Image: M_CIRCLE_ARC_CLOSEST_TO_INFINITY.png]</em>  The base features can be any feature except line, which is itself infinite (unbounded).  You can, for example, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CLOSEST_TO_INFINITE_POINT</code></a> to establish the boundaries of an edgel feature by fetching the coordinates of the constructed closest infinite points at 0°, 90, 180°, and 270° angles.</td></tr><tr><td><code>M_EXTENDED_INTERSECTION</code></td><td>Specifies that the point feature is built at the point of intersection between the extension of the first and second specified base features. Note that the following can be extended: a segment, which is extended into a line, and an arc, which is extended into a circle.  You can specify the following as base features:  - A segment feature and a segment, arc, circle, line, segment, or edgel feature. - An arc feature and a segment, arc, circle, line, or edgel feature. - A circle feature and a segment or arc feature. - A line feature and a segment or arc feature. - An edgel feature and a segment or arc feature.  If there is more than one intersection candidate, specify the index of the intersection at which to build the feature, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_OCCURRENCE</code></a>; the intersection is relative to the first feature that has a direction. The default intersection is the one indexed as 0.  <em>[Image: MetPointExtendedIntersection.png]</em></td></tr><tr><td><code>M_INTERSECTION</code></td><td>Specifies that the point feature is built at the point of intersection between the first and second specified base features.  You can specify the following as base features:  - A segment feature and a segment, arc, circle, line, or edgel feature. - An arc feature and a segment, arc, circle, line, or edgel feature. - A circle feature and a segment, arc, circle, or edgel feature. - A line feature and a segment, arc, line, or edgel feature. - An edgel feature and a segment, arc, circle, line, or edgel feature.  If there is more than one intersection candidate, specify the index of the intersection at which to build the feature, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_OCCURRENCE</code></a>; the intersection is relative to the first feature that has a direction. The default intersection is the one indexed as 0.  <em>[Image: MetPointIntersection.png]</em>  For two circle intersections, specify the intersections relative to the segment that can be created by joining the circles&#x27; centers. The first intersection obtained by scanning the first circle counter-clockwise from the segment is indexed as 0; the other is indexed at 1.  <em>[Image: MetPointIntersection2.png]</em></td></tr><tr><td><code>M_MAX_DISTANCE_POINT</code></td><td>Specifies that the point feature is built at the point on the first specified base feature that is, by default, farthest from any one point on the other (one or more) specified base features.  <em>[Image: MetPointMaxDistancePoint.png]</em>  You can specify any feature except line as the first base feature, and any feature as the other base features.</td></tr><tr><td><code>M_MAX_OF_MIN_DISTANCE_POINT</code></td><td>Specifies that the point feature is built at the point on the first specified base feature that is the farthest of all the closest points on the second base feature. This point can be considered the maximin (the greatest of all the smallest).  <em>[Image: MetPointMaxDistancePointFromAll.png]</em>  You can specify any feature except a line as the first base feature, and any feature except an edgel as the second base feature.</td></tr><tr><td><code>M_MIDDLE</code></td><td>Specifies that the point feature is built at the midpoint of the contour (edge) of the specified base feature. You can specify a segment, arc, circle, or edgel as the base feature. The middle of the contour of a circle is where the circle intersects the negative X-axis at 180°.  When using an edgel as the base feature, the point feature is built at the position of the edgel occupying the center position in the group (rounded down). For example, for an edgel feature containing 5 edgels, [Edgel0, Edgel1, Edgel2, Edgel3, Edgel4], the point is built at Edgel2&#x27;s position.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_MIDDLE</code></a> builds a point, located on the feature&#x27;s edge, that splits the edge at the halfway mark. Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CENTER</code></a> if you want to build the point feature at the center point of the specified features and not necessarily on the feature&#x27;s edge.</td></tr><tr><td><code>M_PARAMETRIC</code> <em>(default)</em></td><td>Specifies that the point feature is built from the following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> parametric controls: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_X</code></a>and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_Y</code></a>.</td></tr><tr><td><code>M_POSITION_ABSOLUTE</code></td><td>Specifies that the point feature is built at the specified position on the contour of the specified base feature. You can specify a segment, arc, circle, or edgel feature as the base feature. The position is relative to the start of the contour of the specified feature and is set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION</code></a>. In the example below, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION</code></a> has a value of 40 and the provided segment feature has a length of 120.  <em>[Image: MetPointPositionAbsolute.png]</em></td></tr><tr><td><code>M_POSITION_END</code></td><td>Specifies that the point feature is built at the end of the contour of the specified base feature.  You can specify a segment, arc, circle, or edgel feature as the base feature. Note that the end of a circle&#x27;s contour is at its rightmost side, or 360°. This is the point where the circle&#x27;s positive X-axis meets the circle, given a local origin at the circle&#x27;s center, and is the same point as its start of contour. The end of the contour of an edgel feature is the last edgel subfeature of the edgel feature.</td></tr><tr><td><code>M_POSITION_RELATIVE</code></td><td>Specifies that the point feature is built at the specified relative position on the contour of the specified base feature. You can specify a segment, arc, circle, or edgel feature as the base feature. Specify the position as a percentage of the total length of the specified feature&#x27;s contour, relative to the start of the contour, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION</code></a>. In the example below, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION</code></a> is set to 50%.  <em>[Image: MetPointPositionRelative.png]</em></td></tr><tr><td><code>M_POSITION_START</code></td><td>Specifies that the point feature is built at the start position of the contour of the specified base feature.  You can specify a segment, arc, circle, or edgel feature as the base feature. Note that the start of a circle&#x27;s contour is at its rightmost side, or 0°. This is the point where the circle&#x27;s positive X-axis meets the circle, given a local origin at the circle&#x27;s center. The start of the contour of an edgel feature is the first edgel subfeature of the edgel feature.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_segment"><code>M_SEGMENT</code><a href="#m_segment" class="hash-link" aria-label="Direct link to m_segment" title="Direct link to m_segment" translate="no">​</a></h4>
+<p>Adds a constructed segment feature.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CLONE_FEATURE</code></td><td>Specifies that the segment feature is cloned from the specified base feature.</td></tr><tr><td><code>M_CONSTRUCTION</code></td><td>Specifies that the segment feature is built from a geometric construction using the specified base features. You can specify any two of the following as base features: points, circles, arcs, or local frames. For example, you can specify two point features, or one point and one circle. In all cases, Aurora Imaging Library requires two points to construct the segment. If you specify a circle or arc feature, Aurora Imaging Library takes its center point. If you specify a local frame feature, Aurora Imaging Library takes its origin point.  To build the segment, Aurora Imaging Library uses the first point as the start of the segment and the second as the end of the segment.</td></tr><tr><td><code>M_FIT</code></td><td>Specifies that the segment feature is built from the line that best fits the specified base features. You can specify two or more edgels or points as base features. The best fit segment passes as close to as much data as possible while not necessarily touching it. The start of the segment is the extremity closest to the origin of the reference frame.  The angular constraints are ignored for the base features which do not have angle information.  <em>[Image: MetSegmentFit.png]</em></td></tr><tr><td><code>M_INNER_FIT</code></td><td>Specifies that the segment feature is built from the segment that has the best inner fit in the specified base features. You can specify two or more edgels or points as base features.  The edgels used to find the inner fit segment are the active edgels on the counter-clockwise side of the best fit segment (from start to end). These edgels are considered active edgels since they satisfy the edgel constraints set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a>. The best fit segment, whose starting point is the extremity closest to the origin of the global frame, separates the inner and outer fit regions. The inner fit segment passes through the two farthest edgels of the inner fit region such that all the edgels of the inner fit region are located on the same side of the inner fit segment. All the active edgels can be projected on the segment, so the segment&#x27;s extremities are determined by the two farthest active edgels.  The angular constraints are ignored for the base features which do not have angle information.  <em>[Image: MetSegmentInnerFit.png]</em></td></tr><tr><td><code>M_OUTER_FIT</code></td><td>Specifies that the segment feature is built from the outer fit of the specified base features. You can specify two or more edgels or points as base features.  The edgels used to find the outer fit segment are the active edgels on the clockwise side of the best fit segment, relative to its direction. These edgels are considered active edgels since they satisfy the edgel constraints set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a>. The best fit segment, whose starting point is the extremity closest to the origin of the global frame, separates the inner and outer fit regions. The outer fit segment passes through the two farthest edgels of the outer fit region such that all the edgels of the outer fit region are located on the same side of the outer fit segment. All the active edgels can be projected on the segment, so the segment&#x27;s extremities are determined by the two farthest active edgels.  The angular constraints are ignored for the base features which do not have angle information.  <em>[Image: MetSegmentOuterFit.png]</em></td></tr><tr><td><code>M_PARAMETRIC</code> <em>(default)</em></td><td>Specifies that the segment feature is built from the following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>MmetControl</code></a> parametric controls: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_START_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_START_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_END_X</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_POSITION_END_Y</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-adding-a-measured-feature">For adding a measured feature<a href="#for-adding-a-measured-feature" class="hash-link" aria-label="Direct link to For adding a measured feature" title="Direct link to For adding a measured feature" translate="no">​</a></h3>
+<p>To add a measured feature, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureType</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>Geometry</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>BuildOperation</code></a> parameters can be set to the following values.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_measured"><code>M_MEASURED</code><a href="#m_measured" class="hash-link" aria-label="Direct link to m_measured" title="Direct link to m_measured" translate="no">​</a></h3>
+<p>Adds a physically measured feature.  Measured features are built using data (contour edgels) extracted from the target image within the metrology region.  Measured features built with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_FIT</code></a> depend on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_FIT_TYPE</code></a> and the settings related to the type of fit selected. All fit operations will fail if their coverage is less than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_FIT_COVERAGE_MIN</code></a>.  Fit operations for measured features are also affected by the gradient angle settings, which you can control using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_EDGEL_ANGLE_RANGE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_EDGEL_RELATIVE_ANGLE</code></a>. When performing a standard best fit (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a>), more importance is typically given to the edgels whose gradient orientation follows the region&#x27;s orientation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_arc-1"><code>M_ARC</code><a href="#m_arc-1" class="hash-link" aria-label="Direct link to m_arc-1" title="Direct link to m_arc-1" translate="no">​</a></h4>
+<p>Adds a physically measured arc feature. In this case, you must use an infinite or a ring-sector metrology region (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>MmetSetRegion</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FIT</code> <em>(default)</em></td><td>Specifies that the measured arc feature is built using a best fit operation applied to the data (edgels) extracted from the metrology region. The best fit arc passes as close to as much data as possible while not necessarily touching it.  <em>[Image: MetArcFitForMeasured.png]</em></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle-1"><code>M_CIRCLE</code><a href="#m_circle-1" class="hash-link" aria-label="Direct link to m_circle-1" title="Direct link to m_circle-1" translate="no">​</a></h4>
+<p>Adds a physically measured circle feature. In this case, you must use an infinite or a ring metrology region (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>MmetSetRegion</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FIT</code> <em>(default)</em></td><td>Specifies that the measured circle feature is built using a best fit operation applied to the data (edgels) extracted from the metrology region. The best fit circle passes as close to as much data as possible while not necessarily touching it.  <em>[Image: MetCircleFit.png]</em></td></tr><tr><td><code>M_INNER_FIT</code></td><td>Specifies that the measured circle feature is built using the best inner fit operation applied to the data (edgels) extracted from the metrology region. The inner fit for a circle feature is the largest possible circle that does not contain any edgels. The circle feature is fit to the edgels using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a> mode. Therefore, all settings related to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a> will affect the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_INNER_FIT</code></a> circle.  <em>[Image: MetCircleInnerFit.png]</em></td></tr><tr><td><code>M_OUTER_FIT</code></td><td>Specifies that the measured circle feature is built using the best outer fit operation applied to the data (edgels) extracted from the metrology region. The outer fit for a circle feature is the smallest possible circle that contains all the edgels. The circle feature is fit to the edgels using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a> mode. Therefore, all settings related to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetControl"><code>M_STANDARD_FIT</code></a> will affect the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_OUTER_FIT</code></a> circle.  <em>[Image: MetCircleOuterFit.png]</em></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edgel-1"><code>M_EDGEL</code><a href="#m_edgel-1" class="hash-link" aria-label="Direct link to m_edgel-1" title="Direct link to m_edgel-1" translate="no">​</a></h4>
+<p>Adds a physically measured edgel feature. In this case, you must use an infinite, rectangle, ring, or ring-sector metrology region (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>MmetSetRegion</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that the measured edgel feature is built by extracting all the edgels in the metrology region.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_point-1"><code>M_POINT</code><a href="#m_point-1" class="hash-link" aria-label="Direct link to m_point-1" title="Direct link to m_point-1" translate="no">​</a></h4>
+<p>Adds a physically measured point feature. In this case, you must use an arc, infinite, or segment metrology region (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>MmetSetRegion</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FIT</code> <em>(default)</em></td><td>Specifies that the measured point feature is built using a best fit operation applied to the data (edgels) extracted from the metrology region.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_segment-1"><code>M_SEGMENT</code><a href="#m_segment-1" class="hash-link" aria-label="Direct link to m_segment-1" title="Direct link to m_segment-1" translate="no">​</a></h4>
+<p>Adds a physically measured segment feature. In this case, you must use an infinite, rectangle, or ring-sector metrology region (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetSetRegion"><code>MmetSetRegion</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FIT</code> <em>(default)</em></td><td>Specifies that the measured segment feature is built from the line that best fits the data (edgels) extracted from the metrology region. The best fit segment passes as close to as much data as possible while not necessarily touching it. The start of the segment is the extremity closest to the origin of the global frame.  <em>[Image: MetSegmentFitForMeasured.png]</em></td></tr><tr><td><code>M_INNER_FIT</code></td><td>Specifies that the measured segment feature is built from the segment that has the best inner fit applied to the data (edgels) extracted from the metrology region. For more information on how an inner fit segment differs from a best fit segment, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CONSTRUCTED</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_SEGMENT</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_INNER_FIT</code></a>.</td></tr><tr><td><code>M_OUTER_FIT</code></td><td>Specifies that the measured segment feature is built from the segment that has the best outer fit applied to the data (edgels) extracted from the metrology region. For more information on how an outer fit segment differs from a best fit segment, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_CONSTRUCTED</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_SEGMENT</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>M_OUTER_FIT</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-modifying-a-feature">For modifying a feature<a href="#for-modifying-a-feature" class="hash-link" aria-label="Direct link to For modifying a feature" title="Direct link to For modifying a feature" translate="no">​</a></h3>
+<p>To modify a feature, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureType</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>Geometry</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>BuildOperation</code></a> parameters can be set to the following values.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_modify"><code>M_MODIFY</code><a href="#m_modify" class="hash-link" aria-label="Direct link to m_modify" title="Direct link to m_modify" translate="no">​</a></h3>
+<p>Modifies the build operation of the specified feature, and/or for a constructed feature, modifies its base features, which is the set of features used to build the constructed feature.  To specify the new features from which to construct the specified feature, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureLabelArrayPtr</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>SubFeatureIndexArrayPtr</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h4>
+<p>Specifies to use the current geometry of the feature. The selected feature&#x27;s geometry cannot be changed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies to change only the features from which the selected feature is built (its base features) and that the selected feature&#x27;s build operation should not be changed.</td></tr><tr><td><code>BuildOperation</code></td><td>Specifies a new build operation for the selected feature. The new build operation must be appropriate for the feature&#x27;s geometry. See the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/AddConstructedFeature.md"><code>AddConstructedFeature</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/AddMeasuredFeature.md"><code>AddMeasuredFeature</code></a> table for possible build operations given the feature&#x27;s geometry.  &gt; <strong>Note:</strong> When modifying a constructed feature, you must pass the list of base features from which to construct the specified feature (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>FeatureLabelArrayPtr</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddFeature"><code>SubFeatureIndexArrayPtr</code></a>), even if you only need to modify the build operation.</td></tr></tbody></table>
+<p>Note that the start of a circle&#x27;s contour is at its rightmost side, or 0°. This is the point where the circle&#x27;s positive X-axis meets the circle, given a local origin at the circle&#x27;s center.</p>
+<p>Note that the start of a circle&#x27;s contour is at its rightmost side, or 0°. This is the point where the circle&#x27;s positive X-axis meets the circle, given a local origin at the circle&#x27;s center. The start of the contour of an edgel feature is the first edgel subfeature of the edgel feature.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">met</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/MmetAddTolerance"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MmetAddTolerance</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#featuretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>FeatureType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#geometry-in-ail_int64" class="table-of-contents__link toc-highlight"><code>Geometry</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#featurelabel-in-ail_int" class="table-of-contents__link toc-highlight"><code>FeatureLabel</code> <em>(in, AIL_INT)</em></a></li><li><a href="#buildoperation-in-ail_int64" class="table-of-contents__link toc-highlight"><code>BuildOperation</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#featurelabelarrayptr-in-ail_int" class="table-of-contents__link toc-highlight"><code>FeatureLabelArrayPtr</code> *(in, <em>AIL_INT)</em></a></li><li><a href="#subfeatureindexarrayptr-in-ail_int" class="table-of-contents__link toc-highlight"><code>SubFeatureIndexArrayPtr</code> *(in, <em>AIL_INT)</em></a></li><li><a href="#sizeofarray-in-ail_int" class="table-of-contents__link toc-highlight"><code>SizeOfArray</code> <em>(in, AIL_INT)</em></a></li><li><a href="#controlflag-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlFlag</code> <em>(in, AIL_INT64)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-adding-a-constructed-feature" class="table-of-contents__link toc-highlight">For adding a constructed feature</a></li><li><a href="#m_constructed" class="table-of-contents__link toc-highlight"><code>M_CONSTRUCTED</code></a></li><li><a href="#for-adding-a-measured-feature" class="table-of-contents__link toc-highlight">For adding a measured feature</a></li><li><a href="#m_measured" class="table-of-contents__link toc-highlight"><code>M_MEASURED</code></a></li><li><a href="#for-modifying-a-feature" class="table-of-contents__link toc-highlight">For modifying a feature</a></li><li><a href="#m_modify" class="table-of-contents__link toc-highlight"><code>M_MODIFY</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

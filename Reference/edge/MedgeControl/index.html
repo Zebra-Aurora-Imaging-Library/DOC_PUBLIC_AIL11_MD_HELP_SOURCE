@@ -1,0 +1,2887 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/edge/MedgeControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MedgeControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MedgeControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"edge","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"},{"@type":"ListItem","position":2,"name":"MedgeControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Collapse sidebar category &#x27;edge&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><span title="MedgeAlloc" class="linkLabel_WmDU">MedgeAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAllocResult"><span title="MedgeAllocResult" class="linkLabel_WmDU">MedgeAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><span title="MedgeCalculate" class="linkLabel_WmDU">MedgeCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><span title="MedgeControl" class="linkLabel_WmDU">MedgeControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeDraw"><span title="MedgeDraw" class="linkLabel_WmDU">MedgeDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeFree"><span title="MedgeFree" class="linkLabel_WmDU">MedgeFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><span title="MedgeGetNeighbors" class="linkLabel_WmDU">MedgeGetNeighbors</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetResult"><span title="MedgeGetResult" class="linkLabel_WmDU">MedgeGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeInquire"><span title="MedgeInquire" class="linkLabel_WmDU">MedgeInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeMask"><span title="MedgeMask" class="linkLabel_WmDU">MedgeMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgePut"><span title="MedgePut" class="linkLabel_WmDU">MedgePut</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeRestore"><span title="MedgeRestore" class="linkLabel_WmDU">MedgeRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeSave"><span title="MedgeSave" class="linkLabel_WmDU">MedgeSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeSelect"><span title="MedgeSelect" class="linkLabel_WmDU">MedgeSelect</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeStream"><span title="MedgeStream" class="linkLabel_WmDU">MedgeStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span>edge</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MedgeControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MedgeControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control an Edge Finder context or an Edge Finder result buffer setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MedgeControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextOrResultId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function sets the specified control for either an Edge Finder context or an Edge Finder result buffer. For Edge Finder contexts, these settings control the execution of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><code>MedgeCalculate</code></a> operations and select which edge features <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><code>MedgeCalculate</code></a> should calculate. For Edge Finder result buffers, these settings control the post manipulation of results. For example, to draw a zoomed region of the source image that was used to calculate results, the drawing control values must be appropriately set. Similarly, to select edges based on the proximity of an edge or edges to a specified point, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEAREST_NEIGHBOR_RADIUS</code></a> must be appropriately set. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeDraw"><code>MedgeDraw</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeSelect"><code>MedgeSelect</code></a>.</p>
+<p>All control settings can typically be inquired with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeInquire"><code>MedgeInquire</code></a>.</p>
+<p>For new context settings to take effect, you must calculate the settings, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><code>MedgeCalculate</code></a>.</p>
+<p>Note that some control settings have post-calculation restrictions. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C10_Edge_Finder/S07_Calculating_and_retrieving_results">Post-calculation</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultid-out-ail_id"><code>ContextOrResultId</code> <em>(out, AIL_ID)</em><a href="#contextorresultid-out-ail_id" class="hash-link" aria-label="Direct link to contextorresultid-out-ail_id" title="Direct link to contextorresultid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies either the Edge Finder context or the Edge Finder result buffer whose settings you want to modify. The Edge Finder context or the Edge Finder result buffer must have been previously allocated on the required system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>MedgeAlloc</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAllocResult"><code>MedgeAllocResult</code></a>, respectively.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the setting&#x27;s new value.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-for-object-contours-and-line-crests">For operation settings for object contours and line crests<a href="#for-operation-settings-for-object-contours-and-line-crests" class="hash-link" aria-label="Direct link to For operation settings for object contours and line crests" title="Direct link to For operation settings for object contours and line crests" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlValue</code></a> parameter settings are used to control the Edge Finder context operation settings and can be specified for both <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts, unless otherwise specified.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_accuracy"><code>M_ACCURACY</code><a href="#m_accuracy" class="hash-link" aria-label="Direct link to m_accuracy" title="Direct link to m_accuracy" translate="no">​</a></h3>
+<p>Sets the edgel accuracy of the edge extraction. Accuracy depends on the image&#x27;s dynamic range, sharpness, and noise. The best accuracy is achieved in well-contrasted noise-free images.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that edgel accuracy will be disabled. Edgels will be calculated with pixel accuracy.</td></tr><tr><td><code>M_HIGH</code> <em>(default)</em></td><td>Specifies high accuracy. Edgels will be calculated with subpixel accuracy.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies very high accuracy. Edgels will be calculated with very precise subpixel accuracy. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_VERY_HIGH</code></a> uses a classical camera model to compensate for any pixel-distortion aberration.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_accuracy"><code>M_ANGLE_ACCURACY</code><a href="#m_angle_accuracy" class="hash-link" aria-label="Direct link to m_angle_accuracy" title="Direct link to m_angle_accuracy" translate="no">​</a></h3>
+<p>Sets the precision with which to estimate edgel angles when extracting edges.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ANGLE_ACCURACY</code></a> can only be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> Edge Finder contexts.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code> <em>(default)</em></td><td>Specifies high precision. The angle estimation is performed in increments of 360/256 degrees.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies low precision. The angle estimation is performed in increments of 45 degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_chain_all_neighbors"><code>M_CHAIN_ALL_NEIGHBORS</code><a href="#m_chain_all_neighbors" class="hash-link" aria-label="Direct link to m_chain_all_neighbors" title="Direct link to m_chain_all_neighbors" translate="no">​</a></h3>
+<p>Sets how edge chains are built. Edge chains are built using an 8-connected lattice.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that edge chains are built with the least amount of edgel information possible.  <em>[Image: chainneighborsdisable.png]</em></td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that edge chains are built with as much edgel information as possible.  Enabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CHAIN_ALL_NEIGHBORS</code></a> can result in slightly longer calculations, however, the edge chain will contain more edgel information.  <em>[Image: chainneighborsenable.png]</em></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detail_level"><code>M_DETAIL_LEVEL</code><a href="#m_detail_level" class="hash-link" aria-label="Direct link to m_detail_level" title="Direct link to m_detail_level" translate="no">​</a></h3>
+<p>Sets the level of details to extract from the image. The detail level determines what is considered an edge/background. A higher detail level will include more edges than a lower detail level.  Essentially, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DETAIL_LEVEL</code></a> sets the threshold mode of the Edge Finder context. Note that an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DETAIL_LEVEL</code></a> setting overrides an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_MODE</code></a> setting.  Typically, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DETAIL_LEVEL</code></a> is used when interfacing with the Aurora Imaging Library Geometric Model Finder module. Otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_MODE</code></a> should be used instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code></td><td>Sets the detail level to high.</td></tr><tr><td><code>M_MEDIUM</code> <em>(default)</em></td><td>Sets the detail level to medium.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Sets the detail level to very high.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extraction_scale"><code>M_EXTRACTION_SCALE</code><a href="#m_extraction_scale" class="hash-link" aria-label="Direct link to m_extraction_scale" title="Direct link to m_extraction_scale" translate="no">​</a></h3>
+<p>Sets the scale of the image at which to do the edge extraction. Once the extraction is complete, the results are scaled to the original scale of the image.  An extraction scale less than one speeds up the calculation or the search but can result in a less reliable result, including, the loss of important details and/or a reduction in the accuracy of the search results.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_EXTRACTION_SCALE</code></a> is for advanced users of the EdgeFinder module. The default setting usually provides the most accurate search results.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the extraction scale.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_filter_smoothness"><code>M_FILTER_SMOOTHNESS</code><a href="#m_filter_smoothness" class="hash-link" aria-label="Direct link to m_filter_smoothness" title="Direct link to m_filter_smoothness" translate="no">​</a></h3>
+<p>Sets the degree of smoothness (strength of denoising) applied by the filter during the neighborhood operation.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILTER_SMOOTHNESS</code></a> only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILTER_TYPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DERICHE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SHEN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the smoothness value.  A value of 100.0 results in a strong noise reduction effect, while a value of 0.0 has almost no noise reduction effect.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_filter_type"><code>M_FILTER_TYPE</code><a href="#m_filter_type" class="hash-link" aria-label="Direct link to m_filter_type" title="Direct link to m_filter_type" translate="no">​</a></h3>
+<p>Sets the type of filter used when performing the neighborhood operation used to extract edges. The type of filter determines the distribution of the neighborhoods&#x27; influence.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DERICHE</code></td><td>Specifies a Deriche infinite support filter. This is an exponential weighting function, of the general form:  <em>[Image: DericheFunction.png]</em>  Deriche is an Infinite Impulse Response (IIR) filter.  For the Deriche filter, the neighborhoods&#x27; influence decreases much slower as the distance from the central pixel increases, compared to the Shen-Castan filter (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SHEN</code></a>).  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DERICHE</code></a> can be used with both <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts. Typically, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DERICHE</code></a> is used for unusually thick crests.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DERICHE</code></a> allows you to use Edge Finder&#x27;s smoothing capabilities. To do so, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILTER_SMOOTHNESS</code></a>.</td></tr><tr><td><code>M_FREI_CHEN</code></td><td>Specifies a Frei Chen filter. This is a Finite Impulse Response (FIR) filter that can be represented with the following convolution kernels:  <em>[Image: FreiChenKernel.png]</em>  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FREI_CHEN</code></a> can only be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> Edge Finder contexts. Also, when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FREI_CHEN</code></a>, you cannot smooth images using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILTER_SMOOTHNESS</code></a>.</td></tr><tr><td><code>M_PREWITT</code></td><td>Specifies a Prewitt filter. This is a Finite Impulse Response (FIR) filter that can be represented with the following convolution kernels:  <em>[Image: PrewittKernel.png]</em>  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_PREWITT</code></a> can only be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> Edge Finder contexts. Also, when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_PREWITT</code></a>, you cannot smooth images using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILTER_SMOOTHNESS</code></a>.</td></tr><tr><td><code>M_SHEN</code> <em>(default)</em></td><td>Specifies a Shen-Castan infinite support exponential filter. This is an exponential weighting function, of the general form:  <em>[Image: ShenFunction.png]</em>  Shen-Castan is an Infinite Impulse Response (IIR) filter.  For the Shen-Castan filter, the neighborhoods&#x27; influence decreases much faster as the distance from the central pixel increases, compared to the Deriche filter (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DERICHE</code></a>).  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SHEN</code></a> can be used with both <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts. Typically, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SHEN</code></a> performs an excellent edge extraction on most images; however, if you are extracting unusually thick crests that yield inappropriate results, you should use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DERICHE</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SHEN</code></a> allows you to use Edge Finder&#x27;s smoothing capabilities. To do so, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILTER_SMOOTHNESS</code></a>.</td></tr><tr><td><code>M_SOBEL</code></td><td>Specifies a Sobel filter. This is a Finite Impulse Response (FIR) filter that can be represented with the following convolution kernels:  <em>[Image: SobelKernel.png]</em>  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SOBEL</code></a> can only be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> Edge Finder contexts. Also, when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SOBEL</code></a>, you cannot smooth images using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILTER_SMOOTHNESS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_float_mode"><code>M_FLOAT_MODE</code><a href="#m_float_mode" class="hash-link" aria-label="Direct link to m_float_mode" title="Direct link to m_float_mode" translate="no">​</a></h3>
+<p>Sets whether to force all the processing of edge extraction operations to be performed using floating-point precision calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that all edge extractions are not forced to be performed using floating-point precision calculations.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that all edge extractions are forced to be performed using floating-point precision calculations.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_magnitude_type"><code>M_MAGNITUDE_TYPE</code><a href="#m_magnitude_type" class="hash-link" aria-label="Direct link to m_magnitude_type" title="Direct link to m_magnitude_type" translate="no">​</a></h3>
+<p>Sets how to calculate the magnitude of the edge at each edgel position.  Note that for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> Edge Finder contexts, the magnitude is the norm of the gradient vector at the edgel position. For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts, the magnitude is equal to the maximum eigenvalue of the Hessian matrix at the edgel position.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default value.  For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> Edge Finder contexts, the default is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SQR_NORM</code></a>. For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts, the default is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NORM</code></a>.</td></tr><tr><td><code>M_NORM</code></td><td>Specifies that the magnitude will be used.</td></tr><tr><td><code>M_SQR_NORM</code></td><td>Specifies that the square of the magnitude will be used.  This value optimizes the edge extraction operation while still preserving a very good edgel position accuracy. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SQR_NORM</code></a> is calculated faster than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NORM</code></a>, though it is less accurate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overscan"><code>M_OVERSCAN</code><a href="#m_overscan" class="hash-link" aria-label="Direct link to m_overscan" title="Direct link to m_overscan" translate="no">​</a></h3>
+<p>Sets the type of overscan used to handle the source image&#x27;s bordering pixels. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_OVERSCAN</code></a> is ignored if using an IIR filter (e.g. Shen and Deriche filter types).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that no overscan will be used, unless processing the border pixels is faster than ignoring them; in the latter case, Aurora Imaging Library automatically selects the overscan to optimize speed according to the specified operation and the target system.</td></tr><tr><td><code>M_MIRROR</code> <em>(default)</em></td><td>Specifies that the border pixels of a source image are processed using overscan pixel values that mirror the source buffer pixel values. That is, the overscan pixel values will be a mirror copy of the source buffer&#x27;s borders. For example:  <em>[Image: KernelOverscan.png]</em></td></tr><tr><td><code>M_REPLACE</code></td><td>Specifies that the border pixels of a source image are processed using overscan pixel values set to the overscan replacement value (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_OVERSCAN_REPLACE_VALUE</code></a>).</td></tr><tr><td><code>M_TRANSPARENT</code></td><td>Specifies that the border pixels of a source image are processed using transparent overscan pixel values. That is, the overscan pixel values will be those of the parent buffer. If they are not available, a mirror type overscan is used instead.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overscan_replace_value"><code>M_OVERSCAN_REPLACE_VALUE</code><a href="#m_overscan_replace_value" class="hash-link" aria-label="Direct link to m_overscan_replace_value" title="Direct link to m_overscan_replace_value" translate="no">​</a></h3>
+<p>Sets a replacement value for the overscan pixel values. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_OVERSCAN_REPLACE_VALUE</code></a> is ignored unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_OVERSCAN</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_REPLACE</code></a>. In addition, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_OVERSCAN_REPLACE_VALUE</code></a> is ignored if using an IIR filter (e.g. Shen and Deriche filter types).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_REPLACE_MAX</code></td><td>Specifies that the overscan neighborhood pixel values will be set to the maximum value of the source image buffer.</td></tr><tr><td><code>M_REPLACE_MIN</code></td><td>Specifies that the overscan neighborhood pixel values will be set to the minimum value of the source image buffer.</td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the value of the overscan neighborhood pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_high"><code>M_THRESHOLD_HIGH</code><a href="#m_threshold_high" class="hash-link" aria-label="Direct link to m_threshold_high" title="Direct link to m_threshold_high" translate="no">​</a></h3>
+<p>Sets the upper bound of the hysteresis threshold value. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_HIGH</code></a> is ignored unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_USER_DEFINED</code></a>. Note that lower threshold values result in a more sensitive edgel detection; that is, a higher (or equal) number of edgels are detected.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the upper bound of the hysteresis threshold.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_low"><code>M_THRESHOLD_LOW</code><a href="#m_threshold_low" class="hash-link" aria-label="Direct link to m_threshold_low" title="Direct link to m_threshold_low" translate="no">​</a></h3>
+<p>Sets the lower bound of the hysteresis threshold value. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_LOW</code></a> is ignored unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_USER_DEFINED</code></a>. Note that lower threshold values result in a more sensitive edgel detection; that is, a higher (or equal) number of edgels are detected.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the lower bound of the hysteresis threshold.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode"><code>M_THRESHOLD_MODE</code><a href="#m_threshold_mode" class="hash-link" aria-label="Direct link to m_threshold_mode" title="Direct link to m_threshold_mode" translate="no">​</a></h3>
+<p>Sets the threshold of the edge extraction. The Edge Finder module uses a classical hysteresis threshold to extract relevant edges in the image. Threshold values can either be set manually or determined automatically by the Edge Finder module. Note that lower threshold values result in a more sensitive edgel detection; that is, a higher (or equal) number of edgels are detected.  When interfacing with the Aurora Imaging Library Geometric Model Finder module, you should use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DETAIL_LEVEL</code></a> to set the threshold mode. Note that an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DETAIL_LEVEL</code></a> setting overrides an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_MODE</code></a> setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies no threshold. All edges are extracted.</td></tr><tr><td><code>M_HIGH</code> <em>(default)</em></td><td>Specifies a high threshold. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_HIGH</code></a> should be used for images with some contrast variations, noise, and non-uniform illumination. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_HIGH</code></a> always results in a lower (or equal) number of edgels than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_MEDIUM</code></a>.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies a low threshold. All edges over a minimum noise-based estimated threshold are extracted. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_LOW</code></a> always results in a lower (or equal) number of edgels than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_DISABLE</code></a>.</td></tr><tr><td><code>M_MEDIUM</code></td><td>Specifies a medium threshold. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_MEDIUM</code></a> should be used for multi-contrast images, or for images with a lot of noise or non-uniform illumination. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_MEDIUM</code></a> always results in a lower (or equal) number of edgels than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_LOW</code></a>.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies that the threshold values will be user-defined. Set the threshold values with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_LOW</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_HIGH</code></a>.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies a very high threshold. Only the strongest edges in the image are extracted. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_VERY_HIGH</code></a> always results in a lower (or equal) number of edgels than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_HIGH</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_type"><code>M_THRESHOLD_TYPE</code><a href="#m_threshold_type" class="hash-link" aria-label="Direct link to m_threshold_type" title="Direct link to m_threshold_type" translate="no">​</a></h3>
+<p>Sets the type of hysteresis threshold used when performing the edge extraction.  Edge chains are built such that the magnitude values of all connected edgels are stronger than a lower bound threshold value and such that at least one of the edgel&#x27;s magnitude in each edge chain is stronger than a upper bound threshold value.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_TYPE</code></a> sets how to use the lower and upper threshold bounds, while <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_THRESHOLD_MODE</code></a> defines what the bounds are.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FULL_HYSTERESIS</code></td><td>Specifies that the lower bound threshold value is 0.</td></tr><tr><td><code>M_HYSTERESIS</code> <em>(default)</em></td><td>Specifies that both the lower bound threshold value and the upper bound threshold value will be used.</td></tr><tr><td><code>M_NO_HYSTERESIS</code></td><td>Specifies that the lower bound threshold value is equal to the upper bound threshold value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_timeout"><code>M_TIMEOUT</code><a href="#m_timeout" class="hash-link" aria-label="Direct link to m_timeout" title="Direct link to m_timeout" translate="no">​</a></h3>
+<p>Sets the maximum edge extraction and calculation time for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><code>MedgeCalculate</code></a>, in msec.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies an infinite amount of edge extraction and calculation time.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the maximum edge extraction and calculation time, in msec.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-for-line-crests">For operation settings for line crests<a href="#for-operation-settings-for-line-crests" class="hash-link" aria-label="Direct link to For operation settings for line crests" title="Direct link to For operation settings for line crests" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlValue</code></a> settings are used to control the Edge Finder context operation settings and can only be specified for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_foreground_value"><code>M_FOREGROUND_VALUE</code><a href="#m_foreground_value" class="hash-link" aria-label="Direct link to m_foreground_value" title="Direct link to m_foreground_value" translate="no">​</a></h3>
+<p>Sets the color of the line crests to extract from the image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code></td><td>Specifies that the line crests are both lighter and darker than the image&#x27;s background color. This corresponds to both valley-like and ridge-like lines extracted from the image.</td></tr><tr><td><code>M_FOREGROUND_BLACK</code> <em>(default)</em></td><td>Specifies that the line crests are darker than the image&#x27;s background color. This corresponds to valley-like lines extracted from the image (a valley-like Gaussian profile).</td></tr><tr><td><code>M_FOREGROUND_WHITE</code></td><td>Specifies that the line crests are lighter than the image&#x27;s background color. This corresponds to ridge-like lines extracted from the image (a ridge-like Gaussian profile).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-saving-internal-buffers-in-the-edge-finder-result-buffer">For saving internal buffers in the Edge Finder result buffer<a href="#for-saving-internal-buffers-in-the-edge-finder-result-buffer" class="hash-link" aria-label="Direct link to For saving internal buffers in the Edge Finder result buffer" title="Direct link to For saving internal buffers in the Edge Finder result buffer" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlValue</code></a> parameter settings are used to save internal buffers in the Edge Finder result buffer and can be specified for both <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_angle"><code>M_SAVE_ANGLE</code><a href="#m_save_angle" class="hash-link" aria-label="Direct link to m_save_angle" title="Direct link to m_save_angle" translate="no">​</a></h3>
+<p>Sets whether the internal angle buffer, used when extracting edges, is saved in the Edge Finder result buffer. Note that the angle value is not meaningful in the whole image; it is only meaningful for edges whose magnitude value is above the lower bound threshold value.  Note that the angle is measured between the horizontal axis and the perpendicular direction of the edge chain at each edgel location. For more information on angle convention in Aurora Imaging Library, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C10_Edge_Finder/S07_Calculating_and_retrieving_results">Internal processing buffers</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the angle buffer will not be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the angle buffer will be saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_chain_angle"><code>M_SAVE_CHAIN_ANGLE</code><a href="#m_save_chain_angle" class="hash-link" aria-label="Direct link to m_save_chain_angle" title="Direct link to m_save_chain_angle" translate="no">​</a></h3>
+<p>Sets whether the angle value of the edge at each edgel position is saved in the Edge Finder result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the angle values will not be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the angle values will be saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_chain_magnitude"><code>M_SAVE_CHAIN_MAGNITUDE</code><a href="#m_save_chain_magnitude" class="hash-link" aria-label="Direct link to m_save_chain_magnitude" title="Direct link to m_save_chain_magnitude" translate="no">​</a></h3>
+<p>Sets whether the magnitude value of the edge at each edgel position is saved in the Edge Finder result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the magnitude values will not be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the magnitude values will be saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_derivatives"><code>M_SAVE_DERIVATIVES</code><a href="#m_save_derivatives" class="hash-link" aria-label="Direct link to m_save_derivatives" title="Direct link to m_save_derivatives" translate="no">​</a></h3>
+<p>Sets whether the internal derivative buffers used when extracting edges are saved in the Edge Finder result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the derivative buffers will not be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the derivative buffers will be saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_image"><code>M_SAVE_IMAGE</code><a href="#m_save_image" class="hash-link" aria-label="Direct link to m_save_image" title="Direct link to m_save_image" translate="no">​</a></h3>
+<p>Sets whether the source image is saved in the Edge Finder result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the image will not be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the image will be saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_magnitude"><code>M_SAVE_MAGNITUDE</code><a href="#m_save_magnitude" class="hash-link" aria-label="Direct link to m_save_magnitude" title="Direct link to m_save_magnitude" translate="no">​</a></h3>
+<p>Sets whether the internal magnitude buffer, used when extracting edges, is saved in the Edge Finder result buffer. For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> Edge Finder contexts, the magnitude is the norm of the gradient vector at the edgel position. For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts, the magnitude is equal to the maximum eigenvalue of the Hessian matrix at the edgel position.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the magnitude buffer will not be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the magnitude buffer will be saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_mask"><code>M_SAVE_MASK</code><a href="#m_save_mask" class="hash-link" aria-label="Direct link to m_save_mask" title="Direct link to m_save_mask" translate="no">​</a></h3>
+<p>Sets whether the mask buffer is saved in the Edge Finder result buffer. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeMask"><code>MedgeMask</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the mask will not be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the mask will be saved.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-calculating-edge-features">For calculating edge features<a href="#for-calculating-edge-features" class="hash-link" aria-label="Direct link to For calculating edge features" title="Direct link to For calculating edge features" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlValue</code></a> parameter settings are used to control the edge features calculated for each edge and can be specified for both <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_average_strength"><code>M_AVERAGE_STRENGTH</code><a href="#m_average_strength" class="hash-link" aria-label="Direct link to m_average_strength" title="Direct link to m_average_strength" translate="no">​</a></h3>
+<p>Sets whether to calculate the average strength of each edge. This is the average energy of each edge, which is defined as the energy of the edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_STRENGTH</code></a>) divided by its number of edgels.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the average strength will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the average strength will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_x_max"><code>M_BOX_X_MAX</code><a href="#m_box_x_max" class="hash-link" aria-label="Direct link to m_box_x_max" title="Direct link to m_box_x_max" translate="no">​</a></h3>
+<p>Sets whether to calculate the extreme right edgel coordinate of each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the extreme right edgel coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the extreme right edgel coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_x_min"><code>M_BOX_X_MIN</code><a href="#m_box_x_min" class="hash-link" aria-label="Direct link to m_box_x_min" title="Direct link to m_box_x_min" translate="no">​</a></h3>
+<p>Sets whether to calculate the extreme left edgel coordinate of each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the extreme left edgel coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the extreme left edgel coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_y_max"><code>M_BOX_Y_MAX</code><a href="#m_box_y_max" class="hash-link" aria-label="Direct link to m_box_y_max" title="Direct link to m_box_y_max" translate="no">​</a></h3>
+<p>Sets whether to calculate the extreme bottom edgel coordinate of each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the extreme bottom edgel coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the extreme bottom edgel coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_y_min"><code>M_BOX_Y_MIN</code><a href="#m_box_y_min" class="hash-link" aria-label="Direct link to m_box_y_min" title="Direct link to m_box_y_min" translate="no">​</a></h3>
+<p>Sets whether to calculate the extreme top edgel coordinate of each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the extreme top edgel coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the extreme top edgel coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_of_gravity_x"><code>M_CENTER_OF_GRAVITY_X</code><a href="#m_center_of_gravity_x" class="hash-link" aria-label="Direct link to m_center_of_gravity_x" title="Direct link to m_center_of_gravity_x" translate="no">​</a></h3>
+<p>Sets whether to calculate the X-position of each edge&#x27;s center of gravity. This is equal to the average position of edgel positions in X.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X-position of the center of gravity will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X-position of the center of gravity will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_of_gravity_y"><code>M_CENTER_OF_GRAVITY_Y</code><a href="#m_center_of_gravity_y" class="hash-link" aria-label="Direct link to m_center_of_gravity_y" title="Direct link to m_center_of_gravity_y" translate="no">​</a></h3>
+<p>Sets whether to calculate the Y-position of each edge&#x27;s center of gravity. This is equal to the average position of edgel positions in Y.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Y-position of the center of gravity will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Y-position of the center of gravity will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_fit_center_x"><code>M_CIRCLE_FIT_CENTER_X</code><a href="#m_circle_fit_center_x" class="hash-link" aria-label="Direct link to m_circle_fit_center_x" title="Direct link to m_circle_fit_center_x" translate="no">​</a></h3>
+<p>Sets whether to calculate the X-coordinate of the center of the circle that is the best fit for each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X-coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X-coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_fit_center_y"><code>M_CIRCLE_FIT_CENTER_Y</code><a href="#m_circle_fit_center_y" class="hash-link" aria-label="Direct link to m_circle_fit_center_y" title="Direct link to m_circle_fit_center_y" translate="no">​</a></h3>
+<p>Sets whether to calculate the Y-coordinate of the center of the circle that is the best fit for each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Y-coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Y-coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_fit_coverage"><code>M_CIRCLE_FIT_COVERAGE</code><a href="#m_circle_fit_coverage" class="hash-link" aria-label="Direct link to m_circle_fit_coverage" title="Direct link to m_circle_fit_coverage" translate="no">​</a></h3>
+<p>Sets whether to calculate the coverage of the circle that is the best fit for each edge. The circle fit coverage indicates what angular fraction of the fitted circle is subtended by the radii going to the endpoints of the edge. If the edge is closed, the coverage will be 1. For a quarter circle the coverage would be 0.25. A perfectly straight line has a coverage of 0, it doesn&#x27;t subtend much of an infinitely large circle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the coverage of the circle will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the coverage of the circle will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_fit_error"><code>M_CIRCLE_FIT_ERROR</code><a href="#m_circle_fit_error" class="hash-link" aria-label="Direct link to m_circle_fit_error" title="Direct link to m_circle_fit_error" translate="no">​</a></h3>
+<p>Sets whether to calculate the fit error of the circle that is the best fit for each edge. This is calculated as the average quadratic error.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the fit error of the circle will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the fit error of the circle will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_fit_radius"><code>M_CIRCLE_FIT_RADIUS</code><a href="#m_circle_fit_radius" class="hash-link" aria-label="Direct link to m_circle_fit_radius" title="Direct link to m_circle_fit_radius" translate="no">​</a></h3>
+<p>Sets whether to calculate the radius of the circle that is the best fit for each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the radius will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the radius will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closure"><code>M_CLOSURE</code><a href="#m_closure" class="hash-link" aria-label="Direct link to m_closure" title="Direct link to m_closure" translate="no">​</a></h3>
+<p>Sets whether to calculate the closure state of each edge. The closure state identifies whether the edge forms a closed chain.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the edge&#x27;s closure state will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the edge&#x27;s closure state will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_convex_perimeter"><code>M_CONVEX_PERIMETER</code><a href="#m_convex_perimeter" class="hash-link" aria-label="Direct link to m_convex_perimeter" title="Direct link to m_convex_perimeter" translate="no">​</a></h3>
+<p>Sets whether to calculate the convex elongation of each edge. This is an approximation of the perimeter of the convex hull of an edge. It is derived from several Feret diameters; therefore, a larger number of Ferets gives a more accurate result (see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NUMBER_OF_FERETS</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the convex elongation will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the convex elongation will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_fit_angle"><code>M_ELLIPSE_FIT_ANGLE</code><a href="#m_ellipse_fit_angle" class="hash-link" aria-label="Direct link to m_ellipse_fit_angle" title="Direct link to m_ellipse_fit_angle" translate="no">​</a></h3>
+<p>Sets whether to calculate the angle of the ellipse that is the best fit for each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the angle will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the angle will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_fit_center_x"><code>M_ELLIPSE_FIT_CENTER_X</code><a href="#m_ellipse_fit_center_x" class="hash-link" aria-label="Direct link to m_ellipse_fit_center_x" title="Direct link to m_ellipse_fit_center_x" translate="no">​</a></h3>
+<p>Sets whether to calculate the X-coordinate of the center of the ellipse that is the best fit for each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X-coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X-coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_fit_center_y"><code>M_ELLIPSE_FIT_CENTER_Y</code><a href="#m_ellipse_fit_center_y" class="hash-link" aria-label="Direct link to m_ellipse_fit_center_y" title="Direct link to m_ellipse_fit_center_y" translate="no">​</a></h3>
+<p>Sets whether to calculate the Y-coordinate of the center of the ellipse that is the best fit for each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Y-coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Y-coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_fit_coverage"><code>M_ELLIPSE_FIT_COVERAGE</code><a href="#m_ellipse_fit_coverage" class="hash-link" aria-label="Direct link to m_ellipse_fit_coverage" title="Direct link to m_ellipse_fit_coverage" translate="no">​</a></h3>
+<p>Sets whether to calculate the coverage of the ellipse that is the best fit for each edge. The coverage describes the portion of the ellipse covered by the edge. The value returned is between 0.0 and 1.0, inclusive, where 0.0 equals no coverage, 0.5 equals 50 percent coverage, and 1.0 equals 100 percent coverage.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the coverage of the ellipse will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the coverage of the ellipse will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_fit_error"><code>M_ELLIPSE_FIT_ERROR</code><a href="#m_ellipse_fit_error" class="hash-link" aria-label="Direct link to m_ellipse_fit_error" title="Direct link to m_ellipse_fit_error" translate="no">​</a></h3>
+<p>Sets whether to calculate the fit error of the ellipse that is the best fit for each edge. This is calculated as the average quadratic error.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the fit error of the ellipse will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the fit error of the ellipse will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_fit_major_axis"><code>M_ELLIPSE_FIT_MAJOR_AXIS</code><a href="#m_ellipse_fit_major_axis" class="hash-link" aria-label="Direct link to m_ellipse_fit_major_axis" title="Direct link to m_ellipse_fit_major_axis" translate="no">​</a></h3>
+<p>Sets whether to calculate the major axis of the ellipse that is the best fit for each edge. The major axis is the line passing through the foci, center, and vertices of an ellipse. It is also the principal axis of symmetry.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the major axis will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the major axis will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_fit_minor_axis"><code>M_ELLIPSE_FIT_MINOR_AXIS</code><a href="#m_ellipse_fit_minor_axis" class="hash-link" aria-label="Direct link to m_ellipse_fit_minor_axis" title="Direct link to m_ellipse_fit_minor_axis" translate="no">​</a></h3>
+<p>Sets whether to calculate the minor axis of the ellipse that is the best fit for each edge. The minor axis is the line through the center of an ellipse that is perpendicular to the major axis. The minor axis is an axis of symmetry.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the minor axis will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the minor axis will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fast_length"><code>M_FAST_LENGTH</code><a href="#m_fast_length" class="hash-link" aria-label="Direct link to m_fast_length" title="Direct link to m_fast_length" translate="no">​</a></h3>
+<p>Sets whether to calculate a coarse approximation for the length of each edge. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FAST_LENGTH</code></a> gives a less accurate but faster approximation of the edge&#x27;s length than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_LENGTH</code></a>. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FAST_LENGTH</code></a> is equal to:  <em>[Image: medgeFastLengthDef.png]</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that a fast length will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that a fast length will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_elongation"><code>M_FERET_ELONGATION</code><a href="#m_feret_elongation" class="hash-link" aria-label="Direct link to m_feret_elongation" title="Direct link to m_feret_elongation" translate="no">​</a></h3>
+<p>Sets whether to calculate the Feret elongation of each edge. This is a measure of the shape of each edge. It is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MAX_DIAMETER</code></a> / <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MIN_DIAMETER</code></a>. It is accurate for reasonably compact objects, but becomes less accurate for very elongated objects (because <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MIN_DIAMETER</code></a> becomes less accurate).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Feret elongation will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Feret elongation will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_general"><code>M_FERET_GENERAL</code><a href="#m_feret_general" class="hash-link" aria-label="Direct link to m_feret_general" title="Direct link to m_feret_general" translate="no">​</a></h3>
+<p>Sets whether to calculate the general Feret of each edge. This is the Feret diameter calculated at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_GENERAL_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the general Feret will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the general Feret will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_max_angle"><code>M_FERET_MAX_ANGLE</code><a href="#m_feret_max_angle" class="hash-link" aria-label="Direct link to m_feret_max_angle" title="Direct link to m_feret_max_angle" translate="no">​</a></h3>
+<p>Sets whether to calculate the maximum Feret angle of each edge. This is the angle at which the maximum Feret diameter is found.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the maximum Feret angle will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the maximum Feret angle will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_max_diameter"><code>M_FERET_MAX_DIAMETER</code><a href="#m_feret_max_diameter" class="hash-link" aria-label="Direct link to m_feret_max_diameter" title="Direct link to m_feret_max_diameter" translate="no">​</a></h3>
+<p>Sets whether to calculate the maximum Feret diameter of each edge. This is the largest Feret diameter found after checking a certain number of angles (see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NUMBER_OF_FERETS</code></a>). More angles will give a more accurate result, but will take longer to calculate.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the maximum Feret diameter will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the maximum Feret diameter will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_mean_diameter"><code>M_FERET_MEAN_DIAMETER</code><a href="#m_feret_mean_diameter" class="hash-link" aria-label="Direct link to m_feret_mean_diameter" title="Direct link to m_feret_mean_diameter" translate="no">​</a></h3>
+<p>Sets whether to calculate the average Feret diameter at all the angles checked. See <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NUMBER_OF_FERETS</code></a> for more information.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the average Feret diameter will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the average Feret diameter will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_min_angle"><code>M_FERET_MIN_ANGLE</code><a href="#m_feret_min_angle" class="hash-link" aria-label="Direct link to m_feret_min_angle" title="Direct link to m_feret_min_angle" translate="no">​</a></h3>
+<p>Sets whether to calculate the minimum Feret angle of each edge. This is the angle at which the minimum Feret diameter is found.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the minimum Feret angle will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the minimum Feret angle will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_min_diameter"><code>M_FERET_MIN_DIAMETER</code><a href="#m_feret_min_diameter" class="hash-link" aria-label="Direct link to m_feret_min_diameter" title="Direct link to m_feret_min_diameter" translate="no">​</a></h3>
+<p>Sets whether to calculate the minimum Feret diameter of each edge. This is the smallest Feret diameter found after checking a certain number of angles (see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NUMBER_OF_FERETS</code></a>). More angles will give a more accurate result, but will take longer to calculate.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the minimum Feret diameter will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the minimum Feret diameter will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_x"><code>M_FERET_X</code><a href="#m_feret_x" class="hash-link" aria-label="Direct link to m_feret_x" title="Direct link to m_feret_x" translate="no">​</a></h3>
+<p>Sets whether to calculate the X-Feret value of each edge. This is the dimension of the minimum bounding box of an edge in the horizontal direction; that is, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_X_MAX</code></a>   - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_X_MIN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X-Feret value will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X-Feret value will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_y"><code>M_FERET_Y</code><a href="#m_feret_y" class="hash-link" aria-label="Direct link to m_feret_y" title="Direct link to m_feret_y" translate="no">​</a></h3>
+<p>Sets whether to calculate the Y-Feret value of each edge. This is the dimension of the minimum bounding box of an edge in the vertical direction; that is, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_Y_MAX</code></a>   - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_Y_MIN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Y-Feret value will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Y-Feret value will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_point_x"><code>M_FIRST_POINT_X</code><a href="#m_first_point_x" class="hash-link" aria-label="Direct link to m_first_point_x" title="Direct link to m_first_point_x" translate="no">​</a></h3>
+<p>Sets whether to calculate the X-coordinate of each edge&#x27;s first point (starting point). Together with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FIRST_POINT_Y</code></a>, these values define a unique point for each edge, which is always the first point of each edge chain.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the first point&#x27;s X-coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the first point&#x27;s X-coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_point_y"><code>M_FIRST_POINT_Y</code><a href="#m_first_point_y" class="hash-link" aria-label="Direct link to m_first_point_y" title="Direct link to m_first_point_y" translate="no">​</a></h3>
+<p>Sets whether to calculate the Y-coordinate of each edge&#x27;s first point (starting point). Together with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FIRST_POINT_X</code></a>, these values define a unique point for each edge, which is always the first point of each edge chain.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the first point&#x27;s Y-coordinate will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the first point&#x27;s Y-coordinate will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_label_value"><code>M_LABEL_VALUE</code><a href="#m_label_value" class="hash-link" aria-label="Direct link to m_label_value" title="Direct link to m_label_value" translate="no">​</a></h3>
+<p>Sets whether to calculate the label value of each edge in an image. The label value is a positive integer greater or equal to one; each edge in an image has a unique label value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the label value will not be calculated.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the label value will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_length"><code>M_LENGTH</code><a href="#m_length" class="hash-link" aria-label="Direct link to m_length" title="Direct link to m_length" translate="no">​</a></h3>
+<p>Sets whether to calculate the length of each edge. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetResult"><code>M_LENGTH</code></a> gives a more accurate but slower approximation of the edge&#x27;s length than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetResult"><code>M_FAST_LENGTH</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the length of each edge will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the length of each edge will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_line_fit_a"><code>M_LINE_FIT_A</code><a href="#m_line_fit_a" class="hash-link" aria-label="Direct link to m_line_fit_a" title="Direct link to m_line_fit_a" translate="no">​</a></h3>
+<p>Sets whether to calculate the coefficient_A_ of the line that is the best fit for each edge. The line fit approximation is based on the following equation: <code>_A_ _x_ + _B_ _y_ + _C_ = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the coefficient <em>A</em> will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the coefficient <em>A</em> will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_line_fit_b"><code>M_LINE_FIT_B</code><a href="#m_line_fit_b" class="hash-link" aria-label="Direct link to m_line_fit_b" title="Direct link to m_line_fit_b" translate="no">​</a></h3>
+<p>Sets whether to calculate the coefficient _B_of the line that is the best fit for each edge. The line fit approximation is based on the following equation: <code>_A_ _x_ + _B_ _y_ + _C_ = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the coefficient <em>B</em> will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the coefficient <em>B</em> will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_line_fit_c"><code>M_LINE_FIT_C</code><a href="#m_line_fit_c" class="hash-link" aria-label="Direct link to m_line_fit_c" title="Direct link to m_line_fit_c" translate="no">​</a></h3>
+<p>Sets whether to calculate the coefficient <em>C</em> of the line that is the best fit for each edge. The line fit approximation is based on the following equation: <code>_A_ _x_ + _B_ _y_ + _C_ = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the coefficient <em>C</em> will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the coefficient <em>C</em> will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_line_fit_error"><code>M_LINE_FIT_ERROR</code><a href="#m_line_fit_error" class="hash-link" aria-label="Direct link to m_line_fit_error" title="Direct link to m_line_fit_error" translate="no">​</a></h3>
+<p>Sets whether to calculate the fit error of the line that is the best fit for each edge. This is calculated as the average quadratic error. The line fit approximation is based on the following equation: <code>_A_ _x_ + _B_ _y_ + _C_ = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the fit error will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the fit error will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_elongation"><code>M_MOMENT_ELONGATION</code><a href="#m_moment_elongation" class="hash-link" aria-label="Direct link to m_moment_elongation" title="Direct link to m_moment_elongation" translate="no">​</a></h3>
+<p>Sets whether to calculate the moment elongation of each edge. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_MOMENT_ELONGATION</code></a> specifies the ratio of the principal values of the edge&#x27;s inertial matrix, which corresponds to the principal directions of the edge shape. This can be approximately defined as the ratio between the edge&#x27;s minimum and maximum moment.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the moment elongation will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the moment elongation will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_elongation_angle"><code>M_MOMENT_ELONGATION_ANGLE</code><a href="#m_moment_elongation_angle" class="hash-link" aria-label="Direct link to m_moment_elongation_angle" title="Direct link to m_moment_elongation_angle" translate="no">​</a></h3>
+<p>Sets whether to calculate the angle of the principal axis along each edge&#x27;s moment elongation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_MOMENT_ELONGATION</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the angle of the moment elongation will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the angle of the moment elongation will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_x"><code>M_POSITION_X</code><a href="#m_position_x" class="hash-link" aria-label="Direct link to m_position_x" title="Direct link to m_position_x" translate="no">​</a></h3>
+<p>Sets whether to calculate the X-position of each edge. The position of the edge is defined by the middle edgel of the edge chain.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X-position will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X-position will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_y"><code>M_POSITION_Y</code><a href="#m_position_y" class="hash-link" aria-label="Direct link to m_position_y" title="Direct link to m_position_y" translate="no">​</a></h3>
+<p>Sets whether to calculate the Y-position of each edge. The position of the edge is defined by the middle edgel of the edge chain.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Y-position will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Y-position will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size"><code>M_SIZE</code><a href="#m_size" class="hash-link" aria-label="Direct link to m_size" title="Direct link to m_size" translate="no">​</a></h3>
+<p>Sets whether to calculate the number of edgels of each edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the number of edgels will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the number of edgels will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_strength"><code>M_STRENGTH</code><a href="#m_strength" class="hash-link" aria-label="Direct link to m_strength" title="Direct link to m_strength" translate="no">​</a></h3>
+<p>Sets whether to calculate the strength of each edge. This is the energy of each edge, which is defined as the sum of the square of the edgels&#x27; magnitude values.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the strength will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the strength will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tortuosity"><code>M_TORTUOSITY</code><a href="#m_tortuosity" class="hash-link" aria-label="Direct link to m_tortuosity" title="Direct link to m_tortuosity" translate="no">​</a></h3>
+<p>Sets whether to calculate the tortuosity measure of each edge. The tortuosity measure is equal to the diagonal length of the edge&#x27;s bounding box (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX</code></a>), divided by the length of the edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_LENGTH</code></a>). Therefore, a non-tortuous edge (a straight line) will have a tortuosity of 1.0 while a tortuous edge will have its tortuosity decreasing toward zero.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the tortuosity measure will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the tortuosity measure will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_x_max_at_y_max"><code>M_X_MAX_AT_Y_MAX</code><a href="#m_x_max_at_y_max" class="hash-link" aria-label="Direct link to m_x_max_at_y_max" title="Direct link to m_x_max_at_y_max" translate="no">​</a></h3>
+<p>Sets whether to calculate the maximum X-coordinate at the maximum Y-coordinate of each edge. Together with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_Y_MAX</code></a>, this is one of four contact points on the convex perimeter of the edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X-maximum at Y-maximum will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X-maximum at Y-maximum will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_x_min_at_y_min"><code>M_X_MIN_AT_Y_MIN</code><a href="#m_x_min_at_y_min" class="hash-link" aria-label="Direct link to m_x_min_at_y_min" title="Direct link to m_x_min_at_y_min" translate="no">​</a></h3>
+<p>Sets whether to calculate the minimum X-coordinate at the minimum Y-coordinate of each edge. Together with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_Y_MIN</code></a>, this is one of four contact points on the convex perimeter of the edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X-minimum at Y-minimum will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X-minimum at Y-minimum will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_y_max_at_x_min"><code>M_Y_MAX_AT_X_MIN</code><a href="#m_y_max_at_x_min" class="hash-link" aria-label="Direct link to m_y_max_at_x_min" title="Direct link to m_y_max_at_x_min" translate="no">​</a></h3>
+<p>Sets whether to calculate the maximum Y-coordinate at the minimum X-coordinate of each edge. Together with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_X_MIN</code></a>, this is one of four contact points on the convex perimeter of the edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Y-maximum at X-minimum will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Y-maximum at X-minimum will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_y_min_at_x_max"><code>M_Y_MIN_AT_X_MAX</code><a href="#m_y_min_at_x_max" class="hash-link" aria-label="Direct link to m_y_min_at_x_max" title="Direct link to m_y_min_at_x_max" translate="no">​</a></h3>
+<p>Sets whether to calculate the minimum Y-coordinate at the maximum X-coordinate of each edge. Together with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_X_MAX</code></a>, this is one of four contact points on the convex perimeter of the edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Y-minimum at X-maximum will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Y-minimum at X-maximum will be calculated.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-a-sorting-key">Combination Constants — For specifying a sorting key<a href="#combination-constants--for-specifying-a-sorting-key" class="hash-link" aria-label="Direct link to Combination Constants — For specifying a sorting key" title="Direct link to Combination Constants — For specifying a sorting key" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify a sorting key for result retrieval.</p>
+</blockquote>
+<p>Note that only one edge feature can be selected as the first, second, or third sorting key.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NO_SORT</code></td><td>Removes the specified sorting key.</td></tr><tr><td><code>M_SORTn_DOWN</code></td><td>Specifies the feature as the <em>n</em> <sup>th</sup> sorting key (in descending order), where <em>n</em> stands for an integer between 1 and 3.</td></tr><tr><td><code>M_SORTn_UP</code></td><td>Specifies the feature as the <em>n</em> <sup>th</sup> sorting key (in ascending order), where <em>n</em> stands for an integer between 1 and 3.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-calculating-feret-values">For calculating Feret values<a href="#for-calculating-feret-values" class="hash-link" aria-label="Direct link to For calculating Feret values" title="Direct link to For calculating Feret values" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlValue</code></a> parameter settings are used to calculate Feret values and can be specified for both <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_angle_search_end"><code>M_FERET_ANGLE_SEARCH_END</code><a href="#m_feret_angle_search_end" class="hash-link" aria-label="Direct link to m_feret_angle_search_end" title="Direct link to m_feret_angle_search_end" translate="no">​</a></h3>
+<p>Sets the end of the angular range at which to search for Feret diameters. The angular range is used to calculate the following Feret features: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MAX_DIAMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MIN_DIAMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MAX_ANGLE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MIN_ANGLE</code></a>. The search is done in the counter-clockwise direction in steps of (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_ANGLE_SEARCH_END</code></a> - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_ANGLE_SEARCH_START</code></a>) / <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NUMBER_OF_FERETS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the end of the angular region.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_angle_search_start"><code>M_FERET_ANGLE_SEARCH_START</code><a href="#m_feret_angle_search_start" class="hash-link" aria-label="Direct link to m_feret_angle_search_start" title="Direct link to m_feret_angle_search_start" translate="no">​</a></h3>
+<p>Sets the start of the angular range at which to search for Feret diameters. The angular range is used to calculate the following Feret features: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MAX_DIAMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MIN_DIAMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MAX_ANGLE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MIN_ANGLE</code></a>. The search is done in the counter-clockwise direction in steps of (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_ANGLE_SEARCH_END</code></a> - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_ANGLE_SEARCH_START</code></a>) / <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NUMBER_OF_FERETS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the start of the angular region.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_general_angle"><code>M_FERET_GENERAL_ANGLE</code><a href="#m_feret_general_angle" class="hash-link" aria-label="Direct link to m_feret_general_angle" title="Direct link to m_feret_general_angle" translate="no">​</a></h3>
+<p>Sets the angle at which to calculate the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_GENERAL</code></a> value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_MOMENT_ELONGATION_ANGLE + n</code></td><td>Specifies to use the moment elongation angle plus the offset <em>n</em>. The moment elongation angle is the angle of the principal axis for an edge&#x27;s moment elongation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_MOMENT_ELONGATION</code></a>).  Adding an offset is optional. For example, if you want to get the general Feret measure to be perpendicular to the moment elongation angle, set the offset to 90.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_ferets"><code>M_NUMBER_OF_FERETS</code><a href="#m_number_of_ferets" class="hash-link" aria-label="Direct link to m_number_of_ferets" title="Direct link to m_number_of_ferets" translate="no">​</a></h3>
+<p>Sets the number of Feret angles to use to calculate <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MAX_DIAMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MIN_DIAMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MAX_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MIN_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_MEAN_DIAMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_ELONGATION</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CONVEX_PERIMETER</code></a>. The first Feret angle used is established using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_ANGLE_SEARCH_START</code></a>, and the difference between successive angles is (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_ANGLE_SEARCH_END</code></a> - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_ANGLE_SEARCH_START</code></a>) / <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NUMBER_OF_FERETS</code></a>.  Note that increasing the number of Ferets increases the accuracy of the results; however, it also increases the processing time.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the number of Ferets.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-selecting-groups-of-edge-features">For selecting groups of edge features<a href="#for-selecting-groups-of-edge-features" class="hash-link" aria-label="Direct link to For selecting groups of edge features" title="Direct link to For selecting groups of edge features" translate="no">​</a></h3>
+<p>The following values allow you to select groups of edge features for calculation in a single call.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_all_features"><code>M_ALL_FEATURES</code><a href="#m_all_features" class="hash-link" aria-label="Direct link to m_all_features" title="Direct link to m_all_features" translate="no">​</a></h3>
+<p>Sets whether to calculate all edge features.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that all edge features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that all edge features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box"><code>M_BOX</code><a href="#m_box" class="hash-link" aria-label="Direct link to m_box" title="Direct link to m_box" translate="no">​</a></h3>
+<p>Sets whether to calculate the four extreme edgel coordinates of each edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_X_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_X_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_Y_MIN</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_Y_MAX</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that all the extreme edgel coordinates will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that all the extreme edgel coordinates will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_of_gravity"><code>M_CENTER_OF_GRAVITY</code><a href="#m_center_of_gravity" class="hash-link" aria-label="Direct link to m_center_of_gravity" title="Direct link to m_center_of_gravity" translate="no">​</a></h3>
+<p>Sets whether to calculate the X- and Y-coordinates of the center of gravity of each edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CENTER_OF_GRAVITY_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CENTER_OF_GRAVITY_Y</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that both the X- and Y-coordinates of the center of gravity will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that both the X- and Y-coordinates of the center of gravity will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_fit"><code>M_CIRCLE_FIT</code><a href="#m_circle_fit" class="hash-link" aria-label="Direct link to m_circle_fit" title="Direct link to m_circle_fit" translate="no">​</a></h3>
+<p>Sets whether to calculate the circle fit values of each edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CIRCLE_FIT_CENTER_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CIRCLE_FIT_CENTER_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CIRCLE_FIT_RADIUS</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CIRCLE_FIT_ERROR</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CIRCLE_FIT_COVERAGE</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that all the circle fit values will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that all the circle fit values will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_contact_points"><code>M_CONTACT_POINTS</code><a href="#m_contact_points" class="hash-link" aria-label="Direct link to m_contact_points" title="Direct link to m_contact_points" translate="no">​</a></h3>
+<p>Sets whether to calculate the minimum/maximum X-coordinate at the minimum/maximum Y-coordinate of each edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_X_MIN_AT_Y_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_X_MAX_AT_Y_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_Y_MAX_AT_X_MIN</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_Y_MIN_AT_X_MAX</code></a>). Together with its corresponding extreme edgel coordinate, these points represent four contact points on the convex perimeter of the edge. For example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_X_MIN_AT_Y_MIN</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_BOX_Y_MIN</code></a> is one of the four contact points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the four contact points will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the four contact points will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_fit"><code>M_ELLIPSE_FIT</code><a href="#m_ellipse_fit" class="hash-link" aria-label="Direct link to m_ellipse_fit" title="Direct link to m_ellipse_fit" translate="no">​</a></h3>
+<p>Sets whether to calculate the ellipse fit values of each edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ELLIPSE_FIT_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ELLIPSE_FIT_CENTER_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ELLIPSE_FIT_CENTER_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ELLIPSE_FIT_COVERAGE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ELLIPSE_FIT_ERROR</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ELLIPSE_FIT_MINOR_AXIS</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ELLIPSE_FIT_MAJOR_AXIS</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that all the ellipse fit values will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that all the ellipse fit values will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_box"><code>M_FERET_BOX</code><a href="#m_feret_box" class="hash-link" aria-label="Direct link to m_feret_box" title="Direct link to m_feret_box" translate="no">​</a></h3>
+<p>Sets whether to calculate the X- and Y-Feret values of each edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FERET_Y</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X- and Y-Feret values will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X- and Y-Feret values will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_point"><code>M_FIRST_POINT</code><a href="#m_first_point" class="hash-link" aria-label="Direct link to m_first_point" title="Direct link to m_first_point" translate="no">​</a></h3>
+<p>Sets whether to calculate the X- and Y-coordinate of each edge&#x27;s first point (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FIRST_POINT_X</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FIRST_POINT_Y</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the X- and Y-coordinate of each edge&#x27;s first point will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the X- and Y-coordinate of each edge&#x27;s first point will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_line_fit"><code>M_LINE_FIT</code><a href="#m_line_fit" class="hash-link" aria-label="Direct link to m_line_fit" title="Direct link to m_line_fit" translate="no">​</a></h3>
+<p>Sets whether to calculate the line fit values of each edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_LINE_FIT_A</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_LINE_FIT_B</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_LINE_FIT_C</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_LINE_FIT_ERROR</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that all the line fit values will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that all the line fit values will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position"><code>M_POSITION</code><a href="#m_position" class="hash-link" aria-label="Direct link to m_position" title="Direct link to m_position" translate="no">​</a></h3>
+<p>Sets whether to calculate both the X- and Y-position of each edge (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_POSITION_Y</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that both the X- and Y-position will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that both the X- and Y-position will be calculated.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-performing-post-calculations-on-extracted-edges">For performing post-calculations on extracted edges<a href="#for-performing-post-calculations-on-extracted-edges" class="hash-link" aria-label="Direct link to For performing post-calculations on extracted edges" title="Direct link to For performing post-calculations on extracted edges" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlValue</code></a> parameter settings are used when performing post-calculations on extracted edges and can typically be specified for both <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CONTOUR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_approximation_tolerance"><code>M_APPROXIMATION_TOLERANCE</code><a href="#m_approximation_tolerance" class="hash-link" aria-label="Direct link to m_approximation_tolerance" title="Direct link to m_approximation_tolerance" translate="no">​</a></h3>
+<p>Sets the resolution of edge approximation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the resolution. When set to 0.0, a very fine edge approximation is performed. When set to 100.0, a coarse edge approximation is performed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_chain_approximation"><code>M_CHAIN_APPROXIMATION</code><a href="#m_chain_approximation" class="hash-link" aria-label="Direct link to m_chain_approximation" title="Direct link to m_chain_approximation" translate="no">​</a></h3>
+<p>Sets the simple geometric feature used when performing the edge approximation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the edge approximation will not be performed. In this case, only the edge map is calculated.</td></tr><tr><td><code>M_LINE</code></td><td>Specifies that the edge approximation will be performed using a polygonal segmentation of each edge, in pixel units. In this case, both the edge map and the edge approximation are calculated.</td></tr><tr><td><code>M_WORLD_LINE</code></td><td>Specifies that the edge approximation will be performed using a polygonal segmentation of each edge, in world units. In this case, both the edge map and the edge approximation are calculated. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_CHAIN_APPROXIMATION</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_WORLD_LINE</code></a>, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><code>MedgeCalculate</code></a> to perform the calculation generates an error if the operation is not performed on a calibrated image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_gap_angle"><code>M_FILL_GAP_ANGLE</code><a href="#m_fill_gap_angle" class="hash-link" aria-label="Direct link to m_fill_gap_angle" title="Direct link to m_fill_gap_angle" translate="no">​</a></h3>
+<p>Sets the aperture angle, starting at the line&#x27;s tangent at the point of interest, where Edge Finder searches for edge extremity candidates when filling edge gaps. That is, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILL_GAP_ANGLE</code></a>, along with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILL_GAP_DISTANCE</code></a>, define a region where two chain extremities can be linked. Note that two chain extremities can only be linked if both are included in the search region of the other.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the aperture angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_gap_candidate"><code>M_FILL_GAP_CANDIDATE</code><a href="#m_fill_gap_candidate" class="hash-link" aria-label="Direct link to m_fill_gap_candidate" title="Direct link to m_fill_gap_candidate" translate="no">​</a></h3>
+<p>Sets whether to join an edge extremity with the other extremity of the same edge, or with an extremity of any edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that the extremity of an edge can be connected with the extremity of any edge.</td></tr><tr><td><code>M_SAME</code></td><td>Specifies that the extremity of an edge can only be connected with the other extremity of the same edge.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_gap_continuity"><code>M_FILL_GAP_CONTINUITY</code><a href="#m_fill_gap_continuity" class="hash-link" aria-label="Direct link to m_fill_gap_continuity" title="Direct link to m_fill_gap_continuity" translate="no">​</a></h3>
+<p>Sets the continuity constraint used when performing edge gap filling, when more than one edge extremity candidate is present. Among the whole set of extremity candidate edgels found, the one which fulfills the continuity criteria best is chosen to fill the gap.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the continuity constraint. When set to 0.0, the closest candidate is chosen to link edge segments together. When set to 100.0, the candidate that gives the most continuous result (minimum curvature) is chosen.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_gap_distance"><code>M_FILL_GAP_DISTANCE</code><a href="#m_fill_gap_distance" class="hash-link" aria-label="Direct link to m_fill_gap_distance" title="Direct link to m_fill_gap_distance" translate="no">​</a></h3>
+<p>Sets the maximum distance radius where Edge Finder searches for edge extremity candidates when filling edge gaps. That is, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILL_GAP_DISTANCE</code></a>, along with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILL_GAP_ANGLE</code></a>, define a region where two chain extremities can be linked. Note that two chain extremities can only be linked if both are included in the search region of the other.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies an infinite maximum distance radius.</td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the maximum distance radius, in pixels. Note that generally, large values should not be set. Typically, you would set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_FILL_GAP_DISTANCE</code></a> to a value in the range of 2 to 5 pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_gap_polarity"><code>M_FILL_GAP_POLARITY</code><a href="#m_fill_gap_polarity" class="hash-link" aria-label="Direct link to m_fill_gap_polarity" title="Direct link to m_fill_gap_polarity" translate="no">​</a></h3>
+<p>Sets the use of the edge polarity to perform the filling of edge gaps.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that gaps between edges will be filled, regardless of their polarity.</td></tr><tr><td><code>M_REVERSE</code></td><td>Specifies that gaps between edges that have reverse polarity will be filled.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_REVERSE</code></a> is not available for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts.</td></tr><tr><td><code>M_SAME</code></td><td>Specifies that gaps between edges that have the same polarity will be filled.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SAME</code></a> is not available for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeAlloc"><code>M_CREST</code></a> Edge Finder contexts.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-result-buffer">For a result buffer<a href="#for-a-result-buffer" class="hash-link" aria-label="Direct link to For a result buffer" title="Direct link to For a result buffer" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlValue</code></a> parameter settings can be specified for an Edge Finder result buffer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_agm_compatible"><code>M_AGM_COMPATIBLE</code><a href="#m_agm_compatible" class="hash-link" aria-label="Direct link to m_agm_compatible" title="Direct link to m_agm_compatible" translate="no">​</a></h3>
+<p>Sets whether the Edge Finder result buffer can be used with an AGM context. When used together, you can define models from the result of an edge extraction, or you can find model occurrences in the result of an edge extraction. Note that you must call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><code>MedgeCalculate</code></a> for this setting to take effect.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Edge Finder result buffer cannot be used with an AGM context.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Edge Finder result buffer can be used with an AGM context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_cross_size"><code>M_DRAW_CROSS_SIZE</code><a href="#m_draw_cross_size" class="hash-link" aria-label="Direct link to m_draw_cross_size" title="Direct link to m_draw_cross_size" translate="no">​</a></h3>
+<p>Sets the size of the cross used to identify certain features when drawing with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeDraw"><code>MedgeDraw</code></a>. This cross is used to draw the edge&#x27;s edgels (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeDraw"><code>M_DRAW_EDGELS</code></a>), mid-point (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeDraw"><code>M_DRAW_POSITION</code></a>), and center of gravity (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeDraw"><code>M_DRAW_CENTER_OF_GRAVITY</code></a>).  For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeDraw"><code>MedgeDraw</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the size of the cross, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_finder_compatible"><code>M_MODEL_FINDER_COMPATIBLE</code><a href="#m_model_finder_compatible" class="hash-link" aria-label="Direct link to m_model_finder_compatible" title="Direct link to m_model_finder_compatible" translate="no">​</a></h3>
+<p>Sets whether the Edge Finder result buffer can be used with a Model Finder context. When used together, you can define models from the result of an edge extraction, or you can find model occurrences in the result of an edge extraction. Note that you must call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><code>MedgeCalculate</code></a> for this setting to take effect.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Edge Finder result buffer cannot be used with a Model Finder context.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Edge Finder result buffer can be used with a Model Finder context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nearest_neighbor_radius"><code>M_NEAREST_NEIGHBOR_RADIUS</code><a href="#m_nearest_neighbor_radius" class="hash-link" aria-label="Direct link to m_nearest_neighbor_radius" title="Direct link to m_nearest_neighbor_radius" translate="no">​</a></h3>
+<p>Sets the radius distance used to select the closest edge or edges from a point. For more information, see the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeSelect"><code>MedgeSelect</code></a>   <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeSelect"><code>Condition</code></a> parameter values <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeSelect"><code>M_NEAREST_NEIGHBOR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeSelect"><code>M_ALL_NEAREST_NEIGHBORS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the radius distance, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_output_units"><code>M_RESULT_OUTPUT_UNITS</code><a href="#m_result_output_units" class="hash-link" aria-label="Direct link to m_result_output_units" title="Direct link to m_result_output_units" translate="no">​</a></h3>
+<p>Sets whether to return results in pixels or world units. This essentially sets the output coordinate system to use. The setting of this control type will only affect functions within this module which return positional results. This control type can be changed at any time to return results in the required output units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_CALIBRATION</code> <em>(default)</em></td><td>Specifies that results are returned in world units if the result was calculated on an image associated with a camera calibration context; otherwise, specifies that results are returned in pixel units.</td></tr><tr><td><code>M_PIXEL</code></td><td>Specifies that results are returned in pixel units, with respect to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies that results are returned in world units, with respect to the relative coordinate system. If world units are specifed, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetResult"><code>MedgeGetResult</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><code>MedgeGetNeighbors</code></a> generates an error if the result was not calculated on a calibrated image.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-setting-closest-edgel-constraints">For setting closest-edgel constraints<a href="#for-setting-closest-edgel-constraints" class="hash-link" aria-label="Direct link to For setting closest-edgel constraints" title="Direct link to For setting closest-edgel constraints" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>ControlValue</code></a> parameter settings are used to set closest-edgel constraints for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><code>MedgeGetNeighbors</code></a>. This function retrieves the coordinates of edgels, from an Edge Finder result buffer, that meet the constraints set below, and correspond to the closest neighbors from a list of user-specified source points.  The following values can only be specified for an Edge Finder result buffer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_angle"><code>M_NEIGHBOR_ANGLE</code><a href="#m_neighbor_angle" class="hash-link" aria-label="Direct link to m_neighbor_angle" title="Direct link to m_neighbor_angle" translate="no">​</a></h3>
+<p>Sets the gradient angle that an edgel must have, before being considered a candidate, when finding the closest edgels to a list of points.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE</code></a> is based on a source angle, which you must provide for each source point, with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><code>MedgeGetNeighbors</code></a>. Note that you can set a tolerance for this angle, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE_TOLERANCE</code></a>.  &gt; <strong>Note:</strong> <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE</code></a> can only be used if the internal angle buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SAVE_ANGLE</code></a>) was initially saved.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that the edgel candidate can have any gradient angle. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ANY</code></a> is equivalent to setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE_TOLERANCE</code></a> to 360.0°. In this case, you need not provide the source angle(s) in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><code>MedgeGetNeighbors</code></a>.</td></tr><tr><td><code>M_REVERSE</code></td><td>Specifies that the gradient angle of the edgel candidate must have the reverse angle (+ 180°) of the source point.</td></tr><tr><td><code>M_SAME</code></td><td>Specifies that the gradient angle of the edgel candidate must have the same angle as the source point.</td></tr><tr><td><code>M_SAME_OR_REVERSE</code></td><td>Specifies that the gradient angle of the edgel candidate must either have the same, or the reverse angle of the source point.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_angle_tolerance"><code>M_NEIGHBOR_ANGLE_TOLERANCE</code><a href="#m_neighbor_angle_tolerance" class="hash-link" aria-label="Direct link to m_neighbor_angle_tolerance" title="Direct link to m_neighbor_angle_tolerance" translate="no">​</a></h3>
+<p>Sets the angular tolerance to use for the angle constraint (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE</code></a>), when finding the closest edgels to a list of points. Only edgels that have a gradient angle that falls within this angular range can be returned.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE_TOLERANCE</code></a> is ignored if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ANY</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the angular tolerance, in degrees. This value is applied to the angle constraint. Note that setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE_TOLERANCE</code></a> to 360.0° is equivalent to setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_NEIGHBOR_ANGLE</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_ANY</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_maximum_number"><code>M_NEIGHBOR_MAXIMUM_NUMBER</code><a href="#m_neighbor_maximum_number" class="hash-link" aria-label="Direct link to m_neighbor_maximum_number" title="Direct link to m_neighbor_maximum_number" translate="no">​</a></h3>
+<p>Sets the maximum number of edgels that can be returned (for each point), when finding the closest edgels to a list of points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the maximum number of edgels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_minimum_spacing"><code>M_NEIGHBOR_MINIMUM_SPACING</code><a href="#m_neighbor_minimum_spacing" class="hash-link" aria-label="Direct link to m_neighbor_minimum_spacing" title="Direct link to m_neighbor_minimum_spacing" translate="no">​</a></h3>
+<p>Sets the minimum distance separating closest edgel candidates within the same edge, when finding the closest edgels to a list of points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies no minimum distance separating two edgel candidates.</td></tr><tr><td><code>Value &gt;= 1</code></td><td>Specifies the minimum distance, in edgels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_angle"><code>M_SEARCH_ANGLE</code><a href="#m_search_angle" class="hash-link" aria-label="Direct link to m_search_angle" title="Direct link to m_search_angle" translate="no">​</a></h3>
+<p>Sets the search angle constraint (applied the Edge Finder result buffer), when finding the closest edgels to a list of points. Only edgels that are located along this angle can be returned.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE</code></a> is relative to the source angle set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><code>MedgeGetNeighbors</code></a>. Note that you can set the angular tolerance and the angular orientation for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE</code></a>, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE_TOLERANCE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE_SIGN</code></a>, respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_angle_sign"><code>M_SEARCH_ANGLE_SIGN</code><a href="#m_search_angle_sign" class="hash-link" aria-label="Direct link to m_search_angle_sign" title="Direct link to m_search_angle_sign" translate="no">​</a></h3>
+<p>Sets the orientation to use for the search angle constraint, when finding the closest edgels to a list of points. The orientation is relative to the source angle set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><code>MedgeGetNeighbors</code></a>. For example, if the source angle is 45°, then the reverse orientation would be 225°.  Note that you can set the search angle and the angular tolerance for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE_SIGN</code></a>, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE_TOLERANCE</code></a>, respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_REVERSE</code></td><td>Specifies that the orientation of the angle must be the reverse (+ 180°) of the source angle. That is, the angle used will look flipped when compared to the source angle.</td></tr><tr><td><code>M_SAME</code> <em>(default)</em></td><td>Specifies that the orientation of the angle must be the same as the source angle.</td></tr><tr><td><code>M_SAME_OR_REVERSE</code></td><td>Specifies that the orientation of the angle can be the same as, or the reverse of, the source angle.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_angle_tolerance"><code>M_SEARCH_ANGLE_TOLERANCE</code><a href="#m_search_angle_tolerance" class="hash-link" aria-label="Direct link to m_search_angle_tolerance" title="Direct link to m_search_angle_tolerance" translate="no">​</a></h3>
+<p>Sets the angular tolerance to use for the search angle constraint, when finding the closest edgels to a list of points. Only edgels that are located within this angular range (in the Edge Finder result buffer) can be returned.  Note that you can set the search angle and the angular orientation for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE_TOLERANCE</code></a>, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>MedgeControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE_SIGN</code></a>, respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_radius_max"><code>M_SEARCH_RADIUS_MAX</code><a href="#m_search_radius_max" class="hash-link" aria-label="Direct link to m_search_radius_max" title="Direct link to m_search_radius_max" translate="no">​</a></h3>
+<p>Sets the maximum radius distance in the Edge Finder result buffer that will be searched for the closest edgels. You must use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><code>MedgeGetNeighbors</code></a> to specify the source point from which the radius is measured.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies a maximum distance radius that spans all edgels in the Edge Finder result buffer.</td></tr><tr><td><code>Value</code></td><td>Specifies the maximum distance radius, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_radius_min"><code>M_SEARCH_RADIUS_MIN</code><a href="#m_search_radius_min" class="hash-link" aria-label="Direct link to m_search_radius_min" title="Direct link to m_search_radius_min" translate="no">​</a></h3>
+<p>Sets the minimum radius distance in the Edge Finder result buffer that will be searched for the closest edgels. You must use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeGetNeighbors"><code>MedgeGetNeighbors</code></a> to specify the source point from which the radius is measured.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the minimum distance radius, in pixels.</td></tr></tbody></table>
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE_TOLERANCE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_ANGLE_SIGN</code></a> limit the search region for potential edgel candidates to an angular sector within the Edge Finder result buffer. Only edgels that are located within this region can be returned.</p>
+<p>Used together, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_RADIUS_MAX</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeControl"><code>M_SEARCH_RADIUS_MIN</code></a> define a ring-like region, in the Edge Finder result buffer, that will be used to find the closest edgels. All edgels that fall outside this ring will be ignored.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeCalculate"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MedgeCalculate</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/MedgeDraw"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MedgeDraw</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-operation-settings-for-object-contours-and-line-crests" class="table-of-contents__link toc-highlight">For operation settings for object contours and line crests</a></li><li><a href="#m_accuracy" class="table-of-contents__link toc-highlight"><code>M_ACCURACY</code></a></li><li><a href="#m_angle_accuracy" class="table-of-contents__link toc-highlight"><code>M_ANGLE_ACCURACY</code></a></li><li><a href="#m_chain_all_neighbors" class="table-of-contents__link toc-highlight"><code>M_CHAIN_ALL_NEIGHBORS</code></a></li><li><a href="#m_detail_level" class="table-of-contents__link toc-highlight"><code>M_DETAIL_LEVEL</code></a></li><li><a href="#m_extraction_scale" class="table-of-contents__link toc-highlight"><code>M_EXTRACTION_SCALE</code></a></li><li><a href="#m_filter_smoothness" class="table-of-contents__link toc-highlight"><code>M_FILTER_SMOOTHNESS</code></a></li><li><a href="#m_filter_type" class="table-of-contents__link toc-highlight"><code>M_FILTER_TYPE</code></a></li><li><a href="#m_float_mode" class="table-of-contents__link toc-highlight"><code>M_FLOAT_MODE</code></a></li><li><a href="#m_magnitude_type" class="table-of-contents__link toc-highlight"><code>M_MAGNITUDE_TYPE</code></a></li><li><a href="#m_overscan" class="table-of-contents__link toc-highlight"><code>M_OVERSCAN</code></a></li><li><a href="#m_overscan_replace_value" class="table-of-contents__link toc-highlight"><code>M_OVERSCAN_REPLACE_VALUE</code></a></li><li><a href="#m_threshold_high" class="table-of-contents__link toc-highlight"><code>M_THRESHOLD_HIGH</code></a></li><li><a href="#m_threshold_low" class="table-of-contents__link toc-highlight"><code>M_THRESHOLD_LOW</code></a></li><li><a href="#m_threshold_mode" class="table-of-contents__link toc-highlight"><code>M_THRESHOLD_MODE</code></a></li><li><a href="#m_threshold_type" class="table-of-contents__link toc-highlight"><code>M_THRESHOLD_TYPE</code></a></li><li><a href="#m_timeout" class="table-of-contents__link toc-highlight"><code>M_TIMEOUT</code></a></li><li><a href="#for-operation-settings-for-line-crests" class="table-of-contents__link toc-highlight">For operation settings for line crests</a></li><li><a href="#m_foreground_value" class="table-of-contents__link toc-highlight"><code>M_FOREGROUND_VALUE</code></a></li><li><a href="#for-saving-internal-buffers-in-the-edge-finder-result-buffer" class="table-of-contents__link toc-highlight">For saving internal buffers in the Edge Finder result buffer</a></li><li><a href="#m_save_angle" class="table-of-contents__link toc-highlight"><code>M_SAVE_ANGLE</code></a></li><li><a href="#m_save_chain_angle" class="table-of-contents__link toc-highlight"><code>M_SAVE_CHAIN_ANGLE</code></a></li><li><a href="#m_save_chain_magnitude" class="table-of-contents__link toc-highlight"><code>M_SAVE_CHAIN_MAGNITUDE</code></a></li><li><a href="#m_save_derivatives" class="table-of-contents__link toc-highlight"><code>M_SAVE_DERIVATIVES</code></a></li><li><a href="#m_save_image" class="table-of-contents__link toc-highlight"><code>M_SAVE_IMAGE</code></a></li><li><a href="#m_save_magnitude" class="table-of-contents__link toc-highlight"><code>M_SAVE_MAGNITUDE</code></a></li><li><a href="#m_save_mask" class="table-of-contents__link toc-highlight"><code>M_SAVE_MASK</code></a></li><li><a href="#for-calculating-edge-features" class="table-of-contents__link toc-highlight">For calculating edge features</a></li><li><a href="#m_average_strength" class="table-of-contents__link toc-highlight"><code>M_AVERAGE_STRENGTH</code></a></li><li><a href="#m_box_x_max" class="table-of-contents__link toc-highlight"><code>M_BOX_X_MAX</code></a></li><li><a href="#m_box_x_min" class="table-of-contents__link toc-highlight"><code>M_BOX_X_MIN</code></a></li><li><a href="#m_box_y_max" class="table-of-contents__link toc-highlight"><code>M_BOX_Y_MAX</code></a></li><li><a href="#m_box_y_min" class="table-of-contents__link toc-highlight"><code>M_BOX_Y_MIN</code></a></li><li><a href="#m_center_of_gravity_x" class="table-of-contents__link toc-highlight"><code>M_CENTER_OF_GRAVITY_X</code></a></li><li><a href="#m_center_of_gravity_y" class="table-of-contents__link toc-highlight"><code>M_CENTER_OF_GRAVITY_Y</code></a></li><li><a href="#m_circle_fit_center_x" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_FIT_CENTER_X</code></a></li><li><a href="#m_circle_fit_center_y" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_FIT_CENTER_Y</code></a></li><li><a href="#m_circle_fit_coverage" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_FIT_COVERAGE</code></a></li><li><a href="#m_circle_fit_error" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_FIT_ERROR</code></a></li><li><a href="#m_circle_fit_radius" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_FIT_RADIUS</code></a></li><li><a href="#m_closure" class="table-of-contents__link toc-highlight"><code>M_CLOSURE</code></a></li><li><a href="#m_convex_perimeter" class="table-of-contents__link toc-highlight"><code>M_CONVEX_PERIMETER</code></a></li><li><a href="#m_ellipse_fit_angle" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_FIT_ANGLE</code></a></li><li><a href="#m_ellipse_fit_center_x" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_FIT_CENTER_X</code></a></li><li><a href="#m_ellipse_fit_center_y" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_FIT_CENTER_Y</code></a></li><li><a href="#m_ellipse_fit_coverage" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_FIT_COVERAGE</code></a></li><li><a href="#m_ellipse_fit_error" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_FIT_ERROR</code></a></li><li><a href="#m_ellipse_fit_major_axis" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_FIT_MAJOR_AXIS</code></a></li><li><a href="#m_ellipse_fit_minor_axis" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_FIT_MINOR_AXIS</code></a></li><li><a href="#m_fast_length" class="table-of-contents__link toc-highlight"><code>M_FAST_LENGTH</code></a></li><li><a href="#m_feret_elongation" class="table-of-contents__link toc-highlight"><code>M_FERET_ELONGATION</code></a></li><li><a href="#m_feret_general" class="table-of-contents__link toc-highlight"><code>M_FERET_GENERAL</code></a></li><li><a href="#m_feret_max_angle" class="table-of-contents__link toc-highlight"><code>M_FERET_MAX_ANGLE</code></a></li><li><a href="#m_feret_max_diameter" class="table-of-contents__link toc-highlight"><code>M_FERET_MAX_DIAMETER</code></a></li><li><a href="#m_feret_mean_diameter" class="table-of-contents__link toc-highlight"><code>M_FERET_MEAN_DIAMETER</code></a></li><li><a href="#m_feret_min_angle" class="table-of-contents__link toc-highlight"><code>M_FERET_MIN_ANGLE</code></a></li><li><a href="#m_feret_min_diameter" class="table-of-contents__link toc-highlight"><code>M_FERET_MIN_DIAMETER</code></a></li><li><a href="#m_feret_x" class="table-of-contents__link toc-highlight"><code>M_FERET_X</code></a></li><li><a href="#m_feret_y" class="table-of-contents__link toc-highlight"><code>M_FERET_Y</code></a></li><li><a href="#m_first_point_x" class="table-of-contents__link toc-highlight"><code>M_FIRST_POINT_X</code></a></li><li><a href="#m_first_point_y" class="table-of-contents__link toc-highlight"><code>M_FIRST_POINT_Y</code></a></li><li><a href="#m_label_value" class="table-of-contents__link toc-highlight"><code>M_LABEL_VALUE</code></a></li><li><a href="#m_length" class="table-of-contents__link toc-highlight"><code>M_LENGTH</code></a></li><li><a href="#m_line_fit_a" class="table-of-contents__link toc-highlight"><code>M_LINE_FIT_A</code></a></li><li><a href="#m_line_fit_b" class="table-of-contents__link toc-highlight"><code>M_LINE_FIT_B</code></a></li><li><a href="#m_line_fit_c" class="table-of-contents__link toc-highlight"><code>M_LINE_FIT_C</code></a></li><li><a href="#m_line_fit_error" class="table-of-contents__link toc-highlight"><code>M_LINE_FIT_ERROR</code></a></li><li><a href="#m_moment_elongation" class="table-of-contents__link toc-highlight"><code>M_MOMENT_ELONGATION</code></a></li><li><a href="#m_moment_elongation_angle" class="table-of-contents__link toc-highlight"><code>M_MOMENT_ELONGATION_ANGLE</code></a></li><li><a href="#m_position_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_X</code></a></li><li><a href="#m_position_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_Y</code></a></li><li><a href="#m_size" class="table-of-contents__link toc-highlight"><code>M_SIZE</code></a></li><li><a href="#m_strength" class="table-of-contents__link toc-highlight"><code>M_STRENGTH</code></a></li><li><a href="#m_tortuosity" class="table-of-contents__link toc-highlight"><code>M_TORTUOSITY</code></a></li><li><a href="#m_x_max_at_y_max" class="table-of-contents__link toc-highlight"><code>M_X_MAX_AT_Y_MAX</code></a></li><li><a href="#m_x_min_at_y_min" class="table-of-contents__link toc-highlight"><code>M_X_MIN_AT_Y_MIN</code></a></li><li><a href="#m_y_max_at_x_min" class="table-of-contents__link toc-highlight"><code>M_Y_MAX_AT_X_MIN</code></a></li><li><a href="#m_y_min_at_x_max" class="table-of-contents__link toc-highlight"><code>M_Y_MIN_AT_X_MAX</code></a></li><li><a href="#combination-constants--for-specifying-a-sorting-key" class="table-of-contents__link toc-highlight">Combination Constants — For specifying a sorting key</a></li><li><a href="#for-calculating-feret-values" class="table-of-contents__link toc-highlight">For calculating Feret values</a></li><li><a href="#m_feret_angle_search_end" class="table-of-contents__link toc-highlight"><code>M_FERET_ANGLE_SEARCH_END</code></a></li><li><a href="#m_feret_angle_search_start" class="table-of-contents__link toc-highlight"><code>M_FERET_ANGLE_SEARCH_START</code></a></li><li><a href="#m_feret_general_angle" class="table-of-contents__link toc-highlight"><code>M_FERET_GENERAL_ANGLE</code></a></li><li><a href="#m_number_of_ferets" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_FERETS</code></a></li><li><a href="#for-selecting-groups-of-edge-features" class="table-of-contents__link toc-highlight">For selecting groups of edge features</a></li><li><a href="#m_all_features" class="table-of-contents__link toc-highlight"><code>M_ALL_FEATURES</code></a></li><li><a href="#m_box" class="table-of-contents__link toc-highlight"><code>M_BOX</code></a></li><li><a href="#m_center_of_gravity" class="table-of-contents__link toc-highlight"><code>M_CENTER_OF_GRAVITY</code></a></li><li><a href="#m_circle_fit" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_FIT</code></a></li><li><a href="#m_contact_points" class="table-of-contents__link toc-highlight"><code>M_CONTACT_POINTS</code></a></li><li><a href="#m_ellipse_fit" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_FIT</code></a></li><li><a href="#m_feret_box" class="table-of-contents__link toc-highlight"><code>M_FERET_BOX</code></a></li><li><a href="#m_first_point" class="table-of-contents__link toc-highlight"><code>M_FIRST_POINT</code></a></li><li><a href="#m_line_fit" class="table-of-contents__link toc-highlight"><code>M_LINE_FIT</code></a></li><li><a href="#m_position" class="table-of-contents__link toc-highlight"><code>M_POSITION</code></a></li><li><a href="#for-performing-post-calculations-on-extracted-edges" class="table-of-contents__link toc-highlight">For performing post-calculations on extracted edges</a></li><li><a href="#m_approximation_tolerance" class="table-of-contents__link toc-highlight"><code>M_APPROXIMATION_TOLERANCE</code></a></li><li><a href="#m_chain_approximation" class="table-of-contents__link toc-highlight"><code>M_CHAIN_APPROXIMATION</code></a></li><li><a href="#m_fill_gap_angle" class="table-of-contents__link toc-highlight"><code>M_FILL_GAP_ANGLE</code></a></li><li><a href="#m_fill_gap_candidate" class="table-of-contents__link toc-highlight"><code>M_FILL_GAP_CANDIDATE</code></a></li><li><a href="#m_fill_gap_continuity" class="table-of-contents__link toc-highlight"><code>M_FILL_GAP_CONTINUITY</code></a></li><li><a href="#m_fill_gap_distance" class="table-of-contents__link toc-highlight"><code>M_FILL_GAP_DISTANCE</code></a></li><li><a href="#m_fill_gap_polarity" class="table-of-contents__link toc-highlight"><code>M_FILL_GAP_POLARITY</code></a></li><li><a href="#for-a-result-buffer" class="table-of-contents__link toc-highlight">For a result buffer</a></li><li><a href="#m_agm_compatible" class="table-of-contents__link toc-highlight"><code>M_AGM_COMPATIBLE</code></a></li><li><a href="#m_draw_cross_size" class="table-of-contents__link toc-highlight"><code>M_DRAW_CROSS_SIZE</code></a></li><li><a href="#m_model_finder_compatible" class="table-of-contents__link toc-highlight"><code>M_MODEL_FINDER_COMPATIBLE</code></a></li><li><a href="#m_nearest_neighbor_radius" class="table-of-contents__link toc-highlight"><code>M_NEAREST_NEIGHBOR_RADIUS</code></a></li><li><a href="#m_result_output_units" class="table-of-contents__link toc-highlight"><code>M_RESULT_OUTPUT_UNITS</code></a></li><li><a href="#for-setting-closest-edgel-constraints" class="table-of-contents__link toc-highlight">For setting closest-edgel constraints</a></li><li><a href="#m_neighbor_angle" class="table-of-contents__link toc-highlight"><code>M_NEIGHBOR_ANGLE</code></a></li><li><a href="#m_neighbor_angle_tolerance" class="table-of-contents__link toc-highlight"><code>M_NEIGHBOR_ANGLE_TOLERANCE</code></a></li><li><a href="#m_neighbor_maximum_number" class="table-of-contents__link toc-highlight"><code>M_NEIGHBOR_MAXIMUM_NUMBER</code></a></li><li><a href="#m_neighbor_minimum_spacing" class="table-of-contents__link toc-highlight"><code>M_NEIGHBOR_MINIMUM_SPACING</code></a></li><li><a href="#m_search_angle" class="table-of-contents__link toc-highlight"><code>M_SEARCH_ANGLE</code></a></li><li><a href="#m_search_angle_sign" class="table-of-contents__link toc-highlight"><code>M_SEARCH_ANGLE_SIGN</code></a></li><li><a href="#m_search_angle_tolerance" class="table-of-contents__link toc-highlight"><code>M_SEARCH_ANGLE_TOLERANCE</code></a></li><li><a href="#m_search_radius_max" class="table-of-contents__link toc-highlight"><code>M_SEARCH_RADIUS_MAX</code></a></li><li><a href="#m_search_radius_min" class="table-of-contents__link toc-highlight"><code>M_SEARCH_RADIUS_MIN</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

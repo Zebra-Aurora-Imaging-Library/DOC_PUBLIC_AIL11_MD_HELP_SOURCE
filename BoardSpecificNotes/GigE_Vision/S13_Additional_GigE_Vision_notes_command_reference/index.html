@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Miscellaneous reference information for Zebra GigE Vision driver | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Miscellaneous reference information for Zebra GigE Vision driver | Aurora Imaging Library"><meta data-rh="true" name="description" content="This section includes additional command reference information for Zebra GigE Vision driver. The information found in this section might be a reiteration of content previously documented."><meta data-rh="true" property="og:description" content="This section includes additional command reference information for Zebra GigE Vision driver. The information found in this section might be a reiteration of content previously documented."><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Miscellaneous reference information for Zebra GigE Vision driver","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/4Sight/ChapterInformation"><span title="4Sight" class="categoryLinkLabel_W154">4Sight</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/AltiZ/ChapterInformation"><span title="AltiZ" class="categoryLinkLabel_W154">AltiZ</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/AltiZ_4200/ChapterInformation"><span title="AltiZ_4200" class="categoryLinkLabel_W154">AltiZ_4200</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Clarity_UHD/ChapterInformation"><span title="Clarity_UHD" class="categoryLinkLabel_W154">Clarity_UHD</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Concord_PoE/ChapterInformation"><span title="Concord_PoE" class="categoryLinkLabel_W154">Concord_PoE</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GenTL/ChapterInformation"><span title="GenTL" class="categoryLinkLabel_W154">GenTL</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GevIQ/ChapterInformation"><span title="GevIQ" class="categoryLinkLabel_W154">GevIQ</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/ChapterInformation"><span title="GigE_Vision" class="categoryLinkLabel_W154">GigE_Vision</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/ChapterInformation"><span title="Zebra GigE Vision driver" class="linkLabel_WmDU">Zebra GigE Vision driver</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S01_GigE_Vision_specific_features"><span title="Zebra GigE Vision driver overview" class="linkLabel_WmDU">Zebra GigE Vision driver overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S02_Using_GigE_Vision"><span title="Using GigE Vision with Aurora Imaging Library" class="linkLabel_WmDU">Using GigE Vision with Aurora Imaging Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S03_GigE_Vision_utilities"><span title="Zebra GigE Vision tools" class="linkLabel_WmDU">Zebra GigE Vision tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S04_Configuring_your_GigE_Vision_device"><span title="Configuring your GigE Vision camera and Gigabit Ethernet network adapter" class="linkLabel_WmDU">Configuring your GigE Vision camera and Gigabit Ethernet network adapter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S05_GigE_Vision_network_adapters"><span title="Configuring IP addresses" class="linkLabel_WmDU">Configuring IP addresses</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S06_Link_aggregation"><span title="Link aggregation" class="linkLabel_WmDU">Link aggregation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S07_IP_multicast"><span title="Using IP multicast" class="linkLabel_WmDU">Using IP multicast</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S08_Ethernet_switches_routers_IGMP_and_IP_multicast"><span title="Ethernet switches, routers, IGMP, and IP multicast" class="linkLabel_WmDU">Ethernet switches, routers, IGMP, and IP multicast</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S09_Using_an_Ethernet_switch_with_GigE_vision_complaint_cameras"><span title="Using a Gbit Ethernet switch with GigE Vision-compliant cameras" class="linkLabel_WmDU">Using a Gbit Ethernet switch with GigE Vision-compliant cameras</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S10_Troubleshooting_acquisition_reliability_issues"><span title="Troubleshooting acquisition reliability issues" class="linkLabel_WmDU">Troubleshooting acquisition reliability issues</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S11_GigE_Vision_20_changes"><span title="Triggering simultaneous actions in multiple GigE Vision cameras" class="linkLabel_WmDU">Triggering simultaneous actions in multiple GigE Vision cameras</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S12_Additional_GigE_Vision_notes_user_guide"><span title="Miscellaneous user guide information for Zebra GigE Vision driver" class="linkLabel_WmDU">Miscellaneous user guide information for Zebra GigE Vision driver</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference"><span title="Miscellaneous reference information for Zebra GigE Vision driver" class="linkLabel_WmDU">Miscellaneous reference information for Zebra GigE Vision driver</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Indio/ChapterInformation"><span title="Indio" class="categoryLinkLabel_W154">Indio</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Iris_GTX/ChapterInformation"><span title="Iris_GTX" class="categoryLinkLabel_W154">Iris_GTX</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Radient_eV-CL/ChapterInformation"><span title="Radient_eV-CL" class="categoryLinkLabel_W154">Radient_eV-CL</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo-CXP/ChapterInformation"><span title="Rapixo-CXP" class="categoryLinkLabel_W154">Rapixo-CXP</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo-CoF/ChapterInformation"><span title="Rapixo-CoF" class="categoryLinkLabel_W154">Rapixo-CoF</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/ChapterInformation"><span title="Rapixo_CL" class="categoryLinkLabel_W154">Rapixo_CL</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/USB3_Vision/ChapterInformation"><span title="USB3_Vision" class="categoryLinkLabel_W154">USB3_Vision</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/V4L2/ChapterInformation"><span title="V4L2" class="categoryLinkLabel_W154">V4L2</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">GigE_Vision</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Miscellaneous reference information for Zebra GigE Vision driver</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Miscellaneous reference information for Zebra GigE Vision driver</h1></header>
+<p>This section includes additional command reference information for Zebra GigE Vision driver. The information found in this section might be a reiteration of content previously documented.</p>
+<p>The following modules are mentioned in this section:</p>
+<ul>
+<li class=""><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference">Mbuf</a>.</li>
+<li class=""><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference">Mdig</a>.</li>
+<li class=""><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S13_Additional_GigE_Vision_notes_command_reference">Msys</a>.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mbuf">Mbuf<a href="#mbuf" class="hash-link" aria-label="Direct link to Mbuf" title="Direct link to Mbuf" translate="no">​</a></h2>
+<p>This section presents information about Zebra GigE Vision driver and the buffer module.</p>
+<ul>
+<li class="">Support for grab containers. See container support in the Mbuf module of the Help for details.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mbufalloc">Additions to MbufAlloc...<a href="#additions-to-mbufalloc" class="hash-link" aria-label="Direct link to Additions to MbufAlloc..." title="Direct link to Additions to MbufAlloc..." translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc1d"><code>MbufAlloc...</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_IMAGE</strong> + <strong>M_GRAB</strong> + <strong>M_DYNAMIC</strong> buffer attribute.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mbufinquire">Additions to MbufInquire<a href="#additions-to-mbufinquire" class="hash-link" aria-label="Direct link to Additions to MbufInquire" title="Direct link to Additions to MbufInquire" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>MbufInquire</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_GRAB_TIME_STAMP</strong>.
+Inquires the time when Aurora Imaging Library finished grabbing into the buffer, expressed in seconds. Inquire returns an <strong>AIL_DOUBLE</strong>.</li>
+<li class="">Support for <strong>M_GRAB_TIME_STAMP_NS</strong>.
+Inquires the time when Aurora Imaging Library finished grabbing into the buffer, expressed in nanoseconds. Inquire returns an <strong>AIL_INT64</strong>.</li>
+<li class="">Support for <strong>M_CAMERA_TIME_STAMP</strong>.
+Inquires the time at which the device generated the frame of data, expressed in seconds. Inquire returns an <strong>AIL_DOUBLE</strong>.</li>
+<li class="">Support for <strong>M_CAMERA_TIME_STAMP_NS</strong>.
+Inquires the time at which the device generated the frame of data expressed in nanoseconds. Inquire returns an <strong>AIL_INT64</strong>.</li>
+<li class="">Support for <strong>M_COMPONENT_TIME_STAMP</strong>.
+<strong>BufId</strong> must be that of a component. When grabbing into a container, from a device transmitting data in GenDC format, this inquire gets the time at which the device generated the data component expressed in seconds. Zero is returned if there is no component time stamp available. Inquire returns an <strong>AIL_DOUBLE</strong>. Note: components belonging to the same container can have different component time stamps.</li>
+<li class="">Support for <strong>M_COMPONENT_TIME_STAMP_NS</strong>.
+<strong>BufId</strong> must be that of a component. When grabbing into a container, from a device transmitting data in GenDC format, this inquire gets the time at which the device generated the data component expressed in nanoseconds. Zero is returned if there is no component time stamp available. Inquire returns an <strong>AIL_INT64</strong>. Note: components belonging to the same container can have different component time stamps.</li>
+<li class="">Support for <strong>M_COMPONENT_TIME_STAMP_IS_PTP</strong>.
+<strong>BufId</strong> must be that of a component. If <strong>M_COMPONENT_TIME_STAMP_IS_PTP</strong> returns <strong>M_TRUE</strong>, then <strong>M_COMPONENT_TIME_STAMP_NS</strong> is relative to the epoch January 1st 1970 0:00:00.</li>
+<li class="">Support for <strong>M_LAYOUT_MODIFICATION_COUNT</strong>.
+<strong>BufId</strong> must be that of a container. This value is modified every time a component is added or removed from the container. Inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_PFNC_VALUE</strong>.
+Returns the buffer&#x27;s format as defined in the GenICam Pixel Format Naming Convention (PFNC).</li>
+<li class="">Support for <strong>M_PFNC_SUPPORT</strong>.
+Returns <strong>M_YES</strong> if the PFNC format is a native Aurora Imaging Library format.
+Returns <strong>M_WITH_COMPENSATION</strong> if the PFNC format is not a native Aurora Imaging Library format but can be converted to an Aurora Imaging Library native format. A buffer of this type can only be used as a source buffer.
+Returns <strong>M_NO</strong> if Aurora Imaging Library cannot handle this type of format. In this case the user has to access the buffer&#x27;s memory directly. <strong>MbufInquire</strong> with <strong>M_HOST_ADDRESS</strong> can be used to get a pointer to the buffer&#x27;s data.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mbufinquirecontainer">Additions to MbufInquireContainer<a href="#additions-to-mbufinquirecontainer" class="hash-link" aria-label="Direct link to Additions to MbufInquireContainer" title="Direct link to Additions to MbufInquireContainer" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>MbufInquireContainer</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_COMPONENT_TIME_STAMP</strong>.
+<strong>BufId</strong> must be that of a container and the <strong>Component</strong> parameter must not be set to <strong>M_CONTAINER</strong>. When grabbing into a container, from a device transmitting data in GenDC format, this inquire gets the time at which the device generated the data component expressed in seconds. Zero is returned if there is no component time stamp available. Inquire returns an <strong>AIL_DOUBLE</strong>. Note: components belonging to the same container can have different component time stamps.</li>
+<li class="">Support for <strong>M_COMPONENT_TIME_STAMP_NS</strong>.
+<strong>BufId</strong> must be that of a container and the <strong>Component</strong> parameter must not be set to <strong>M_CONTAINER</strong>. When grabbing into a container, from a device transmitting data in GenDC format, this inquire gets the time at which the device generated the data component expressed in nanoseconds. Zero is returned if there is no component time stamp available. Inquire returns an <strong>AIL_INT64</strong>. Note: components belonging to the same container can have different component time stamps.</li>
+<li class="">Support for <strong>M_COMPONENT_TIME_STAMP_IS_PTP</strong>.
+the <strong>Component</strong> parameter must not be set to <strong>M_CONTAINER</strong>. If <strong>M_COMPONENT_TIME_STAMP_IS_PTP</strong> returns <strong>M_TRUE</strong>, then <strong>M_COMPONENT_TIME_STAMP_NS</strong> is relative to the epoch January 1st 1970 0:00:00.</li>
+<li class="">Support for <strong>M_LAYOUT_MODIFICATION_COUNT</strong>.
+<strong>BufId</strong> must be that of a container and the <strong>Component</strong> parameter must be set to <strong>M_CONTAINER</strong>. This value is modified every time a component is added or removed from the container. Inquire returns an <strong>AIL_INT</strong>.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mdig">Mdig<a href="#mdig" class="hash-link" aria-label="Direct link to Mdig" title="Direct link to Mdig" translate="no">​</a></h2>
+<p>This section presents information about Zebra GigE Vision driver and the digitizer module.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mdigalloc">Additions to MdigAlloc<a href="#additions-to-mdigalloc" class="hash-link" aria-label="Direct link to Additions to MdigAlloc" title="Direct link to Additions to MdigAlloc" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>MdigAlloc</code></a>.</p>
+<ul>
+<li class="">The <strong>InitFlag</strong> parameter now supports the following settings:
+<ul>
+<li class="">Support for <strong>M_GC_XML_FORCE_DOWNLOAD</strong>.
+Forces the Zebra driver to download the GigE Vision device&#x27;s XML description file at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>MdigAlloc</code></a>. If this setting is omitted, the cached version present in the Aurora Imaging Library XML repository is used instead.</li>
+<li class="">Support for <strong>M_GC_XML_DOWNLOAD_SKIP</strong>.
+Prevents the Zebra driver from downloading the GigE Vision device&#x27;s XML description file at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>MdigAlloc</code></a>. The cached version present in the Aurora Imaging Library XML repository is used instead. The <strong>M_GC_XML_DOWNLOAD_SKIP</strong> flag is ignored if:
+<ul>
+<li class="">The XML description file is not present in the Aurora Imaging Library XML repository.</li>
+<li class="">The XML description file name and/or file size, as reported by the GigE Vision device, has changed.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_MULTICAST_CONTROLLER</strong>.
+Specifies that the allocated device will be the controller digitizer in a multicasting controller-worker relationship. When this setting is used, the GigE Vision device&#x27;s stream and message channel (if present) will be programmed to use a destination IPv4 address in the multicast address range (from 224.0.0.0 to 239.255.255.255). By default, Aurora Imaging Library chooses an administratively scoped IP multicast address in the range 239.0.0.0 to 239.255.255.255. IP multicast also requires a network designed to deliver a multicast service. See the IP multicast section of the Aurora Imaging Capture Works help for more details.</li>
+<li class="">Support for <strong>M_GC_MULTICAST_WORKER</strong>.
+Specifies that the allocated device will be a worker digitizer in a multicasting controller-worker relationship. See the IP multicast section of the Aurora Imaging Capture Works help for more details.</li>
+<li class="">Support for <strong>M_GC_MULTICAST_MONITOR</strong>.
+Specifies that the allocated device will be a monitor digitizer in a multicasting controller-worker relationship.</li>
+<li class="">Support for <strong>M_GC_PACKET_SIZE_NEGOTIATION_SKIP</strong>.
+Prevents the Zebra driver from negotiating a packet size with the GigE Vision device at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>MdigAlloc</code></a>. Instead, the GigE Vision device&#x27;s packet size register is read and this value is used by the Zebra driver. If the read packet size is too small, acquisition reliability will suffer. Using this scheme, the packet size can be forced by storing it in the DCF or by using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>MdigControl</code></a> with <strong>M_GC_PACKET_SIZE</strong>. In either case, acquisition reliability will be affected if the forced packet size is too small or if the packet size is not supported by the network infrastructure.</li>
+<li class="">Support for <strong>M_DEV_NUMBER</strong>.
+Supports customary allocation using device numbers.</li>
+</ul>
+</li>
+<li class=""><strong>M_GC_CAMERA_ID(MT(&quot;&quot;))</strong> can now be used with the <strong>DigNum</strong> parameter (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>MdigAlloc</code></a>), in conjunction with the following <strong>InitFlag</strong> parameter settings: <strong>M_GC_DEVICE_IP_ADDRESS</strong> or <strong>M_GC_DEVICE_USER_NAME</strong>. For example, the following 2 calls to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>MdigAlloc</code></a> will allocate a camera whose IP address is 169.254.23.237 and whose user-defined name is MyCameraName, respectively.
+<ul>
+<li class=""><strong>MdigAlloc(..., M_GC_CAMERA_ID(MT(&quot;169.254.23.237&quot;)), ..., M_GC_DEVICE_IP_ADDRESS, ...)</strong>.</li>
+<li class=""><strong>MdigAlloc(..., M_GC_CAMERA_ID(MT(&quot;MyCameraName&quot;)), ..., M_GC_DEVICE_USER_NAME, ...)</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mdigcontrol">Additions to MdigControl<a href="#additions-to-mdigcontrol" class="hash-link" aria-label="Direct link to Additions to MdigControl" title="Direct link to Additions to MdigControl" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>MdigControl</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_GC_NETWORK_INTERFACE_CONFIGURATION</strong>.
+Controls the GigE Vision device&#x27;s persistent network interface configuration. The configuration bits that can be used can be any of the following:
+<ul>
+<li class=""><strong>M_GC_PAUSE_RECEPTION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PAUSE_GENERATION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_LINK_LOCAL_ADDRESS_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_DHCP_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PERSISTENT_IP_SUPPORT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_STREAM_CHANNEL_MULTICAST_ADDRESS_STRING</strong>.
+Controls the multicast address used by the device to stream image data. The device must have been allocated with the <strong>M_GC_MULTICAST_CONTROLLER</strong> <strong>InitFlag</strong>. Supported control values are any valid IPv4 multicast address in the range 224.0.0.0 to 239.255.255.255.</li>
+<li class="">Support for <strong>M_GC_MESSAGE_CHANNEL_MULTICAST_ADDRESS_STRING</strong>.
+Controls the multicast address used by the device to send message channel event data. The device must have been allocated with the <strong>M_GC_MULTICAST_CONTROLLER</strong> <strong>InitFlag</strong>. Supported control values are any valid IPv4 multicast address in the range 224.0.0.0 to 239.255.255.255.</li>
+<li class="">Support for <strong>M_GC_STREAM_PORT</strong>.
+Controls the multicast UDP port number used for the stream channel. The device must have been allocated with the <strong>M_GC_MULTICAST_CONTROLLER</strong> <strong>InitFlag</strong>.</li>
+<li class="">Support for <strong>M_GC_MESSAGE_PORT</strong>.
+Controls the multicast UDP port number used for the message channel. The device must have been allocated with the <strong>M_GC_MULTICAST_CONTROLLER</strong> <strong>InitFlag</strong>.</li>
+<li class="">Support for <strong>M_GC_NUMBER_OF_STREAM_CHANNELS</strong>.
+Controls the number of stream channels on the GigE Vision device. This control can only be used when the digitizer is allocated with the <strong>M_GC_MULTICAST_MONITOR</strong> <strong>InitFlag</strong>.</li>
+<li class="">Support for <strong>M_GC_STREAMING_MODE</strong>.
+Controls the camera&#x27;s image stream activation mechanism. Supported control values are:
+<ul>
+<li class=""><strong>M_DEFAULT</strong>: Lets the Zebra driver be in control when the camera&#x27;s image stream is started/stopped.</li>
+<li class=""><strong>M_AUTOMATIC</strong>: Same as <strong>M_DEFAULT</strong>.</li>
+<li class=""><strong>M_MANUAL</strong>: Lets the user be in control when the camera&#x27;s image stream is started/stopped.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_STREAMING_START</strong>.
+Starts the camera&#x27;s image stream. <strong>M_GC_STREAMING_MODE</strong> must be set to <strong>M_MANUAL</strong>. Supported control values are:
+<ul>
+<li class=""><strong>M_DEFAULT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_STREAMING_STOP</strong>.
+Stops the camera&#x27;s image stream. Supported control values are:
+<ul>
+<li class=""><strong>M_DEFAULT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_STREAMING_STOP_CHECK_PERIOD</strong>.
+Control value: <strong>AIL_INT</strong>. Represents the time period in milliseconds (ms), or <strong>M_DEFAULT</strong>. Default is 1000 ms. This is the period at which the driver checks if the camera&#x27;s image stream should be stopped.</li>
+<li class="">Support for <strong>M_GC_STREAMING_STOP_DELAY</strong>.
+Control value: <strong>AIL_INT</strong>. Represents the delay, in ms, before stopping the camera&#x27;s image stream. Default is 0 ms. When the <strong>M_GC_STREAMING_STOP_CHECK_PERIOD</strong> time elapses, this delay is applied before a check is made to stop the stream.</li>
+<li class="">Support for <strong>M_GC_PIXEL_FORMAT</strong>.
+Controls the camera&#x27;s pixel format. The pixel format value must be a valid GigE Vision pixel format. See GVSP_Pixel_Formats.h for a list of supported values.</li>
+<li class="">Support for <strong>M_GC_FEATURE_POLLING</strong>.
+Controls the feature browser&#x27;s polling thread. Your GigE Vision device can define polling values for features that can change without the user&#x27;s input. An example of this is the &quot;DeviceTemperature&quot; feature. The polling thread can be used when the device&#x27;s feature browser is displayed. Its role is to poll features that specify a polling period. Supported control values are:
+<ul>
+<li class=""><strong>M_DEFAULT</strong>: Same as <strong>M_ENABLE</strong>.</li>
+<li class=""><strong>M_ENABLE</strong>: Enables the polling thread. Camera features that report polling support will be read periodically.</li>
+<li class=""><strong>M_DISABLE</strong>: Disables the polling thread.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_DIGITIZER_INTERNAL_BUFFERS_NUM</strong>.
+Controls the number of internal grab buffers allocated and used when the Zebra driver cannot directly grab into the user&#x27;s buffer. Internal grab buffers are needed when the GenICam chunk mode is active. They are also needed when the grab buffer&#x27;s format is not compatible with the camera&#x27;s current pixel format. Supported control values are:
+<ul>
+<li class=""><strong>M_DEFAULT</strong>: Five internal grab buffers will be allocated.</li>
+<li class="">A positive integer between 2 and 1024 representing the number of internal grab buffers to use. An error will get generated if the amount of non paged memory available is insufficient to allocate the buffers.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_ACQUISITION_MODE</strong>.
+Controls the camera&#x27;s <strong>AcquisitionMode</strong> feature. Can be set to <strong>M_CONTINUOUS</strong>/**M_DEFAULT **or <strong>M_SINGLE_FRAME</strong>.</li>
+<li class="">Support for <strong>M_GC_HEARTBEAT_STATE</strong> (if supported by the camera).
+Controls if the heartbeat mechanism is used to keep the GigE Vision Control channel open. Supported values: <strong>M_ENABLE</strong>, <strong>M_DISABLE</strong>, <strong>M_DEFAULT</strong> (same as <strong>M_ENABLE</strong>). Can only be used with GigE Vision cameras that support the heartbeat disable feature.</li>
+<li class="">Support for <strong>M_GC_PACKET_TIMEOUT</strong>.
+Value is in ms. Default is 10 ms. This is the maximum amount of time to wait before flagging a packet as dropped.</li>
+<li class="">Support for <strong>M_GC_FRAME_TIMEOUT</strong>.
+Value is in ms. Default is 100 ms. This is the maximum amount of time to wait for the remaining packets of a frame after the trailer packet is received. If packets are missing, the frame is flagged as corrupted.</li>
+<li class="">Support for <strong>M_GC_PACKET_MAX_RETRIES</strong>.
+Default is 3. This is the maximum number of retries for a packet. If reached, the frame is corrupted.</li>
+<li class="">Support for <strong>M_GC_FRAME_MAX_RETRIES</strong>.
+Default is 30. This is the maximum number of packet retries per frame. If reached, the frame is corrupted.</li>
+<li class="">Support for <strong>M_GC_STATISTICS_RESET</strong>.
+Control value must be <strong>M_DEFAULT</strong>. This resets the statistics.</li>
+<li class="">Support for <strong>M_GC_MAX_NBR_PACKETS_OUT_OF_ORDER</strong>.
+Default value is 0. Controls the number of packets to wait before asking for a retransmission. This is useful when using link aggregated cameras where packets are received out of order.</li>
+<li class="">Support for <strong>M_USER_BIT_FORMAT</strong>+Number.
+Controls the current electrical format of the specified physical input or output Line. Number can range from 0 or 1 up to the maximum number of Lines in the camera. Supported control values are:
+<ul>
+<li class=""><strong>M_NO_CONNECT</strong>: The line is not connected.</li>
+<li class=""><strong>M_TRI_STATE</strong>: The Line is currently in Tri-State mode (Not driven).</li>
+<li class=""><strong>M_TTL</strong>: The Line is currently accepting or sending TTL level signals.</li>
+<li class=""><strong>M_RS422</strong>: The Line is currently accepting or sending RS422 level signals.</li>
+<li class=""><strong>M_LVDS</strong>: The Line is currently accepting or sending LVDS level signals.</li>
+<li class=""><strong>M_OPTO</strong>: The Line is Opto-Coupled.
+An Aurora Imaging Library error will be generated for this control type if the specified Line number does not exist in the camera or if the Line format cannot be changed by the camera.
+An Aurora Imaging Library error will be generated for any of the previous control values if the specified format does not exist for the specified Line number.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_USER_BIT_MODE</strong>+Number.
+Controls if the physical Line is used to input or output a signal. Number can range from 0 or 1 up to the maximum number of Lines in the camera. Supported control values are:
+<ul>
+<li class=""><strong>M_INPUT</strong>: The selected physical line is used to input an electrical signal.</li>
+<li class=""><strong>M_OUTPUT</strong>: The selected physical line is used to output an electrical signal.
+An Aurora Imaging Library error will be generated for this control type if the specified Line number does not exist in the camera or if the Line mode cannot be changed by the camera.
+An Aurora Imaging Library error will be generated for any of the previous control values if the specified mode does not exist for the specified Line number.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_AUX_SIGNAL_SOURCE</strong>+Number.
+Selects which internal signal to output on the selected Line. The corresponding <strong>M_USER_BIT_MODE</strong> must be <strong>M_OUTPUT</strong>. Number can range from 0 or 1 up to the maximum number of Lines in the camera. Supported control values are:
+<ul>
+<li class=""><strong>M_USER_BIT</strong>: The line will output a user-bit signal.</li>
+<li class=""><strong>M_TIMER1</strong>: The line will output if the chosen timer is in an active state.</li>
+<li class=""><strong>M_TIMER2</strong>: The line will output if the chosen timer is in an active state.
+An Aurora Imaging Library error will be generated for this control type if the specified Line number does not exist in the camera or if the Line mode is set to <strong>M_INPUT</strong>.
+An Aurora Imaging Library error will be generated for any of the previous control values if the specified signal source does not exist for the specified Line number.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_USER_BIT_VALUE</strong>+Number.
+Sets the value of the specified user bit. Number can range from 0 or 1 up to the maximum number of user-defined signals in the camera. Supported control values are:
+<ul>
+<li class=""><strong>M_ON</strong>: The selected physical line is used to input an electrical signal.</li>
+<li class=""><strong>M_OFF</strong>: The selected physical line is used to output an electrical signal.
+An Aurora Imaging Library error will be generated for this control type if the specified Line number does not exist in the camera.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_FEATURE_BROWSER</strong>.
+Creates the device feature browser dialog from an Aurora Imaging Library console application. Supported control values are:
+<ul>
+<li class=""><strong>M_DEFAULT</strong>: Opens the feature browser dialog. The calling thread is blocked.</li>
+<li class=""><strong>M_OPEN</strong>+<strong>M_SYNCHRONOUS</strong>: Same as <strong>M_DEFAULT</strong>.</li>
+<li class=""><strong>M_OPEN</strong>+<strong>M_ASYNCHRONOUS</strong>: Opens the feature browser dialog. The calling thread returns as soon as the feature browser is created.</li>
+<li class=""><strong>M_CLOSE</strong>: Closes the feature browser dialog.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mdigcontrolfeature">Additions to MdigControlFeature<a href="#additions-to-mdigcontrolfeature" class="hash-link" aria-label="Direct link to Additions to MdigControlFeature" title="Direct link to Additions to MdigControlFeature" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControlFeature"><code>MdigControlFeature</code></a>.</p>
+<ul>
+<li class="">The <strong>FeatureType</strong> parameter has been changed to <strong>UserVarType</strong>. This was done to simplify writing code with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControlFeature"><code>MdigControlFeature</code></a>/<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigInquireFeature"><code>MdigInquireFeature</code></a>. <strong>UserVarType</strong> must always reflect the type of the pointer passed to the <strong>UserVarPtr</strong> parameter. Legacy code is transparently supported, but we recommend you update your code. Note that <strong>M_TYPE_REGISTER</strong> now becomes <strong>M_TYPE_UINT8</strong>, <strong>M_TYPE_ENUMERATION</strong> now becomes <strong>M_TYPE_INT64</strong> or <strong>M_TYPE_STRING</strong>, and <strong>M_TYPE_COMMAND</strong> now becomes <strong>M_DEFAULT</strong>. Data type conversions are made, whenever possible, in cases where the feature&#x27;s &quot;native&quot; data type is different than the <strong>UserVarType</strong> supplied. Regardless of a feature&#x27;s &quot;native&quot; data type it can always be read as a string.
+The following is a list of example calls using the new <strong>UserVarType</strong>:
+<ul>
+<li class=""><strong>MdigControlFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;Width&quot;), M_TYPE_INT64, &amp;Int64Var)</strong>.</li>
+<li class=""><strong>MdigControlFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;Gain&quot;), M_TYPE_DOUBLE, &amp;DoubleVar)</strong>.</li>
+<li class=""><strong>MdigControlFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;ReverseX&quot;), M_TYPE_BOOLEAN, &amp;BoolVar)</strong>.</li>
+<li class=""><strong>MdigControlFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;PixelFormat&quot;), M_TYPE_STRING, AIL_TEXT(&quot;Mono8&quot;))</strong>.</li>
+<li class=""><strong>MdigControlFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;LUTValueAll&quot;), M_TYPE_UINT8, Uint8Array)</strong>.</li>
+<li class=""><strong>MdigControlFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;AcquisitionStart&quot;), M_DEFAULT, M_NULL)</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_FEATURE_CHANGE_HOOK</strong>.
+Identifies the specified** FeatureName** to trigger the <strong>M_FEATURE_CHANGE</strong> hook callback. You must be hooked to the <strong>M_FEATURE_CHANGE</strong> hook type using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigHookFunction"><code>MdigHookFunction</code></a>.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mdiggethookinfo">Additions to MdigGetHookInfo<a href="#additions-to-mdiggethookinfo" class="hash-link" aria-label="Direct link to Additions to MdigGetHookInfo" title="Direct link to Additions to MdigGetHookInfo" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigGetHookInfo"><code>MdigGetHookInfo</code></a>.</p>
+<ul>
+<li class="">Hooking to a GenICam feature change event.
+<strong>M_GC_FEATURE_CHANGE_NAME</strong> can be used from an <strong>M_FEATURE_CHANGE</strong> hook function. The function returns the name of the GenICam feature that triggered the hook. <strong>UserVarPtr</strong> must point to a user allocated array of type <strong>AIL_TEXT_CHAR</strong>.
+<strong>M_GC_FEATURE_CHANGE_NAME_SIZE</strong> can be used from an <strong>M_FEATURE_CHANGE</strong> hook function. The function returns the number of characters in the string returned by <strong>M_GC_FEATURE_CHANGE_NAME</strong>. <strong>UserVarPtr</strong> must point to an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_FRAME_STATUS_CODE</strong>.
+Returns an <strong>AIL_INT</strong>. Returns the status code from the last image acquired. The status code is extracted from the GigE Vision device&#x27;s stream packets.</li>
+<li class="">Support for <strong>M_GC_PACKETS_MISSED</strong>.
+Returns an <strong>AIL_INT</strong>. Returns the number of missing packets in the corrupted frame. If 0, the frame is not corrupted.</li>
+<li class="">Support for <strong>M_GC_PACKETS_RECEIVED</strong>.
+Returns an <strong>AIL_INT</strong>. This is the number of packets in the frame.</li>
+<li class="">Support for <strong>M_GC_PACKETS_RESENDS_NUM</strong>.
+Returns an <strong>AIL_INT</strong>. This is the number of resend commands sent to the camera for a frame. One resend command can contain multiple consecutive packets.</li>
+<li class="">Support for <strong>M_GC_PACKETS_RECOVERED</strong>.
+Returns an <strong>AIL_INT</strong>. This is the number of packets recovered in the frame.</li>
+<li class="">Support for <strong>M_GC_FRAME_ERROR_CODE</strong>.
+Returns an <strong>AIL_INT</strong>. This is the error code returned by the camera for a frame.</li>
+<li class="">Support for <strong>M_GC_FRAME_LINE_COUNT</strong>.
+Returns an <strong>AIL_INT</strong>. This is the number of lines in the frame.</li>
+<li class="">Support for <strong>M_GC_FRAME_BLOCK_ID</strong>.
+Returns an <strong>AIL_INT</strong>. This is the frame BlockID value from the camera. The BlockID in the camera is implemented as a 16-bit running counter.</li>
+<li class="">Support for <strong>M_GC_FRAME_TIMESTAMP</strong>.
+Returns an <strong>AIL_DOUBLE</strong> in seconds. This is the frame timestamp from the camera.</li>
+<li class="">Support for <strong>M_COUNTER_INDEX</strong>.
+Returns an <strong>AIL_INT</strong>. This is the index of the counter that generated the event.</li>
+<li class="">Support for <strong>M_TIMER_INDEX</strong>.
+Returns an <strong>AIL_INT</strong>. This is the index of the timer that generated the event.</li>
+<li class="">Support for <strong>M_LINE_INDEX</strong>.
+Returns an <strong>AIL_INT</strong>. This is the index of the line that generated the event.</li>
+<li class="">Support for <strong>M_GC_EVENT_TYPE</strong>.
+Returns an <strong>AIL_INT</strong>. This is the raw GigE Vision event sent by the camera.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mdighookfunction">Additions to MdigHookFunction<a href="#additions-to-mdighookfunction" class="hash-link" aria-label="Direct link to Additions to MdigHookFunction" title="Direct link to Additions to MdigHookFunction" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigHookFunction"><code>MdigHookFunction</code></a>.</p>
+<ul>
+<li class="">Hooking to a GenICam feature change event.
+<strong>M_GC_FEATURE_CHANGE</strong> can be used as a hook type. The hook is triggered when a GenICam feature gets invalidated. This usually occurs when a feature or a dependent feature is written.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>.
+Hooks an Aurora Imaging Library function callback to a generic GigE Vision camera event. Note that the underlying event must be enabled in the camera with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControlFeature"><code>MdigControlFeature</code></a>.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_ACQUISITION_TRIGGER</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;AcquisitionTrigger&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_ACQUISITION_START</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;AcquisitionStart&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_ACQUISITION_END</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;AcquisitionEnd&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_ACQUISITION_TRANSFER_START</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;AcquisitionTransferStart&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_ACQUISITION_TRANSFER_END</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;AcquisitionTransferEnd&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_ACQUISITION_ERROR</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;AcquisitionError&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_FRAME_TRIGGER</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;FrameTrigger&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_FRAME_START</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;FrameStart&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_FRAME_END</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;FrameEnd&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_FRAME_TRANSFER_START</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;FrameTransferStart&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_FRAME_TRANSFER_END</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;FrameTransferEnd&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_EXPOSURE_START</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;ExposureStart&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_EXPOSURE_END</strong>.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;ExposureEnd&quot; camera event.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_COUNTER_START</strong>+Number.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;CounterXStart&quot; camera event. Number determines the index of the Counter used to generate the event. Number can range from 0 to 8.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_COUNTER_END</strong>+Number.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;CounterXEnd&quot; camera event. Number determines the index of the Counter used to generate the event. Number can range from 0 to 8.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_TIMER_START</strong>+Number.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;TimerXStart&quot; camera event. Number determines the index of the Timer used to generate the event. Number can range from 0 to 8.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_TIMER_END</strong>+Number.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;TimerXEnd&quot; camera event. Number determines the index of the Timer used to generate the event. Number can range from 0 to 8.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_LINE_RISING_EDGE</strong>+Number.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;LineXRisingEdge&quot; camera event. Number determines the index of the Line used to generate the event. Number can range from 0 to 32.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_LINE_FALLING_EDGE</strong>+Number.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;LineXFallingEdge&quot; camera event. Number determines the index of the Line used to generate the event. Number can range from 0 to 32.</li>
+<li class="">Support for <strong>M_GC_EVENT</strong>+<strong>M_LINE_ANY_EDGE</strong>+Number.
+Hooks an Aurora Imaging Library function callback to the GenICam &quot;LineXRisingEdge&quot; and &quot;LineXFallingEdge camera events. Number determines the index of the Line used to generate the event. Number can range from 0 to 32.</li>
+<li class="">Notes:
+<strong>M_UNHOOK</strong> can be used with all of the above <strong>M_GC_EVENT</strong> events to disable the underlying event in the camera.
+The above message channel events must be implemented in the GigE Vision camera, otherwise calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigHookFunction"><code>MdigHookFunction</code></a> with <strong>M_GC_EVENT</strong>+... will generate an Aurora Imaging Library error message.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mdiginquire">Additions to MdigInquire<a href="#additions-to-mdiginquire" class="hash-link" aria-label="Direct link to Additions to MdigInquire" title="Direct link to Additions to MdigInquire" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigInquire"><code>MdigInquire</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_GC_PIXEL_FORMAT_STRING</strong>.
+Returns the camera&#x27;s <strong>PixelFormat</strong> as a string.</li>
+<li class="">Support for <strong>M_GC_LOCAL_CONTROL_PORT</strong>.
+Returns the host UDP port number for the control channel.</li>
+<li class="">Support for <strong>M_GC_LOCAL_MESSAGE_PORT</strong>.
+Returns the host UDP port number for the control channel.</li>
+<li class="">Support for <strong>M_GC_LOCAL_STREAM_PORT</strong>.
+Returns the host UDP port number for the control channel.</li>
+<li class="">Support for <strong>M_GC_REMOTE_CONTROL_PORT</strong>.
+Returns the camera&#x27;s UDP port number for the control channel.</li>
+<li class="">Support for <strong>M_GC_REMOTE_MESSAGE_PORT</strong>.
+Returns the camera&#x27;s UDP port number for the control channel.</li>
+<li class="">Support for <strong>M_GC_REMOTE_STREAM_PORT</strong>.
+Returns the camera&#x27;s UDP port number for the control channel.</li>
+<li class="">Support for <strong>M_GC_LOCAL_IP_ADDRESS</strong>.
+Returns the IP address of the host NIC as an <strong>AIL_UINT64</strong>.</li>
+<li class="">Support for <strong>M_GC_LOCAL_IP_ADDRESS_STRING</strong>.
+Returns the IP address of the host NIC as a string.</li>
+<li class="">Support for <strong>M_GC_LOCAL_MAC_ADDRESS</strong>.
+Returns the MAC address of the host NIC as an <strong>AIL_UINT64</strong>.</li>
+<li class="">Support for <strong>M_GC_LOCAL_MAC_ADDRESS_STRING</strong>.
+Returns the MAC address of the host NIC as a string.</li>
+<li class="">Support for <strong>M_GC_REMOTE_IP_ADDRESS</strong>.
+Returns the IP address of the camera as an <strong>AIL_UINT64</strong>.</li>
+<li class="">Support for <strong>M_GC_REMOTE_IP_ADDRESS_STRING</strong>.
+Returns the IP address of the camera as a string.</li>
+<li class="">Support for <strong>M_GC_ REMOTE _MAC_ADDRESS</strong>.
+Returns the MAC address of the camera as an <strong>AIL_UINT64</strong>.</li>
+<li class="">Support for <strong>M_GC_ REMOTE _MAC_ADDRESS_STRING</strong>.
+Returns the MAC address of the camera as a string.</li>
+<li class="">Support for <strong>M_GC_CONTROL_PROTOCOL_CAPABILITY</strong>.
+Returns an <strong>AIL_INT</strong> that represents the control channel capabilities of the GigE Vision device. Capability bits returned can be any combination of the following:
+<ul>
+<li class=""><strong>M_GC_USER_DEFINED_NAME_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_SERIAL_NUMBER_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_HEARTBEAT_DISABLE_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_LINK_SPEED_REGISTER_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PORT_AND_IP_REGISTER_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_MANIFEST_TABLE_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_TEST_DATA_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_DISCOVERY_ACK_DELAY_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_WRITABLE_DISCOVERY_ACK_DELAY_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_EXTENDED_STATUS_CODES_1_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PRIMARY_APP_SWITCHOVER_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_UNCONDITIONAL_ACTION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_IEEE_1588_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_EXTENDED_STATUS_CODES_2_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_SCHEDULED_ACTION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_ACTION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PENDING_ACK_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_EVENT_DATA_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_EVENT_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PACKET_RESEND_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_WRITE_MEM_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_CONCATENATION_SUPPORT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_STREAM_PROTOCOL_CAPABILITY</strong>.
+Returns an <strong>AIL_INT</strong> that represents the stream protocol capabilities of the GigE Vision device. Capability bits returned can be any combination of the following:
+<ul>
+<li class=""><strong>M_GC_FIREWALL_TRAVERSAL_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_LEGACY_16BIT_BLOCK_SUPPORT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_MESSAGE_PROTOCOL_CAPABILITY</strong>.
+Returns an <strong>AIL_INT</strong> that represents the message protocol capabilities of the GigE Vision device. Capability bits returned can be any combination of the following:
+<ul>
+<li class=""><strong>M_GC_FIREWALL_TRAVERSAL_SUPPORT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_NETWORK_INTERFACE_CAPABILITY</strong>.
+Returns an <strong>AIL_INT</strong> that represents the GigE Vision device networking interface capabilities. Capability bits returned are can be any combination of the following:
+<ul>
+<li class=""><strong>M_GC_PAUSE_RECEPTION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PAUSE_GENERATION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_LINK_LOCAL_ADDRESS_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_DHCP_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PERSISTENT_IP_SUPPORT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_NETWORK_INTERFACE_CONFIGURATION</strong>.
+Controls the GigE Vision device&#x27;s persistent network interface configuration. The inquire returns an <strong>AIL_INT</strong> which represents the currently enabled configuration. The configuration bits that can be used can be any of the following:
+<ul>
+<li class=""><strong>M_GC_PAUSE_RECEPTION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PAUSE_GENERATION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_LINK_LOCAL_ADDRESS_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_DHCP_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PERSISTENT_IP_SUPPORT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_PHYSICAL_LINK_CONFIGURATION_CAPABILITY</strong>.
+Returns an <strong>AIL_INT</strong> that represents the GigE Vision device physical link configuration capabilities. Capability bits returned can be any combination of the following:
+<ul>
+<li class=""><strong>M_GC_SINGLE_LINK_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_MULTIPLE_LINK_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_STATIC_LINK_AGGREGATION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_DYNAMIC_LINK_AGGREGATION_SUPPORT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_STREAM_CHANNEL_CAPABILITY</strong>.
+Returns an <strong>AIL_INT</strong> that represents the stream channel capabilities of the GigE Vision device. Capability bits returned can be any combination of the following:
+<ul>
+<li class=""><strong>M_GC_BIG_AND_LITTLE_ENDIAN_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_IP_REASSEMBLY_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_MULTI_ZONE_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_PACKET_RESEND_OPTION_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_ALL_IN_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_UNCONDITIONAL_STREAMING_SUPPORT</strong>.</li>
+<li class=""><strong>M_GC_EXTENDED_CHUNK_DATA_SUPPORT</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_STREAM_CHANNEL_MULTICAST_ADDRESS_STRING</strong>.
+Returns the multicast address used by the device to stream image data. The inquire returns an <strong>AIL_TEXT_CHAR</strong> string.</li>
+<li class="">Support for <strong>M_GC_MESSAGE_CHANNEL_MULTICAST_ADDRESS_STRING</strong>.
+Returns the multicast address used by the device to send message channel event data. The inquire returns an <strong>AIL_TEXT_CHAR</strong> string.</li>
+<li class="">Support for <strong>M_GC_MULTICAST_CONTROLLER_CONNECTED</strong>.
+Returns an <strong>AIL_INT</strong>. Returns <strong>M_TRUE</strong> if a controller digitizer is connected to the device.</li>
+<li class="">Support for <strong>M_GC_STREAM_PORT</strong>.
+Returns the multicast UDP port number used for the stream channel. The device must have been allocated with the <strong>M_GC_MULTICAST_CONTROLLER</strong> <strong>InitFlag</strong>. The inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_MESSAGE_PORT</strong>.
+Returns the multicast UDP port number used for the message channel. The device must have been allocated with the <strong>M_GC_MULTICAST_CONTROLLER</strong> <strong>InitFlag</strong>. The inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_NUMBER_OF_STREAM_CHANNELS</strong>.
+Returns the number of stream channels supported by the GigE Vision device. The inquire can always be used. The inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_STREAMING_MODE</strong>.
+Returns the camera&#x27;s image stream activation mechanism. Inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_PIXEL_FORMAT</strong>.
+Returns the camera&#x27;s pixel format. The pixel format value must be a valid GigE Vision pixel format. See GVSP_Pixel_Formats.h for a list of supported values. The inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_FEATURE_POLLING</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Returns the feature browser&#x27;s polling thread. Your GigE Vision device can define polling values for features that can change without the user&#x27;s input. An example of this is the &quot;DeviceTemperature&quot; feature. The polling thread can be used when the device&#x27;s feature browser is displayed. Its role is to poll features that specify a polling period.</li>
+<li class="">Support for <strong>M_DIGITIZER_INTERNAL_BUFFERS_NUM</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Returns the number of internal grab buffers allocated and used when the Zebra driver cannot directly grab into the user&#x27;s buffer. Internal grab buffers are needed when the GenICam chunk mode is active. They are also needed when the grab buffer&#x27;s format is not compatible with the camera&#x27;s current pixel format.</li>
+<li class="">Support for <strong>M_SOURCE_DATA_FORMAT</strong>.
+Inquire returns an <strong>AIL_INT64</strong>. Returns a value representing the Aurora Imaging Library buffer format that is compatible with the camera&#x27;s current <strong>PixelFormat</strong>. Useful for allocating grab buffers and avoiding costly color space conversions, Ex:
+<ul>
+<li class=""><strong>Mono8</strong> <strong>PixelFormat</strong> will return <strong>M_MONO8</strong>+<strong>M_PLANAR</strong>.</li>
+<li class=""><strong>Mono10</strong> <strong>PixelFormat</strong> will return <strong>M_MONO16</strong>+<strong>M_PLANAR</strong>.</li>
+<li class=""><strong>BayerBG8</strong> <strong>PixelFormat</strong> will return <strong>M_YUV16_YUYV</strong>+<strong>M_PACKED</strong>.</li>
+<li class=""><strong>BayerBG12Packed</strong> <strong>PixelFormat</strong> will return** M_RGB48**+<strong>M_PACKED</strong>.</li>
+<li class=""><strong>YUYVPacked</strong> <strong>PixelFormat</strong> will return <strong>M_YUV16_YUYV</strong>+<strong>M_PACKED</strong>.</li>
+</ul>
+</li>
+<li class="">Support for <strong>M_GC_TOTAL_PACKET_CACHE_HITS</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Represents the total number of packets that passed through the packet cache.</li>
+<li class="">Support for <strong>M_GC_TOTAL_FRAME_CACHE_HITS</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Represents the total number of partial or complete frames that passed through the packet cache.</li>
+<li class="">Support for <strong>M_GC_NIC_FRIENDLY_NAME</strong>.
+Inquire returns an <strong>AIL_TEXT_CHAR</strong> string. Returns the network adapter&#x27;s friendly name connected to your GigE Vision device.</li>
+<li class="">Support for <strong>M_GC_FRAME_STATUS_CODE</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Returns the status code from the last image acquired. The status code is extracted from the GigE Vision device&#x27;s stream packets.</li>
+<li class="">Support for <strong>M_GC_ACQUISITION_MODE</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Returns the camera&#x27;s <strong>AcquisitionMode</strong> feature.</li>
+<li class="">Support for <strong>M_GC_FRAME_TIMESTAMP</strong>.
+Inquire returns an <strong>AIL_DOUBLE</strong>. Inquires the timestamp, in seconds, of the last frame grabbed.</li>
+<li class="">Support for <strong>M_GC_COUNTER_TICK_FREQUENCY</strong>.
+Inquire returns an <strong>AIL_INT64</strong>. Inquires the camera&#x27;s tick frequency register. A value of 0 Hz indicates the camera does not support time stamps.</li>
+<li class="">Support for <strong>M_GC_HEARTBEAT_STATE</strong> (if supported by the camera).
+Inquire returns an <strong>AIL_INT</strong>. Supported values: <strong>M_ENABLE</strong>, <strong>M_DISABLE</strong>, <strong>M_DEFAULT</strong> (same as <strong>M_ENABLE</strong>). Inquires if the heartbeat mechanism is used to keep the GigE Vision Control channel open. Can only be used with GigE Vision cameras that support the heartbeat disable feature.</li>
+<li class="">Support for <strong>M_GC_NIC_IP_ADDRESS</strong>.
+Inquire returns an <strong>AIL_INT64</strong>. Returns the host NIC&#x27;s IP address used with the camera.</li>
+<li class="">Support for <strong>M_GC_NIC_MAC_ADDRESS</strong>.
+Inquire returns an <strong>AIL_INT64</strong>. Returns the host NIC&#x27;s MAC address used with the camera.</li>
+<li class="">Support for <strong>M_GC_PACKET_TIMEOUT</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Value is in ms. Default is 10 ms. This is the maximum amount of time to wait before flagging a packet as dropped.</li>
+<li class="">Support for <strong>M_GC_FRAME_TIMEOUT</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Value is in ms. Default is 100 ms. This is the maximum amount of time to wait for the remaining packets of a frame after the trailer packet is received. If packets are missing, the frame is flagged as corrupted.</li>
+<li class="">Support for <strong>M_GC_PACKET_MAX_RETRIES</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Default is 3. This is the maximum number of retries for a packet. If reached, the frame is corrupted.</li>
+<li class="">Support for <strong>M_GC_FRAME_MAX_RETRIES</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Default is 30. This is the maximum number of packet retries per frame. If reached, the frame is corrupted.</li>
+<li class="">Support for <strong>M_GC_TOTAL_PACKETS_MISSED</strong>.
+Inquire returns an <strong>AIL_INT</strong>. This is the total number of packets that are missing. Does not include recovered packets.</li>
+<li class="">Support for <strong>M_GC_TOTAL_PACKETS_RECEIVED</strong>.
+Inquire returns an <strong>AIL_INT</strong>. This is the total number of packets received.</li>
+<li class="">Support for <strong>M_GC_TOTAL_PACKETS_RESENDS_NUM</strong>.
+Inquire returns an <strong>AIL_INT</strong>. This is the total number of emitted PACKETRESEND commands. One resend command can contain multiple consecutive packets.</li>
+<li class="">Support for <strong>M_GC_TOTAL_PACKETS_RECOVERED</strong>.
+Inquire returns an <strong>AIL_INT</strong>. This is the total number of packets recovered.</li>
+<li class="">Support for <strong>M_GC_TOTAL_FRAMES_GRABBED</strong>.
+Inquire returns an <strong>AIL_INT</strong>. This is the total number of frames grabbed.</li>
+<li class="">Support for <strong>M_GC_TOTAL_FRAMES_CORRUPTED</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Returns the number of corrupted frames.</li>
+<li class="">Support for <strong>M_GC_TOTAL_PACKETS_RECEIVED_OUT_OF_ORDER</strong>.
+Inquire returns an <strong>AIL_INT</strong>. This is the total number of packets that were received out of order, which usually happens with link aggregated cameras. If this number is high, increase the value of <strong>M_GC_MAX_NBR_PACKETS_OUT_OF_ORDER</strong>.</li>
+<li class="">Support for <strong>M_GC_MAX_NBR_PACKETS_OUT_OF_ORDER</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Default value is 0. Controls the number of packets to wait before asking for a retransmission. This is useful when using link aggregated cameras where packets are received out of order.</li>
+<li class="">Support for <strong>M_PROCESS_PENDING_GRAB_NUM</strong>.
+Inquire returns an <strong>AIL_INT</strong>. Returns the number of buffers remaining in the list of buffers used by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigProcess"><code>MdigProcess</code></a>. Note that this number includes the buffer used by the grab in progress. When dealing with round-robin grabbing, this number will typically be relatively close to the total number of allocated grab buffers.</li>
+<li class="">Support for <strong>M_USER_BIT_FORMAT</strong>+Number.
+Inquire returns an <strong>AIL_INT</strong>. Inquires the current electrical format of the specified physical input or output Line. Number can range from 0 or 1 up to the maximum number of Lines in the camera.</li>
+<li class="">Support for <strong>M_USER_BIT_MODE</strong>+Number.
+Inquire returns an <strong>AIL_INT</strong>. Inquires if the physical Line is used to input or output a signal. Number can range from 0 or 1 up to the maximum number of Lines in the camera.</li>
+<li class="">Support for <strong>M_AUX_SIGNAL_SOURCE</strong>+Number.
+Inquire returns an <strong>AIL_INT</strong>. Inquires which internal signal to output on the selected Line. The corresponding <strong>M_USER_BIT_MODE</strong> must be <strong>M_OUTPUT</strong>. Number can range from 0 or 1 up to the maximum number of Lines in the camera.</li>
+<li class="">Support for <strong>M_USER_BIT_VALUE</strong>+Number.
+Inquire returns an <strong>AIL_INT</strong>. Returns the current status of the selected input or output Line. Number can range from 0 or 1 up to the maximum number of user-defined signals in the camera.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-mdiginquirefeature">Additions to MdigInquireFeature<a href="#additions-to-mdiginquirefeature" class="hash-link" aria-label="Direct link to Additions to MdigInquireFeature" title="Direct link to Additions to MdigInquireFeature" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigInquireFeature"><code>MdigInquireFeature</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_FEATURE_ENUM_ENTRY_TOOLTIP</strong> + N.
+Returns the nth enum entry&#x27;s tooltip string. The string size can be inquired by adding the <strong>M_STRING_SIZE</strong> combination constant.</li>
+<li class="">Support for <strong>M_FEATURE_ENUM_ENTRY_DESCRIPTION</strong> + N.
+Returns the nth enum entry&#x27;s description string. The string size can be inquired by adding the <strong>M_STRING_SIZE</strong> combination constant.</li>
+<li class="">Support for **M_FEATURE_ENUM_ENTRY_ACCESS_MODE ** + N.
+Returns the nth enum entry&#x27;s access mode. See **M_FEATURE_ACCESS_MODE ** for details.</li>
+<li class="">Support for <strong>M_FEATURE_ENUM_ENTRY_VISIBILITY</strong> + N.
+Returns the nth enum entry&#x27;s visibility value. See **M_FEATURE_VISIBILITY ** for details.</li>
+<li class="">Support for <strong>M_FEATURE_ENUM_ENTRY_CACHING_MODE</strong> + N.
+Returns the nth enum entry&#x27;s caching mode. See <strong>M_FEATURE_CACHING_MODE</strong> for details.</li>
+<li class="">Support for <strong>M_FEATURE_ENUM_ENTRY_STREAMABLE</strong> + N.
+Returns the nth enum entry&#x27;s streamable value. See <strong>M_FEATURE_STREAMABLE</strong> for details.</li>
+<li class="">Support for <strong>M_FEATURE_SELECTOR_COUNT</strong>.
+Returns the number of features selected by the specified <strong>FeatureName</strong> parameter. Note that the <strong>FeatureName</strong> parameter must specify a selector type feature.</li>
+<li class="">Support for <strong>M_FEATURE_SELECTOR_NAME</strong> + N.
+Returns the nth feature name, as a string, selected by the specified feature. Note that the <strong>FeatureName</strong> parameter must specify a selector type feature.</li>
+<li class="">Support for <strong>M_FEATURE_VALID_VALUE_COUNT</strong>.
+Integer and floating-point type features can support a fixed list of valid values instead of the traditional minimum, maximum, and increment values. <strong>M_FEATURE_VALID_VALUE_COUNT</strong> returns the number of valid values supported. A value of 0 returned indicates the feature does not support a list of valid values; minimum, maximum and increment values must be used instead.</li>
+<li class="">Support for <strong>M_FEATURE_VALID_VALUE</strong> + N.
+Returns the nth valid value for an integer of floating-point type feature.</li>
+<li class="">The <strong>FeatureType</strong> parameter has been changed to <strong>UserVarType</strong>. This was done to simplify writing code with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControlFeature"><code>MdigControlFeature</code></a>/<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigInquireFeature"><code>MdigInquireFeature</code></a>. <strong>UserVarType</strong> must always reflect the type of the pointer passed to the <strong>UserVarPtr</strong> parameter. Legacy code is transparently supported, but we recommend you update your code. Note that <strong>M_TYPE_REGISTER</strong> now becomes <strong>M_TYPE_UINT8</strong>, <strong>M_TYPE_ENUMERATION</strong> now becomes <strong>M_TYPE_INT64</strong> or <strong>M_TYPE_STRING</strong>, and <strong>M_TYPE_COMMAND</strong> now becomes <strong>M_DEFAULT</strong>. Data type conversions are made, whenever possible, in cases where the feature&#x27;s &quot;native&quot; data type is different than the <strong>UserVarType</strong> supplied. Regardless of a feature&#x27;s &quot;native&quot; data type it can always be read as a string. See Board-specific examples for details.
+The following is a list of example calls using the new <strong>UserVarType</strong>:
+<ul>
+<li class=""><strong>MdigInquireFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;Width&quot;), M_TYPE_INT64, &amp;Int64Var)</strong>.</li>
+<li class=""><strong>MdigInquireFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;Gain&quot;), M_TYPE_DOUBLE, &amp;DoubleVar)</strong>.</li>
+<li class=""><strong>MdigInquireFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;ReverseX&quot;), M_TYPE_BOOLEAN, &amp;BoolVar)</strong>.</li>
+<li class=""><strong>MdigInquireFeature(Digitizer, M_FEATURE_VALUE + M_STRING_SIZE, AIL_TEXT(&quot;PixelFormat&quot;), M_TYPE_AIL_INT, &amp;IntVar)</strong>.</li>
+<li class=""><strong>MdigInquireFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;PixelFormat&quot;), M_TYPE_STRING, TextCharArray)</strong>.</li>
+<li class=""><strong>MdigInquireFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;LUTValueAll&quot;), M_TYPE_UINT8, Uint8Array)</strong>.</li>
+</ul>
+</li>
+<li class=""><strong>M_FEATURE_USER_ARRAY_SIZE</strong> can now be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigInquireFeature"><code>MdigInquireFeature</code></a> when the data type returned is a string or an array of bytes (register). The <strong>M_FEATURE_USER_ARRAY_SIZE</strong> macro is used to pass the size of the user-allocated buffer passed to the **UserVarPtr ** parameter of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigInquireFeature"><code>MdigInquireFeature</code></a>. <strong>M_FEATURE_USER_ARRAY_SIZE</strong> is passed using the <strong>UserVarType</strong> parameter.
+The following is a list of example calls using <strong>M_FEATURE_USER_ARRAY_SIZE</strong>:
+<ul>
+<li class=""><strong>MdigInquireFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;PixelFormat&quot;), M_TYPE_STRING + M_FEATURE_USER_ARRAY_SIZE(N), TextCharArray);</strong> N being equal to the number of <strong>AIL_TEXT_CHAR</strong> in the <strong>TextCharArray</strong>.</li>
+<li class=""><strong>MdigInquireFeature(Digitizer, M_FEATURE_VALUE, AIL_TEXT(&quot;LUTValueAll&quot;), M_TYPE_UINT8 + M_FEATURE_USER_ARRAY_SIZE(N), Uint8Array); N being equal to the number of Uint8 in the Uint8Array</strong>.</li>
+</ul>
+</li>
+<li class=""><strong>M_FEATURE_ENUM_ENTRY_DISPLAY_NAME</strong> can now be used to inquire possible enumeration string entry to use for display purposes. See <strong>M_FEATURE_ENUM_ENTRY_NAME</strong>.</li>
+<li class="">Support for <strong>M_FEATURE_CHANGE_HOOK</strong>.
+Identifies the specified** FeatureName** to trigger the <strong>M_FEATURE_CHANGE</strong> hook callback. You must be hooked to the <strong>M_FEATURE_CHANGE</strong> hook type using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigHookFunction"><code>MdigHookFunction</code></a>.</li>
+<li class="">Support for <strong>M_INCREMENT</strong> when using <strong>M_TYPE_AIL_INT64</strong>.
+Returns an <strong>AIL_INT64</strong>, representing the feature&#x27;s increment value.</li>
+<li class="">Support for <strong>M_INCREMENT</strong> when using <strong>M_TYPE_AIL_INT32</strong>.
+Returns an <strong>AIL_INT32</strong>, representing the feature&#x27;s increment value.</li>
+<li class="">Support for <strong>M_INCREMENT</strong> when using <strong>M_TYPE_DOUBLE</strong>.
+Returns an <strong>AIL_DOUBLE</strong>, representing the feature&#x27;s increment value.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="msys">Msys<a href="#msys" class="hash-link" aria-label="Direct link to Msys" title="Direct link to Msys" translate="no">​</a></h2>
+<p>This section presents information about Zebra GigE Vision driver and the system module.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-msyscontrol">Additions to MsysControl<a href="#additions-to-msyscontrol" class="hash-link" aria-label="Direct link to Additions to MsysControl" title="Direct link to Additions to MsysControl" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysControl"><code>MsysControl</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_DISCOVER_DEVICE</strong>.
+Performs a device discovery. <strong>ControlValue</strong> must be <strong>M_DEFAULT</strong>. Note: executing this control can trigger an <strong>M_CAMERA_PRESENT</strong> hook.</li>
+<li class="">Support for <strong>M_GC_ACTION_DEVICE_KEY</strong> + N.
+Adds an action device key to action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_GROUP_KEY</strong> + N.
+Adds an action group key to action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_GROUP_MASK</strong> + N.
+Adds an action group mask to action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_ACKNOWLEDGE_NUMBER</strong> + N.
+Lets the GigE Vision driver know how many action command acknowledge packets will be received for action context N. If not specified, the number of calls to <strong>M_GC_ACTION_ADD_DEVICE</strong> for this action context will be used as the number of acknowledge packets expected. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_EXECUTE</strong> + N.
+Broadcast a GigE Vision Action command packet or scheduled action command packet containing the device key, group key, and group mask associated to action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. Control value must be <strong>M_DEFAULT</strong>. Note that the device key, group key, and group mask must have previously been programmed in each GigE Vision device associated to this action context using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControlFeature"><code>MdigControlFeature</code></a> with &quot;ActionDeviceKey&quot;, &quot;ActionSelector&quot;, &quot;ActionGroupKey&quot;, and &quot;ActionGroupMask&quot;. See SFNC (Standard Feature Naming Convention) for details.</li>
+<li class="">Support for <strong>M_GC_ACTION_ADD_DEVICE</strong> + N.
+Associates a GigE Vision device with action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. The control value must be a valid Digitizer ID.</li>
+<li class="">Support for <strong>M_GC_ACTION_REMOVE_DEVICE</strong> + N.
+Removes a GigE Vision device from action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. The control value must be a valid Digitizer ID.</li>
+<li class="">Support for <strong>M_GC_ACTION_CLEAR_DEVICES</strong> + N.
+Removes all GigE Vision devices associated to action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. The control value must be <strong>M_DEFAULT</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_TIME</strong> + N.
+Associates an action time to action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. This control must be used only if it is intended to send a scheduled action command. The time specified must be a time in the future. The GigE Vision devices associated to this action context must have IEEE 1588 PTP enabled using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControlFeature"><code>MdigControlFeature</code></a> with &quot;GevIEEE1588&quot;, &quot;GevIEEE1588ClockAccuracy&quot;, and &quot;GevIEEE1588Status&quot;. See SFNC (Standard Feature Naming Convention) for details. The current time can be inquired with <strong>MdigInquire(M_GC_CAMERA_TIME_STAMP)</strong> or <strong>MdigGetHookInfo(M_GC_CAMERA_TIME_STAMP)</strong>. The current time is valid only if IEEE 1588 PTP is enabled on all devices when the inquire is made.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-msysgethookinfo">Additions to MsysGetHookInfo<a href="#additions-to-msysgethookinfo" class="hash-link" aria-label="Direct link to Additions to MsysGetHookInfo" title="Direct link to Additions to MsysGetHookInfo" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysGetHookInfo"><code>MsysGetHookInfo</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_CAMERA_PRESENT</strong>.
+Returns an <strong>AIL_INT</strong>. Returns <strong>M_TRUE</strong> if a camera has been added or re-connected to the system. Returns <strong>M_FALSE</strong> if a camera has been removed from the system.</li>
+<li class="">Support for <strong>M_NUMBER</strong>.
+Returns an <strong>AIL_INT</strong>. Returns the system assigned digitizer device number associated with the camera that generated an <strong>M_CAMERA_PRESENT</strong> event.</li>
+<li class="">Support for <strong>M_TIME_STAMP</strong>.
+Returns an <strong>AIL_DOUBLE</strong>. Returns the operating system&#x27;s time stamp of the event that generates a service request, in sec. The time stamp is generated by the operating system&#x27;s performance counter.</li>
+<li class="">Support for <strong>M_GC_USER_NAME_LENGTH</strong>.
+Returns an <strong>AIL_INT</strong>. Returns the maximum number of characters in the camera&#x27;s user-defined name string.</li>
+<li class="">Support for <strong>M_GC_USER_NAME</strong>.
+Returns an <strong>AIL_INT</strong>. Returns the user-defined name string for the camera.</li>
+<li class="">Support for <strong>M_GC_IP_ADDRESS</strong>.
+Returns an <strong>AIL_INT64</strong>. Returns the 32-bit internet protocol (IPv4) address of the GigE Vision device. Note that these addresses are returned in a 64-bit variable.</li>
+<li class="">Support for <strong>M_GC_MAC_ADDRESS</strong>.
+Returns an <strong>AIL_INT</strong>. Returns the system assigned digitizer device number associated with the camera that generated an <strong>M_CAMERA_PRESENT</strong> event.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-msyshookfunction">Additions to MsysHookFunction<a href="#additions-to-msyshookfunction" class="hash-link" aria-label="Direct link to Additions to MsysHookFunction" title="Direct link to Additions to MsysHookFunction" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysHookFunction"><code>MsysHookFunction</code></a>.</p>
+<ul>
+<li class="">Can now hook a callback to <strong>M_CAMERA_PRESENT</strong>. Note that <strong>M_CAMERA_PRESENT</strong> hook support requires the use of the AILGigEService process. If the service is not started, an Aurora Imaging Library error will be generated when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysHookFunction"><code>MsysHookFunction</code></a> with <strong>M_CAMERA_PRESENT</strong>.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="additions-to-msysinquire">Additions to MsysInquire<a href="#additions-to-msysinquire" class="hash-link" aria-label="Direct link to Additions to MsysInquire" title="Direct link to Additions to MsysInquire" translate="no">​</a></h3>
+<p>The following lists additional GigE Vision support when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysInquire"><code>MsysInquire</code></a>.</p>
+<ul>
+<li class="">Support for <strong>M_DISCOVER_DEVICE_COUNT</strong>.
+Inquires the number of devices present. Inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_DISCOVER_DEVICE_DIGITIZER_NUMBER</strong> + N.
+Inquires the digitizer device number associated to the nth device. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_DISCOVER_DEVICE_MANUFACTURER_NAME</strong> + N.
+Inquires the device&#x27;s manufacturer name, for the nth device. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_STRING</strong>.</li>
+<li class="">Support for **M_DISCOVER_DEVICE_MODEL_NAME ** + N.
+Inquires the device&#x27;s model name, for the nth device. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_STRING</strong>.</li>
+<li class="">Support for <strong>M_DISCOVER_DEVICE_MANUFACTURER_INFO</strong> + N.
+Inquires the device&#x27;s manufacturer-specific information, for the nth device. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_STRING</strong>.</li>
+<li class="">Support for <strong>M_DISCOVER_DEVICE_USER_NAME</strong> + N.
+Inquires the device&#x27;s user programmable device name. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_STRING</strong>.</li>
+<li class="">Support for <strong>M_DISCOVER_DEVICE_VERSION</strong> + N.
+Inquires the device version of the nth device. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_STRING</strong>.</li>
+<li class="">Support for <strong>M_DISCOVER_DEVICE_SERIAL_NUMBER</strong> + N.
+Inquires the device serial number of the nth device. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_STRING</strong>.</li>
+<li class="">Support for **M_DISCOVER_DEVICE_INTERFACE_NAME ** + N.
+Inquires the name of the host interface associated to the nth device. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_STRING</strong>.</li>
+<li class="">Support for **M_DISCOVER_DEVICE_ADDRESS ** + N.
+Inquires the address of the nth device. N must be between 0 and <strong>M_DISCOVER_DEVICE_COUNT</strong> – 1. Inquire returns an <strong>AIL_STRING</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_DEVICE_KEY</strong> + N.
+Inquires the action device key of action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. Inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_GROUP_KEY</strong> + N.
+Inquires the action group key of action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. Inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_GROUP_MASK</strong> + N.
+Inquires the action group mask of action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. Inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_ACKNOWLEDGE_NUMBER</strong> + N.
+Inquires how many action command acknowledge packets will be received for action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. Inquire returns an <strong>AIL_INT</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_ADD_DEVICE</strong> + N.
+Inquires the GigE Vision device added to action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. Inquire returns an <strong>AIL_ID</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_REMOVE_DEVICE</strong> + N.
+Inquires the GigE Vision device removed from action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. Inquire returns an <strong>AIL_ID</strong>.</li>
+<li class="">Support for <strong>M_GC_ACTION_TIME</strong> + N.
+Inquires the action time of action context N. N can range from <strong>M_GC_ACTION0</strong> to <strong>M_GC_ACTION31</strong>. Inquire returns an <strong>AIL_DOUBLE</strong>. The current time can be inquired with <strong>MdigInquire(M_GC_CAMERA_TIME_STAMP)</strong> or <strong>MdigGetHookInfo(M_GC_CAMERA_TIME_STAMP)</strong>. The current time is valid only if IEEE 1588 PTP is enabled on all devices when the inquire is made.</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/S12_Additional_GigE_Vision_notes_user_guide"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Miscellaneous user guide information for Zebra GigE Vision driver</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Indio/ChapterInformation"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Zebra Indio</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#mbuf" class="table-of-contents__link toc-highlight">Mbuf</a><ul><li><a href="#additions-to-mbufalloc" class="table-of-contents__link toc-highlight">Additions to MbufAlloc...</a></li><li><a href="#additions-to-mbufinquire" class="table-of-contents__link toc-highlight">Additions to MbufInquire</a></li><li><a href="#additions-to-mbufinquirecontainer" class="table-of-contents__link toc-highlight">Additions to MbufInquireContainer</a></li></ul></li><li><a href="#mdig" class="table-of-contents__link toc-highlight">Mdig</a><ul><li><a href="#additions-to-mdigalloc" class="table-of-contents__link toc-highlight">Additions to MdigAlloc</a></li><li><a href="#additions-to-mdigcontrol" class="table-of-contents__link toc-highlight">Additions to MdigControl</a></li><li><a href="#additions-to-mdigcontrolfeature" class="table-of-contents__link toc-highlight">Additions to MdigControlFeature</a></li><li><a href="#additions-to-mdiggethookinfo" class="table-of-contents__link toc-highlight">Additions to MdigGetHookInfo</a></li><li><a href="#additions-to-mdighookfunction" class="table-of-contents__link toc-highlight">Additions to MdigHookFunction</a></li><li><a href="#additions-to-mdiginquire" class="table-of-contents__link toc-highlight">Additions to MdigInquire</a></li><li><a href="#additions-to-mdiginquirefeature" class="table-of-contents__link toc-highlight">Additions to MdigInquireFeature</a></li></ul></li><li><a href="#msys" class="table-of-contents__link toc-highlight">Msys</a><ul><li><a href="#additions-to-msyscontrol" class="table-of-contents__link toc-highlight">Additions to MsysControl</a></li><li><a href="#additions-to-msysgethookinfo" class="table-of-contents__link toc-highlight">Additions to MsysGetHookInfo</a></li><li><a href="#additions-to-msyshookfunction" class="table-of-contents__link toc-highlight">Additions to MsysHookFunction</a></li><li><a href="#additions-to-msysinquire" class="table-of-contents__link toc-highlight">Additions to MsysInquire</a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/reg/MregGetResult" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MregGetResult | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MregGetResult | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"reg","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"},{"@type":"ListItem","position":2,"name":"MregGetResult","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Collapse sidebar category &#x27;reg&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><span title="MregAlloc" class="linkLabel_WmDU">MregAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><span title="MregAllocResult" class="linkLabel_WmDU">MregAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><span title="MregCalculate" class="linkLabel_WmDU">MregCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><span title="MregControl" class="linkLabel_WmDU">MregControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><span title="MregDraw" class="linkLabel_WmDU">MregDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregFree"><span title="MregFree" class="linkLabel_WmDU">MregFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><span title="MregGetResult" class="linkLabel_WmDU">MregGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregInquire"><span title="MregInquire" class="linkLabel_WmDU">MregInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregRestore"><span title="MregRestore" class="linkLabel_WmDU">MregRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSave"><span title="MregSave" class="linkLabel_WmDU">MregSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><span title="MregSetLocation" class="linkLabel_WmDU">MregSetLocation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregStream"><span title="MregStream" class="linkLabel_WmDU">MregStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformCoordinate"><span title="MregTransformCoordinate" class="linkLabel_WmDU">MregTransformCoordinate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformCoordinateList"><span title="MregTransformCoordinateList" class="linkLabel_WmDU">MregTransformCoordinateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformImage"><span title="MregTransformImage" class="linkLabel_WmDU">MregTransformImage</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span>reg</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MregGetResult</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MregGetResult</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Get the specified type of result(s) from a registration result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MregGetResult</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    RegResultId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT   ResultIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ResultType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">     </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    ResultArrayPtr  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function retrieves the result(s) of the specified type from a registration result buffer.</p>
+<p>The result(s) that can be retrieved from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> result buffer are only available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_STITCHING</code></a> registration context. Result(s) from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_DEPTH_FROM_FOCUS_RESULT</code></a> result buffer can only be retrieved after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_DEPTH_FROM_FOCUS</code></a> registration context. Result(s) from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_EXTENDED_DEPTH_OF_FIELD_RESULT</code></a> result buffer can only be retrieved after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_EXTENDED_DEPTH_OF_FIELD</code></a> registration context. Result(s) from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_HIGH_DYNAMIC_RANGE_RESULT</code></a> result buffer can only be retrieved after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_HIGH_DYNAMIC_RANGE</code></a> registration context. Result(s) from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a> result buffer can only be retrieved after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_PHOTOMETRIC_STEREO</code></a> registration context.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="regresultid-in-ail_id"><code>RegResultId</code> <em>(in, AIL_ID)</em><a href="#regresultid-in-ail_id" class="hash-link" aria-label="Direct link to regresultid-in-ail_id" title="Direct link to regresultid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the registration result buffer from which to retrieve results.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultindex-in-ail_int"><code>ResultIndex</code> <em>(in, AIL_INT)</em><a href="#resultindex-in-ail_int" class="hash-link" aria-label="Direct link to resultindex-in-ail_int" title="Direct link to resultindex-in-ail_int" translate="no">​</a></h3>
+<p>Specifies which results to get. This parameter can be set to one of the following values:</p>
+<p><em>For retrieving results</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.</td></tr></tbody></table>
+<p>For an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> result buffer, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_ALL</code></a>.</p>
+<p>For an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_EXTENDED_DEPTH_OF_FIELD_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_DEPTH_FROM_FOCUS_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_HIGH_DYNAMIC_RANGE_RESULT</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a>result buffer, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_GENERAL</code></a>. |
+| <code>M_ALL</code> | Specifies to retrieve the results of the specified type for all registration result elements. This setting is only available for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> result buffers. |
+| <code>M_GENERAL</code> | Specifies to retrieve a result relating to the entire registration result buffer. |
+| <code>0 &lt;= Value &lt; M_NUMBER_OF_IMAGES</code> | Specifies the registration result element&#x27;s index, for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_HIGH_DYNAMIC_RANGE_RESULT</code></a> result buffer.</p>
+<blockquote>
+<p><strong>Note:</strong> Note that the maximum index (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_NUMBER_OF_IMAGES</code></a> - 1) is also equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_HDR_IMAGE_STATUS_SIZE</code></a> - 1. |
+| <code>0 &lt;= Value &lt; M_NUMBER_OF_REGISTRATION_ELEMENTS</code> | Specifies the registration result element&#x27;s index, for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a> result buffer. |</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resulttype-in-ail_int64"><code>ResultType</code> <em>(in, AIL_INT64)</em><a href="#resulttype-in-ail_int64" class="hash-link" aria-label="Direct link to resulttype-in-ail_int64" title="Direct link to resulttype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of result to retrieve.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultarrayptr-out-void"><code>ResultArrayPtr</code> *(out, <em>void)</em><a href="#resultarrayptr-out-void" class="hash-link" aria-label="Direct link to resultarrayptr-out-void" title="Direct link to resultarrayptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address of the array in which to write the requested information.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-general-results-or-registration-result-element-results-from-an">For general results or registration result element results from an<a href="#for-general-results-or-registration-result-element-results-from-an" class="hash-link" aria-label="Direct link to For general results or registration result element results from an" title="Direct link to For general results or registration result element results from an" translate="no">​</a></h3>
+<p>To retrieve a general result or the result for one or all registration result elements of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> result buffer, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>ResultType</code></a> parameter can be set to one of the following values.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result"><code>M_RESULT</code><a href="#m_result" class="hash-link" aria-label="Direct link to m_result" title="Direct link to m_result" translate="no">​</a></h3>
+<p>Retrieves whether the registration calculation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>) was successful.  When using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_GENERAL</code></a>, and the calculation of one registration result element fails, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_RESULT</code></a> returns a fail as well.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAILURE</code></td><td>Specifies that the registration calculation failed.</td></tr><tr><td><code>M_SUCCESS</code></td><td>Specifies that the registration calculation was successful.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score"><code>M_SCORE</code><a href="#m_score" class="hash-link" aria-label="Direct link to m_score" title="Direct link to m_score" translate="no">​</a></h3>
+<p>Retrieves the score of the registration calculation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>). To determine the type of score to calculate, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>MregControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SCORE_TYPE</code></a>.  When using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_GENERAL</code></a>, the score is an average of the scores of all result elements together.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the score of the registration calculation. The lower the value, the less optimal the alignment. For example, 0.0 equals no alignment and 100.0 equals a perfect alignment. Note that image noise can also adversely affect the score.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-general-results-from-an">For general results from an<a href="#for-general-results-from-an" class="hash-link" aria-label="Direct link to For general results from an" title="Direct link to For general results from an" translate="no">​</a></h3>
+<p>To retrieve a general result from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> result buffer, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>ResultType</code></a> parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_offset_x"><code>M_MOSAIC_OFFSET_X</code><a href="#m_mosaic_offset_x" class="hash-link" aria-label="Direct link to m_mosaic_offset_x" title="Direct link to m_mosaic_offset_x" translate="no">​</a></h3>
+<p>Retrieves the horizontal offset that will exist between the origin of the mosaic&#x27;s coordinate system and the left side of the destination image buffer, when you compose the mosaic.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_offset_y"><code>M_MOSAIC_OFFSET_Y</code><a href="#m_mosaic_offset_y" class="hash-link" aria-label="Direct link to m_mosaic_offset_y" title="Direct link to m_mosaic_offset_y" translate="no">​</a></h3>
+<p>Retrieves the vertical offset that will exist between the origin of the mosaic&#x27;s coordinate system and the top of the destination image buffer, when you compose the mosaic.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_size_x"><code>M_MOSAIC_SIZE_X</code><a href="#m_mosaic_size_x" class="hash-link" aria-label="Direct link to m_mosaic_size_x" title="Direct link to m_mosaic_size_x" translate="no">​</a></h3>
+<p>Retrieves the width that the mosaic will have when it is composed. This value can be used to allocate an image buffer large enough to hold the entire mosaic composed by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformImage"><code>MregTransformImage</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_size_y"><code>M_MOSAIC_SIZE_Y</code><a href="#m_mosaic_size_y" class="hash-link" aria-label="Direct link to m_mosaic_size_y" title="Direct link to m_mosaic_size_y" translate="no">​</a></h3>
+<p>Retrieves the height that the mosaic will have when it is composed. This value can be used to allocate an image buffer large enough to hold the entire mosaic composed by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformImage"><code>MregTransformImage</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-results-from-one-or-all-registration-result-elements-of-an">For results from one or all registration result elements of an<a href="#for-results-from-one-or-all-registration-result-elements-of-an" class="hash-link" aria-label="Direct link to For results from one or all registration result elements of an" title="Direct link to For results from one or all registration result elements of an" translate="no">​</a></h3>
+<p>To retrieve the result from one or all the registration result elements of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> result buffer, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>ResultType</code></a> parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_x"><code>M_POSITION_X</code><a href="#m_position_x" class="hash-link" aria-label="Direct link to m_position_x" title="Direct link to m_position_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the registration result element image&#x27;s origin in the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_y"><code>M_POSITION_Y</code><a href="#m_position_y" class="hash-link" aria-label="Direct link to m_position_y" title="Direct link to m_position_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the registration result element image&#x27;s origin in the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reverse_transformation_matrix"><code>M_REVERSE_TRANSFORMATION_MATRIX</code><a href="#m_reverse_transformation_matrix" class="hash-link" aria-label="Direct link to m_reverse_transformation_matrix" title="Direct link to m_reverse_transformation_matrix" translate="no">​</a></h3>
+<p>Retrieves the 9 elements of the 3x3 transformation matrix that performs a reverse transformation.  The transformation matrix can transform any position in the specified image (<code>x&lt;sub&gt;s&lt;/sub&gt;</code>, <code>y&lt;sub&gt;s&lt;/sub&gt;</code>) with a position in the global/reference coordinate system (<code>x&lt;sub&gt;g&lt;/sub&gt;</code>, <code>y&lt;sub&gt;g&lt;/sub&gt;</code>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reverse_transformation_matrix_id"><code>M_REVERSE_TRANSFORMATION_MATRIX_ID</code><a href="#m_reverse_transformation_matrix_id" class="hash-link" aria-label="Direct link to m_reverse_transformation_matrix_id" title="Direct link to m_reverse_transformation_matrix_id" translate="no">​</a></h3>
+<p>Retrieves the identifier of the Aurora Imaging Library array buffer containing the 3x3 transformation matrix that performs a reverse transformation.  The transformation matrix can transform any position in the specified image (<code>x&lt;sub&gt;s&lt;/sub&gt;</code>, <code>y&lt;sub&gt;s&lt;/sub&gt;</code>) with a position in the global/reference coordinate system (<code>x&lt;sub&gt;g&lt;/sub&gt;</code>, <code>y&lt;sub&gt;g&lt;/sub&gt;</code>).  Note that you cannot free the retrieved buffer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformation_matrix"><code>M_TRANSFORMATION_MATRIX</code><a href="#m_transformation_matrix" class="hash-link" aria-label="Direct link to m_transformation_matrix" title="Direct link to m_transformation_matrix" translate="no">​</a></h3>
+<p>Retrieves the 9 elements of the 3x3 transformation matrix.  The transformation matrix can transform any position in the global/reference coordinate system (<code>x&lt;sub&gt;g&lt;/sub&gt;</code>, <code>y&lt;sub&gt;g&lt;/sub&gt;</code>) with a position in the specified image (<code>x&lt;sub&gt;s&lt;/sub&gt;</code>, <code>y&lt;sub&gt;s&lt;/sub&gt;</code>).  You can put the matrix data into an Aurora Imaging Library buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufPut"><code>MbufPut</code></a>) and pass the matrix (buffer) to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimWarp"><code>MimWarp</code></a> to transform the source image to the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformation_matrix_id"><code>M_TRANSFORMATION_MATRIX_ID</code><a href="#m_transformation_matrix_id" class="hash-link" aria-label="Direct link to m_transformation_matrix_id" title="Direct link to m_transformation_matrix_id" translate="no">​</a></h3>
+<p>Retrieves the identifier of the Aurora Imaging Library array buffer containing the 3x3 transformation matrix.  The transformation matrix can transform any position in the global/reference coordinate system (<code>x&lt;sub&gt;g&lt;/sub&gt;</code>, <code>y&lt;sub&gt;g&lt;/sub&gt;</code>) with a position in the specified image (<code>x&lt;sub&gt;s&lt;/sub&gt;</code>, <code>y&lt;sub&gt;s&lt;/sub&gt;</code>).  You can pass the matrix to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimWarp"><code>MimWarp</code></a> to transform the source image to the global/reference coordinate system.  Note that you cannot free the retrieved buffer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformed_bl_x"><code>M_TRANSFORMED_BL_X</code><a href="#m_transformed_bl_x" class="hash-link" aria-label="Direct link to m_transformed_bl_x" title="Direct link to m_transformed_bl_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the bottom-left corner of the specified registration result element&#x27;s image. This coordinate is with respect to the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformed_bl_y"><code>M_TRANSFORMED_BL_Y</code><a href="#m_transformed_bl_y" class="hash-link" aria-label="Direct link to m_transformed_bl_y" title="Direct link to m_transformed_bl_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the bottom-left corner of the specified registration result element&#x27;s image. This coordinate is with respect to the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformed_br_x"><code>M_TRANSFORMED_BR_X</code><a href="#m_transformed_br_x" class="hash-link" aria-label="Direct link to m_transformed_br_x" title="Direct link to m_transformed_br_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the bottom-right corner of the specified registration result element&#x27;s image. This coordinate is with respect to the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformed_br_y"><code>M_TRANSFORMED_BR_Y</code><a href="#m_transformed_br_y" class="hash-link" aria-label="Direct link to m_transformed_br_y" title="Direct link to m_transformed_br_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the bottom-right corner of the specified registration result element&#x27;s image. This coordinate is with respect to the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformed_ul_x"><code>M_TRANSFORMED_UL_X</code><a href="#m_transformed_ul_x" class="hash-link" aria-label="Direct link to m_transformed_ul_x" title="Direct link to m_transformed_ul_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the upper left corner of the specified registration result element&#x27;s image. This coordinate is with respect to the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformed_ul_y"><code>M_TRANSFORMED_UL_Y</code><a href="#m_transformed_ul_y" class="hash-link" aria-label="Direct link to m_transformed_ul_y" title="Direct link to m_transformed_ul_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the upper left corner of the specified registration result element&#x27;s image. This coordinate is with respect to the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformed_ur_x"><code>M_TRANSFORMED_UR_X</code><a href="#m_transformed_ur_x" class="hash-link" aria-label="Direct link to m_transformed_ur_x" title="Direct link to m_transformed_ur_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the upper right corner of the specified registration result element&#x27;s image. This coordinate is with respect to the global/reference coordinate system.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformed_ur_y"><code>M_TRANSFORMED_UR_Y</code><a href="#m_transformed_ur_y" class="hash-link" aria-label="Direct link to m_transformed_ur_y" title="Direct link to m_transformed_ur_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the upper right corner of the specified registration result element&#x27;s image. This coordinate is with respect to the global/reference coordinate system.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values">Combination Constants — For determining the required array size (number of elements) to store the returned values<a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" title="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required array size (number of elements) to store the returned values.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-coordinate-system">Combination Constants — For specifying the coordinate system<a href="#combination-constants--for-specifying-the-coordinate-system" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the coordinate system" title="Direct link to Combination Constants — For specifying the coordinate system" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the requested results with respect to the required coordinate system.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_REFERENCE</code></td><td>Retrieves the results with respect to the reference coordinate system. The reference coordinate system is associated with the registration element that was specified in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>Target</code></a> parameter of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a>.</td></tr><tr><td><code>M_REGISTRATION_GLOBAL</code> <em>(default)</em></td><td>Retrieves the results with respect to the global pixel coordinate system.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-general-results-from-an-1">For general results from an<a href="#for-general-results-from-an-1" class="hash-link" aria-label="Direct link to For general results from an" title="Direct link to For general results from an" translate="no">​</a></h3>
+<p>To retrieve a general result from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a>result buffer, the result type parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gaussian_curvature"><code>M_GAUSSIAN_CURVATURE</code><a href="#m_gaussian_curvature" class="hash-link" aria-label="Direct link to m_gaussian_curvature" title="Direct link to m_gaussian_curvature" translate="no">​</a></h3>
+<p>Retrieves whether the Gaussian curvature image was computed when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the Gaussian curvature image was not computed and is not available to draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Gaussian curvature image was computed and is available to draw using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_MEAN_CURVATURE_IMAGE</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_local_contrast"><code>M_LOCAL_CONTRAST</code><a href="#m_local_contrast" class="hash-link" aria-label="Direct link to m_local_contrast" title="Direct link to m_local_contrast" translate="no">​</a></h3>
+<p>Retrieves whether the local contrast image was computed when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the local contrast image was not computed and is not available to draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the local contrast image was computed and is available to draw using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_LOCAL_CONTRAST_IMAGE</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_local_shape"><code>M_LOCAL_SHAPE</code><a href="#m_local_shape" class="hash-link" aria-label="Direct link to m_local_shape" title="Direct link to m_local_shape" translate="no">​</a></h3>
+<p>Retrieves whether the local shape image was computed when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the local shape image was not computed and is not available to draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the local shape image was computed and is available to draw using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_LOCAL_SHAPE_IMAGE</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mean_curvature"><code>M_MEAN_CURVATURE</code><a href="#m_mean_curvature" class="hash-link" aria-label="Direct link to m_mean_curvature" title="Direct link to m_mean_curvature" translate="no">​</a></h3>
+<p>Retrieves whether the mean curvature image was computed when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the mean curvature image was not computed and is not available to draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the mean curvature image was computed and is available to draw using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_MEAN_CURVATURE_IMAGE</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_range_factor_gaussian_curvature"><code>M_RANGE_FACTOR_GAUSSIAN_CURVATURE</code><a href="#m_range_factor_gaussian_curvature" class="hash-link" aria-label="Direct link to m_range_factor_gaussian_curvature" title="Direct link to m_range_factor_gaussian_curvature" translate="no">​</a></h3>
+<p>Retrieves the automatically calculated remap factor value for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_GAUSSIAN_CURVATURE_IMAGE</code></a> operation, when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_REMAP_FACTOR_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_AUTO</code></a>. The calculated value is equal to <code>1 / (max | _Gaussian curvature image_ |)</code>, where (max |<em>Gaussian curvature image</em>|) is the maximum of the absolute value of the pixel intensity values in the Gaussian curvature image.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_range_factor_local_shape"><code>M_RANGE_FACTOR_LOCAL_SHAPE</code><a href="#m_range_factor_local_shape" class="hash-link" aria-label="Direct link to m_range_factor_local_shape" title="Direct link to m_range_factor_local_shape" translate="no">​</a></h3>
+<p>Retrieves the automatically calculated remap factor value for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_LOCAL_SHAPE_IMAGE</code></a> operation, when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_REMAP_FACTOR_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_AUTO</code></a>. The calculated value is equal to <code>1 / (max | _local shape image_ |)</code>, where (max |<em>local shape image</em>|) is the maximum of the absolute value of the pixel intensity values in the local shape image.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_range_factor_mean_curvature"><code>M_RANGE_FACTOR_MEAN_CURVATURE</code><a href="#m_range_factor_mean_curvature" class="hash-link" aria-label="Direct link to m_range_factor_mean_curvature" title="Direct link to m_range_factor_mean_curvature" translate="no">​</a></h3>
+<p>Retrieves the automatically calculated remap factor value for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_MEAN_CURVATURE_IMAGE</code></a> operation, when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_REMAP_FACTOR_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_AUTO</code></a>. The calculated value is equal to <code>1 / (max | _mean curvature image_ |)</code>, where (max |<em>mean curvature image</em>|) is the maximum of the absolute value of the pixel intensity values in the mean curvature image.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_texture_image"><code>M_TEXTURE_IMAGE</code><a href="#m_texture_image" class="hash-link" aria-label="Direct link to m_texture_image" title="Direct link to m_texture_image" translate="no">​</a></h3>
+<p>Retrieves whether the texture image was computed when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the texture image was not computed and is not available to draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the texture image was computed and is available to draw using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_TEXTURE_IMAGE</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-general-results-from-an-2">For general results from an<a href="#for-general-results-from-an-2" class="hash-link" aria-label="Direct link to For general results from an" title="Direct link to For general results from an" translate="no">​</a></h3>
+<p>To retrieve a general result from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_DEPTH_FROM_FOCUS_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_HIGH_DYNAMIC_RANGE_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_EXTENDED_DEPTH_OF_FIELD_RESULT</code></a> result buffer, the result type parameter can be set to one of the values listed in the table below.  Note that for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_DEPTH_FROM_FOCUS_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_HIGH_DYNAMIC_RANGE_RESULT</code></a>, or an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a> result buffer, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_STATUS</code></a> must return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_COMPLETE</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_image_size_band"><code>M_IMAGE_SIZE_BAND</code><a href="#m_image_size_band" class="hash-link" aria-label="Direct link to m_image_size_band" title="Direct link to m_image_size_band" translate="no">​</a></h3>
+<p>Retrieves the number of bands of the images used as input in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>operation.  This value can be used to allocate an image buffer large enough to hold the image drawn using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_image_size_x"><code>M_IMAGE_SIZE_X</code><a href="#m_image_size_x" class="hash-link" aria-label="Direct link to m_image_size_x" title="Direct link to m_image_size_x" translate="no">​</a></h3>
+<p>Retrieves the size of the X-dimension of the images used as input in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>operation.  This value can be used to allocate an image buffer large enough to hold the image drawn using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_image_size_y"><code>M_IMAGE_SIZE_Y</code><a href="#m_image_size_y" class="hash-link" aria-label="Direct link to m_image_size_y" title="Direct link to m_image_size_y" translate="no">​</a></h3>
+<p>Retrieves the size of the Y-dimension of the images used as input in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>operation.  This value can be used to allocate an image buffer large enough to hold the image drawn using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_image_type"><code>M_IMAGE_TYPE</code><a href="#m_image_type" class="hash-link" aria-label="Direct link to m_image_type" title="Direct link to m_image_type" translate="no">​</a></h3>
+<p>Retrieves the data type and depth of the images used as input in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>operation.  This value can be used to allocate an image buffer with the appropriate settings to hold the image drawn using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a>. In the case of a raw HDR image, its bit depth must be twice that of the input images. For example, if the input images are 8-bit, then the raw HDR image must be written to a 16-bit buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FLOAT + 32</code></td><td>Specifies 32-bit float data.</td></tr><tr><td><code>M_SIGNED + 8</code></td><td>Specifies 8-bit signed data.</td></tr><tr><td><code>M_SIGNED + 16</code></td><td>Specifies 16-bit signed data.</td></tr><tr><td><code>M_SIGNED + 32</code></td><td>Specifies 32-bit signed data.</td></tr><tr><td><code>M_UNSIGNED + 1</code></td><td>Specifies 1-bit unsigned data.</td></tr><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies 8-bit unsigned data.</td></tr><tr><td><code>M_UNSIGNED + 16</code></td><td>Specifies 16-bit unsigned data.</td></tr><tr><td><code>M_UNSIGNED + 32</code></td><td>Specifies 32-bit unsigned data.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_index_value"><code>M_MAX_INDEX_VALUE</code><a href="#m_max_index_value" class="hash-link" aria-label="Direct link to m_max_index_value" title="Direct link to m_max_index_value" translate="no">​</a></h3>
+<p>Retrieves the highest index value of the non-null images used as input in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>operation.  This result type is only available for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_DEPTH_FROM_FOCUS_RESULT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 1</code></td><td>Specifies the highest index value.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-general-results-from-an-3">For general results from an<a href="#for-general-results-from-an-3" class="hash-link" aria-label="Direct link to For general results from an" title="Direct link to For general results from an" translate="no">​</a></h3>
+<p>To retrieve a general result from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_EXTENDED_DEPTH_OF_FIELD_RESULT</code></a> result buffer, the result type parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_of_confusion_radius_max"><code>M_CIRCLE_OF_CONFUSION_RADIUS_MAX</code><a href="#m_circle_of_confusion_radius_max" class="hash-link" aria-label="Direct link to m_circle_of_confusion_radius_max" title="Direct link to m_circle_of_confusion_radius_max" translate="no">​</a></h3>
+<p>Retrieves the radius of the maximum circle of confusion (blurring circle) used during calculations, in pixels.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mode"><code>M_MODE</code><a href="#m_mode" class="hash-link" aria-label="Direct link to m_mode" title="Direct link to m_mode" translate="no">​</a></h3>
+<p>Retrieves the computation mode used.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAST</code></td><td>Specifies that the extended depth of field registration operation used the fast computation mode. This mode favored reducing computation time over accuracy.</td></tr><tr><td><code>M_RECONSTRUCTION</code></td><td>Specifies that the extended depth of field registration operation used the reconstruction computation mode. This mode favored accuracy over reducing computation time.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_translation_tolerance"><code>M_TRANSLATION_TOLERANCE</code><a href="#m_translation_tolerance" class="hash-link" aria-label="Direct link to m_translation_tolerance" title="Direct link to m_translation_tolerance" translate="no">​</a></h3>
+<p>Retrieves the maximum distance, used during calculations, between a point of an object that is in focus in one image, and the same point in an image in which the object is out of focus, in pixels.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-general-results-or-registration-result-element-results-from-an-1">For general results or registration result element results from an<a href="#for-general-results-or-registration-result-element-results-from-an-1" class="hash-link" aria-label="Direct link to For general results or registration result element results from an" title="Direct link to For general results or registration result element results from an" translate="no">​</a></h3>
+<p>To retrieve a general result or the result of one registration result element from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_HIGH_DYNAMIC_RANGE_RESULT</code></a> result buffer, the result type parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_hdr_image_status"><code>M_HDR_IMAGE_STATUS</code><a href="#m_hdr_image_status" class="hash-link" aria-label="Direct link to m_hdr_image_status" title="Direct link to m_hdr_image_status" translate="no">​</a></h3>
+<p>Retrieves the status of the image associated with the specified registration result element.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_HDR_IMAGE_LIMITED_TO_SINGLE_COLOR</code></td><td>Specifies that the number of colors in the current HDR image is reduced to a single color within the merge area.</td></tr><tr><td><code>M_HDR_INSUFFICIENT_CONTRAST</code></td><td>Specifies that there is inadequate contrast in the merge area of the input image.</td></tr><tr><td><code>M_HDR_INSUFFICIENT_CONTRIBUTION</code></td><td>Specifies that the input image does not increase the dynamic range already present in the current HDR image.</td></tr><tr><td><code>M_HDR_MERGE_AREA_GAIN_INCORRECT</code></td><td>Specifies that the gain to be applied to the input image is less that 1.</td></tr><tr><td><code>M_HDR_MERGE_AREA_SIZE_INSUFFICIENT</code></td><td>Specifies that the calculated merge area, where the pixel values are between <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_LOW_THRESHOLD</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_HIGH_THRESHOLD</code></a>, on both the working HDR image and the input image, is below the threshold specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_COVERAGE</code></a>.</td></tr><tr><td><code>M_HDR_SUCCESSFUL</code></td><td>Specifies that the image was successfully merged into the intermediate, working HDR image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_hdr_image_status_size"><code>M_HDR_IMAGE_STATUS_SIZE</code><a href="#m_hdr_image_status_size" class="hash-link" aria-label="Direct link to m_hdr_image_status_size" title="Direct link to m_hdr_image_status_size" translate="no">​</a></h3>
+<p>Retrieves the number of images that have been processed and that have their status available.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_hdr_status"><code>M_HDR_STATUS</code><a href="#m_hdr_status" class="hash-link" aria-label="Direct link to m_hdr_status" title="Direct link to m_hdr_status" translate="no">​</a></h3>
+<p>Retrieves the ratio of images used with success to the total number of input images, when calculating the HDR image. This is a quick check value to evaluate the relative quality of the HDR image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 1.0</code></td><td>Specifies the HDR status ratio. A ratio of 1.0 signifies that every image was used.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_image_gain"><code>M_IMAGE_GAIN</code><a href="#m_image_gain" class="hash-link" aria-label="Direct link to m_image_gain" title="Direct link to m_image_gain" translate="no">​</a></h3>
+<p>Retrieves the gain used to merge the corresponding input image with the intermediate, working HDR image.  The image gain is always 1.0 for the first input image added.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that the corresponding input image was not successfully merged with the intermediate, working HDR image. An image was successfully merged during the HDR operation if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_HDR_IMAGE_STATUS</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_HDR_SUCCESSFUL</code></a>.</td></tr><tr><td><code>Value &gt;= 1.0</code></td><td>Specifies the gain used for the corresponding input image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tone_mapping"><code>M_TONE_MAPPING</code><a href="#m_tone_mapping" class="hash-link" aria-label="Direct link to m_tone_mapping" title="Direct link to m_tone_mapping" translate="no">​</a></h3>
+<p>Retrieves the tone mapping mode used for the resulting HDR image.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-requesting-availability">Combination Constants — For requesting availability<a href="#combination-constants--for-requesting-availability" class="hash-link" aria-label="Direct link to Combination Constants — For requesting availability" title="Direct link to Combination Constants — For requesting availability" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether a result is available.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_available"><code>M_AVAILABLE</code><a href="#m_available" class="hash-link" aria-label="Direct link to m_available" title="Direct link to m_available" translate="no">​</a></h4>
+<p>Retrieves whether the requested result type is available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the requested result type is not available.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the requested result type is available.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-for-depth-from-focus-extended-depth-of-field-high-dynamic-range-or-photometric-stereo-registration-operations">For retrieving results for depth-from-focus, extended depth of field, high dynamic range, or photometric stereo registration operations<a href="#for-retrieving-results-for-depth-from-focus-extended-depth-of-field-high-dynamic-range-or-photometric-stereo-registration-operations" class="hash-link" aria-label="Direct link to For retrieving results for depth-from-focus, extended depth of field, high dynamic range, or photometric stereo registration operations" title="Direct link to For retrieving results for depth-from-focus, extended depth of field, high dynamic range, or photometric stereo registration operations" translate="no">​</a></h3>
+<p>To retrieve a general result from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_DEPTH_FROM_FOCUS_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_EXTENDED_DEPTH_OF_FIELD_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_HIGH_DYNAMIC_RANGE_RESULT</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a> result buffer, the result type parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_images"><code>M_NUMBER_OF_IMAGES</code><a href="#m_number_of_images" class="hash-link" aria-label="Direct link to m_number_of_images" title="Direct link to m_number_of_images" translate="no">​</a></h3>
+<p>Retrieves the number of non-null images used to calculate the results that are stored in the result buffer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status"><code>M_STATUS</code><a href="#m_status" class="hash-link" aria-label="Direct link to m_status" title="Direct link to m_status" translate="no">​</a></h3>
+<p>Retrieves the status of the registration operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_ACCUMULATE</code></td><td>Specifies that the result buffer has been filled with some preprocessing information, but the EDoF or HDR image is not yet available. The EDoF image can be calculated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>M_ACCUMULATE_AND_COMPUTE</code></a>. The HDR image can be calculated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>M_ACCUMULATE_AND_COMPUTE</code></a>.  This value can only be returned for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_EXTENDED_DEPTH_OF_FIELD_RESULT</code></a> or an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_HIGH_DYNAMIC_RANGE_RESULT</code></a> result buffer.</td></tr><tr><td><code>M_COMPLETE</code></td><td>Specifies that the resulting image (EDoF image, photometric stereo image, HDR image, or index image) is available and can be retrieved using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a>.</td></tr><tr><td><code>M_EMPTY</code></td><td>Specifies that the result buffer is empty.</td></tr><tr><td><code>M_INTERNAL_ERROR</code></td><td>Specifies that an unexpected internal error occurred during the registration operation.  This value can only be returned for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a> result buffer.</td></tr><tr><td><code>M_NOT_ENOUGH_MEMORY</code></td><td>Specifies that this operation was not completed because of a lack of available memory.  This value can only be returned for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a> result buffer.</td></tr><tr><td><code>M_STOPPED_BY_REQUEST</code></td><td>Specifies that the registration operation was stopped from another thread using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>MregControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_STOP_CALCULATE</code></a>.  This value can only be returned for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a> result buffer.</td></tr><tr><td><code>M_TIMEOUT_REACHED</code></td><td>Specifies that the operation took longer than the allowed value, specified by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>MregControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TIMEOUT</code></a>, and has stopped before completion.  This value can only be returned for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a> result buffer.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested results to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_id"><code>M_TYPE_AIL_ID</code><a href="#m_type_ail_id" class="hash-link" aria-label="Direct link to m_type_ail_id" title="Direct link to m_type_ail_id" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_ID</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT64</em>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregFree"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MregFree</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregInquire"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MregInquire</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#regresultid-in-ail_id" class="table-of-contents__link toc-highlight"><code>RegResultId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#resultindex-in-ail_int" class="table-of-contents__link toc-highlight"><code>ResultIndex</code> <em>(in, AIL_INT)</em></a></li><li><a href="#resulttype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ResultType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#resultarrayptr-out-void" class="table-of-contents__link toc-highlight"><code>ResultArrayPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-general-results-or-registration-result-element-results-from-an" class="table-of-contents__link toc-highlight">For general results or registration result element results from an</a></li><li><a href="#m_result" class="table-of-contents__link toc-highlight"><code>M_RESULT</code></a></li><li><a href="#m_score" class="table-of-contents__link toc-highlight"><code>M_SCORE</code></a></li><li><a href="#for-general-results-from-an" class="table-of-contents__link toc-highlight">For general results from an</a></li><li><a href="#m_mosaic_offset_x" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_OFFSET_X</code></a></li><li><a href="#m_mosaic_offset_y" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_OFFSET_Y</code></a></li><li><a href="#m_mosaic_size_x" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_SIZE_X</code></a></li><li><a href="#m_mosaic_size_y" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_SIZE_Y</code></a></li><li><a href="#for-results-from-one-or-all-registration-result-elements-of-an" class="table-of-contents__link toc-highlight">For results from one or all registration result elements of an</a></li><li><a href="#m_position_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_X</code></a></li><li><a href="#m_position_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_Y</code></a></li><li><a href="#m_reverse_transformation_matrix" class="table-of-contents__link toc-highlight"><code>M_REVERSE_TRANSFORMATION_MATRIX</code></a></li><li><a href="#m_reverse_transformation_matrix_id" class="table-of-contents__link toc-highlight"><code>M_REVERSE_TRANSFORMATION_MATRIX_ID</code></a></li><li><a href="#m_transformation_matrix" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMATION_MATRIX</code></a></li><li><a href="#m_transformation_matrix_id" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMATION_MATRIX_ID</code></a></li><li><a href="#m_transformed_bl_x" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMED_BL_X</code></a></li><li><a href="#m_transformed_bl_y" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMED_BL_Y</code></a></li><li><a href="#m_transformed_br_x" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMED_BR_X</code></a></li><li><a href="#m_transformed_br_y" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMED_BR_Y</code></a></li><li><a href="#m_transformed_ul_x" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMED_UL_X</code></a></li><li><a href="#m_transformed_ul_y" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMED_UL_Y</code></a></li><li><a href="#m_transformed_ur_x" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMED_UR_X</code></a></li><li><a href="#m_transformed_ur_y" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMED_UR_Y</code></a></li><li><a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required array size (number of elements) to store the returned values</a></li><li><a href="#combination-constants--for-specifying-the-coordinate-system" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the coordinate system</a></li><li><a href="#for-general-results-from-an-1" class="table-of-contents__link toc-highlight">For general results from an</a></li><li><a href="#m_gaussian_curvature" class="table-of-contents__link toc-highlight"><code>M_GAUSSIAN_CURVATURE</code></a></li><li><a href="#m_local_contrast" class="table-of-contents__link toc-highlight"><code>M_LOCAL_CONTRAST</code></a></li><li><a href="#m_local_shape" class="table-of-contents__link toc-highlight"><code>M_LOCAL_SHAPE</code></a></li><li><a href="#m_mean_curvature" class="table-of-contents__link toc-highlight"><code>M_MEAN_CURVATURE</code></a></li><li><a href="#m_range_factor_gaussian_curvature" class="table-of-contents__link toc-highlight"><code>M_RANGE_FACTOR_GAUSSIAN_CURVATURE</code></a></li><li><a href="#m_range_factor_local_shape" class="table-of-contents__link toc-highlight"><code>M_RANGE_FACTOR_LOCAL_SHAPE</code></a></li><li><a href="#m_range_factor_mean_curvature" class="table-of-contents__link toc-highlight"><code>M_RANGE_FACTOR_MEAN_CURVATURE</code></a></li><li><a href="#m_texture_image" class="table-of-contents__link toc-highlight"><code>M_TEXTURE_IMAGE</code></a></li><li><a href="#for-general-results-from-an-2" class="table-of-contents__link toc-highlight">For general results from an</a></li><li><a href="#m_image_size_band" class="table-of-contents__link toc-highlight"><code>M_IMAGE_SIZE_BAND</code></a></li><li><a href="#m_image_size_x" class="table-of-contents__link toc-highlight"><code>M_IMAGE_SIZE_X</code></a></li><li><a href="#m_image_size_y" class="table-of-contents__link toc-highlight"><code>M_IMAGE_SIZE_Y</code></a></li><li><a href="#m_image_type" class="table-of-contents__link toc-highlight"><code>M_IMAGE_TYPE</code></a></li><li><a href="#m_max_index_value" class="table-of-contents__link toc-highlight"><code>M_MAX_INDEX_VALUE</code></a></li><li><a href="#for-general-results-from-an-3" class="table-of-contents__link toc-highlight">For general results from an</a></li><li><a href="#m_circle_of_confusion_radius_max" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_OF_CONFUSION_RADIUS_MAX</code></a></li><li><a href="#m_mode" class="table-of-contents__link toc-highlight"><code>M_MODE</code></a></li><li><a href="#m_translation_tolerance" class="table-of-contents__link toc-highlight"><code>M_TRANSLATION_TOLERANCE</code></a></li><li><a href="#for-general-results-or-registration-result-element-results-from-an-1" class="table-of-contents__link toc-highlight">For general results or registration result element results from an</a></li><li><a href="#m_hdr_image_status" class="table-of-contents__link toc-highlight"><code>M_HDR_IMAGE_STATUS</code></a></li><li><a href="#m_hdr_image_status_size" class="table-of-contents__link toc-highlight"><code>M_HDR_IMAGE_STATUS_SIZE</code></a></li><li><a href="#m_hdr_status" class="table-of-contents__link toc-highlight"><code>M_HDR_STATUS</code></a></li><li><a href="#m_image_gain" class="table-of-contents__link toc-highlight"><code>M_IMAGE_GAIN</code></a></li><li><a href="#m_tone_mapping" class="table-of-contents__link toc-highlight"><code>M_TONE_MAPPING</code></a></li><li><a href="#combination-constants--for-requesting-availability" class="table-of-contents__link toc-highlight">Combination Constants — For requesting availability</a></li><li><a href="#for-retrieving-results-for-depth-from-focus-extended-depth-of-field-high-dynamic-range-or-photometric-stereo-registration-operations" class="table-of-contents__link toc-highlight">For retrieving results for depth-from-focus, extended depth of field, high dynamic range, or photometric stereo registration operations</a></li><li><a href="#m_number_of_images" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_IMAGES</code></a></li><li><a href="#m_status" class="table-of-contents__link toc-highlight"><code>M_STATUS</code></a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

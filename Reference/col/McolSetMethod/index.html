@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/col/McolSetMethod" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">McolSetMethod | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="McolSetMethod | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"col","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"},{"@type":"ListItem","position":2,"name":"McolSetMethod","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Collapse sidebar category &#x27;col&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><span title="McolAlloc" class="linkLabel_WmDU">McolAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAllocResult"><span title="McolAllocResult" class="linkLabel_WmDU">McolAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><span title="McolControl" class="linkLabel_WmDU">McolControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><span title="McolDefine" class="linkLabel_WmDU">McolDefine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDistance"><span title="McolDistance" class="linkLabel_WmDU">McolDistance</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><span title="McolDraw" class="linkLabel_WmDU">McolDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolFree"><span title="McolFree" class="linkLabel_WmDU">McolFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolGetResult"><span title="McolGetResult" class="linkLabel_WmDU">McolGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><span title="McolInquire" class="linkLabel_WmDU">McolInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMask"><span title="McolMask" class="linkLabel_WmDU">McolMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><span title="McolMatch" class="linkLabel_WmDU">McolMatch</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolPreprocess"><span title="McolPreprocess" class="linkLabel_WmDU">McolPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolProject"><span title="McolProject" class="linkLabel_WmDU">McolProject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolRestore"><span title="McolRestore" class="linkLabel_WmDU">McolRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSave"><span title="McolSave" class="linkLabel_WmDU">McolSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><span title="McolSetMethod" class="linkLabel_WmDU">McolSetMethod</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolStream"><span title="McolStream" class="linkLabel_WmDU">McolStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolTransform"><span title="McolTransform" class="linkLabel_WmDU">McolTransform</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span>col</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">McolSetMethod</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>McolSetMethod</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Set the color matching or relative color calibration strategy.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">McolSetMethod</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    ContextId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">                      </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 OperationMode</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">                  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 DistTypeOrCalIntent</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">            </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ConversionModeOrComputeOption</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ControlFlag                     </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function sets the strategy with which to perform color matching or relative color calibration, when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolTransform"><code>McolTransform</code></a>, respectively. The strategy is based on the operation and either the color distance (for color matching) or the color calibration intent (for relative color calibration). By manipulating these settings, you can affect the resulting color-samples that Aurora Imaging Library matches to the target areas, or the color-sample mappings that Aurora Imaging Library uses to transform color data with relative color calibration.</p>
+<p>If you perform color matching using an RGB source color space, you can use this function to convert your RGB color data to a different color space before the match operation. To do so, explicitly specify a conversion mode (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ConversionModeOrComputeOption</code></a>).</p>
+<p>The strategy set with this function is part of the specified context. For this function&#x27;s settings to take effect, you must preprocess the context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolPreprocess"><code>McolPreprocess</code></a>).</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextid-in-ail_id"><code>ContextId</code> <em>(in, AIL_ID)</em><a href="#contextid-in-ail_id" class="hash-link" aria-label="Direct link to contextid-in-ail_id" title="Direct link to contextid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the color matching or relative color calibration context. The context must have been previously allocated on the required system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>McolAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_COLOR_MATCHING</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_COLOR_CALIBRATION_RELATIVE</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="operationmode-in-ail_int64"><code>OperationMode</code> <em>(in, AIL_INT64)</em><a href="#operationmode-in-ail_int64" class="hash-link" aria-label="Direct link to operationmode-in-ail_int64" title="Direct link to operationmode-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the operation.</p>
+<p><em>For specifying the distance operation (color matching)</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_STAT_MIN_DIST</code></a>.</td></tr><tr><td><code>M_HISTOGRAM_MATCHING</code></td><td>Specifies a minimum distance operation, based on color histograms. When using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_MATCHING</code></a>, you must set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_DISTANCE_TOLERANCE_MODE</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ABSOLUTE</code></a>.</td></tr></tbody></table>
+<p>Color histograms are computed for each target area and defined color-sample, and a match score between each target area histogram and the color-sample histograms is generated. The color-sample with the highest score above the acceptance (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ACCEPTANCE</code></a>) is the target area&#x27;s best-matched color-sample.</p>
+<p>Note that you cannot use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_MATCHING</code></a> if the distance type is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_MAHALANOBIS</code></a>. |
+| <code>M_HISTOGRAM_VOTE</code> | Specifies a match operation based on histogram voting.</p>
+<p>Aurora Imaging Library computes color histograms for each defined color-sample and, for each target pixel, identifies its histogram bin. Each target pixel votes for the best color-sample, provided its histogram bin is not empty. The number of votes that a color-sample accumulates determines its score. The color-sample with the highest score above the acceptance (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ACCEPTANCE</code></a>) is the target area&#x27;s best-matched color-sample. In the case of a tie, where more than one color-sample receives the same highest number of votes, the color-sample with the highest label value is chosen as the best-match.</p>
+<p>With histogram voting, you must set the distance type to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_NONE</code></a>. |
+| <code>M_MIN_DIST_VOTE</code> | Specifies a minimum distance operation, based on pixel voting.</p>
+<p>Color statistics are calculated (typically the mean) for each color-sample defined in the context, and the color distance between each pixel in each target area and each color-sample is determined. Each target pixel then votes for the closest color-sample, which is also within the distance tolerance (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_DISTANCE_TOLERANCE</code></a>).</p>
+<p>The number of votes that a color-sample accumulates determines its score. The color-sample with the highest score above the acceptance (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ACCEPTANCE</code></a>) is the target area&#x27;s best-matched color-sample. In the case of a tie, where more than one color-sample receives the same highest number of votes, the color-sample with the highest label value is chosen as the best-match. |
+| <code>M_STAT_MIN_DIST</code> | Specifies a minimum distance operation, based on pixel statistics.</p>
+<p>Color statistics are calculated (typically the mean) for each target area and for each color-sample defined in the context, and the color distance between each target area and each color-sample is determined.</p>
+<p>The resulting distances determine the score of the color-samples. If a distance is not within a color-sample&#x27;s distance tolerance, this color-sample&#x27;s score is 0%. The color-sample with the highest score above the acceptance (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ACCEPTANCE</code></a>) is the target area&#x27;s best-matched color-sample. |</p>
+<p><em>For specifying the mapping operation (relative color calibration)</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_BASED</code></a>.</td></tr><tr><td><code>M_COLOR_TO_COLOR</code></td><td>Specifies that a color-sample&#x27;s mapping is based on transforming its color to the color of the reference color-sample on a point-to-point basis. It is recommended to have a pixel-wise correspondence between the color-sample and the reference color-sample.</td></tr></tbody></table>
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_COLOR_TO_COLOR</code></a> is the most precise operation, and the least flexible. Minor color variations and outlier color data can have a major impact. Use this operation when the conditions of your application are stable and you require an exact reproduction of color. |
+| <code>M_GLOBAL_MEAN_VARIANCE</code> | Specifies that a color-sample&#x27;s mapping is based on transforming its mean and variance (standard deviation) to resemble the mean and variance of the reference color-sample.</p>
+<p>This is the fastest operation, and the least precise (most general). Use it when the color distribution of the reference color-sample and the color-samples is dissimilar, when conditions are not stable, or when other operations fail. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_GLOBAL_MEAN_VARIANCE</code></a> can avoid the introduction of false colors if the acquisition scene (image and color data) varies dramatically between the reference color-sample and the color-samples. |
+| <code>M_HISTOGRAM_BASED</code> | Specifies that a color-sample&#x27;s mapping is based on using enhanced color distribution information to transform its color data to better resemble the color data of the reference color-sample. Use this operation when the color distribution between the reference color-sample and the color-samples is similar.</p>
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_BASED</code></a> is a compromise between point-to-point (high precision, low flexibility) and global mean variance (low precision, high flexibility) operations. It offers good precision without requiring a point-to-point correspondence. It also offers good flexibility, provided that colors are somewhat comparable. This operation is typically the longest to process. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="disttypeorcalintent-in-ail_int64"><code>DistTypeOrCalIntent</code> <em>(in, AIL_INT64)</em><a href="#disttypeorcalintent-in-ail_int64" class="hash-link" aria-label="Direct link to disttypeorcalintent-in-ail_int64" title="Direct link to disttypeorcalintent-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of distance (for color matching) or color calibration intent (for relative color calibration) that the operation uses. Distance is the difference in color between the color-sample and the target area. Except for the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_MAHALANOBIS</code></a> distance type, which uses the covariance of the color-sample, Aurora Imaging Library uses the mean of the colors to calculate the distance. Color calibration intent is the extent to which the color data of the color-samples must resemble the color data of the reference color-sample.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="conversionmodeorcomputeoption-in-ail_int64"><code>ConversionModeOrComputeOption</code> <em>(in, AIL_INT64)</em><a href="#conversionmodeorcomputeoption-in-ail_int64" class="hash-link" aria-label="Direct link to conversionmodeorcomputeoption-in-ail_int64" title="Direct link to conversionmodeorcomputeoption-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the conversion mode (for color matching) or compute option (for relative color calibration) that the operation uses. Conversion mode refers to the color space to which the RGB source color data will be converted before performing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>. You can only convert RGB source color data to CIELAB or HSL when matching colors. By default, this type of conversion is not performed (or allowed), and you should set this parameter to <code>M_DEFAULT</code> (same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_NONE</code></a>). Compute option indicates whether the operation uses all pixel values or color statistics.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlflag-in-ail_int64"><code>ControlFlag</code> <em>(in, AIL_INT64)</em><a href="#controlflag-in-ail_int64" class="hash-link" aria-label="Direct link to controlflag-in-ail_int64" title="Direct link to controlflag-in-ail_int64" translate="no">​</a></h3>
+<p>Reserved for future expansion and must be set to <code>M_DEFAULT</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-the-type-of-distance-calculation-color-matching">For specifying the type of distance calculation (color matching)<a href="#for-specifying-the-type-of-distance-calculation-color-matching" class="hash-link" aria-label="Direct link to For specifying the type of distance calculation (color matching)" title="Direct link to For specifying the type of distance calculation (color matching)" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ContextId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>DistTypeOrCalIntent</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ConversionModeOrComputeOption</code></a> parameter settings specify the type of distance calculation to use when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>. The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ContextId</code></a> parameter must indicate the identifier of a color matching context.  Except for converting RGB source color data to CIELAB or HSL when matching colors, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ConversionModeOrComputeOption</code></a> parameter is unused and should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_DEFAULT</code></a> (same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_NONE</code></a>).  The settings in the following table are restricted according to the color matching context&#x27;s source color space, as set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>McolAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_RGB</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_HSL</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_CIELAB</code></a>. Note that the only distance type available for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_HSL</code></a> source color space, as indicated in the table below, is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_MANHATTAN</code></a> (which is also the default for HSL).  The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_CMC...</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_CIE...</code></a> settings are recommended for advanced users and are typically applied to improve the Delta-E performance when dealing with minor color variances in industrial color difference evaluation. These distance types follow the standards of the International Commission on Illumination (CIE), as established in their technical report on Colorimetry (CIE 15:2004).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cielab-color-matching-context-id"><code>CIELAB color matching context ID</code><a href="#cielab-color-matching-context-id" class="hash-link" aria-label="Direct link to cielab-color-matching-context-id" title="Direct link to cielab-color-matching-context-id" translate="no">​</a></h3>
+<p>Specifies a color matching context that is using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_CIELAB</code></a> source color space.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h4>
+<p>Specifies the default distance type. The default is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_EUCLIDEAN</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cie94_graphic_arts"><code>M_CIE94_GRAPHIC_ARTS</code><a href="#m_cie94_graphic_arts" class="hash-link" aria-label="Direct link to m_cie94_graphic_arts" title="Direct link to m_cie94_graphic_arts" translate="no">​</a></h4>
+<p>Specifies to use the CIE94 color distance with weighting factors pertaining to the graphic arts industry, as established by the CIE. The weighting factors are: <em>KL</em> = 1, <em>K1</em> = 0.045, and <em>K2</em> = 0.015. For more information, including the relevant formulas, refer to the technical report on Colorimetry (CIE 15:2004).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cie94_textile"><code>M_CIE94_TEXTILE</code><a href="#m_cie94_textile" class="hash-link" aria-label="Direct link to m_cie94_textile" title="Direct link to m_cie94_textile" translate="no">​</a></h4>
+<p>Specifies to use the CIE94 color distance with weighting factors pertaining to the textile industry, as established by the CIE. The weighting factors are: <em>KL</em> = 2, <em>K1</em> = 0.048, <em>K2</em> = 0.014. For more information, including the relevant formulas, refer to the technical report on Colorimetry (CIE 15:2004).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ciede2000"><code>M_CIEDE2000</code><a href="#m_ciede2000" class="hash-link" aria-label="Direct link to m_ciede2000" title="Direct link to m_ciede2000" translate="no">​</a></h4>
+<p>Specifies to use the CIEDE2000 color distance, as established by the CIE.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cmc_acceptability"><code>M_CMC_ACCEPTABILITY</code><a href="#m_cmc_acceptability" class="hash-link" aria-label="Direct link to m_cmc_acceptability" title="Direct link to m_cmc_acceptability" translate="no">​</a></h4>
+<p>Specifies to use the CMC(<em>l</em>:<em>c</em>) color distance that has been adjusted for acceptability evaluation, as established by the CIE. The adjusted parameters are: lightness (<em>l</em>) = 2 and chroma (<em>c</em>) = 1. For more information, including the relevant formulas, refer to the technical report on Colorimetry (CIE 15:2004).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cmc_perceptibility"><code>M_CMC_PERCEPTIBILITY</code><a href="#m_cmc_perceptibility" class="hash-link" aria-label="Direct link to m_cmc_perceptibility" title="Direct link to m_cmc_perceptibility" translate="no">​</a></h4>
+<p>Specifies to use the CMC(<em>l</em>:<em>c</em>) color distance that has been adjusted for perceptibility evaluation, as established by the CIE. The adjusted parameters are: lightness (<em>l</em>) = 1 and chroma (<em>c</em>) = 1. For more information, including the relevant formulas, refer to the technical report on Colorimetry (CIE 15:2004).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_delta_e"><code>M_DELTA_E</code><a href="#m_delta_e" class="hash-link" aria-label="Direct link to m_delta_e" title="Direct link to m_delta_e" translate="no">​</a></h4>
+<p>Specifies to use a Delta-E color distance, as defined by the International Commission on Illumination (CIE).  A Delta-E color distance is the same as a Euclidean color distance (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_EUCLIDEAN</code></a>), but specialized for CIELAB.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_euclidean"><code>M_EUCLIDEAN</code><a href="#m_euclidean" class="hash-link" aria-label="Direct link to m_euclidean" title="Direct link to m_euclidean" translate="no">​</a></h4>
+<p>Specifies to use a Euclidean color distance.  A Euclidean distance is the square root of the sum of the squared differences between the color of the color-sample and the color of the target area.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mahalanobis"><code>M_MAHALANOBIS</code><a href="#m_mahalanobis" class="hash-link" aria-label="Direct link to m_mahalanobis" title="Direct link to m_mahalanobis" translate="no">​</a></h4>
+<p>Specifies to use a Mahalanobis color distance.  A Mahalanobis distance is calculated between the color of the target area and, typically, the covariance of the color-sample. This distance, between a color and a distribution of colors, is similar to a Euclidean distance between the mean of the two colors, but weighted by the inverse of the covariance of the distribution. This implies that the more a color distribution varies in a direction within the color space, the less important is the distance in that direction.  Since the covariance matrix of the color-sample is used, the color-sample should usually come from a an image, and not be defined as a triplet (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>M_IMAGE</code></a>instead of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>M_TRIPLET</code></a>). However, if you provide a color constant (triplet) as the second source, Mahalanobis behaves very much like Euclidean and will yield similar results.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_MAHALANOBIS</code></a> is not available if the operation mode is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_MATCHING</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_manhattan"><code>M_MANHATTAN</code><a href="#m_manhattan" class="hash-link" aria-label="Direct link to m_manhattan" title="Direct link to m_manhattan" translate="no">​</a></h4>
+<p>Specifies to use a Manhattan color distance.  A Manhattan distance is the sum of the absolute value of the differences between the color of the color-sample and the color of the target area. For an HSL color space, the distance between angular coordinates is equal to the smallest angular difference, rather than the absolute value of the difference.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_none"><code>M_NONE</code><a href="#m_none" class="hash-link" aria-label="Direct link to m_none" title="Direct link to m_none" translate="no">​</a></h4>
+<p>Specifies that no distance calculations are used. Instead, pixels in the target image vote for histogram bins. The histogram bins each have a range of values, and each pixel in the target image votes for the histogram bin whose range includes its value.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_NONE</code></a> can only be set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_VOTE</code></a>, and vice versa.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hsl-color-matching-context-id"><code>HSL color matching context ID</code><a href="#hsl-color-matching-context-id" class="hash-link" aria-label="Direct link to hsl-color-matching-context-id" title="Direct link to hsl-color-matching-context-id" translate="no">​</a></h3>
+<p>Specifies a color matching context that is using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_HSL</code></a> source color space.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default-1"><code>M_DEFAULT</code><a href="#m_default-1" class="hash-link" aria-label="Direct link to m_default-1" title="Direct link to m_default-1" translate="no">​</a></h4>
+<p>Specifies the default distance type. The default is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_MANHATTAN</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_manhattan-1"><code>M_MANHATTAN</code><a href="#m_manhattan-1" class="hash-link" aria-label="Direct link to m_manhattan-1" title="Direct link to m_manhattan-1" translate="no">​</a></h4>
+<p>Specifies to use a Manhattan color distance.  A Manhattan distance is the sum of the absolute value of the differences between the color of the color-sample and the color of the target area. For an HSL color space, the distance between angular coordinates is equal to the smallest angular difference, rather than the absolute value of the difference.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_none-1"><code>M_NONE</code><a href="#m_none-1" class="hash-link" aria-label="Direct link to m_none-1" title="Direct link to m_none-1" translate="no">​</a></h4>
+<p>Specifies that no distance calculations are used. Instead, pixels in the target image vote for histogram bins. The histogram bins each have a range of values, and each pixel in the target image votes for the histogram bin whose range includes its value.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_NONE</code></a> can only be set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_VOTE</code></a>, and vice versa.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rgb-color-matching-context-id"><code>RGB color matching context ID</code><a href="#rgb-color-matching-context-id" class="hash-link" aria-label="Direct link to rgb-color-matching-context-id" title="Direct link to rgb-color-matching-context-id" translate="no">​</a></h3>
+<p>Specifies a color matching context that is using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_RGB</code></a> source color space.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default-2"><code>M_DEFAULT</code><a href="#m_default-2" class="hash-link" aria-label="Direct link to m_default-2" title="Direct link to m_default-2" translate="no">​</a></h4>
+<p>Specifies the default distance type. The default is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_EUCLIDEAN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.  When converting RGB source colors before the match using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a> with the CIELAB conversion mode, Aurora Imaging Library requires uncorrected (linear) color data. Therefore, if gamma correction has been applied on the RGB source color data, you must remove it using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_CONVERSION_GAMMA</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ENABLE</code></a>.</td></tr><tr><td><code>M_HSL</code></td><td>Specifies to internally convert RGB colors to HSL before the match operation.</td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies no internal conversion.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cie94_graphic_arts-1"><code>M_CIE94_GRAPHIC_ARTS</code><a href="#m_cie94_graphic_arts-1" class="hash-link" aria-label="Direct link to m_cie94_graphic_arts-1" title="Direct link to m_cie94_graphic_arts-1" translate="no">​</a></h4>
+<p>Specifies to use the CIE94 color distance with weighting factors pertaining to the graphic arts industry, as established by the CIE. The weighting factors are: <em>KL</em> = 1, <em>K1</em> = 0.045, and <em>K2</em> = 0.015. For more information, including the relevant formulas, refer to the technical report on Colorimetry (CIE 15:2004).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cie94_textile-1"><code>M_CIE94_TEXTILE</code><a href="#m_cie94_textile-1" class="hash-link" aria-label="Direct link to m_cie94_textile-1" title="Direct link to m_cie94_textile-1" translate="no">​</a></h4>
+<p>Specifies to use the CIE94 color distance with weighting factors pertaining to the textile industry, as established by the CIE. The weighting factors are: <em>KL</em> = 2, <em>K1</em> = 0.048, <em>K2</em> = 0.014. For more information, including the relevant formulas, refer to the technical report on Colorimetry (CIE 15:2004).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ciede2000-1"><code>M_CIEDE2000</code><a href="#m_ciede2000-1" class="hash-link" aria-label="Direct link to m_ciede2000-1" title="Direct link to m_ciede2000-1" translate="no">​</a></h4>
+<p>Specifies to use the CIEDE2000 color distance, as established by the CIE.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cmc_acceptability-1"><code>M_CMC_ACCEPTABILITY</code><a href="#m_cmc_acceptability-1" class="hash-link" aria-label="Direct link to m_cmc_acceptability-1" title="Direct link to m_cmc_acceptability-1" translate="no">​</a></h4>
+<p>Specifies to use the CMC(<em>l</em>:<em>c</em>) color distance that has been adjusted for acceptability evaluation, as established by the CIE. The adjusted parameters are: lightness (<em>l</em>) = 2 and chroma (<em>c</em>) = 1. For more information, including the relevant formulas, refer to the technical report on Colorimetry (CIE 15:2004).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cmc_perceptibility-1"><code>M_CMC_PERCEPTIBILITY</code><a href="#m_cmc_perceptibility-1" class="hash-link" aria-label="Direct link to m_cmc_perceptibility-1" title="Direct link to m_cmc_perceptibility-1" translate="no">​</a></h4>
+<p>Specifies to use the CMC(<em>l</em>:<em>c</em>) color distance that has been adjusted for perceptibility evaluation, as established by the CIE. The adjusted parameters are: lightness (<em>l</em>) = 1 and chroma (<em>c</em>) = 1. For more information, including the relevant formulas, refer to the technical report on Colorimetry (CIE 15:2004).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_delta_e-1"><code>M_DELTA_E</code><a href="#m_delta_e-1" class="hash-link" aria-label="Direct link to m_delta_e-1" title="Direct link to m_delta_e-1" translate="no">​</a></h4>
+<p>Specifies to use a Delta-E color distance, as defined by the International Commission on Illumination (CIE).  A Delta-E color distance is the same as a Euclidean color distance (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_EUCLIDEAN</code></a>), but specialized for CIELAB.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_euclidean-1"><code>M_EUCLIDEAN</code><a href="#m_euclidean-1" class="hash-link" aria-label="Direct link to m_euclidean-1" title="Direct link to m_euclidean-1" translate="no">​</a></h4>
+<p>Specifies to use a Euclidean color distance.  A Euclidean distance is the square root of the sum of the squared differences between the color of the color-sample and the color of the target area.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.  When converting RGB source colors before the match using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a> with the CIELAB conversion mode, Aurora Imaging Library requires uncorrected (linear) color data. Therefore, if gamma correction has been applied on the RGB source color data, you must remove it using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_CONVERSION_GAMMA</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ENABLE</code></a>.</td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies no internal conversion.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mahalanobis-1"><code>M_MAHALANOBIS</code><a href="#m_mahalanobis-1" class="hash-link" aria-label="Direct link to m_mahalanobis-1" title="Direct link to m_mahalanobis-1" translate="no">​</a></h4>
+<p>Specifies to use a Mahalanobis color distance.  A Mahalanobis distance is calculated between the color of the target area and, typically, the covariance of the color-sample. This distance, between a color and a distribution of colors, is similar to a Euclidean distance between the mean of the two colors, but weighted by the inverse of the covariance of the distribution. This implies that the more a color distribution varies in a direction within the color space, the less important is the distance in that direction.  Since the covariance matrix of the color-sample is used, the color-sample should usually come from a an image, and not be defined as a triplet (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>M_IMAGE</code></a>instead of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>M_TRIPLET</code></a>). However, if you provide a color constant (triplet) as the second source, Mahalanobis behaves very much like Euclidean and will yield similar results.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_MAHALANOBIS</code></a> is not available if the operation mode is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_MATCHING</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.</td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies no internal conversion.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_manhattan-2"><code>M_MANHATTAN</code><a href="#m_manhattan-2" class="hash-link" aria-label="Direct link to m_manhattan-2" title="Direct link to m_manhattan-2" translate="no">​</a></h4>
+<p>Specifies to use a Manhattan color distance.  A Manhattan distance is the sum of the absolute value of the differences between the color of the color-sample and the color of the target area. For an HSL color space, the distance between angular coordinates is equal to the smallest angular difference, rather than the absolute value of the difference.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.  When converting RGB source colors before the match using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a> with the CIELAB conversion mode, Aurora Imaging Library requires uncorrected (linear) color data. Therefore, if gamma correction has been applied on the RGB source color data, you must remove it using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_CONVERSION_GAMMA</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ENABLE</code></a>.</td></tr><tr><td><code>M_HSL</code></td><td>Specifies to internally convert RGB colors to HSL before the match operation.</td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies no internal conversion.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_none-2"><code>M_NONE</code><a href="#m_none-2" class="hash-link" aria-label="Direct link to m_none-2" title="Direct link to m_none-2" translate="no">​</a></h4>
+<p>Specifies that no distance calculations are used. Instead, pixels in the target image vote for histogram bins. The histogram bins each have a range of values, and each pixel in the target image votes for the histogram bin whose range includes its value.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_NONE</code></a> can only be set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_VOTE</code></a>, and vice versa.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIELAB</code></td><td>Specifies to internally convert RGB colors to CIELAB before the match operation.  When converting RGB source colors before the match using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a> with the CIELAB conversion mode, Aurora Imaging Library requires uncorrected (linear) color data. Therefore, if gamma correction has been applied on the RGB source color data, you must remove it using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_CONVERSION_GAMMA</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ENABLE</code></a>.</td></tr><tr><td><code>M_HSL</code></td><td>Specifies to internally convert RGB colors to HSL before the match operation.</td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies no internal conversion.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-the-color-calibration-intent-quality-of-the-mapping-operation-relative-color-calibration">For specifying the color calibration intent (quality) of the mapping operation (relative color calibration)<a href="#for-specifying-the-color-calibration-intent-quality-of-the-mapping-operation-relative-color-calibration" class="hash-link" aria-label="Direct link to For specifying the color calibration intent (quality) of the mapping operation (relative color calibration)" title="Direct link to For specifying the color calibration intent (quality) of the mapping operation (relative color calibration)" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ContextId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>DistTypeOrCalIntent</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ConversionModeOrComputeOption</code></a> parameter settings specify the color calibration intent (quality) with which to perform the operation that Aurora Imaging Library uses to establish the mapping it associates to color-samples. These settings can increase or decrease the accuracy inherent in the operation. The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ContextId</code></a> parameter must indicate the identifier of a color matching context. Unless otherwise specified, values are available for all operations.  Except for converting RGB source color data to CIELAB or HSL when matching colors, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ConversionModeOrComputeOption</code></a> parameter is unused and should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_DEFAULT</code></a> (same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_NONE</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="relative-color-calibration-context-id"><code>Relative color calibration context ID</code><a href="#relative-color-calibration-context-id" class="hash-link" aria-label="Direct link to relative-color-calibration-context-id" title="Direct link to relative-color-calibration-context-id" translate="no">​</a></h3>
+<p>Specifies a relative color calibration context. If using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_GLOBAL_MEAN_VARIANCE</code></a>, set this parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_DEFAULT</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default-3"><code>M_DEFAULT</code><a href="#m_default-3" class="hash-link" aria-label="Direct link to m_default-3" title="Direct link to m_default-3" translate="no">​</a></h4>
+<p>Specifies the default color calibration intent. For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_COLOR_TO_COLOR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_BASED</code></a>, the default is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_BALANCE</code></a>. For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_GLOBAL_MEAN_VARIANCE</code></a>, the default is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_GENERALIZATION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_COMPUTE_ITEM_PIXELS</code> <em>(default)</em></td><td>Specifies that Aurora Imaging Library uses all pixel values (in the reference color-sample and the color-samples) to generate the color information that the operation requires.</td></tr><tr><td><code>M_COMPUTE_ITEM_STAT</code></td><td>Specifies that Aurora Imaging Library uses color statistics (in the reference color-sample and the color-samples) to generate the color information that the operation requires. You can only specify this value if using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_COLOR_TO_COLOR</code></a> operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_balance"><code>M_BALANCE</code><a href="#m_balance" class="hash-link" aria-label="Direct link to m_balance" title="Direct link to m_balance" translate="no">​</a></h4>
+<p>Specifies that the operation considers a moderate amount of color information to establish the mapping. Though this setting offers less accuracy than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_PRECISION</code></a>, there is little risk of overfitting the color data.  You cannot specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_BALANCE</code></a> if you are using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_GLOBAL_MEAN_VARIANCE</code></a> operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_COMPUTE_ITEM_PIXELS</code> <em>(default)</em></td><td>Specifies that Aurora Imaging Library uses all pixel values (in the reference color-sample and the color-samples) to generate the color information that the operation requires.</td></tr><tr><td><code>M_COMPUTE_ITEM_STAT</code></td><td>Specifies that Aurora Imaging Library uses color statistics (in the reference color-sample and the color-samples) to generate the color information that the operation requires. You can only specify this value if using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_COLOR_TO_COLOR</code></a> operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_generalization"><code>M_GENERALIZATION</code><a href="#m_generalization" class="hash-link" aria-label="Direct link to m_generalization" title="Direct link to m_generalization" translate="no">​</a></h4>
+<p>Specifies that the operation considers a minimal amount of color information to establish the mapping. This setting offers the least precise color mapping. However, there is little risk of overfitting the color data, and it is the fastest calculation, which can prove useful for large images.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_COMPUTE_ITEM_PIXELS</code> <em>(default)</em></td><td>Specifies that Aurora Imaging Library uses all pixel values (in the reference color-sample and the color-samples) to generate the color information that the operation requires.</td></tr><tr><td><code>M_COMPUTE_ITEM_STAT</code></td><td>Specifies that Aurora Imaging Library uses color statistics (in the reference color-sample and the color-samples) to generate the color information that the operation requires. You can only specify this value if using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_COLOR_TO_COLOR</code></a> operation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_precision"><code>M_PRECISION</code><a href="#m_precision" class="hash-link" aria-label="Direct link to m_precision" title="Direct link to m_precision" translate="no">​</a></h4>
+<p>Specifies that the operation considers a high amount of color information to establish the mapping. This setting offers the most precise color mapping between the reference color-sample and the color-samples. However, it can potentially overfit the color data. For example, if you perform the relative color calibration on grabbed images containing outlier colors that were not considered during preprocessing, incorrect color transformations can occur.  You cannot specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_PRECISION</code></a> if you are using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_GLOBAL_MEAN_VARIANCE</code></a> operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_COMPUTE_ITEM_PIXELS</code> <em>(default)</em></td><td>Specifies that Aurora Imaging Library uses all pixel values (in the reference color-sample and the color-samples) to generate the color information that the operation requires.</td></tr><tr><td><code>M_COMPUTE_ITEM_STAT</code></td><td>Specifies that Aurora Imaging Library uses color statistics (in the reference color-sample and the color-samples) to generate the color information that the operation requires. You can only specify this value if using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_COLOR_TO_COLOR</code></a> operation.</td></tr></tbody></table>
+<p>This distance type does not support band selection; that is, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_BAND_MODE</code></a> must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ALL_BANDS</code></a> (or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_DEFAULT</code></a>).</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSave"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">McolSave</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolStream"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">McolStream</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ContextId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#operationmode-in-ail_int64" class="table-of-contents__link toc-highlight"><code>OperationMode</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#disttypeorcalintent-in-ail_int64" class="table-of-contents__link toc-highlight"><code>DistTypeOrCalIntent</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#conversionmodeorcomputeoption-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ConversionModeOrComputeOption</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlflag-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlFlag</code> <em>(in, AIL_INT64)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-specifying-the-type-of-distance-calculation-color-matching" class="table-of-contents__link toc-highlight">For specifying the type of distance calculation (color matching)</a></li><li><a href="#cielab-color-matching-context-id" class="table-of-contents__link toc-highlight"><code>CIELAB color matching context ID</code></a></li><li><a href="#hsl-color-matching-context-id" class="table-of-contents__link toc-highlight"><code>HSL color matching context ID</code></a></li><li><a href="#rgb-color-matching-context-id" class="table-of-contents__link toc-highlight"><code>RGB color matching context ID</code></a></li><li><a href="#for-specifying-the-color-calibration-intent-quality-of-the-mapping-operation-relative-color-calibration" class="table-of-contents__link toc-highlight">For specifying the color calibration intent (quality) of the mapping operation (relative color calibration)</a></li><li><a href="#relative-color-calibration-context-id" class="table-of-contents__link toc-highlight"><code>Relative color calibration context ID</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

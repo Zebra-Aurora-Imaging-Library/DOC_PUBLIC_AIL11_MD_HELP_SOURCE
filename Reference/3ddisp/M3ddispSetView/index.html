@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3ddisp/M3ddispSetView" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3ddispSetView | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3ddispSetView | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3ddisp","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"},{"@type":"ListItem","position":2,"name":"M3ddispSetView","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Collapse sidebar category &#x27;3ddisp&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispAlloc"><span title="M3ddispAlloc" class="linkLabel_WmDU">M3ddispAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispAllocResult"><span title="M3ddispAllocResult" class="linkLabel_WmDU">M3ddispAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><span title="M3ddispControl" class="linkLabel_WmDU">M3ddispControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispCopy"><span title="M3ddispCopy" class="linkLabel_WmDU">M3ddispCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispCopyResult"><span title="M3ddispCopyResult" class="linkLabel_WmDU">M3ddispCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispFree"><span title="M3ddispFree" class="linkLabel_WmDU">M3ddispFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispGetHookInfo"><span title="M3ddispGetHookInfo" class="linkLabel_WmDU">M3ddispGetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispGetResult"><span title="M3ddispGetResult" class="linkLabel_WmDU">M3ddispGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispGetView"><span title="M3ddispGetView" class="linkLabel_WmDU">M3ddispGetView</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispHookFunction"><span title="M3ddispHookFunction" class="linkLabel_WmDU">M3ddispHookFunction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispInquire"><span title="M3ddispInquire" class="linkLabel_WmDU">M3ddispInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispLut"><span title="M3ddispLut" class="linkLabel_WmDU">M3ddispLut</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispPick"><span title="M3ddispPick" class="linkLabel_WmDU">M3ddispPick</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispPickRect"><span title="M3ddispPickRect" class="linkLabel_WmDU">M3ddispPickRect</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSelect"><span title="M3ddispSelect" class="linkLabel_WmDU">M3ddispSelect</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSelectWindow"><span title="M3ddispSelectWindow" class="linkLabel_WmDU">M3ddispSelectWindow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetHookInfo"><span title="M3ddispSetHookInfo" class="linkLabel_WmDU">M3ddispSetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><span title="M3ddispSetView" class="linkLabel_WmDU">M3ddispSetView</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span>3ddisp</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3ddispSetView</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3ddispSetView</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Sets the display&#x27;s view.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">M3ddispSetView</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     Disp3dId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  Mode</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE Param1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">      </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE Param2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">      </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE Param3</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">      </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlFlag  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function changes the position and orientation of the view of the specified 3D display.</p>
+<blockquote>
+<p><strong>Note:</strong> Note that, by default, you can also change the position of orientation of the view interactively using the keyboard and mouse. You can enable or disable the keyboard and mouse controls using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M3ddispControl</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M_KEYBOARD_USE</code></a>and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M_MOUSE_USE</code></a>.</p>
+</blockquote>
+<p>This function changes the view of the 3D display by modifying the viewpoint, interest point, and/or up vector, as shown in the image below:</p>
+<p><em>[Image: 3ddisp_ViewDefinition.png]</em></p>
+<p>You can set the position of the viewpoint using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_VIEWPOINT</code></a>, the position of the interest point using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_INTEREST_POINT</code></a>and the direction of the up vector using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_UP_VECTOR</code></a>. All other modes are alternatives to adjusting these aspects of the view directly. For example, setting the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_ROLL</code></a> setting of the view is an alternate method to change the<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_UP_VECTOR</code></a>setting.</p>
+<p>Most modes are specified in absolute terms (for example, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_AZIMUTH</code></a>with the value 90 sets the azimuth to 90, regardless of the current value). In some cases, you can instead specify to apply the operation relative to the current state of the view using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_COMPOSE_WITH_CURRENT</code></a>. For example, if you use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_AZIMUTH</code></a> with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_COMPOSE_WITH_CURRENT</code></a>and the value 90, and the current azimuth is 30, the new azimuth is 120.</p>
+<p>Modes that can be performed by moving either the viewpoint or the interest point will always move the viewpoint, unless you use the combination value <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_MOVE_INTEREST_POINT</code></a>. For example, if you use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_AZIMUTH</code></a> with the value 45, by default the viewpoint is moved to the position that is rotated 45 degrees around the interest point (relative to the plane that intersects the interest point and is parallel to the ZY-plane), effectively circling the view around the interest point. If you specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_MOVE_INTEREST_POINT</code></a>, instead the interest point is moved to the position in which the viewpoint is rotated 45 degrees around the interest point, effectively panning the view. Both modes result in the same orientation (the viewpoint is rotated 45 degrees around the interest point); however, in the first case the viewpoint has a new position, and in the second case the interest point has a new position.</p>
+<p>Optionally, you can specify not to refresh the rendered image shown in the 3D display by setting the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>ControlFlag</code></a> parameter to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_NO_REFRESH</code></a>. This <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>ControlFlag</code></a> setting only guarantees that this operation will not trigger a refresh of the rendered image. It is possible for other events in the 3D display to trigger a refresh, including events which occur before or during the call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M3ddispSetView</code></a>. If you need to guarantee that there is no refresh between a sequence of operations, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M3ddispControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M_UPDATE</code></a> to disable and enable rendering.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="disp3did-out-ail_id"><code>Disp3dId</code> <em>(out, AIL_ID)</em><a href="#disp3did-out-ail_id" class="hash-link" aria-label="Direct link to disp3did-out-ail_id" title="Direct link to disp3did-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 3D display.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mode-in-ail_int64"><code>Mode</code> <em>(in, AIL_INT64)</em><a href="#mode-in-ail_int64" class="hash-link" aria-label="Direct link to mode-in-ail_int64" title="Direct link to mode-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the mode used for setting the view.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="param1-in-ail_double"><code>Param1</code> <em>(in, AIL_DOUBLE)</em><a href="#param1-in-ail_double" class="hash-link" aria-label="Direct link to param1-in-ail_double" title="Direct link to param1-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the first parameter used to set the view.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="param2-in-ail_double"><code>Param2</code> <em>(in, AIL_DOUBLE)</em><a href="#param2-in-ail_double" class="hash-link" aria-label="Direct link to param2-in-ail_double" title="Direct link to param2-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the second parameter used to set the view.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="param3-in-ail_double"><code>Param3</code> <em>(in, AIL_DOUBLE)</em><a href="#param3-in-ail_double" class="hash-link" aria-label="Direct link to param3-in-ail_double" title="Direct link to param3-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the third parameter used to set the view.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlflag-in-ail_int64"><code>ControlFlag</code> <em>(in, AIL_INT64)</em><a href="#controlflag-in-ail_int64" class="hash-link" aria-label="Direct link to controlflag-in-ail_int64" title="Direct link to controlflag-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies if the 3D display should be refreshed.</p>
+<p><em>For specifying if the display should be updated</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies to trigger a refresh of the 3D display after the operation is complete.</td></tr><tr><td><code>M_NO_HOOK</code></td><td>Prevents generating an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispHookFunction"><code>M_VIEW_CHANGE</code></a> event in response to the call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M3ddispSetView</code></a>.</td></tr></tbody></table>
+<p>If you want to prevent more hooks from being generated when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M3ddispSetView</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispHookFunction"><code>M_VIEW_CHANGE</code></a> for another 3D display (to which you are hooked). |
+| <code>M_NO_REFRESH</code> | Specifies not to trigger a refresh of the 3D display after the operation is complete. If you need to guarantee that there is no refresh between a sequence of operations, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M3ddispControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M_UPDATE</code></a> to disable and enable rendering. |</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-setting-the-view">For setting the view<a href="#for-setting-the-view" class="hash-link" aria-label="Direct link to For setting the view" title="Direct link to For setting the view" translate="no">​</a></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h3>
+<p>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_AUTO</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_auto"><code>M_AUTO</code><a href="#m_auto" class="hash-link" aria-label="Direct link to m_auto" title="Direct link to m_auto" translate="no">​</a></h3>
+<p>Sets the viewpoint and interest point position so that a specific 3D graphic, and all of its descendants, are completely within the view. This is referred to as focusing the view on the 3D graphic. By default, the view is focused on the root node (this guarantees that everything in the 3D display&#x27;s 3D graphics list is completely within the view).  Optionally, you can also specify to set the orientation of the view to a preset.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_VIEW_ORIENTATION</code></a>)</em></td><td></td></tr><tr><td><code>M_DEFAULT</code></td><td>Specifies to preserve the current orientation of the view.</td></tr><tr><td><code>M_DEFAULT</code></td><td>Specifies to focus the view on the 3D graphic that you set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M3ddispControl</code></a>with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispControl"><code>M_VIEW_BOX_NODE</code></a>.  By default, this is set to 0 (the root node).</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the label of the 3D graphic (in the 3D display&#x27;s 3D graphics list) on which to focus the view.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_azim_elev_roll"><code>M_AZIM_ELEV_ROLL</code><a href="#m_azim_elev_roll" class="hash-link" aria-label="Direct link to m_azim_elev_roll" title="Direct link to m_azim_elev_roll" translate="no">​</a></h3>
+<p>Sets the azimuth and elevation of the viewpoint relative to the interest point, and the roll of the view. These are the viewpoint position and up vector, described in a spherical coordinate system (additionally described by<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_DISTANCE</code></a>).  Azimuth is the angle of the viewpoint relative to the interest point on the XY-plane. An azimuth of 0 corresponds to a view where the viewpoint and interest point are parallel to the X-axis on the XY-plane, with the viewpoint on the positive side. Increasing values for the azimuth correspond to rotating the view counter-clockwise around the interest point.  Elevation is the angle of the viewpoint relative to the interest point on the XZ-plane. An elevation of 0 corresponds to a view where the viewpoint and interest point are parallel to the X-axis on the XZ-plane, with the viewpoint on the positive side. Increasing values for the elevation correspond to rotating the view counter-clockwise around the interest point in the XZ-plane.  Roll is the angle that describes how much the view is rotated to the right. A roll of 0 corresponds to a view for which up is positive on the Z-axis.  <em>[Image: 3ddisp_AzimElevRoll_General.png]</em></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_azimuth"><code>M_AZIMUTH</code><a href="#m_azimuth" class="hash-link" aria-label="Direct link to m_azimuth" title="Direct link to m_azimuth" translate="no">​</a></h3>
+<p>Sets the azimuth of the view.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance"><code>M_DISTANCE</code><a href="#m_distance" class="hash-link" aria-label="Direct link to m_distance" title="Direct link to m_distance" translate="no">​</a></h3>
+<p>Sets the distance between the viewpoint and the interest point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_elevation"><code>M_ELEVATION</code><a href="#m_elevation" class="hash-link" aria-label="Direct link to m_elevation" title="Direct link to m_elevation" translate="no">​</a></h3>
+<p>Sets the elevation of the view relative to the interest point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_flip"><code>M_FLIP</code><a href="#m_flip" class="hash-link" aria-label="Direct link to m_flip" title="Direct link to m_flip" translate="no">​</a></h3>
+<p>Sets the view to a position and orientation that is flipped around the interest point in the specified axis.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_AXIS_X</code></td><td>Specifies to flip the viewpoint around the interest point in the specified axis.</td></tr><tr><td><code>M_AXIS_Y</code></td><td>Specifies to flip the viewpoint around the interest point in the specified axis.</td></tr><tr><td><code>M_AXIS_Z</code></td><td>Specifies to flip the viewpoint around the interest point in the specified axis.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_interest_point"><code>M_INTEREST_POINT</code><a href="#m_interest_point" class="hash-link" aria-label="Direct link to m_interest_point" title="Direct link to m_interest_point" translate="no">​</a></h3>
+<p>Sets the position of the interest point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_orbit_horizontal"><code>M_ORBIT_HORIZONTAL</code><a href="#m_orbit_horizontal" class="hash-link" aria-label="Direct link to m_orbit_horizontal" title="Direct link to m_orbit_horizontal" translate="no">​</a></h3>
+<p>Sets the angle of the viewpoint&#x27;s horizontal orbit around the interest point. This angle is used relative to the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_UP_VECTOR</code></a> of the view. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C43_3D_Display_and_graphics/S05_Manipulating_the_view">Orbit, up-vector, and distance</a>.  <em>[Image: 3ddisp_Orbit_Horizontal.png]</em>  &gt; <strong>Note:</strong> Note that orbit is always specified relative to the current position of the view. For example, repeatedly using this function with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_ORBIT_HORIZONTAL</code></a> and the value 90 will repeatedly orbit the viewpoint horizontally around the interest point, in 90 degree increments.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_orbit_vertical"><code>M_ORBIT_VERTICAL</code><a href="#m_orbit_vertical" class="hash-link" aria-label="Direct link to m_orbit_vertical" title="Direct link to m_orbit_vertical" translate="no">​</a></h3>
+<p>Sets the angle of the viewpoint&#x27;s vertical orbit around the interest point. This angle is used relative to the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_UP_VECTOR</code></a> of the view. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C43_3D_Display_and_graphics/S05_Manipulating_the_view">Orbit, up-vector, and distance</a>.  <em>[Image: 3ddisp_Orbit_Vertical.png]</em>  &gt; <strong>Note:</strong> Note that orbit is always specified relative to the current position of the view. For example, repeatedly using this function with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_ORBIT_VERTICAL</code></a> and the value 90 will repeatedly orbit the viewpoint vertically around the interest point, in 90 degree increments.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_roll"><code>M_ROLL</code><a href="#m_roll" class="hash-link" aria-label="Direct link to m_roll" title="Direct link to m_roll" translate="no">​</a></h3>
+<p>Sets the roll of the view. This is an angle which defines what direction the top of the view will be pointing, with 0 degrees specifying that the view will be perfectly level. As this value increases, the view rolls to the right.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_translate"><code>M_TRANSLATE</code><a href="#m_translate" class="hash-link" aria-label="Direct link to m_translate" title="Direct link to m_translate" translate="no">​</a></h3>
+<p>Applies a translation to the viewpoint and interest point without altering their relative position and orientation.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_up_vector"><code>M_UP_VECTOR</code><a href="#m_up_vector" class="hash-link" aria-label="Direct link to m_up_vector" title="Direct link to m_up_vector" translate="no">​</a></h3>
+<p>Sets the vector which defines what direction the top of the view is pointing.  &gt; <strong>Note:</strong> Note that this setting is normalized and adjusted to a unit vector that is orthogonal to the current orientation of the view. If you use<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispGetView"><code>M3ddispGetView</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispGetView"><code>M_UP_VECTOR</code></a> after setting the up vector, the returned value will therefore typically be different from the vector you specified.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_view_box"><code>M_VIEW_BOX</code><a href="#m_view_box" class="hash-link" aria-label="Direct link to m_view_box" title="Direct link to m_view_box" translate="no">​</a></h3>
+<p>Sets the viewpoint and interest point (without altering the orientation) such that the interest point is at the center of the box and the entire region defined by the box is within view.  <em>[Image: 3ddisp_viewBox_General.png]</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_WHOLE_SCENE</code></td><td>Specifies to set the viewpoint and interest point so that everything in the scene is within the view.</td></tr><tr><td><code>3D box geometry object ID</code></td><td>Specifies the identifier of the 3D box geometry object used to set the 3D display&#x27;s view. The 3D box geometry object must have been previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a> with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_GEOMETRY</code></a>, and must have been successfully defined.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the scale factor. The position for the viewpoint is calculated as though the box is scaled by this factor.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_view_matrix"><code>M_VIEW_MATRIX</code><a href="#m_view_matrix" class="hash-link" aria-label="Direct link to m_view_matrix" title="Direct link to m_view_matrix" translate="no">​</a></h3>
+<p>Sets the view to match a transformation matrix. If the transformation matrix is the identity matrix, the viewpoint will be at (0,0,1), with the interest point at the origin (0,0,0) and an up-vector of (0,1,0). This can also be thought of as a direct top-down view, with the up-vector aligned with the Y-axis.  &gt; <strong>Note:</strong> You must specify the Aurora Imaging Library identifier of a similarity transformation matrix. You can determine whether a transformation matrix is a similarity transformation matrix using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M3dgeoInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_SIMILARITY</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>MatrixId</code></td><td>Specifies the Aurora Imaging Library identifier of a similarity transformation matrix (previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M3dgeoAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoAlloc"><code>M_TRANSFORMATION_MATRIX</code></a>).</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_view_orientation"><code>M_VIEW_ORIENTATION</code><a href="#m_view_orientation" class="hash-link" aria-label="Direct link to m_view_orientation" title="Direct link to m_view_orientation" translate="no">​</a></h3>
+<p>Sets the direction in which the view is looking. This moves the viewpoint (or interest point if combined with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_MOVE_INTEREST_POINT</code></a>) so that line of sight matches a given orientation, specified using either a predefined orientation or a vector that defines the direction from the viewpoint to the interest point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_BOTTOM_TILTED</code></td><td>Specifies to set the orientation of the view to an interpolation between the bottom, front, and left views.</td></tr><tr><td><code>M_BOTTOM_VIEW</code></td><td>Specifies to set the orientation of the view so that the viewpoint is directly below the interest point (parallel to the Z-axis of the working coordinate system of the 3D display).</td></tr><tr><td><code>M_FRONT_VIEW</code></td><td>Specifies to set the orientation of the view so that the viewpoint is directly in front of the interest point (parallel to the Y-axis of the working coordinate system of the 3D display).</td></tr><tr><td><code>M_LEFT_VIEW</code></td><td>Specifies to set the orientation of the view so that the viewpoint is directly to the left of the interest point (parallel to the X-axis of the working coordinate system of the 3D display).</td></tr><tr><td><code>M_REAR_VIEW</code></td><td>Specifies to set the orientation of the view so that the viewpoint is directly behind the interest point (parallel to the Y-axis of the working coordinate system of the 3D display).</td></tr><tr><td><code>M_RIGHT_VIEW</code></td><td>Specifies to set the orientation of the view so that the viewpoint is directly to the right of the interest point (parallel to the X-axis of the working coordinate system of the 3D display).</td></tr><tr><td><code>M_TOP_TILTED</code></td><td>Specifies to set the orientation of the view to an interpolation between the top, front, and left views.</td></tr><tr><td><code>M_TOP_VIEW</code></td><td>Specifies to set the orientation of the view so that the viewpoint is directly above the interest point (parallel to the Z-axis of the working coordinate system of the 3D display).</td></tr><tr><td><code>Value</code></td><td>Specifies the X-component of the vector that defines the orientation of the view.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_viewpoint"><code>M_VIEWPOINT</code><a href="#m_viewpoint" class="hash-link" aria-label="Direct link to m_viewpoint" title="Direct link to m_viewpoint" translate="no">​</a></h3>
+<p>Sets the position of the view.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_zoom"><code>M_ZOOM</code><a href="#m_zoom" class="hash-link" aria-label="Direct link to m_zoom" title="Direct link to m_zoom" translate="no">​</a></h3>
+<p>Zooms the view in or out by a factor. This is equivalent to dividing<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetView"><code>M_DISTANCE</code></a>by the specified factor.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--specifies-whether-the-motion-is-absolute-or-relative">Combination Constants — Specifies whether the motion is absolute or relative.<a href="#combination-constants--specifies-whether-the-motion-is-absolute-or-relative" class="hash-link" aria-label="Direct link to Combination Constants — Specifies whether the motion is absolute or relative." title="Direct link to Combination Constants — Specifies whether the motion is absolute or relative." translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify that the viewpoint is moved relative to the current position and orientation of the viewpoint..</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPOSE_WITH_CURRENT</code></td><td>Specifies that the view is altered relative to the current position and orientation of the view.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--specifies-whether-the-interest-point-should-move">Combination Constants — Specifies whether the interest point should move<a href="#combination-constants--specifies-whether-the-interest-point-should-move" class="hash-link" aria-label="Direct link to Combination Constants — Specifies whether the interest point should move" title="Direct link to Combination Constants — Specifies whether the interest point should move" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify that the interest point is moved instead of the viewpoint..</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_MOVE_INTEREST_POINT</code></td><td>Specifies that the interest point is moved instead of the viewpoint.</td></tr></tbody></table></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSetHookInfo"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3ddispSetHookInfo</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">3dgeo</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#disp3did-out-ail_id" class="table-of-contents__link toc-highlight"><code>Disp3dId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#mode-in-ail_int64" class="table-of-contents__link toc-highlight"><code>Mode</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#param1-in-ail_double" class="table-of-contents__link toc-highlight"><code>Param1</code> <em>(in, AIL_DOUBLE)</em></a></li><li><a href="#param2-in-ail_double" class="table-of-contents__link toc-highlight"><code>Param2</code> <em>(in, AIL_DOUBLE)</em></a></li><li><a href="#param3-in-ail_double" class="table-of-contents__link toc-highlight"><code>Param3</code> <em>(in, AIL_DOUBLE)</em></a></li><li><a href="#controlflag-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlFlag</code> <em>(in, AIL_INT64)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-setting-the-view" class="table-of-contents__link toc-highlight">For setting the view</a></li><li><a href="#m_default" class="table-of-contents__link toc-highlight"><code>M_DEFAULT</code></a></li><li><a href="#m_auto" class="table-of-contents__link toc-highlight"><code>M_AUTO</code></a></li><li><a href="#m_azim_elev_roll" class="table-of-contents__link toc-highlight"><code>M_AZIM_ELEV_ROLL</code></a></li><li><a href="#m_azimuth" class="table-of-contents__link toc-highlight"><code>M_AZIMUTH</code></a></li><li><a href="#m_distance" class="table-of-contents__link toc-highlight"><code>M_DISTANCE</code></a></li><li><a href="#m_elevation" class="table-of-contents__link toc-highlight"><code>M_ELEVATION</code></a></li><li><a href="#m_flip" class="table-of-contents__link toc-highlight"><code>M_FLIP</code></a></li><li><a href="#m_interest_point" class="table-of-contents__link toc-highlight"><code>M_INTEREST_POINT</code></a></li><li><a href="#m_orbit_horizontal" class="table-of-contents__link toc-highlight"><code>M_ORBIT_HORIZONTAL</code></a></li><li><a href="#m_orbit_vertical" class="table-of-contents__link toc-highlight"><code>M_ORBIT_VERTICAL</code></a></li><li><a href="#m_roll" class="table-of-contents__link toc-highlight"><code>M_ROLL</code></a></li><li><a href="#m_translate" class="table-of-contents__link toc-highlight"><code>M_TRANSLATE</code></a></li><li><a href="#m_up_vector" class="table-of-contents__link toc-highlight"><code>M_UP_VECTOR</code></a></li><li><a href="#m_view_box" class="table-of-contents__link toc-highlight"><code>M_VIEW_BOX</code></a></li><li><a href="#m_view_matrix" class="table-of-contents__link toc-highlight"><code>M_VIEW_MATRIX</code></a></li><li><a href="#m_view_orientation" class="table-of-contents__link toc-highlight"><code>M_VIEW_ORIENTATION</code></a></li><li><a href="#m_viewpoint" class="table-of-contents__link toc-highlight"><code>M_VIEWPOINT</code></a></li><li><a href="#m_zoom" class="table-of-contents__link toc-highlight"><code>M_ZOOM</code></a></li><li><a href="#combination-constants--specifies-whether-the-motion-is-absolute-or-relative" class="table-of-contents__link toc-highlight">Combination Constants — Specifies whether the motion is absolute or relative.</a></li><li><a href="#combination-constants--specifies-whether-the-interest-point-should-move" class="table-of-contents__link toc-highlight">Combination Constants — Specifies whether the interest point should move</a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

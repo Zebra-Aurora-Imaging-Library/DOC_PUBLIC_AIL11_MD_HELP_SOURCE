@@ -1,0 +1,1403 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/buf/MbufInquireContainer" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MbufInquireContainer | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MbufInquireContainer | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"buf","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"},{"@type":"ListItem","position":2,"name":"MbufInquireContainer","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Collapse sidebar category &#x27;buf&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc1d"><span title="MbufAlloc1d" class="linkLabel_WmDU">MbufAlloc1d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc2d"><span title="MbufAlloc2d" class="linkLabel_WmDU">MbufAlloc2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocColor"><span title="MbufAllocColor" class="linkLabel_WmDU">MbufAllocColor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><span title="MbufAllocComponent" class="linkLabel_WmDU">MbufAllocComponent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocContainer"><span title="MbufAllocContainer" class="linkLabel_WmDU">MbufAllocContainer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocDefault"><span title="MbufAllocDefault" class="linkLabel_WmDU">MbufAllocDefault</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufBayer"><span title="MbufBayer" class="linkLabel_WmDU">MbufBayer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufChild1d"><span title="MbufChild1d" class="linkLabel_WmDU">MbufChild1d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufChild2d"><span title="MbufChild2d" class="linkLabel_WmDU">MbufChild2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufChildColor"><span title="MbufChildColor" class="linkLabel_WmDU">MbufChildColor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufChildColor2d"><span title="MbufChildColor2d" class="linkLabel_WmDU">MbufChildColor2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufChildColor2dClip"><span title="MbufChildColor2dClip" class="linkLabel_WmDU">MbufChildColor2dClip</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufChildContainer"><span title="MbufChildContainer" class="linkLabel_WmDU">MbufChildContainer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufChildMove"><span title="MbufChildMove" class="linkLabel_WmDU">MbufChildMove</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufClear"><span title="MbufClear" class="linkLabel_WmDU">MbufClear</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufClearCond"><span title="MbufClearCond" class="linkLabel_WmDU">MbufClearCond</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufClone"><span title="MbufClone" class="linkLabel_WmDU">MbufClone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControl"><span title="MbufControl" class="linkLabel_WmDU">MbufControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlArea"><span title="MbufControlArea" class="linkLabel_WmDU">MbufControlArea</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlContainer"><span title="MbufControlContainer" class="linkLabel_WmDU">MbufControlContainer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlFeature"><span title="MbufControlFeature" class="linkLabel_WmDU">MbufControlFeature</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><span title="MbufConvert3d" class="linkLabel_WmDU">MbufConvert3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCopy"><span title="MbufCopy" class="linkLabel_WmDU">MbufCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCopyClip"><span title="MbufCopyClip" class="linkLabel_WmDU">MbufCopyClip</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCopyColor"><span title="MbufCopyColor" class="linkLabel_WmDU">MbufCopyColor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCopyColor2d"><span title="MbufCopyColor2d" class="linkLabel_WmDU">MbufCopyColor2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCopyComponent"><span title="MbufCopyComponent" class="linkLabel_WmDU">MbufCopyComponent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCopyCond"><span title="MbufCopyCond" class="linkLabel_WmDU">MbufCopyCond</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCopyMask"><span title="MbufCopyMask" class="linkLabel_WmDU">MbufCopyMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCreate2d"><span title="MbufCreate2d" class="linkLabel_WmDU">MbufCreate2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCreateColor"><span title="MbufCreateColor" class="linkLabel_WmDU">MbufCreateColor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufCreateComponent"><span title="MbufCreateComponent" class="linkLabel_WmDU">MbufCreateComponent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufDiskInquire"><span title="MbufDiskInquire" class="linkLabel_WmDU">MbufDiskInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufExport"><span title="MbufExport" class="linkLabel_WmDU">MbufExport</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufExportSequence"><span title="MbufExportSequence" class="linkLabel_WmDU">MbufExportSequence</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufFree"><span title="MbufFree" class="linkLabel_WmDU">MbufFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufFreeComponent"><span title="MbufFreeComponent" class="linkLabel_WmDU">MbufFreeComponent</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGet"><span title="MbufGet" class="linkLabel_WmDU">MbufGet</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGet1d"><span title="MbufGet1d" class="linkLabel_WmDU">MbufGet1d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGet2d"><span title="MbufGet2d" class="linkLabel_WmDU">MbufGet2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGetArc"><span title="MbufGetArc" class="linkLabel_WmDU">MbufGetArc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGetColor"><span title="MbufGetColor" class="linkLabel_WmDU">MbufGetColor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGetColor2d"><span title="MbufGetColor2d" class="linkLabel_WmDU">MbufGetColor2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGetHookInfo"><span title="MbufGetHookInfo" class="linkLabel_WmDU">MbufGetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGetLine"><span title="MbufGetLine" class="linkLabel_WmDU">MbufGetLine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufGetList"><span title="MbufGetList" class="linkLabel_WmDU">MbufGetList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufHookFunction"><span title="MbufHookFunction" class="linkLabel_WmDU">MbufHookFunction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufImport"><span title="MbufImport" class="linkLabel_WmDU">MbufImport</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufImportSequence"><span title="MbufImportSequence" class="linkLabel_WmDU">MbufImportSequence</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><span title="MbufInquire" class="linkLabel_WmDU">MbufInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><span title="MbufInquireContainer" class="linkLabel_WmDU">MbufInquireContainer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireFeature"><span title="MbufInquireFeature" class="linkLabel_WmDU">MbufInquireFeature</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufLink"><span title="MbufLink" class="linkLabel_WmDU">MbufLink</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufLoad"><span title="MbufLoad" class="linkLabel_WmDU">MbufLoad</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufPut"><span title="MbufPut" class="linkLabel_WmDU">MbufPut</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufPut1d"><span title="MbufPut1d" class="linkLabel_WmDU">MbufPut1d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufPut2d"><span title="MbufPut2d" class="linkLabel_WmDU">MbufPut2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufPutColor"><span title="MbufPutColor" class="linkLabel_WmDU">MbufPutColor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufPutColor2d"><span title="MbufPutColor2d" class="linkLabel_WmDU">MbufPutColor2d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufPutLine"><span title="MbufPutLine" class="linkLabel_WmDU">MbufPutLine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufPutList"><span title="MbufPutList" class="linkLabel_WmDU">MbufPutList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufRestore"><span title="MbufRestore" class="linkLabel_WmDU">MbufRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufSave"><span title="MbufSave" class="linkLabel_WmDU">MbufSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufSetRegion"><span title="MbufSetRegion" class="linkLabel_WmDU">MbufSetRegion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufStream"><span title="MbufStream" class="linkLabel_WmDU">MbufStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufTransfer"><span title="MbufTransfer" class="linkLabel_WmDU">MbufTransfer</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span>buf</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MbufInquireContainer</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MbufInquireContainer</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire about an Aurora Imaging Library container or component setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT </span><span class="token function" style="color:#d73a49">MbufInquireContainer</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    ContainerBufId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 Component</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">       </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">     </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr       </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires about a specified setting of an Aurora Imaging Library container or component.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="containerbufid-in-ail_id"><code>ContainerBufId</code> <em>(in, AIL_ID)</em><a href="#containerbufid-in-ail_id" class="hash-link" aria-label="Direct link to containerbufid-in-ail_id" title="Direct link to containerbufid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the source container. The container must have been previously allocated on the required system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocContainer"><code>MbufAllocContainer</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="component-in-ail_int64"><code>Component</code> <em>(in, AIL_INT64)</em><a href="#component-in-ail_int64" class="hash-link" aria-label="Direct link to component-in-ail_int64" title="Direct link to component-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the component to inquire.</p>
+<p><em>For specifying to inquire the container itself</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CONTAINER</code></td><td>Specifies to inquire a setting of the container.</td></tr></tbody></table>
+<p><em>For specifying the component to inquire by a unique identifier</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPONENT_BY_ID</code></td><td>Specifies to inquire the component, in the container, which has the specified buffer identifier. An error will be generated if the container does not have a component with this buffer identifier.</td></tr><tr><td><code>M_COMPONENT_BY_INDEX</code></td><td>Specifies to inquire the component, in the container, at the specified index. An error will be generated if the container does not have a component at this index.</td></tr></tbody></table>
+<p><em>For specifying the component to inquire by component type</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPONENT_CONFIDENCE</code></td><td>Specifies that the component stores confidence information for the<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a>or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_DISPARITY</code></a>component of the container. Coordinates associated with the confidence value 0 are considered invalid data and will not be used by 3D image processing functions.A confidence component is associated with a range or disparity component in the same container when there are no other range, disparity, or confidence components in the container. If there is more than one range, disparity, and/or confidence component in a container (for example, because a single grab into the container transmitted multiple range and confidence components), you will need to either create a child container which contains only the required components using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufChildContainer"><code>MbufChildContainer</code></a>, or free the extra components using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufFreeComponent"><code>MbufFreeComponent</code></a>.</td></tr><tr><td><code>M_COMPONENT_COORDINATE_MAP_A_AIL</code></td><td>Specifies that the component stores the A coordinate map provided by the camera. When using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a> with a projective map, this component can be used instead of the column index of each corresponding pixel and will result in a better representation of the camera&#x27;s lens model when generating X-coordinates.A coordinate map component is associated with a range component in the same container when there is only one range component and only one type of each coordinate map component in that container.Note that this component is only available if it is provided by the camera. For more information refer to your cameras manual.</td></tr><tr><td><code>M_COMPONENT_COORDINATE_MAP_B_AIL</code></td><td>Specifies that the component stores the B coordinate map provided by the camera. When using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a> with a projective map, this component can be used instead of the row index of each corresponding pixel and will result in a better representation of the camera&#x27;s lens model when generating Y-coordinates.A coordinate map component is associated with a range component in the same container when there is only one range component and only one type of each coordinate map component in that container.Note that this component is only available if it is provided by the camera. For more information refer to your cameras manual.</td></tr><tr><td><code>M_COMPONENT_CUSTOM + n</code></td><td>Specifies that the component has a custom component type, identified by <em>n</em>, where n can be a value between 0 and 254.You can use custom component types to identify components which store information that does not fit one of the standard component types. In addition, some cameras transmit components with custom component types. Refer to your camera manual to determine what type of information is stored in transmitted components.</td></tr><tr><td><code>M_COMPONENT_DISPARITY</code></td><td>Specifies that the component stores a disparity map. Each pixel of a disparity map indicates the apparent distance (typically measured in pixel units) between where an object appears in the left and right images captured by a stereoscopic camera.</td></tr><tr><td><code>M_COMPONENT_INFRARED</code></td><td>Specifies that the component stores an intensity image of infrared light.</td></tr><tr><td><code>M_COMPONENT_INTENSITY</code></td><td>Specifies that the component stores an intensity image of visible light.</td></tr><tr><td><code>M_COMPONENT_MATRIX_AIL</code></td><td>Specifies that the component stores a 4x4 matrix that transforms depth map coordinates. Only depth map containers can have a matrix component.A matrix component is associated with a range component in the same container when there is only one range component and no other matrix components in that container.</td></tr><tr><td><code>M_COMPONENT_MESH_AIL</code></td><td>Specifies that the component stores mesh information for the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a>component of the container.A mesh component is associated with a range component in the same container when there are no other range or mesh components in that container. A point cloud container which has a mesh component is referred to as a meshed point cloud container.</td></tr><tr><td><code>M_COMPONENT_METADATA</code></td><td>Specifies that the component stores metadata information. Metadata components are used by Aurora Imaging Library internally. Typically, you should ignore metadata components in your application.</td></tr><tr><td><code>M_COMPONENT_MULTISPECTRAL</code></td><td>Specifies that the component stores an intensity image where each band represents the intensity of a specific wavelength of light. Unlike an intensity component, a multispectral component might include information about non-visible light.</td></tr><tr><td><code>M_COMPONENT_NORMALS_AIL</code></td><td>Specifies that the component stores normals information for each point in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a>component of the container.A normals component is associated with a range component in the same container when there are no other range or normals components in that container.</td></tr><tr><td><code>M_COMPONENT_RANGE</code></td><td>Specifies that the component stores 3D distance/position information. This can be either a 1-band component that stores a depth map, or a 3-band buffer that stores coordinates of 3D points.</td></tr><tr><td><code>M_COMPONENT_REFLECTANCE</code></td><td>Specifies that the component stores a reflectance map. Each pixel of a reflectance map indicates how much of the light hitting an object at that location is reflected back. Typically, this is an intensity image of the light spectrum used by a 3D sensor to detect 3D distance/position information. Typically, if the map was generated by a laser profiler, each row indicates the detected intensity of the laser for a single scan.</td></tr><tr><td><code>M_COMPONENT_REGION_AIL</code></td><td>Specifies that the component stores a region of interest (ROI) for the<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a> component of the container. 3D image processing functions will only operate on points inside the ROI. Only depth map containers can have a region component.A region component is associated with a range component in the same container when there is only one range component and no other region components in that container.</td></tr><tr><td><code>M_COMPONENT_SCATTER</code></td><td>Specifies that the component stores a scatter map. Each pixel of a scatter map indicates how much of the light hitting an object at that location is detected scattering beneath the object&#x27;s surface.</td></tr><tr><td><code>M_COMPONENT_ULTRAVIOLET</code></td><td>Specifies that the component stores an intensity image of ultraviolet light.</td></tr><tr><td><code>M_COMPONENT_UNDEFINED</code></td><td>Specifies that the component stores information of an unknown type.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to return the value of the inquired setting. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>MbufInquireContainer</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-container">For inquiring about a container<a href="#for-inquiring-about-a-container" class="hash-link" aria-label="Direct link to For inquiring about a container" title="Direct link to For inquiring about a container" translate="no">​</a></h3>
+<p>To inquire the container itself, specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CONTAINER</code></a> and one of the following constants.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_convertible"><code>M_3D_CONVERTIBLE</code><a href="#m_3d_convertible" class="hash-link" aria-label="Direct link to m_3d_convertible" title="Direct link to m_3d_convertible" translate="no">​</a></h3>
+<p>Inquires whether the container can be converted to a 3D-processable and/or natively 3D displayable container using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>, and whether compensation is required to convert the data.  &gt; <strong>Note:</strong> Note that irrespective of the returned value for this inquire type, components with invalid values will result in undefined behavior. This includes non-finite values for valid points (infinity, negative infinity, or NaN), invalid normals, and invalid vertices or edges in mesh triangles. Depending on the type of invalid values, you can use<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>M_REMOVE_NON_FINITE</code></a> to remove non-finite values in the range and disparity components. Components with invalid values must be fixed before passing the container to a 3D processing function.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CONVERTIBLE</code></td><td>Specifies that the container stores 3D data that can be converted using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</td></tr><tr><td><code>M_CONVERTIBLE_WITH_COMPENSATION</code></td><td>Specifies that the container stores 3D data that can be converted using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>M_COMPENSATE</code></a>.</td></tr><tr><td><code>M_NOT_CONVERTIBLE</code></td><td>Specifies that the container can be converted us.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_displayable"><code>M_3D_DISPLAYABLE</code><a href="#m_3d_displayable" class="hash-link" aria-label="Direct link to m_3d_displayable" title="Direct link to m_3d_displayable" translate="no">​</a></h3>
+<p>Inquires whether the container can be used with 3D displays.  Any container that is 3D-convertible is also 3D-displayable. A conversion will occur each time the container is modified, unless you convert the container to a format that is natively 3D-displayable.  To be natively 3D-displayable, a container must have the attribute <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocContainer"><code>M_DISP</code></a>and must have the following components:  - A single range component, which is a 3-band, float data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a>. The component&#x27;s<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_COORDINATE_SYSTEM_TYPE</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CARTESIAN</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_REPRESENTATION</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CALIBRATED_XYZ</code></a>. - A single confidence component, which is a 1-band, 8-bit unsigned data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_CONFIDENCE</code></a> and with the same dimensions (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_Y</code></a>) as the range component. - Optionally, either a single intensity or single reflectance component, which are 1-band or 3-band, 8- or 16-bit unsigned data image buffers with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_INTENSITY</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_REFLECTANCE</code></a>. - Optionally, a single mesh component, which is a 1-band, 32-bit unsigned 2D <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc2d"><code>M_ARRAY</code></a> buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_MESH_AIL</code></a>. - Optionally, a single normals component, which is a 3-band, float data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_NORMALS_AIL</code></a>.  &gt; <strong>Note:</strong> Note that irrespective of the returned value for this inquire type, components with invalid values will result in undefined behavior. This includes non-finite values for valid points (infinity, negative infinity, or NaN), invalid normals, and invalid vertices or edges in mesh triangles. Depending on the type of invalid values, you can use<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>M_REMOVE_NON_FINITE</code></a> to remove non-finite values in the range and disparity components. Components with invalid values must be fixed before passing the container to a 3D processing function.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISPLAYABLE</code></td><td>Specifies that the container can be used with 3D displays.</td></tr><tr><td><code>M_DISPLAYABLE_WITH_CONVERSION</code></td><td>Specifies that the container can be used with 3D displays, with automatic conversion.</td></tr><tr><td><code>M_NOT_DISPLAYABLE</code></td><td>Specifies that the container cannot be used with 3D displays.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_processable"><code>M_3D_PROCESSABLE</code><a href="#m_3d_processable" class="hash-link" aria-label="Direct link to m_3d_processable" title="Direct link to m_3d_processable" translate="no">​</a></h3>
+<p>Inquires whether the container can be used for 3D processing.  To be 3D-processable, a container must have the attribute <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocContainer"><code>M_PROC</code></a>and must have the following components:  - A single range component, which is a 3-band, float data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a>. The component&#x27;s<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_COORDINATE_SYSTEM_TYPE</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CARTESIAN</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_REPRESENTATION</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CALIBRATED_XYZ</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CALIBRATED_XYZ_UNORGANIZED</code></a>. - A single confidence component, which is a 1-band, 8-bit unsigned data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_CONFIDENCE</code></a> and with the same dimensions (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_Y</code></a>) as the range component. - Optionally, either a single intensity or single reflectance component, which are 1-band or 3-band, 8- or 16-bit unsigned data image buffers with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_INTENSITY</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_REFLECTANCE</code></a>. - Optionally, a single mesh component, which is a 1-band, 32-bit unsigned 2D <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc2d"><code>M_ARRAY</code></a> buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_MESH_AIL</code></a>. - Optionally, a single normals component, which is a 3-band, float data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_NORMALS_AIL</code></a>.  &gt; <strong>Note:</strong> Note that irrespective of the returned value for this inquire type, components with invalid values will result in undefined behavior. This includes non-finite values for valid points (infinity, negative infinity, or NaN), invalid normals, and invalid vertices or edges in mesh triangles. Depending on the type of invalid values, you can use<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>M_REMOVE_NON_FINITE</code></a> to remove non-finite values in the range and disparity components. Components with invalid values must be fixed before passing the container to a 3D processing function.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NOT_PROCESSABLE</code></td><td></td></tr><tr><td><code>M_PROCESSABLE</code></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_processable_depth_map"><code>M_3D_PROCESSABLE_DEPTH_MAP</code><a href="#m_3d_processable_depth_map" class="hash-link" aria-label="Direct link to m_3d_processable_depth_map" title="Direct link to m_3d_processable_depth_map" translate="no">​</a></h3>
+<p>Inquires whether the container is a 3D-processable depth map container.  &gt; <strong>Note:</strong> Note that if a function has an optional functionality that is available for point cloud containers but not depth map image buffers, it will not be available for depth map containers.  To store data in a 3D-processable depth map format, a container must have the attribute <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocContainer"><code>M_PROC</code></a>and must have the following components:  - A single range component, which is a 1-band, 8-bit, 16-bit, or 32-bit unsigned data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a>. The component&#x27;s<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_COORDINATE_SYSTEM_TYPE</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CARTESIAN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_REPRESENTATION</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CALIBRATED_Z_UNIFORM_XY</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_SCALE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_SCALE_Y</code></a> must be positive, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_SHEAR_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_SHEAR_Z</code></a> must be zero. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_INVALID_DATA_FLAG</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_TRUE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_INVALID_DATA_VALUE</code></a> must be the maximum value of the buffer. - If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_INVALID_DATA_FLAG</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_FALSE</code></a>, a single confidence component, which is a 1-band, 8-bit unsigned data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_CONFIDENCE</code></a> and with the same dimensions (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_Y</code></a>) as the range component. - Optionally, a single region component, which is a 1-band, 8-bit unsigned data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_REGION_AIL</code></a> and with the same dimensions (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_Y</code></a>) as the range component. - Optionally, a single matrix component, which is a 1-band, 32-bit float 4x4 <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc2d"><code>M_ARRAY</code></a> buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_MATRIX_AIL</code></a>. - Optionally, either a single intensity or single reflectance component, which are 1-band or 3-band, 8- or 16-bit unsigned data image buffers with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_INTENSITY</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_REFLECTANCE</code></a>. - Optionally, a single mesh component, which is a 1-band, 32-bit unsigned 2D <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc2d"><code>M_ARRAY</code></a> buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_MESH_AIL</code></a>. - Optionally, a single normals component, which is a 3-band, 32-bit float data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_NORMALS_AIL</code></a>.  &gt; <strong>Note:</strong> Note that irrespective of the returned value for this inquire type, components with invalid values will result in undefined behavior. This includes non-finite values for valid points (infinity, negative infinity, or NaN), invalid normals, and invalid vertices or edges in mesh triangles. Depending on the type of invalid values, you can use<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>M_REMOVE_NON_FINITE</code></a> to remove non-finite values in the range and disparity components. Components with invalid values must be fixed before passing the container to a 3D processing function.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the container cannot store data in a 3D-processable depth map format.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the container can store data in a 3D-processable depth map format.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_processable_meshed"><code>M_3D_PROCESSABLE_MESHED</code><a href="#m_3d_processable_meshed" class="hash-link" aria-label="Direct link to m_3d_processable_meshed" title="Direct link to m_3d_processable_meshed" translate="no">​</a></h3>
+<p>To be 3D-processable, a container must have the attribute <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocContainer"><code>M_PROC</code></a>and must have the following components:  - A single range component, which is a 3-band, float data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a>. The component&#x27;s<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_COORDINATE_SYSTEM_TYPE</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CARTESIAN</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_REPRESENTATION</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CALIBRATED_XYZ</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CALIBRATED_XYZ_UNORGANIZED</code></a>. - A single confidence component, which is a 1-band, 8-bit unsigned data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_CONFIDENCE</code></a> and with the same dimensions (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_SIZE_Y</code></a>) as the range component. - Optionally, either a single intensity or single reflectance component, which are 1-band or 3-band, 8- or 16-bit unsigned data image buffers with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_INTENSITY</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_REFLECTANCE</code></a>. - Optionally, a single mesh component, which is a 1-band, 32-bit unsigned 2D <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc2d"><code>M_ARRAY</code></a> buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_MESH_AIL</code></a>. - Optionally, a single normals component, which is a 3-band, float data image buffer with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a>set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_NORMALS_AIL</code></a>.  &gt; <strong>Note:</strong> Note that irrespective of the returned value for this inquire type, components with invalid values will result in undefined behavior. This includes non-finite values for valid points (infinity, negative infinity, or NaN), invalid normals, and invalid vertices or edges in mesh triangles. Depending on the type of invalid values, you can use<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>M_REMOVE_NON_FINITE</code></a> to remove non-finite values in the range and disparity components. Components with invalid values must be fixed before passing the container to a 3D processing function.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td></td></tr><tr><td><code>M_TRUE</code></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ancestor_id"><code>M_ANCESTOR_ID</code><a href="#m_ancestor_id" class="hash-link" aria-label="Direct link to m_ancestor_id" title="Direct link to m_ancestor_id" translate="no">​</a></h3>
+<p>Inquires the Aurora Imaging Library identifier of the ancestor container. Only child containers have an ancestor container. The ancestor container is the container from which the specified container ultimately originated. It is the root container; it does not have a parent container (it is not a child container of another container).  If the specified container is not a child container, the identifier of the container itself is returned as the ancestor container.  To establish the parent container of the specified container, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_PARENT_ID</code></a> instead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_group_id_list"><code>M_COMPONENT_GROUP_ID_LIST</code><a href="#m_component_group_id_list" class="hash-link" aria-label="Direct link to m_component_group_id_list" title="Direct link to m_component_group_id_list" translate="no">​</a></h3>
+<p>Inquires the list of unique group IDs of components in the container.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_region_id_list"><code>M_COMPONENT_REGION_ID_LIST</code><a href="#m_component_region_id_list" class="hash-link" aria-label="Direct link to m_component_region_id_list" title="Direct link to m_component_region_id_list" translate="no">​</a></h3>
+<p>Inquires the list of unique region IDs of components in the container.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_source_id_list"><code>M_COMPONENT_SOURCE_ID_LIST</code><a href="#m_component_source_id_list" class="hash-link" aria-label="Direct link to m_component_source_id_list" title="Direct link to m_component_source_id_list" translate="no">​</a></h3>
+<p>Inquires the list of unique source IDs of components in the container.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_type_list"><code>M_COMPONENT_TYPE_LIST</code><a href="#m_component_type_list" class="hash-link" aria-label="Direct link to m_component_type_list" title="Direct link to m_component_type_list" translate="no">​</a></h3>
+<p>Inquires the list of unique component types of components in the container.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_layout_modification_count"><code>M_LAYOUT_MODIFICATION_COUNT</code><a href="#m_layout_modification_count" class="hash-link" aria-label="Direct link to m_layout_modification_count" title="Direct link to m_layout_modification_count" translate="no">​</a></h3>
+<p><strong>Board availability:</strong> GenTL, GevIQ, GigE Vision, Rapixo CXP, Rapixo CoF, USB3 Vision, V4L2</p>
+<p>Inquires the current value of the modification counter of the specified container. When the container is allocated, the layout modification counter is initialized to a default value. The layout modification counter is incremented each time a component is added or removed from the container.  This feature is useful for optimization. For example, you can avoid repeating certain computations (for example, analysis computations) if you know that the image buffer has not been modified. In this case, inquire the count before the first computation in the sequence of computations, and then inquire it again before repeating the same sequence. If no modifications have been made to the image buffer, you can avoid repeating the sequence unnecessarily.  &gt; <strong>Note:</strong> Note that<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>Component</code></a>must be set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CONTAINER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the current value of the modification counter.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system"><code>M_OWNER_SYSTEM</code><a href="#m_owner_system" class="hash-link" aria-label="Direct link to m_owner_system" title="Direct link to m_owner_system" translate="no">​</a></h3>
+<p>Inquires the identifier of the system on which the container has been allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT_HOST</code></td><td>Specifies the default Host system of the current Aurora Imaging Library application.</td></tr><tr><td><code>System identifier</code></td><td>Specifies a valid system identifier, previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysAlloc"><code>MsysAlloc</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system_type"><code>M_OWNER_SYSTEM_TYPE</code><a href="#m_owner_system_type" class="hash-link" aria-label="Direct link to m_owner_system_type" title="Direct link to m_owner_system_type" translate="no">​</a></h3>
+<p><strong>Board availability:</strong> Clarity UHD, GenTL, GevIQ, GigE Vision, Host System, Iris GTX, Radient eV-CL, Rapixo CL, Rapixo CXP, Rapixo CoF, USB3 Vision, V4L2</p>
+<p>Inquires the type of system on which the container was allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_OWNER_SYSTEM_TYPE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_parent_id"><code>M_PARENT_ID</code><a href="#m_parent_id" class="hash-link" aria-label="Direct link to m_parent_id" title="Direct link to m_parent_id" translate="no">​</a></h3>
+<p>Inquires the Aurora Imaging Library identifier of the parent container. Only child container have a parent container. The parent container is the container from which the specified container (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>ContainerBufId</code></a>) was defined. The container can itself have a parent container. If the specified container has no parent container, the identifier of the specified container is returned.  To establish the ultimate ancestor container of the specified container, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_ANCESTOR_ID</code></a> instead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_system_location"><code>M_SYSTEM_LOCATION</code><a href="#m_system_location" class="hash-link" aria-label="Direct link to m_system_location" title="Direct link to m_system_location" translate="no">​</a></h3>
+<p>Inquires whether the specified container is allocated on a system on the local computer or the remote computer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_LOCAL</code></td><td>Specifies that the container is allocated on a local system.</td></tr><tr><td><code>M_REMOTE</code></td><td>Specifies that the container is allocated on a remote system.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-which-components-are-in-a-container">For inquiring about which components are in a container<a href="#for-inquiring-about-which-components-are-in-a-container" class="hash-link" aria-label="Direct link to For inquiring about which components are in a container" title="Direct link to For inquiring about which components are in a container" translate="no">​</a></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_count"><code>M_COMPONENT_COUNT</code><a href="#m_component_count" class="hash-link" aria-label="Direct link to m_component_count" title="Direct link to m_component_count" translate="no">​</a></h3>
+<p>Inquires how many components are in the container. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>Component</code></a>is set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CONTAINER</code></a>, the returned value will be the number of all components in the container. Otherwise, the returned value will be the number of components in the container which meet the specified criteria.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_list"><code>M_COMPONENT_LIST</code><a href="#m_component_list" class="hash-link" aria-label="Direct link to m_component_list" title="Direct link to m_component_list" translate="no">​</a></h3>
+<p>Inquires the Aurora Imaging Library identifiers of components in the container. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>Component</code></a>is set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CONTAINER</code></a>, the returned array will contain the Aurora Imaging Library identifiers of all components in the container. Otherwise, the returned array will contain the Aurora Imaging Library identifiers of all components in the container which meet the specified criteria.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values">Combination Constants — For determining the required array size (number of elements) to store the returned values<a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" title="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required array size (number of elements) to store the returned values.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-settings-that-apply-to-both-containers-and-components">For inquiring about settings that apply to both containers and components<a href="#for-inquiring-about-settings-that-apply-to-both-containers-and-components" class="hash-link" aria-label="Direct link to For inquiring about settings that apply to both containers and components" title="Direct link to For inquiring about settings that apply to both containers and components" translate="no">​</a></h3>
+<p>To inquire a container or component, specify one of the following constants.</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extended_attribute"><code>M_EXTENDED_ATTRIBUTE</code><a href="#m_extended_attribute" class="hash-link" aria-label="Direct link to m_extended_attribute" title="Direct link to m_extended_attribute" translate="no">​</a></h3>
+<p>Inquires the attributes of the container or component.  To retrieve only the data storage format of the buffer, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>MbufInquireContainer</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_DATA_FORMAT</code></a>. To retrieve the detailed storage format of the specified buffer, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>MbufInquireContainer</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_EXTENDED_FORMAT</code></a>.  &gt; <strong>Note:</strong> Note that you cannot set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>UserVarPtr</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_NULL</code></a> when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>InquireType</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_EXTENDED_ATTRIBUTE</code></a>. In addition, a valid <em>AIL_INT64</em> pointer must be passed to the function; otherwise, an error will occur.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_ARRAY</code></td><td>Specifies a buffer to store array type data.</td></tr><tr><td><code>M_IMAGE</code></td><td>Specifies a buffer to store image data.</td></tr><tr><td><code>M_KERNEL</code></td><td>Specifies a kernel buffer to store a custom filter for convolution functions.</td></tr><tr><td><code>M_LUT</code></td><td>Specifies a buffer to store lookup table data.</td></tr><tr><td><code>M_STRUCT_ELEMENT</code></td><td>Specifies a buffer to store structuring element data for morphology functions.</td></tr><tr><td><code>M_COMPRESS</code></td><td>Specifies an image buffer that can hold compressed data.</td></tr><tr><td><code>M_DISP</code></td><td>Specifies an image buffer that can be displayed.</td></tr><tr><td><code>M_GRAB</code></td><td>Specifies an image buffer in which to grab data.</td></tr><tr><td><code>M_PROC</code></td><td>Specifies an image buffer that can be processed.</td></tr><tr><td><code>M_ALLOCATION_OVERSCAN</code></td><td>Specifies that the buffer is allocated with an overscan region.</td></tr><tr><td><code>M_JPEG2000_LOSSLESS</code></td><td>Specifies that the buffer will be used to hold JPEG2000 lossless data.</td></tr><tr><td><code>M_JPEG2000_LOSSY</code></td><td>Specifies that the buffer will be used to hold JPEG2000 lossy data.</td></tr><tr><td><code>M_JPEG_LOSSLESS</code></td><td>Specifies that the buffer will be used to hold JPEG lossless data.</td></tr><tr><td><code>M_JPEG_LOSSLESS_INTERLACED</code></td><td>Specifies that the buffer will be used to hold JPEG lossless data in separate fields.</td></tr><tr><td><code>M_JPEG_LOSSY</code> <em>(default)</em></td><td>Specifies that the buffer will be used to hold JPEG lossy data.</td></tr><tr><td><code>M_JPEG_LOSSY_INTERLACED</code></td><td>Specifies that the buffer will be used to hold JPEG lossy data in separate fields.</td></tr><tr><td><code>M_DIB</code></td><td>Forces the buffer to be a DIB buffer.</td></tr><tr><td><code>M_GDI</code></td><td>Forces the buffer to be compatible with GDI.</td></tr><tr><td><code>M_LINUX_MXIMAGE</code></td><td>Forces the buffer to be an X11 Ximage.</td></tr><tr><td><code>M_FPGA_ACCESSIBLE</code></td><td>Forces the buffer to be allocated in a bank of memory that is accessible from the Processing FPGA.</td></tr><tr><td><code>M_HOST_MEMORY</code> <em>(default)</em></td><td>Forces the buffer in Host memory.</td></tr><tr><td><code>M_OFF_BOARD</code></td><td>Ensures that the buffer is not in on-board memory.</td></tr><tr><td><code>M_ON_BOARD</code></td><td>Forces the buffer in on-board memory.</td></tr><tr><td><code>M_MEMORY_BANK_n</code></td><td>Forces the buffer to be allocated in the specified memory bank.</td></tr><tr><td><code>M_SHARED</code></td><td>Specifies that the buffer is in shared processing memory.</td></tr><tr><td><code>M_NON_PAGED</code></td><td>Forces the buffer in Aurora Imaging Library reserved, non-pageable memory, if possible.</td></tr><tr><td><code>M_PAGED</code></td><td>Forces the buffer in pageable memory.</td></tr><tr><td><code>M_ARRAY</code></td><td>Specifies a buffer to store array type data.</td></tr><tr><td><code>M_IMAGE</code></td><td>Specifies a buffer to store image data.</td></tr><tr><td><code>M_LUT</code></td><td>Specifies a buffer to store lookup table data.</td></tr><tr><td><code>M_COMPRESS</code></td><td>Specifies an image buffer that can hold compressed data.</td></tr><tr><td><code>M_DISP</code></td><td>Specifies an image buffer that can be displayed.</td></tr><tr><td><code>M_GRAB</code></td><td>Specifies an image buffer in which to grab data.</td></tr><tr><td><code>M_PROC</code></td><td>Specifies an image buffer that can be processed.</td></tr><tr><td><code>M_JPEG2000_LOSSLESS</code></td><td>Specifies that the buffer will be used to hold JPEG2000 lossless data.</td></tr><tr><td><code>M_JPEG2000_LOSSY</code></td><td>Specifies that the buffer will be used to hold JPEG2000 lossy data.</td></tr><tr><td><code>M_JPEG_LOSSLESS</code></td><td>Specifies that the buffer will be used to hold JPEG lossless data.</td></tr><tr><td><code>M_JPEG_LOSSLESS_INTERLACED</code></td><td>Specifies that the buffer will be used to hold JPEG lossless data in separate fields.</td></tr><tr><td><code>M_JPEG_LOSSY</code> <em>(default)</em></td><td>Specifies that the buffer will be used to hold JPEG lossy data.</td></tr><tr><td><code>M_JPEG_LOSSY_INTERLACED</code></td><td>Specifies that the buffer will be used to hold JPEG lossy data in separate fields.</td></tr><tr><td><code>M_PACKED</code></td><td>Specifies that the buffer&#x27;s bands are stored in packed format; that is, each pixel&#x27;s bands are stored together (RGB RGB RGB...).</td></tr><tr><td><code>M_PLANAR</code></td><td>Specifies that the buffer&#x27;s bands are stored in planar format; that is, each pixel&#x27;s bands are stored in separate planes.</td></tr><tr><td><code>M_RGB3</code></td><td>Specifies 3-bit color depth (RGB 1:1:1) planar pixels.</td></tr><tr><td><code>M_YUV9</code></td><td>Specifies YUV9 planar standard.</td></tr><tr><td><code>M_YUV12</code></td><td>Specifies YUV12 planar standard.</td></tr><tr><td><code>M_YUV24</code></td><td>Specifies YUV24 planar standard.</td></tr><tr><td><code>M_BGR24</code></td><td>Specifies 24-bit color depth (BGR) packed pixels (BGRBGR).</td></tr><tr><td><code>M_BGR32</code></td><td>Specifies 32-bit color depth (BGR) packed pixels (BGRXBGRX).</td></tr><tr><td><code>M_RGB15</code></td><td>Specifies 16-bit color depth packed pixels (XRGB 1:5:5:5).</td></tr><tr><td><code>M_RGB16</code></td><td>Specifies 16-bit color depth packed pixels (RGB 5:6:5).</td></tr><tr><td><code>M_YUV16_UYVY</code></td><td>Specifies YUV16 packed (4:2:2) pixels, whereby the bands of each pixel are stored in the UYVY order.</td></tr><tr><td><code>M_YUV16_YUYV</code></td><td>Specifies YUV16 packed (4:2:2) pixels, whereby the bands of each pixel are stored in the YUYV order.</td></tr><tr><td><code>M_RGB24</code></td><td>Specifies 24-bit color depth (RGB 8:8:8) packed or planar pixels.</td></tr><tr><td><code>M_RGB48</code></td><td>Specifies 48-bit color depth (RGB 16:16:16).</td></tr><tr><td><code>M_RGB96</code></td><td>Specifies 96-bit color depth (RGB 32:32:32) packed or planar pixels.</td></tr><tr><td><code>M_YUV16</code></td><td>Specifies YUV16 packed or planar (4:2:2) standard.</td></tr><tr><td><code>M_CONTAINER</code></td><td>Specifies a container.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extended_attribute_name"><code>M_EXTENDED_ATTRIBUTE_NAME</code><a href="#m_extended_attribute_name" class="hash-link" aria-label="Direct link to m_extended_attribute_name" title="Direct link to m_extended_attribute_name" translate="no">​</a></h3>
+<hr>
+<hr>
+<hr>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_modification_hook"><code>M_MODIFICATION_HOOK</code><a href="#m_modification_hook" class="hash-link" aria-label="Direct link to m_modification_hook" title="Direct link to m_modification_hook" translate="no">​</a></h3>
+<p>Inquires the status of the modification hook, which runs a user-defined function upon an event. These user-defined functions are initially hooked to the buffer modification event using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufHookFunction"><code>MbufHookFunction</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_MODIFICATION_HOOK</code></a>)</em></td><td></td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-settings-that-apply-only-to-components">For inquiring about settings that apply only to components<a href="#for-inquiring-about-settings-that-apply-only-to-components" class="hash-link" aria-label="Direct link to For inquiring about settings that apply only to components" title="Direct link to For inquiring about settings that apply only to components" translate="no">​</a></h3>
+<hr>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_id"><code>M_COMPONENT_ID</code><a href="#m_component_id" class="hash-link" aria-label="Direct link to m_component_id" title="Direct link to m_component_id" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code></td><td>Specifies that no component in the container matches the specified criterion.</td></tr><tr><td><code>M_MULTIPLE_IDS</code></td><td>Specifies that more than one component in the container matches the specified criterion.</td></tr><tr><td><code>Component identifier</code></td><td>Specifies the Aurora Imaging Library identifier of the component.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_invalid"><code>M_COMPONENT_INVALID</code><a href="#m_component_invalid" class="hash-link" aria-label="Direct link to m_component_invalid" title="Direct link to m_component_invalid" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code> <em>(default)</em></td><td>Specifies that the information in the buffer has not been marked invalid by the camera.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the information in the buffer has been marked invalid by the camera.</td></tr></tbody></table>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_type"><code>M_COMPONENT_TYPE</code><a href="#m_component_type" class="hash-link" aria-label="Direct link to m_component_type" title="Direct link to m_component_type" translate="no">​</a></h3>
+<p>Inquires the component type of the buffer, used when the buffer is a component of a container. The component type specifies what kind of information is stored in the component.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_COMPONENT_TYPE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_type_name"><code>M_COMPONENT_TYPE_NAME</code><a href="#m_component_type_name" class="hash-link" aria-label="Direct link to m_component_type_name" title="Direct link to m_component_type_name" translate="no">​</a></h3>
+<p>Inquires the component type of the buffer in a human-readable format.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_data_format"><code>M_DATA_FORMAT</code><a href="#m_data_format" class="hash-link" aria-label="Direct link to m_data_format" title="Direct link to m_data_format" translate="no">​</a></h3>
+<p>Inquires the data storage format of the buffer. This is the color or monochrome storage format of the buffer and includes whether it is in packed or planar format. Note that non-color buffers are stored in planar format and lack a color space.  To retrieve the entire list of attributes, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>MbufInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_EXTENDED_ATTRIBUTE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_EXTENDED_FORMAT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_PACKED</code></td><td>Specifies that the buffer&#x27;s bands are stored in packed format; that is, each pixel&#x27;s bands are stored together (RGB RGB RGB...).</td></tr><tr><td><code>M_PLANAR</code></td><td>Specifies that the buffer&#x27;s bands are stored in planar format; that is, each pixel&#x27;s bands are stored in separate planes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_data_type"><code>M_DATA_TYPE</code><a href="#m_data_type" class="hash-link" aria-label="Direct link to m_data_type" title="Direct link to m_data_type" translate="no">​</a></h3>
+<p>Inquires the buffer data type.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FLOAT</code></td><td>Specifies that the buffer uses the float data type.</td></tr><tr><td><code>M_SIGNED</code></td><td>Specifies that the buffer uses the signed data type.</td></tr><tr><td><code>M_UNSIGNED</code></td><td>Specifies that the buffer uses the unsigned data type.</td></tr></tbody></table>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pitch"><code>M_PITCH</code><a href="#m_pitch" class="hash-link" aria-label="Direct link to m_pitch" title="Direct link to m_pitch" translate="no">​</a></h3>
+<p>Inquires the number of pixels between the beginnings of any two adjacent lines of the buffer data.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the pitch, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pitch_byte"><code>M_PITCH_BYTE</code><a href="#m_pitch_byte" class="hash-link" aria-label="Direct link to m_pitch_byte" title="Direct link to m_pitch_byte" translate="no">​</a></h3>
+<p>Inquires the number of bytes between the beginnings of any two adjacent lines of the buffer data.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the pitch, in bytes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_band"><code>M_SIZE_BAND</code><a href="#m_size_band" class="hash-link" aria-label="Direct link to m_size_band" title="Direct link to m_size_band" translate="no">​</a></h3>
+<p>Inquires the number of buffer bands.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1 &lt;= Value &lt;= 1024</code></td><td>Specifies the number of bands.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_bit"><code>M_SIZE_BIT</code><a href="#m_size_bit" class="hash-link" aria-label="Direct link to m_size_bit" title="Direct link to m_size_bit" translate="no">​</a></h3>
+<p>Inquires the depth per band.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the depth per band, in bits.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x"><code>M_SIZE_X</code><a href="#m_size_x" class="hash-link" aria-label="Direct link to m_size_x" title="Direct link to m_size_x" translate="no">​</a></h3>
+<p>Inquires the width of the buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the width of the buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y"><code>M_SIZE_Y</code><a href="#m_size_y" class="hash-link" aria-label="Direct link to m_size_y" title="Direct link to m_size_y" translate="no">​</a></h3>
+<p>Inquires the height of the buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the height of the buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type"><code>M_TYPE</code><a href="#m_type" class="hash-link" aria-label="Direct link to m_type" title="Direct link to m_type" translate="no">​</a></h3>
+<p>Inquires the buffer data type and depth. Depth is returned in bits.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FLOAT + Depth value</code></td><td>Specifies the data depth and that the data type is floating-point.</td></tr><tr><td><code>M_SIGNED + Depth value</code></td><td>Specifies the data depth and that the data type is signed.</td></tr><tr><td><code>M_UNSIGNED + Depth value</code></td><td>Specifies the data depth and that the data type is unsigned.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-getting-the-string-size">Combination Constants — For getting the string size<a href="#combination-constants--for-getting-the-string-size" class="hash-link" aria-label="Direct link to Combination Constants — For getting the string size" title="Direct link to Combination Constants — For getting the string size" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the string&#x27;s length.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_size"><code>M_STRING_SIZE</code><a href="#m_string_size" class="hash-link" aria-label="Direct link to m_string_size" title="Direct link to m_string_size" translate="no">​</a></h4>
+<p>Retrieves the length of the string, including the terminating null character (&quot;\0&quot;).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-location-of-the-buffer">Combination Constants — Returns the location of the buffer<a href="#combination-constants--returns-the-location-of-the-buffer" class="hash-link" aria-label="Direct link to Combination Constants — Returns the location of the buffer" title="Direct link to Combination Constants — Returns the location of the buffer" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the location of the buffer.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-whether-the-buffer-was-allocated-in-paged-or-non-paged-memory">Combination Constants — Returns whether the buffer was allocated in paged or non-paged memory<a href="#combination-constants--returns-whether-the-buffer-was-allocated-in-paged-or-non-paged-memory" class="hash-link" aria-label="Direct link to Combination Constants — Returns whether the buffer was allocated in paged or non-paged memory" title="Direct link to Combination Constants — Returns whether the buffer was allocated in paged or non-paged memory" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether the buffer was allocated in paged or non-paged memory.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-intended-purpose-of-the-image-buffer">Combination Constants — Returns the intended purpose of the image buffer<a href="#combination-constants--returns-the-intended-purpose-of-the-image-buffer" class="hash-link" aria-label="Direct link to Combination Constants — Returns the intended purpose of the image buffer" title="Direct link to Combination Constants — Returns the intended purpose of the image buffer" translate="no">​</a></h3>
+<blockquote>
+<p><em>Essential.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You must add one or more of the following values to the above-mentioned values to determine the intended purpose of the buffer.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-storage-format-and-location-specifier">Combination Constants — Returns the storage format and location specifier<a href="#combination-constants--returns-the-storage-format-and-location-specifier" class="hash-link" aria-label="Direct link to Combination Constants — Returns the storage format and location specifier" title="Direct link to Combination Constants — Returns the storage format and location specifier" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the storage format and location specifier.</p>
+</blockquote>
+<p>You might have set this value, or it could have been automatically selected by Aurora Imaging Library.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-compression-type">Combination Constants — Returns the compression type<a href="#combination-constants--returns-the-compression-type" class="hash-link" aria-label="Direct link to Combination Constants — Returns the compression type" title="Direct link to Combination Constants — Returns the compression type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the compression type.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-whether-the-buffer-was-allocated-with-an-overscan-region">Combination Constants — Returns whether the buffer was allocated with an overscan region<a href="#combination-constants--returns-whether-the-buffer-was-allocated-with-an-overscan-region" class="hash-link" aria-label="Direct link to Combination Constants — Returns whether the buffer was allocated with an overscan region" title="Direct link to Combination Constants — Returns whether the buffer was allocated with an overscan region" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether the buffer was allocated with an overscan region.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-whether-the-buffer-is-fpga-accessible">Combination Constants — Returns whether the buffer is FPGA accessible<a href="#combination-constants--returns-whether-the-buffer-is-fpga-accessible" class="hash-link" aria-label="Direct link to Combination Constants — Returns whether the buffer is FPGA accessible" title="Direct link to Combination Constants — Returns whether the buffer is FPGA accessible" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether the buffer is FPGA accessible.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-format-in-which-image-buffers-were-stored">Combination Constants — Returns the format in which image buffers were stored<a href="#combination-constants--returns-the-format-in-which-image-buffers-were-stored" class="hash-link" aria-label="Direct link to Combination Constants — Returns the format in which image buffers were stored" title="Direct link to Combination Constants — Returns the format in which image buffers were stored" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the format in which image buffers were stored.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-packed-or-planar-color-buffer-format">Combination Constants — Returns the packed or planar color buffer format<a href="#combination-constants--returns-the-packed-or-planar-color-buffer-format" class="hash-link" aria-label="Direct link to Combination Constants — Returns the packed or planar color buffer format" title="Direct link to Combination Constants — Returns the packed or planar color buffer format" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the packed or planar color buffer format.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-packed-color-buffer-format">Combination Constants — Returns the packed color buffer format<a href="#combination-constants--returns-the-packed-color-buffer-format" class="hash-link" aria-label="Direct link to Combination Constants — Returns the packed color buffer format" title="Direct link to Combination Constants — Returns the packed color buffer format" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the packed color buffer format.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-planar-color-buffer-format">Combination Constants — Returns the planar color buffer format<a href="#combination-constants--returns-the-planar-color-buffer-format" class="hash-link" aria-label="Direct link to Combination Constants — Returns the planar color buffer format" title="Direct link to Combination Constants — Returns the planar color buffer format" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the planar color buffer format.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--returns-the-memory-bank-used">Combination Constants — Returns the memory bank used<a href="#combination-constants--returns-the-memory-bank-used" class="hash-link" aria-label="Direct link to Combination Constants — Returns the memory bank used" title="Direct link to Combination Constants — Returns the memory bank used" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the memory bank in which the buffer was allocated.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_MEMORY_BANK_n</code></td><td>Inquires the buffer allocated in the specified memory bank.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-a-location-in-a-specific-type-of-memory">Combination Constants — For specifying a location in a specific type of memory<a href="#combination-constants--for-specifying-a-location-in-a-specific-type-of-memory" class="hash-link" aria-label="Direct link to Combination Constants — For specifying a location in a specific type of memory" title="Direct link to Combination Constants — For specifying a location in a specific type of memory" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to set a location in a specific type of memory.</p>
+</blockquote>
+<blockquote>
+<p><strong>Board availability:</strong> Radient eV-CL, Rapixo CL, Rapixo CXP, Rapixo CoF</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-3d-settings-that-apply-only-to-range-and-disparity-components-that-are-image-buffers">For inquiring about 3D settings that apply only to range and disparity components that are image buffers<a href="#for-inquiring-about-3d-settings-that-apply-only-to-range-and-disparity-components-that-are-image-buffers" class="hash-link" aria-label="Direct link to For inquiring about 3D settings that apply only to range and disparity components that are image buffers" title="Direct link to For inquiring about 3D settings that apply only to range and disparity components that are image buffers" translate="no">​</a></h3>
+<p>For components with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocColor"><code>M_IMAGE</code></a>attribute and with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_TYPE</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_RANGE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_DISPARITY</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>InquireType</code></a> can also be set to one of the values below.  These settings are used only when the component is the range or disparity component of a container that is used as a source with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>. Additionally, a container cannot be 3D-processable or 3D-displayable unless it has a single range component with all of these settings at their default values (except for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_DISTANCE_UNIT</code></a> which can be any value and<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_REPRESENTATION</code></a>, which must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CALIBRATED_XYZ</code></a>or<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CALIBRATED_XYZ_UNORGANIZED</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_aspect_ratio"><code>M_3D_ASPECT_RATIO</code><a href="#m_3d_aspect_ratio" class="hash-link" aria-label="Direct link to m_3d_aspect_ratio" title="Direct link to m_3d_aspect_ratio" translate="no">​</a></h3>
+<p>Inquires by how much the focal length in the Y-direction stored in the buffer will be scaled in the destination point cloud to correct for non-square pixels in 3D reconstruction modes that rely on projective geometry.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlContainer"><code>M_3D_ASPECT_RATIO</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_coordinate_system_type"><code>M_3D_COORDINATE_SYSTEM_TYPE</code><a href="#m_3d_coordinate_system_type" class="hash-link" aria-label="Direct link to m_3d_coordinate_system_type" title="Direct link to m_3d_coordinate_system_type" translate="no">​</a></h3>
+<p>Inquires which type of coordinate system to use to interpret the coordinates stored in the bands of the buffer if it is a range component.  &gt; <strong>Note:</strong> Note that Aurora Imaging Library does not support any functionality with coordinates stored using a coordinate system type other than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_CARTESIAN</code></a>. If a buffer stores information defined using another type of coordinate system, you will need to manually convert that information to cartesian coordinates before the buffer can be used with any Aurora Imaging Library processing function. This conversion cannot be done using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlContainer"><code>M_3D_COORDINATE_SYSTEM_TYPE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_disparity_baseline"><code>M_3D_DISPARITY_BASELINE</code><a href="#m_3d_disparity_baseline" class="hash-link" aria-label="Direct link to m_3d_disparity_baseline" title="Direct link to m_3d_disparity_baseline" translate="no">​</a></h3>
+<p>Inquires the stereo baseline value of the stereoscopic camera used to generate the data in the buffer. This is the physical distance between the lenses of the camera.  &gt; <strong>Note:</strong> Refer to your camera manual to determine the correct value for this setting, which might differ from the true physical distance between the lenses of your camera.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_DISPARITY_BASELINE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_distance_unit"><code>M_3D_DISTANCE_UNIT</code><a href="#m_3d_distance_unit" class="hash-link" aria-label="Direct link to m_3d_distance_unit" title="Direct link to m_3d_distance_unit" translate="no">​</a></h3>
+<p>Inquires the unit to use when the buffer is part of a container and stores natively calibrated distance data.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_DISTANCE_UNIT</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_focal_length"><code>M_3D_FOCAL_LENGTH</code><a href="#m_3d_focal_length" class="hash-link" aria-label="Direct link to m_3d_focal_length" title="Direct link to m_3d_focal_length" translate="no">​</a></h3>
+<p>Inquires the focal length of the lenses of the stereoscopic camera used to generate the data in the buffer.  &gt; <strong>Note:</strong> Refer to your camera manual to determine the correct value for this setting, which might differ from the true focal length of your camera.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_FOCAL_LENGTH</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_invalid_data_flag"><code>M_3D_INVALID_DATA_FLAG</code><a href="#m_3d_invalid_data_flag" class="hash-link" aria-label="Direct link to m_3d_invalid_data_flag" title="Direct link to m_3d_invalid_data_flag" translate="no">​</a></h3>
+<p>Inquires whether the buffer uses a specific value to indicate invalid data. For 3-band buffers that store coordinates, the invalid data flag should be stored in the Z-axis band. Specify the value that indicates invalid data using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_INVALID_DATA_VALUE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_INVALID_DATA_FLAG</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_invalid_data_value"><code>M_3D_INVALID_DATA_VALUE</code><a href="#m_3d_invalid_data_value" class="hash-link" aria-label="Direct link to m_3d_invalid_data_value" title="Direct link to m_3d_invalid_data_value" translate="no">​</a></h3>
+<p>Inquires the value used to indicate missing data when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_INVALID_DATA_FLAG</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_TRUE</code></a>.  &gt; <strong>Note:</strong> Note that this value is not used or respected by any Aurora Imaging Library functions except for<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a> when the buffer is a component of the source container.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_INVALID_DATA_VALUE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_offset_x"><code>M_3D_OFFSET_X</code><a href="#m_3d_offset_x" class="hash-link" aria-label="Direct link to m_3d_offset_x" title="Direct link to m_3d_offset_x" translate="no">​</a></h3>
+<p>Inquires by how much the X-coordinates stored in the buffer will be offset in the destination point cloud when it is a component of a container passed as a source to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_OFFSET_X</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_offset_y"><code>M_3D_OFFSET_Y</code><a href="#m_3d_offset_y" class="hash-link" aria-label="Direct link to m_3d_offset_y" title="Direct link to m_3d_offset_y" translate="no">​</a></h3>
+<p>Inquires by how much the Y-coordinates stored in the buffer will be offset in the destination point cloud when it is a component of a container passed as a source to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_OFFSET_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_offset_z"><code>M_3D_OFFSET_Z</code><a href="#m_3d_offset_z" class="hash-link" aria-label="Direct link to m_3d_offset_z" title="Direct link to m_3d_offset_z" translate="no">​</a></h3>
+<p>Inquires by how much the Z-coordinates stored in the buffer will be offset in the destination point cloud when it is a component of a container passed as a source to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_OFFSET_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_principal_point_x"><code>M_3D_PRINCIPAL_POINT_X</code><a href="#m_3d_principal_point_x" class="hash-link" aria-label="Direct link to m_3d_principal_point_x" title="Direct link to m_3d_principal_point_x" translate="no">​</a></h3>
+<p>Inquires the X-position of the principal point of the buffer. This is the point in the buffer which the optical axis of the camera intersects.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_PRINCIPAL_POINT_X</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_principal_point_y"><code>M_3D_PRINCIPAL_POINT_Y</code><a href="#m_3d_principal_point_y" class="hash-link" aria-label="Direct link to m_3d_principal_point_y" title="Direct link to m_3d_principal_point_y" translate="no">​</a></h3>
+<p>Inquires the Y-position of the principal point of the buffer. This is the point in the buffer which the optical axis of the camera intersects.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_PRINCIPAL_POINT_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_representation"><code>M_3D_REPRESENTATION</code><a href="#m_3d_representation" class="hash-link" aria-label="Direct link to m_3d_representation" title="Direct link to m_3d_representation" translate="no">​</a></h3>
+<p>Inquires how 3D data is stored in the buffer; this information is used when the buffer is a range or disparity component of a container. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_REPRESENTATION</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_scale_x"><code>M_3D_SCALE_X</code><a href="#m_3d_scale_x" class="hash-link" aria-label="Direct link to m_3d_scale_x" title="Direct link to m_3d_scale_x" translate="no">​</a></h3>
+<p>Inquires by how much the X-coordinates stored in the buffer will be scaled in the destination point cloud when it is a component of a container passed as a source to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_SCALE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_scale_y"><code>M_3D_SCALE_Y</code><a href="#m_3d_scale_y" class="hash-link" aria-label="Direct link to m_3d_scale_y" title="Direct link to m_3d_scale_y" translate="no">​</a></h3>
+<p>Inquires by how much the Y-coordinates stored in the buffer will be scaled in the destination point cloud when it is a component of a container passed as a source to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_SCALE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_scale_z"><code>M_3D_SCALE_Z</code><a href="#m_3d_scale_z" class="hash-link" aria-label="Direct link to m_3d_scale_z" title="Direct link to m_3d_scale_z" translate="no">​</a></h3>
+<p>Inquires by how much the Z-coordinates stored in the buffer will be scaled in the destination point cloud when it is a component of a container passed as a source to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_SCALE_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_shear_x"><code>M_3D_SHEAR_X</code><a href="#m_3d_shear_x" class="hash-link" aria-label="Direct link to m_3d_shear_x" title="Direct link to m_3d_shear_x" translate="no">​</a></h3>
+<p>Inquires by how much the X-coordinates stored in the buffer will be offset in the destination point cloud from the X-coordinates in the previous row when it is a component of a container passed as a source to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_SHEAR_X</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_shear_z"><code>M_3D_SHEAR_Z</code><a href="#m_3d_shear_z" class="hash-link" aria-label="Direct link to m_3d_shear_z" title="Direct link to m_3d_shear_z" translate="no">​</a></h3>
+<p>Inquires by how much the Z-coordinates stored in the buffer will be offset in the destination point cloud from the Z-coordinates in the previous row when it is a component of a container passed as a source to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_3D_SHEAR_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT</em>. If the requested information does not fit into an <em>AIL_INT</em>, this function will return <code>M_NULL</code>or truncate the information. If the requested information cannot be retrieved, <code>M_ERROR</code> is returned.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="remarks">Remarks<a href="#remarks" class="hash-link" aria-label="Direct link to Remarks" title="Direct link to Remarks" translate="no">​</a></h2>
+<blockquote>
+<p>Note that during development and at runtime, compression support, particularly for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocColor"><code>M_COMPRESS</code></a> buffer type, requires the presence of an Aurora Imaging Library license that grants access to the compression/decompression package. This access is only granted by default with the development license dongle for the full version of Aurora Imaging Library. In other cases, you must purchase access to this package separately.</p>
+</blockquote>
+<blockquote>
+<p>While an image buffer with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc1d"><code>M_KERNEL</code></a> or an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAlloc1d"><code>M_STRUCT_ELEMENT</code></a> attribute are available under Aurora Imaging Library Lite, these attributes are not required for the image buffer to be available to other Aurora Imaging Library Lite functions.</p>
+</blockquote>
+<p>To convert the returned attributes, select the <strong>Benchmarks and Utilities</strong> item in the tree structure of the Aurora Imaging Configurator utility. Then, select the <strong>Buffer format</strong> item. On the <strong>Value type</strong> pane, paste the returned attributes in the text box provided. Then, click on the <strong>Value lookup</strong> button. The results of the translation are presented below the <strong>Value lookup</strong> button.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MbufInquire</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireFeature"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MbufInquireFeature</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#containerbufid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ContainerBufId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#component-in-ail_int64" class="table-of-contents__link toc-highlight"><code>Component</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-about-a-container" class="table-of-contents__link toc-highlight">For inquiring about a container</a></li><li><a href="#m_3d_convertible" class="table-of-contents__link toc-highlight"><code>M_3D_CONVERTIBLE</code></a></li><li><a href="#m_3d_displayable" class="table-of-contents__link toc-highlight"><code>M_3D_DISPLAYABLE</code></a></li><li><a href="#m_3d_processable" class="table-of-contents__link toc-highlight"><code>M_3D_PROCESSABLE</code></a></li><li><a href="#m_3d_processable_depth_map" class="table-of-contents__link toc-highlight"><code>M_3D_PROCESSABLE_DEPTH_MAP</code></a></li><li><a href="#m_3d_processable_meshed" class="table-of-contents__link toc-highlight"><code>M_3D_PROCESSABLE_MESHED</code></a></li><li><a href="#m_ancestor_id" class="table-of-contents__link toc-highlight"><code>M_ANCESTOR_ID</code></a></li><li><a href="#m_component_group_id_list" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_GROUP_ID_LIST</code></a></li><li><a href="#m_component_region_id_list" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_REGION_ID_LIST</code></a></li><li><a href="#m_component_source_id_list" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_SOURCE_ID_LIST</code></a></li><li><a href="#m_component_type_list" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_TYPE_LIST</code></a></li><li><a href="#m_layout_modification_count" class="table-of-contents__link toc-highlight"><code>M_LAYOUT_MODIFICATION_COUNT</code></a></li><li><a href="#m_owner_system" class="table-of-contents__link toc-highlight"><code>M_OWNER_SYSTEM</code></a></li><li><a href="#m_owner_system_type" class="table-of-contents__link toc-highlight"><code>M_OWNER_SYSTEM_TYPE</code></a></li><li><a href="#m_parent_id" class="table-of-contents__link toc-highlight"><code>M_PARENT_ID</code></a></li><li><a href="#m_system_location" class="table-of-contents__link toc-highlight"><code>M_SYSTEM_LOCATION</code></a></li><li><a href="#for-inquiring-about-which-components-are-in-a-container" class="table-of-contents__link toc-highlight">For inquiring about which components are in a container</a></li><li><a href="#m_component_count" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_COUNT</code></a></li><li><a href="#m_component_list" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_LIST</code></a></li><li><a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required array size (number of elements) to store the returned values</a></li><li><a href="#for-inquiring-about-settings-that-apply-to-both-containers-and-components" class="table-of-contents__link toc-highlight">For inquiring about settings that apply to both containers and components</a></li><li><a href="#m_extended_attribute" class="table-of-contents__link toc-highlight"><code>M_EXTENDED_ATTRIBUTE</code></a></li><li><a href="#m_extended_attribute_name" class="table-of-contents__link toc-highlight"><code>M_EXTENDED_ATTRIBUTE_NAME</code></a></li><li><a href="#m_modification_hook" class="table-of-contents__link toc-highlight"><code>M_MODIFICATION_HOOK</code></a></li><li><a href="#for-inquiring-about-settings-that-apply-only-to-components" class="table-of-contents__link toc-highlight">For inquiring about settings that apply only to components</a></li><li><a href="#m_component_id" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_ID</code></a></li><li><a href="#m_component_invalid" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_INVALID</code></a></li><li><a href="#m_component_type" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_TYPE</code></a></li><li><a href="#m_component_type_name" class="table-of-contents__link toc-highlight"><code>M_COMPONENT_TYPE_NAME</code></a></li><li><a href="#m_data_format" class="table-of-contents__link toc-highlight"><code>M_DATA_FORMAT</code></a></li><li><a href="#m_data_type" class="table-of-contents__link toc-highlight"><code>M_DATA_TYPE</code></a></li><li><a href="#m_pitch" class="table-of-contents__link toc-highlight"><code>M_PITCH</code></a></li><li><a href="#m_pitch_byte" class="table-of-contents__link toc-highlight"><code>M_PITCH_BYTE</code></a></li><li><a href="#m_size_band" class="table-of-contents__link toc-highlight"><code>M_SIZE_BAND</code></a></li><li><a href="#m_size_bit" class="table-of-contents__link toc-highlight"><code>M_SIZE_BIT</code></a></li><li><a href="#m_size_x" class="table-of-contents__link toc-highlight"><code>M_SIZE_X</code></a></li><li><a href="#m_size_y" class="table-of-contents__link toc-highlight"><code>M_SIZE_Y</code></a></li><li><a href="#m_type" class="table-of-contents__link toc-highlight"><code>M_TYPE</code></a></li><li><a href="#combination-constants--for-getting-the-string-size" class="table-of-contents__link toc-highlight">Combination Constants — For getting the string size</a></li><li><a href="#combination-constants--returns-the-location-of-the-buffer" class="table-of-contents__link toc-highlight">Combination Constants — Returns the location of the buffer</a></li><li><a href="#combination-constants--returns-whether-the-buffer-was-allocated-in-paged-or-non-paged-memory" class="table-of-contents__link toc-highlight">Combination Constants — Returns whether the buffer was allocated in paged or non-paged memory</a></li><li><a href="#combination-constants--returns-the-intended-purpose-of-the-image-buffer" class="table-of-contents__link toc-highlight">Combination Constants — Returns the intended purpose of the image buffer</a></li><li><a href="#combination-constants--returns-the-storage-format-and-location-specifier" class="table-of-contents__link toc-highlight">Combination Constants — Returns the storage format and location specifier</a></li><li><a href="#combination-constants--returns-the-compression-type" class="table-of-contents__link toc-highlight">Combination Constants — Returns the compression type</a></li><li><a href="#combination-constants--returns-whether-the-buffer-was-allocated-with-an-overscan-region" class="table-of-contents__link toc-highlight">Combination Constants — Returns whether the buffer was allocated with an overscan region</a></li><li><a href="#combination-constants--returns-whether-the-buffer-is-fpga-accessible" class="table-of-contents__link toc-highlight">Combination Constants — Returns whether the buffer is FPGA accessible</a></li><li><a href="#combination-constants--returns-the-format-in-which-image-buffers-were-stored" class="table-of-contents__link toc-highlight">Combination Constants — Returns the format in which image buffers were stored</a></li><li><a href="#combination-constants--returns-the-packed-or-planar-color-buffer-format" class="table-of-contents__link toc-highlight">Combination Constants — Returns the packed or planar color buffer format</a></li><li><a href="#combination-constants--returns-the-packed-color-buffer-format" class="table-of-contents__link toc-highlight">Combination Constants — Returns the packed color buffer format</a></li><li><a href="#combination-constants--returns-the-planar-color-buffer-format" class="table-of-contents__link toc-highlight">Combination Constants — Returns the planar color buffer format</a></li><li><a href="#combination-constants--returns-the-memory-bank-used" class="table-of-contents__link toc-highlight">Combination Constants — Returns the memory bank used</a></li><li><a href="#combination-constants--for-specifying-a-location-in-a-specific-type-of-memory" class="table-of-contents__link toc-highlight">Combination Constants — For specifying a location in a specific type of memory</a></li><li><a href="#for-inquiring-about-3d-settings-that-apply-only-to-range-and-disparity-components-that-are-image-buffers" class="table-of-contents__link toc-highlight">For inquiring about 3D settings that apply only to range and disparity components that are image buffers</a></li><li><a href="#m_3d_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_3D_ASPECT_RATIO</code></a></li><li><a href="#m_3d_coordinate_system_type" class="table-of-contents__link toc-highlight"><code>M_3D_COORDINATE_SYSTEM_TYPE</code></a></li><li><a href="#m_3d_disparity_baseline" class="table-of-contents__link toc-highlight"><code>M_3D_DISPARITY_BASELINE</code></a></li><li><a href="#m_3d_distance_unit" class="table-of-contents__link toc-highlight"><code>M_3D_DISTANCE_UNIT</code></a></li><li><a href="#m_3d_focal_length" class="table-of-contents__link toc-highlight"><code>M_3D_FOCAL_LENGTH</code></a></li><li><a href="#m_3d_invalid_data_flag" class="table-of-contents__link toc-highlight"><code>M_3D_INVALID_DATA_FLAG</code></a></li><li><a href="#m_3d_invalid_data_value" class="table-of-contents__link toc-highlight"><code>M_3D_INVALID_DATA_VALUE</code></a></li><li><a href="#m_3d_offset_x" class="table-of-contents__link toc-highlight"><code>M_3D_OFFSET_X</code></a></li><li><a href="#m_3d_offset_y" class="table-of-contents__link toc-highlight"><code>M_3D_OFFSET_Y</code></a></li><li><a href="#m_3d_offset_z" class="table-of-contents__link toc-highlight"><code>M_3D_OFFSET_Z</code></a></li><li><a href="#m_3d_principal_point_x" class="table-of-contents__link toc-highlight"><code>M_3D_PRINCIPAL_POINT_X</code></a></li><li><a href="#m_3d_principal_point_y" class="table-of-contents__link toc-highlight"><code>M_3D_PRINCIPAL_POINT_Y</code></a></li><li><a href="#m_3d_representation" class="table-of-contents__link toc-highlight"><code>M_3D_REPRESENTATION</code></a></li><li><a href="#m_3d_scale_x" class="table-of-contents__link toc-highlight"><code>M_3D_SCALE_X</code></a></li><li><a href="#m_3d_scale_y" class="table-of-contents__link toc-highlight"><code>M_3D_SCALE_Y</code></a></li><li><a href="#m_3d_scale_z" class="table-of-contents__link toc-highlight"><code>M_3D_SCALE_Z</code></a></li><li><a href="#m_3d_shear_x" class="table-of-contents__link toc-highlight"><code>M_3D_SHEAR_X</code></a></li><li><a href="#m_3d_shear_z" class="table-of-contents__link toc-highlight"><code>M_3D_SHEAR_Z</code></a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li><li><a href="#remarks" class="table-of-contents__link toc-highlight">Remarks</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

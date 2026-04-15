@@ -1,0 +1,2711 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/mod/MmodInquire" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MmodInquire | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MmodInquire | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"mod","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"},{"@type":"ListItem","position":2,"name":"MmodInquire","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Collapse sidebar category &#x27;mod&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><span title="MmodAlloc" class="linkLabel_WmDU">MmodAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><span title="MmodAllocResult" class="linkLabel_WmDU">MmodAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><span title="MmodControl" class="linkLabel_WmDU">MmodControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><span title="MmodDefine" class="linkLabel_WmDU">MmodDefine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefineFromFile"><span title="MmodDefineFromFile" class="linkLabel_WmDU">MmodDefineFromFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDraw"><span title="MmodDraw" class="linkLabel_WmDU">MmodDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><span title="MmodFind" class="linkLabel_WmDU">MmodFind</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFree"><span title="MmodFree" class="linkLabel_WmDU">MmodFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><span title="MmodGetResult" class="linkLabel_WmDU">MmodGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><span title="MmodInquire" class="linkLabel_WmDU">MmodInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><span title="MmodMask" class="linkLabel_WmDU">MmodMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodPreprocess"><span title="MmodPreprocess" class="linkLabel_WmDU">MmodPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodRestore"><span title="MmodRestore" class="linkLabel_WmDU">MmodRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodSave"><span title="MmodSave" class="linkLabel_WmDU">MmodSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodStream"><span title="MmodStream" class="linkLabel_WmDU">MmodStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span>mod</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MmodInquire</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MmodInquire</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire information about a specified Model Finder context, a specified model, or a specified result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT </span><span class="token function" style="color:#d73a49">MmodInquire</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    ContextOrResultId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT   Index</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr          </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires information about a specified Model Finder context, the models contained therein, or a specified Model Finder result buffer. Note that Model Finder result buffer values can be obtained with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a>.</p>
+<p>In general, returned values (for example, position and width) are in the following units:</p>
+<ul>
+<li class="">For a non-synthetic model, returned values are in the pixel coordinate system, even if the target is calibrated. The only exception is when inquiring about angles (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_REFERENCE_ANGLE</code></a>); in these cases, the angles values are in the relative coordinate system if the target is calibrated.</li>
+<li class="">For a synthetic model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> context, returned values are in the user-defined units for the model; their relationship to pixels is defined using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_PIXEL_SCALE</code></a>. If the target is not calibrated, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_PIXEL_SCALE</code></a> is used for the match. If the target is calibrated, model units are used; note that these should be the same as the calibrated units. In a few cases, instead of returning values in model units, values are returned in pixel units (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_POSITION_...</code></a>); these cases are clearly indicated.</li>
+<li class="">For a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> context, returned values are in model units, which in this case are the same as the target units. If the target is calibrated, the model&#x27;s settings will be interpreted in world units. If the target is not calibrated, the model&#x27;s settings will be interpreted in pixel units.</li>
+</ul>
+<p>If an inquire type is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_DEFAULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>MmodInquire</code></a> will return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_DEFAULT</code></a>. To inquire its default value, add <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_DEFAULT</code></a> to the inquire type.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultid-in-ail_id"><code>ContextOrResultId</code> <em>(in, AIL_ID)</em><a href="#contextorresultid-in-ail_id" class="hash-link" aria-label="Direct link to contextorresultid-in-ail_id" title="Direct link to contextorresultid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the Model Finder context or Model Finder result buffer about which to inquire information. The Model Finder context or result buffer must have been previously allocated on the required system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>MmodAlloc</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><code>MmodAllocResult</code></a>, respectively.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="index-in-ail_int"><code>Index</code> <em>(in, AIL_INT)</em><a href="#index-in-ail_int" class="hash-link" aria-label="Direct link to index-in-ail_int" title="Direct link to index-in-ail_int" translate="no">​</a></h3>
+<p>Specifies that information will be inquired about the Model Finder context, an individual model, or a Model Finder result buffer. This parameter should be set to one of the following values:</p>
+<p><em>For specifying a context, model, or result buffer</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default.</td></tr></tbody></table>
+<p>If a Model Finder context is specified, this parameter inquires information about model index 0.</p>
+<p>If a result buffer is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_GENERAL</code></a>. |
+| <code>M_CONTEXT</code> | Inquires information about the Model Finder context, which has been set using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>ContextOrResultId</code></a> parameter. |
+| <code>M_GENERAL</code> | Inquires general information about the Model Finder result buffer, which has been set using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>ContextOrResultId</code></a> parameter. |
+| <code>0 &lt;= IndexValue &lt; M_NUMBER_MODELS</code> | Specifies the index of the individual model to inquire, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>ContextOrResultId</code></a> is set to a Model Finder context.</p>
+<p>To retrieve the index of a model from its user label, set this parameter to the user label and set the inquire type to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_INDEX_FROM_LABEL</code></a>. |
+| <code>LabelValue</code> | Specifies the user label of the individual model to inquire, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>ContextOrResultId</code></a> is set to a Model Finder context. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of setting about which to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>MmodInquire</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-the-number-of-occurrences-to-find-for-the-entire-context-or-an-individual-model-specified-using-its-index">For inquiring about the number of occurrences to find for the entire context or an individual model specified using its index<a href="#for-inquiring-about-the-number-of-occurrences-to-find-for-the-entire-context-or-an-individual-model-specified-using-its-index" class="hash-link" aria-label="Direct link to For inquiring about the number of occurrences to find for the entire context or an individual model specified using its index" title="Direct link to For inquiring about the number of occurrences to find for the entire context or an individual model specified using its index" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_CONTEXT</code></a> or an individual model specified using its index, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>InquireType</code></a> parameter can be set to one of the following:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number"><code>M_NUMBER</code><a href="#m_number" class="hash-link" aria-label="Direct link to m_number" title="Direct link to m_number" translate="no">​</a></h3>
+<p>Inquires the number of models for which to search.  For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_CONTEXT</code></a>, this setting returns the maximum number of occurrences of all models to find in the target.  For a model, this setting returns the maximum number of occurrences of the specified model to find in the target.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default value.</td></tr><tr><td><code>M_ALL</code></td><td>Specifies to find all occurrences.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of occurrences.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-the-context-or-result-buffer">For inquiring about the context or result buffer<a href="#for-inquiring-about-the-context-or-result-buffer" class="hash-link" aria-label="Direct link to For inquiring about the context or result buffer" title="Direct link to For inquiring about the context or result buffer" translate="no">​</a></h3>
+<p>To inquire about the system on which the Model Finder context or result buffer has been allocated, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>InquireType</code></a> parameter to the value below.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system"><code>M_OWNER_SYSTEM</code><a href="#m_owner_system" class="hash-link" aria-label="Direct link to m_owner_system" title="Direct link to m_owner_system" translate="no">​</a></h3>
+<p>Inquires the identifier of the system on which the Model Finder context or result buffer was allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT_HOST</code></td><td>Specifies the default Host system of the current Aurora Imaging Library application.</td></tr><tr><td><code>System identifier</code></td><td>Specifies a valid system identifier, previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysAlloc"><code>MsysAlloc</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-the-context">For inquiring about the context<a href="#for-inquiring-about-the-context" class="hash-link" aria-label="Direct link to For inquiring about the context" title="Direct link to For inquiring about the context" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_CONTEXT</code></a>, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>InquireType</code></a> parameter can be set to one of the following:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_accuracy"><code>M_ACCURACY</code><a href="#m_accuracy" class="hash-link" aria-label="Direct link to m_accuracy" title="Direct link to m_accuracy" translate="no">​</a></h3>
+<p>Inquires the search accuracy.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code></td><td>Specifies high accuracy.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies low accuracy.</td></tr><tr><td><code>M_MEDIUM</code> <em>(default)</em></td><td>Specifies medium accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active_edgels"><code>M_ACTIVE_EDGELS</code><a href="#m_active_edgels" class="hash-link" aria-label="Direct link to m_active_edgels" title="Direct link to m_active_edgels" translate="no">​</a></h3>
+<p>Inquires the degree to which Aurora Imaging Library processes active edgels in the target.  This inquire type is only supported for a geometric Model Finder context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>MmodAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the degree to which Aurora Imaging Library processes target edgels, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_aspect_ratio"><code>M_ASPECT_RATIO</code><a href="#m_aspect_ratio" class="hash-link" aria-label="Direct link to m_aspect_ratio" title="Direct link to m_aspect_ratio" translate="no">​</a></h3>
+<p>Inquires the aspect ratio applied to the target before starting the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.5 &lt;= Value &lt;= 2.0</code> <em>(default)</em></td><td>Specifies the pixel width/pixel height of the target.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_context_type"><code>M_CONTEXT_TYPE</code><a href="#m_context_type" class="hash-link" aria-label="Direct link to m_context_type" title="Direct link to m_context_type" translate="no">​</a></h3>
+<p>Inquires the type of search context allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_GEOMETRIC</code></td><td>Specifies that the Model Finder context uses a general geometric search algorithm.</td></tr><tr><td><code>M_GEOMETRIC_CONTROLLED</code></td><td>Specifies that the Model Finder context uses a controlled geometric search algorithm.</td></tr><tr><td><code>M_SHAPE_CIRCLE</code></td><td>Specifies that the Model Finder context uses a circular model search algorithm.</td></tr><tr><td><code>M_SHAPE_ELLIPSE</code></td><td>Specifies that the Model Finder context uses an elliptical model search algorithm.</td></tr><tr><td><code>M_SHAPE_RECTANGLE</code></td><td>Specifies that the Model Finder context uses a rectangular model search algorithm.</td></tr><tr><td><code>M_SHAPE_SEGMENT</code></td><td>Specifies that the Model Finder context uses a segment model search algorithm.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detail_level"><code>M_DETAIL_LEVEL</code><a href="#m_detail_level" class="hash-link" aria-label="Direct link to m_detail_level" title="Direct link to m_detail_level" translate="no">​</a></h3>
+<p>Inquires the level of details to extract from the model source and target image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code></td><td>Specifies a high level of detail.</td></tr><tr><td><code>M_MEDIUM</code> <em>(default)</em></td><td>Specifies a medium level of detail.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies a very high level of detail.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edge_accuracy"><code>M_EDGE_ACCURACY</code><a href="#m_edge_accuracy" class="hash-link" aria-label="Direct link to m_edge_accuracy" title="Direct link to m_edge_accuracy" translate="no">​</a></h3>
+<p>Inquires the edge accuracy used when calculating the edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code> <em>(default)</em></td><td>Specifies a high level of edge accuracy.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies a very high level of edge accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_level"><code>M_FIRST_LEVEL</code><a href="#m_first_level" class="hash-link" aria-label="Direct link to m_first_level" title="Direct link to m_first_level" translate="no">​</a></h3>
+<p>Inquires the resolution level for the initial stage of the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies that the first resolution is determined automatically.</td></tr><tr><td><code>0 &lt;= Value &lt;= 7</code></td><td>Specifies the resolution level.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_last_level"><code>M_LAST_LEVEL</code><a href="#m_last_level" class="hash-link" aria-label="Direct link to m_last_level" title="Direct link to m_last_level" translate="no">​</a></h3>
+<p>Inquires the resolution level for the final stage of the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies that the last resolution is determined automatically.</td></tr><tr><td><code>0 &lt;= Value &lt;= 7</code></td><td>Specifies the resolution level.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_modification_count"><code>M_MODIFICATION_COUNT</code><a href="#m_modification_count" class="hash-link" aria-label="Direct link to m_modification_count" title="Direct link to m_modification_count" translate="no">​</a></h3>
+<p>Inquires the current value of the modification counter. The modification counter is increased by one each time settings for the context are modified.  Although you cannot identify the modification counter&#x27;s contents, you can compare them throughout your application to know if the context has been altered. If the modification counter has changed you can, for example, prompt the user to save before closing the application.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the current value of the modification counter.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_models"><code>M_NUMBER_MODELS</code><a href="#m_number_models" class="hash-link" aria-label="Direct link to m_number_models" title="Direct link to m_number_models" translate="no">​</a></h3>
+<p>Inquires the number of models in the context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of models.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_preprocessed"><code>M_PREPROCESSED</code><a href="#m_preprocessed" class="hash-link" aria-label="Direct link to m_preprocessed" title="Direct link to m_preprocessed" translate="no">​</a></h3>
+<p>Inquires whether the Model Finder context is preprocessed. The context must be preprocessed (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodPreprocess"><code>MmodPreprocess</code></a>) before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a>. After certain settings of the Model Finder context are changed with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a>, or after a model is added or removed with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>MmodDefine</code></a>, this inquire type will indicate that the context is no longer in its preprocessed state.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the context is not preprocessed.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the context is preprocessed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_resolution_coarseness_level"><code>M_RESOLUTION_COARSENESS_LEVEL</code><a href="#m_resolution_coarseness_level" class="hash-link" aria-label="Direct link to m_resolution_coarseness_level" title="Direct link to m_resolution_coarseness_level" translate="no">​</a></h3>
+<p>Inquires the resolution of the edge approximation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the resolution.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_target_edges"><code>M_SAVE_TARGET_EDGES</code><a href="#m_save_target_edges" class="hash-link" aria-label="Direct link to m_save_target_edges" title="Direct link to m_save_target_edges" translate="no">​</a></h3>
+<p>Inquires whether the target edges in the result will be saved.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that target edges cannot be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that target edges can be saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_angle_range"><code>M_SEARCH_ANGLE_RANGE</code><a href="#m_search_angle_range" class="hash-link" aria-label="Direct link to m_search_angle_range" title="Direct link to m_search_angle_range" translate="no">​</a></h3>
+<p>Inquires whether to perform calculations specific to angular-range search strategies.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default value.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that calculations specific to angular-range search strategies are disabled.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that calculations specific to angular-range search strategies are enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_position_range"><code>M_SEARCH_POSITION_RANGE</code><a href="#m_search_position_range" class="hash-link" aria-label="Direct link to m_search_position_range" title="Direct link to m_search_position_range" translate="no">​</a></h3>
+<p>Inquires whether to perform calculations specific to position-range search strategies.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that calculations specific to position-range search strategies are disabled.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that calculations specific to position-range search strategies are enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_scale_range"><code>M_SEARCH_SCALE_RANGE</code><a href="#m_search_scale_range" class="hash-link" aria-label="Direct link to m_search_scale_range" title="Direct link to m_search_scale_range" translate="no">​</a></h3>
+<p>Inquires whether to perform calculations specific to scale-range search strategies.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that calculations specific to scale-range search strategies are disabled.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that calculations specific to scale-range search strategies are enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_shared_edges"><code>M_SHARED_EDGES</code><a href="#m_shared_edges" class="hash-link" aria-label="Direct link to m_shared_edges" title="Direct link to m_shared_edges" translate="no">​</a></h3>
+<p>Inquires whether multiple occurrences can share edges.  This inquire type is not supported for a model defined in an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a>, an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a>, or an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a>type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to disable the sharing of edges.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to enable the sharing of edges.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness"><code>M_SMOOTHNESS</code><a href="#m_smoothness" class="hash-link" aria-label="Direct link to m_smoothness" title="Direct link to m_smoothness" translate="no">​</a></h3>
+<p>Inquires the degree of smoothness (denoising) applied to the model images and the target images during edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the smoothness value applied to the images.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_speed"><code>M_SPEED</code><a href="#m_speed" class="hash-link" aria-label="Direct link to m_speed" title="Direct link to m_speed" translate="no">​</a></h3>
+<p>Inquires the search speed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code></td><td>Specifies a high speed.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies a low speed.</td></tr><tr><td><code>M_MEDIUM</code> <em>(default)</em></td><td>Specifies a medium speed.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies a very high speed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_target_caching"><code>M_TARGET_CACHING</code><a href="#m_target_caching" class="hash-link" aria-label="Direct link to m_target_caching" title="Direct link to m_target_caching" translate="no">​</a></h3>
+<p>Inquires whether target caching is enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to disable target caching.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to enable target caching in the result.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_timeout"><code>M_TIMEOUT</code><a href="#m_timeout" class="hash-link" aria-label="Direct link to m_timeout" title="Direct link to m_timeout" translate="no">​</a></h3>
+<p>Inquires the maximum search time for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a>, in msec.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies an infinite amount of search time.</td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the maximum search time, in msecs.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-model-using-its-index">For inquiring about a model using its index<a href="#for-inquiring-about-a-model-using-its-index" class="hash-link" aria-label="Direct link to For inquiring about a model using its index" title="Direct link to For inquiring about a model using its index" translate="no">​</a></h3>
+<p>For inquiring about an individual model specified using its index, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>InquireType</code></a> parameter can be set to one of the following:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance"><code>M_ACCEPTANCE</code><a href="#m_acceptance" class="hash-link" aria-label="Direct link to m_acceptance" title="Direct link to m_acceptance" translate="no">​</a></h3>
+<p>Inquires the acceptance level for the score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies an acceptable score, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_target"><code>M_ACCEPTANCE_TARGET</code><a href="#m_acceptance_target" class="hash-link" aria-label="Direct link to m_acceptance_target" title="Direct link to m_acceptance_target" translate="no">​</a></h3>
+<p>Inquires the acceptance level for the target score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies an acceptable target score, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_alloc_offset_x"><code>M_ALLOC_OFFSET_X</code><a href="#m_alloc_offset_x" class="hash-link" aria-label="Direct link to m_alloc_offset_x" title="Direct link to m_alloc_offset_x" translate="no">​</a></h3>
+<p>Inquires the X-offset of the model in the model source image.  This is only supported for image-type or Edge Finder-type models.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-offset of the model, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_alloc_offset_y"><code>M_ALLOC_OFFSET_Y</code><a href="#m_alloc_offset_y" class="hash-link" aria-label="Direct link to m_alloc_offset_y" title="Direct link to m_alloc_offset_y" translate="no">​</a></h3>
+<p>Inquires the Y-offset of the model in the model source image.  This is only supported for image-type or Edge Finder-type models.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-offset of the model, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_alloc_sign"><code>M_ALLOC_SIGN</code><a href="#m_alloc_sign" class="hash-link" aria-label="Direct link to m_alloc_sign" title="Direct link to m_alloc_sign" translate="no">​</a></h3>
+<p>Inquires whether the data range of the model image is signed or unsigned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_SIGNED</code></td><td>Specifies that the data is signed.</td></tr><tr><td><code>M_UNSIGNED</code></td><td>Specifies that the data is unsigned. Synthetic, Model Finder-type and merge-type models will always return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_UNSIGNED</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_alloc_size_band"><code>M_ALLOC_SIZE_BAND</code><a href="#m_alloc_size_band" class="hash-link" aria-label="Direct link to m_alloc_size_band" title="Direct link to m_alloc_size_band" translate="no">​</a></h3>
+<p>Inquires the number of bands of the model image. When drawing the model image, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_BAND</code></a> to establish the required number of bands for the destination buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1</code></td><td>Specifies a 1-band buffer.</td></tr><tr><td><code>3</code></td><td>Specifies a 3-band buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_alloc_size_bit"><code>M_ALLOC_SIZE_BIT</code><a href="#m_alloc_size_bit" class="hash-link" aria-label="Direct link to m_alloc_size_bit" title="Direct link to m_alloc_size_bit" translate="no">​</a></h3>
+<p>Inquires the depth per band, in bits, of the model image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1</code></td><td>Specifies that the data depth is 1 bit per band.</td></tr><tr><td><code>8</code></td><td>Specifies that the data depth is 8 bits per band.</td></tr><tr><td><code>16</code></td><td>Specifies that the data depth is 16 bits per band.</td></tr><tr><td><code>32</code></td><td>Specifies that the data depth is 32 bits per band.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_alloc_size_x"><code>M_ALLOC_SIZE_X</code><a href="#m_alloc_size_x" class="hash-link" aria-label="Direct link to m_alloc_size_x" title="Direct link to m_alloc_size_x" translate="no">​</a></h3>
+<p>Inquires the width of the smallest buffer in which to draw the model box (the model and its margins).  For a model of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context, this value also determines the mask size.  For a synthetic model of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context, this value is affected by<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_PIXEL_SCALE</code></a> and model calibration.  For a synthetic model of an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, this value is determined by the smallest buffer that can contain the width of the model, and the margin that adds 10% of the width of the bounding box&#x27;s active edges to the left and right edges of the model box. Note that the width of the model will be interpreted as if it had been specified in pixel units (even if they were not). If they were specified assuming a calibrated target, the returned size might not be very meaningful.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 16</code></td><td>Specifies the width of the model (in X), in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_alloc_size_y"><code>M_ALLOC_SIZE_Y</code><a href="#m_alloc_size_y" class="hash-link" aria-label="Direct link to m_alloc_size_y" title="Direct link to m_alloc_size_y" translate="no">​</a></h3>
+<p>Inquires the height of the smallest buffer in which to draw the model box (the model and its margins).  For a model of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context, this value also determines the mask size.  For a synthetic model of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context, this value is affected by<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_PIXEL_SCALE</code></a> and model calibration.  For a synthetic model of an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, this value is determined by the smallest buffer that can contain the height of the model, and the margin that adds 10% of the height of the bounding box&#x27;s active edges to the top and bottom edges of the model box. Note that the height of the model will be interpreted as if it had been specified in pixel units (even if they were not). If they were specified assuming a calibrated target, the returned size might not be very meaningful.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 16</code></td><td>Specifies the height of the model (in Y), in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_alloc_type"><code>M_ALLOC_TYPE</code><a href="#m_alloc_type" class="hash-link" aria-label="Direct link to m_alloc_type" title="Direct link to m_alloc_type" translate="no">​</a></h3>
+<p>Inquires the data type and depth of the model image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FLOAT + 32</code></td><td>Specifies 32-bit floating-point data.</td></tr><tr><td><code>M_SIGNED + 8</code></td><td>Specifies 8-bit signed data.</td></tr><tr><td><code>M_SIGNED + 16</code></td><td>Specifies 16-bit signed data.</td></tr><tr><td><code>M_SIGNED + 32</code></td><td>Specifies 32-bit signed data.</td></tr><tr><td><code>M_UNSIGNED + 1</code></td><td>Specifies 1-bit unsigned data.</td></tr><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies 8-bit unsigned data.</td></tr><tr><td><code>M_UNSIGNED + 16</code></td><td>Specifies 16-bit unsigned data.</td></tr><tr><td><code>M_UNSIGNED + 32</code></td><td>Specifies 32-bit unsigned data.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle"><code>M_ANGLE</code><a href="#m_angle" class="hash-link" aria-label="Direct link to m_angle" title="Direct link to m_angle" translate="no">​</a></h3>
+<p>Inquires the nominal search angle; this is the angle at which you expect to find the model&#x27;s reference axis (specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_REFERENCE_ANGLE</code></a>) in the target.  For an ellipse or rectangle model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context, the model&#x27;s reference axis is, by default, aligned with its principle axis (its width).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the nominal search angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_delta_neg"><code>M_ANGLE_DELTA_NEG</code><a href="#m_angle_delta_neg" class="hash-link" aria-label="Direct link to m_angle_delta_neg" title="Direct link to m_angle_delta_neg" translate="no">​</a></h3>
+<p>Inquires the lower limit of the angular range, relative to the nominal search angle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 180.0</code> <em>(default)</em></td><td>Specifies the lower limit of the angular range, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_delta_pos"><code>M_ANGLE_DELTA_POS</code><a href="#m_angle_delta_pos" class="hash-link" aria-label="Direct link to m_angle_delta_pos" title="Direct link to m_angle_delta_pos" translate="no">​</a></h3>
+<p>Inquires the upper limit of the angular range, relative to the nominal search angle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 180.0</code> <em>(default)</em></td><td>Specifies the upper limit of the angular range, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_multiple_range"><code>M_ANGLE_MULTIPLE_RANGE</code><a href="#m_angle_multiple_range" class="hash-link" aria-label="Direct link to m_angle_multiple_range" title="Direct link to m_angle_multiple_range" translate="no">​</a></h3>
+<p>Inquires whether to search for models in multiple angular ranges.  This inquire type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that searching in multiple angular ranges is disabled.</td></tr><tr><td><code>M_STEP_90</code></td><td>Specifies to search for models at angular ranges at 90 degree steps from the nominal search angle.</td></tr><tr><td><code>M_STEP_180</code> <em>(default)</em></td><td>Specifies to search for models at a 180 degree step.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_region"><code>M_ANGLE_REGION</code><a href="#m_angle_region" class="hash-link" aria-label="Direct link to m_angle_region" title="Direct link to m_angle_region" translate="no">​</a></h3>
+<p>Sets the angle direction of the search region defined by the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_POSITION_...</code></a> controls.  This control type is only valid for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> models.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the search angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_associated_calibration"><code>M_ASSOCIATED_CALIBRATION</code><a href="#m_associated_calibration" class="hash-link" aria-label="Direct link to m_associated_calibration" title="Direct link to m_associated_calibration" translate="no">​</a></h3>
+<p>Inquires the camera calibration context associated with the specified model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NULL</code> <em>(default)</em></td><td>Removes the association between the model and a camera calibration context.</td></tr><tr><td><code>Calibration context identifier</code></td><td>Specifies the camera calibration context that is associated with the model.</td></tr><tr><td><code>M_NULL</code></td><td>Specifies that there is no camera calibration context associated with the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_bottom"><code>M_BOX_MARGIN_BOTTOM</code><a href="#m_box_margin_bottom" class="hash-link" aria-label="Direct link to m_box_margin_bottom" title="Direct link to m_box_margin_bottom" translate="no">​</a></h3>
+<p>Inquires the margin at the bottom of the bounding box of the model&#x27;s active edges, in model units.  This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these contexts, the bottom margin is always 10.0% of the height of the bounding box of the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the height of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_left"><code>M_BOX_MARGIN_LEFT</code><a href="#m_box_margin_left" class="hash-link" aria-label="Direct link to m_box_margin_left" title="Direct link to m_box_margin_left" translate="no">​</a></h3>
+<p>Inquires the margin at the left of the bounding box of the model&#x27;s active edges, in model units.  This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these contexts, the left margin is always 10.0% of the width of the bounding box of the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the width of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_right"><code>M_BOX_MARGIN_RIGHT</code><a href="#m_box_margin_right" class="hash-link" aria-label="Direct link to m_box_margin_right" title="Direct link to m_box_margin_right" translate="no">​</a></h3>
+<p>Inquires the margin at the right of the bounding box of the model&#x27;s active edges, in model units.  This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these contexts, the right margin is always 10.0% of the width of the bounding box of the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the width of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_top"><code>M_BOX_MARGIN_TOP</code><a href="#m_box_margin_top" class="hash-link" aria-label="Direct link to m_box_margin_top" title="Direct link to m_box_margin_top" translate="no">​</a></h3>
+<p>Inquires the margin at the top of the bounding box of the model&#x27;s active edges, in model units.  This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these contexts, the top margin is always 10.0% of the height of the bounding box of the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the height of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_offset_x"><code>M_BOX_OFFSET_X</code><a href="#m_box_offset_x" class="hash-link" aria-label="Direct link to m_box_offset_x" title="Direct link to m_box_offset_x" translate="no">​</a></h3>
+<p>Inquires the X-offset of the top-left corner of the model box from the model origin.  For predefined shape models, the origin of the model is the center of the shape. For CAD-file models, the origin is the same as the one defined in the CAD file.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_BOX_OFFSET_X</code></a> is updated when the margins that define the model box are changed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-offset, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_offset_y"><code>M_BOX_OFFSET_Y</code><a href="#m_box_offset_y" class="hash-link" aria-label="Direct link to m_box_offset_y" title="Direct link to m_box_offset_y" translate="no">​</a></h3>
+<p>Inquires the Y-offset of the top-left corner of the model box from the model origin.  For predefined shape models, the origin of the model is the center of the shape. For CAD-file models, the origin is the same as the one defined in the CAD file.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_BOX_OFFSET_Y</code></a> is updated when the margins that define the model box are changed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-offset, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_size_x"><code>M_BOX_SIZE_X</code><a href="#m_box_size_x" class="hash-link" aria-label="Direct link to m_box_size_x" title="Direct link to m_box_size_x" translate="no">​</a></h3>
+<p>Inquires the size along the X-axis of the model box.  You cannot set the size of the model box; however, you can set the size of the model&#x27;s bounding box when defining the model using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>MmodDefine</code></a>. You can also set the size of the margins using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_BOX_MARGIN_...</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-size, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_size_y"><code>M_BOX_SIZE_Y</code><a href="#m_box_size_y" class="hash-link" aria-label="Direct link to m_box_size_y" title="Direct link to m_box_size_y" translate="no">​</a></h3>
+<p>Inquires the size along the Y-axis of the model box.  You cannot set the size of the model box; however, you can set the size of the model&#x27;s bounding box when defining the model using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>MmodDefine</code></a>. You can also set the size of the margins using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_BOX_MARGIN_...</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-size, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cad_y_axis"><code>M_CAD_Y_AXIS</code><a href="#m_cad_y_axis" class="hash-link" aria-label="Direct link to m_cad_y_axis" title="Direct link to m_cad_y_axis" translate="no">​</a></h3>
+<p>Inquires the direction of the Y-axis for a CAD-type model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.</td></tr><tr><td><code>M_FLIP</code></td><td>Specifies to flip the Y-axis for the model so that the Y-axis is positive going down.</td></tr><tr><td><code>M_NO_FLIP</code></td><td>Specifies not to flip the Y-axis for the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_certainty"><code>M_CERTAINTY</code><a href="#m_certainty" class="hash-link" aria-label="Direct link to m_certainty" title="Direct link to m_certainty" translate="no">​</a></h3>
+<p>Inquires the certainty level for the score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the certainty level for the score, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_certainty_target"><code>M_CERTAINTY_TARGET</code><a href="#m_certainty_target" class="hash-link" aria-label="Direct link to m_certainty_target" title="Direct link to m_certainty_target" translate="no">​</a></h3>
+<p>Inquires the certainty level for the target score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the certainty level for the target score, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_chain_angle"><code>M_CHAIN_ANGLE</code><a href="#m_chain_angle" class="hash-link" aria-label="Direct link to m_chain_angle" title="Direct link to m_chain_angle" translate="no">​</a></h3>
+<p>Inquires the angle value of each edgel in the chains composing the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the angle value of the edgel.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_chain_index"><code>M_CHAIN_INDEX</code><a href="#m_chain_index" class="hash-link" aria-label="Direct link to m_chain_index" title="Direct link to m_chain_index" translate="no">​</a></h3>
+<p>Inquires the indices which differentiate each active edge&#x27;s chain of edgels, for each edgel within the model. The first chain is identified as index 1, with each subsequent chain&#x27;s index incremented by 1.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the index of the chain.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_chain_x"><code>M_CHAIN_X</code><a href="#m_chain_x" class="hash-link" aria-label="Direct link to m_chain_x" title="Direct link to m_chain_x" translate="no">​</a></h3>
+<p>Inquires the X-coordinates, in pixels (with subpixel accuracy), of each edgel in the chains composing the model&#x27;s active edges. Coordinates are returned for all the active edge chains contained within the model and are relative to the model origin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the edgel.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_chain_y"><code>M_CHAIN_Y</code><a href="#m_chain_y" class="hash-link" aria-label="Direct link to m_chain_y" title="Direct link to m_chain_y" translate="no">​</a></h3>
+<p>Inquires the Y-coordinates, in pixels (with subpixel accuracy), of each edgel in the chains composing the model&#x27;s active edges. Coordinates are returned for all the active edge chains contained within the model and are relative to the model origin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the edgel.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_corner_radius"><code>M_CORNER_RADIUS</code><a href="#m_corner_radius" class="hash-link" aria-label="Direct link to m_corner_radius" title="Direct link to m_corner_radius" translate="no">​</a></h3>
+<p>Inquires the radius used to round corners of the model.  This is only valid for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_RECTANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_SQUARE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_DIAMOND</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_TRIANGLE</code></a>, and<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CROSS</code></a>. Attempting to call this value for any other model type will generate an error.  This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><code>M_SHAPE_...</code></a> type of Model Finder result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the radius, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coverage_max"><code>M_COVERAGE_MAX</code><a href="#m_coverage_max" class="hash-link" aria-label="Direct link to m_coverage_max" title="Direct link to m_coverage_max" translate="no">​</a></h3>
+<p>Inquires the maximum expected model coverage.  This inquire type is only supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the maximum expected model coverage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coverage_min"><code>M_COVERAGE_MIN</code><a href="#m_coverage_min" class="hash-link" aria-label="Direct link to m_coverage_min" title="Direct link to m_coverage_min" translate="no">​</a></h3>
+<p>Inquires the minimum expected model coverage.  This inquire type is only supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum expected model coverage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_deviation_tolerance"><code>M_DEVIATION_TOLERANCE</code><a href="#m_deviation_tolerance" class="hash-link" aria-label="Direct link to m_deviation_tolerance" title="Direct link to m_deviation_tolerance" translate="no">​</a></h3>
+<p>Inquires the tolerance for finding deformed rectangles or segments, for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context, respectively, given the other specified Model Finder constraints.  This inquire type is only supported for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_RECTANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_SEGMENT</code></a> types of models in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the tolerance as a percentage of the allowable deformation of a rectangle or segment, given the other Model Finder constraints.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_tolerance_to_circle"><code>M_ELLIPSE_TOLERANCE_TO_CIRCLE</code><a href="#m_ellipse_tolerance_to_circle" class="hash-link" aria-label="Direct link to m_ellipse_tolerance_to_circle" title="Direct link to m_ellipse_tolerance_to_circle" translate="no">​</a></h3>
+<p>Inquires the tolerance for approximating the aspect ratio of an ellipse occurrence to 1 (that is, reporting that the ellipse model matched a circle).  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ELLIPSE_TOLERANCE_TO_CIRCLE</code></a> is only supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 0.5</code> <em>(default)</em></td><td>Specifies the tolerance applied to the ellipse occurrence&#x27;s aspect ratio.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_error_weighting_factor"><code>M_FIT_ERROR_WEIGHTING_FACTOR</code><a href="#m_fit_error_weighting_factor" class="hash-link" aria-label="Direct link to m_fit_error_weighting_factor" title="Direct link to m_fit_error_weighting_factor" translate="no">​</a></h3>
+<p>Inquires the contribution of the fit error in the score and target score calculation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the fit error weighting factor, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_score_min"><code>M_FIT_SCORE_MIN</code><a href="#m_fit_score_min" class="hash-link" aria-label="Direct link to m_fit_score_min" title="Direct link to m_fit_score_min" translate="no">​</a></h3>
+<p>Inquires the minimum expected occurrence fit score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum expected occurrence fit score.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_foreground_value"><code>M_FOREGROUND_VALUE</code><a href="#m_foreground_value" class="hash-link" aria-label="Direct link to m_foreground_value" title="Direct link to m_foreground_value" translate="no">​</a></h3>
+<p>Inquires the foreground value of the model. The foreground is the interior of the shape.  This is only valid for predefined shape models. CAD-type models do not have a polarity. For these model types, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_ANY</code></a> will be returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CIRCLE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_dont_care_mask"><code>M_HAS_DONT_CARE_MASK</code><a href="#m_has_dont_care_mask" class="hash-link" aria-label="Direct link to m_has_dont_care_mask" title="Direct link to m_has_dont_care_mask" translate="no">​</a></h3>
+<p>Inquires whether the model has an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_DONT_CARE</code></a> mask applied to it.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_DONT_CARE</code></a> mask has not been applied to the model.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_DONT_CARE</code></a> mask has been applied to the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_flat_regions_mask"><code>M_HAS_FLAT_REGIONS_MASK</code><a href="#m_has_flat_regions_mask" class="hash-link" aria-label="Direct link to m_has_flat_regions_mask" title="Direct link to m_has_flat_regions_mask" translate="no">​</a></h3>
+<p>Inquires whether the model has an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_FLAT_REGIONS</code></a> mask applied to it.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_FLAT_REGIONS</code></a> mask has not been applied to the model.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_FLAT_REGIONS</code></a> mask has been applied to the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_weight_regions_mask"><code>M_HAS_WEIGHT_REGIONS_MASK</code><a href="#m_has_weight_regions_mask" class="hash-link" aria-label="Direct link to m_has_weight_regions_mask" title="Direct link to m_has_weight_regions_mask" translate="no">​</a></h3>
+<p>Inquires whether the model has an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_WEIGHT_REGIONS</code></a> mask applied to it.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_WEIGHT_REGIONS</code></a> mask has not been applied to the model.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><code>M_WEIGHT_REGIONS</code></a> mask has been applied to the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_height"><code>M_HEIGHT</code><a href="#m_height" class="hash-link" aria-label="Direct link to m_height" title="Direct link to m_height" translate="no">​</a></h3>
+<p>Inquires the height of the shape in the model.  This is only valid for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CROSS</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_DIAMOND</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_ELLIPSE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_RECTANGLE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_TRIANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the height of the shape, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_horizontal_thickness"><code>M_HORIZONTAL_THICKNESS</code><a href="#m_horizontal_thickness" class="hash-link" aria-label="Direct link to m_horizontal_thickness" title="Direct link to m_horizontal_thickness" translate="no">​</a></h3>
+<p>Inquires the horizontal thickness of the cross in the model.  This is only valid for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CROSS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the horizontal thickness of the cross, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_inner_radius"><code>M_INNER_RADIUS</code><a href="#m_inner_radius" class="hash-link" aria-label="Direct link to m_inner_radius" title="Direct link to m_inner_radius" translate="no">​</a></h3>
+<p>Inquires the inner radius of the ring in the model.  This is only valid for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_RING</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the inner radius of the ring, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_length"><code>M_LENGTH</code><a href="#m_length" class="hash-link" aria-label="Direct link to m_length" title="Direct link to m_length" translate="no">​</a></h3>
+<p>Inquires the length of the segment in the model.  This is only valid for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_SEGMENT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the length of the segment, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_angle"><code>M_MIN_SEPARATION_ANGLE</code><a href="#m_min_separation_angle" class="hash-link" aria-label="Direct link to m_min_separation_angle" title="Direct link to m_min_separation_angle" translate="no">​</a></h3>
+<p>Inquires the minimum angular separation required for two occurrences to be considered distinct matches. This value is an absolute angle value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Disables the minimum angle separation criteria.</td></tr><tr><td><code>0.0 &lt; Value &lt;= 180.0</code> <em>(default)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_aspect_ratio"><code>M_MIN_SEPARATION_ASPECT_RATIO</code><a href="#m_min_separation_aspect_ratio" class="hash-link" aria-label="Direct link to m_min_separation_aspect_ratio" title="Direct link to m_min_separation_aspect_ratio" translate="no">​</a></h3>
+<p>Inquires the minimum separation required in aspect ratios, for two occurrences to be considered distinct matches. This value is specified as an aspect ratio factor.  This inquire type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the minimum aspect ratio separation criteria.</td></tr><tr><td><code>1.0 &lt; Value &lt;= 4.0</code> <em>(default)</em></td><td>Specifies the criteria for minimum separation of aspect ratios.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_scale"><code>M_MIN_SEPARATION_SCALE</code><a href="#m_min_separation_scale" class="hash-link" aria-label="Direct link to m_min_separation_scale" title="Direct link to m_min_separation_scale" translate="no">​</a></h3>
+<p>Inquires the minimum separation required in scale for two occurrences to be considered distinct matches. This value is a scale factor.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the minimum scale separation criteria.</td></tr><tr><td><code>1.0 &lt; Value &lt;= 4.0</code> <em>(default)</em></td><td>Specifies the criteria for minimum separation in scale.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_x"><code>M_MIN_SEPARATION_X</code><a href="#m_min_separation_x" class="hash-link" aria-label="Direct link to m_min_separation_x" title="Direct link to m_min_separation_x" translate="no">​</a></h3>
+<p>Inquires the minimum separation required along the X-axis for two occurrences to be considered distinct matches. This value is a percentage of the model&#x27;s width at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_SCALE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the minimum separation in X criteria.</td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the minimum separation as a percentage of the model&#x27;s width at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_SCALE</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_y"><code>M_MIN_SEPARATION_Y</code><a href="#m_min_separation_y" class="hash-link" aria-label="Direct link to m_min_separation_y" title="Direct link to m_min_separation_y" translate="no">​</a></h3>
+<p>Inquires the minimum separation required along the Y-axis for two occurrences to be considered distinct matches. This value is a percentage of the model&#x27;s height at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_SCALE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the minimum separation in Y criteria.</td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the minimum separation as a percentage of the model&#x27;s height at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_SCALE</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_side_coverage"><code>M_MIN_SIDE_COVERAGE</code><a href="#m_min_side_coverage" class="hash-link" aria-label="Direct link to m_min_side_coverage" title="Direct link to m_min_side_coverage" translate="no">​</a></h3>
+<p>Inquires the minimum coverage on each of the sides of a rectangular model. Note that at least a portion of each side must be visible.  This inquire type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>1.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum side coverage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_aspect_ratio"><code>M_MODEL_ASPECT_RATIO</code><a href="#m_model_aspect_ratio" class="hash-link" aria-label="Direct link to m_model_aspect_ratio" title="Direct link to m_model_aspect_ratio" translate="no">​</a></h3>
+<p>Inquires the nominal aspect ratio factor for the model.  This inquire type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context. For other types of Model Finder contexts, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ASPECT_RATIO</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIRCLE_ASPECT_RATIO</code></td><td>Specifies the minimum possible value for this control type.</td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the value of the nominal aspect ratio for the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_aspect_ratio_max_factor"><code>M_MODEL_ASPECT_RATIO_MAX_FACTOR</code><a href="#m_model_aspect_ratio_max_factor" class="hash-link" aria-label="Direct link to m_model_aspect_ratio_max_factor" title="Direct link to m_model_aspect_ratio_max_factor" translate="no">​</a></h3>
+<p>Inquires the factor used to determine the upper limit (maximum permitted aspect ratio) of the model&#x27;s aspect ratio.  This inquire type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies that the maximum factor for the aspect ratio of a model is infinite.</td></tr><tr><td><code>Value &gt;= 1.0</code> <em>(default)</em></td><td>Specifies the factor that determines the maximum aspect ratio for a model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_aspect_ratio_min_factor"><code>M_MODEL_ASPECT_RATIO_MIN_FACTOR</code><a href="#m_model_aspect_ratio_min_factor" class="hash-link" aria-label="Direct link to m_model_aspect_ratio_min_factor" title="Direct link to m_model_aspect_ratio_min_factor" translate="no">​</a></h3>
+<p>Inquires he factor used to determine the lower limit (minimum permitted aspect ratio) of the model&#x27;s aspect ratio.  This inquire type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIRCLE_ASPECT_RATIO</code></td><td>Specifies the minimum factor for the aspect ratio of a model.</td></tr><tr><td><code>0.0 &lt; Value &lt;= 1.0</code> <em>(default)</em></td><td>Specifies the factor that determines the minimum aspect ratio for a model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_image_origin_x"><code>M_MODEL_IMAGE_ORIGIN_X</code><a href="#m_model_image_origin_x" class="hash-link" aria-label="Direct link to m_model_image_origin_x" title="Direct link to m_model_image_origin_x" translate="no">​</a></h3>
+<p>Inquires the X-coordinate of the model origin, relative to the top-left corner of the smallest buffer that can contain the model box (the model and its margins). The size of this buffer can be inquired using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_Y</code></a>.  This inquire type can be useful if you want to draw a shape at the center of the model origin (the center of the predefined-shape model).  To inquire the X-coordinate of the reference axis origin relative to the model origin, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_REFERENCE_X</code></a>.  &gt; <strong>Note:</strong> Note that the model origin for predefined-shape models is the center of the shape.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the X-coordinate of the model origin, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_image_origin_y"><code>M_MODEL_IMAGE_ORIGIN_Y</code><a href="#m_model_image_origin_y" class="hash-link" aria-label="Direct link to m_model_image_origin_y" title="Direct link to m_model_image_origin_y" translate="no">​</a></h3>
+<p>Inquires the Y-coordinate of the model origin, relative to the top-left corner of the smallest buffer that can contain the model box (the model and its margins). The size of this buffer can be inquired using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_Y</code></a>.  This inquire type can be useful if you want to draw a shape at the center of the model origin (the center of the predefined-shape model).  To inquire the Y-coordinate of the reference axis origin relative to the model origin, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_REFERENCE_X</code></a>.  &gt; <strong>Note:</strong> Note that the model origin for predefined-shape models is the center of the shape.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the Y-coordinate of the model origin, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_type"><code>M_MODEL_TYPE</code><a href="#m_model_type" class="hash-link" aria-label="Direct link to m_model_type" title="Direct link to m_model_type" translate="no">​</a></h3>
+<p>Inquires the type of model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DXF_FILE</code></td><td>Specifies a model defined from the entities in the specified CAD DXF file.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_chained_edgels"><code>M_NUMBER_OF_CHAINED_EDGELS</code><a href="#m_number_of_chained_edgels" class="hash-link" aria-label="Direct link to m_number_of_chained_edgels" title="Direct link to m_number_of_chained_edgels" translate="no">​</a></h3>
+<p>Inquires the total number of chained edgels in the active edges of the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of chained edgels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_original_x"><code>M_ORIGINAL_X</code><a href="#m_original_x" class="hash-link" aria-label="Direct link to m_original_x" title="Direct link to m_original_x" translate="no">​</a></h3>
+<p>Inquires the X-coordinate of the model&#x27;s reference axis origin, relative to the top-left corner of the model source image. This is only valid for image-type and Edge Finder-type models.  To inquire the X-coordinate of the reference axis origin relative to the model origin, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_REFERENCE_X</code></a>.  &gt; <strong>Note:</strong> Note that the model origin for image-type and Edge Finder-type models is the center of the upper left pixel of the model image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the model&#x27;s reference axis origin.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_original_y"><code>M_ORIGINAL_Y</code><a href="#m_original_y" class="hash-link" aria-label="Direct link to m_original_y" title="Direct link to m_original_y" translate="no">​</a></h3>
+<p>Inquires the Y-coordinate of the model&#x27;s reference axis origin, relative to the top-left corner of the model source image This is only valid for image-type and Edge Finder-type models.  To inquire the Y-coordinate of the reference axis origin relative to the model origin, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_REFERENCE_Y</code></a>.  &gt; <strong>Note:</strong> Note that the model origin for image-type and Edge Finder-type models is the center of the upper left pixel of the model image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the model&#x27;s reference axis origin.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_outer_radius"><code>M_OUTER_RADIUS</code><a href="#m_outer_radius" class="hash-link" aria-label="Direct link to m_outer_radius" title="Direct link to m_outer_radius" translate="no">​</a></h3>
+<p>Inquires the outer radius of the ring in the model.  This is only valid for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_RING</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the outer radius of the ring, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_scale"><code>M_PIXEL_SCALE</code><a href="#m_pixel_scale" class="hash-link" aria-label="Direct link to m_pixel_scale" title="Direct link to m_pixel_scale" translate="no">​</a></h3>
+<p>Inquires the pixel scale of the model, if it is a synthetic model.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_PIXEL_SCALE</code></a> is used for the match if the target is not calibrated; if the target is calibrated, this value is not used for the match nor for the returned results. Regardless if calibrated, this value will affect<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_Y</code></a> and it will also be used for draw operations.  This is only valid for synthetic models.  This inquire type is not supported for models defined in an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these types of contexts, model units are interpreted to be in the units of the target. If the target is calibrated, the units are interpreted to be in calibrated units. If the target is not, the units are interpreted to be in pixel units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default value of the pixel scale.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the pixel scale.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_polarity"><code>M_POLARITY</code><a href="#m_polarity" class="hash-link" aria-label="Direct link to m_polarity" title="Direct link to m_polarity" translate="no">​</a></h3>
+<p>Inquires the expected polarity of occurrences relative to the model.  This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.</td></tr><tr><td><code>M_ANY</code></td><td>Specifies that the occurrences can be a mixture of polarities.</td></tr><tr><td><code>M_REVERSE</code></td><td>Specifies that the polarity of occurrences is the reverse of that of the model.</td></tr><tr><td><code>M_SAME</code></td><td>Specifies that the polarity of occurrences is the same as that of the model.</td></tr><tr><td><code>M_SAME_OR_REVERSE</code></td><td>Specifies that the polarity of occurrences can be either the same or the reverse of that of the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_delta_neg_x"><code>M_POSITION_DELTA_NEG_X</code><a href="#m_position_delta_neg_x" class="hash-link" aria-label="Direct link to m_position_delta_neg_x" title="Direct link to m_position_delta_neg_x" translate="no">​</a></h3>
+<p>Inquires the position range, in the negative X-direction relative to the nominal search position.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies the position range as the entire image plane in the negative X-direction.</td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the position range&#x27;s negative X-offset, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the offset in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_delta_neg_y"><code>M_POSITION_DELTA_NEG_Y</code><a href="#m_position_delta_neg_y" class="hash-link" aria-label="Direct link to m_position_delta_neg_y" title="Direct link to m_position_delta_neg_y" translate="no">​</a></h3>
+<p>Inquires the position range, in the negative Y-direction relative to the nominal search position.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies the position range as the entire image plane in the negative Y-direction.</td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the position range&#x27;s negative Y-offset, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the offset in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_delta_pos_x"><code>M_POSITION_DELTA_POS_X</code><a href="#m_position_delta_pos_x" class="hash-link" aria-label="Direct link to m_position_delta_pos_x" title="Direct link to m_position_delta_pos_x" translate="no">​</a></h3>
+<p>Inquires the position range, in the positive X-direction relative to the nominal search position.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies the position range as the entire image plane in the positive X-direction.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the position range&#x27;s positive X-offset, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the offset in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_delta_pos_y"><code>M_POSITION_DELTA_POS_Y</code><a href="#m_position_delta_pos_y" class="hash-link" aria-label="Direct link to m_position_delta_pos_y" title="Direct link to m_position_delta_pos_y" translate="no">​</a></h3>
+<p>Inquires the position range, in the positive Y-direction relative to the nominal search position.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies the position range as the entire image plane in the positive Y-direction.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the position range&#x27;s positive Y-offset, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the offset in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_x"><code>M_POSITION_X</code><a href="#m_position_x" class="hash-link" aria-label="Direct link to m_position_x" title="Direct link to m_position_x" translate="no">​</a></h3>
+<p>Inquires the nominal search position for the X-coordinate.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALL</code> <em>(default)</em></td><td>Specifies all X-coordinates.</td></tr><tr><td><code>Value</code></td><td>Specifies the nominal search position, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the position in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_y"><code>M_POSITION_Y</code><a href="#m_position_y" class="hash-link" aria-label="Direct link to m_position_y" title="Direct link to m_position_y" translate="no">​</a></h3>
+<p>Inquires the nominal search position for the Y-coordinate.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALL</code> <em>(default)</em></td><td>Specifies all Y-coordinates.</td></tr><tr><td><code>Value</code></td><td>Specifies the nominal search position, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the position in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_radius"><code>M_RADIUS</code><a href="#m_radius" class="hash-link" aria-label="Direct link to m_radius" title="Direct link to m_radius" translate="no">​</a></h3>
+<p>Inquires the radius of the circle in the model.  This is only valid for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CIRCLE</code></a>.  This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the radius of the circle, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_angle"><code>M_REFERENCE_ANGLE</code><a href="#m_reference_angle" class="hash-link" aria-label="Direct link to m_reference_angle" title="Direct link to m_reference_angle" translate="no">​</a></h3>
+<p>Inquires the reference axis angle of the model.  By default, for an ellipse model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context, the reference axis is aligned with the principal axis of the model (the width).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_x"><code>M_REFERENCE_X</code><a href="#m_reference_x" class="hash-link" aria-label="Direct link to m_reference_x" title="Direct link to m_reference_x" translate="no">​</a></h3>
+<p>Inquires the X-coordinate, in pixels, of the reference axis origin of the model, relative to the model origin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies that the default X-offset will be used.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-offset value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_y"><code>M_REFERENCE_Y</code><a href="#m_reference_y" class="hash-link" aria-label="Direct link to m_reference_y" title="Direct link to m_reference_y" translate="no">​</a></h3>
+<p>Inquires the Y-coordinate, in pixels, of the reference axis origin of the model, relative to the model origin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies that the default Y-offset will be used.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-offset value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sagitta_tolerance"><code>M_SAGITTA_TOLERANCE</code><a href="#m_sagitta_tolerance" class="hash-link" aria-label="Direct link to m_sagitta_tolerance" title="Direct link to m_sagitta_tolerance" translate="no">​</a></h3>
+<p>Inquires the tolerance for finding deformed circles (allowable radii variation) for an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CIRCLE</code></a> or an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_ELLIPSE</code></a> type of model.  This inquire type is only supported for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CIRCLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_ELLIPSE</code></a> types of models in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the tolerance as a percentage of the allowable radii variation given the other Model Finder constraints.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale"><code>M_SCALE</code><a href="#m_scale" class="hash-link" aria-label="Direct link to m_scale" title="Direct link to m_scale" translate="no">​</a></h3>
+<p>Inquires the nominal search scale.  For a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context, scale calculations are taken with respect to the model&#x27;s width. For a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context, scale calculations are taken with respect to the model&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the value of the nominal search scale.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_max_factor"><code>M_SCALE_MAX_FACTOR</code><a href="#m_scale_max_factor" class="hash-link" aria-label="Direct link to m_scale_max_factor" title="Direct link to m_scale_max_factor" translate="no">​</a></h3>
+<p>Inquires the factor used to determine the upper limit (maximum permitted scale) of the scale range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies that the upper limit of the scale range is infinite.</td></tr><tr><td><code>1.0 &lt;= Value &lt;= 2.0</code> <em>(default)</em></td><td>Specifies the factor that determines the maximum scale of the occurrence for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context.</td></tr><tr><td><code>Value &gt;= 1.0</code></td><td>Specifies the factor that determines the maximum scale of the occurrence for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_min_factor"><code>M_SCALE_MIN_FACTOR</code><a href="#m_scale_min_factor" class="hash-link" aria-label="Direct link to m_scale_min_factor" title="Direct link to m_scale_min_factor" translate="no">​</a></h3>
+<p>Inquires the factor used to determine the lower limit (minimum permitted scale) of the scale range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 1.0</code> <em>(default)</em></td><td>Specifies the factor that determines the minimum scale of the occurrence for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</td></tr><tr><td><code>0.5 &lt;= Value &lt;= 1.0</code></td><td>Specifies the factor that determines the minimum scale of the occurrence for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_aspect_ratio_constraint"><code>M_SEARCH_ASPECT_RATIO_CONSTRAINT</code><a href="#m_search_aspect_ratio_constraint" class="hash-link" aria-label="Direct link to m_search_aspect_ratio_constraint" title="Direct link to m_search_aspect_ratio_constraint" translate="no">​</a></h3>
+<p>Inquires whether to constrain candidates to the nearest bound of the aspect ratio range if the candidate is outside of the range.  This inquire type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that for a candidate to be considered an occurrence, it must have an aspect ratio within the defined aspect ratio range.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to consider candidates with an aspect ratio that falls outside of the specified aspect ratio range, but constrain their fit to the closest bound of the aspect ratio range, and reduce their score accordingly.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_segment_consistent_gradient"><code>M_SEGMENT_CONSISTENT_GRADIENT</code><a href="#m_segment_consistent_gradient" class="hash-link" aria-label="Direct link to m_segment_consistent_gradient" title="Direct link to m_segment_consistent_gradient" translate="no">​</a></h3>
+<p>Inquires whether the gradients of the segment model occurrences need to be consistent.  This inquire type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the segment model occurrences can have the same gradients or reverse gradients.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the gradients of the segment model occurrences must be consistent.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_user_label"><code>M_USER_LABEL</code><a href="#m_user_label" class="hash-link" aria-label="Direct link to m_user_label" title="Direct link to m_user_label" translate="no">​</a></h3>
+<p>Inquires the user-defined label.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NO_LABEL</code> <em>(default)</em></td><td>Specifies that no user label is associated with the model.</td></tr><tr><td><code>Value</code></td><td>Specifies the user label of the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_valid"><code>M_VALID</code><a href="#m_valid" class="hash-link" aria-label="Direct link to m_valid" title="Direct link to m_valid" translate="no">​</a></h3>
+<p>Inquires whether the model is valid or not.  Note that a synthetic model is invalid if <code>_size of the model box _ * [</code>M_PIXEL_SCALE<code>](../../Reference/mod/MmodControl.md) * [</code>M_SCALE<code>](../../Reference/mod/MmodControl.md)</code> is greater than 1024 pixels in the X-direction or the Y-direction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the model is not valid.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the model is valid.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_vertical_thickness"><code>M_VERTICAL_THICKNESS</code><a href="#m_vertical_thickness" class="hash-link" aria-label="Direct link to m_vertical_thickness" title="Direct link to m_vertical_thickness" translate="no">​</a></h3>
+<p>Inquires the vertical thickness of the cross in the model.  This is only valid for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CROSS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vertical thickness of the cross, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_width"><code>M_WIDTH</code><a href="#m_width" class="hash-link" aria-label="Direct link to m_width" title="Direct link to m_width" translate="no">​</a></h3>
+<p>Inquires the width of the shape in the model.  This is only valid for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CROSS</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_DIAMOND</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_ELLIPSE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_RECTANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_SQUARE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_TRIANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the width of the shape, in model units.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values">Combination Constants — For determining the required array size (number of elements) to store the returned values<a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" title="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required array size (number of elements) to store the returned values.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-model-using-its-user-label">For inquiring about a model using its user label<a href="#for-inquiring-about-a-model-using-its-user-label" class="hash-link" aria-label="Direct link to For inquiring about a model using its user label" title="Direct link to For inquiring about a model using its user label" translate="no">​</a></h3>
+<p>For model inquiries using the model&#x27;s user label l(that is, when the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>Index</code></a> parameter is set to the user label of a model), the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>InquireType</code></a> parameter can be set to the following:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_index_from_label"><code>M_INDEX_FROM_LABEL</code><a href="#m_index_from_label" class="hash-link" aria-label="Direct link to m_index_from_label" title="Direct link to m_index_from_label" translate="no">​</a></h3>
+<p>Inquires the model index associated with a model user label if the user label is used. Pass the user label as the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>Index</code></a> parameter.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that the user label is invalid. This is returned if the specified model label is not associated with a model.</td></tr><tr><td><code>Value</code></td><td>Specifies the model index that is associated with the specified user label.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-result-buffer">For a result buffer<a href="#for-a-result-buffer" class="hash-link" aria-label="Direct link to For a result buffer" title="Direct link to For a result buffer" translate="no">​</a></h3>
+<p>For result buffer inquiries, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>InquireType</code></a> parameter can be set to one of the following:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_target_edges_saved"><code>M_HAS_TARGET_EDGES_SAVED</code><a href="#m_has_target_edges_saved" class="hash-link" aria-label="Direct link to m_has_target_edges_saved" title="Direct link to m_has_target_edges_saved" translate="no">​</a></h3>
+<p>Inquires whether target edges have been saved.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SAVE_TARGET_EDGES</code></a> must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ENABLE</code></a> to save target edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that target edges have not been saved.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that target edges have been saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mod_define_compatible"><code>M_MOD_DEFINE_COMPATIBLE</code><a href="#m_mod_define_compatible" class="hash-link" aria-label="Direct link to m_mod_define_compatible" title="Direct link to m_mod_define_compatible" translate="no">​</a></h3>
+<p>Inquires whether the information necessary to define a model from an occurrence will be saved in the result buffer.  This inquire type is not supported for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><code>M_SHAPE_...</code></a> type of Model Finder result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to save any information.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to save all the necessary information.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_output_units"><code>M_RESULT_OUTPUT_UNITS</code><a href="#m_result_output_units" class="hash-link" aria-label="Direct link to m_result_output_units" title="Direct link to m_result_output_units" translate="no">​</a></h3>
+<p>Inquires whether results are returned in pixel or world units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_CALIBRATION</code> <em>(default)</em></td><td>Specifies that results are returned in world units if the result was calculated on an image associated with a camera calibration context; otherwise, specifies that results are returned in pixel units.</td></tr><tr><td><code>M_PIXEL</code></td><td>Specifies that results are returned in pixel units, with respect to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies that results are returned in world units, with respect to the relative coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_type"><code>M_RESULT_TYPE</code><a href="#m_result_type" class="hash-link" aria-label="Direct link to m_result_type" title="Direct link to m_result_type" translate="no">​</a></h3>
+<p>Inquires the type of result buffer allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that the Model Finder result buffer can hold results from a search with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of context.</td></tr><tr><td><code>M_SHAPE_CIRCLE</code></td><td>Specifies that the Model Finder result buffer can hold results from a search with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a>type of context.</td></tr><tr><td><code>M_SHAPE_ELLIPSE</code></td><td>Specifies that the Model Finder result buffer can hold results from a search with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a>type of context.</td></tr><tr><td><code>M_SHAPE_RECTANGLE</code></td><td>Specifies that the Model Finder result buffer can hold results from a search with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a>type of context.</td></tr><tr><td><code>M_SHAPE_SEGMENT</code></td><td>Specifies that the Model Finder result buffer can hold results from a search with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a>type of context.</td></tr><tr><td><code>M_GEOMETRIC</code></td><td>Specifies that the Model Finder result buffer can hold results from a search with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> type of context.</td></tr><tr><td><code>M_GEOMETRIC_CONTROLLED</code></td><td>Specifies that the Model Finder result buffer can hold results from a search with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of context.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-the-default-value-of-an-inquire-type">Combination Constants — For inquiring the default value of an inquire type<a href="#combination-constants--for-inquiring-the-default-value-of-an-inquire-type" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring the default value of an inquire type" title="Direct link to Combination Constants — For inquiring the default value of an inquire type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the default value of an inquire type, regardless of the current value of the inquire type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h4>
+<p>Inquires the default value of the specified inquire type.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-whether-an-inquire-type-is-supported">Combination Constants — For inquiring whether an inquire type is supported<a href="#combination-constants--for-inquiring-whether-an-inquire-type-is-supported" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring whether an inquire type is supported" title="Direct link to Combination Constants — For inquiring whether an inquire type is supported" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether an inquire type is supported.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_supported"><code>M_SUPPORTED</code><a href="#m_supported" class="hash-link" aria-label="Direct link to m_supported" title="Direct link to m_supported" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is supported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not supported.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is supported.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_id"><code>M_TYPE_AIL_ID</code><a href="#m_type_ail_id" class="hash-link" aria-label="Direct link to m_type_ail_id" title="Direct link to m_type_ail_id" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_ID</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT</em>. If the requested information does not fit into an <em>AIL_INT</em>, this function will return <code>M_NULL</code>or truncate the information.</p>
+<p>This inquire type is not supported for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</p>
+<p>This inquire type is only valid for synthetic models.</p>
+<p>The model box is defined by the bounding box of the model&#x27;s active edges plus the specified margins. You can inquire the margins using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_BOX_MARGIN_...</code></a>.</p>
+<p>This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a> type of Model Finder context.</p>
+<p>This inquire type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</p>
+<p>This inquire type is only supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MmodGetResult</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MmodMask</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#index-in-ail_int" class="table-of-contents__link toc-highlight"><code>Index</code> <em>(in, AIL_INT)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-about-the-number-of-occurrences-to-find-for-the-entire-context-or-an-individual-model-specified-using-its-index" class="table-of-contents__link toc-highlight">For inquiring about the number of occurrences to find for the entire context or an individual model specified using its index</a></li><li><a href="#m_number" class="table-of-contents__link toc-highlight"><code>M_NUMBER</code></a></li><li><a href="#for-inquiring-about-the-context-or-result-buffer" class="table-of-contents__link toc-highlight">For inquiring about the context or result buffer</a></li><li><a href="#m_owner_system" class="table-of-contents__link toc-highlight"><code>M_OWNER_SYSTEM</code></a></li><li><a href="#for-inquiring-about-the-context" class="table-of-contents__link toc-highlight">For inquiring about the context</a></li><li><a href="#m_accuracy" class="table-of-contents__link toc-highlight"><code>M_ACCURACY</code></a></li><li><a href="#m_active_edgels" class="table-of-contents__link toc-highlight"><code>M_ACTIVE_EDGELS</code></a></li><li><a href="#m_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_ASPECT_RATIO</code></a></li><li><a href="#m_context_type" class="table-of-contents__link toc-highlight"><code>M_CONTEXT_TYPE</code></a></li><li><a href="#m_detail_level" class="table-of-contents__link toc-highlight"><code>M_DETAIL_LEVEL</code></a></li><li><a href="#m_edge_accuracy" class="table-of-contents__link toc-highlight"><code>M_EDGE_ACCURACY</code></a></li><li><a href="#m_first_level" class="table-of-contents__link toc-highlight"><code>M_FIRST_LEVEL</code></a></li><li><a href="#m_last_level" class="table-of-contents__link toc-highlight"><code>M_LAST_LEVEL</code></a></li><li><a href="#m_modification_count" class="table-of-contents__link toc-highlight"><code>M_MODIFICATION_COUNT</code></a></li><li><a href="#m_number_models" class="table-of-contents__link toc-highlight"><code>M_NUMBER_MODELS</code></a></li><li><a href="#m_preprocessed" class="table-of-contents__link toc-highlight"><code>M_PREPROCESSED</code></a></li><li><a href="#m_resolution_coarseness_level" class="table-of-contents__link toc-highlight"><code>M_RESOLUTION_COARSENESS_LEVEL</code></a></li><li><a href="#m_save_target_edges" class="table-of-contents__link toc-highlight"><code>M_SAVE_TARGET_EDGES</code></a></li><li><a href="#m_search_angle_range" class="table-of-contents__link toc-highlight"><code>M_SEARCH_ANGLE_RANGE</code></a></li><li><a href="#m_search_position_range" class="table-of-contents__link toc-highlight"><code>M_SEARCH_POSITION_RANGE</code></a></li><li><a href="#m_search_scale_range" class="table-of-contents__link toc-highlight"><code>M_SEARCH_SCALE_RANGE</code></a></li><li><a href="#m_shared_edges" class="table-of-contents__link toc-highlight"><code>M_SHARED_EDGES</code></a></li><li><a href="#m_smoothness" class="table-of-contents__link toc-highlight"><code>M_SMOOTHNESS</code></a></li><li><a href="#m_speed" class="table-of-contents__link toc-highlight"><code>M_SPEED</code></a></li><li><a href="#m_target_caching" class="table-of-contents__link toc-highlight"><code>M_TARGET_CACHING</code></a></li><li><a href="#m_timeout" class="table-of-contents__link toc-highlight"><code>M_TIMEOUT</code></a></li><li><a href="#for-inquiring-about-a-model-using-its-index" class="table-of-contents__link toc-highlight">For inquiring about a model using its index</a></li><li><a href="#m_acceptance" class="table-of-contents__link toc-highlight"><code>M_ACCEPTANCE</code></a></li><li><a href="#m_acceptance_target" class="table-of-contents__link toc-highlight"><code>M_ACCEPTANCE_TARGET</code></a></li><li><a href="#m_alloc_offset_x" class="table-of-contents__link toc-highlight"><code>M_ALLOC_OFFSET_X</code></a></li><li><a href="#m_alloc_offset_y" class="table-of-contents__link toc-highlight"><code>M_ALLOC_OFFSET_Y</code></a></li><li><a href="#m_alloc_sign" class="table-of-contents__link toc-highlight"><code>M_ALLOC_SIGN</code></a></li><li><a href="#m_alloc_size_band" class="table-of-contents__link toc-highlight"><code>M_ALLOC_SIZE_BAND</code></a></li><li><a href="#m_alloc_size_bit" class="table-of-contents__link toc-highlight"><code>M_ALLOC_SIZE_BIT</code></a></li><li><a href="#m_alloc_size_x" class="table-of-contents__link toc-highlight"><code>M_ALLOC_SIZE_X</code></a></li><li><a href="#m_alloc_size_y" class="table-of-contents__link toc-highlight"><code>M_ALLOC_SIZE_Y</code></a></li><li><a href="#m_alloc_type" class="table-of-contents__link toc-highlight"><code>M_ALLOC_TYPE</code></a></li><li><a href="#m_angle" class="table-of-contents__link toc-highlight"><code>M_ANGLE</code></a></li><li><a href="#m_angle_delta_neg" class="table-of-contents__link toc-highlight"><code>M_ANGLE_DELTA_NEG</code></a></li><li><a href="#m_angle_delta_pos" class="table-of-contents__link toc-highlight"><code>M_ANGLE_DELTA_POS</code></a></li><li><a href="#m_angle_multiple_range" class="table-of-contents__link toc-highlight"><code>M_ANGLE_MULTIPLE_RANGE</code></a></li><li><a href="#m_angle_region" class="table-of-contents__link toc-highlight"><code>M_ANGLE_REGION</code></a></li><li><a href="#m_associated_calibration" class="table-of-contents__link toc-highlight"><code>M_ASSOCIATED_CALIBRATION</code></a></li><li><a href="#m_box_margin_bottom" class="table-of-contents__link toc-highlight"><code>M_BOX_MARGIN_BOTTOM</code></a></li><li><a href="#m_box_margin_left" class="table-of-contents__link toc-highlight"><code>M_BOX_MARGIN_LEFT</code></a></li><li><a href="#m_box_margin_right" class="table-of-contents__link toc-highlight"><code>M_BOX_MARGIN_RIGHT</code></a></li><li><a href="#m_box_margin_top" class="table-of-contents__link toc-highlight"><code>M_BOX_MARGIN_TOP</code></a></li><li><a href="#m_box_offset_x" class="table-of-contents__link toc-highlight"><code>M_BOX_OFFSET_X</code></a></li><li><a href="#m_box_offset_y" class="table-of-contents__link toc-highlight"><code>M_BOX_OFFSET_Y</code></a></li><li><a href="#m_box_size_x" class="table-of-contents__link toc-highlight"><code>M_BOX_SIZE_X</code></a></li><li><a href="#m_box_size_y" class="table-of-contents__link toc-highlight"><code>M_BOX_SIZE_Y</code></a></li><li><a href="#m_cad_y_axis" class="table-of-contents__link toc-highlight"><code>M_CAD_Y_AXIS</code></a></li><li><a href="#m_certainty" class="table-of-contents__link toc-highlight"><code>M_CERTAINTY</code></a></li><li><a href="#m_certainty_target" class="table-of-contents__link toc-highlight"><code>M_CERTAINTY_TARGET</code></a></li><li><a href="#m_chain_angle" class="table-of-contents__link toc-highlight"><code>M_CHAIN_ANGLE</code></a></li><li><a href="#m_chain_index" class="table-of-contents__link toc-highlight"><code>M_CHAIN_INDEX</code></a></li><li><a href="#m_chain_x" class="table-of-contents__link toc-highlight"><code>M_CHAIN_X</code></a></li><li><a href="#m_chain_y" class="table-of-contents__link toc-highlight"><code>M_CHAIN_Y</code></a></li><li><a href="#m_corner_radius" class="table-of-contents__link toc-highlight"><code>M_CORNER_RADIUS</code></a></li><li><a href="#m_coverage_max" class="table-of-contents__link toc-highlight"><code>M_COVERAGE_MAX</code></a></li><li><a href="#m_coverage_min" class="table-of-contents__link toc-highlight"><code>M_COVERAGE_MIN</code></a></li><li><a href="#m_deviation_tolerance" class="table-of-contents__link toc-highlight"><code>M_DEVIATION_TOLERANCE</code></a></li><li><a href="#m_ellipse_tolerance_to_circle" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_TOLERANCE_TO_CIRCLE</code></a></li><li><a href="#m_fit_error_weighting_factor" class="table-of-contents__link toc-highlight"><code>M_FIT_ERROR_WEIGHTING_FACTOR</code></a></li><li><a href="#m_fit_score_min" class="table-of-contents__link toc-highlight"><code>M_FIT_SCORE_MIN</code></a></li><li><a href="#m_foreground_value" class="table-of-contents__link toc-highlight"><code>M_FOREGROUND_VALUE</code></a></li><li><a href="#m_has_dont_care_mask" class="table-of-contents__link toc-highlight"><code>M_HAS_DONT_CARE_MASK</code></a></li><li><a href="#m_has_flat_regions_mask" class="table-of-contents__link toc-highlight"><code>M_HAS_FLAT_REGIONS_MASK</code></a></li><li><a href="#m_has_weight_regions_mask" class="table-of-contents__link toc-highlight"><code>M_HAS_WEIGHT_REGIONS_MASK</code></a></li><li><a href="#m_height" class="table-of-contents__link toc-highlight"><code>M_HEIGHT</code></a></li><li><a href="#m_horizontal_thickness" class="table-of-contents__link toc-highlight"><code>M_HORIZONTAL_THICKNESS</code></a></li><li><a href="#m_inner_radius" class="table-of-contents__link toc-highlight"><code>M_INNER_RADIUS</code></a></li><li><a href="#m_length" class="table-of-contents__link toc-highlight"><code>M_LENGTH</code></a></li><li><a href="#m_min_separation_angle" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_ANGLE</code></a></li><li><a href="#m_min_separation_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_ASPECT_RATIO</code></a></li><li><a href="#m_min_separation_scale" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_SCALE</code></a></li><li><a href="#m_min_separation_x" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_X</code></a></li><li><a href="#m_min_separation_y" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_Y</code></a></li><li><a href="#m_min_side_coverage" class="table-of-contents__link toc-highlight"><code>M_MIN_SIDE_COVERAGE</code></a></li><li><a href="#m_model_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_MODEL_ASPECT_RATIO</code></a></li><li><a href="#m_model_aspect_ratio_max_factor" class="table-of-contents__link toc-highlight"><code>M_MODEL_ASPECT_RATIO_MAX_FACTOR</code></a></li><li><a href="#m_model_aspect_ratio_min_factor" class="table-of-contents__link toc-highlight"><code>M_MODEL_ASPECT_RATIO_MIN_FACTOR</code></a></li><li><a href="#m_model_image_origin_x" class="table-of-contents__link toc-highlight"><code>M_MODEL_IMAGE_ORIGIN_X</code></a></li><li><a href="#m_model_image_origin_y" class="table-of-contents__link toc-highlight"><code>M_MODEL_IMAGE_ORIGIN_Y</code></a></li><li><a href="#m_model_type" class="table-of-contents__link toc-highlight"><code>M_MODEL_TYPE</code></a></li><li><a href="#m_number_of_chained_edgels" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_CHAINED_EDGELS</code></a></li><li><a href="#m_original_x" class="table-of-contents__link toc-highlight"><code>M_ORIGINAL_X</code></a></li><li><a href="#m_original_y" class="table-of-contents__link toc-highlight"><code>M_ORIGINAL_Y</code></a></li><li><a href="#m_outer_radius" class="table-of-contents__link toc-highlight"><code>M_OUTER_RADIUS</code></a></li><li><a href="#m_pixel_scale" class="table-of-contents__link toc-highlight"><code>M_PIXEL_SCALE</code></a></li><li><a href="#m_polarity" class="table-of-contents__link toc-highlight"><code>M_POLARITY</code></a></li><li><a href="#m_position_delta_neg_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_DELTA_NEG_X</code></a></li><li><a href="#m_position_delta_neg_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_DELTA_NEG_Y</code></a></li><li><a href="#m_position_delta_pos_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_DELTA_POS_X</code></a></li><li><a href="#m_position_delta_pos_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_DELTA_POS_Y</code></a></li><li><a href="#m_position_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_X</code></a></li><li><a href="#m_position_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_Y</code></a></li><li><a href="#m_radius" class="table-of-contents__link toc-highlight"><code>M_RADIUS</code></a></li><li><a href="#m_reference_angle" class="table-of-contents__link toc-highlight"><code>M_REFERENCE_ANGLE</code></a></li><li><a href="#m_reference_x" class="table-of-contents__link toc-highlight"><code>M_REFERENCE_X</code></a></li><li><a href="#m_reference_y" class="table-of-contents__link toc-highlight"><code>M_REFERENCE_Y</code></a></li><li><a href="#m_sagitta_tolerance" class="table-of-contents__link toc-highlight"><code>M_SAGITTA_TOLERANCE</code></a></li><li><a href="#m_scale" class="table-of-contents__link toc-highlight"><code>M_SCALE</code></a></li><li><a href="#m_scale_max_factor" class="table-of-contents__link toc-highlight"><code>M_SCALE_MAX_FACTOR</code></a></li><li><a href="#m_scale_min_factor" class="table-of-contents__link toc-highlight"><code>M_SCALE_MIN_FACTOR</code></a></li><li><a href="#m_search_aspect_ratio_constraint" class="table-of-contents__link toc-highlight"><code>M_SEARCH_ASPECT_RATIO_CONSTRAINT</code></a></li><li><a href="#m_segment_consistent_gradient" class="table-of-contents__link toc-highlight"><code>M_SEGMENT_CONSISTENT_GRADIENT</code></a></li><li><a href="#m_user_label" class="table-of-contents__link toc-highlight"><code>M_USER_LABEL</code></a></li><li><a href="#m_valid" class="table-of-contents__link toc-highlight"><code>M_VALID</code></a></li><li><a href="#m_vertical_thickness" class="table-of-contents__link toc-highlight"><code>M_VERTICAL_THICKNESS</code></a></li><li><a href="#m_width" class="table-of-contents__link toc-highlight"><code>M_WIDTH</code></a></li><li><a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required array size (number of elements) to store the returned values</a></li><li><a href="#for-inquiring-about-a-model-using-its-user-label" class="table-of-contents__link toc-highlight">For inquiring about a model using its user label</a></li><li><a href="#m_index_from_label" class="table-of-contents__link toc-highlight"><code>M_INDEX_FROM_LABEL</code></a></li><li><a href="#for-a-result-buffer" class="table-of-contents__link toc-highlight">For a result buffer</a></li><li><a href="#m_has_target_edges_saved" class="table-of-contents__link toc-highlight"><code>M_HAS_TARGET_EDGES_SAVED</code></a></li><li><a href="#m_mod_define_compatible" class="table-of-contents__link toc-highlight"><code>M_MOD_DEFINE_COMPATIBLE</code></a></li><li><a href="#m_result_output_units" class="table-of-contents__link toc-highlight"><code>M_RESULT_OUTPUT_UNITS</code></a></li><li><a href="#m_result_type" class="table-of-contents__link toc-highlight"><code>M_RESULT_TYPE</code></a></li><li><a href="#combination-constants--for-inquiring-the-default-value-of-an-inquire-type" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring the default value of an inquire type</a></li><li><a href="#combination-constants--for-inquiring-whether-an-inquire-type-is-supported" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring whether an inquire type is supported</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

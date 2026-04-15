@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/dmr/MdmrInquireFont" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MdmrInquireFont | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MdmrInquireFont | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"dmr","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"},{"@type":"ListItem","position":2,"name":"MdmrInquireFont","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Collapse sidebar category &#x27;dmr&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrAlloc"><span title="MdmrAlloc" class="linkLabel_WmDU">MdmrAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrAllocResult"><span title="MdmrAllocResult" class="linkLabel_WmDU">MdmrAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><span title="MdmrControl" class="linkLabel_WmDU">MdmrControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><span title="MdmrControlFont" class="linkLabel_WmDU">MdmrControlFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlStringModel"><span title="MdmrControlStringModel" class="linkLabel_WmDU">MdmrControlStringModel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrDraw"><span title="MdmrDraw" class="linkLabel_WmDU">MdmrDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrExportFont"><span title="MdmrExportFont" class="linkLabel_WmDU">MdmrExportFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrFree"><span title="MdmrFree" class="linkLabel_WmDU">MdmrFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrGetResult"><span title="MdmrGetResult" class="linkLabel_WmDU">MdmrGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrImportFont"><span title="MdmrImportFont" class="linkLabel_WmDU">MdmrImportFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><span title="MdmrInquire" class="linkLabel_WmDU">MdmrInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><span title="MdmrInquireFont" class="linkLabel_WmDU">MdmrInquireFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireStringModel"><span title="MdmrInquireStringModel" class="linkLabel_WmDU">MdmrInquireStringModel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrName"><span title="MdmrName" class="linkLabel_WmDU">MdmrName</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrPreprocess"><span title="MdmrPreprocess" class="linkLabel_WmDU">MdmrPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrRead"><span title="MdmrRead" class="linkLabel_WmDU">MdmrRead</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrRestore"><span title="MdmrRestore" class="linkLabel_WmDU">MdmrRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrSave"><span title="MdmrSave" class="linkLabel_WmDU">MdmrSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrStream"><span title="MdmrStream" class="linkLabel_WmDU">MdmrStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span>dmr</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MdmrInquireFont</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MdmrInquireFont</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire about a global setting of a font in a SureDotOCR context, or inquire about a character in a font.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT </span><span class="token function" style="color:#d73a49">MdmrInquireFont</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID             ContextDmrId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">      </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64          FontLabelOrIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64          CharIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">         </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_CONST_TEXT_PTR CharNamePtr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">       </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64          InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">       </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">             UserVarPtr         </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires about a global setting of a font in a SureDotOCR context, or inquires about a character in a font. Font settings can be specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>MdmrControlFont</code></a>.</p>
+<p>Characters you are inquiring about are typically imported into a font with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrImportFont"><code>MdmrImportFont</code></a>. You can also inquire about characters added to a font with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>MdmrControlFont</code></a>.</p>
+<p>If the inquired setting is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>M_DEFAULT</code></a> (for example, in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>MdmrControlFont</code></a>), <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>MdmrInquireFont</code></a> will return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_DEFAULT</code></a>. To inquire the actual default value, add <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_DEFAULT</code></a> to the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>InquireType</code></a> parameter.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextdmrid-in-ail_id"><code>ContextDmrId</code> <em>(in, AIL_ID)</em><a href="#contextdmrid-in-ail_id" class="hash-link" aria-label="Direct link to contextdmrid-in-ail_id" title="Direct link to contextdmrid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the SureDotOCR context that contains the font about which to inquire. The context must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrAlloc"><code>MdmrAlloc</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fontlabelorindex-in-ail_int64"><code>FontLabelOrIndex</code> <em>(in, AIL_INT64)</em><a href="#fontlabelorindex-in-ail_int64" class="hash-link" aria-label="Direct link to fontlabelorindex-in-ail_int64" title="Direct link to fontlabelorindex-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the font about which to inquire. Set this parameter to one of the values below:</p>
+<p><em>For specifying the font</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FONT_INDEX</code></td><td>Specifies to inquire about the font by indicating its index.</td></tr><tr><td><code>M_FONT_LABEL</code></td><td>Specifies to inquire about the font by indicating its label.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="charindex-in-ail_int64"><code>CharIndex</code> <em>(in, AIL_INT64)</em><a href="#charindex-in-ail_int64" class="hash-link" aria-label="Direct link to charindex-in-ail_int64" title="Direct link to charindex-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the index of a character in the font, if required. Set this parameter to one of the values below:</p>
+<p><em>For specifying the index of a character</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that this parameter is not required.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the index of a character.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="charnameptr-in-ail_const_text_ptr"><code>CharNamePtr</code> <em>(in, AIL_CONST_TEXT_PTR)</em><a href="#charnameptr-in-ail_const_text_ptr" class="hash-link" aria-label="Direct link to charnameptr-in-ail_const_text_ptr" title="Direct link to charnameptr-in-ail_const_text_ptr" translate="no">​</a></h3>
+<p>Specifies the name of a character in the font, if required. Set this parameter to one of the values below:</p>
+<p><em>For specifying the name of the character</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code></td><td>Specifies that this parameter is not required.</td></tr><tr><td><code>&quot;CharName&quot;</code></td><td>Specifies the character name. For example, &#x27;A&#x27; is the name that identifies the first uppercase letter of the English alphabet. When using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharNamePtr</code></a> parameter to specify a character, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharIndex</code></a>parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_DEFAULT</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of inquire to perform.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>MdmrInquireFont</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-global-setting-of-a-font">For inquiring about a global setting of a font<a href="#for-inquiring-about-a-global-setting-of-a-font" class="hash-link" aria-label="Direct link to For inquiring about a global setting of a font" title="Direct link to For inquiring about a global setting of a font" translate="no">​</a></h3>
+<p>To inquire about a global setting of a font, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>InquireType</code></a> parameter to one of the values below. Unless otherwise specified, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>FontLabelOrIndex</code></a> parameter to the label or index of a font, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharIndex</code></a>parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_DEFAULT</code></a>, and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharNamePtr</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_NULL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_index_value"><code>M_FONT_INDEX_VALUE</code><a href="#m_font_index_value" class="hash-link" aria-label="Direct link to m_font_index_value" title="Direct link to m_font_index_value" translate="no">​</a></h3>
+<p>Inquires the index value of a font. Set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>FontLabelOrIndex</code></a> parameter to the font&#x27;s label.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that the font to which you are referring does not exist in the context.</td></tr><tr><td><code>0 &lt;= Value &lt;= 255</code></td><td>Specifies the index of the font.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_label_value"><code>M_FONT_LABEL_VALUE</code><a href="#m_font_label_value" class="hash-link" aria-label="Direct link to m_font_label_value" title="Direct link to m_font_label_value" translate="no">​</a></h3>
+<p>Inquires the label value of the font. Set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>FontLabelOrIndex</code></a> parameter to the font&#x27;s index.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt; Value &lt; 2097152</code></td><td>Specifies the font&#x27;s label value. If SureDotOCR cannot return the requested information (no such font exists in the context), you will get an error.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_size_columns"><code>M_FONT_SIZE_COLUMNS</code><a href="#m_font_size_columns" class="hash-link" aria-label="Direct link to m_font_size_columns" title="Direct link to m_font_size_columns" translate="no">​</a></h3>
+<p>Inquires the number of columns in the font&#x27;s dot-matrix template.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the number of columns, as an <em>integer</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_size_rows"><code>M_FONT_SIZE_ROWS</code><a href="#m_font_size_rows" class="hash-link" aria-label="Direct link to m_font_size_rows" title="Direct link to m_font_size_rows" translate="no">​</a></h3>
+<p>Inquires the number of rows in the font&#x27;s dot-matrix template.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the number of rows, as an <em>integer</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_size_template"><code>M_FONT_SIZE_TEMPLATE</code><a href="#m_font_size_template" class="hash-link" aria-label="Direct link to m_font_size_template" title="Direct link to m_font_size_template" translate="no">​</a></h3>
+<p>Inquires the total number of dots possible in the font&#x27;s dot-matrix template. The returned value corresponds to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_FONT_SIZE_COLUMNS</code></a> * <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_FONT_SIZE_ROWS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the number of dots.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_chars"><code>M_NUMBER_OF_CHARS</code><a href="#m_number_of_chars" class="hash-link" aria-label="Direct link to m_number_of_chars" title="Direct link to m_number_of_chars" translate="no">​</a></h3>
+<p>Inquires the number of characters in the font. Characters are added with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrImportFont"><code>MdmrImportFont</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlStringModel"><code>MdmrControlStringModel</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the number of characters.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-the-default-value">Combination Constants — For inquiring the default value<a href="#combination-constants--for-inquiring-the-default-value" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring the default value" title="Direct link to Combination Constants — For inquiring the default value" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the default value of an inquire type (if supported), regardless of the current value of the inquire type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h4>
+<p>Inquires the default value of the specified inquire type.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-fonts-characters">For inquiring about a font&#x27;s characters<a href="#for-inquiring-about-a-fonts-characters" class="hash-link" aria-label="Direct link to For inquiring about a font&#x27;s characters" title="Direct link to For inquiring about a font&#x27;s characters" translate="no">​</a></h3>
+<p>To inquire about a font&#x27;s characters, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>InquireType</code></a> parameter to one of the values below. Unless otherwise specified, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>FontLabelOrIndex</code></a> parameter must be set to the label or index of a font, and either the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharIndex</code></a>or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharNamePtr</code></a> parameter must specify a character.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_char_index_value"><code>M_CHAR_INDEX_VALUE</code><a href="#m_char_index_value" class="hash-link" aria-label="Direct link to m_char_index_value" title="Direct link to m_char_index_value" translate="no">​</a></h3>
+<p>Inquires the index value of the character, based on its name. Set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharIndex</code></a>parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_DEFAULT</code></a> and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharNamePtr</code></a> parameter to the name of the character in the font.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that the character to which you are referring does not exist in the font.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the index of the character.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_char_name"><code>M_CHAR_NAME</code><a href="#m_char_name" class="hash-link" aria-label="Direct link to m_char_name" title="Direct link to m_char_name" translate="no">​</a></h3>
+<p>Inquires the name of the character, based on its index. Set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharIndex</code></a>parameter to the index of a character in the font and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>CharNamePtr</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_NULL</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_CHAR_NAME</code></a> is returned as a regular string. It consists of all characters including the terminating null character.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the name.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_char_template"><code>M_CHAR_TEMPLATE</code><a href="#m_char_template" class="hash-link" aria-label="Direct link to m_char_template" title="Direct link to m_char_template" translate="no">​</a></h3>
+<p>Inquires the dot-matrix that represents the character in the font. The dot-matrix is returned as array data, organized one row contiguously after the other, where 255 (0xFF) represents a dot and 0 represents a blank.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the character&#x27;s dot-matrix.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values">Combination Constants — For determining the required array size (number of elements) to store the returned values<a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" title="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required array size (number of elements) to store the returned values.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-the-size-of-a-string">Combination Constants — For inquiring the size of a string<a href="#combination-constants--for-inquiring-the-size-of-a-string" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring the size of a string" title="Direct link to Combination Constants — For inquiring the size of a string" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the size of a string.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_size"><code>M_STRING_SIZE</code><a href="#m_string_size" class="hash-link" aria-label="Direct link to m_string_size" title="Direct link to m_string_size" translate="no">​</a></h4>
+<p>Inquires the number of characters in the string. This number accounts for every character, including the terminating null character. All strings have the terminating null character, even though you need not explicitly list it when specifying the string.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-explicitly-inquiring-about-hexadecimal-16-bit-unicode-utf-16-character-name-information">Combination Constants — For explicitly inquiring about hexadecimal 16-bit Unicode (UTF-16) character name information<a href="#combination-constants--for-explicitly-inquiring-about-hexadecimal-16-bit-unicode-utf-16-character-name-information" class="hash-link" aria-label="Direct link to Combination Constants — For explicitly inquiring about hexadecimal 16-bit Unicode (UTF-16) character name information" title="Direct link to Combination Constants — For explicitly inquiring about hexadecimal 16-bit Unicode (UTF-16) character name information" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the hexadecimal 16-bit Unicode (UTF-16) character name information.</p>
+</blockquote>
+<p>The character name of the letter A is &quot;A&quot; (its native name) or &quot;\x0041&quot;, which is its representation in hexadecimal format beginning with &quot;\x&quot;. Characters between 0 and 127 are considered Basic Latin. A character such as the smiley face (☺, or &quot;\x263A&quot; in hexadecimal) is beyond the Basic Latin range.  In a Unicode environment, the character representations are returned (for example, the smiley face), unless you explicitly specify one of the below combination values (for example, to obtain &quot;\x263A&quot; instead of the actual smiley face). Retrieving information about character names in hexadecimal might be useful if you want to convert your data into ASCII.  Note that the string size information can change when these combination values are added. For example, if the first four characters in the font are &quot;abc☺&quot;, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_CHAR_NAME</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_HEX_UTF16_FOR_NON_BASIC_LATIN</code></a> returns &quot;b&quot; for the character at index 1, and &quot;\x263A&quot; for the character at index 3. Consequently, the string sizes are 2 and 7, respectively (inquired with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_CHAR_NAME</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_STRING_SIZE</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_HEX_UTF16_FOR_NON_BASIC_LATIN</code></a>). If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_HEX_UTF16_FOR_ALL</code></a> is specified, the preceding example returns &quot;\x0062&quot; and &quot;\x263A&quot; for the respective character names, and 7 for each string size. Recall that the null-terminating character is included in the string size.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_HEX_UTF16_FOR_ALL</code></td><td>Retrieves results with the name of all characters in hexadecimal 16-bit Unicode (UTF-16) format.</td></tr><tr><td><code>M_HEX_UTF16_FOR_NON_BASIC_LATIN</code></td><td>Retrieves results with the names of characters that fall out of the Basic Latin range, in hexadecimal 16-bit Unicode (UTF-16) format.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-if-an-inquire-type-is-supported">Combination Constants — For inquiring if an inquire type is supported<a href="#combination-constants--for-inquiring-if-an-inquire-type-is-supported" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring if an inquire type is supported" title="Direct link to Combination Constants — For inquiring if an inquire type is supported" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether an inquire type is supported for the font currently being inquired.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_default"><code>M_HAS_DEFAULT</code><a href="#m_has_default" class="hash-link" aria-label="Direct link to m_has_default" title="Direct link to m_has_default" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type has a default value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type does not have a default value.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type has a default value.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_supported"><code>M_SUPPORTED</code><a href="#m_supported" class="hash-link" aria-label="Direct link to m_supported" title="Direct link to m_supported" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is supported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not supported.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is supported.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-casting-the-requested-information-to-the-required-data-type">Combination Constants — For casting the requested information to the required data type<a href="#combination-constants--for-casting-the-requested-information-to-the-required-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For casting the requested information to the required data type" title="Direct link to Combination Constants — For casting the requested information to the required data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_uint8"><code>M_TYPE_AIL_UINT8</code><a href="#m_type_ail_uint8" class="hash-link" aria-label="Direct link to m_type_ail_uint8" title="Direct link to m_type_ail_uint8" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_UINT8</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT</em>. If the requested information does not fit into an <em>AIL_INT</em>, this function will return <code>M_NULL</code>or truncate the information.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MdmrInquire</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireStringModel"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MdmrInquireStringModel</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextdmrid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ContextDmrId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#fontlabelorindex-in-ail_int64" class="table-of-contents__link toc-highlight"><code>FontLabelOrIndex</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#charindex-in-ail_int64" class="table-of-contents__link toc-highlight"><code>CharIndex</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#charnameptr-in-ail_const_text_ptr" class="table-of-contents__link toc-highlight"><code>CharNamePtr</code> <em>(in, AIL_CONST_TEXT_PTR)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-about-a-global-setting-of-a-font" class="table-of-contents__link toc-highlight">For inquiring about a global setting of a font</a></li><li><a href="#m_font_index_value" class="table-of-contents__link toc-highlight"><code>M_FONT_INDEX_VALUE</code></a></li><li><a href="#m_font_label_value" class="table-of-contents__link toc-highlight"><code>M_FONT_LABEL_VALUE</code></a></li><li><a href="#m_font_size_columns" class="table-of-contents__link toc-highlight"><code>M_FONT_SIZE_COLUMNS</code></a></li><li><a href="#m_font_size_rows" class="table-of-contents__link toc-highlight"><code>M_FONT_SIZE_ROWS</code></a></li><li><a href="#m_font_size_template" class="table-of-contents__link toc-highlight"><code>M_FONT_SIZE_TEMPLATE</code></a></li><li><a href="#m_number_of_chars" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_CHARS</code></a></li><li><a href="#combination-constants--for-inquiring-the-default-value" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring the default value</a></li><li><a href="#for-inquiring-about-a-fonts-characters" class="table-of-contents__link toc-highlight">For inquiring about a font&#39;s characters</a></li><li><a href="#m_char_index_value" class="table-of-contents__link toc-highlight"><code>M_CHAR_INDEX_VALUE</code></a></li><li><a href="#m_char_name" class="table-of-contents__link toc-highlight"><code>M_CHAR_NAME</code></a></li><li><a href="#m_char_template" class="table-of-contents__link toc-highlight"><code>M_CHAR_TEMPLATE</code></a></li><li><a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required array size (number of elements) to store the returned values</a></li><li><a href="#combination-constants--for-inquiring-the-size-of-a-string" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring the size of a string</a></li><li><a href="#combination-constants--for-explicitly-inquiring-about-hexadecimal-16-bit-unicode-utf-16-character-name-information" class="table-of-contents__link toc-highlight">Combination Constants — For explicitly inquiring about hexadecimal 16-bit Unicode (UTF-16) character name information</a></li><li><a href="#combination-constants--for-inquiring-if-an-inquire-type-is-supported" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring if an inquire type is supported</a></li><li><a href="#combination-constants--for-casting-the-requested-information-to-the-required-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For casting the requested information to the required data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

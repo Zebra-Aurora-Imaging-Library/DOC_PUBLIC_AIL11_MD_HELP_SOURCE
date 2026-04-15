@@ -1,0 +1,1533 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/reg/MregControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MregControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MregControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"reg","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"},{"@type":"ListItem","position":2,"name":"MregControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Collapse sidebar category &#x27;reg&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><span title="MregAlloc" class="linkLabel_WmDU">MregAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><span title="MregAllocResult" class="linkLabel_WmDU">MregAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><span title="MregCalculate" class="linkLabel_WmDU">MregCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><span title="MregControl" class="linkLabel_WmDU">MregControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><span title="MregDraw" class="linkLabel_WmDU">MregDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregFree"><span title="MregFree" class="linkLabel_WmDU">MregFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><span title="MregGetResult" class="linkLabel_WmDU">MregGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregInquire"><span title="MregInquire" class="linkLabel_WmDU">MregInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregRestore"><span title="MregRestore" class="linkLabel_WmDU">MregRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSave"><span title="MregSave" class="linkLabel_WmDU">MregSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><span title="MregSetLocation" class="linkLabel_WmDU">MregSetLocation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregStream"><span title="MregStream" class="linkLabel_WmDU">MregStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformCoordinate"><span title="MregTransformCoordinate" class="linkLabel_WmDU">MregTransformCoordinate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformCoordinateList"><span title="MregTransformCoordinateList" class="linkLabel_WmDU">MregTransformCoordinateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformImage"><span title="MregTransformImage" class="linkLabel_WmDU">MregTransformImage</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span>reg</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MregControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MregControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control a registration context, registration element, or registration result buffer setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MregControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextOrResultId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT    Index</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function controls the settings of a registration context or a registration result buffer. It also controls the registration elements of a correlation-stitching, photometric stereo, or high dynamic range registration context. For registration contexts and registration elements, these settings control the execution of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>, and/or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> operations. For correlation-stitching registration result buffers, these settings control the execution of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformImage"><code>MregTransformImage</code></a> operations.</p>
+<p>Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregInquire"><code>MregInquire</code></a> to inquire about control type settings.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultid-out-ail_id"><code>ContextOrResultId</code> <em>(out, AIL_ID)</em><a href="#contextorresultid-out-ail_id" class="hash-link" aria-label="Direct link to contextorresultid-out-ail_id" title="Direct link to contextorresultid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the registration context or registration result buffer whose settings you can modify; you can only control settings of correlation-stitching or photometric stereo types of registration result buffers. The registration context must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>MregAlloc</code></a>. The correlation-stitching or photometric stereo registration result buffer must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>MregAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_PHOTOMETRIC_STEREO_RESULT</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="index-in-ail_int"><code>Index</code> <em>(in, AIL_INT)</em><a href="#index-in-ail_int" class="hash-link" aria-label="Direct link to index-in-ail_int" title="Direct link to index-in-ail_int" translate="no">​</a></h3>
+<p>Specifies that a registration context, an individual registration element (of a correlation-stitching, photometric stereo, or high dynamic range registration context), or a registration result buffer is controlled. Set this parameter to one of the following values:</p>
+<p><em>For the registration context, registration element, or registration result buffer</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.</td></tr></tbody></table>
+<p>If an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_STITCHING</code></a> registration context is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ALL</code></a>.</p>
+<p>If an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_EXTENDED_DEPTH_OF_FIELD</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_DEPTH_FROM_FOCUS</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_HIGH_DYNAMIC_RANGE</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_PHOTOMETRIC_STEREO</code></a>registration context is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CONTEXT</code></a>.</p>
+<p>If a registration result buffer is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GENERAL</code></a>. |
+| <code>M_ALL</code> | Applies the specified control setting to all registration elements, if a correlation-stitching, photometric stereo, or high dynamic range registration context is specified. Note that this setting is not available for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_EXTENDED_DEPTH_OF_FIELD</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_DEPTH_FROM_FOCUS</code></a> registration context. |
+| <code>M_CONTEXT</code> | Controls a general setting of a registration context, if one is specified. |
+| <code>M_GENERAL</code> | Controls a general setting of a registration result buffer, if one is specified. |
+| <code>0 &lt; Value &lt; M_NUMBER_OF_REGISTRATION_ELEMENTS</code> | Specifies the index of the individual registration element to control, if a correlation-stitching, photometric stereo, or high dynamic range registration context is specified.</p>
+<p>Note that this setting is not available for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_EXTENDED_DEPTH_OF_FIELD</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_DEPTH_FROM_FOCUS</code></a>registration context. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the setting&#x27;s new value.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-of">For operation settings of<a href="#for-operation-settings-of" class="hash-link" aria-label="Direct link to For operation settings of" title="Direct link to For operation settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_STITCHING</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_PHOTOMETRIC_STEREO</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_HIGH_DYNAMIC_RANGE</code></a> registration context settings; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CONTEXT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_registration_elements"><code>M_NUMBER_OF_REGISTRATION_ELEMENTS</code><a href="#m_number_of_registration_elements" class="hash-link" aria-label="Direct link to m_number_of_registration_elements" title="Direct link to m_number_of_registration_elements" translate="no">​</a></h3>
+<p>Sets the number of registration elements in the registration context. If you reduce the number of registration elements, the settings of the ones that remain are kept unchanged. If you increase the number of registration elements, the new ones are initialized with the default settings.  You should have at least as many registration elements as the number of images that you want to register.  For a photometric stereo registration context, the number of registration elements also corresponds to the maximum number of lights used during the photometric stereo computation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value. For a correlation-stitching registration context, the default value is 256. For a photometric stereo or high dynamic range registration context, the default value is 16.</td></tr><tr><td><code>2 &lt;= Value &lt; 8192</code></td><td>Specifies the number of registration elements for a correlation-stitching registration context.</td></tr><tr><td><code>Value &gt; 3</code></td><td>Specifies the number of registration elements for a photometric stereo registration context.</td></tr><tr><td><code>Value &gt;= 2</code></td><td>Specifies the number of registration elements for a high dynamic range registration context.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-of-1">For operation settings of<a href="#for-operation-settings-of-1" class="hash-link" aria-label="Direct link to For operation settings of" title="Direct link to For operation settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_STITCHING</code></a> registration context settings; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CONTEXT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_accuracy"><code>M_ACCURACY</code><a href="#m_accuracy" class="hash-link" aria-label="Direct link to m_accuracy" title="Direct link to m_accuracy" translate="no">​</a></h3>
+<p>Sets the accuracy of the registration calculation. Accuracy depends on the image&#x27;s dynamic range, sharpness, and noise. The best accuracy is achieved for well-contrasted noise-free images.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code> <em>(default)</em></td><td>Specifies high accuracy. Registration will be calculated with subpixel accuracy.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies low accuracy. Registration will be calculated with pixel accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_location_delta"><code>M_LOCATION_DELTA</code><a href="#m_location_delta" class="hash-link" aria-label="Direct link to m_location_delta" title="Direct link to m_location_delta" translate="no">​</a></h3>
+<p>Sets the maximum displacement that will be applied to any pixel in the images during registration, relative to its initial location set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a>. With a larger maximum displacement, you can align the images even if the location that was set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a> was not precise. However, this can lead to a longer calculation time.  &gt; <strong>Note:</strong> Note that if you have not set the rough location using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a>, set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LOCATION_DELTA</code></a> to 100, so that all possible translations are searched.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the maximum displacement as a percentage. The displacement is expressed an a percentage of the biggest dimension of the images to align.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_overlap"><code>M_MIN_OVERLAP</code><a href="#m_min_overlap" class="hash-link" aria-label="Direct link to m_min_overlap" title="Direct link to m_min_overlap" translate="no">​</a></h3>
+<p>Sets the minimum overlap that should exist between an image and its reference image so that the registration calculation can optimize the match in their overlapping region. If the minimum overlap is not met, the optimization step will not be performed for this image. Instead, the transformation that was set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a> becomes the optimal transformation.  The image&#x27;s registration result element will indicate that the registration operation failed for this image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum overlap as a percentage. The overlap is expressed as a percentage of the smallest of the two images.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_type"><code>M_SCORE_TYPE</code><a href="#m_score_type" class="hash-link" aria-label="Direct link to m_score_type" title="Direct link to m_score_type" translate="no">​</a></h3>
+<p>Sets the type of score calculated during registration. This calculated score can be retrieved after registration using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>MregGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_SCORE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CORRELATION</code></td><td>Specifies to calculate the score based on the normalized grayscale correlation in the overlapped region.</td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies that no score is calculated; it is set to 100%.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stitching_last_level"><code>M_STITCHING_LAST_LEVEL</code><a href="#m_stitching_last_level" class="hash-link" aria-label="Direct link to m_stitching_last_level" title="Direct link to m_stitching_last_level" translate="no">​</a></h3>
+<p>Sets the resolution level for the final stage (highest resolution) of the correlation algorithm.  Note that if the specified level is not supported by the correlation algorithm, the highest acceptable level will be used. It only needs to be controlled in rare situations, where images sizes are large and contain small details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies that the last level is set automatically based on image size.</td></tr><tr><td><code>0 &lt;= Value &lt;= 16</code></td><td>Specifies the resolution level for the final stage of the correlation algorithm.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transformation_type"><code>M_TRANSFORMATION_TYPE</code><a href="#m_transformation_type" class="hash-link" aria-label="Direct link to m_transformation_type" title="Direct link to m_transformation_type" translate="no">​</a></h3>
+<p>Sets the type of transformation that the registration calculation will use to optimize the match in the images&#x27; overlapping regions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_PERSPECTIVE</code></td><td>Specifies that a perspective warping can be performed to optimize the match in the overlapping regions.</td></tr><tr><td><code>M_TRANSLATION</code> <em>(default)</em></td><td>Specifies that a translation can be performed to optimize the match in the overlapping regions.</td></tr><tr><td><code>M_TRANSLATION_ROTATION</code></td><td>Specifies that a translation and a rotation can be performed to optimize the match in the overlapping regions.</td></tr><tr><td><code>M_TRANSLATION_ROTATION_SCALE</code></td><td>Specifies that a translation, a rotation, and a scale operation can be performed to optimize the match in the overlapping regions.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-registration-elements-one-or-all-of-an">For registration elements (one or all) of an<a href="#for-registration-elements-one-or-all-of-an" class="hash-link" aria-label="Direct link to For registration elements (one or all) of an" title="Direct link to For registration elements (one or all) of an" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control settings of registration elements (one or all) of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_STITCHING</code></a> registration context.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_optimize_location"><code>M_OPTIMIZE_LOCATION</code><a href="#m_optimize_location" class="hash-link" aria-label="Direct link to m_optimize_location" title="Direct link to m_optimize_location" translate="no">​</a></h3>
+<p>Sets whether to perform the optimization step of the registration calculation for the registration element&#x27;s image. If you choose not to perform the optimization calculation, the transformation that you set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a> becomes the optimal transformation for this image. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> is called, the transformation is converted so that it maps the image into the global pixel coordinate system instead of into its reference image&#x27;s pixel coordinate system.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to perform the optimization calculation.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to perform the optimization calculation.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_x"><code>M_REFERENCE_X</code><a href="#m_reference_x" class="hash-link" aria-label="Direct link to m_reference_x" title="Direct link to m_reference_x" translate="no">​</a></h3>
+<p>Sets the X-coordinate of the origin of the image&#x27;s pixel coordinate system.  This is an advanced control type and changing the origin of an image&#x27;s pixel coordinate system will affect various aspects of the registration process. This origin is used when specifying the approximate location of the image in its registration element&#x27;s image (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a>); you must specify the location of the origin with respect to the origin of the reference element&#x27;s image. Similarly, if you use the image to position other images, specify locations relative to this origin. The position of your mosaic in the destination image buffer depends on the mosaic&#x27;s reference coordinate system (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>MregControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_STATIC_INDEX</code></a>), which can be the coordinate system of a particular image. Finally, you can convert coordinates to and from an image&#x27;s pixel coordinate system, with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformCoordinate"><code>MregTransformCoordinate</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformCoordinateList"><code>MregTransformCoordinateList</code></a>. If you modify the origin of an image&#x27;s pixel coordinate system, you must keep the origin&#x27;s new location in mind when performing any of these operations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies that the default X-coordinate of the origin will be used.  The default value is 0.0.</td></tr><tr><td><code>M_CENTER_ELEMENT</code></td><td>Specifies the X-coordinate of the origin to be at the center of the image.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the origin, in pixels. The value can be specified with subpixel accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_y"><code>M_REFERENCE_Y</code><a href="#m_reference_y" class="hash-link" aria-label="Direct link to m_reference_y" title="Direct link to m_reference_y" translate="no">​</a></h3>
+<p>Sets the Y-coordinate of the origin of the image&#x27;s pixel coordinate system.  This is an advanced control type and changing the origin of an image&#x27;s pixel coordinate system will affect various aspects of the registration process. This origin is used when specifying the approximate location of the image in its registration element&#x27;s image (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregSetLocation"><code>MregSetLocation</code></a>); you must specify the location of the origin with respect to the origin of the reference element&#x27;s image. Similarly, if you use this image to position other images, specify locations relative to this origin. The position of your mosaic in the destination image buffer depends on the mosaic&#x27;s reference coordinate system (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>MregControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_STATIC_INDEX</code></a>), which can be the coordinate system of a particular image. Finally, you can convert coordinates to and from an image&#x27;s pixel coordinate system, with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformCoordinate"><code>MregTransformCoordinate</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregTransformCoordinateList"><code>MregTransformCoordinateList</code></a>. If you modify the origin of an image&#x27;s pixel coordinate system, you must keep the origin&#x27;s new location in mind when performing any of these operations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies that the default Y-coordinate of the origin will be used.  The default value is 0.0.</td></tr><tr><td><code>M_CENTER_ELEMENT</code></td><td>Specifies the Y-coordinate of the origin to be at the center of the image.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the origin, in pixels. The value can be specified with subpixel accuracy.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for">For<a href="#for" class="hash-link" aria-label="Direct link to For" title="Direct link to For" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control the settings of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAllocResult"><code>M_STITCHING_RESULT</code></a> result buffer; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GENERAL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_composition"><code>M_MOSAIC_COMPOSITION</code><a href="#m_mosaic_composition" class="hash-link" aria-label="Direct link to m_mosaic_composition" title="Direct link to m_mosaic_composition" translate="no">​</a></h3>
+<p>Sets which image&#x27;s pixel values to use when composing the mosaic and two or more images overlap.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AVERAGE_IMAGE</code></td><td>Specifies to use the average value of the images&#x27; pixels in the overlapping region.</td></tr><tr><td><code>M_FIRST_IMAGE</code></td><td>Specifies to use the pixels of the image associated with the registration result element with the lowest index.</td></tr><tr><td><code>M_FUSION_IMAGE</code></td><td>Specifies to fuse the images by progressively blending overlapping pixels. That is, overlapping pixel values are modified (blended) to form a transitional portion. Blending is based on the distance between each pixel and the edges of the images in the mosaic.</td></tr><tr><td><code>M_LAST_IMAGE</code> <em>(default)</em></td><td>Specifies to use the pixels of the image associated with the registration result element with the highest index.</td></tr><tr><td><code>M_SUPER_RESOLUTION</code></td><td>Specifies to use a super-resolution algorithm to create the mosaic.  For best results, the image alignment should be accurate. To perform registration calculations with subpixel accuracy, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>MregControl</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ACCURACY</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_HIGH</code></a>. The source images should be of good quality with clear, distinct features in the overlapping region.  To customize the super-resolution process, set the point-spread function, its radius, and the degree of smoothness to use, with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SR_PSF_TYPE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SR_PSF_RADIUS</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SR_SMOOTHNESS</code></a> respectively.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_offset_x"><code>M_MOSAIC_OFFSET_X</code><a href="#m_mosaic_offset_x" class="hash-link" aria-label="Direct link to m_mosaic_offset_x" title="Direct link to m_mosaic_offset_x" translate="no">​</a></h3>
+<p>Sets the X-offset between the origin of the coordinate system used to compose the mosaic and the left side of the destination image buffer. The coordinate system used to compose the mosaic is the one specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_STATIC_INDEX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALIGN_LEFT</code> <em>(default)</em></td><td>Specifies that the X-offset (in pixels) will be calculated such that the left-most part of the mosaic will be aligned with the left side of the destination image buffer.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-offset, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_offset_y"><code>M_MOSAIC_OFFSET_Y</code><a href="#m_mosaic_offset_y" class="hash-link" aria-label="Direct link to m_mosaic_offset_y" title="Direct link to m_mosaic_offset_y" translate="no">​</a></h3>
+<p>Sets the Y-offset between the origin of the coordinate system used to compose the mosaic and the top of the destination image buffer. The coordinate system used to compose the mosaic is the one specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_STATIC_INDEX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALIGN_TOP</code> <em>(default)</em></td><td>Specifies that the Y-offset (in pixels) will be calculated such that the top-most part of the mosaic will be aligned with the top of the destination image buffer.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-offset, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_scale"><code>M_MOSAIC_SCALE</code><a href="#m_mosaic_scale" class="hash-link" aria-label="Direct link to m_mosaic_scale" title="Direct link to m_mosaic_scale" translate="no">​</a></h3>
+<p>Sets the scale factor to apply to the images before composition of the mosaic. A value greater than 1.0 produces an enlarged mosaic, while a value less than 1.0 produces a reduced one.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt; Value &lt;= 10.0</code> <em>(default)</em></td><td>Specifies the scale factor.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mosaic_static_index"><code>M_MOSAIC_STATIC_INDEX</code><a href="#m_mosaic_static_index" class="hash-link" aria-label="Direct link to m_mosaic_static_index" title="Direct link to m_mosaic_static_index" translate="no">​</a></h3>
+<p>Sets the coordinate system relative to which the mosaic will be composed. This can be a registered image&#x27;s pixel coordinate system or the global pixel coordinate system. If you select an image&#x27;s pixel coordinate system, that image will appear upright in the mosaic, and the other images will be oriented relative to it.  By default, the origin of the mosaic will appear at the top-left corner of the destination image buffer. You can adjust the horizontal and vertical offset of the origin using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_OFFSET_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_OFFSET_Y</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value. By default, the mosaic will be composed with respect to the pixel coordinate system of the image associated with registration result element 0.</td></tr><tr><td><code>M_ALL</code></td><td>Specifies that the coordinate system will be chosen such that the minimum change is done on all images during the mosaic composition. This setting is only available when composing a mosaic with only two images.</td></tr><tr><td><code>M_REGISTRATION_GLOBAL</code></td><td>Specifies that the mosaic will be composed with respect to the global pixel coordinate system.</td></tr><tr><td><code>0 &lt;= Value &lt; NumberOfElements</code></td><td>Specifies the index of the registration result element whose image&#x27;s pixel coordinate system will be used as the reference coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sr_psf_radius"><code>M_SR_PSF_RADIUS</code><a href="#m_sr_psf_radius" class="hash-link" aria-label="Direct link to m_sr_psf_radius" title="Direct link to m_sr_psf_radius" translate="no">​</a></h3>
+<p>Sets the radius of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CIRCULAR</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GAUSSIAN</code></a> point-spread functions (PSF). For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GAUSSIAN</code></a>, the radius corresponds to the standard deviation. For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SQUARE</code></a>, the radius corresponds to half the size of the square side.  This control type is only taken into account when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_COMPOSITION</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SUPER_RESOLUTION</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SR_PSF_TYPE</code></a> is not set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DISABLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the radius of the PSF, in pixel units at the scale of the source images.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sr_psf_type"><code>M_SR_PSF_TYPE</code><a href="#m_sr_psf_type" class="hash-link" aria-label="Direct link to m_sr_psf_type" title="Direct link to m_sr_psf_type" translate="no">​</a></h3>
+<p>Sets the type of point-spread function (PSF) to use during super-resolution calculations to model the blurring in source images.  The point-spread function describes how a small point of light in the world is blurred by the acquisition setup (lens and CCD). Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SR_PSF_RADIUS</code></a> to set the radius of the PSF.  The value of this control type is only taken into account when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_COMPOSITION</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SUPER_RESOLUTION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIRCULAR</code></td><td>Specifies to assume a PSF that models blurring of single points of light into uniform circles in the image.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that no PSF should be assumed during super-resolution calculations.</td></tr><tr><td><code>M_GAUSSIAN</code> <em>(default)</em></td><td>Specifies to assume a PSF that models blurring of single points of light into radially symmetric gaussian functions in the image.</td></tr><tr><td><code>M_SQUARE</code></td><td>Specifies to assume a PSF that models blurring of single points of light into symmetric square functions in the image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sr_smoothness"><code>M_SR_SMOOTHNESS</code><a href="#m_sr_smoothness" class="hash-link" aria-label="Direct link to m_sr_smoothness" title="Direct link to m_sr_smoothness" translate="no">​</a></h3>
+<p>Sets the smoothness value to use during super-resolution calculations.  Use a high smoothness value to reduce local variations in the mosaic image. This is useful to prevent artifacts caused by noise in the source images.  Use a low smoothness value when there is little noise in the source image. This is useful to preserve the most detail in your mosaic.  This control type is only taken into account when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MOSAIC_COMPOSITION</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SUPER_RESOLUTION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the smoothness value.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-of-2">For operation settings of<a href="#for-operation-settings-of-2" class="hash-link" aria-label="Direct link to For operation settings of" title="Direct link to For operation settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_PHOTOMETRIC_STEREO</code></a> registration context settings; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CONTEXT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_with_no_result"><code>M_DRAW_WITH_NO_RESULT</code><a href="#m_draw_with_no_result" class="hash-link" aria-label="Direct link to m_draw_with_no_result" title="Direct link to m_draw_with_no_result" translate="no">​</a></h3>
+<p>Sets the type of image to draw when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to an image buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DRAW_ALBEDO_IMAGE</code> <em>(default)</em></td><td>Specifies to draw the albedo image into the image buffer when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to an image buffer.  The albedo image is a composite image derived from multiple image samples, each with a different lighting perspective. The different lighting perspectives help to show changes in reflectance, especially when a change in material occurs, such as when a scratch reveals an underlying material that differs from the surface material. Small defects become more apparent when reflectance changes are revealed using this technique.  This operation is equivalent to performing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> followed by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_ALBEDO_IMAGE</code></a>, without the need to allocate a result buffer.</td></tr><tr><td><code>M_DRAW_GAUSSIAN_CURVATURE_IMAGE</code></td><td>Specifies to draw the Gaussian curvature image into the image buffer when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to an image buffer.  This operation is equivalent to performing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GAUSSIAN_CURVATURE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ENABLE</code></a>followed by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_GAUSSIAN_CURVATURE_IMAGE</code></a>, without the need to allocate a result buffer.</td></tr><tr><td><code>M_DRAW_LOCAL_CONTRAST_IMAGE</code></td><td>Specifies to draw the local contrast image into the image buffer when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to an image buffer.  This operation is equivalent to performing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LOCAL_CONTRAST</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ENABLE</code></a> followed by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_LOCAL_CONTRAST_IMAGE</code></a>, without the need to allocate a result buffer.</td></tr><tr><td><code>M_DRAW_LOCAL_SHAPE_IMAGE</code></td><td>Specifies to draw the local shape image into the image buffer when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to an image buffer.  This operation is equivalent to performing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LOCAL_SHAPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ENABLE</code></a> followed by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_LOCAL_SHAPE_IMAGE</code></a>, without the need to allocate a result buffer.</td></tr><tr><td><code>M_DRAW_MEAN_CURVATURE_IMAGE</code></td><td>Specifies to draw the mean curvature image into the image buffer when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to an image buffer.  This operation is equivalent to performing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MEAN_CURVATURE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ENABLE</code></a> followed by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_MEAN_CURVATURE_IMAGE</code></a>, without the need to allocate a result buffer.</td></tr><tr><td><code>M_DRAW_TEXTURE_IMAGE</code></td><td>Specifies to draw the texture image into the image buffer when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to an image buffer.  This operation is equivalent to performing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TEXTURE_IMAGE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ENABLE</code></a> followed by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_TEXTURE_IMAGE</code></a>, without the need to allocate a result buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gaussian_curvature"><code>M_GAUSSIAN_CURVATURE</code><a href="#m_gaussian_curvature" class="hash-link" aria-label="Direct link to m_gaussian_curvature" title="Direct link to m_gaussian_curvature" translate="no">​</a></h3>
+<p>Sets whether to compute the Gaussian curvature image when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to a result buffer.  The Gaussian curvature image reveals defects on smooth surfaces, because surface curvature values change abruptly when a defect occurs on such surfaces. This setting is useful when examining a flat printed surface where the printing can obscure defects. Note that this setting is not suitable for finely textured surfaces. Try <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MEAN_CURVATURE</code></a> instead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to compute the Gaussian curvature image. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_GAUSSIAN_CURVATURE_IMAGE</code></a> becomes unavailable in the draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to compute the Gaussian curvature image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_improved_local_shape"><code>M_IMPROVED_LOCAL_SHAPE</code><a href="#m_improved_local_shape" class="hash-link" aria-label="Direct link to m_improved_local_shape" title="Direct link to m_improved_local_shape" translate="no">​</a></h3>
+<p>Sets whether to compute an improved version of the local shape image.  This value is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LOCAL_SHAPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ENABLE</code></a>; otherwise, it is ignored.  &gt; <strong>Note:</strong> Note that this value cannot be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ENABLE</code></a> unless there are 4 input images, and the azimuth angles of their light sources are 0, 90, 180, and 270, respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to compute the default version of the local shape image.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to compute an improved version of the local shape image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_local_contrast"><code>M_LOCAL_CONTRAST</code><a href="#m_local_contrast" class="hash-link" aria-label="Direct link to m_local_contrast" title="Direct link to m_local_contrast" translate="no">​</a></h3>
+<p>Sets whether to compute the local contrast image when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to a result buffer.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LOCAL_CONTRAST</code></a> reveals surface height variations by increasing the contrast between highlights and shadows. This setting performs morphological operations using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_OBJECT_SIZE</code></a> to control the number of iterations to perform.  A local contrast operation can remove printed text on flat surface areas in the resulting enhanced image, provided source image illumination is even (equal relative intensities across the light sources).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to compute the local contrast image. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_LOCAL_CONTRAST_IMAGE</code></a> becomes unavailable in the draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to compute the local contrast image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_local_shape"><code>M_LOCAL_SHAPE</code><a href="#m_local_shape" class="hash-link" aria-label="Direct link to m_local_shape" title="Direct link to m_local_shape" translate="no">​</a></h3>
+<p>Sets whether to compute the local shape image when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to a result buffer.  A local shape image captures raised and recessed features on a surface that are not apparent with a single image using one light source. Multiple acquisitions using many light sources allow the extraction of structural content not otherwise visible, facilitating further image analysis.  You can control shape smoothness in the resulting image with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SHAPE_SMOOTHNESS</code></a>.  Note that, while each image uses one light source, your lights must be set up in opposite pairs. That is, for each light in the setup, there should be another light positioned 180 degrees opposite.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to compute the local shape image. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_LOCAL_SHAPE_IMAGE</code></a> becomes unavailable in the draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to compute the local shape image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mean_curvature"><code>M_MEAN_CURVATURE</code><a href="#m_mean_curvature" class="hash-link" aria-label="Direct link to m_mean_curvature" title="Direct link to m_mean_curvature" translate="no">​</a></h3>
+<p>Sets whether to compute the mean curvature image when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to a result buffer.  A mean curvature image can reveal small (local) curvature changes, because the curvature is calculated at every pixel, resulting in more local information. Fine scratches or very small features on a surface are revealed.  Note that the mean curvature operation can substitute for local shape when opposite-paired lighting is not achievable.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to compute the mean curvature image. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_MEAN_CURVATURE_IMAGE</code></a> becomes unavailable in the draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to compute the mean curvature image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_non_uniformity_correction"><code>M_NON_UNIFORMITY_CORRECTION</code><a href="#m_non_uniformity_correction" class="hash-link" aria-label="Direct link to m_non_uniformity_correction" title="Direct link to m_non_uniformity_correction" translate="no">​</a></h3>
+<p>Sets whether to compute a correction for non-uniform illumination on the input image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code></td><td>Specifies to compute a correction for non-uniform illumination on the input image. The correction is done without reference images, and uses a pixel neighborhood process. It is recommended to use this setting only when the image illumination is severely non-uniform.</td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to compute a correction for non-uniform illumination on the input image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_object_size"><code>M_OBJECT_SIZE</code><a href="#m_object_size" class="hash-link" aria-label="Direct link to m_object_size" title="Direct link to m_object_size" translate="no">​</a></h3>
+<p>Sets the number of iterations to perform when computing a local contrast image (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LOCAL_CONTRAST</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_WITH_NO_RESULT</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_LOCAL_CONTRAST_IMAGE</code></a>).  For the local contrast operation, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_OBJECT_SIZE</code></a> controls the number of iterations of a morphological operation. The number of iterations to perform is related to the feature size of the object(s) in the scene. For larger features, more iterations might be needed. The default is 1 iteration, but it is recommended to experiment to find the best setting for your needs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0</code> <em>(default)</em></td><td>Specifies the number of iterations of morphological operations to perform.  Note that setting a value of zero is permitted. If your scene is mostly flat, try setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_OBJECT_SIZE</code></a> to zero. In this case, calculations are performed that do not include morphological operations, resulting in reduced prominence of printed text or imagery on flat surfaces, allowing easier detection of surface defects.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_shape_normalization"><code>M_SHAPE_NORMALIZATION</code><a href="#m_shape_normalization" class="hash-link" aria-label="Direct link to m_shape_normalization" title="Direct link to m_shape_normalization" translate="no">​</a></h3>
+<p>Sets whether to perform shape normalization when computing a local shape image (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LOCAL_SHAPE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_WITH_NO_RESULT</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_LOCAL_SHAPE_IMAGE</code></a>).  Shape normalization is performed by default. You can choose to disable shape normalization if the region undergoing photometric stereo registration is mostly flat (perpendicular to the camera). Disabling shape normalization can improve results in such instances, because surface normals from flat regions will be ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to normalize the shape information during local shape computation.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to normalize the shape information during local shape computation.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_shape_smoothness"><code>M_SHAPE_SMOOTHNESS</code><a href="#m_shape_smoothness" class="hash-link" aria-label="Direct link to m_shape_smoothness" title="Direct link to m_shape_smoothness" translate="no">​</a></h3>
+<p>Sets the amount of smoothness to apply to surface variations when computing the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LOCAL_SHAPE</code></a>,<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_MEAN_CURVATURE</code></a>, or<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GAUSSIAN_CURVATURE</code></a> image (or when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_LOCAL_SHAPE_IMAGE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_MEAN_CURVATURE_IMAGE</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_GAUSSIAN_CURVATURE_IMAGE</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the degree of smoothness applied to frontiers between raised and recessed regions. Large values apply more smoothing, and result in the suppression of smaller features on an object&#x27;s surface, making the dominant structure more prominent.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_texture_image"><code>M_TEXTURE_IMAGE</code><a href="#m_texture_image" class="hash-link" aria-label="Direct link to m_texture_image" title="Direct link to m_texture_image" translate="no">​</a></h3>
+<p>Sets whether to compute the texture image when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>RegResultOrImageId</code></a> set to a result buffer.  This operation targets surface luminance and can remove spectral reflections.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to compute the texture image. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_TEXTURE_IMAGE</code></a> becomes unavailable in the draw.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to compute the texture image.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-of-3">For operation settings of<a href="#for-operation-settings-of-3" class="hash-link" aria-label="Direct link to For operation settings of" title="Direct link to For operation settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_PHOTOMETRIC_STEREO</code></a> registration result buffer settings; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GENERAL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_remap_factor_mode"><code>M_DRAW_REMAP_FACTOR_MODE</code><a href="#m_draw_remap_factor_mode" class="hash-link" aria-label="Direct link to m_draw_remap_factor_mode" title="Direct link to m_draw_remap_factor_mode" translate="no">​</a></h3>
+<p>Sets whether to automatically calculate the remap factor, or to use a user-defined value. The remap factor is the factor needed to remap the result of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_GAUSSIAN_CURVATURE_IMAGE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_LOCAL_SHAPE_IMAGE</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_MEAN_CURVATURE_IMAGE</code></a> operation when the destination is not a 32-bit floating-point image buffer.  This control type is useful when you are performing several of these operations and want to ensure that the same factor is used to remap the results of the operation from 32-bit floating-point data to the data type of the destination buffer (ensuring that the stored results are directly comparable).  If you specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_USER_DEFINED</code></a>, and set a remap factor using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_REMAP_FACTOR_VALUE</code></a>, the same remapping will be used to remap the result every time you perform one of the relevant operations. If you specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_AUTO</code></a> (or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DEFAULT</code></a>), a different remap factor is calculated each time, based on the maximum and minimum values in the result. With <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_AUTO</code></a>, the remap factor is automatically defined so that the entire range of the drawn image is represented.  You can retrieve the automatically defined remap factor value using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>MregGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_RANGE_FACTOR_GAUSSIAN_CURVATURE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_RANGE_FACTOR_LOCAL_SHAPE</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_RANGE_FACTOR_MEAN_CURVATURE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies to automatically calculate the remap factor so that the entire range of the drawn image is represented.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the remap factor set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_REMAP_FACTOR_VALUE</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_remap_factor_value"><code>M_DRAW_REMAP_FACTOR_VALUE</code><a href="#m_draw_remap_factor_value" class="hash-link" aria-label="Direct link to m_draw_remap_factor_value" title="Direct link to m_draw_remap_factor_value" translate="no">​</a></h3>
+<p>Sets the remap factor value when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_REMAP_FACTOR_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_USER_DEFINED</code></a> and the destination is not a 32-bit floating-point image buffer.  Pixel intensities are multiplied by <code>((2&lt;sup&gt; _n_ &lt;/sup&gt; - 1)/2) * [</code>M_DRAW_REMAP_FACTOR_VALUE<code>](../../Reference/reg/MregControl.md)</code>, then offset by <code>((2&lt;sup&gt; _n_ &lt;/sup&gt; - 1)/2)</code>; <em>n</em> is the number of bits per pixel.  &gt; <strong>Note:</strong> When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_REMAP_FACTOR_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_AUTO</code></a>, this value isn&#x27;t used.  To specify an appropriate remap factor value, it is recommended to obtain the automatically calculated remap factor (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>MregGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregGetResult"><code>M_RANGE_FACTOR_...</code></a>) for some typical images. If the resulting output is satisfactory, set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DRAW_REMAP_FACTOR_VALUE</code></a> to the automatically calculated value. If not, you can try setting the remap factor to a higher value; this increases image contrast and helps to bring out smaller details in the resulting photometric stereo image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the remap factor.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stop_calculate"><code>M_STOP_CALCULATE</code><a href="#m_stop_calculate" class="hash-link" aria-label="Direct link to m_stop_calculate" title="Direct link to m_stop_calculate" translate="no">​</a></h3>
+<p>Stops the current photometric stereo calculation operation. You must call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>MregControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_STOP_CALCULATE</code></a> from another thread of higher priority. Results already available in the result buffer become invalid and will be discarded.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default behavior.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-registration-elements-of-an">For registration elements of an<a href="#for-registration-elements-of-an" class="hash-link" aria-label="Direct link to For registration elements of an" title="Direct link to For registration elements of an" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control registration elements of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_PHOTOMETRIC_STEREO</code></a> registration context; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ALL</code></a> or a specific value.  &gt; <strong>Note:</strong> Note that you must specify your lights in a counter-clockwise order, starting at the positive X-axis. To illustrate, if you have four lights spaced evenly around a scene, and your first light is placed in line with the X-axis (zero degrees), lights 2, 3, and 4 are placed at 90, 180, and 270 degrees, respectively, and must be specified in the same order.  Note that the origin is located at the center of the plane upon which the object is placed for the photometric stereo registration operation, directly below the camera (assuming the camera is perpendicular to the scene).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_light_vector_component_1"><code>M_LIGHT_VECTOR_COMPONENT_1</code><a href="#m_light_vector_component_1" class="hash-link" aria-label="Direct link to m_light_vector_component_1" title="Direct link to m_light_vector_component_1" translate="no">​</a></h3>
+<p>Sets the first component of the light vector for the specified registration element. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LIGHT_VECTOR_TYPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SPHERICAL</code></a>, this component is the polar (zenith) angle. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LIGHT_VECTOR_TYPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CARTESIAN</code></a>, this component is the vector&#x27;s X-coordinate in pixel units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 90.0</code></td><td>Specifies the polar (zenith) angle, in degrees, if the light mode is set to the spherical coordinate system. The polar angle is defined as the angle between the image&#x27;s normal vector (the primary axis) and the light vector. The polar angle is measured from the vertical; that is, the primary axis is at zero degrees.  The primary axis is the vector that goes from the camera to the image. It is typical for the camera to be perpendicular to the object&#x27;s surface for this application.  <em>[Image: Photometric_Polar_Angle.png]</em></td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the light vector, if the light mode is set to the Cartesian coordinate system.  Set this value in pixel units, considering the light vector projected onto the XY-plane.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_light_vector_component_2"><code>M_LIGHT_VECTOR_COMPONENT_2</code><a href="#m_light_vector_component_2" class="hash-link" aria-label="Direct link to m_light_vector_component_2" title="Direct link to m_light_vector_component_2" translate="no">​</a></h3>
+<p>Sets the second component of the light vector for the specified registration element. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LIGHT_VECTOR_TYPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SPHERICAL</code></a>, this component is the azimuth angle. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LIGHT_VECTOR_TYPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CARTESIAN</code></a>, this component is the vector&#x27;s Y-coordinate in pixel units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code></td><td>Specifies the azimuth angle, in degrees, if the light mode is set to the spherical coordinate system. The azimuth angle is the angular distance from the positive X-axis to the light vector when projected on the image&#x27;s XY-plane; the azimuth angle increases counterclockwise.  <em>[Image: Photometric_Azimuth_Angle.png]</em></td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the light vector, if the light mode is set to the Cartesian coordinate system.  Set this value in pixel units, considering the light vector projected onto the XY-plane.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_light_vector_component_3"><code>M_LIGHT_VECTOR_COMPONENT_3</code><a href="#m_light_vector_component_3" class="hash-link" aria-label="Direct link to m_light_vector_component_3" title="Direct link to m_light_vector_component_3" translate="no">​</a></h3>
+<p>Sets the third component of the light vector for the specified registration element.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LIGHT_VECTOR_TYPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_SPHERICAL</code></a>, this component is the relative intensity of the light source. If relative light intensity is set to 1.0 for all light sources, each light provides the same intensity to the setup, which is the ideal arrangement. If equal light intensities are not possible, set the strongest light to 1.0 and set the other light intensity values relative to this.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_LIGHT_VECTOR_TYPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CARTESIAN</code></a>, this component is the vector&#x27;s Z-coordinate, specified in a pixel unit equivalent. That is, specify the Z-distance in units equivalent to those used for the X- and Y-coordinates. By default, the Z-axis points downward, so the light source is usually in the negative Z-region of the relative coordinate system. Use an absolute value for this component.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the value of the third component.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_light_vector_type"><code>M_LIGHT_VECTOR_TYPE</code><a href="#m_light_vector_type" class="hash-link" aria-label="Direct link to m_light_vector_type" title="Direct link to m_light_vector_type" translate="no">​</a></h3>
+<p>Sets the coordinate system in which the input light vector is represented.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CARTESIAN</code></td><td>Specifies that the light vector is defined in the Cartesian coordinate system. Coordinates follow the standard Aurora Imaging Library right-hand 3D coordinate system.  The origin is located at the center of the plane upon which the object is placed; that is, directly below the camera. The Z-axis follows the primary axis, along the line from the image&#x27;s normal vector to the camera.</td></tr><tr><td><code>M_SPHERICAL</code> <em>(default)</em></td><td>Specifies that the light vector is defined in the spherical coordinate system. The components include the polar (zenith) angle, the azimuth angle, and the relative intensity of the light source.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-of-4">For operation settings of<a href="#for-operation-settings-of-4" class="hash-link" aria-label="Direct link to For operation settings of" title="Direct link to For operation settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_EXTENDED_DEPTH_OF_FIELD</code></a> registration context settings; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CONTEXT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_of_confusion_radius_max"><code>M_CIRCLE_OF_CONFUSION_RADIUS_MAX</code><a href="#m_circle_of_confusion_radius_max" class="hash-link" aria-label="Direct link to m_circle_of_confusion_radius_max" title="Direct link to m_circle_of_confusion_radius_max" translate="no">​</a></h3>
+<p>Sets the maximum radius of the circle of confusion (blurring circle), among the input images. If this control type is set incorrectly, the EDoF image might not be completely in focus, even if it should be possible given the input images.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>1 &lt;= Value &lt;= 256</code> <em>(default)</em></td><td>Specifies the maximum radius of the circle of confusion (blurring circle) in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mode"><code>M_MODE</code><a href="#m_mode" class="hash-link" aria-label="Direct link to m_mode" title="Direct link to m_mode" translate="no">​</a></h3>
+<p>Sets the computation mode of the extended depth of field operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FAST</code></td><td>Specifies a faster computation mode. Note that using a faster computation mode can decrease robustness of the registration operation.</td></tr><tr><td><code>M_RECONSTRUCTION</code> <em>(default)</em></td><td>Specifies a computation mode that favors the quality of the extended depth of field (EDoF) image. This setting can lead to longer computation times.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_translation_tolerance"><code>M_TRANSLATION_TOLERANCE</code><a href="#m_translation_tolerance" class="hash-link" aria-label="Direct link to m_translation_tolerance" title="Direct link to m_translation_tolerance" translate="no">​</a></h3>
+<p>Sets the maximum distance between a point of an object that is in focus in one image, and the same point in an image in which the object is out of focus, in pixels. If this control type is set incorrectly, the EDoF image might not be completely in focus, even if it should be possible given the input images.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>1 &lt;= Value &lt;= 4</code> <em>(default)</em></td><td>Specifies the maximum translation distance of a point between two images, in pixels.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-of-5">For operation settings of<a href="#for-operation-settings-of-5" class="hash-link" aria-label="Direct link to For operation settings of" title="Direct link to For operation settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_DEPTH_FROM_FOCUS</code></a> registration context settings; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CONTEXT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_adaptive_intensity_delta"><code>M_ADAPTIVE_INTENSITY_DELTA</code><a href="#m_adaptive_intensity_delta" class="hash-link" aria-label="Direct link to m_adaptive_intensity_delta" title="Direct link to m_adaptive_intensity_delta" translate="no">​</a></h3>
+<p>Sets the maximum difference between the intensity values for an object in an image. This value is used when performing the intensity component of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ADAPTIVE</code></a> regularization. This determines whether neighboring pixels are considered part of the same object when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ADAPTIVE</code></a> regularization mode.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the maximum difference of intensities.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_adaptive_smoothing"><code>M_ADAPTIVE_SMOOTHING</code><a href="#m_adaptive_smoothing" class="hash-link" aria-label="Direct link to m_adaptive_smoothing" title="Direct link to m_adaptive_smoothing" translate="no">​</a></h3>
+<p>Sets which neighborhood pixels are given more weight when performing the smoothing component of the adaptive regularization. This determines how neighborhood pixels are weighted when using an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ADAPTIVE</code></a> regularization mode.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies a distance, in pixels, from the pixel being evaluated. Neighborhood pixels that are within this distance from the pixel being evaluated are given more weight. A lower adaptive smoothing value gives more weight to pixels closer to the pixel being evaluated; while a higher adaptive smoothing value equalizes the weight given to pixels in the neighborhood. If the distance is larger than the regularization neighborhood (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_REGULARIZATION_SIZE</code></a>), any pixels outside of the regularization neighborhood will have a weight of 0.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confidence_map"><code>M_CONFIDENCE_MAP</code><a href="#m_confidence_map" class="hash-link" aria-label="Direct link to m_confidence_map" title="Direct link to m_confidence_map" translate="no">​</a></h3>
+<p>Sets whether the confidence map is computed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the confidence map is not computed.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the confidence map is computed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_focus_depth_size"><code>M_FOCUS_DEPTH_SIZE</code><a href="#m_focus_depth_size" class="hash-link" aria-label="Direct link to m_focus_depth_size" title="Direct link to m_focus_depth_size" translate="no">​</a></h3>
+<p>Sets the number of images for a portion of the image to go from out of focus to in focus, to out of focus again. A larger number of images indicates a more precise operation, and a longer processing time.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 1</code> <em>(default)</em></td><td>Specifies the number of images.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intensity_map"><code>M_INTENSITY_MAP</code><a href="#m_intensity_map" class="hash-link" aria-label="Direct link to m_intensity_map" title="Direct link to m_intensity_map" translate="no">​</a></h3>
+<p>Sets whether the intensity map is computed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the intensity map is not computed.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the intensity map is computed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_regularization_mode"><code>M_REGULARIZATION_MODE</code><a href="#m_regularization_mode" class="hash-link" aria-label="Direct link to m_regularization_mode" title="Direct link to m_regularization_mode" translate="no">​</a></h3>
+<p>Sets the mode of regularization. The mode establishes how to adjust the coherency of neighboring pixels in the index map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ADAPTIVE</code></td><td>Specifies that the regularization takes into account the local geometry and the change in intensity of the content in the source image. This regularization mode is made up of two components: the smoothing (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ADAPTIVE_SMOOTHING</code></a>) and the intensity (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ADAPTIVE_INTENSITY_DELTA</code></a>) components.</td></tr><tr><td><code>M_AVERAGE</code> <em>(default)</em></td><td>Specifies that the regularization takes into account the average dominance of neighboring pixels.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the regularization is based on the raw pixel values and that no post-processing is done to ensure the coherency of neighboring pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_regularization_size"><code>M_REGULARIZATION_SIZE</code><a href="#m_regularization_size" class="hash-link" aria-label="Direct link to m_regularization_size" title="Direct link to m_regularization_size" translate="no">​</a></h3>
+<p>Sets the neighborhood size when regularization is used. The neighborhood should be the size of the minimum texture pattern in an object in the image, but no larger than the smallest object dimension in the image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 3</code> <em>(default)</em></td><td>Specifies the size of the neighborhood, in pixels. The size of the neighborhood used is always an odd number. If you specify an even number, the next largest odd number is applied.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-of-6">For operation settings of<a href="#for-operation-settings-of-6" class="hash-link" aria-label="Direct link to For operation settings of" title="Direct link to For operation settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_HIGH_DYNAMIC_RANGE</code></a> registration context settings; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CONTEXT</code></a>. Note that these controls apply to all input images.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fusion_coverage"><code>M_FUSION_COVERAGE</code><a href="#m_fusion_coverage" class="hash-link" aria-label="Direct link to m_fusion_coverage" title="Direct link to m_fusion_coverage" translate="no">​</a></h3>
+<p>Sets the required proportion of non-saturated pixels within each input image that qualifies the image for inclusion in the HDR calculation. Non-saturated pixels are neither underexposed nor overexposed, according to the limits set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_LOW_THRESHOLD</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_HIGH_THRESHOLD</code></a>. The specified <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_COVERAGE</code></a> value is the ratio between the number of qualifying, non-saturated pixels in the input image and the total number of pixels in the image, from 0.0-1.0.  A lower value for this setting is less restrictive because fewer pixels are required per input image. Setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_COVERAGE</code></a> to a larger value requires more qualifying pixels and is more restrictive.  Note that qualifying pixels are those that are also non-saturated in the working HDR image (that is, those that are in the common merge area).  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GAIN_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_AUTO</code></a> (or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DEFAULT</code></a>), the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_COVERAGE</code></a> ratio determines the number of pixels used to automatically calculate the gain applied to the input image to successfully merge it with the intermediate, working HDR image. If the input image gives a calculated ratio that is below the specified ratio, the addition of this image to the final HDR image fails.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 1.0</code> <em>(default)</em></td><td>Specifies the fusion coverage ratio.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fusion_high_threshold"><code>M_FUSION_HIGH_THRESHOLD</code><a href="#m_fusion_high_threshold" class="hash-link" aria-label="Direct link to m_fusion_high_threshold" title="Direct link to m_fusion_high_threshold" translate="no">​</a></h3>
+<p>Sets the threshold to filter out the saturated pixels (that is, the near maximum values) of the current input image and the working HDR image. The threshold is specified as a percentage of the total number of pixels in the working HDR image. Aurora Imaging Library will internally convert this threshold to the lowest pixel value that allows for at least <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_HIGH_THRESHOLD</code></a> percent of pixels in the image to be included. All pixels with values above this threshold will be excluded. For example, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_HIGH_THRESHOLD</code></a> is set to 95%, then Aurora Imaging Library will internally select the lowest pixel value that allows for at least 95% of pixels in the image to be included (that is, at most 5% of the highest pixels in the image to be excluded).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the fusion high threshold, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fusion_low_threshold"><code>M_FUSION_LOW_THRESHOLD</code><a href="#m_fusion_low_threshold" class="hash-link" aria-label="Direct link to m_fusion_low_threshold" title="Direct link to m_fusion_low_threshold" translate="no">​</a></h3>
+<p>Sets the threshold to filter out the underexposed pixels (that is, the near 0 values) of the current input image and the working HDR image. The threshold is specified as a percentage of the total number of pixels in the working HDR image. Aurora Imaging Library will internally convert this threshold to the highest pixel value that excludes at most <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_LOW_THRESHOLD</code></a> percent of pixels. All pixels with values below this threshold will be excluded. For example, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_LOW_THRESHOLD</code></a> is set to 5%, then Aurora Imaging Library will internally select the highest pixel value where at most 5% of the lowest pixels in the image would be excluded.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the fusion low threshold, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fusion_mode"><code>M_FUSION_MODE</code><a href="#m_fusion_mode" class="hash-link" aria-label="Direct link to m_fusion_mode" title="Direct link to m_fusion_mode" translate="no">​</a></h3>
+<p>Sets the criteria by which input image pixels are selected for contribution to the HDR image calculation. Saturated and underexposed pixels are excluded, and the remaining pixels are then used to calculate the gain to apply to the input image to successfully merge it with the intermediate, working HDR image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_PERCENTILE_VALUE</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_IN_RANGE</code></a>.</td></tr><tr><td><code>M_PERCENTILE_VALUE</code></td><td>Specifies to eliminate from the calculation those pixels whose values exceed or fall short of the limits set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_HIGH_THRESHOLD</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_LOW_THRESHOLD</code></a>, respectively.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gain_mode"><code>M_GAIN_MODE</code><a href="#m_gain_mode" class="hash-link" aria-label="Direct link to m_gain_mode" title="Direct link to m_gain_mode" translate="no">​</a></h3>
+<p>Sets how Aurora Imaging Library establishes the image gain to apply to an input image when merging it with the intermediate, working HDR image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies that the image gains will be automatically estimated by Aurora Imaging Library.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies that you will explicitly set the image gain to use for a given input image, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_IMAGE_GAIN</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tone_mapping_coefficient"><code>M_TONE_MAPPING_COEFFICIENT</code><a href="#m_tone_mapping_coefficient" class="hash-link" aria-label="Direct link to m_tone_mapping_coefficient" title="Direct link to m_tone_mapping_coefficient" translate="no">​</a></h3>
+<p>Sets the tone mapping coefficient when calculating the tone-mapped HDR image.  The specified <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TONE_MAPPING_COEFFICIENT</code></a> affects the pixel intensity distribution during the tone mapping between the HDR image and the end image. A higher value (closer to 1.0) gives a broader intensity range to bright areas, improving bright area detail and lowering the overall brightness of the final image. Conversely, a lower value (closer to 0.0), gives a broader intensity range to dark areas, improving dark area detail and increasing the overall brightness of the final image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 1.0</code> <em>(default)</em></td><td>Specifies the tone mapping coefficient.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tone_mapping_high_threshold"><code>M_TONE_MAPPING_HIGH_THRESHOLD</code><a href="#m_tone_mapping_high_threshold" class="hash-link" aria-label="Direct link to m_tone_mapping_high_threshold" title="Direct link to m_tone_mapping_high_threshold" translate="no">​</a></h3>
+<p>Sets the tone mapping high threshold to use when calculating the tone-mapped HDR image. Specify the threshold as a percentage of the raw HDR image&#x27;s pixel intensity levels. This clamps unnecessary pixel intensity levels at the saturated end, and allows more intensity distribution elsewhere in the image.  For example, if you set the tone mapping high threshold to 90%, pixels in the raw HDR image with intensities in the brightest 10% are mapped to a constant saturated value in the tone-mapped result.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the tone mapping high threshold, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tone_mapping_low_threshold"><code>M_TONE_MAPPING_LOW_THRESHOLD</code><a href="#m_tone_mapping_low_threshold" class="hash-link" aria-label="Direct link to m_tone_mapping_low_threshold" title="Direct link to m_tone_mapping_low_threshold" translate="no">​</a></h3>
+<p>Sets the tone mapping low threshold to use when calculating the tone-mapped HDR image. Specify the threshold as a percentage of the raw HDR image&#x27;s pixel intensity levels. This clamps unnecessary pixel intensity levels at the near-zero end, and allows more intensity distribution elsewhere in the image.  For example, if you set the tone mapping low threshold to 10%, pixels in the raw HDR image with intensities in the darkest 10% are mapped to a constant low value in the tone-mapped result.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the tone mapping low threshold, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tone_mapping_mode"><code>M_TONE_MAPPING_MODE</code><a href="#m_tone_mapping_mode" class="hash-link" aria-label="Direct link to m_tone_mapping_mode" title="Direct link to m_tone_mapping_mode" translate="no">​</a></h3>
+<p>Sets the tone mapping mode to use when calculating the tone-mapped HDR image. Tone mapping distributes pixel intensity values within the specified range. You can also specify to disable tone mapping (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DISABLE</code></a>), in which case the raw HDR image is drawn into the destination buffer.  Note that, when writing results to a result buffer (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>), the raw HDR image is always available to draw (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_HDR_FULL_IMAGE</code></a>), whether or not tone mapping was applied. Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>M_DRAW_HDR_IMAGE</code></a> to draw the tone-mapped HDR image.  When enabled, the tone mapping result is written to the result buffer or the image buffer passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><code>MregDraw</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_PERCENTILE_VALUE</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_IN_RANGE</code></a>.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to use a tone mapping mode.</td></tr><tr><td><code>M_PERCENTILE_VALUE</code></td><td>Specifies to apply tone mapping to input image pixels whose intensity levels fall within the limits set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TONE_MAPPING_HIGH_THRESHOLD</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TONE_MAPPING_LOW_THRESHOLD</code></a>, respectively.  &gt; <strong>Note:</strong> Tone mapping uses specified percentages to calculate upper and lower limits for the operation. To specify explicit values instead of percent thresholds, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/MgenLutFunction"><code>MgenLutFunction</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/MgenLutFunction"><code>M_TONE_MAPPING</code></a> to generate the mapping, and then use, for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimLutMap"><code>MimLutMap</code></a> to map the raw HDR image. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TONE_MAPPING_LOW_THRESHOLD</code></a> corresponds to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/MgenLutFunction"><code>a</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TONE_MAPPING_HIGH_THRESHOLD</code></a> corresponds to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/MgenLutFunction"><code>b</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TONE_MAPPING_COEFFICIENT</code></a> corresponds to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/MgenLutFunction"><code>c</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-settings-of-7">For operation settings of<a href="#for-operation-settings-of-7" class="hash-link" aria-label="Direct link to For operation settings of" title="Direct link to For operation settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_HIGH_DYNAMIC_RANGE</code></a> registration context settings; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to the index of the input image to control, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_ALL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_image_gain"><code>M_IMAGE_GAIN</code><a href="#m_image_gain" class="hash-link" aria-label="Direct link to m_image_gain" title="Direct link to m_image_gain" translate="no">​</a></h3>
+<p>Sets the image gain that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a> should use to merge the given input image with the intermediate, working HDR image, when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GAIN_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_USER_DEFINED</code></a>.  Note that this setting is ignored when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_GAIN_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_AUTO</code></a> (or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_DEFAULT</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INVALID</code></td><td>Specifies that the image will be ignored.</td></tr><tr><td><code>Value &gt;= 1.0</code> <em>(default)</em></td><td>Specifies the image gain to be used by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-a-threshold-condition">Combination Constants — For specifying a threshold condition<a href="#combination-constants--for-specifying-a-threshold-condition" class="hash-link" aria-label="Direct link to Combination Constants — For specifying a threshold condition" title="Direct link to Combination Constants — For specifying a threshold condition" translate="no">​</a></h3>
+<blockquote>
+<p><em>Essential.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You must add one of the following values to the above-mentioned values to specify a threshold condition.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_IN_RANGE</code></td><td>Specifies to apply the fusion or tone mapping to pixels within a specified range. Set the bounds of the range with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_LOW_THRESHOLD</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_FUSION_HIGH_THRESHOLD</code></a>, or with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TONE_MAPPING_LOW_THRESHOLD</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_TONE_MAPPING_HIGH_THRESHOLD</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-operation-timeout-settings-of">For operation timeout settings of<a href="#for-operation-timeout-settings-of" class="hash-link" aria-label="Direct link to For operation timeout settings of" title="Direct link to For operation timeout settings of" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>ControlValue</code></a> parameter settings are used to control the timeout value for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregAlloc"><code>M_PHOTOMETRIC_STEREO</code></a> registration context; in this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>Index</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregControl"><code>M_CONTEXT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_timeout"><code>M_TIMEOUT</code><a href="#m_timeout" class="hash-link" aria-label="Direct link to m_timeout" title="Direct link to m_timeout" translate="no">​</a></h3>
+<p>Sets the timeout value for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><code>MregCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 2000.0 msec.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that there is no timeout value.</td></tr><tr><td><code>Value</code></td><td>Specifies the timeout value, in msec.</td></tr></tbody></table></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregCalculate"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MregCalculate</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/MregDraw"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MregDraw</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#index-in-ail_int" class="table-of-contents__link toc-highlight"><code>Index</code> <em>(in, AIL_INT)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-operation-settings-of" class="table-of-contents__link toc-highlight">For operation settings of</a></li><li><a href="#m_number_of_registration_elements" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_REGISTRATION_ELEMENTS</code></a></li><li><a href="#for-operation-settings-of-1" class="table-of-contents__link toc-highlight">For operation settings of</a></li><li><a href="#m_accuracy" class="table-of-contents__link toc-highlight"><code>M_ACCURACY</code></a></li><li><a href="#m_location_delta" class="table-of-contents__link toc-highlight"><code>M_LOCATION_DELTA</code></a></li><li><a href="#m_min_overlap" class="table-of-contents__link toc-highlight"><code>M_MIN_OVERLAP</code></a></li><li><a href="#m_score_type" class="table-of-contents__link toc-highlight"><code>M_SCORE_TYPE</code></a></li><li><a href="#m_stitching_last_level" class="table-of-contents__link toc-highlight"><code>M_STITCHING_LAST_LEVEL</code></a></li><li><a href="#m_transformation_type" class="table-of-contents__link toc-highlight"><code>M_TRANSFORMATION_TYPE</code></a></li><li><a href="#for-registration-elements-one-or-all-of-an" class="table-of-contents__link toc-highlight">For registration elements (one or all) of an</a></li><li><a href="#m_optimize_location" class="table-of-contents__link toc-highlight"><code>M_OPTIMIZE_LOCATION</code></a></li><li><a href="#m_reference_x" class="table-of-contents__link toc-highlight"><code>M_REFERENCE_X</code></a></li><li><a href="#m_reference_y" class="table-of-contents__link toc-highlight"><code>M_REFERENCE_Y</code></a></li><li><a href="#for" class="table-of-contents__link toc-highlight">For</a></li><li><a href="#m_mosaic_composition" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_COMPOSITION</code></a></li><li><a href="#m_mosaic_offset_x" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_OFFSET_X</code></a></li><li><a href="#m_mosaic_offset_y" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_OFFSET_Y</code></a></li><li><a href="#m_mosaic_scale" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_SCALE</code></a></li><li><a href="#m_mosaic_static_index" class="table-of-contents__link toc-highlight"><code>M_MOSAIC_STATIC_INDEX</code></a></li><li><a href="#m_sr_psf_radius" class="table-of-contents__link toc-highlight"><code>M_SR_PSF_RADIUS</code></a></li><li><a href="#m_sr_psf_type" class="table-of-contents__link toc-highlight"><code>M_SR_PSF_TYPE</code></a></li><li><a href="#m_sr_smoothness" class="table-of-contents__link toc-highlight"><code>M_SR_SMOOTHNESS</code></a></li><li><a href="#for-operation-settings-of-2" class="table-of-contents__link toc-highlight">For operation settings of</a></li><li><a href="#m_draw_with_no_result" class="table-of-contents__link toc-highlight"><code>M_DRAW_WITH_NO_RESULT</code></a></li><li><a href="#m_gaussian_curvature" class="table-of-contents__link toc-highlight"><code>M_GAUSSIAN_CURVATURE</code></a></li><li><a href="#m_improved_local_shape" class="table-of-contents__link toc-highlight"><code>M_IMPROVED_LOCAL_SHAPE</code></a></li><li><a href="#m_local_contrast" class="table-of-contents__link toc-highlight"><code>M_LOCAL_CONTRAST</code></a></li><li><a href="#m_local_shape" class="table-of-contents__link toc-highlight"><code>M_LOCAL_SHAPE</code></a></li><li><a href="#m_mean_curvature" class="table-of-contents__link toc-highlight"><code>M_MEAN_CURVATURE</code></a></li><li><a href="#m_non_uniformity_correction" class="table-of-contents__link toc-highlight"><code>M_NON_UNIFORMITY_CORRECTION</code></a></li><li><a href="#m_object_size" class="table-of-contents__link toc-highlight"><code>M_OBJECT_SIZE</code></a></li><li><a href="#m_shape_normalization" class="table-of-contents__link toc-highlight"><code>M_SHAPE_NORMALIZATION</code></a></li><li><a href="#m_shape_smoothness" class="table-of-contents__link toc-highlight"><code>M_SHAPE_SMOOTHNESS</code></a></li><li><a href="#m_texture_image" class="table-of-contents__link toc-highlight"><code>M_TEXTURE_IMAGE</code></a></li><li><a href="#for-operation-settings-of-3" class="table-of-contents__link toc-highlight">For operation settings of</a></li><li><a href="#m_draw_remap_factor_mode" class="table-of-contents__link toc-highlight"><code>M_DRAW_REMAP_FACTOR_MODE</code></a></li><li><a href="#m_draw_remap_factor_value" class="table-of-contents__link toc-highlight"><code>M_DRAW_REMAP_FACTOR_VALUE</code></a></li><li><a href="#m_stop_calculate" class="table-of-contents__link toc-highlight"><code>M_STOP_CALCULATE</code></a></li><li><a href="#for-registration-elements-of-an" class="table-of-contents__link toc-highlight">For registration elements of an</a></li><li><a href="#m_light_vector_component_1" class="table-of-contents__link toc-highlight"><code>M_LIGHT_VECTOR_COMPONENT_1</code></a></li><li><a href="#m_light_vector_component_2" class="table-of-contents__link toc-highlight"><code>M_LIGHT_VECTOR_COMPONENT_2</code></a></li><li><a href="#m_light_vector_component_3" class="table-of-contents__link toc-highlight"><code>M_LIGHT_VECTOR_COMPONENT_3</code></a></li><li><a href="#m_light_vector_type" class="table-of-contents__link toc-highlight"><code>M_LIGHT_VECTOR_TYPE</code></a></li><li><a href="#for-operation-settings-of-4" class="table-of-contents__link toc-highlight">For operation settings of</a></li><li><a href="#m_circle_of_confusion_radius_max" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_OF_CONFUSION_RADIUS_MAX</code></a></li><li><a href="#m_mode" class="table-of-contents__link toc-highlight"><code>M_MODE</code></a></li><li><a href="#m_translation_tolerance" class="table-of-contents__link toc-highlight"><code>M_TRANSLATION_TOLERANCE</code></a></li><li><a href="#for-operation-settings-of-5" class="table-of-contents__link toc-highlight">For operation settings of</a></li><li><a href="#m_adaptive_intensity_delta" class="table-of-contents__link toc-highlight"><code>M_ADAPTIVE_INTENSITY_DELTA</code></a></li><li><a href="#m_adaptive_smoothing" class="table-of-contents__link toc-highlight"><code>M_ADAPTIVE_SMOOTHING</code></a></li><li><a href="#m_confidence_map" class="table-of-contents__link toc-highlight"><code>M_CONFIDENCE_MAP</code></a></li><li><a href="#m_focus_depth_size" class="table-of-contents__link toc-highlight"><code>M_FOCUS_DEPTH_SIZE</code></a></li><li><a href="#m_intensity_map" class="table-of-contents__link toc-highlight"><code>M_INTENSITY_MAP</code></a></li><li><a href="#m_regularization_mode" class="table-of-contents__link toc-highlight"><code>M_REGULARIZATION_MODE</code></a></li><li><a href="#m_regularization_size" class="table-of-contents__link toc-highlight"><code>M_REGULARIZATION_SIZE</code></a></li><li><a href="#for-operation-settings-of-6" class="table-of-contents__link toc-highlight">For operation settings of</a></li><li><a href="#m_fusion_coverage" class="table-of-contents__link toc-highlight"><code>M_FUSION_COVERAGE</code></a></li><li><a href="#m_fusion_high_threshold" class="table-of-contents__link toc-highlight"><code>M_FUSION_HIGH_THRESHOLD</code></a></li><li><a href="#m_fusion_low_threshold" class="table-of-contents__link toc-highlight"><code>M_FUSION_LOW_THRESHOLD</code></a></li><li><a href="#m_fusion_mode" class="table-of-contents__link toc-highlight"><code>M_FUSION_MODE</code></a></li><li><a href="#m_gain_mode" class="table-of-contents__link toc-highlight"><code>M_GAIN_MODE</code></a></li><li><a href="#m_tone_mapping_coefficient" class="table-of-contents__link toc-highlight"><code>M_TONE_MAPPING_COEFFICIENT</code></a></li><li><a href="#m_tone_mapping_high_threshold" class="table-of-contents__link toc-highlight"><code>M_TONE_MAPPING_HIGH_THRESHOLD</code></a></li><li><a href="#m_tone_mapping_low_threshold" class="table-of-contents__link toc-highlight"><code>M_TONE_MAPPING_LOW_THRESHOLD</code></a></li><li><a href="#m_tone_mapping_mode" class="table-of-contents__link toc-highlight"><code>M_TONE_MAPPING_MODE</code></a></li><li><a href="#for-operation-settings-of-7" class="table-of-contents__link toc-highlight">For operation settings of</a></li><li><a href="#m_image_gain" class="table-of-contents__link toc-highlight"><code>M_IMAGE_GAIN</code></a></li><li><a href="#combination-constants--for-specifying-a-threshold-condition" class="table-of-contents__link toc-highlight">Combination Constants — For specifying a threshold condition</a></li><li><a href="#for-operation-timeout-settings-of" class="table-of-contents__link toc-highlight">For operation timeout settings of</a></li><li><a href="#m_timeout" class="table-of-contents__link toc-highlight"><code>M_TIMEOUT</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

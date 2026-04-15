@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">JavaScript Aurora Imaging Web Library function reference | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="JavaScript Aurora Imaging Web Library function reference | Aurora Imaging Library"><meta data-rh="true" name="description" content="The following functions are available for creating an Aurora Imaging Web Library client with JavaScript."><meta data-rh="true" property="og:description" content="The following functions are available for creating an Aurora Imaging Web Library client with JavaScript."><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"JavaScript Aurora Imaging Web Library function reference","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C00_AIL_Introduction/ChapterInformation"><span title="C00_AIL_Introduction" class="categoryLinkLabel_W154">C00_AIL_Introduction</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C01_Tools_and_utilities/ChapterInformation"><span title="C01_Tools_and_utilities" class="categoryLinkLabel_W154">C01_Tools_and_utilities</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C02_Building_an_application/ChapterInformation"><span title="C02_Building_an_application" class="categoryLinkLabel_W154">C02_Building_an_application</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C03_Image_processing/ChapterInformation"><span title="C03_Image_processing" class="categoryLinkLabel_W154">C03_Image_processing</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C04_Advanced_image_processing/ChapterInformation"><span title="C04_Advanced_image_processing" class="categoryLinkLabel_W154">C04_Advanced_image_processing</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C05_Specialized_image_processing/ChapterInformation"><span title="C05_Specialized_image_processing" class="categoryLinkLabel_W154">C05_Specialized_image_processing</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C06_Blob_analysis/ChapterInformation"><span title="C06_Blob_analysis" class="categoryLinkLabel_W154">C06_Blob_analysis</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C07_Pattern_matching/ChapterInformation"><span title="C07_Pattern_matching" class="categoryLinkLabel_W154">C07_Pattern_matching</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C08_Geometric_Model_Finder/ChapterInformation"><span title="C08_Geometric_Model_Finder" class="categoryLinkLabel_W154">C08_Geometric_Model_Finder</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C09_Advanced_Geometric_Matcher/ChapterInformation"><span title="C09_Advanced_Geometric_Matcher" class="categoryLinkLabel_W154">C09_Advanced_Geometric_Matcher</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C10_Edge_Finder/ChapterInformation"><span title="C10_Edge_Finder" class="categoryLinkLabel_W154">C10_Edge_Finder</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C11_Registration/ChapterInformation"><span title="C11_Registration" class="categoryLinkLabel_W154">C11_Registration</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C12_Correlation_stitching_registration/ChapterInformation"><span title="C12_Correlation_stitching_registration" class="categoryLinkLabel_W154">C12_Correlation_stitching_registration</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C13_Optical_character_recognition/ChapterInformation"><span title="C13_Optical_character_recognition" class="categoryLinkLabel_W154">C13_Optical_character_recognition</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C14_String_Reader/ChapterInformation"><span title="C14_String_Reader" class="categoryLinkLabel_W154">C14_String_Reader</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C15_SureDotOCR/ChapterInformation"><span title="C15_SureDotOCR" class="categoryLinkLabel_W154">C15_SureDotOCR</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C16_Deep_learning_OCR/ChapterInformation"><span title="C16_Deep_learning_OCR" class="categoryLinkLabel_W154">C16_Deep_learning_OCR</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C17_Codes/ChapterInformation"><span title="C17_Codes" class="categoryLinkLabel_W154">C17_Codes</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C18_More_on_grading_codes/ChapterInformation"><span title="C18_More_on_grading_codes" class="categoryLinkLabel_W154">C18_More_on_grading_codes</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C19_Measurements/ChapterInformation"><span title="C19_Measurements" class="categoryLinkLabel_W154">C19_Measurements</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C20_Bead/ChapterInformation"><span title="C20_Bead" class="categoryLinkLabel_W154">C20_Bead</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C21_Metrology/ChapterInformation"><span title="C21_Metrology" class="categoryLinkLabel_W154">C21_Metrology</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C22_Color/ChapterInformation"><span title="C22_Color" class="categoryLinkLabel_W154">C22_Color</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C23_Data_buffers/ChapterInformation"><span title="C23_Data_buffers" class="categoryLinkLabel_W154">C23_Data_buffers</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C24_Lookup_tables/ChapterInformation"><span title="C24_Lookup_tables" class="categoryLinkLabel_W154">C24_Lookup_tables</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C25_Displaying_an_image/ChapterInformation"><span title="C25_Displaying_an_image" class="categoryLinkLabel_W154">C25_Displaying_an_image</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C26_Generating_graphics/ChapterInformation"><span title="C26_Generating_graphics" class="categoryLinkLabel_W154">C26_Generating_graphics</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C27_Grabbing_with_your_digitizer/ChapterInformation"><span title="C27_Grabbing_with_your_digitizer" class="categoryLinkLabel_W154">C27_Grabbing_with_your_digitizer</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C28_Calibration/ChapterInformation"><span title="C28_Calibration" class="categoryLinkLabel_W154">C28_Calibration</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C29_Fixturing/ChapterInformation"><span title="C29_Fixturing" class="categoryLinkLabel_W154">C29_Fixturing</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C30_JPEG_and_JPEG2000_compression/ChapterInformation"><span title="C30_JPEG_and_JPEG2000_compression" class="categoryLinkLabel_W154">C30_JPEG_and_JPEG2000_compression</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C31_Sequence/ChapterInformation"><span title="C31_Sequence" class="categoryLinkLabel_W154">C31_Sequence</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C32_3D_processing_and_analysis_overview/ChapterInformation"><span title="C32_3D_processing_and_analysis_overview" class="categoryLinkLabel_W154">C32_3D_processing_and_analysis_overview</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C33_Common_tasks_with_3D_data/ChapterInformation"><span title="C33_Common_tasks_with_3D_data" class="categoryLinkLabel_W154">C33_Common_tasks_with_3D_data</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C34_3D_analysis_using_planar_views_of_an_object/ChapterInformation"><span title="C34_3D_analysis_using_planar_views_of_an_object" class="categoryLinkLabel_W154">C34_3D_analysis_using_planar_views_of_an_object</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C35_3D_Image_processing/ChapterInformation"><span title="C35_3D_Image_processing" class="categoryLinkLabel_W154">C35_3D_Image_processing</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C36_3D_Blob_analysis/ChapterInformation"><span title="C36_3D_Blob_analysis" class="categoryLinkLabel_W154">C36_3D_Blob_analysis</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C37_3D_Model_finder/ChapterInformation"><span title="C37_3D_Model_finder" class="categoryLinkLabel_W154">C37_3D_Model_finder</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C38_3D_Measurement/ChapterInformation"><span title="C38_3D_Measurement" class="categoryLinkLabel_W154">C38_3D_Measurement</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C39_3D_Metrology/ChapterInformation"><span title="C39_3D_Metrology" class="categoryLinkLabel_W154">C39_3D_Metrology</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C40_3D_Registration/ChapterInformation"><span title="C40_3D_Registration" class="categoryLinkLabel_W154">C40_3D_Registration</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C41_3D_Containers/ChapterInformation"><span title="C41_3D_Containers" class="categoryLinkLabel_W154">C41_3D_Containers</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C42_Grabbing_from_3D_sensors/ChapterInformation"><span title="C42_Grabbing_from_3D_sensors" class="categoryLinkLabel_W154">C42_Grabbing_from_3D_sensors</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C43_3D_Display_and_graphics/ChapterInformation"><span title="C43_3D_Display_and_graphics" class="categoryLinkLabel_W154">C43_3D_Display_and_graphics</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C44_Using_the_3D_Geometry_module/ChapterInformation"><span title="C44_Using_the_3D_Geometry_module" class="categoryLinkLabel_W154">C44_Using_the_3D_Geometry_module</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C45_Fixturing_in_3D/ChapterInformation"><span title="C45_Fixturing_in_3D" class="categoryLinkLabel_W154">C45_Fixturing_in_3D</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C46_3D_reconstruction_using_laser_line_profiling/ChapterInformation"><span title="C46_3D_reconstruction_using_laser_line_profiling" class="categoryLinkLabel_W154">C46_3D_reconstruction_using_laser_line_profiling</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C47_ML_with_the_MIL_Classification_module/ChapterInformation"><span title="C47_ML_with_the_MIL_Classification_module" class="categoryLinkLabel_W154">C47_ML_with_the_MIL_Classification_module</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C48_ML_Datasets/ChapterInformation"><span title="C48_ML_Datasets" class="categoryLinkLabel_W154">C48_ML_Datasets</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C49_ML_Training/ChapterInformation"><span title="C49_ML_Training" class="categoryLinkLabel_W154">C49_ML_Training</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C50_ML_Prediction/ChapterInformation"><span title="C50_ML_Prediction" class="categoryLinkLabel_W154">C50_ML_Prediction</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C51_ML_Image_classification/ChapterInformation"><span title="C51_ML_Image_classification" class="categoryLinkLabel_W154">C51_ML_Image_classification</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C52_ML_Segmentation/ChapterInformation"><span title="C52_ML_Segmentation" class="categoryLinkLabel_W154">C52_ML_Segmentation</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C53_ML_Object_detection/ChapterInformation"><span title="C53_ML_Object_detection" class="categoryLinkLabel_W154">C53_ML_Object_detection</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C54_ML_Anomaly_detection/ChapterInformation"><span title="C54_ML_Anomaly_detection" class="categoryLinkLabel_W154">C54_ML_Anomaly_detection</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C55_ML_Feature_classification/ChapterInformation"><span title="C55_ML_Feature_classification" class="categoryLinkLabel_W154">C55_ML_Feature_classification</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C56_IO_signals/ChapterInformation"><span title="C56_IO_signals" class="categoryLinkLabel_W154">C56_IO_signals</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C57_Industrial_communication/ChapterInformation"><span title="C57_Industrial_communication" class="categoryLinkLabel_W154">C57_Industrial_communication</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/ChapterInformation"><span title="C58_Using_AIWL_to_monitor_your_application" class="categoryLinkLabel_W154">C58_Using_AIWL_to_monitor_your_application</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/ChapterInformation"><span title="Using Aurora Imaging Web Library to monitor your application" class="linkLabel_WmDU">Using Aurora Imaging Web Library to monitor your application</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S01_AIWL_overview"><span title="Aurora Imaging Web Library overview" class="linkLabel_WmDU">Aurora Imaging Web Library overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S02_Basic_concepts"><span title="Basic concepts for Aurora Imaging Web Library" class="linkLabel_WmDU">Basic concepts for Aurora Imaging Web Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S03_Using_AIWL_to_monitor_your_application"><span title="Fundamentals for creating your Aurora Imaging Web Library client application" class="linkLabel_WmDU">Fundamentals for creating your Aurora Imaging Web Library client application</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S04_Creating_an_AIWL_client_with_JavaScript"><span title="Creating an Aurora Imaging Web Library client application with JavaScript" class="linkLabel_WmDU">Creating an Aurora Imaging Web Library client application with JavaScript</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference"><span title="JavaScript Aurora Imaging Web Library function reference" class="linkLabel_WmDU">JavaScript Aurora Imaging Web Library function reference</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S06_Creating_an_AIWL_client_with_C"><span title="Creating an Aurora Imaging Web Library client application with C/C++" class="linkLabel_WmDU">Creating an Aurora Imaging Web Library client application with C/C++</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S07_C_AIWL_function_reference"><span title="C/C++ Aurora Imaging Web Library function reference" class="linkLabel_WmDU">C/C++ Aurora Imaging Web Library function reference</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S08_Miscellaneous_AIWL_notes_Command_reference"><span title="Miscellaneous reference information for Aurora Imaging Web Library" class="linkLabel_WmDU">Miscellaneous reference information for Aurora Imaging Web Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S09_Miscellaneous_AIWL_notes_User_guide"><span title="Miscellaneous user guide information for Aurora Imaging Web Library" class="linkLabel_WmDU">Miscellaneous user guide information for Aurora Imaging Web Library</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C59_Using_AIL_with_Python/ChapterInformation"><span title="C59_Using_AIL_with_Python" class="categoryLinkLabel_W154">C59_Using_AIL_with_Python</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C60_Using_AIL_with_NET/ChapterInformation"><span title="C60_Using_AIL_with_NET" class="categoryLinkLabel_W154">C60_Using_AIL_with_NET</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C61_Using_AIL_under_Linux/ChapterInformation"><span title="C61_Using_AIL_under_Linux" class="categoryLinkLabel_W154">C61_Using_AIL_under_Linux</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C62_Using_Linux_and_GigE_Vision_Cameras/ChapterInformation"><span title="C62_Using_Linux_and_GigE_Vision_Cameras" class="categoryLinkLabel_W154">C62_Using_Linux_and_GigE_Vision_Cameras</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C63_Distributed_AIL/ChapterInformation"><span title="C63_Distributed_AIL" class="categoryLinkLabel_W154">C63_Distributed_AIL</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C64_HTTP_servers/ChapterInformation"><span title="C64_HTTP_servers" class="categoryLinkLabel_W154">C64_HTTP_servers</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C65_Development_and_Debugging_Tools_and_Techniques/ChapterInformation"><span title="C65_Development_and_Debugging_Tools_and_Techniques" class="categoryLinkLabel_W154">C65_Development_and_Debugging_Tools_and_Techniques</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C66_Using_AIL_with_multiprocessing_and_under_multithread_systems/ChapterInformation"><span title="C66_Using_AIL_with_multiprocessing_and_under_multithread_systems" class="categoryLinkLabel_W154">C66_Using_AIL_with_multiprocessing_and_under_multithread_systems</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C67_Using_AIL_with_FPGA_processing/ChapterInformation"><span title="C67_Using_AIL_with_FPGA_processing" class="categoryLinkLabel_W154">C67_Using_AIL_with_FPGA_processing</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C68_The_AIL_function_development_module/ChapterInformation"><span title="C68_The_AIL_function_development_module" class="categoryLinkLabel_W154">C68_The_AIL_function_development_module</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C69_Distribution_and_licensing/ChapterInformation"><span title="C69_Distribution_and_licensing" class="categoryLinkLabel_W154">C69_Distribution_and_licensing</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C70_About_the_Help/ChapterInformation"><span title="C70_About_the_Help" class="categoryLinkLabel_W154">C70_About_the_Help</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">C58_Using_AIWL_to_monitor_your_application</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">JavaScript Aurora Imaging Web Library function reference</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>JavaScript Aurora Imaging Web Library function reference</h1></header>
+<p>The following functions are available for creating an Aurora Imaging Web Library client with JavaScript.</p>
+<p>To use these functions, you must load <em>ail.js</em> before loading your Aurora Imaging Web Library client application.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmapp">AIWL.Mapp<a href="#aiwlmapp" class="hash-link" aria-label="Direct link to AIWL.Mapp" title="Direct link to AIWL.Mapp" translate="no">​</a></h2>
+<p>The functions prefixed with AIWL.Mapp make up the Aurora Imaging Web Library Application module. The Application module allows you to connect to an Aurora Imaging Web Library server, inquire the client-side Aurora Imaging Library identifiers of objects published by an server, and hook functions to connection and publishing events.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmappcloseconnection">AIWL.MappCloseConnection<a href="#aiwlmappcloseconnection" class="hash-link" aria-label="Direct link to AIWL.MappCloseConnection" title="Direct link to AIWL.MappCloseConnection" translate="no">​</a></h3>
+<p>This function closes a connection to an Aurora Imaging Web Library server application opened by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappOpenConnection</a>.</p>
+<blockquote>
+<p><strong>Note:</strong> <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappCloseConnection</a>is executed asynchronously; this function returns, and execution of your program continues, before the connection is closed. You can hook to the disconnection event using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappHookFunction</a>with<code>AIWL.M_DISCONNECT</code>.</p>
+</blockquote>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappCloseConnection"><code>MappCloseConnection</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MappCloseConnection</strong>(<em>number</em><strong>ApplicationId</strong>)</th></tr></thead><tbody><tr><td><strong>ApplicationId</strong></td><td>Specifies the client-side Aurora Imaging Library application context identifier of the Aurora Imaging Web Library server application from which to disconnect. The application identifier must have been previously obtained, typically when connecting to the server application using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappOpenConnection</a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmappcontrol">AIWL.MappControl<a href="#aiwlmappcontrol" class="hash-link" aria-label="Direct link to AIWL.MappControl" title="Direct link to AIWL.MappControl" translate="no">​</a></h3>
+<p>This function controls a specified application setting of this instance of the Aurora Imaging Web Library client application, or closes a connection to an Aurora Imaging Library object.</p>
+<blockquote>
+<p><strong>Note:</strong> For some settings,<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappControl</a>is executed asynchronously; this function returns, and execution of your program continues, before the operation is complete. Refer to an individual setting to learn if it is asynchronous and, if so, how to hook to the operation completion event.</p>
+</blockquote>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControl"><code>MappControl</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MappControl</strong>(<em>number</em><strong>ApplicationId</strong>,<em>number</em><strong>ControlType</strong>,<em>number</em><strong>ControlValue</strong>)</th></tr></thead><tbody><tr><td><strong>ApplicationId</strong></td><td>This parameter is reserved for future expansion and must be set to<code>AIWL.M_DEFAULT</code>.</td></tr><tr><td><strong>ControlType</strong></td><td>Specifies the type of application setting to control. This parameter can be set to one of the following values:</td></tr><tr><td><code>AIWL.M_CLOSE_CONNECTION</code></td><td>Closes the connection to the Aurora Imaging Library object, specified by the <strong>ControlValue</strong> parameter. This operation is completed asynchronously. You can hook to the disconnection event using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MobjHookFunction</a> with <code>AIWL.M_DISCONNECT</code>. Once the connection is closed (asynchronously), you will not be able to access the specified object until you reinquire its client-side Aurora Imaging Library identifier using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S07_C_AIWL_function_reference">AIWL.MappInquireConnection</a> with <code>AIWL.M_OBJECT_ID</code> and a new connection to the object is established (asynchronously).</td></tr><tr><td><code>AIWL.M_ERROR</code></td><td>Controls whether to print error messages generated by this instance of the Aurora Imaging Web Library client application to the developer console of the web browser. Note that this does not print standard Aurora Imaging Library error messages (generated by the Aurora Imaging Web Library server application). In this case, set <strong>ControlValue</strong> to one of the following values:</td></tr><tr><td><code>AIWL.M_PRINT_DISABLE</code></td><td>Specifies not to print Aurora Imaging Web Library error messages to the developer console of the web browser. If error printing is disabled, you can still check for Aurora Imaging Web Library errors. To do so, hook a function to application errors using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappHookFunction</a>with <code>AIWL.M_ERROR</code>. You can retrieve the error code within the hook-handler function, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappGetHookInfo</a> with <code>AIWL.M_ERROR</code>.</td></tr><tr><td><code>AIWL.M_PRINT_ENABLE</code></td><td>Specifies to print Aurora Imaging Web Library error messages to the developer console of the web browser. This is the default value.</td></tr><tr><td><strong>ControlValue</strong></td><td>Specifies the setting&#x27;s new value, or the identifier of the Aurora Imaging Library object for which to close the connection.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmappgethookinfo">AIWL.MappGetHookInfo<a href="#aiwlmappgethookinfo" class="hash-link" aria-label="Direct link to AIWL.MappGetHookInfo" title="Direct link to AIWL.MappGetHookInfo" translate="no">​</a></h3>
+<p>This function retrieves information about the event that caused the hook-handler function to be called. This function should only be called within the scope of an application hook-handler function call (see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappHookFunction</a>).</p>
+<p>The returned value is the requested information.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappGetHookInfo"><code>MappGetHookInfo</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>number</em><strong>AIWL.MappGetHookInfo</strong>(<em>number</em><strong>ApplicationId</strong>,<em>number</em><strong>EventId</strong>,<em>number</em><strong>InfoType</strong>,<em>object</em>**UserVar **)</th></tr></thead><tbody><tr><td><strong>ApplicationId</strong></td><td>This parameter is reserved for future expansion and must be set to<code>AIWL.M_DEFAULT</code>.</td></tr><tr><td><strong>EventId</strong></td><td>Specifies the client-side Aurora Imaging Library application event identifier that was received by the hook-handler function.</td></tr><tr><td><strong>InfoType</strong></td><td>Specifies the type of information to get. This parameter can be set to the following value:</td></tr><tr><td><code>AIWL.M_OBJECT_ID</code></td><td>Retrieves the client-side Aurora Imaging Library identifier of the Aurora Imaging Web Library server application or Aurora Imaging Library object that generated the event. &gt; <strong>Note:</strong> Note that this client-side Aurora Imaging Library identifier should only be used within the instance of your Aurora Imaging Web Library client application that called this function. The server application, and other instances of your client application, use a different Aurora Imaging Library identifier to refer to the same object. In this case, this function returns the client-side Aurora Imaging Library identifier as a <em>number</em>.</td></tr><tr><td>**UserVar **</td><td>Specifies the JavaScript object in which to write the requested information. The information is written to the<code>data</code> property of the object. Since this function also returns the requested information, you can set this parameter to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmapphookfunction">AIWL.MappHookFunction<a href="#aiwlmapphookfunction" class="hash-link" aria-label="Direct link to AIWL.MappHookFunction" title="Direct link to AIWL.MappHookFunction" translate="no">​</a></h3>
+<p>This function allows you to attach or detach a user-defined function to a specified application event. Once a hook-handler function is defined and hooked to an event, it is automatically called when the event occurs.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappHookFunction"><code>MappHookFunction</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MappHookFunction</strong>(<em>number</em><strong>ApplicationId</strong>,<em>number</em><strong>HookType</strong>,<em>string</em><strong>HookHandler</strong>,<em>object</em>**UserData **)</th></tr></thead><tbody><tr><td><strong>ApplicationId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the Aurora Imaging Web Library server application to which to hook the function. The application identifier must have been previously obtained, typically when connecting to the server application using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappOpenConnection</a>.</td></tr><tr><td><strong>HookType</strong></td><td>Specifies the event type. This parameter can be set to one of the following values. &gt; <strong>Note:</strong> To detach (unhook) a function that you previously hooked, combine the event type with<code>AIWL.M_UNHOOK</code> (for example, <code>AIWL.M_CONNECT</code> + <code>AIWL.M_UNHOOK</code>).</td></tr><tr><td><code>AIWL.M_CONNECT</code></td><td>Specifies to call the hook-handler function when your Aurora Imaging Web Library client application establishes a connection to the specified Aurora Imaging Web Library server application (or one of its published Aurora Imaging Library objects). You can use<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappGetHookInfo</a>with<code> AIWL.M_OBJECT_ID</code>to learn which application or object connected, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MobjInquire</a>with <code> AIWL.M_OBJECT_TYPE</code>to learn the type of the application or object.</td></tr><tr><td><code>AIWL.M_DISCONNECT</code></td><td>Specifies to call the hook-handler function when your Aurora Imaging Web Library client application disconnects from the specified Aurora Imaging Web Library server application (or one of its published Aurora Imaging Library objects). You can use<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappGetHookInfo</a>with<code> AIWL.M_OBJECT_ID</code>to learn which application or object disconnected, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MobjInquire</a>with <code> AIWL.M_OBJECT_TYPE</code>to learn the type of the application or object.</td></tr><tr><td><code>AIWL.M_ERROR</code></td><td>Specifies to call the hook-handler function when an error occurs while attempting to connect to the Aurora Imaging Web Library server application or published Aurora Imaging Library object.</td></tr><tr><td><code>AIWL.M_OBJECT_PUBLISH_WEB </code></td><td>Specifies to call the hook-handler function when the Aurora Imaging Web Library server application publishes or unpublishes an Aurora Imaging Library object.</td></tr><tr><td><strong>HookHandler</strong></td><td>Specifies the name of the JavaScript function that should be called when the event occurs. This function should have the following prototype: <code>function HookHandler(HookType, EventId, UserVar) </code>. For more information about hook-handler functions in JavaScript, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S04_Creating_an_AIWL_client_with_JavaScript">Aurora Imaging Library primer for JavaScript developers</a>.</td></tr><tr><td><strong>UserData</strong></td><td>Specifies the JavaScript object containing the user data that you want to make available to the hook-handler function. This object is passed to the hook-handler function, through its <code>UserVar</code> parameter, when the specified event occurs. Omit this parameter if not used.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmappinquire">AIWL.MappInquire<a href="#aiwlmappinquire" class="hash-link" aria-label="Direct link to AIWL.MappInquire" title="Direct link to AIWL.MappInquire" translate="no">​</a></h3>
+<p>This function inquires about a specified application setting of this instance of the Aurora Imaging Web Library client application, or a connected Aurora Imaging Web Library server application.</p>
+<p>The returned value is the requested information.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquire"><code>MappInquire</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>number</em><strong>AIWL.MappInquire</strong>(<em>number</em><strong>ApplicationId</strong>,<em>number</em><strong>InquireType</strong>,<em>object</em>**UserVar **)</th></tr></thead><tbody><tr><td><strong>ApplicationId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the Aurora Imaging Web Library server application about which to inquire the application settings. The application identifier must have been previously obtained, typically when connecting to the server application using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappOpenConnection</a>. If not used, set this parameter to<code>AIWL.M_DEFAULT</code>.</td></tr><tr><td><strong>InquireType</strong></td><td>Specifies the type of application setting about which to inquire. This parameter can be set to one of the following values:</td></tr><tr><td><code>AIWL.M_ERROR</code></td><td>Inquires whether error messages generated by this instance of the Aurora Imaging Web Library client application are printed to the console of the web browser. In this case, the function returns one of the following values:</td></tr><tr><td><code>AIWL.M_PRINT_DISABLE</code></td><td>Specifies that error messages will not be printed to the developer console of the web browser.</td></tr><tr><td><code>AIWL.M_PRINT_ENABLE</code></td><td>Specifies that error messages will be printed to the developer console of the web browser.</td></tr><tr><td><code>AIWL.M_WEB_CLIENT_INDEX</code></td><td>Inquires the index used by the Aurora Imaging Web Library server application to identify this instance of the Aurora Imaging Web Library client application. &gt; <strong>Note:</strong> This index is guaranteed not to change until this instance of the client application is disconnected. Note that this is not an iterable index; connected instances of your client are not guaranteed to be assigned sequential indices, and the indices do not shift when a client disconnects. In this case, this function returns the index as a <em>number</em>.</td></tr><tr><td>**UserVar **</td><td>Specifies the JavaScript object in which to write the requested information. The information is written to the<code>data</code> property of the object. Since this function also returns the requested information, you can set this parameter to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmappinquireconnection">AIWL.MappInquireConnection<a href="#aiwlmappinquireconnection" class="hash-link" aria-label="Direct link to AIWL.MappInquireConnection" title="Direct link to AIWL.MappInquireConnection" translate="no">​</a></h3>
+<p>This function inquires about the Aurora Imaging Library web objects published by an Aurora Imaging Web Library server application.</p>
+<p>The returned value is the requested information.</p>
+<blockquote>
+<p><strong>Note:</strong> For some settings,<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>is executed asynchronously; this function returns, and execution of your program continues, before the operation is complete. Refer to an individual setting to learn if it is asynchronous and, if so, how to hook to the operation completion event.</p>
+</blockquote>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappInquireConnection"><code>MappInquireConnection</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th>_number_or <em>number[]</em><strong>AIWL.MappInquireConnection</strong>(<em>number</em><strong>ApplicationId</strong>,<em>number</em><strong>InquireType</strong>,<em>string</em><strong>ControlFlag</strong>,<em>number</em><strong>ExtraFlag</strong>,<em>object</em><strong>UserVar</strong>)</th></tr></thead><tbody><tr><td><strong>ApplicationId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the Aurora Imaging Web Library server application, about which to inquire information related to published objects. The application identifier must have been previously obtained, typically when connecting to the server application using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappOpenConnection</a>.</td></tr><tr><td><strong>InquireType</strong></td><td>Specifies the type of published object information about which to inquire. This parameter can be set to one of the following values:</td></tr><tr><td><code>AIWL.M_WEB_PUBLISHED_LIST</code></td><td>Inquires the list of client-side Aurora Imaging Library identifiers associated with all Aurora Imaging Library objects that have been published by the Aurora Imaging Web Library server application. In this case, this function returns an array of client-side Aurora Imaging Library identifiers of the published objects as a <em>number[]</em>. &gt; <strong>Note:</strong> Note that these client-side Aurora Imaging Library identifier should only be used within the instance of your Aurora Imaging Web Library client application that called this function. The server application, and other client applications, use different Aurora Imaging Library identifiers to refer to the same objects.</td></tr><tr><td><code>AIWL.M_WEB_PUBLISHED_LIST_SIZE</code></td><td>Inquires the current number of Aurora Imaging Library objects published by the Aurora Imaging Web Library server application. In this case, the function returns the number of published objects as a <em>number</em>.</td></tr><tr><td><code>AIWL.M_WEB_PUBLISHED_NAME</code></td><td>Inquires the client-side Aurora Imaging Library identifier of a published Aurora Imaging Library object associated with the name specified by the<strong>ControlFlag</strong>parameter. This name must have been previously associated with an object in the Aurora Imaging Web Library server application using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjControl"><code>MobjControl</code></a>with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjControl"><code>M_OBJECT_NAME</code></a>. When inquiring the client-side Aurora Imaging Library identifier, this function also asynchronously creates a connection to the published object (if this connection had not already been made by a previous call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>). Execution of your program will continue before this connection process has completed. Therefore, the application identifier returned by this function is not valid at the time it is returned; you must not use it with any Aurora Imaging Web Library function except <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MobjHookFunction</a>. To know when the connection is made (or canceled due to an error), you can hook to these events using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MobjHookFunction</a>with<code>AIWL.M_CONNECT</code> and<code>AIWL.M_ERROR</code>, respectively. After the <code>AIWL.M_CONNECT</code> event is generated, the client-side Aurora Imaging Library identifier is valid and can be used with other Aurora Imaging Web Library functions. In this case, this function returns the client-side Aurora Imaging Library identifier as a <em>number</em>. &gt; <strong>Note:</strong> Note that this client-side Aurora Imaging Library identifier should only be used within the instance of your client application that called this function. The server application, and other instances of your client application, use a different Aurora Imaging Library identifier to refer to the same object.</td></tr><tr><td><strong>ControlFlag</strong></td><td>Specifies an attribute of the inquire operation to perform. If this parameter is not required for the inquire operation, it must be set to <code>AIWL.M_DEFAULT</code>.</td></tr><tr><td><strong>ExtraFlag</strong></td><td>The <code>Extraflag</code> parameter is reserved for future use and must be set to <code>AIWL.M_NULL</code>.</td></tr><tr><td>**UserVar **</td><td>Specifies the JavaScript object in which to write the requested information. The information is written to the<code>data</code> property of the object. Since this function also returns the requested information, you can set this parameter to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmappopenconnection">AIWL.MappOpenConnection<a href="#aiwlmappopenconnection" class="hash-link" aria-label="Direct link to AIWL.MappOpenConnection" title="Direct link to AIWL.MappOpenConnection" translate="no">​</a></h3>
+<p>This function initiates a connection to a local or remote computer running an Aurora Imaging Web Library server application. It returns the client-side Aurora Imaging Library application context identifier of the server application, and optionally writes it in the <code>data</code> property of the object that you passed to <code>UserVar</code>.</p>
+<blockquote>
+<p><strong>Note:</strong> Note that this client-side Aurora Imaging Library identifier should only be used within the instance of the Aurora Imaging Web Library client application that called this function. The Aurora Imaging Web Library server application, and other Aurora Imaging Web Library client applications, use a different Aurora Imaging Library identifier to refer to the same application context.</p>
+</blockquote>
+<p>The connection is created asynchronously, meaning that your program will continue to execute before the connection is established. Therefore, the application identifier returned by this function is not valid at the time it is returned; you must not use it with any Aurora Imaging Web Library function except <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappHookFunction</a>. To know when the connection is made or canceled due to an error, you can hook to these events using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappHookFunction</a>with<code>AIWL.M_CONNECT</code> and<code>AIWL.M_ERROR</code>, respectively. After the <code>AIWL.M_CONNECT</code> event is generated, the Aurora Imaging Library identifier is valid and can be used with other Aurora Imaging Web Library functions.</p>
+<blockquote>
+<p><strong>Note:</strong> Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappHookFunction</a>requires that you pass the application identifier written to the **UserVar ** parameter by this function. Therefore, you cannot hook to the connection event until after you have called <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappOpenConnection</a> (unless you hook to all application connection events by setting the <strong>ApplicationId</strong>parameter of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappHookFunction</a> to<code> AIWL.M_DEFAULT</code>). You should typically call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappHookFunction</a>immediately after <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappOpenConnection</a>to ensure that the connection or error event is caught.</p>
+</blockquote>
+<p>You can close the connection to the Aurora Imaging Web Library server application using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappCloseConnection</a> in the Aurora Imaging Web Library client application.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappOpenConnection"><code>MappOpenConnection</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MappOpenConnection</strong>(<em>string</em><strong>URL</strong>,<em>number</em><strong>InitFlag</strong>,<em>number</em><strong>ControlFlag</strong>,<em>object</em>**UserVar **)</th></tr></thead><tbody><tr><td><strong>URL</strong></td><td>Specifies the computer to which to connect, and if necessary, the listening port of the Aurora Imaging Web Library server application. You must specify the prefix &quot;ws://&quot;, followed by the Hostname or IP address of the computer, optionally followed by the listening port number. For example, <code>&quot;ws://localhost:7861&quot;</code> or <code>&quot;ws://192.168.1.51:7861&quot;</code>. &gt; <strong>Note:</strong> You can always use the Hostname <code>localhost</code> to connect to an Aurora Imaging Web Library server application running on the same computer as the instance of the client application. In your Aurora Imaging Library application, you can set the listening port using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControl"><code>MappControl</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControl"><code>M_WEB_CONNECTION_PORT</code></a>. The default port is 7861. &gt; <strong>Note:</strong> You might find it useful to create an Aurora Imaging Web Library client application that allows the user to enter the IP address or Hostname dynamically before connecting (for example, using a dialog box).</td></tr><tr><td><strong>InitFlag</strong></td><td>This parameter is reserved for future expansion and must be set to <code>AIWL.M_DEFAULT</code>.</td></tr><tr><td><strong>ControlFlag</strong></td><td>This parameter is reserved for future expansion and must be set to <code>AIWL.M_DEFAULT</code>.</td></tr><tr><td>**UserVar **</td><td>Specifies the JavaScript object in which to write the Aurora Imaging Web Library server application identifier. The information is written to the<code>data</code> property of the object.</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdisp">AIWL.Mdisp<a href="#aiwlmdisp" class="hash-link" aria-label="Direct link to AIWL.Mdisp" title="Direct link to AIWL.Mdisp" translate="no">​</a></h2>
+<p>The functions prefixed with AIWL.Mdisp make up the Aurora Imaging Web Library Display module. The Display module allows you to show a published 2D or 3D display in an HTML5 canvas, enable interactive manipulation of a published display, and hook functions to display events (such as user interaction).</p>
+<blockquote>
+<p><strong>Note:</strong> Unlike Aurora Imaging Library, Aurora Imaging Web Library uses the same module for both 2D and 3D displays. For a 3D display, only the final rendered image of the display is transmitted to your Aurora Imaging Web Library client application; 3D displays are therefore functionally equivalent to 2D displays from the perspective of an client. All functions and settings in this module are supported for both 2D and 3D displays, except where otherwise noted.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdispcontrol">AIWL.MdispControl<a href="#aiwlmdispcontrol" class="hash-link" aria-label="Direct link to AIWL.MdispControl" title="Direct link to AIWL.MdispControl" translate="no">​</a></h3>
+<p>This function controls a specified display setting.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>MdispControl</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MdispControl</strong>(<em>number</em><strong>DisplayId</strong>,<em>number</em><strong>ControlType</strong>,<em>number</em><strong>ControlValue</strong>)</th></tr></thead><tbody><tr><td><strong>DisplayId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the display. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>ControlType</strong></td><td>Specifies the type of display setting to control. This parameter can be set to one of the values below:</td></tr><tr><td><code>AIWL.M_INTERACTIVE</code></td><td>Sets whether the user can interact with the display. &gt; <strong>Note:</strong> To learn the default keyboard controls, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>M_KEYBOARD_USE</code></a>. In this case, set <strong>ControlValue</strong> to one of the following values:</td></tr><tr><td><code>AIWL.M_DISABLE</code></td><td>Specifies that the user cannot interact with the display. &gt; <strong>Note:</strong> Note that this instance of your Aurora Imaging Web Library client application will still generate mouse and keyboard events for the purposes of hooked functions. However, the events are not sent to the Aurora Imaging Web Library server application or other instances of your client application. This is the default value.</td></tr><tr><td><code>AIWL.M_ENABLE</code></td><td>Specifies that the user can interact with the display, using a keyboard and mouse. Only one connected instance at a time of the Aurora Imaging Web Library client application can enable this feature for the specified display. If another instance of the client application has this feature enabled for the specified display, this function has no effect.</td></tr><tr><td><code>AIWL.M_UPDATE_WEB</code></td><td>Sets whether the Aurora Imaging Web Library server application should send updated images of this display to this instance of the Aurora Imaging Web Library client application. &gt; <strong>Note:</strong> To control updating of the display for all instances of the client application, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>MdispControl</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>M_UPDATE</code></a> in the server application. In this case, set <strong>ControlValue</strong> to one of the following values:</td></tr><tr><td><code>AIWL.M_DISABLE</code></td><td>Specifies not to send updated images of the display.</td></tr><tr><td><code>AIWL.M_ENABLE</code></td><td>Specifies to send updated images of the display. Also, the display is forced to update immediately. This is the default value.</td></tr><tr><td><code>AIWL.M_NOW</code></td><td>Forces an immediate update of the display. In this case, the display is updated even if <code>AIWL.M_UPDATE_WEB</code> is set to <code>AIWL.M_DISABLE</code>.</td></tr><tr><td><strong>ControlValue</strong></td><td>Specifies the setting&#x27;s new value.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdispgethookinfo">AIWL.MdispGetHookInfo<a href="#aiwlmdispgethookinfo" class="hash-link" aria-label="Direct link to AIWL.MdispGetHookInfo" title="Direct link to AIWL.MdispGetHookInfo" translate="no">​</a></h3>
+<p>This function retrieves information about the event that caused the hook-handler function to be called. This function should only be called within the scope of a display hook-handler function call (see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MdispHookFunction</a>).</p>
+<p>The returned value is the requested information.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispGetHookInfo"><code>MdispGetHookInfo</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>number</em><strong>AIWL.MdispGetHookInfo</strong>(<em>number</em><strong>EventId</strong><em>number</em><strong>InfoType</strong>,<em>object</em>**UserVar **)</th></tr></thead><tbody><tr><td><strong>EventId</strong></td><td>Specifies the display event identifier that was received by the hook-handler function.</td></tr><tr><td><strong>InfoType</strong></td><td>Specifies the type of information to get. This parameter can be set to one of the following values:</td></tr><tr><td><code>AIWL.M_DISPLAY</code></td><td>Retrieves the client-side Aurora Imaging Library identifier of the display that generated the event. In this case, this function returns the client-side Aurora Imaging Library identifier as a <em>number</em>. &gt; <strong>Note:</strong> Note that this client-side Aurora Imaging Library identifier should only be used within the instance of your Aurora Imaging Web Library client application that called this function. The Aurora Imaging Web Library server application, and other instances of your client application, use a different Aurora Imaging Library identifier to refer to the same object.</td></tr><tr><td><code>AIWL.M_MOUSE_POSITION_X</code></td><td>Retrieves the X-position of the cursor, in display coordinates (which might not be the same as canvas coordinates). This setting is only available if the function was called due to <code>an AIWL.M_MOUSE_MOVE</code>event. In this case, this function returns the X-position of the cursor as a <em>number</em>.</td></tr><tr><td><code>AIWL.M_MOUSE_POSITION_Y</code></td><td>Retrieves the Y-position of the cursor, in display coordinates (which might not be the same as canvas coordinates). This setting is only available if the function was called due to <code>an AIWL.M_MOUSE_MOVE</code>event. In this case, this function returns the Y-position of the cursor as a <em>number</em>.</td></tr><tr><td><code>AIWL.M_MOUSE_WHEEL_VALUE</code></td><td>Retrieves the value for the mouse wheel&#x27;s rotation. This setting is only available if the function was called due to <code>an AIWL.M_MOUSE_WHEEL</code>event. In this case, this function returns the mouse wheel&#x27;s rotation as a <em>number</em>.</td></tr><tr><td>**UserVar **</td><td>Specifies the JavaScript object in which to write the requested information. The information is written to the<code>data</code> property of the object. Since this function also returns the requested information, you can set this parameter to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdisphookfunction">AIWL.MdispHookFunction<a href="#aiwlmdisphookfunction" class="hash-link" aria-label="Direct link to AIWL.MdispHookFunction" title="Direct link to AIWL.MdispHookFunction" translate="no">​</a></h3>
+<p>This function allows you to attach a user-defined function to a specified display event.</p>
+<p>The hook-handler function is only called if a display event is generated in this instance of your Aurora Imaging Web Library client application. If a display event is generated in another instance, or in the Aurora Imaging Web Library server application, the hook-handler function is not called. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S03_Using_AIWL_to_monitor_your_application">Hooking to display events</a>.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispHookFunction"><code>MdispHookFunction</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MdispHookFunction</strong>(<em>number</em><strong>DisplayId</strong>,<em>number</em><strong>HookType</strong>,<em>string</em><strong>HookHandler</strong>,<em>object</em>**UserVar **)</th></tr></thead><tbody><tr><td><strong>DisplayId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the display. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>HookType</strong></td><td>Specifies the display-related event on which to hook the function. This parameter can be set to one of the following values: &gt; <strong>Note:</strong> To detach (unhook) a function that you previously hooked, combine the event type with<code>AIWL.M_UNHOOK</code> (for example, <code>AIWL.M_KEY_DOWN</code> + <code>AIWL.M_UNHOOK</code>).</td></tr><tr><td><code>AIWL.M_KEY_DOWN</code></td><td>Specifies to call the hook-handler function each time the user presses a keyboard key, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_KEY_UP</code></td><td>Specifies to call the hook-handler function each time the user releases a keyboard key, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_MOUSE_LEFT_BUTTON_DOWN</code></td><td>Specifies to call the hook-handler function each time the user presses the left mouse button, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_MOUSE_LEFT_BUTTON_UP</code></td><td>Specifies to call the hook-handler function each time the user releases the left mouse button, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_MOUSE_MIDDLE_BUTTON_DOWN</code></td><td>Specifies to call the hook-handler function each time the user presses the middle mouse button, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_MOUSE_MIDDLE_BUTTON_UP</code></td><td>Specifies to call the hook-handler function each time the user releases the middle mouse button, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_MOUSE_RIGHT_BUTTON_DOWN</code></td><td>Specifies to call the hook-handler function each time the user presses the right mouse button, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_MOUSE_RIGHT_BUTTON_UP</code></td><td>Specifies to call the hook-handler function each time the user releases the right mouse button, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_MOUSE_MOVE</code></td><td>Specifies to call the hook-handler function each time the mouse cursor moves, while in the display.</td></tr><tr><td><code>AIWL.M_MOUSE_WHEEL</code></td><td>Specifies to call the hook-handler function each time the user moves the mouse wheel, while the mouse cursor is in the display.</td></tr><tr><td><code>AIWL.M_UPDATE_INTERACTIVE_STATE</code></td><td>Specifies to call the hook-handler function each time any Aurora Imaging Web Library client application enables or disables interactive control of the display (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MdispControl</a>with <code>AIWL.M_INTERACTIVE</code>).</td></tr><tr><td><code>AIWL.M_UPDATE_WEB</code></td><td>Specifies to call the hook-handler function each time the contents of the display is changed.</td></tr><tr><td><strong>HookHandler</strong></td><td>Specifies the name of the JavaScript function that should be called when the event occurs. This function should have the following prototype: <code>function HookHandler(HookType, EventId, UserVar) </code>. For more information about hook-handler functions in JavaScript, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S04_Creating_an_AIWL_client_with_JavaScript">Aurora Imaging Library primer for JavaScript developers</a>.</td></tr><tr><td><strong>UserVar</strong></td><td>Specifies the JavaScript object containing the user data that you want to make available to the hook-handler function. This object is passed to the hook-handler function, through its <strong>UserVar</strong> parameter, when the specified event occurs. Set this parameter to <code>AIWL.M_NULL</code>if not used.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdispinquire">AIWL.MdispInquire<a href="#aiwlmdispinquire" class="hash-link" aria-label="Direct link to AIWL.MdispInquire" title="Direct link to AIWL.MdispInquire" translate="no">​</a></h3>
+<p>This function inquires about a specified display setting.</p>
+<p>The returned value is the requested information.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispInquire"><code>MdispInquire</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>number</em><strong>AIWL.MdispInquire</strong>(<em>number</em><strong>DisplayId</strong>,<em>number</em><strong>InquireType</strong>,<em>object</em>**UserVar **)</th></tr></thead><tbody><tr><td><strong>DisplayId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the display. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>InquireType</strong></td><td>Specifies the type of display setting about which to inquire. This parameter can be set to one of the following values:</td></tr><tr><td><code>AIWL.M_IMAGE_HOST_ADDRESS</code></td><td>Inquires the pixel color values of the last bitmap image of the display transmitted by the Aurora Imaging Web Library server application. This information is returned as an array of type_number_, whereby the different color components of the pixel are stored in separate entries. &gt; <strong>Note:</strong> For a 3D display, this bitmap image is the rendered output of the display. This is functionally equivalent to receiving the output of a 2D display; you can present both 2D and 3D displays using the same methods, including automatically using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MdispSelectWindow</a>. &gt; <strong>Note:</strong> This setting does not return an address. It is named<code>AIWL.M_IMAGE_HOST_ADDRESS</code>for consistency with the AIWL C/C++ API. The pixel values are always returned in the RGBA packed format. The first 4 values store the color components of the first pixel (0,0) (starting with the R value), the next 4 values store the color components of the second pixel (1,0) and so on. You do not need to consider pitch when using this data. Typically, you should hook a function to the display update event using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MdispHookFunction</a>with <code>AIWL.M_UPDATE_WEB</code>, so that you can inquire new image data when the contents of the display changes. In this case, this function returns the array of pixel values as a <em>number[]</em>.</td></tr><tr><td><code>AIWL.M_INTERACTIVE</code></td><td>Inquires whether the user can interact with the display. &gt; <strong>Note:</strong> This inquiry only returns information about this instance of your Aurora Imaging Web Library client application. If another instance of your client application is interactively controlling the specified display, this function returns<code>AIWL.M_DISABLE</code>. In this case, the function returns one of the following <em>number</em> values:</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the local user cannot interact with the display. This is the default value.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the local user can interact with the display, using a keyboard and mouse.</td></tr><tr><td><code>AIWL.M_SIZE_X</code></td><td>Inquires the width of the displayed image, in pixels. Note that this is unrelated to the size of the HTML5 canvas in which the display is presented. In this case, the function returns the width as a number.</td></tr><tr><td><code>AIWL.M_SIZE_Y</code></td><td>Inquires the height of the displayed image, in pixels. Note that this is unrelated to the size of the HTML5 canvas in which the display is presented. In this case, the function returns the height as a number.</td></tr><tr><td><code>AIWL.M_UPDATE_WEB</code></td><td>Inquires whether the Aurora Imaging Web Library server application should send updated images of the display to this instance of the Aurora Imaging Web Library client application. In this case, the function returns one of the following values:</td></tr><tr><td><code>AIWL.M_DISABLE</code></td><td>Specifies not to send updated images of the display.</td></tr><tr><td><code>AIWL.M_ENABLE</code></td><td>Specifies to send updated images of the display.</td></tr><tr><td>**UserVar **</td><td>Specifies the JavaScript object in which to write the requested information. The information is written to the<code>data</code> property of the object. Since this function also returns the requested information, you can set this parameter to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdispmessage">AIWL.MdispMessage<a href="#aiwlmdispmessage" class="hash-link" aria-label="Direct link to AIWL.MdispMessage" title="Direct link to AIWL.MdispMessage" translate="no">​</a></h3>
+<p>This function generates a mouse or keyboard event for the specified display. This manipulates the display if interactive control is enabled (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MdispControl</a>with <code>AIWL.M_INTERACTIVE</code>), and generates an event for the purposes of hooked functions. This allows you to simulate keyboard and mouse input.</p>
+<blockquote>
+<p><strong>Note:</strong> Note that if interactive control is not enabled, the event is only generated for this instance of your Aurora Imaging Web Library client application (not for the Aurora Imaging Web Library server application). The event is never generated for other instances of your client application.</p>
+</blockquote>
+<p>This function is not similar to any Aurora Imaging Library function.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MdispMessage</strong>(<em>number</em><strong>DisplayId</strong>,<em>number</em><strong>EventType</strong>,<em>number</em><strong>MousePositionX</strong>,<em>number</em><strong>MousePositionY</strong>,<em>number</em><strong>EventValue</strong>,<em>number</em><strong>CombinationKeys</strong>,<em>number</em><strong>UserVar</strong>)</th></tr></thead><tbody><tr><td><strong>DisplayId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the display for which to generate the event. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>EventType</strong></td><td>Specifies the type of event to generate. This parameter can be set to one of the following <em>number</em> values:</td></tr><tr><td><code>AIWL.M_KEY_DOWN</code></td><td>Specifies to generate an event as though a key was pressed. In this case, set <strong>EventValue</strong>to the JavaScript standard keycode of the key to simulate being pressed.</td></tr><tr><td><code>AIWL.M_KEY_UP</code></td><td>Specifies to generate an event as though a key was released. In this case, set <strong>EventValue</strong>to the JavaScript standard keycode of the key to simulate being released.</td></tr><tr><td><code>AIWL.M_MOUSE_LEFT_BUTTON_DOWN</code></td><td>Specifies to generate an event as though the left mouse button was pressed. In this case, set <strong>EventValue</strong>to<code>AIWL.M_NULL</code>.</td></tr><tr><td><code>AIWL.M_MOUSE_LEFT_BUTTON_UP</code></td><td>Specifies to generate an event as though the left mouse button was released. In this case, set <strong>EventValue</strong>to<code>AIWL.M_NULL</code>.</td></tr><tr><td><code>AIWL.M_MOUSE_MIDDLE_BUTTON_DOWN</code></td><td>Specifies to generate an event as though the middle mouse button was pressed. In this case, set <strong>EventValue</strong>to<code>AIWL.M_NULL</code>.</td></tr><tr><td><code>AIWL.M_MOUSE_MIDDLE_BUTTON_UP</code></td><td>Specifies to generate an event as though the middle mouse button was released. In this case, set <strong>EventValue</strong>to<code>AIWL.M_NULL</code>.</td></tr><tr><td><code>AIWL.M_MOUSE_MOVE</code></td><td>Specifies to generate an event as though the mouse was moved. In this case, set <strong>MousePositionX</strong>and <strong>MousePositionY</strong>to the X and Y positions (in display coordinates) to which to simulate moving the mouse.</td></tr><tr><td><code>AIWL.M_MOUSE_RIGHT_BUTTON_DOWN</code></td><td>Specifies to generate an event as though the right mouse button was pressed. In this case, set <strong>EventValue</strong>to<code>AIWL.M_NULL</code>.</td></tr><tr><td><code>AIWL.M_MOUSE_RIGHT_BUTTON_UP</code></td><td>Specifies to generate an event as though the right mouse button was released. In this case, set <strong>EventValue</strong>to<code>AIWL.M_NULL</code>.</td></tr><tr><td><code>AIWL.M_MOUSE_WHEEL</code></td><td>Specifies to generate an event as though the mouse wheel was moved. In this case, set <strong>EventValue</strong>to the simulated value for the wheel&#x27;s rotation. A positive value indicates that the wheel was rotated forward, away from the user; a negative value indicates that the wheel was rotate backward, toward the user.</td></tr><tr><td><strong>EventValue</strong></td><td>Specifies additional information related to the event specified by the <strong>EventType</strong>parameter. If not used, set this parameter to <code>AIWL.M_NULL</code>.</td></tr><tr><td><strong>MousePositionX</strong></td><td>Specifies the simulated position of the mouse cursor along the X-axis in display coordinates. If not used, set this value to <code>AIWL.M_DEFAULT</code>.</td></tr><tr><td><strong>MousePositionY</strong></td><td>Specifies the simulated position of the mouse cursor along the Y-axis in display coordinates. If not used, set this value to <code>AIWL.M_DEFAULT</code>.</td></tr><tr><td><strong>CombinationKeys</strong></td><td>Specifies which combination keys to simulate holding. This parameter can be set to<code>AIWL.M_NULL</code>(which specifies no combination keys), or any combination of the following _number_values:</td></tr><tr><td><code>AIWL.M_KEY_ALT</code></td><td>Specifies the Alt key.</td></tr><tr><td><code>AIWL.M_KEY_CTRL</code></td><td>Specifies the CTRL key.</td></tr><tr><td><code>AIWL.M_KEY_SHIFT</code></td><td>Specifies the Shift key.</td></tr><tr><td><code>AIWL.M_KEY_WIN</code></td><td>Specifies the Windows key.</td></tr><tr><td><strong>UserVar</strong></td><td>Reserved for future expansion and must be set to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdisppan">AIWL.MdispPan<a href="#aiwlmdisppan" class="hash-link" aria-label="Direct link to AIWL.MdispPan" title="Direct link to AIWL.MdispPan" translate="no">​</a></h3>
+<p>This function associates X- and Y-panning offsets with the specified display. The selected image buffer is displaced on the display, from the top-left corner of the HTML5 canvas.</p>
+<blockquote>
+<p><strong>Note:</strong> This pans the display for all instances of your Aurora Imaging Web Library client application. If you need to pan the image separately for each instance of your Aurora Imaging Web Library client application, you must allocate and publish a separate display for each instance and select the image to each display.</p>
+</blockquote>
+<p>This function is not supported for 3D displays.</p>
+<p>This function causes the Aurora Imaging Web Library server application to call the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispPan"><code>MdispPan</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MdispPan</strong>(<em>number</em><strong>DisplayId</strong>,<em>number</em><strong>XOffset</strong>,<em>number</em><strong>YOffset</strong>)</th></tr></thead><tbody><tr><td><strong>DisplayId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the 2D display. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>XOffset</strong></td><td>Specifies the number of image pixels by which to pan an image buffer horizontally when it is displayed. Specify a positive offset value to displace the image to the left. This value can be a decimal fraction.</td></tr><tr><td><strong>YOffset</strong></td><td>Specifies the number of image pixels by which to pan an image buffer vertically when it is displayed. Specify a positive offset value to displace the image upwards. This value can be a decimal fraction.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdispselectwindow">AIWL.MdispSelectWindow<a href="#aiwlmdispselectwindow" class="hash-link" aria-label="Direct link to AIWL.MdispSelectWindow" title="Direct link to AIWL.MdispSelectWindow" translate="no">​</a></h3>
+<p>Presents the display in a user-defined HTML5 canvas element.</p>
+<p>Unlike<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelectWindow"><code>MdispSelectWindow</code></a> or<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSelectWindow"><code>M3ddispSelectWindow</code></a>, this function does not select a buffer or container to a display. To do so, instead use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispSelect"><code>MdispSelect</code></a>(for a 2D display) or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/M3ddispSelect"><code>M3ddispSelect</code></a>(for a 3D display) in your Aurora Imaging Web Library server application.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MdispSelectWindow</strong>(<em>number</em><strong>DisplayId</strong>,<em>string</em><strong>CanvasElement</strong>)</th></tr></thead><tbody><tr><td><strong>DisplayId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the display. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>CanvasElement</strong></td><td>Specifies the <code>id</code> attribute of the user-defined HTML5 canvas element in which to present the display. You manually set the <code>id</code> attribute when you create an HTML5 canvas element in the HTML file for your webpage. For example, you might include the following in the HTML file: <code>&lt;br/&gt; &lt;canvas id=&quot;PlaceToShowAnAILDisplay&quot; width=&quot;1600&quot; height=&quot;900&quot;&gt;&lt;/canvas&gt; &lt;br/&gt;</code> &gt; <strong>Note:</strong> Note that the width and height of the displayed image is always the same as the width and height of the selected image buffer (or of the 3D display), regardless of the size of the HTML5 canvas. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S03_Using_AIWL_to_monitor_your_application">Size of an Aurora Imaging Web Library display</a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmdispzoom">AIWL.MdispZoom<a href="#aiwlmdispzoom" class="hash-link" aria-label="Direct link to AIWL.MdispZoom" title="Direct link to AIWL.MdispZoom" translate="no">​</a></h3>
+<p>This function associates a zoom factor in X and/or in Y with the specified display.</p>
+<blockquote>
+<p><strong>Note:</strong> This zooms the display for all instances of your Aurora Imaging Web Library client application. If you need to zoom the image separately for each instance of your client application, you must allocate and publish a separate display for each instance and select the image to each display.</p>
+</blockquote>
+<p>This function is not supported for 3D displays.</p>
+<p>This function causes the Aurora Imaging Web Library server application to call the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispZoom"><code>MdispZoom</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MdispZoom</strong>(<em>number</em><strong>DisplayId</strong>,<em>number</em><strong>XFactor</strong>,<em>number</em><strong>YFactor</strong>)</th></tr></thead><tbody><tr><td><strong>DisplayId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the 2D display. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>XFactor</strong></td><td>Specifies the zoom factor for the X-direction of the display. This value must be larger than 0. A value greater than 1.0 will zoom in, while a value less than 1.0 will zoom out.</td></tr><tr><td><strong>YFactor</strong></td><td>Specifies the zoom factor for the Y-direction of the display. This value must be larger than 0. This value must be larger than 0. A value greater than 1.0 will zoom in, while a value less than 1.0 will zoom out.</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmobj">AIWL.Mobj<a href="#aiwlmobj" class="hash-link" aria-label="Direct link to AIWL.Mobj" title="Direct link to AIWL.Mobj" translate="no">​</a></h2>
+<p>The functions prefixed with AIWL.Mobj make up the Aurora Imaging Web Library Object module. The Object module allows you to read and write messages in Aurora Imaging Library message mailboxes, inquire the types of published objects, and hook functions to the update and connection events of published objects.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmobjgethookinfo">AIWL.MobjGetHookInfo<a href="#aiwlmobjgethookinfo" class="hash-link" aria-label="Direct link to AIWL.MobjGetHookInfo" title="Direct link to AIWL.MobjGetHookInfo" translate="no">​</a></h3>
+<p>This function retrieves information about the event that caused the hook-handler function to be called. This function should only be called within the scope of an object hook-handler function call (see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MobjHookFunction</a>).</p>
+<p>The returned value is the requested information.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjGetHookInfo"><code>MobjGetHookInfo</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>number</em><strong>AIWL.MobjGetHookInfo</strong>(<em>number</em><strong>EventId</strong>,<em>number</em><strong>InfoType</strong>,<em>object</em><strong>UserVar</strong>)</th></tr></thead><tbody><tr><td><strong>EventId</strong></td><td>Specifies the client-side Aurora Imaging Library object event identifier that was received by the hook-handler function.</td></tr><tr><td><strong>InfoType</strong></td><td>Specifies the type of information about which to inquire. This parameter can be set to the following value:</td></tr><tr><td><code>AIWL.M_OBJECT_ID</code></td><td>Retrieves the client-side Aurora Imaging Library identifier of the object that generated the event. In this case, this function returns the client-side Aurora Imaging Library identifier as a <em>number</em>. &gt; <strong>Note:</strong> Note that this client-side Aurora Imaging Library identifier should only be used within the instance of your Aurora Imaging Web Library client application that called this function. The Aurora Imaging Web Library server application, and other instances of your client application, use a different Aurora Imaging Library identifier to refer to the same object.</td></tr><tr><td><strong>UserVar</strong></td><td>Specifies the JavaScript object in which to write the requested information. The information is written to the<code>data</code> property of the object. Since this function also returns the requested information, you can set this parameter to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmobjhookfunction">AIWL.MobjHookFunction<a href="#aiwlmobjhookfunction" class="hash-link" aria-label="Direct link to AIWL.MobjHookFunction" title="Direct link to AIWL.MobjHookFunction" translate="no">​</a></h3>
+<p>This function allows you to attach a user-defined function to a specified object-related event.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjHookFunction"><code>MobjHookFunction</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MobjHookFunction</strong>(<em>number</em><strong>ObjectId</strong>,<em>number</em><strong>HookType</strong>,<em>string</em><strong>HookHandler</strong>,<em>object</em><strong>UserVar</strong>)</th></tr></thead><tbody><tr><td><strong>ObjectId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the object to which to hook the function. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>AIWL.M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>HookType</strong></td><td>Specifies the object-related event to which to hook the function. This parameter can be set to one of the following <em>number</em> values: &gt; <strong>Note:</strong> To detach (unhook) a function that you previously hooked, combine the event type with<code>AIWL.M_UNHOOK</code> (for example, <code>AIWL.M_CONNECT</code> + <code>AIWL.M_UNHOOK</code>).</td></tr><tr><td><code>AIWL.M_CONNECT</code></td><td>Specifies to call the hook-handler function when the connection to the Aurora Imaging Web Library object is established.</td></tr><tr><td><code>AIWL.M_DISCONNECT</code></td><td>Specifies to call the hook-handler function when the connection to the Aurora Imaging Web Library object is closed (either using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappCloseConnection</a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappControl</a>with<code>AIWL.M_CLOSE_CONNECTION</code>, or because of a network error).</td></tr><tr><td><code>AIWL.M_UPDATE_WEB</code></td><td>Specifies to call the hook-handler function each time the contents of the object changes.</td></tr><tr><td><strong>HookHandler</strong></td><td>Specifies the name of the JavaScript function that should be called when the event occurs. This function should have the following prototype: <code>function HookHandler(HookType, EventId, UserVar) </code>. For more information about hook-handler functions in JavaScript, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S04_Creating_an_AIWL_client_with_JavaScript">Aurora Imaging Library primer for JavaScript developers</a>.</td></tr><tr><td>**UserVar **</td><td>Specifies the JavaScript object containing the user data that you want to make available to the hook-handler function. This object is passed to the hook-handler function, through its <code>UserVar</code> parameter, when the specified event occurs. Omit this parameter if not used.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmobjinquire">AIWL.MobjInquire<a href="#aiwlmobjinquire" class="hash-link" aria-label="Direct link to AIWL.MobjInquire" title="Direct link to AIWL.MobjInquire" translate="no">​</a></h3>
+<p>This function inquires about general Aurora Imaging Library object settings in a publishing application.</p>
+<p>The returned value is the requested information.</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjInquire"><code>MobjInquire</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th>_number_or <em>string</em><strong>AIWL.MobjInquire</strong>(<em>number</em><strong>ObjectId</strong>,<em>number</em><strong>InquireType</strong>,<em>object</em>**UserVar **)</th></tr></thead><tbody><tr><td><strong>ObjectId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the object. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>AIWL.M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>InquireType</strong></td><td>Specifies the type of object setting about which to inquire. This parameter can be set to one of the values below.</td></tr><tr><td><code>AIWL.M_OBJECT_NAME</code></td><td>Inquires the Aurora Imaging Library object&#x27;s user-defined name (set in the Aurora Imaging Web Library server application, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjControl"><code>MobjControl</code></a>with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjControl"><code>M_OBJECT_NAME</code></a>). In this case, the function returns a string containing the name.</td></tr><tr><td><code>AIWL.M_OBJECT_TYPE</code></td><td>Inquires the type of the specified Aurora Imaging Library object. In this case, the function returns one of the following <em>number</em> values:</td></tr><tr><td><code>AIWL.M_APPLICATION</code></td><td>Specifies an Aurora Imaging Web Library server application.</td></tr><tr><td><code>AIWL.M_DISPLAY</code></td><td>Specifies an Aurora Imaging Library display (allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispAlloc"><code>MdispAlloc</code></a> in the Aurora Imaging Web Library server application).</td></tr><tr><td><code>AIWL.M_MESSAGE_MAILBOX</code></td><td>Specifies an Aurora Imaging Library message mailbox (allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjAlloc"><code>MobjAlloc</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjAlloc"><code>M_MESSAGE_MAILBOX</code></a> in the Aurora Imaging Web Library server application).</td></tr><tr><td><code>AIWL.M_WEB_PUBLISH</code></td><td>Inquires what type of access to the object your Aurora Imaging Web Library client application has (set in the Aurora Imaging Web Library server application, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjControl"><code>MobjControl</code></a>with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjControl"><code>M_WEB_PUBLISH</code></a>). In this case, the function returns one of the following <em>number</em> values:</td></tr><tr><td><code>AIWL.M_READ_ONLY</code></td><td>Specifies that the object can only be read from by the Aurora Imaging Web Library client application.</td></tr><tr><td><code>AIWL.M_READ_WRITE</code></td><td>Specifies that the object can be read from and written to by the Aurora Imaging Web Library client application.</td></tr><tr><td><strong>UserVar</strong></td><td>Specifies the JavaScript object in which to write the requested information. The information is written to the<code>data</code> property of the object. Since this function also returns the requested information, you can set this parameter to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmobjmessageread">AIWL.MobjMessageRead<a href="#aiwlmobjmessageread" class="hash-link" aria-label="Direct link to AIWL.MobjMessageRead" title="Direct link to AIWL.MobjMessageRead" translate="no">​</a></h3>
+<p>This function reads data from a message sent to a message mailbox (previously published by an Aurora Imaging Web Library server application).</p>
+<p>The returned value is the size of the message (the same value written in the<code>data</code> property of the object you pass to<strong>MessageOutSize</strong>).</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjMessageRead"><code>MobjMessageRead</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>number</em><strong>AIWL.MobjMessageRead</strong>(<em>number</em><strong>MessageId</strong>,<em>object</em><strong>MessageVar</strong>,<em>number</em><strong>MessageInSize</strong>,<em>object</em><strong>MessageOutSize</strong>,<em>object</em><strong>MessageTag</strong>,<em>object</em><strong>MessageStatus</strong>,<em>number</em><strong>OperationFlag</strong>)</th></tr></thead><tbody><tr><td><strong>MessageId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the message mailbox. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>AIWL.M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>MessageVar</strong></td><td>Specifies the JavaScript object in which to write the contents of the message. If the read operation is successful,<code>MessageVar.Data</code>is set to the contents of the message (as an array of type_ number_). Otherwise, it is set to <code>AIWL.M_NULL</code>.</td></tr><tr><td><strong>MessageInSize</strong></td><td>This parameter is reserved for future expansion and must be set to <code>AIWL.M_NULL</code>.</td></tr><tr><td><strong>MessageOutSize</strong></td><td>Specifies the JavaScript object in which to write the length of the message. If the read operation is successful,<code>MessageOutSize.data</code>is set to the length of the message (as a number). Otherwise, it is set to <code>AIWL.M_NULL</code>. If unused, set this parameter to <code>AIWL.M_NULL</code>.</td></tr><tr><td><strong>MessageTag</strong></td><td>Optionally specifies the JavaScript object in which to write the user-defined tag sent with the message. If the read operation is successful<code>MessageTag.Data</code>is set to the message tag (as a number). Otherwise, it is set to <code>AIWL.M_NULL</code>. If unused, set this parameter to <code>AIWL.M_NULL</code>.</td></tr><tr><td><strong>MessageStatus</strong></td><td>Specifies the JavaScript object in which to write the status of the read operation. <code>MessageTag.Data</code>is set to the one of the following_number_ values:</td></tr><tr><td><code>AIWL.M_NULL</code></td><td>Specifies that the read operation was not successful. The returned message has a length of 0.</td></tr><tr><td><code>AIWL.M_SUCCESS</code></td><td>Specifies that the read operation is successful. The message is copied to <code>MessageVar.Data</code>.</td></tr><tr><td><strong>OperationFlag</strong></td><td>Reserved for future expansion and must be set to <code>AIWL.M_NULL</code>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aiwlmobjmessagewrite">AIWL.MobjMessageWrite<a href="#aiwlmobjmessagewrite" class="hash-link" aria-label="Direct link to AIWL.MobjMessageWrite" title="Direct link to AIWL.MobjMessageWrite" translate="no">​</a></h3>
+<p>This function writes a message to a message mailbox (previously published by an Aurora Imaging Web Library server application).</p>
+<p>This function is similar, but not identical, to the Aurora Imaging Library function<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/MobjMessageWrite"><code>MobjMessageWrite</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><em>[Image: z_TableSpacer20x20.png]</em></th><th><em>void</em><strong>AIWL.MobjMessageWrite</strong>(<em>number</em><strong>MessageId</strong>,<em>string_or_number[]</em><strong>MessageData</strong>,<em>number</em><strong>MessageLength</strong>,<em>number</em><strong>MessageTag</strong>,<em>number</em><strong>OperationFlag</strong>)</th></tr></thead><tbody><tr><td><strong>MessageId</strong></td><td>Specifies the client-side Aurora Imaging Library identifier of the message mailbox. This identifier must have been previously inquired, typically using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S05_JavaScript_AIWL_function_reference">AIWL.MappInquireConnection</a>with <code>AIWL.M_WEB_PUBLISHED_NAME</code>.</td></tr><tr><td><strong>MessageData</strong></td><td>Specifies the message to send. You must set this parameter to a string, or an array of whole numbers. If you set this parameter to a string, it is sent using UTF-8 encoding.</td></tr><tr><td><strong>MessageLength</strong></td><td>Specifies the length of the message to send, in number of characters or array elements. If the message specified by the <strong>MessageData</strong>parameter is longer than this length, the message is truncated. If the message is shorter than this length, the entire message is sent. To send the entire message, you can also set this parameter to<code>AIWL.M_DEFAULT</code>.</td></tr><tr><td><strong>MessageTag</strong></td><td>Specifies a user-defined tag to send with the message. You must set this parameter to a whole number.</td></tr><tr><td><strong>OperationFlag</strong></td><td>This parameter is reserved for future expansion and must be set to <code>AIWL.M_DEFAULT</code>.</td></tr></tbody></table></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S04_Creating_an_AIWL_client_with_JavaScript"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Creating an Aurora Imaging Web Library client application with JavaScript</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C58_Using_AIWL_to_monitor_your_application/S06_Creating_an_AIWL_client_with_C"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Creating an Aurora Imaging Web Library client application with C/C++</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#aiwlmapp" class="table-of-contents__link toc-highlight">AIWL.Mapp</a><ul><li><a href="#aiwlmappcloseconnection" class="table-of-contents__link toc-highlight">AIWL.MappCloseConnection</a></li><li><a href="#aiwlmappcontrol" class="table-of-contents__link toc-highlight">AIWL.MappControl</a></li><li><a href="#aiwlmappgethookinfo" class="table-of-contents__link toc-highlight">AIWL.MappGetHookInfo</a></li><li><a href="#aiwlmapphookfunction" class="table-of-contents__link toc-highlight">AIWL.MappHookFunction</a></li><li><a href="#aiwlmappinquire" class="table-of-contents__link toc-highlight">AIWL.MappInquire</a></li><li><a href="#aiwlmappinquireconnection" class="table-of-contents__link toc-highlight">AIWL.MappInquireConnection</a></li><li><a href="#aiwlmappopenconnection" class="table-of-contents__link toc-highlight">AIWL.MappOpenConnection</a></li></ul></li><li><a href="#aiwlmdisp" class="table-of-contents__link toc-highlight">AIWL.Mdisp</a><ul><li><a href="#aiwlmdispcontrol" class="table-of-contents__link toc-highlight">AIWL.MdispControl</a></li><li><a href="#aiwlmdispgethookinfo" class="table-of-contents__link toc-highlight">AIWL.MdispGetHookInfo</a></li><li><a href="#aiwlmdisphookfunction" class="table-of-contents__link toc-highlight">AIWL.MdispHookFunction</a></li><li><a href="#aiwlmdispinquire" class="table-of-contents__link toc-highlight">AIWL.MdispInquire</a></li><li><a href="#aiwlmdispmessage" class="table-of-contents__link toc-highlight">AIWL.MdispMessage</a></li><li><a href="#aiwlmdisppan" class="table-of-contents__link toc-highlight">AIWL.MdispPan</a></li><li><a href="#aiwlmdispselectwindow" class="table-of-contents__link toc-highlight">AIWL.MdispSelectWindow</a></li><li><a href="#aiwlmdispzoom" class="table-of-contents__link toc-highlight">AIWL.MdispZoom</a></li></ul></li><li><a href="#aiwlmobj" class="table-of-contents__link toc-highlight">AIWL.Mobj</a><ul><li><a href="#aiwlmobjgethookinfo" class="table-of-contents__link toc-highlight">AIWL.MobjGetHookInfo</a></li><li><a href="#aiwlmobjhookfunction" class="table-of-contents__link toc-highlight">AIWL.MobjHookFunction</a></li><li><a href="#aiwlmobjinquire" class="table-of-contents__link toc-highlight">AIWL.MobjInquire</a></li><li><a href="#aiwlmobjmessageread" class="table-of-contents__link toc-highlight">AIWL.MobjMessageRead</a></li><li><a href="#aiwlmobjmessagewrite" class="table-of-contents__link toc-highlight">AIWL.MobjMessageWrite</a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

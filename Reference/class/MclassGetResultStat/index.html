@@ -1,0 +1,1900 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/class/MclassGetResultStat" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MclassGetResultStat | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MclassGetResultStat | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"class","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"},{"@type":"ListItem","position":2,"name":"MclassGetResultStat","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Collapse sidebar category &#x27;class&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAlloc"><span title="MclassAlloc" class="linkLabel_WmDU">MclassAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><span title="MclassAllocResult" class="linkLabel_WmDU">MclassAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><span title="MclassControl" class="linkLabel_WmDU">MclassControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControlEntry"><span title="MclassControlEntry" class="linkLabel_WmDU">MclassControlEntry</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassCopy"><span title="MclassCopy" class="linkLabel_WmDU">MclassCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassCopyResult"><span title="MclassCopyResult" class="linkLabel_WmDU">MclassCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassDraw"><span title="MclassDraw" class="linkLabel_WmDU">MclassDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassDrawEntry"><span title="MclassDrawEntry" class="linkLabel_WmDU">MclassDrawEntry</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassEntryAddRegion"><span title="MclassEntryAddRegion" class="linkLabel_WmDU">MclassEntryAddRegion</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassExport"><span title="MclassExport" class="linkLabel_WmDU">MclassExport</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassFree"><span title="MclassFree" class="linkLabel_WmDU">MclassFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetHookInfo"><span title="MclassGetHookInfo" class="linkLabel_WmDU">MclassGetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResult"><span title="MclassGetResult" class="linkLabel_WmDU">MclassGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultEntry"><span title="MclassGetResultEntry" class="linkLabel_WmDU">MclassGetResultEntry</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><span title="MclassGetResultStat" class="linkLabel_WmDU">MclassGetResultStat</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><span title="MclassHookFunction" class="linkLabel_WmDU">MclassHookFunction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassImport"><span title="MclassImport" class="linkLabel_WmDU">MclassImport</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassInquire"><span title="MclassInquire" class="linkLabel_WmDU">MclassInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassInquireEntry"><span title="MclassInquireEntry" class="linkLabel_WmDU">MclassInquireEntry</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPredict"><span title="MclassPredict" class="linkLabel_WmDU">MclassPredict</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPrepareData"><span title="MclassPrepareData" class="linkLabel_WmDU">MclassPrepareData</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassPreprocess"><span title="MclassPreprocess" class="linkLabel_WmDU">MclassPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassRestore"><span title="MclassRestore" class="linkLabel_WmDU">MclassRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassSave"><span title="MclassSave" class="linkLabel_WmDU">MclassSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassSetHookInfo"><span title="MclassSetHookInfo" class="linkLabel_WmDU">MclassSetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassSplitDataset"><span title="MclassSplitDataset" class="linkLabel_WmDU">MclassSplitDataset</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassStatCalculate"><span title="MclassStatCalculate" class="linkLabel_WmDU">MclassStatCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassStream"><span title="MclassStream" class="linkLabel_WmDU">MclassStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassTrain"><span title="MclassTrain" class="linkLabel_WmDU">MclassTrain</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span>class</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MclassGetResultStat</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MclassGetResultStat</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Get results from a statistics classification result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MclassGetResultStat</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     StatResultClassId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  LabelOrIndex1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">      </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  LabelOrIndex2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">      </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ScoreThreshold</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">     </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ResultType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">         </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">     ResultArrayPtr      </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function retrieves results of the specified type from a statistics classification result buffer. Results are available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassStatCalculate"><code>MclassStatCalculate</code></a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="statresultclassid-in-ail_id"><code>StatResultClassId</code> <em>(in, AIL_ID)</em><a href="#statresultclassid-in-ail_id" class="hash-link" aria-label="Direct link to statresultclassid-in-ail_id" title="Direct link to statresultclassid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the statistics classification result buffer from which to retrieve results. The result buffer must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>MclassAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="labelorindex1-in-ail_int64"><code>LabelOrIndex1</code> <em>(in, AIL_INT64)</em><a href="#labelorindex1-in-ail_int64" class="hash-link" aria-label="Direct link to labelorindex1-in-ail_int64" title="Direct link to labelorindex1-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the first index for which to retrieve results. Supported indices depend on the statistics classification result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>) and the result type (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>). For details about the index to set, see the description of the result type in the parameter associations section below.</p>
+<p><em>For specifying the first index for which to retrieve results</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CLASS_INDEX</code></td><td>Specifies the index of the class for which to get results. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an image classification, object detection, or segmentation statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_INSTANCE_INDEX</code></td><td>Specifies the index of the instance (in a specific entry) for which to get results. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an object detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_REGION_INDEX</code></td><td>Specifies the index of the region (in a specific entry) for which to get results. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an object detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_ALL_INSTANCES</code></td><td>Specifies to retrieve results for all instances (in a specific entry). This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an object detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_ALL_REGIONS</code></td><td>Specifies to retrieve results for all regions (in a specific entry). This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an object detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_ANOMALOUS</code></td><td>Specifies to get results related to anomalous entries only. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an anomaly detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_GENERAL</code> <em>(default)</em></td><td>Specifies to get general results. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from any classification statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_NO_CLASS</code></td><td>Specifies to get results related to entries not assigned to a class. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an object detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_NON_ANOMALOUS</code></td><td>Specifies to get results related to non-anomalous entries only. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an anomaly detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="labelorindex2-in-ail_int64"><code>LabelOrIndex2</code> <em>(in, AIL_INT64)</em><a href="#labelorindex2-in-ail_int64" class="hash-link" aria-label="Direct link to labelorindex2-in-ail_int64" title="Direct link to labelorindex2-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the second index for which to retrieve results. Supported indices depend on the statistics classification result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>) and the result type (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>). For details about the index to set, see the description of the result type in the parameter associations section below.</p>
+<p><em>For specifying the second index for which to retrieve results</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CLASS_INDEX</code></td><td>Specifies the index of the class for which to get results. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an image classification, object detection, or segmentation statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_ANOMALOUS</code></td><td>Specifies to get results related to anomalous entries only. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an anomaly detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_GENERAL</code> <em>(default)</em></td><td>Specifies to get general results. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from any classification statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_NO_CLASS</code></td><td>Specifies to get results related entries not assigned to a class. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an object detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr><tr><td><code>M_NON_ANOMALOUS</code></td><td>Specifies to get results related to non-anomalous entries only. This is supported for specific result types (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a>) retrieved from an anomaly detection statistics result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scorethreshold-in-ail_double"><code>ScoreThreshold</code> <em>(in, AIL_DOUBLE)</em><a href="#scorethreshold-in-ail_double" class="hash-link" aria-label="Direct link to scorethreshold-in-ail_double" title="Direct link to scorethreshold-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the score threshold, when retrieving result types that use this information. When retrieving result types that do not use information, set this parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a>. When applicable, only results with scores greater than or equal to the specified threshold are returned. For details about when and how the score threshold applies, see the description of the result type in the parameter associations section below.</p>
+<p><em>For specifying score threshold, when retrieving result types that use this information</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that the score threshold does not apply.</td></tr><tr><td><code>M_ALL</code></td><td>Specifies to sequentially retrieve results from all score thresholds in an array, when applicable. Score thresholds can be adjusted using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><code>MclassControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><code>M_SCORE_THRESHOLD_STEP</code></a>. To retrieve the score threshold values, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>MclassGetResultStat</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_SCORE_THRESHOLDS</code></a>.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the score threshold.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resulttype-in-ail_int64"><code>ResultType</code> <em>(in, AIL_INT64)</em><a href="#resulttype-in-ail_int64" class="hash-link" aria-label="Direct link to resulttype-in-ail_int64" title="Direct link to resulttype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of result to retrieve.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultarrayptr-out-void"><code>ResultArrayPtr</code> *(out, <em>void)</em><a href="#resultarrayptr-out-void" class="hash-link" aria-label="Direct link to resultarrayptr-out-void" title="Direct link to resultarrayptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address of the array in which to write results.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-any-statistics-result-buffer">For any statistics result buffer<a href="#for-any-statistics-result-buffer" class="hash-link" aria-label="Direct link to For any statistics result buffer" title="Direct link to For any statistics result buffer" translate="no">​</a></h3>
+<p>To retrieve results for any statistics result buffer, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a> parameter to one of the following values.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_accuracy"><code>M_ACCURACY</code><a href="#m_accuracy" class="hash-link" aria-label="Direct link to m_accuracy" title="Direct link to m_accuracy" translate="no">​</a></h3>
+<p>Retrieves the accuracy of a single class versus other classes according to the specified score threshold.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_accuracy_macro"><code>M_ACCURACY_MACRO</code><a href="#m_accuracy_macro" class="hash-link" aria-label="Direct link to m_accuracy_macro" title="Direct link to m_accuracy_macro" translate="no">​</a></h3>
+<p>Retrieves the macro accuracy of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_accuracy_overall"><code>M_ACCURACY_OVERALL</code><a href="#m_accuracy_overall" class="hash-link" aria-label="Direct link to m_accuracy_overall" title="Direct link to m_accuracy_overall" translate="no">​</a></h3>
+<p>Retrieves the overall accuracy of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the overall accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_accuracy_weighted"><code>M_ACCURACY_WEIGHTED</code><a href="#m_accuracy_weighted" class="hash-link" aria-label="Direct link to m_accuracy_weighted" title="Direct link to m_accuracy_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted accuracy of the entire confusion matrix, computed by taking the accuracy for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_auc_roc"><code>M_AUC_ROC</code><a href="#m_auc_roc" class="hash-link" aria-label="Direct link to m_auc_roc" title="Direct link to m_auc_roc" translate="no">​</a></h3>
+<p>Retrieves the area under the curve of the receiver operating characteristics (recall as a function of false positive rate) for a single class vs other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve area under the curve value (can occur if either all of the ground instances are of the given class, or none of them are).</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the area under the curve.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_auc_roc_macro"><code>M_AUC_ROC_MACRO</code><a href="#m_auc_roc_macro" class="hash-link" aria-label="Direct link to m_auc_roc_macro" title="Direct link to m_auc_roc_macro" translate="no">​</a></h3>
+<p>Retrieves the average area under the curve of the receiver operating characteristics of all classes, giving the same importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve area under the curve This can occur if one of the class-index specific <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_AUC_ROC</code></a> result is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_INVALID</code></a>.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the area under the curve.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_auc_roc_weighted"><code>M_AUC_ROC_WEIGHTED</code><a href="#m_auc_roc_weighted" class="hash-link" aria-label="Direct link to m_auc_roc_weighted" title="Direct link to m_auc_roc_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted area under the curve of the receiver operating characteristics of all classes, computed by taking the area under the curve for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve area under the curve This can occur if one of the class-index specific <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_AUC_ROC</code></a> result is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_INVALID</code></a>.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the area under the curve.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_average_precision"><code>M_AVERAGE_PRECISION</code><a href="#m_average_precision" class="hash-link" aria-label="Direct link to m_average_precision" title="Direct link to m_average_precision" translate="no">​</a></h3>
+<p>Retrieves an approximation of the area under the precision-recall curve for a single class versus other classes. It consists of the averaged interpolated precision across all selected score thresholds for the selected IOU threshold.  To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.  |   |   |   |   | | --- | --- | --- | --- | | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> | | Feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), object detection (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>), or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID | <strong>M_CLASS_INDEX()</strong> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> | | Anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>) | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the average precision.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_average_precision_macro"><code>M_AVERAGE_PRECISION_MACRO</code><a href="#m_average_precision_macro" class="hash-link" aria-label="Direct link to m_average_precision_macro" title="Direct link to m_average_precision_macro" translate="no">​</a></h3>
+<p>Retrieves the mean average precision of all classes, giving the same importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the mean average precision.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_average_precision_weighted"><code>M_AVERAGE_PRECISION_WEIGHTED</code><a href="#m_average_precision_weighted" class="hash-link" aria-label="Direct link to m_average_precision_weighted" title="Direct link to m_average_precision_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted mean average precision of all classes, computed by taking the mean average precision for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted mean average precision.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix"><code>M_CONFUSION_MATRIX</code><a href="#m_confusion_matrix" class="hash-link" aria-label="Direct link to m_confusion_matrix" title="Direct link to m_confusion_matrix" translate="no">​</a></h3>
+<p>Retrieves, in row major order, the full NxN confusion matrix across all classes, using best class index to populate the matrix. Rows of the confusion matrix are associated to ground truths classes and columns to predicted classes.  To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.  |   |   |   |   | | --- | --- | --- | --- | | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> | | Any classification statistics result ID | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> | | Object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>) | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | 0.0 &lt;= Value &lt;= 100.0 |  For object detection, an extra row/column is added at the end for the no class type. The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameter setting is also supported as a criterion to populate the matrix. For anomaly detection, the confusion matrix is 2x2, for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> in the first row/column and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a> in the second row/column.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_CONFUSION_MATRIX</code></a> can also return, in row major order, the 2x2 1 vs other classes confusion matrix, depending on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> parameter setting. To do this, for feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), object detection (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>), or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result IDs, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>parameter to <strong>M_CLASS_INDEX()</strong>; for an anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a>.  In these cases, you can use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameter setting as a criterion on the selected class to populate the matrix. Note that for anomaly detection, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a> are specified to get that class versus the other.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the confusion matrix values.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix_column"><code>M_CONFUSION_MATRIX_COLUMN</code><a href="#m_confusion_matrix_column" class="hash-link" aria-label="Direct link to m_confusion_matrix_column" title="Direct link to m_confusion_matrix_column" translate="no">​</a></h3>
+<p>Retrieves the same value as the main confusion matrix result type, except for a single column of the confusion matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the confusion matrix values.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix_element"><code>M_CONFUSION_MATRIX_ELEMENT</code><a href="#m_confusion_matrix_element" class="hash-link" aria-label="Direct link to m_confusion_matrix_element" title="Direct link to m_confusion_matrix_element" translate="no">​</a></h3>
+<p>Retrieves the same value as the main confusion matrix result type, except for a single element of the confusion matrix. The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> parameters specify row and column, respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the confusion matrix element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix_percentage"><code>M_CONFUSION_MATRIX_PERCENTAGE</code><a href="#m_confusion_matrix_percentage" class="hash-link" aria-label="Direct link to m_confusion_matrix_percentage" title="Direct link to m_confusion_matrix_percentage" translate="no">​</a></h3>
+<p>Retrieves the same type of result as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_CONFUSION_MATRIX</code></a>, with the values in each row normalized to sum up to 100%.  Class indices with no ground truth instances will have the elements of their corresponding row set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_INVALID</code></a>.  To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.  |   |   |   |   | | --- | --- | --- | --- | | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> | | Any classification statistics result ID | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> | | Object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>) | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | 0.0 &lt;= Value &lt;= 100.0 |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies an invalid result.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix_row"><code>M_CONFUSION_MATRIX_ROW</code><a href="#m_confusion_matrix_row" class="hash-link" aria-label="Direct link to m_confusion_matrix_row" title="Direct link to m_confusion_matrix_row" translate="no">​</a></h3>
+<p>Retrieves the same value as the confusion matrix result type, except for a single row of the confusion matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the confusion matrix values.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix_used_entries"><code>M_CONFUSION_MATRIX_USED_ENTRIES</code><a href="#m_confusion_matrix_used_entries" class="hash-link" aria-label="Direct link to m_confusion_matrix_used_entries" title="Direct link to m_confusion_matrix_used_entries" translate="no">​</a></h3>
+<p>Retrieves the dataset entry keys composing the confusion matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the UUID.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix_used_entries_column"><code>M_CONFUSION_MATRIX_USED_ENTRIES_COLUMN</code><a href="#m_confusion_matrix_used_entries_column" class="hash-link" aria-label="Direct link to m_confusion_matrix_used_entries_column" title="Direct link to m_confusion_matrix_used_entries_column" translate="no">​</a></h3>
+<p>Retrieves the corresponding column of the confusion matrix of entries, representing the key of the entries in the dataset which constitute the corresponding column in the multi-class matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the UUID.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix_used_entries_element"><code>M_CONFUSION_MATRIX_USED_ENTRIES_ELEMENT</code><a href="#m_confusion_matrix_used_entries_element" class="hash-link" aria-label="Direct link to m_confusion_matrix_used_entries_element" title="Direct link to m_confusion_matrix_used_entries_element" translate="no">​</a></h3>
+<p>Retrieves the corresponding element of the confusion matrix of entries, representing the key of the entries in the dataset which constitute the corresponding element in the multi-class matrix. The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> parameters specify row and column, respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the UUID.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_confusion_matrix_used_entries_row"><code>M_CONFUSION_MATRIX_USED_ENTRIES_ROW</code><a href="#m_confusion_matrix_used_entries_row" class="hash-link" aria-label="Direct link to m_confusion_matrix_used_entries_row" title="Direct link to m_confusion_matrix_used_entries_row" translate="no">​</a></h3>
+<p>Retrieves the corresponding row of the confusion matrix of entries, representing the key of the entries in the dataset which constitute the corresponding row in the multi-class matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the UUID.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_error_entries"><code>M_ERROR_ENTRIES</code><a href="#m_error_entries" class="hash-link" aria-label="Direct link to m_error_entries" title="Direct link to m_error_entries" translate="no">​</a></h3>
+<p>Retrieves the dataset entry keys that were not processed because of an error. To retrieve the reported cause of the error, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ERROR_ENTRIES_STATUS</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_error_entries_status"><code>M_ERROR_ENTRIES_STATUS</code><a href="#m_error_entries_status" class="hash-link" aria-label="Direct link to m_error_entries_status" title="Direct link to m_error_entries_status" translate="no">​</a></h3>
+<p>Retrieves the error status of each entry in error. To retrieve the key of the entries in error, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ERROR_ENTRIES</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAILED_TO_RESTORE_GROUND_TRUTH_MASK</code></td><td>Specifies that the ground truth mask could not be restored.</td></tr><tr><td><code>M_FAILED_TO_RESTORE_PREDICTION_MASK</code></td><td>Specifies that the prediction mask could not be restored.</td></tr><tr><td><code>M_FAILED_TO_RESTORE_PREDICTION_SCORE_FILE</code></td><td>Specifies that the prediction score file could not be restored.</td></tr><tr><td><code>M_FCNET_SEGMENTATION_NOT_SUPPORTED</code></td><td>Specifies that segmentation with FCNET (legacy classifier) is not supported.</td></tr><tr><td><code>M_GROUND_TRUTH_MASK_DOES_NOT_EXIST</code></td><td>Specifies that the ground truth mask does not exist.</td></tr><tr><td><code>M_GROUND_TRUTH_MASK_INVALID_DIMENSIONS</code></td><td>Specifies that the dimensions of the ground truth mask are invalid.</td></tr><tr><td><code>M_IMAGE_FILE_INVALID</code></td><td>Specifies that the image file exists but cannot be restored.</td></tr><tr><td><code>M_INTERNAL_ERROR</code></td><td>Specifies that an unexpected error occurred during the operation.</td></tr><tr><td><code>M_MULTIPLE_GROUND_TRUTHS_NOT_SUPPORTED</code></td><td>Specifies that multiple ground truths are not supported.</td></tr><tr><td><code>M_NO_GROUND_TRUTH</code></td><td>Specifies that there is no ground truth.</td></tr><tr><td><code>M_NO_PREDICT_INFO</code></td><td>Specifies that there is no prediction information.</td></tr><tr><td><code>M_NUMBER_OF_CLASSES_MISMATCH</code></td><td>Specifies that there is a mismatch in the number of classes.</td></tr><tr><td><code>M_PREDICTION_MASK_DOES_NOT_EXIST</code></td><td>Specifies that the prediction mask does not exist.</td></tr><tr><td><code>M_PREDICTION_MASK_INVALID_DIMENSIONS</code></td><td>Specifies that the dimensions of the prediction mask are invalid.</td></tr><tr><td><code>M_SCORE_FILE_DOES_NOT_EXIST</code></td><td>Specifies that the score files does not exist.</td></tr><tr><td><code>M_SCORE_FILE_INVALID_DIMENSIONS</code></td><td>Specifies that the dimensions of the score file are invalid.</td></tr><tr><td><code>M_UNLABELED_GROUND_TRUTH_PIXELS</code></td><td>Specifies that ground truth pixels are unlabeled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_error_rate"><code>M_ERROR_RATE</code><a href="#m_error_rate" class="hash-link" aria-label="Direct link to m_error_rate" title="Direct link to m_error_rate" translate="no">​</a></h3>
+<p>Retrieves the error rate of a single class versus other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the error rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_error_rate_macro"><code>M_ERROR_RATE_MACRO</code><a href="#m_error_rate_macro" class="hash-link" aria-label="Direct link to m_error_rate_macro" title="Direct link to m_error_rate_macro" translate="no">​</a></h3>
+<p>Retrieves the macro error rate of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro error rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_error_rate_overall"><code>M_ERROR_RATE_OVERALL</code><a href="#m_error_rate_overall" class="hash-link" aria-label="Direct link to m_error_rate_overall" title="Direct link to m_error_rate_overall" translate="no">​</a></h3>
+<p>Retrieves the overall error rate of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the overall error rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_error_rate_weighted"><code>M_ERROR_RATE_WEIGHTED</code><a href="#m_error_rate_weighted" class="hash-link" aria-label="Direct link to m_error_rate_weighted" title="Direct link to m_error_rate_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted error rate of the entire confusion matrix, computed by taking the error rate for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted error rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_f1score"><code>M_F1SCORE</code><a href="#m_f1score" class="hash-link" aria-label="Direct link to m_f1score" title="Direct link to m_f1score" translate="no">​</a></h3>
+<p>Retrieves the F1-score of a single class versus other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve the F1-score result (occurs when TP, FP and FN are 0 with respect to the given class index).</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the F1-score.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_f1score_macro"><code>M_F1SCORE_MACRO</code><a href="#m_f1score_macro" class="hash-link" aria-label="Direct link to m_f1score_macro" title="Direct link to m_f1score_macro" translate="no">​</a></h3>
+<p>Retrieves the macro F1-score of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro F1-score.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_f1score_micro"><code>M_F1SCORE_MICRO</code><a href="#m_f1score_micro" class="hash-link" aria-label="Direct link to m_f1score_micro" title="Direct link to m_f1score_micro" translate="no">​</a></h3>
+<p>Retrieves the micro F1-score of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the micro F1-score.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_f1score_weighted"><code>M_F1SCORE_WEIGHTED</code><a href="#m_f1score_weighted" class="hash-link" aria-label="Direct link to m_f1score_weighted" title="Direct link to m_f1score_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted F1-score of the entire confusion matrix, computed by taking the F1-score for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted F1-score.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_false_negatives"><code>M_FALSE_NEGATIVES</code><a href="#m_false_negatives" class="hash-link" aria-label="Direct link to m_false_negatives" title="Direct link to m_false_negatives" translate="no">​</a></h3>
+<p>Retrieves the number of false negatives out of a confusion matrix for a 1 versus other classes, using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameter as the criterion on the selected class to populate the matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the false negatives.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_false_positives"><code>M_FALSE_POSITIVES</code><a href="#m_false_positives" class="hash-link" aria-label="Direct link to m_false_positives" title="Direct link to m_false_positives" translate="no">​</a></h3>
+<p>Retrieves the number of false positives out of a confusion matrix for a 1 versus other classes, using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameter as the criterion on the selected class to populate the matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the false positives.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fdr"><code>M_FDR</code><a href="#m_fdr" class="hash-link" aria-label="Direct link to m_fdr" title="Direct link to m_fdr" translate="no">​</a></h3>
+<p>Retrieves the False Discovery Rate (FDR) of a single class versus other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve the FDR result (occurs when none of the predictions are of the given class; that is, there is no TP/FP).</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the FDR.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fdr_macro"><code>M_FDR_MACRO</code><a href="#m_fdr_macro" class="hash-link" aria-label="Direct link to m_fdr_macro" title="Direct link to m_fdr_macro" translate="no">​</a></h3>
+<p>Retrieves the macro false discovery rate of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro false discovery rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fdr_micro"><code>M_FDR_MICRO</code><a href="#m_fdr_micro" class="hash-link" aria-label="Direct link to m_fdr_micro" title="Direct link to m_fdr_micro" translate="no">​</a></h3>
+<p>Retrieves the micro false discovery rate of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the micro false discovery rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fdr_weighted"><code>M_FDR_WEIGHTED</code><a href="#m_fdr_weighted" class="hash-link" aria-label="Direct link to m_fdr_weighted" title="Direct link to m_fdr_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted false discovery rate of the entire confusion matrix, computed by taking the false discovery rate for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted false discovery rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fnr"><code>M_FNR</code><a href="#m_fnr" class="hash-link" aria-label="Direct link to m_fnr" title="Direct link to m_fnr" translate="no">​</a></h3>
+<p>Retrieves the False Negative Rate (FNR) of a single class versus other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve the FNR result (occurs when none of the ground truth instances are of the given class; that is, there is no TP/FN).</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the FNR.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fnr_macro"><code>M_FNR_MACRO</code><a href="#m_fnr_macro" class="hash-link" aria-label="Direct link to m_fnr_macro" title="Direct link to m_fnr_macro" translate="no">​</a></h3>
+<p>Retrieves the macro false negative rate of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro false negative rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fnr_micro"><code>M_FNR_MICRO</code><a href="#m_fnr_micro" class="hash-link" aria-label="Direct link to m_fnr_micro" title="Direct link to m_fnr_micro" translate="no">​</a></h3>
+<p>Retrieves the micro false negative rate of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the micro false negative rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fnr_weighted"><code>M_FNR_WEIGHTED</code><a href="#m_fnr_weighted" class="hash-link" aria-label="Direct link to m_fnr_weighted" title="Direct link to m_fnr_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted false negative rate of the entire confusion matrix, computed by taking the false negative rate for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted false negative rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fpr"><code>M_FPR</code><a href="#m_fpr" class="hash-link" aria-label="Direct link to m_fpr" title="Direct link to m_fpr" translate="no">​</a></h3>
+<p>Retrieves the False Positive Rate (FPR) of a single class versus other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve the FPR result (occurs when all ground truth instances are of the given class; that is, there is no FP/TN).</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the FPR.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fpr_macro"><code>M_FPR_MACRO</code><a href="#m_fpr_macro" class="hash-link" aria-label="Direct link to m_fpr_macro" title="Direct link to m_fpr_macro" translate="no">​</a></h3>
+<p>Retrieves the macro false positive rate of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro false positive rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fpr_micro"><code>M_FPR_MICRO</code><a href="#m_fpr_micro" class="hash-link" aria-label="Direct link to m_fpr_micro" title="Direct link to m_fpr_micro" translate="no">​</a></h3>
+<p>Retrieves the micro false positive rate of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the micro false positive rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fpr_weighted"><code>M_FPR_WEIGHTED</code><a href="#m_fpr_weighted" class="hash-link" aria-label="Direct link to m_fpr_weighted" title="Direct link to m_fpr_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted false positive rate of the entire confusion matrix, computed by taking the false positive rate for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted false positive rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_classes"><code>M_NUMBER_OF_CLASSES</code><a href="#m_number_of_classes" class="hash-link" aria-label="Direct link to m_number_of_classes" title="Direct link to m_number_of_classes" translate="no">​</a></h3>
+<p>Retrieves the number of class definitions processed from the dataset.  &gt; <strong>Note:</strong> This result is not supported for anomaly detection (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of classes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_precision"><code>M_PRECISION</code><a href="#m_precision" class="hash-link" aria-label="Direct link to m_precision" title="Direct link to m_precision" translate="no">​</a></h3>
+<p>Retrieves the precision of a single class versus other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve the precision result (occurs when none of the predictions are of the given class; that is, there is no TP/FP).</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the precision.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_precision_macro"><code>M_PRECISION_MACRO</code><a href="#m_precision_macro" class="hash-link" aria-label="Direct link to m_precision_macro" title="Direct link to m_precision_macro" translate="no">​</a></h3>
+<p>Retrieves the macro precision of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro precision.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_precision_micro"><code>M_PRECISION_MICRO</code><a href="#m_precision_micro" class="hash-link" aria-label="Direct link to m_precision_micro" title="Direct link to m_precision_micro" translate="no">​</a></h3>
+<p>Retrieves the micro precision of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the micro precision.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_precision_weighted"><code>M_PRECISION_WEIGHTED</code><a href="#m_precision_weighted" class="hash-link" aria-label="Direct link to m_precision_weighted" title="Direct link to m_precision_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted precision of the entire confusion matrix, computed by taking the precision for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted precision.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_recall"><code>M_RECALL</code><a href="#m_recall" class="hash-link" aria-label="Direct link to m_recall" title="Direct link to m_recall" translate="no">​</a></h3>
+<p>Retrieves the recall value of a single class versus other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve the recall value (occurs when none of the ground truth instances are of the given class; that is, there is no TP/FN).</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the recall.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_recall_macro"><code>M_RECALL_MACRO</code><a href="#m_recall_macro" class="hash-link" aria-label="Direct link to m_recall_macro" title="Direct link to m_recall_macro" translate="no">​</a></h3>
+<p>Retrieves the macro recall of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro recall.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_recall_micro"><code>M_RECALL_MICRO</code><a href="#m_recall_micro" class="hash-link" aria-label="Direct link to m_recall_micro" title="Direct link to m_recall_micro" translate="no">​</a></h3>
+<p>Retrieves the micro recall of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the micro recall.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_recall_weighted"><code>M_RECALL_WEIGHTED</code><a href="#m_recall_weighted" class="hash-link" aria-label="Direct link to m_recall_weighted" title="Direct link to m_recall_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted recall of the entire confusion matrix, computed by taking the recall for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted recall.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_histogram"><code>M_SCORE_HISTOGRAM</code><a href="#m_score_histogram" class="hash-link" aria-label="Direct link to m_score_histogram" title="Direct link to m_score_histogram" translate="no">​</a></h3>
+<p>Retrieves the number of occurrences of the given class associated with each score threshold. Number of elements is the same as for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_SCORE_THRESHOLDS</code></a>. The ith bin is filled with score occurrences in the range [threshold_i, threshold_i+1).That is, greater or equal to threshold_i but lower than threshold_i+1.  For object detection, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> is supported and returns the number of occurrences of all classes combined.  To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.  |   |   |   |   | | --- | --- | --- | --- | | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> | | Feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID | <strong>M_CLASS_INDEX()</strong> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> | | Object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>) | <strong>M_CLASS_INDEX()</strong> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> | | Anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>) | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the number of occurrences of the given class associated with each score threshold.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_histogram_other_classes"><code>M_SCORE_HISTOGRAM_OTHER_CLASSES</code><a href="#m_score_histogram_other_classes" class="hash-link" aria-label="Direct link to m_score_histogram_other_classes" title="Direct link to m_score_histogram_other_classes" translate="no">​</a></h3>
+<p>Retrieves the number of occurrences of all classes other than the given class associated with each score threshold. Number of elements is the same as for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_SCORE_THRESHOLDS</code></a>. The ith bin is filled with score occurrences in the range [threshold_i, threshold_i+1).That is, greater or equal to threshold_i but lower than threshold_i+1. This does not apply to object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the number of occurrences of all classes other than the given class associated with each score threshold.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_histogram_used_entries"><code>M_SCORE_HISTOGRAM_USED_ENTRIES</code><a href="#m_score_histogram_used_entries" class="hash-link" aria-label="Direct link to m_score_histogram_used_entries" title="Direct link to m_score_histogram_used_entries" translate="no">​</a></h3>
+<p>Retrieves the array of entries contributed to occurrences of the given class associated with the specified score threshold. Number of elements is the number of occurrences. It is filled with entry keys of the occurrences in the range [threshold_value, threshold_value+1). That is, greater or equal to threshold_value but lower than threshold_value+1.  For object detection, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> is supported and returns the number of occurrences of all classes combined.  To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.  |   |   |   |   | | --- | --- | --- | --- | | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> | | Feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID | <strong>M_CLASS_INDEX()</strong> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code> | | Object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>) | <strong>M_CLASS_INDEX()</strong> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code> | | Anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>) | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code> |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the UUID.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_histogram_used_entries_other_classes"><code>M_SCORE_HISTOGRAM_USED_ENTRIES_OTHER_CLASSES</code><a href="#m_score_histogram_used_entries_other_classes" class="hash-link" aria-label="Direct link to m_score_histogram_used_entries_other_classes" title="Direct link to m_score_histogram_used_entries_other_classes" translate="no">​</a></h3>
+<p>Retrieves the array of entry keys of the occurrences of all classes other than the given class associated with the specified score threshold. Number of elements is the number of corresponding entries. It is filled with entry keys of the occurrences in the range [threshold_value, threshold_value +1). That is, greater or equal to threshold_value but lower than threshold_value+1. This does not apply to object detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the UUID.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_thresholds"><code>M_SCORE_THRESHOLDS</code><a href="#m_score_thresholds" class="hash-link" aria-label="Direct link to m_score_thresholds" title="Direct link to m_score_thresholds" translate="no">​</a></h3>
+<p>Retrieves the score thresholds used in the thresholding analysis. The same set of thresholds is applied to every class. Each score returned is a value between 0.0 and 100.0, inclusively.  For tasks predicting probability distribution over all classes (feature classification, image classification, and segmentation), thresholding analysis is done using a &quot;one class versus the rest&quot; strategy. Thus, a threshold selected for a given class must be applied to scores associated to that class. Occurrences with scores greater or equal to the threshold are considered to be part of the class.  One the other hand, the score predicted for object detection is a confidence score not associated with any specific class. In this case, only the detections with score greater or equal to the threshold are considered relevant.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the score thresholds.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status"><code>M_STATUS</code><a href="#m_status" class="hash-link" aria-label="Direct link to m_status" title="Direct link to m_status" translate="no">​</a></h3>
+<p>Retrieves the status of the statistics calculation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CALCULATE_NOT_PERFORMED</code></td><td>Specifies that the calculate operation was not performed.</td></tr><tr><td><code>M_COMPLETE</code></td><td>Specifies that the statistics calculation completed successfully.</td></tr><tr><td><code>M_CURRENTLY_CALCULATING</code></td><td>Specifies that the calculate operation is currently ongoing. You can only get this status if you are retrieving it from another thread.</td></tr><tr><td><code>M_INTERNAL_ERROR</code></td><td>Specifies that an unexpected error occurred during the operation.</td></tr><tr><td><code>M_STOPPED_BY_REQUEST</code></td><td>Specifies that the current execution of the operation was explicitly stopped by calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><code>MclassControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><code>M_STOP_CALCULATE</code></a>.</td></tr><tr><td><code>M_TIMEOUT_REACHED</code></td><td>Specifies that the operation ended because the timeout limit was reached. The timeout is specified by calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><code>MclassControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControl"><code>M_TIMEOUT</code></a>.</td></tr><tr><td><code>M_ZERO_USED_ENTRIES</code></td><td>Specifies that no entries were used because they are all in error.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tnr"><code>M_TNR</code><a href="#m_tnr" class="hash-link" aria-label="Direct link to m_tnr" title="Direct link to m_tnr" translate="no">​</a></h3>
+<p>Retrieves the true negative rate of a single class versus other classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that you cannot retrieve the true negative rate result (occurs when all ground truth instances are of the given class; that is, there is no FP/TN).</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the true negative rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tnr_macro"><code>M_TNR_MACRO</code><a href="#m_tnr_macro" class="hash-link" aria-label="Direct link to m_tnr_macro" title="Direct link to m_tnr_macro" translate="no">​</a></h3>
+<p>Retrieves the macro true negative rate of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro true negative rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tnr_micro"><code>M_TNR_MICRO</code><a href="#m_tnr_micro" class="hash-link" aria-label="Direct link to m_tnr_micro" title="Direct link to m_tnr_micro" translate="no">​</a></h3>
+<p>Retrieves the micro true negative rate of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies micro macro true negative rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tnr_weighted"><code>M_TNR_WEIGHTED</code><a href="#m_tnr_weighted" class="hash-link" aria-label="Direct link to m_tnr_weighted" title="Direct link to m_tnr_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted true negative rate of the entire confusion matrix, computed by taking the true negative rate for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted true negative rate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_true_negatives"><code>M_TRUE_NEGATIVES</code><a href="#m_true_negatives" class="hash-link" aria-label="Direct link to m_true_negatives" title="Direct link to m_true_negatives" translate="no">​</a></h3>
+<p>Retrieves the number of true negatives out of a confusion matrix for a 1 versus other classes, using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameter as the criterion on the selected class to populate the matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the true negatives.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_true_positives"><code>M_TRUE_POSITIVES</code><a href="#m_true_positives" class="hash-link" aria-label="Direct link to m_true_positives" title="Direct link to m_true_positives" translate="no">​</a></h3>
+<p>Retrieves the number of true positives out of a confusion matrix for a 1 versus other classes, using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameter as the criterion on the selected class to populate the matrix.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the true positives.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-anomaly-detection-pixel-level-or-segmentation-statistics-result-buffers">For anomaly detection (pixel-level) or segmentation statistics result buffers<a href="#for-anomaly-detection-pixel-level-or-segmentation-statistics-result-buffers" class="hash-link" aria-label="Direct link to For anomaly detection (pixel-level) or segmentation statistics result buffers" title="Direct link to For anomaly detection (pixel-level) or segmentation statistics result buffers" translate="no">​</a></h3>
+<p>To retrieve results for anomaly detection (pixel-level) or segmentation statistics result buffers, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a> parameter to one of the following values.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_iou"><code>M_IOU</code><a href="#m_iou" class="hash-link" aria-label="Direct link to m_iou" title="Direct link to m_iou" translate="no">​</a></h3>
+<p>Retrieves the Intersection-over-Union (IoU) metric of a single class vs other classes.  To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.  |   |   |   |   | | --- | --- | --- | --- | | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> | | Pixel-level anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>) | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ALL</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> | | Segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID | <strong>M_CLASS_INDEX()</strong> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ALL</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the IoU.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_iou_macro"><code>M_IOU_MACRO</code><a href="#m_iou_macro" class="hash-link" aria-label="Direct link to m_iou_macro" title="Direct link to m_iou_macro" translate="no">​</a></h3>
+<p>Retrieves the macro Intersection-over-Union (IoU) of the entire confusion matrix, giving equal importance to all classes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the macro IoU.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_iou_micro"><code>M_IOU_MICRO</code><a href="#m_iou_micro" class="hash-link" aria-label="Direct link to m_iou_micro" title="Direct link to m_iou_micro" translate="no">​</a></h3>
+<p>Retrieves the micro Intersection-over-Union (IoU) of the entire confusion matrix, giving equal importance to all samples.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the micro IoU.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_iou_weighted"><code>M_IOU_WEIGHTED</code><a href="#m_iou_weighted" class="hash-link" aria-label="Direct link to m_iou_weighted" title="Direct link to m_iou_weighted" translate="no">​</a></h3>
+<p>Retrieves the weighted Intersection-over-Union (IoU) of the entire confusion matrix, computed by taking the IoU for each class and then averaging them, weighted by the number of true instances for each class.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the weighted IoU.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-object-detection-single-entry-statistics-result-buffers">For object detection (single-entry) statistics result buffers<a href="#for-object-detection-single-entry-statistics-result-buffers" class="hash-link" aria-label="Direct link to For object detection (single-entry) statistics result buffers" title="Direct link to For object detection (single-entry) statistics result buffers" translate="no">​</a></h3>
+<p>To retrieve results for object detection (single-entry) statistics result buffers, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ResultType</code></a> parameter to one of the following values. To calculate single-entry statistic results for object detection, you must specify a specific dataset entry index or key (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassStatCalculate"><code>EntryIndex</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassStatCalculate"><code>EntryKey</code></a>) when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassStatCalculate"><code>MclassStatCalculate</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_matched_instance"><code>M_MATCHED_INSTANCE</code><a href="#m_matched_instance" class="hash-link" aria-label="Direct link to m_matched_instance" title="Direct link to m_matched_instance" translate="no">​</a></h3>
+<p>Retrieves the index of the detection instance matched to the ground truth region. This is only possible for bounding box regions (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassEntryAddRegion"><code>MclassEntryAddRegion</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassEntryAddRegion"><code>M_DESCRIPTOR_TYPE_BOX</code></a>).  To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.  |   |   |   |   | | --- | --- | --- | --- | | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> | | Single-entry object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>) | <strong>M_REGION_INDEX()</strong> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ALL_REGIONS</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that the region is not matched to any instance.</td></tr><tr><td><code>M_REGION_IGNORED</code></td><td>Specifies that the region&#x27;s <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControlEntry"><code>M_REGION_USE</code></a> control is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassControlEntry"><code>M_IGNORE</code></a>.</td></tr><tr><td><code>M_UNSUPPORTED_DESCRIPTOR_TYPE</code></td><td>Specifies that the region is not a bounding box.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the index.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_matched_region"><code>M_MATCHED_REGION</code><a href="#m_matched_region" class="hash-link" aria-label="Direct link to m_matched_region" title="Direct link to m_matched_region" translate="no">​</a></h3>
+<p>Retrieves the index of the ground truth region matched to the detection instance.  To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.  |   |   |   |   | | --- | --- | --- | --- | | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> | | Single-entry object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>) | <strong>M_INSTANCE_INDEX()</strong> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ALL_INSTANCES</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a> | <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a> |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that the region is not matched.</td></tr><tr><td><code>Value &gt;= 1</code></td><td>Specifies the index.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_instances"><code>M_NUMBER_OF_INSTANCES</code><a href="#m_number_of_instances" class="hash-link" aria-label="Direct link to m_number_of_instances" title="Direct link to m_number_of_instances" translate="no">​</a></h3>
+<p>Retrieves the number of detection instances in the entry.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the number of detection instances.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_regions"><code>M_NUMBER_OF_REGIONS</code><a href="#m_number_of_regions" class="hash-link" aria-label="Direct link to m_number_of_regions" title="Direct link to m_number_of_regions" translate="no">​</a></h3>
+<p>Retrieves the number of regions in the entry.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 1</code></td><td>Specifies number of regions.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-whether-results-are-available">Combination Constants — For determining whether results are available<a href="#combination-constants--for-determining-whether-results-are-available" class="hash-link" aria-label="Direct link to Combination Constants — For determining whether results are available" title="Direct link to Combination Constants — For determining whether results are available" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether a result is available.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_available"><code>M_AVAILABLE</code><a href="#m_available" class="hash-link" aria-label="Direct link to m_available" title="Direct link to m_available" translate="no">​</a></h4>
+<p>Retrieves whether the requested result type is available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the requested result type is not available.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the requested result type is available.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values">Combination Constants — For determining the required array size (number of elements) to store the returned values<a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" title="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required array size (number of elements) to store the returned values.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested results to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT64</em>.</p>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Any classification statistics result ID</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr></tbody></table>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Anomaly detection (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>), feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr></tbody></table>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Any classification statistics result ID</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr><tr><td>Object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>)</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ALL</code></a></td></tr></tbody></table>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Single-entry object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>)</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr></tbody></table>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Pixel-level anomaly detection (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>) or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr></tbody></table>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID</td><td><strong>M_CLASS_INDEX()</strong></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr><tr><td>Object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>)</td><td><strong>M_CLASS_INDEX()</strong> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NO_CLASS</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code></td></tr><tr><td>Anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>)</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr></tbody></table>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID</td><td><strong>M_CLASS_INDEX()</strong></td><td><strong>M_CLASS_INDEX()</strong></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr><tr><td>Object detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>)</td><td><strong>M_CLASS_INDEX()</strong> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NO_CLASS</code></a></td><td><strong>M_CLASS_INDEX()</strong> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NO_CLASS</code></a></td><td><code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code></td></tr><tr><td>Anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>)</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr></tbody></table>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), or segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>) statistics result ID</td><td><strong>M_CLASS_INDEX()</strong></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr><tr><td>Anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>)</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr></tbody></table>
+<p>To retrieve this result, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a> parameters to the following.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a></td></tr><tr><td>Feature classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_TREE_ENSEMBLE_RESULT</code></a>), image classification (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_CNN_RESULT</code></a>), segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_SEG_RESULT</code></a>), or object detection (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>) statistics result ID</td><td><strong>M_CLASS_INDEX()</strong></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ALL</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr><tr><td>Anomaly detection statistics result ID (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_ANO_RESULT</code></a>)</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ANOMALOUS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_NON_ANOMALOUS</code></a></td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_GENERAL</code></a></td><td><code>0.0 &amp;lt;= Value &amp;lt;= 100.0</code>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_ALL</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_DEFAULT</code></a></td></tr></tbody></table>
+<blockquote>
+<p><strong>Note:</strong> For more information about the confusion matrix information that is returned, and about the related parameters (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>StatResultClassId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>LabelOrIndex2</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>ScoreThreshold</code></a>), see the description of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultStat"><code>M_CONFUSION_MATRIX</code></a>.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> This result is not supported for object detection (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassAllocResult"><code>M_STAT_DET_RESULT</code></a>).</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassGetResultEntry"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MclassGetResultEntry</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/MclassHookFunction"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MclassHookFunction</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#statresultclassid-in-ail_id" class="table-of-contents__link toc-highlight"><code>StatResultClassId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#labelorindex1-in-ail_int64" class="table-of-contents__link toc-highlight"><code>LabelOrIndex1</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#labelorindex2-in-ail_int64" class="table-of-contents__link toc-highlight"><code>LabelOrIndex2</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#scorethreshold-in-ail_double" class="table-of-contents__link toc-highlight"><code>ScoreThreshold</code> <em>(in, AIL_DOUBLE)</em></a></li><li><a href="#resulttype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ResultType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#resultarrayptr-out-void" class="table-of-contents__link toc-highlight"><code>ResultArrayPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-any-statistics-result-buffer" class="table-of-contents__link toc-highlight">For any statistics result buffer</a></li><li><a href="#m_accuracy" class="table-of-contents__link toc-highlight"><code>M_ACCURACY</code></a></li><li><a href="#m_accuracy_macro" class="table-of-contents__link toc-highlight"><code>M_ACCURACY_MACRO</code></a></li><li><a href="#m_accuracy_overall" class="table-of-contents__link toc-highlight"><code>M_ACCURACY_OVERALL</code></a></li><li><a href="#m_accuracy_weighted" class="table-of-contents__link toc-highlight"><code>M_ACCURACY_WEIGHTED</code></a></li><li><a href="#m_auc_roc" class="table-of-contents__link toc-highlight"><code>M_AUC_ROC</code></a></li><li><a href="#m_auc_roc_macro" class="table-of-contents__link toc-highlight"><code>M_AUC_ROC_MACRO</code></a></li><li><a href="#m_auc_roc_weighted" class="table-of-contents__link toc-highlight"><code>M_AUC_ROC_WEIGHTED</code></a></li><li><a href="#m_average_precision" class="table-of-contents__link toc-highlight"><code>M_AVERAGE_PRECISION</code></a></li><li><a href="#m_average_precision_macro" class="table-of-contents__link toc-highlight"><code>M_AVERAGE_PRECISION_MACRO</code></a></li><li><a href="#m_average_precision_weighted" class="table-of-contents__link toc-highlight"><code>M_AVERAGE_PRECISION_WEIGHTED</code></a></li><li><a href="#m_confusion_matrix" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX</code></a></li><li><a href="#m_confusion_matrix_column" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX_COLUMN</code></a></li><li><a href="#m_confusion_matrix_element" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX_ELEMENT</code></a></li><li><a href="#m_confusion_matrix_percentage" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX_PERCENTAGE</code></a></li><li><a href="#m_confusion_matrix_row" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX_ROW</code></a></li><li><a href="#m_confusion_matrix_used_entries" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX_USED_ENTRIES</code></a></li><li><a href="#m_confusion_matrix_used_entries_column" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX_USED_ENTRIES_COLUMN</code></a></li><li><a href="#m_confusion_matrix_used_entries_element" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX_USED_ENTRIES_ELEMENT</code></a></li><li><a href="#m_confusion_matrix_used_entries_row" class="table-of-contents__link toc-highlight"><code>M_CONFUSION_MATRIX_USED_ENTRIES_ROW</code></a></li><li><a href="#m_error_entries" class="table-of-contents__link toc-highlight"><code>M_ERROR_ENTRIES</code></a></li><li><a href="#m_error_entries_status" class="table-of-contents__link toc-highlight"><code>M_ERROR_ENTRIES_STATUS</code></a></li><li><a href="#m_error_rate" class="table-of-contents__link toc-highlight"><code>M_ERROR_RATE</code></a></li><li><a href="#m_error_rate_macro" class="table-of-contents__link toc-highlight"><code>M_ERROR_RATE_MACRO</code></a></li><li><a href="#m_error_rate_overall" class="table-of-contents__link toc-highlight"><code>M_ERROR_RATE_OVERALL</code></a></li><li><a href="#m_error_rate_weighted" class="table-of-contents__link toc-highlight"><code>M_ERROR_RATE_WEIGHTED</code></a></li><li><a href="#m_f1score" class="table-of-contents__link toc-highlight"><code>M_F1SCORE</code></a></li><li><a href="#m_f1score_macro" class="table-of-contents__link toc-highlight"><code>M_F1SCORE_MACRO</code></a></li><li><a href="#m_f1score_micro" class="table-of-contents__link toc-highlight"><code>M_F1SCORE_MICRO</code></a></li><li><a href="#m_f1score_weighted" class="table-of-contents__link toc-highlight"><code>M_F1SCORE_WEIGHTED</code></a></li><li><a href="#m_false_negatives" class="table-of-contents__link toc-highlight"><code>M_FALSE_NEGATIVES</code></a></li><li><a href="#m_false_positives" class="table-of-contents__link toc-highlight"><code>M_FALSE_POSITIVES</code></a></li><li><a href="#m_fdr" class="table-of-contents__link toc-highlight"><code>M_FDR</code></a></li><li><a href="#m_fdr_macro" class="table-of-contents__link toc-highlight"><code>M_FDR_MACRO</code></a></li><li><a href="#m_fdr_micro" class="table-of-contents__link toc-highlight"><code>M_FDR_MICRO</code></a></li><li><a href="#m_fdr_weighted" class="table-of-contents__link toc-highlight"><code>M_FDR_WEIGHTED</code></a></li><li><a href="#m_fnr" class="table-of-contents__link toc-highlight"><code>M_FNR</code></a></li><li><a href="#m_fnr_macro" class="table-of-contents__link toc-highlight"><code>M_FNR_MACRO</code></a></li><li><a href="#m_fnr_micro" class="table-of-contents__link toc-highlight"><code>M_FNR_MICRO</code></a></li><li><a href="#m_fnr_weighted" class="table-of-contents__link toc-highlight"><code>M_FNR_WEIGHTED</code></a></li><li><a href="#m_fpr" class="table-of-contents__link toc-highlight"><code>M_FPR</code></a></li><li><a href="#m_fpr_macro" class="table-of-contents__link toc-highlight"><code>M_FPR_MACRO</code></a></li><li><a href="#m_fpr_micro" class="table-of-contents__link toc-highlight"><code>M_FPR_MICRO</code></a></li><li><a href="#m_fpr_weighted" class="table-of-contents__link toc-highlight"><code>M_FPR_WEIGHTED</code></a></li><li><a href="#m_number_of_classes" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_CLASSES</code></a></li><li><a href="#m_precision" class="table-of-contents__link toc-highlight"><code>M_PRECISION</code></a></li><li><a href="#m_precision_macro" class="table-of-contents__link toc-highlight"><code>M_PRECISION_MACRO</code></a></li><li><a href="#m_precision_micro" class="table-of-contents__link toc-highlight"><code>M_PRECISION_MICRO</code></a></li><li><a href="#m_precision_weighted" class="table-of-contents__link toc-highlight"><code>M_PRECISION_WEIGHTED</code></a></li><li><a href="#m_recall" class="table-of-contents__link toc-highlight"><code>M_RECALL</code></a></li><li><a href="#m_recall_macro" class="table-of-contents__link toc-highlight"><code>M_RECALL_MACRO</code></a></li><li><a href="#m_recall_micro" class="table-of-contents__link toc-highlight"><code>M_RECALL_MICRO</code></a></li><li><a href="#m_recall_weighted" class="table-of-contents__link toc-highlight"><code>M_RECALL_WEIGHTED</code></a></li><li><a href="#m_score_histogram" class="table-of-contents__link toc-highlight"><code>M_SCORE_HISTOGRAM</code></a></li><li><a href="#m_score_histogram_other_classes" class="table-of-contents__link toc-highlight"><code>M_SCORE_HISTOGRAM_OTHER_CLASSES</code></a></li><li><a href="#m_score_histogram_used_entries" class="table-of-contents__link toc-highlight"><code>M_SCORE_HISTOGRAM_USED_ENTRIES</code></a></li><li><a href="#m_score_histogram_used_entries_other_classes" class="table-of-contents__link toc-highlight"><code>M_SCORE_HISTOGRAM_USED_ENTRIES_OTHER_CLASSES</code></a></li><li><a href="#m_score_thresholds" class="table-of-contents__link toc-highlight"><code>M_SCORE_THRESHOLDS</code></a></li><li><a href="#m_status" class="table-of-contents__link toc-highlight"><code>M_STATUS</code></a></li><li><a href="#m_tnr" class="table-of-contents__link toc-highlight"><code>M_TNR</code></a></li><li><a href="#m_tnr_macro" class="table-of-contents__link toc-highlight"><code>M_TNR_MACRO</code></a></li><li><a href="#m_tnr_micro" class="table-of-contents__link toc-highlight"><code>M_TNR_MICRO</code></a></li><li><a href="#m_tnr_weighted" class="table-of-contents__link toc-highlight"><code>M_TNR_WEIGHTED</code></a></li><li><a href="#m_true_negatives" class="table-of-contents__link toc-highlight"><code>M_TRUE_NEGATIVES</code></a></li><li><a href="#m_true_positives" class="table-of-contents__link toc-highlight"><code>M_TRUE_POSITIVES</code></a></li><li><a href="#for-anomaly-detection-pixel-level-or-segmentation-statistics-result-buffers" class="table-of-contents__link toc-highlight">For anomaly detection (pixel-level) or segmentation statistics result buffers</a></li><li><a href="#m_iou" class="table-of-contents__link toc-highlight"><code>M_IOU</code></a></li><li><a href="#m_iou_macro" class="table-of-contents__link toc-highlight"><code>M_IOU_MACRO</code></a></li><li><a href="#m_iou_micro" class="table-of-contents__link toc-highlight"><code>M_IOU_MICRO</code></a></li><li><a href="#m_iou_weighted" class="table-of-contents__link toc-highlight"><code>M_IOU_WEIGHTED</code></a></li><li><a href="#for-object-detection-single-entry-statistics-result-buffers" class="table-of-contents__link toc-highlight">For object detection (single-entry) statistics result buffers</a></li><li><a href="#m_matched_instance" class="table-of-contents__link toc-highlight"><code>M_MATCHED_INSTANCE</code></a></li><li><a href="#m_matched_region" class="table-of-contents__link toc-highlight"><code>M_MATCHED_REGION</code></a></li><li><a href="#m_number_of_instances" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_INSTANCES</code></a></li><li><a href="#m_number_of_regions" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_REGIONS</code></a></li><li><a href="#combination-constants--for-determining-whether-results-are-available" class="table-of-contents__link toc-highlight">Combination Constants — For determining whether results are available</a></li><li><a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required array size (number of elements) to store the returned values</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

@@ -1,0 +1,1880 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/blob/MblobControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MblobControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MblobControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"blob","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"},{"@type":"ListItem","position":2,"name":"MblobControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Collapse sidebar category &#x27;blob&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobAlloc"><span title="MblobAlloc" class="linkLabel_WmDU">MblobAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobAllocResult"><span title="MblobAllocResult" class="linkLabel_WmDU">MblobAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><span title="MblobCalculate" class="linkLabel_WmDU">MblobCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><span title="MblobControl" class="linkLabel_WmDU">MblobControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><span title="MblobDraw" class="linkLabel_WmDU">MblobDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobFree"><span title="MblobFree" class="linkLabel_WmDU">MblobFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetLabel"><span title="MblobGetLabel" class="linkLabel_WmDU">MblobGetLabel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><span title="MblobGetResult" class="linkLabel_WmDU">MblobGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobInquire"><span title="MblobInquire" class="linkLabel_WmDU">MblobInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobLabel"><span title="MblobLabel" class="linkLabel_WmDU">MblobLabel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobMerge"><span title="MblobMerge" class="linkLabel_WmDU">MblobMerge</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobReconstruct"><span title="MblobReconstruct" class="linkLabel_WmDU">MblobReconstruct</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobRestore"><span title="MblobRestore" class="linkLabel_WmDU">MblobRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSave"><span title="MblobSave" class="linkLabel_WmDU">MblobSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><span title="MblobSelect" class="linkLabel_WmDU">MblobSelect</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobStream"><span title="MblobStream" class="linkLabel_WmDU">MblobStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobTransform"><span title="MblobTransform" class="linkLabel_WmDU">MblobTransform</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span>blob</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MblobControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MblobControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control a blob analysis setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MblobControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextOrResultBlobId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">            </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue            </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function allows you to control a setting of the specified blob analysis context or result buffer.</p>
+<p>For blob analysis contexts, these settings control the execution of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>, and which blob features are enabled for calculation. For blob analysis result buffers, these settings control the post-manipulation of results. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>MblobControl</code></a> is not called, default processing controls and values are used in calculations.</p>
+<p>You can inquire about most of these settings using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobInquire"><code>MblobInquire</code></a>.</p>
+<p>Changing certain control type settings will cause <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> to discard all results currently in your result buffer prior to calculation. If this is the case, it will be mentioned in the preamble to the table containing these control types.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultblobid-out-ail_id"><code>ContextOrResultBlobId</code> <em>(out, AIL_ID)</em><a href="#contextorresultblobid-out-ail_id" class="hash-link" aria-label="Direct link to contextorresultblobid-out-ail_id" title="Direct link to contextorresultblobid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the blob analysis context or result buffer.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the setting&#x27;s new value.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-global-processing-settings-of-a-blob-analysis-context-that-cause-results-to-be-recalculated">For global processing settings of a blob analysis context that cause results to be recalculated<a href="#for-global-processing-settings-of-a-blob-analysis-context-that-cause-results-to-be-recalculated" class="hash-link" aria-label="Direct link to For global processing settings of a blob analysis context that cause results to be recalculated" title="Direct link to For global processing settings of a blob analysis context that cause results to be recalculated" translate="no">​</a></h3>
+<p>For the following global processing setting control types, you must set the<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>ContextOrResultBlobId</code></a> parameter to a blob analysis context.  Changing the value of the following control types between calls to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> will cause all the results currently in your Blob analysis result buffer to be discarded upon the next call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_blob_identification_mode"><code>M_BLOB_IDENTIFICATION_MODE</code><a href="#m_blob_identification_mode" class="hash-link" aria-label="Direct link to m_blob_identification_mode" title="Direct link to m_blob_identification_mode" translate="no">​</a></h3>
+<p>Sets whether to calculate features for each blob, or to treat groups of blobs as single blobs and calculate the features of these blobs as if they were one blob.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INDIVIDUAL</code> <em>(default)</em></td><td>Specifies that all blobs are measured individually.</td></tr><tr><td><code>M_LABELED</code></td><td>Specifies that blobs with the same label are grouped together, and that touching blobs with different labels are also grouped together.  The foreground value of the blob identifier image will be used as the label value of the blob; therefore, when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_LABELED</code></a>, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FOREGROUND_VALUE</code></a> control type cannot be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ZERO</code></a>, and the identifier image cannot be binary (1-bit).  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_LABELED</code></a> is not supported for merge operations using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobMerge"><code>MblobMerge</code></a>.</td></tr><tr><td><code>M_LABELED_TOUCHING</code></td><td>Specifies that blobs with the same label are grouped together, and that touching blobs with different labels are measured individually.  The foreground value of the blob identifier image will be used as the label value of the blob; therefore, when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_LABELED_TOUCHING</code></a>, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FOREGROUND_VALUE</code></a> control type cannot be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ZERO</code></a>. In addition, the blob identifier image cannot be binary (1-bit).  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_LABELED_TOUCHING</code></a> is not supported with the following:  - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>, when chain features are enabled for calculation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>MblobControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_CHAINS</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ALL_FEATURES</code></a>). - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>MblobDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>M_DRAW_BLOBS_CONTOUR</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>M_DRAW_HOLES_CONTOUR</code></a>, or a combination of the two. - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>MblobSelect</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>M_MERGE</code></a>.</td></tr><tr><td><code>M_WHOLE_IMAGE</code></td><td>Specifies that all blobs are grouped together.  If the blob identifier image is already binarized (for example, pixel values for an 8-bit image are either 0 or 0xff), you can set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_IDENTIFIER_TYPE</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_BINARY</code></a> to calculate features faster.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_connectivity"><code>M_CONNECTIVITY</code><a href="#m_connectivity" class="hash-link" aria-label="Direct link to m_connectivity" title="Direct link to m_connectivity" translate="no">​</a></h3>
+<p>Sets the image lattice for blob analysis.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_4_CONNECTED</code></td><td>Specifies that each pixel has 4 neighbors.</td></tr><tr><td><code>M_8_CONNECTED</code> <em>(default)</em></td><td>Specifies that each pixel has 8 neighbors.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_angle_search_end"><code>M_FERET_ANGLE_SEARCH_END</code><a href="#m_feret_angle_search_end" class="hash-link" aria-label="Direct link to m_feret_angle_search_end" title="Direct link to m_feret_angle_search_end" translate="no">​</a></h3>
+<p>Sets the upper limit of the angular search range in which to search for the maximum (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>M_FERET_MAX_DIAMETER</code></a>) or minimum (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>M_FERET_MIN_DIAMETER</code></a>) Feret diameters.  &gt; <strong>Note:</strong> Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> only searches through the specified range when calculating Feret features. Better results for the features can exist outside of this search range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0 &lt;= Value &lt;= 180</code> <em>(default)</em></td><td>Specifies the upper limit of the angular search range.  The end value must be greater than the start value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_angle_search_start"><code>M_FERET_ANGLE_SEARCH_START</code><a href="#m_feret_angle_search_start" class="hash-link" aria-label="Direct link to m_feret_angle_search_start" title="Direct link to m_feret_angle_search_start" translate="no">​</a></h3>
+<p>Sets the lower limit of the angular search range in which to search for the maximum (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>M_FERET_MAX_DIAMETER</code></a>) or minimum (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>M_FERET_MIN_DIAMETER</code></a>) Feret diameters.  &gt; <strong>Note:</strong> Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> only searches through the specified range when calculating Feret features. Better results for the features can exist outside of this search range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0 &lt;= Value &lt;= 180</code> <em>(default)</em></td><td>Specifies the lower limit of the angular search range.  The start value must be less than the end value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_foreground_value"><code>M_FOREGROUND_VALUE</code><a href="#m_foreground_value" class="hash-link" aria-label="Direct link to m_foreground_value" title="Direct link to m_foreground_value" translate="no">​</a></h3>
+<p>Sets which pixel values are considered to be in the foreground.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NONZERO</code> <em>(default)</em></td><td>Specifies the blobs consisting of non-zero pixels.</td></tr><tr><td><code>M_ZERO</code></td><td>Specifies the blobs consisting of zero pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_ferets"><code>M_NUMBER_OF_FERETS</code><a href="#m_number_of_ferets" class="hash-link" aria-label="Direct link to m_number_of_ferets" title="Direct link to m_number_of_ferets" translate="no">​</a></h3>
+<p>Sets the number of Feret angles to use when calculating a Feret feature (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_...</code></a>) or a feature based on Ferets (that is, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_RECTANGULARITY</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ROUGHNESS</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_CONVEX_PERIMETER</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies the use of a high precision algorithm to accurately calculate Feret features (and features based on Feret features).  &gt; <strong>Note:</strong> The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_DIAMETERS</code></a> result type is not supported when you use this setting.</td></tr><tr><td><code>M_MIN_FERETS</code></td><td>Specifies the minimum number of Feret angles. The minimum number of Feret angles is 2.</td></tr><tr><td><code>Value &gt; M_MIN_FERETS</code> <em>(default)</em></td><td>Specifies the number of Feret angles.  The first Feret angle used is always 0°, and the difference between successive angles is 180° / number of Ferets.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-global-processing-settings-of-a-blob-analysis-context-that-do-not-cause-results-to-be-recalculated">For global processing settings of a blob analysis context that do not cause results to be recalculated<a href="#for-global-processing-settings-of-a-blob-analysis-context-that-do-not-cause-results-to-be-recalculated" class="hash-link" aria-label="Direct link to For global processing settings of a blob analysis context that do not cause results to be recalculated" title="Direct link to For global processing settings of a blob analysis context that do not cause results to be recalculated" translate="no">​</a></h3>
+<p>For the following global processing setting control types, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>ContextOrResultBlobId</code></a> parameter to a blob analysis context. These control types do not cause any results currently in the result buffer to be discarded when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> is called.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_contact_points"><code>M_FERET_CONTACT_POINTS</code><a href="#m_feret_contact_points" class="hash-link" aria-label="Direct link to m_feret_contact_points" title="Direct link to m_feret_contact_points" translate="no">​</a></h3>
+<p>Sets whether to calculate Feret contact points for features that support it (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FERET_AT_PRINCIPAL_AXIS_ANGLE</code></a>) if the feature has been enabled for calculation. This enables the use of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_CONTACT_POINTS_...</code></a> combination constants in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Feret contact points for supported features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Feret contact points for supported features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_general_angle"><code>M_FERET_GENERAL_ANGLE</code><a href="#m_feret_general_angle" class="hash-link" aria-label="Direct link to m_feret_general_angle" title="Direct link to m_feret_general_angle" translate="no">​</a></h3>
+<p>Sets the angle to use when calculating <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FERET_GENERAL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>-360.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_identifier_type"><code>M_IDENTIFIER_TYPE</code><a href="#m_identifier_type" class="hash-link" aria-label="Direct link to m_identifier_type" title="Direct link to m_identifier_type" translate="no">​</a></h3>
+<p>Sets the values that non-zero pixels in the blob identifier image can have.  If the blob identifier image is already binarized (for example, pixel values for an 8-bit image are either 0 or 0xff), you can set this control type to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_BINARY</code></a> to calculate features faster.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_BINARY</code></td><td>Specifies that non-zero pixels must have the maximum value of the buffer (for example, 0xff for an 8-bit image).</td></tr><tr><td><code>M_GRAYSCALE</code> <em>(default)</em></td><td>Specifies that non-zero pixels can have any value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_blobs"><code>M_MAX_BLOBS</code><a href="#m_max_blobs" class="hash-link" aria-label="Direct link to m_max_blobs" title="Direct link to m_max_blobs" translate="no">​</a></h3>
+<p>Sets the maximum number of blobs to process. If this number is reached, processing is stopped, and results available in the result buffer become invalid and are discarded unless<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_RETURN_PARTIAL_RESULTS</code></a> is enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that there is no limit on the maximum number of blobs.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the maximum number of blobs.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_general_mode"><code>M_MOMENT_GENERAL_MODE</code><a href="#m_moment_general_mode" class="hash-link" aria-label="Direct link to m_moment_general_mode" title="Direct link to m_moment_general_mode" translate="no">​</a></h3>
+<p>Sets the type of moment to calculate when calculating a user-specified moment (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CENTRAL</code></td><td>Specifies a central moment.  A central moment is defined as <em>[Image: mblobselectfeature_moment_central.png]</em>  , where <em>i</em> runs from 1 to the number of pixels in the blob, <code>_p&lt;sub&gt;i&lt;/sub&gt; _</code> = value of a pixel (always 1 for binary moments), <code>_x&lt;sub&gt;i&lt;/sub&gt; _</code> = its X-coordinate, _y<sub>i</sub> _ = its Y-coordinate, <em>[Image: mblob_xbar.png]</em>   = the weighted mean of _x<sub>i</sub> _, <em>[Image: mblob_ybar.png]</em>   = the weighted mean of _y<sub>i</sub> _, <em>q</em> and <em>r</em> are the order of the moment in X and Y respectively.  The weighted mean is the first-order ordinary moment divided by the sum of the pixel values (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_SUM_PIXEL</code></a> for grayscale definitions, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_AREA</code></a> for binary definitions).  Central moments use coordinates relative to each blob&#x27;s center of gravity, and are therefore independent of a blob&#x27;s position within an image.</td></tr><tr><td><code>M_ORDINARY</code> <em>(default)</em></td><td>Specifies an ordinary moment.  An ordinary moment is defined as <em>[Image: mblobselectfeature_moment.png]</em>  , where <em>i</em> runs from 1 to the number of pixels in the blob, <code>_p&lt;sub&gt;i&lt;/sub&gt; _</code> = value of a pixel (always 1 for binary moments), <code>_x&lt;sub&gt;i&lt;/sub&gt; _</code> = its X-coordinate, _y<sub>i</sub> _ = its Y-coordinate, and (<em>q</em>+<em>r</em>) are the order of the moment in X and Y respectively.  Ordinary moments are affected by the blob position because they use coordinates relative to the image origin (top-left corner).</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_general_order_x"><code>M_MOMENT_GENERAL_ORDER_X</code><a href="#m_moment_general_order_x" class="hash-link" aria-label="Direct link to m_moment_general_order_x" title="Direct link to m_moment_general_order_x" translate="no">​</a></h3>
+<p>Sets the order of the X-component of the user-specified moment. Use this control type when calculating a user-specified moment (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0</code> <em>(default)</em></td><td>Specifies the X-order of the moment.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_general_order_y"><code>M_MOMENT_GENERAL_ORDER_Y</code><a href="#m_moment_general_order_y" class="hash-link" aria-label="Direct link to m_moment_general_order_y" title="Direct link to m_moment_general_order_y" translate="no">​</a></h3>
+<p>Sets the order of the Y-component of the user-specified moment. Use this control type when calculating a user-specified moment (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0</code> <em>(default)</em></td><td>Specifies the Y-order of the moment.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_third_order_mode"><code>M_MOMENT_THIRD_ORDER_MODE</code><a href="#m_moment_third_order_mode" class="hash-link" aria-label="Direct link to m_moment_third_order_mode" title="Direct link to m_moment_third_order_mode" translate="no">​</a></h3>
+<p>Sets how to calculate third-order moments.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FAST</code></a> is faster than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_PRECISE</code></a>, but it might cause some imprecisions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FAST</code> <em>(default)</em></td><td>Specifies that third-order moments will be calculated quickly.</td></tr><tr><td><code>M_PRECISE</code></td><td>Specifies that third-order moments will be calculated accurately.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_aspect_ratio"><code>M_PIXEL_ASPECT_RATIO</code><a href="#m_pixel_aspect_ratio" class="hash-link" aria-label="Direct link to m_pixel_aspect_ratio" title="Direct link to m_pixel_aspect_ratio" translate="no">​</a></h3>
+<p>Sets the pixel aspect ratio of the image(s). This is only useful if the image has a uniform pixel aspect ratio with different X- and Y-scales. For non-uniform distortion, you can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalList"><code>McalList</code></a> to calibrate the image, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformImage"><code>McalTransformImage</code></a> to physically correct the image. All results returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> are affected by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_PIXEL_ASPECT_RATIO</code></a>, including those that are simply positions within the image. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C06_Blob_analysis/S04_Adjusting_blob_analysis_processing_controls">Pixel aspect ratio</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the pixel width/pixel height.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_return_partial_results"><code>M_RETURN_PARTIAL_RESULTS</code><a href="#m_return_partial_results" class="hash-link" aria-label="Direct link to m_return_partial_results" title="Direct link to m_return_partial_results" translate="no">​</a></h3>
+<p>Sets whether results from partially scanned images will be available after a stop condition is met.  The three stop conditions are:  - The maximum number of blobs (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MAX_BLOBS</code></a>) has been processed. - The timeout limit (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_TIMEOUT</code></a>) is exceeded. - The calculation has been stopped by the user (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_STOP_CALCULATE</code></a>).  When a stop condition is met, the image is only partially scanned and results about blobs found in the partially scanned image are discarded. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_RETURN_PARTIAL_RESULTS</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ENABLE</code></a>, you can access the results of those blobs that are completely defined (those blobs whose entire perimeter was scanned) in the partially scanned image.  &gt; <strong>Note:</strong> Note that when using multi-processing (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControlMp"><code>MappControlMp</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControlMp"><code>M_MP_USE</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/MappControlMp"><code>M_ENABLE</code></a>) and this control type is enabled, it is possible that the number of blobs returned can exceed the number set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MAX_BLOBS</code></a>. This is because multi-processing might divide the image into pieces and process each piece independently; in this case, there is no global number of blobs counted for the entire image until everything is processed. When a stop condition is met in one of the image pieces, processing is stopped everywhere. The total number of blobs is then combined and returned, which can be greater than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MAX_BLOBS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to discard results of partially scanned images when processing is interrupted.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to make results of partially scanned images available when processing is interrupted.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_runs"><code>M_SAVE_RUNS</code><a href="#m_save_runs" class="hash-link" aria-label="Direct link to m_save_runs" title="Direct link to m_save_runs" translate="no">​</a></h3>
+<p>Sets whether to save run information when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to save run information. Disabling saves time when performing the first call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> and reduces the memory requirements for the result buffer. However, you cannot use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobLabel"><code>MblobLabel</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetLabel"><code>MblobGetLabel</code></a>, and certain draw operations are disabled. See <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>MblobDraw</code></a> for more information on which draw operations require run information to be saved. In addition, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>MblobControl</code></a>, you cannot enable for calculation the chained pixels features (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_CHAINS</code></a>), the convex hull features (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_CONVEX_HULL</code></a>), <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_NUMBER_OF_FERETS</code></a> when it is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_INFINITE</code></a>, and the Feret features (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FERETS</code></a>).</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to save run information. Calls to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> will save run information from the blob identifier image in the result buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sortn"><code>M_SORTn</code><a href="#m_sortn" class="hash-link" aria-label="Direct link to m_sortn" title="Direct link to m_sortn" translate="no">​</a></h3>
+<p>Sets the feature to use as the <em>n</em> <sup>th</sup> sorting key for results, where <em>n</em> stands for an integer between 1 and 3. Changes to this control type take effect upon the next call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>. If you select a feature as a sorting key that is not enabled, an error will occur on the next call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NO</code></td><td>Specifies that the blob is not touching the borders of the image.</td></tr><tr><td><code>M_YES</code></td><td>Specifies that the blob is touching one or more borders of the image.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NO_SORT</code> <em>(default)</em></td><td>Specifies to remove the sorting key.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sortn_direction"><code>M_SORTn_DIRECTION</code><a href="#m_sortn_direction" class="hash-link" aria-label="Direct link to m_sortn_direction" title="Direct link to m_sortn_direction" translate="no">​</a></h3>
+<p>Sets the direction in which the <em>n</em> <sup>th</sup> sorting key is sorted, where <em>n</em> stands for an integer between 1 and 3.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_SORT_DOWN</code></td><td>Specifies the feature as being sorted in descending order.</td></tr><tr><td><code>M_SORT_UP</code> <em>(default)</em></td><td>Specifies the feature as being sorted in ascending order.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_timeout"><code>M_TIMEOUT</code><a href="#m_timeout" class="hash-link" aria-label="Direct link to m_timeout" title="Direct link to m_timeout" translate="no">​</a></h3>
+<p>Sets the maximum processing time, in msec. If the timeout limit is exceeded, processing is stopped, and results already available in the result buffer become invalid and will be discarded, unless<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_RETURN_PARTIAL_RESULTS</code></a> is enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that there is no maximum processing time.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the maximum processing time, in msec.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-to-calculate-all-features-in-a-single-call">For specifying to calculate all features in a single call<a href="#for-specifying-to-calculate-all-features-in-a-single-call" class="hash-link" aria-label="Direct link to For specifying to calculate all features in a single call" title="Direct link to For specifying to calculate all features in a single call" translate="no">​</a></h3>
+<p>The following control type allows you to enable or disable all features for calculation using a single call. For the following control type, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>ContextOrResultBlobId</code></a> parameter to a blob analysis context.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_all_features"><code>M_ALL_FEATURES</code><a href="#m_all_features" class="hash-link" aria-label="Direct link to m_all_features" title="Direct link to m_all_features" translate="no">​</a></h3>
+<p>Sets whether to calculate all features. You can then selectively enable or disable specific features for calculation.  It is not recommended to use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ALL_FEATURES</code></a> in your final application. This is because programs using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ALL_FEATURES</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ENABLE</code></a> might become slower when new Aurora Imaging Library versions are released, if new features have been added.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to disable the calculation of all features, regardless of their previous setting. This can be used as a quick method to disable the calculation of all features.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that all of the features will be calculated, regardless of their previous setting.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-to-calculate-features-with-only-a-binary-definition">For specifying to calculate features with only a binary definition<a href="#for-specifying-to-calculate-features-with-only-a-binary-definition" class="hash-link" aria-label="Direct link to For specifying to calculate features with only a binary definition" title="Direct link to For specifying to calculate features with only a binary definition" translate="no">​</a></h3>
+<p>The following control types establish which of the blob features, that have only a binary definition, are calculated for each blob; these blob features are calculated using only the blob identifier image. For the following control types, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>ContextOrResultBlobId</code></a> parameter to a blob analysis context. Note that, unless otherwise stated, these features are calculated in pixel units; although you can retrieve them in world units using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> if calculated on a calibrated blob identifier image and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_RESULT_OUTPUT_UNITS</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_WORLD</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ACCORDING_TO_CALIBRATION</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box"><code>M_BOX</code><a href="#m_box" class="hash-link" aria-label="Direct link to m_box" title="Direct link to m_box" translate="no">​</a></h3>
+<p>Sets whether to calculate all image-axis-aligned bounding box features plus X- and Y-Ferets. The image-axis-aligned bounding box is the bounding box that is aligned with the pixel coordinate system&#x27;s axes. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BOX_X_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BOX_Y_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BOX_X_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BOX_Y_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BLOB_TOUCHING_IMAGE_BORDERS</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BOX_AREA</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BOX_ASPECT_RATIO</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BOX_FILL_RATIO</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FIRST_POINT_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FIRST_POINT_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_X</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_Y</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_breadth"><code>M_BREADTH</code><a href="#m_breadth" class="hash-link" aria-label="Direct link to m_breadth" title="Direct link to m_breadth" translate="no">​</a></h3>
+<p>Sets whether to calculate the breadth of a blob. This feature has the same advantages and disadvantages as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_LENGTH</code></a>; that is, this feature is more accurate for long thin blobs because it is derived from the perimeter (P) and area (A) assuming that <code>P = 2(length + breadth) and A = length x breadth</code>. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BREADTH</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_chains"><code>M_CHAINS</code><a href="#m_chains" class="hash-link" aria-label="Direct link to m_chains" title="Direct link to m_chains" translate="no">​</a></h3>
+<p>Sets whether to calculate all 4 chain features. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CHAIN_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CHAIN_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CHAIN_INDEX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_NUMBER_OF_CHAINED_PIXELS</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_TOTAL_NUMBER_OF_CHAINED_PIXELS</code></a>. Note that the chain code is computed depending on the lattice and foreground values set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_CONNECTIVITY</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FOREGROUND_VALUE</code></a>, respectively.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_compactness"><code>M_COMPACTNESS</code><a href="#m_compactness" class="hash-link" aria-label="Direct link to m_compactness" title="Direct link to m_compactness" translate="no">​</a></h3>
+<p>Sets whether to calculate the compactness value of a blob. This is defined as the ratio between the area of a circle with the same perimeter as the blob in question, and the area of the blob itself. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_COMPACTNESS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_contact_points"><code>M_CONTACT_POINTS</code><a href="#m_contact_points" class="hash-link" aria-label="Direct link to m_contact_points" title="Direct link to m_contact_points" translate="no">​</a></h3>
+<p>Sets whether to calculate the contact features of the image-axis-aligned bounding box. The image-axis-aligned bounding box is the bounding box that is aligned with the pixel coordinate system&#x27;s axes. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_X_MIN_AT_Y_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_X_MAX_AT_Y_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_X_MAX_AT_Y_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_X_MIN_AT_Y_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_Y_MIN_AT_X_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_Y_MAX_AT_X_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_Y_MAX_AT_X_MIN</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_Y_MIN_AT_X_MIN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_convex_hull"><code>M_CONVEX_HULL</code><a href="#m_convex_hull" class="hash-link" aria-label="Direct link to m_convex_hull" title="Direct link to m_convex_hull" translate="no">​</a></h3>
+<p>Sets whether to calculate all convex hull features. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_AREA</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_COG_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_COG_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_FILL_RATIO</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_PERIMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_XY_PACKED</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_NUMBER_OF_CONVEX_HULL_POINTS</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_TOTAL_NUMBER_OF_CONVEX_HULL_POINTS</code></a>.  &gt; <strong>Note:</strong> For a quicker result, you can select to calculate<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_CONVEX_PERIMETER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_convex_perimeter"><code>M_CONVEX_PERIMETER</code><a href="#m_convex_perimeter" class="hash-link" aria-label="Direct link to m_convex_perimeter" title="Direct link to m_convex_perimeter" translate="no">​</a></h3>
+<p>Sets whether to calculate the approximation of the perimeter of the convex hull of a blob. It is derived from several Feret diameters; so, a larger number of Ferets gives a more accurate result. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_NUMBER_OF_FERETS</code></a> to change the number of Ferets angles used when calculating this feature. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_PERIMETER</code></a>.  &gt; <strong>Note:</strong> For a more accurate result, you can select to calculate<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CONVEX_HULL_PERIMETER</code></a> by enabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_CONVEX_HULL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_elongation"><code>M_ELONGATION</code><a href="#m_elongation" class="hash-link" aria-label="Direct link to m_elongation" title="Direct link to m_elongation" translate="no">​</a></h3>
+<p>Sets whether to calculate a value that is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_LENGTH</code></a> / <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_BREADTH</code></a>. It is similar to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_ELONGATION</code></a>, except that it should be used for long thin blobs. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_ELONGATION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_euler_number"><code>M_EULER_NUMBER</code><a href="#m_euler_number" class="hash-link" aria-label="Direct link to m_euler_number" title="Direct link to m_euler_number" translate="no">​</a></h3>
+<p>Sets whether to calculate the number of blobs - number of holes. This value is more useful for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_WHOLE_IMAGE</code></a> than for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_INDIVIDUAL</code></a> processing mode. When using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_WHOLE_IMAGE</code></a> processing mode, each blob is treated individually, as opposed to grouping all of the blobs in an image together. When using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_INDIVIDUAL</code></a> processing mode, the number of blobs is effectively 1. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_EULER_NUMBER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_general"><code>M_FERET_GENERAL</code><a href="#m_feret_general" class="hash-link" aria-label="Direct link to m_feret_general" title="Direct link to m_feret_general" translate="no">​</a></h3>
+<p>Sets whether to calculate a Feret diameter at a user-specified angle specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FERET_GENERAL_ANGLE</code></a>. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_GENERAL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_max_diameter_elongation"><code>M_FERET_MAX_DIAMETER_ELONGATION</code><a href="#m_feret_max_diameter_elongation" class="hash-link" aria-label="Direct link to m_feret_max_diameter_elongation" title="Direct link to m_feret_max_diameter_elongation" translate="no">​</a></h3>
+<p>Sets whether to calculate the ratio between the maximum Feret diameter and its perpendicular Feret diameter. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FERET_ANGLE_SEARCH_...</code></a> constants to control the angular range in which to find the maximum Feret diameter. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_MAX_DIAMETER_ELONGATION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_min_diameter_elongation"><code>M_FERET_MIN_DIAMETER_ELONGATION</code><a href="#m_feret_min_diameter_elongation" class="hash-link" aria-label="Direct link to m_feret_min_diameter_elongation" title="Direct link to m_feret_min_diameter_elongation" translate="no">​</a></h3>
+<p>Sets whether to calculate the ratio between the minimum Feret diameter and its perpendicular Feret diameter. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FERET_ANGLE_SEARCH_...</code></a> constants to control the angular range in which to find the minimum Feret diameter. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_MIN_DIAMETER_ELONGATION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_perpendicular_to_max_diameter"><code>M_FERET_PERPENDICULAR_TO_MAX_DIAMETER</code><a href="#m_feret_perpendicular_to_max_diameter" class="hash-link" aria-label="Direct link to m_feret_perpendicular_to_max_diameter" title="Direct link to m_feret_perpendicular_to_max_diameter" translate="no">​</a></h3>
+<p>Sets whether to calculate the Feret diameter that is perpendicular to the maximum Feret diameter. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FERET_ANGLE_SEARCH_...</code></a> constants to control the angular range in which to find the maximum Feret diameter. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_PERPENDICULAR_TO_MAX_DIAMETER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_perpendicular_to_min_diameter"><code>M_FERET_PERPENDICULAR_TO_MIN_DIAMETER</code><a href="#m_feret_perpendicular_to_min_diameter" class="hash-link" aria-label="Direct link to m_feret_perpendicular_to_min_diameter" title="Direct link to m_feret_perpendicular_to_min_diameter" translate="no">​</a></h3>
+<p>Sets whether to calculate the Feret diameter that is perpendicular to the minimum Feret diameter. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_FERET_ANGLE_SEARCH_...</code></a> constants to control the angular range in which to find the minimum Feret diameter. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_PERPENDICULAR_TO_MIN_DIAMETER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ferets"><code>M_FERETS</code><a href="#m_ferets" class="hash-link" aria-label="Direct link to m_ferets" title="Direct link to m_ferets" translate="no">​</a></h3>
+<p>Sets whether to calculate the Feret features. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_DIAMETERS</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_TOTAL_NUMBER_OF_FERETS</code></a>,<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_NUMBER_OF_FERETS</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_ELONGATION</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_MAX_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_MIN_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_MAX_DIAMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_MIN_DIAMETER</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_MEAN_DIAMETER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intercept"><code>M_INTERCEPT</code><a href="#m_intercept" class="hash-link" aria-label="Direct link to m_intercept" title="Direct link to m_intercept" translate="no">​</a></h3>
+<p>Sets whether to calculate the intercept features. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_INTERCEPT_0</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_INTERCEPT_45</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_INTERCEPT_90</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_INTERCEPT_135</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_length"><code>M_LENGTH</code><a href="#m_length" class="hash-link" aria-label="Direct link to m_length" title="Direct link to m_length" translate="no">​</a></h3>
+<p>Sets whether to calculate the length of a blob. This feature is more accurate for long thin blobs because it is derived from the perimeter (P) and area (A) assuming that <code>P = 2(length + breadth) and A = length x breadth</code>. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_LENGTH</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_area_box"><code>M_MIN_AREA_BOX</code><a href="#m_min_area_box" class="hash-link" aria-label="Direct link to m_min_area_box" title="Direct link to m_min_area_box" translate="no">​</a></h3>
+<p>Sets whether to calculate all the minimum-area bounding box features. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_AREA</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_CENTER_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_CENTER_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_HEIGHT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_PERIMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_WIDTH</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_Xn</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_AREA_BOX_Yn</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_perimeter_box"><code>M_MIN_PERIMETER_BOX</code><a href="#m_min_perimeter_box" class="hash-link" aria-label="Direct link to m_min_perimeter_box" title="Direct link to m_min_perimeter_box" translate="no">​</a></h3>
+<p>Sets whether to calculate all the minimum-perimeter bounding box features. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_AREA</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_CENTER_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_CENTER_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_HEIGHT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_PERIMETER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_WIDTH</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_Xn</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PERIMETER_BOX_Yn</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_holes"><code>M_NUMBER_OF_HOLES</code><a href="#m_number_of_holes" class="hash-link" aria-label="Direct link to m_number_of_holes" title="Direct link to m_number_of_holes" translate="no">​</a></h3>
+<p>Sets whether to calculate the number of holes in a blob. Holes that intersect the edge of the image are not counted (they might not be holes). This value is equal to 1 - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_EULER_NUMBER</code></a> and is therefore a true hole count only in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_INDIVIDUAL</code></a> processing mode. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_NUMBER_OF_HOLES</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_perimeter"><code>M_PERIMETER</code><a href="#m_perimeter" class="hash-link" aria-label="Direct link to m_perimeter" title="Direct link to m_perimeter" translate="no">​</a></h3>
+<p>Sets whether to calculate the total length of edges in a blob (including the edges of any holes), with an allowance made for the staircase effect that is produced when diagonal edges are digitized (inside corners are counted as 1.414, rather than 2.0). A single pixel blob (area = 1) has a perimeter of 4.0. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_PERIMETER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rectangularity"><code>M_RECTANGULARITY</code><a href="#m_rectangularity" class="hash-link" aria-label="Direct link to m_rectangularity" title="Direct link to m_rectangularity" translate="no">​</a></h3>
+<p>Sets whether to calculate the degree to which a blob resembles a rectangle. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_RECTANGULARITY</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_roughness"><code>M_ROUGHNESS</code><a href="#m_roughness" class="hash-link" aria-label="Direct link to m_roughness" title="Direct link to m_roughness" translate="no">​</a></h3>
+<p>Sets whether to calculate the roughness and irregularity of a blob, and is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_PERIMETER</code></a> / <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_CONVEX_PERIMETER</code></a>. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_ROUGHNESS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_runs"><code>M_RUNS</code><a href="#m_runs" class="hash-link" aria-label="Direct link to m_runs" title="Direct link to m_runs" translate="no">​</a></h3>
+<p>Sets whether to calculate the blob run-length encoding information. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_RUN_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_RUN_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_RUN_LENGTH</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_NUMBER_OF_RUNS</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_TOTAL_NUMBER_OF_RUNS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_world_box"><code>M_WORLD_BOX</code><a href="#m_world_box" class="hash-link" aria-label="Direct link to m_world_box" title="Direct link to m_world_box" translate="no">​</a></h3>
+<p>Sets whether to calculate all of the features related to the world-axis-aligned bounding box. The world-axis-aligned bounding box is the bounding box that is aligned with the relative coordinate system&#x27;s axes. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_FERET_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_FERET_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_BOX_X_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_BOX_Y_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_BOX_X_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_BOX_Y_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_X_AT_Y_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_X_AT_Y_MIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_Y_AT_X_MAX</code></a>, and<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_WORLD_Y_AT_X_MIN</code></a>. In a case where more than one X-coordinate touches the minimum Y-coordinate of a blob, it is not possible to predict which coordinate will be calculated and returned. This also applies to a Y-coordinate touching the minimum X-coordinate of a blob.  &gt; <strong>Note:</strong> These features are actually calculated in the world coordinate system. If enabled for calculation, you should pass <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> a calibrated blob identifier image. If an uncalibrated image is passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>, these features are the equivalent of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_BOX</code></a> feature group.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-to-calculate-features-with-only-a-grayscale-definition">For specifying to calculate features with only a grayscale definition<a href="#for-specifying-to-calculate-features-with-only-a-grayscale-definition" class="hash-link" aria-label="Direct link to For specifying to calculate features with only a grayscale definition" title="Direct link to For specifying to calculate features with only a grayscale definition" translate="no">​</a></h3>
+<p>The following control types establish which of the features, that have only a grayscale definition, are calculated for each blob. These blob features can only be calculated if you pass <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> both a blob identifier image and a grayscale buffer (or a grayscale buffer with an ROI that acts as the blob identifier image). For the following control types, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>ContextOrResultBlobId</code></a> parameter to a blob analysis context.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_blob_contrast"><code>M_BLOB_CONTRAST</code><a href="#m_blob_contrast" class="hash-link" aria-label="Direct link to m_blob_contrast" title="Direct link to m_blob_contrast" translate="no">​</a></h3>
+<p>Sets whether to calculate the difference between the maximum and minimum pixel values of a blob. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_BLOB_CONTRAST</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_pixel"><code>M_MAX_PIXEL</code><a href="#m_max_pixel" class="hash-link" aria-label="Direct link to m_max_pixel" title="Direct link to m_max_pixel" translate="no">​</a></h3>
+<p>Sets whether to calculate the maximum pixel value in a blob. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MAX_PIXEL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mean_pixel"><code>M_MEAN_PIXEL</code><a href="#m_mean_pixel" class="hash-link" aria-label="Direct link to m_mean_pixel" title="Direct link to m_mean_pixel" translate="no">​</a></h3>
+<p>Sets whether to calculate the mean pixel value in a blob. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MEAN_PIXEL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_pixel"><code>M_MIN_PIXEL</code><a href="#m_min_pixel" class="hash-link" aria-label="Direct link to m_min_pixel" title="Direct link to m_min_pixel" translate="no">​</a></h3>
+<p>Sets whether to calculate the minimum pixel value in a blob. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MIN_PIXEL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sigma_pixel"><code>M_SIGMA_PIXEL</code><a href="#m_sigma_pixel" class="hash-link" aria-label="Direct link to m_sigma_pixel" title="Direct link to m_sigma_pixel" translate="no">​</a></h3>
+<p>Sets whether to calculate the standard deviation of pixel values in a blob. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_SIGMA_PIXEL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sum_pixel"><code>M_SUM_PIXEL</code><a href="#m_sum_pixel" class="hash-link" aria-label="Direct link to m_sum_pixel" title="Direct link to m_sum_pixel" translate="no">​</a></h3>
+<p>Sets whether to calculate the sum of all pixel values in a blob. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_SUM_PIXEL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sum_pixel_squared"><code>M_SUM_PIXEL_SQUARED</code><a href="#m_sum_pixel_squared" class="hash-link" aria-label="Direct link to m_sum_pixel_squared" title="Direct link to m_sum_pixel_squared" translate="no">​</a></h3>
+<p>Sets whether to calculate the sum of the squares of each pixel value in a blob. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_SUM_PIXEL_SQUARED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-to-calculate-features-with-two-definitions-binary-and-grayscale">For specifying to calculate features with two definitions (binary and grayscale)<a href="#for-specifying-to-calculate-features-with-two-definitions-binary-and-grayscale" class="hash-link" aria-label="Direct link to For specifying to calculate features with two definitions (binary and grayscale)" title="Direct link to For specifying to calculate features with two definitions (binary and grayscale)" translate="no">​</a></h3>
+<p>The following control types establish which of the features, that have both a binary and a grayscale definition, are calculated for each blob. The binary definition considers all pixels equal; the grayscale definition weighs pixels by their value in the grayscale buffer (the grayscale definition is much slower to calculate).  When you do not specify a combination value for the following control types, both versions of the feature (or groups of features) are enabled for calculation by default. If you do not provide a grayscale buffer to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>, only the binary version can be calculated. Specifying a combination value for the following control types will overwrite the settings that were set when no combination value was specified. If a combination value was initially specified for a control type, and a different setting was specified for the same control type without a combination value, it will also overwrite the previous setting. For example, if you specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_ENABLE</code></a>, both the binary and grayscale versions of the feature will be calculated. If you subsequently specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_GRAYSCALE</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_DISABLE</code></a>, only the binary version of the feature will be calculated.  For the following control types, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>ContextOrResultBlobId</code></a> parameter to a blob analysis context.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_of_gravity"><code>M_CENTER_OF_GRAVITY</code><a href="#m_center_of_gravity" class="hash-link" aria-label="Direct link to m_center_of_gravity" title="Direct link to m_center_of_gravity" translate="no">​</a></h3>
+<p>Sets whether to calculate both X- and Y-coordinates of the center of gravity. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CENTER_OF_GRAVITY_X</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_CENTER_OF_GRAVITY_Y</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_at_principal_axis_angle"><code>M_FERET_AT_PRINCIPAL_AXIS_ANGLE</code><a href="#m_feret_at_principal_axis_angle" class="hash-link" aria-label="Direct link to m_feret_at_principal_axis_angle" title="Direct link to m_feret_at_principal_axis_angle" translate="no">​</a></h3>
+<p>Sets whether to calculate the Feret diameter at the principal axis of a blob. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_NUMBER_OF_FERETS</code></a> control type to set the number of Feret angles that are evaluated. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_AT_PRINCIPAL_AXIS_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_at_secondary_axis_angle"><code>M_FERET_AT_SECONDARY_AXIS_ANGLE</code><a href="#m_feret_at_secondary_axis_angle" class="hash-link" aria-label="Direct link to m_feret_at_secondary_axis_angle" title="Direct link to m_feret_at_secondary_axis_angle" translate="no">​</a></h3>
+<p>Sets whether to calculate the Feret diameter at the secondary axis of a blob. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_NUMBER_OF_FERETS</code></a> control type to set the number of Feret angles that are evaluated. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_AT_SECONDARY_AXIS_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_principal_axis_elongation"><code>M_FERET_PRINCIPAL_AXIS_ELONGATION</code><a href="#m_feret_principal_axis_elongation" class="hash-link" aria-label="Direct link to m_feret_principal_axis_elongation" title="Direct link to m_feret_principal_axis_elongation" translate="no">​</a></h3>
+<p>Sets whether to calculate the ratio between the Feret diameter at the principal axis and the Feret diameter at the secondary axis. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_NUMBER_OF_FERETS</code></a> control type to set the number of Feret angles that are evaluated. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_FERET_PRINCIPAL_AXIS_ELONGATION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_first_order"><code>M_MOMENT_FIRST_ORDER</code><a href="#m_moment_first_order" class="hash-link" aria-label="Direct link to m_moment_first_order" title="Direct link to m_moment_first_order" translate="no">​</a></h3>
+<p>Sets whether to calculate the first-order moments where the order of either the X- or Y-component equals 0 and the order of the other component equals 1. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_X0_Y1</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_X1_Y0</code></a>. To calculate higher order moments, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_SECOND_ORDER</code></a> for predefined second-order moments, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_THIRD_ORDER</code></a> for predefined third-order moments, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a> for user-specified moments. Note that first-order moment features are calculated faster when using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_FIRST_ORDER</code></a> than when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_general"><code>M_MOMENT_GENERAL</code><a href="#m_moment_general" class="hash-link" aria-label="Direct link to m_moment_general" title="Direct link to m_moment_general" translate="no">​</a></h3>
+<p>Sets whether to calculate a user-specified moment. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL_MODE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL_ORDER_X</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL_ORDER_Y</code></a> control types to specify the settings of the user-specified moment. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_GENERAL</code></a>.  You could alternatively enable the calculation of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_FIRST_ORDER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_SECOND_ORDER</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_THIRD_ORDER</code></a> to calculate a set of first, second, or third-order moments, respectively. Note that first and second-order moment features are calculated faster when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_FIRST_ORDER</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_SECOND_ORDER</code></a> than when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that this feature will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that this feature will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_second_order"><code>M_MOMENT_SECOND_ORDER</code><a href="#m_moment_second_order" class="hash-link" aria-label="Direct link to m_moment_second_order" title="Direct link to m_moment_second_order" translate="no">​</a></h3>
+<p>Sets whether to calculate the second-order moments. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_X0_Y2</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_X1_Y1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_X2_Y0</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_CENTRAL_X0_Y2</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_CENTRAL_X1_Y1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_CENTRAL_X2_Y0</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_AXIS_PRINCIPAL_ANGLE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_AXIS_SECONDARY_ANGLE</code></a>. To calculate higher order moments, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_THIRD_ORDER</code></a> for predefined third-order moments, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a> for user-specified moments. Note that second-order moment features are calculated faster when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_SECOND_ORDER</code></a> than when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_third_order"><code>M_MOMENT_THIRD_ORDER</code><a href="#m_moment_third_order" class="hash-link" aria-label="Direct link to m_moment_third_order" title="Direct link to m_moment_third_order" translate="no">​</a></h3>
+<p>Sets whether to calculate the third-order moments. Calculating these moments makes the Hu moment invariants available. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_X1_Y2</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_X3_Y0</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_X0_Y3</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_CENTRAL_X1_Y2</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_CENTRAL_X2_Y1</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_CENTRAL_X3_Y0</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_CENTRAL_X0_Y3</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>M_MOMENT_HU_n</code></a>, where <code>_n_</code> ranges from 1 to 7. To calculate higher order moments, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_MOMENT_GENERAL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that these features will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that these features will be calculated.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-feature-parameters-that-have-two-definitions">Combination Constants — For feature parameters that have two definitions<a href="#combination-constants--for-feature-parameters-that-have-two-definitions" class="hash-link" aria-label="Direct link to Combination Constants — For feature parameters that have two definitions" title="Direct link to Combination Constants — For feature parameters that have two definitions" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to set whether to enable, disable, or sort on only the binary or grayscale calculation of the feature.</p>
+</blockquote>
+<p>For control values of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_SORTn</code></a> control type, this combination is essential (that is, you must add one of these combination values to the control value).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_BINARY</code></td><td>Selects the binary definition of the selected feature.</td></tr><tr><td><code>M_GRAYSCALE</code> <em>(default)</em></td><td>Selects the grayscale definition of the selected feature.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-to-calculate-features-related-to-depth-maps">For specifying to calculate features related to depth maps<a href="#for-specifying-to-calculate-features-related-to-depth-maps" class="hash-link" aria-label="Direct link to For specifying to calculate features related to depth maps" title="Direct link to For specifying to calculate features related to depth maps" translate="no">​</a></h3>
+<p>The following control types establish which of the features, that are related to depth maps, are calculated for each blob. These blob features can only be calculated if you pass <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a> a grayscale buffer that is a fully corrected depth map image buffer or 3D-processable depth map container, and has an ROI that acts as the blob identifier image as well as identifies invalid pixels. If you passed an image buffer, you can verify that it contains a fully corrected depth map using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalInquire"><code>McalInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalInquire"><code>M_DEPTH_MAP</code></a>. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufSetRegion"><code>MbufSetRegion</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufSetRegion"><code>M_RASTERIZE_DEPTH_MAP_VALID_PIXELS</code></a> to merge confidence information with the blob identifier image. If you passed a container, you can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>MbufInquireContainer</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_3D_PROCESSABLE_DEPTH_MAP</code></a> to ensure that the container contains a 3D-processable depth map. For the following control types, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>ContextOrResultBlobId</code></a> parameter to a blob analysis context.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_depth_map_max_elevation"><code>M_DEPTH_MAP_MAX_ELEVATION</code><a href="#m_depth_map_max_elevation" class="hash-link" aria-label="Direct link to m_depth_map_max_elevation" title="Direct link to m_depth_map_max_elevation" translate="no">​</a></h3>
+<p>Sets whether to calculate the maximum elevation of a blob.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the maximum elevation of the blob will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the maximum elevation of the blob will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_depth_map_mean_elevation"><code>M_DEPTH_MAP_MEAN_ELEVATION</code><a href="#m_depth_map_mean_elevation" class="hash-link" aria-label="Direct link to m_depth_map_mean_elevation" title="Direct link to m_depth_map_mean_elevation" translate="no">​</a></h3>
+<p>Sets whether to calculate the mean elevation of a blob.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the mean elevation of the blob will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the mean elevation of the blob will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_depth_map_min_elevation"><code>M_DEPTH_MAP_MIN_ELEVATION</code><a href="#m_depth_map_min_elevation" class="hash-link" aria-label="Direct link to m_depth_map_min_elevation" title="Direct link to m_depth_map_min_elevation" translate="no">​</a></h3>
+<p>Sets whether to calculate the minimum elevation of a blob.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the minimum elevation of the blob will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the minimum elevation of the blob will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_depth_map_size_z"><code>M_DEPTH_MAP_SIZE_Z</code><a href="#m_depth_map_size_z" class="hash-link" aria-label="Direct link to m_depth_map_size_z" title="Direct link to m_depth_map_size_z" translate="no">​</a></h3>
+<p>Sets whether to calculate the Z-size (difference between maximum and minimum elevation) of a blob.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the Z-size of the blob will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the Z-size of the blob will be calculated.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_depth_map_volume"><code>M_DEPTH_MAP_VOLUME</code><a href="#m_depth_map_volume" class="hash-link" aria-label="Direct link to m_depth_map_volume" title="Direct link to m_depth_map_volume" translate="no">​</a></h3>
+<p>Sets whether to calculate the volume of a blob.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the volume of the blob will not be calculated.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the volume of the blob will be calculated.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-blob-analysis-result-buffer">For a blob analysis result buffer<a href="#for-a-blob-analysis-result-buffer" class="hash-link" aria-label="Direct link to For a blob analysis result buffer" title="Direct link to For a blob analysis result buffer" translate="no">​</a></h3>
+<p>For the following control types, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>ContextOrResultBlobId</code></a> parameter to a blob analysis result buffer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_index_mode"><code>M_INDEX_MODE</code><a href="#m_index_mode" class="hash-link" aria-label="Direct link to m_index_mode" title="Direct link to m_index_mode" translate="no">​</a></h3>
+<p>Sets the index mode to use when retrieving results using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> and when drawing results using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>MblobDraw</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INDEX</code></td><td>Specifies that the index will be passed directly to the<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>LabelOrIndex</code></a> parameter of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>MblobDraw</code></a>, without any macros.</td></tr><tr><td><code>M_LABEL</code></td><td>Specifies that the label will be passed directly to the<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>LabelOrIndex</code></a> parameter of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>MblobDraw</code></a>, without any macros.</td></tr><tr><td><code>M_USE_MACRO</code> <em>(default)</em></td><td>Specifies that the values passed to the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>LabelOrIndex</code></a> parameter of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>MblobDraw</code></a> can be the macros <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>M_BLOB_INDEX()</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><code>M_BLOB_LABEL()</code></a>.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_USE_MACRO</code></a> cannot be used in<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_LABELED_TOUCHING</code></a> mode with a 32-bit blob identifier image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_input_select_units"><code>M_INPUT_SELECT_UNITS</code><a href="#m_input_select_units" class="hash-link" aria-label="Direct link to m_input_select_units" title="Direct link to m_input_select_units" translate="no">​</a></h3>
+<p>Sets which units to use with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>CondLow</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>CondHigh</code></a> parameters of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>MblobSelect</code></a> function, when specifying the limit values of the blob selection condition. This essentially sets the input coordinate system to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_PIXEL</code> <em>(default)</em></td><td>Specifies that the limit values passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>MblobSelect</code></a> be interpreted in pixel units, with respect to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies that the limit values passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>MblobSelect</code></a> be interpreted in world units, with respect to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobSelect"><code>MblobSelect</code></a> generates an error if the specified result buffer is not associated with a camera calibration context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_output_units"><code>M_RESULT_OUTPUT_UNITS</code><a href="#m_result_output_units" class="hash-link" aria-label="Direct link to m_result_output_units" title="Direct link to m_result_output_units" translate="no">​</a></h3>
+<p>Sets whether to return results in pixels or world units. This essentially sets the output coordinate system to use. The setting of this control type will only affect functions within this module which return positional results. This control type can be changed at any time to return results in the required output units.  Note that when returned in world units, some results are only precise if calculated on a physically corrected image. If you require precise results in world units, you should correct the image using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformImage"><code>McalTransformImage</code></a> before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><code>MblobCalculate</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_CALIBRATION</code> <em>(default)</em></td><td>Specifies that results are returned in world units if the result was calculated on an image associated with a camera calibration context; otherwise, specifies that results are returned in pixel units.</td></tr><tr><td><code>M_PIXEL</code></td><td>Specifies that results are returned in pixel units, with respect to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies that results are returned in world units, with respect to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>MblobGetResult</code></a> generates an error if the result was not calculated on a calibrated image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stop_calculate"><code>M_STOP_CALCULATE</code><a href="#m_stop_calculate" class="hash-link" aria-label="Direct link to m_stop_calculate" title="Direct link to m_stop_calculate" translate="no">​</a></h3>
+<p>Stops the current blob analysis calculation. You must call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>MblobControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_STOP_CALCULATE</code></a> from another thread (typically of higher priority). Results already available in the result buffer become invalid and will be discarded, unless<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobControl"><code>M_RETURN_PARTIAL_RESULTS</code></a> is enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default behavior.</td></tr></tbody></table></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobCalculate"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MblobCalculate</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobDraw"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MblobDraw</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultblobid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultBlobId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-global-processing-settings-of-a-blob-analysis-context-that-cause-results-to-be-recalculated" class="table-of-contents__link toc-highlight">For global processing settings of a blob analysis context that cause results to be recalculated</a></li><li><a href="#m_blob_identification_mode" class="table-of-contents__link toc-highlight"><code>M_BLOB_IDENTIFICATION_MODE</code></a></li><li><a href="#m_connectivity" class="table-of-contents__link toc-highlight"><code>M_CONNECTIVITY</code></a></li><li><a href="#m_feret_angle_search_end" class="table-of-contents__link toc-highlight"><code>M_FERET_ANGLE_SEARCH_END</code></a></li><li><a href="#m_feret_angle_search_start" class="table-of-contents__link toc-highlight"><code>M_FERET_ANGLE_SEARCH_START</code></a></li><li><a href="#m_foreground_value" class="table-of-contents__link toc-highlight"><code>M_FOREGROUND_VALUE</code></a></li><li><a href="#m_number_of_ferets" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_FERETS</code></a></li><li><a href="#for-global-processing-settings-of-a-blob-analysis-context-that-do-not-cause-results-to-be-recalculated" class="table-of-contents__link toc-highlight">For global processing settings of a blob analysis context that do not cause results to be recalculated</a></li><li><a href="#m_feret_contact_points" class="table-of-contents__link toc-highlight"><code>M_FERET_CONTACT_POINTS</code></a></li><li><a href="#m_feret_general_angle" class="table-of-contents__link toc-highlight"><code>M_FERET_GENERAL_ANGLE</code></a></li><li><a href="#m_identifier_type" class="table-of-contents__link toc-highlight"><code>M_IDENTIFIER_TYPE</code></a></li><li><a href="#m_max_blobs" class="table-of-contents__link toc-highlight"><code>M_MAX_BLOBS</code></a></li><li><a href="#m_moment_general_mode" class="table-of-contents__link toc-highlight"><code>M_MOMENT_GENERAL_MODE</code></a></li><li><a href="#m_moment_general_order_x" class="table-of-contents__link toc-highlight"><code>M_MOMENT_GENERAL_ORDER_X</code></a></li><li><a href="#m_moment_general_order_y" class="table-of-contents__link toc-highlight"><code>M_MOMENT_GENERAL_ORDER_Y</code></a></li><li><a href="#m_moment_third_order_mode" class="table-of-contents__link toc-highlight"><code>M_MOMENT_THIRD_ORDER_MODE</code></a></li><li><a href="#m_pixel_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_PIXEL_ASPECT_RATIO</code></a></li><li><a href="#m_return_partial_results" class="table-of-contents__link toc-highlight"><code>M_RETURN_PARTIAL_RESULTS</code></a></li><li><a href="#m_save_runs" class="table-of-contents__link toc-highlight"><code>M_SAVE_RUNS</code></a></li><li><a href="#m_sortn" class="table-of-contents__link toc-highlight"><code>M_SORTn</code></a></li><li><a href="#m_sortn_direction" class="table-of-contents__link toc-highlight"><code>M_SORTn_DIRECTION</code></a></li><li><a href="#m_timeout" class="table-of-contents__link toc-highlight"><code>M_TIMEOUT</code></a></li><li><a href="#for-specifying-to-calculate-all-features-in-a-single-call" class="table-of-contents__link toc-highlight">For specifying to calculate all features in a single call</a></li><li><a href="#m_all_features" class="table-of-contents__link toc-highlight"><code>M_ALL_FEATURES</code></a></li><li><a href="#for-specifying-to-calculate-features-with-only-a-binary-definition" class="table-of-contents__link toc-highlight">For specifying to calculate features with only a binary definition</a></li><li><a href="#m_box" class="table-of-contents__link toc-highlight"><code>M_BOX</code></a></li><li><a href="#m_breadth" class="table-of-contents__link toc-highlight"><code>M_BREADTH</code></a></li><li><a href="#m_chains" class="table-of-contents__link toc-highlight"><code>M_CHAINS</code></a></li><li><a href="#m_compactness" class="table-of-contents__link toc-highlight"><code>M_COMPACTNESS</code></a></li><li><a href="#m_contact_points" class="table-of-contents__link toc-highlight"><code>M_CONTACT_POINTS</code></a></li><li><a href="#m_convex_hull" class="table-of-contents__link toc-highlight"><code>M_CONVEX_HULL</code></a></li><li><a href="#m_convex_perimeter" class="table-of-contents__link toc-highlight"><code>M_CONVEX_PERIMETER</code></a></li><li><a href="#m_elongation" class="table-of-contents__link toc-highlight"><code>M_ELONGATION</code></a></li><li><a href="#m_euler_number" class="table-of-contents__link toc-highlight"><code>M_EULER_NUMBER</code></a></li><li><a href="#m_feret_general" class="table-of-contents__link toc-highlight"><code>M_FERET_GENERAL</code></a></li><li><a href="#m_feret_max_diameter_elongation" class="table-of-contents__link toc-highlight"><code>M_FERET_MAX_DIAMETER_ELONGATION</code></a></li><li><a href="#m_feret_min_diameter_elongation" class="table-of-contents__link toc-highlight"><code>M_FERET_MIN_DIAMETER_ELONGATION</code></a></li><li><a href="#m_feret_perpendicular_to_max_diameter" class="table-of-contents__link toc-highlight"><code>M_FERET_PERPENDICULAR_TO_MAX_DIAMETER</code></a></li><li><a href="#m_feret_perpendicular_to_min_diameter" class="table-of-contents__link toc-highlight"><code>M_FERET_PERPENDICULAR_TO_MIN_DIAMETER</code></a></li><li><a href="#m_ferets" class="table-of-contents__link toc-highlight"><code>M_FERETS</code></a></li><li><a href="#m_intercept" class="table-of-contents__link toc-highlight"><code>M_INTERCEPT</code></a></li><li><a href="#m_length" class="table-of-contents__link toc-highlight"><code>M_LENGTH</code></a></li><li><a href="#m_min_area_box" class="table-of-contents__link toc-highlight"><code>M_MIN_AREA_BOX</code></a></li><li><a href="#m_min_perimeter_box" class="table-of-contents__link toc-highlight"><code>M_MIN_PERIMETER_BOX</code></a></li><li><a href="#m_number_of_holes" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_HOLES</code></a></li><li><a href="#m_perimeter" class="table-of-contents__link toc-highlight"><code>M_PERIMETER</code></a></li><li><a href="#m_rectangularity" class="table-of-contents__link toc-highlight"><code>M_RECTANGULARITY</code></a></li><li><a href="#m_roughness" class="table-of-contents__link toc-highlight"><code>M_ROUGHNESS</code></a></li><li><a href="#m_runs" class="table-of-contents__link toc-highlight"><code>M_RUNS</code></a></li><li><a href="#m_world_box" class="table-of-contents__link toc-highlight"><code>M_WORLD_BOX</code></a></li><li><a href="#for-specifying-to-calculate-features-with-only-a-grayscale-definition" class="table-of-contents__link toc-highlight">For specifying to calculate features with only a grayscale definition</a></li><li><a href="#m_blob_contrast" class="table-of-contents__link toc-highlight"><code>M_BLOB_CONTRAST</code></a></li><li><a href="#m_max_pixel" class="table-of-contents__link toc-highlight"><code>M_MAX_PIXEL</code></a></li><li><a href="#m_mean_pixel" class="table-of-contents__link toc-highlight"><code>M_MEAN_PIXEL</code></a></li><li><a href="#m_min_pixel" class="table-of-contents__link toc-highlight"><code>M_MIN_PIXEL</code></a></li><li><a href="#m_sigma_pixel" class="table-of-contents__link toc-highlight"><code>M_SIGMA_PIXEL</code></a></li><li><a href="#m_sum_pixel" class="table-of-contents__link toc-highlight"><code>M_SUM_PIXEL</code></a></li><li><a href="#m_sum_pixel_squared" class="table-of-contents__link toc-highlight"><code>M_SUM_PIXEL_SQUARED</code></a></li><li><a href="#for-specifying-to-calculate-features-with-two-definitions-binary-and-grayscale" class="table-of-contents__link toc-highlight">For specifying to calculate features with two definitions (binary and grayscale)</a></li><li><a href="#m_center_of_gravity" class="table-of-contents__link toc-highlight"><code>M_CENTER_OF_GRAVITY</code></a></li><li><a href="#m_feret_at_principal_axis_angle" class="table-of-contents__link toc-highlight"><code>M_FERET_AT_PRINCIPAL_AXIS_ANGLE</code></a></li><li><a href="#m_feret_at_secondary_axis_angle" class="table-of-contents__link toc-highlight"><code>M_FERET_AT_SECONDARY_AXIS_ANGLE</code></a></li><li><a href="#m_feret_principal_axis_elongation" class="table-of-contents__link toc-highlight"><code>M_FERET_PRINCIPAL_AXIS_ELONGATION</code></a></li><li><a href="#m_moment_first_order" class="table-of-contents__link toc-highlight"><code>M_MOMENT_FIRST_ORDER</code></a></li><li><a href="#m_moment_general" class="table-of-contents__link toc-highlight"><code>M_MOMENT_GENERAL</code></a></li><li><a href="#m_moment_second_order" class="table-of-contents__link toc-highlight"><code>M_MOMENT_SECOND_ORDER</code></a></li><li><a href="#m_moment_third_order" class="table-of-contents__link toc-highlight"><code>M_MOMENT_THIRD_ORDER</code></a></li><li><a href="#combination-constants--for-feature-parameters-that-have-two-definitions" class="table-of-contents__link toc-highlight">Combination Constants — For feature parameters that have two definitions</a></li><li><a href="#for-specifying-to-calculate-features-related-to-depth-maps" class="table-of-contents__link toc-highlight">For specifying to calculate features related to depth maps</a></li><li><a href="#m_depth_map_max_elevation" class="table-of-contents__link toc-highlight"><code>M_DEPTH_MAP_MAX_ELEVATION</code></a></li><li><a href="#m_depth_map_mean_elevation" class="table-of-contents__link toc-highlight"><code>M_DEPTH_MAP_MEAN_ELEVATION</code></a></li><li><a href="#m_depth_map_min_elevation" class="table-of-contents__link toc-highlight"><code>M_DEPTH_MAP_MIN_ELEVATION</code></a></li><li><a href="#m_depth_map_size_z" class="table-of-contents__link toc-highlight"><code>M_DEPTH_MAP_SIZE_Z</code></a></li><li><a href="#m_depth_map_volume" class="table-of-contents__link toc-highlight"><code>M_DEPTH_MAP_VOLUME</code></a></li><li><a href="#for-a-blob-analysis-result-buffer" class="table-of-contents__link toc-highlight">For a blob analysis result buffer</a></li><li><a href="#m_index_mode" class="table-of-contents__link toc-highlight"><code>M_INDEX_MODE</code></a></li><li><a href="#m_input_select_units" class="table-of-contents__link toc-highlight"><code>M_INPUT_SELECT_UNITS</code></a></li><li><a href="#m_result_output_units" class="table-of-contents__link toc-highlight"><code>M_RESULT_OUTPUT_UNITS</code></a></li><li><a href="#m_stop_calculate" class="table-of-contents__link toc-highlight"><code>M_STOP_CALCULATE</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

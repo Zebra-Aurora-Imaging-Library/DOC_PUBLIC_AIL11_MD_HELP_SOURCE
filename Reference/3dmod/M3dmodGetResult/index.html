@@ -1,0 +1,1064 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dmod/M3dmodGetResult" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dmodGetResult | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dmodGetResult | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dmod","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"},{"@type":"ListItem","position":2,"name":"M3dmodGetResult","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Collapse sidebar category &#x27;3dmod&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAlloc"><span title="M3dmodAlloc" class="linkLabel_WmDU">M3dmodAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><span title="M3dmodAllocResult" class="linkLabel_WmDU">M3dmodAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><span title="M3dmodControl" class="linkLabel_WmDU">M3dmodControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControlDraw"><span title="M3dmodControlDraw" class="linkLabel_WmDU">M3dmodControlDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodCopy"><span title="M3dmodCopy" class="linkLabel_WmDU">M3dmodCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodCopyResult"><span title="M3dmodCopyResult" class="linkLabel_WmDU">M3dmodCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodDefine"><span title="M3dmodDefine" class="linkLabel_WmDU">M3dmodDefine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodDraw3d"><span title="M3dmodDraw3d" class="linkLabel_WmDU">M3dmodDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><span title="M3dmodFind" class="linkLabel_WmDU">M3dmodFind</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFree"><span title="M3dmodFree" class="linkLabel_WmDU">M3dmodFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><span title="M3dmodGetResult" class="linkLabel_WmDU">M3dmodGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodInquire"><span title="M3dmodInquire" class="linkLabel_WmDU">M3dmodInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodInquireDraw"><span title="M3dmodInquireDraw" class="linkLabel_WmDU">M3dmodInquireDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodModifyResult"><span title="M3dmodModifyResult" class="linkLabel_WmDU">M3dmodModifyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodPreprocess"><span title="M3dmodPreprocess" class="linkLabel_WmDU">M3dmodPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodRestore"><span title="M3dmodRestore" class="linkLabel_WmDU">M3dmodRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodSave"><span title="M3dmodSave" class="linkLabel_WmDU">M3dmodSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodStream"><span title="M3dmodStream" class="linkLabel_WmDU">M3dmodStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span>3dmod</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dmodGetResult</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dmodGetResult</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Get the specified type of result(s) from a 3D model finder result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_DOUBLE </span><span class="token function" style="color:#d73a49">M3dmodGetResult</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    Result3dmodId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ResultIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ResultType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">     </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    ResultArrayPtr  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function retrieves the result(s) of the specified type from a 3D model finder result buffer.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="result3dmodid-in-ail_id"><code>Result3dmodId</code> <em>(in, AIL_ID)</em><a href="#result3dmodid-in-ail_id" class="hash-link" aria-label="Direct link to result3dmodid-in-ail_id" title="Direct link to result3dmodid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 3D model finder result buffer from which to retrieve results. The result buffer must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M3dmodAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M_FIND_..._RESULT</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultindex-in-ail_int64"><code>ResultIndex</code> <em>(in, AIL_INT64)</em><a href="#resultindex-in-ail_int64" class="hash-link" aria-label="Direct link to resultindex-in-ail_int64" title="Direct link to resultindex-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies where to get results. This parameter must be set to one of the following values:</p>
+<p><em>For specifying the index of the 3D model</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALL</code></td><td>Specifies to retrieve results for all model occurrences in the 3D model finder result buffer.</td></tr><tr><td><code>M_GENERAL</code> <em>(default)</em></td><td>Specifies to retrieve general results from the 3D model finder result buffer.</td></tr><tr><td><code>0 &lt;= Value &lt; M_NUMBER</code></td><td>Specifies the index of the model occurrence for which to retrieve results.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resulttype-in-ail_int64"><code>ResultType</code> <em>(in, AIL_INT64)</em><a href="#resulttype-in-ail_int64" class="hash-link" aria-label="Direct link to resulttype-in-ail_int64" title="Direct link to resulttype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of result to retrieve.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultarrayptr-out-void"><code>ResultArrayPtr</code> *(out, <em>void)</em><a href="#resultarrayptr-out-void" class="hash-link" aria-label="Direct link to resultarrayptr-out-void" title="Direct link to resultarrayptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address of the array in which to write results. Since <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M3dmodGetResult</code></a> also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-general-results-from-the-3d-model-finder-result-buffer">For retrieving general results from the 3D model finder result buffer<a href="#for-retrieving-general-results-from-the-3d-model-finder-result-buffer" class="hash-link" aria-label="Direct link to For retrieving general results from the 3D model finder result buffer" title="Direct link to For retrieving general results from the 3D model finder result buffer" translate="no">​</a></h3>
+<p>To retrieve a general result, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>ResultType</code></a> parameter should be set to one of the following values. In this case, you must set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>ResultIndex</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_GENERAL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_DEFAULT</code></a>. The following results are only available for retrieval after a 3D model finder operation, unless otherwise specified.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3d-model-finder-result-buffer-id"><code>3D model finder result buffer ID</code><a href="#3d-model-finder-result-buffer-id" class="hash-link" aria-label="Direct link to 3d-model-finder-result-buffer-id" title="Direct link to 3d-model-finder-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies a box, cylinder, rectangular plane, sphere, surface, or planar surface 3D model finder result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M3dmodAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M_FIND_..._RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><code>M3dmodFind</code></a> results.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_distance_used"><code>M_FIT_DISTANCE_USED</code><a href="#m_fit_distance_used" class="hash-link" aria-label="Direct link to m_fit_distance_used" title="Direct link to m_fit_distance_used" translate="no">​</a></h4>
+<p>Retrieves the fit distance used during the 3D model finder operation. For a surface model, this result is only available if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_SAVE_FIT_INFO</code></a> was enabled.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number"><code>M_NUMBER</code><a href="#m_number" class="hash-link" aria-label="Direct link to m_number" title="Direct link to m_number" translate="no">​</a></h4>
+<p>Retrieves the number of model occurrences found.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_remove_floor_offset_used"><code>M_REMOVE_FLOOR_OFFSET_USED</code><a href="#m_remove_floor_offset_used" class="hash-link" aria-label="Direct link to m_remove_floor_offset_used" title="Direct link to m_remove_floor_offset_used" translate="no">​</a></h4>
+<p>Retrieves the offset, relative to the defined floor plane, within which points are removed. This result is only available if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_REMOVE_FLOOR</code></a> was enabled.  This result is only available for surface and planar surface 3D model finder result buffers.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_x"><code>M_RESULT_IMAGE_SIZE_X</code><a href="#m_result_image_size_x" class="hash-link" aria-label="Direct link to m_result_image_size_x" title="Direct link to m_result_image_size_x" translate="no">​</a></h4>
+<p>Retrieves the size in X of the range component of the target point cloud, in pixels.  Note that you can use this value to allocate an image buffer of an appropriate size for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodCopyResult"><code>M3dmodCopyResult</code></a> to create an occurrence index image or mask image.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_y"><code>M_RESULT_IMAGE_SIZE_Y</code><a href="#m_result_image_size_y" class="hash-link" aria-label="Direct link to m_result_image_size_y" title="Direct link to m_result_image_size_y" translate="no">​</a></h4>
+<p>Retrieves the size in Y of the range component of the target point cloud, in pixels.  Note that you can use this value to allocate an image buffer of an appropriate size for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodCopyResult"><code>M3dmodCopyResult</code></a> to create an occurrence index image or mask image.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status"><code>M_STATUS</code><a href="#m_status" class="hash-link" aria-label="Direct link to m_status" title="Direct link to m_status" translate="no">​</a></h4>
+<p>Retrieves the global status of the last <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><code>M3dmodFind</code></a> operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_ALL_POINTS_REPLICATED</code></td><td>Specifies that all points of the scene were replicated.  Note that this result is only available for surface and planar surface 3D model finder result buffers.</td></tr><tr><td><code>M_COMPLETE</code></td><td>Specifies that the 3D model finder operation completed successfully. 3D model finder results are available.</td></tr><tr><td><code>M_CURRENTLY_CALCULATING</code></td><td>Specifies that the 3D model finder operation is ongoing.</td></tr><tr><td><code>M_INTERNAL_ERROR</code></td><td>Specifies that an unexpected internal error occurred during the 3D model finder operation.</td></tr><tr><td><code>M_MISSING_COMPONENT_NORMALS_AIL</code></td><td>Specifies that the source point cloud container does not have the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquireContainer"><code>M_COMPONENT_NORMALS_AIL</code></a> component, so the 3D model finder operation was unable to be completed. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimNormals"><code>M3dimNormals</code></a> to generate a normals component.</td></tr><tr><td><code>M_NOT_ENOUGH_FEATURES</code></td><td>Specifies that the surface 3D model finder operation was not completed because of an insufficient number of unique features.</td></tr><tr><td><code>M_NOT_ENOUGH_MEMORY</code></td><td>Specifies that the 3D model finder operation was not completed because of a lack of available memory.</td></tr><tr><td><code>M_NOT_ENOUGH_VALID_DATA</code></td><td>Specifies that the 3D model finder operation failed because there were not enough valid points.</td></tr><tr><td><code>M_NOT_INITIALIZED</code></td><td>Specifies that the 3D model finder result buffer was not used in a call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><code>M3dmodFind</code></a>, and contains no results.</td></tr><tr><td><code>M_STOPPED_BY_REQUEST</code></td><td>Specifies that the 3D model finder operation was stopped from another thread using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a>with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_STOP_FIND</code></a>.</td></tr><tr><td><code>M_TIMEOUT_REACHED</code></td><td>Specifies that the 3D model finder operation took longer than the allowed value, specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_TIMEOUT</code></a>, and stopped before completion.</td></tr><tr><td><code>M_TRANSFORMED</code></td><td>Specifies that the surface or planar surface 3D model finder result buffer contains results that were transformed using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodModifyResult"><code>M3dmodModifyResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodModifyResult"><code>M_TRANSFORM</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_refine_registration"><code>M_STATUS_REFINE_REGISTRATION</code><a href="#m_status_refine_registration" class="hash-link" aria-label="Direct link to m_status_refine_registration" title="Direct link to m_status_refine_registration" translate="no">​</a></h4>
+<p>Retrieves the global status of the refine registration applied to the different occurrences. This result is only available if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_REFINE_REGISTRATION</code></a> was enabled.  This result is only available for surface and planar surface 3D model finder result buffers.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_APPLIED</code></td><td>Specifies that refine registration was applied successfully to all occurrences.</td></tr><tr><td><code>M_APPLIED_AND_REJECTED</code></td><td>Specifies that even though<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_REFINE_REGISTRATION</code></a> was enabled, at least one registration was not applied successfully to an occurrence.</td></tr><tr><td><code>M_NOT_APPLIED</code></td><td>Specifies that refine registration was not enabled, so it was not applied to the occurrences.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_scene_resolution"><code>M_STATUS_SCENE_RESOLUTION</code><a href="#m_status_scene_resolution" class="hash-link" aria-label="Direct link to m_status_scene_resolution" title="Direct link to m_status_scene_resolution" translate="no">​</a></h4>
+<p>Retrieves whether the resolution of the surface model was compatible with the resolution of the scene. If the resolution of the model was much lower or higher than that of the scene, this result type will return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_INCOMPATIBLE</code></a>. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodInquire"><code>M3dmodInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodInquire"><code>M_MODEL_RESOLUTION</code></a> to inquire the resolution of the model. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_SEARCH_POINT_RESOLUTION</code></a> to specify the resolution of the scene; Aurora Imaging Library will attempt to increase or decrease the model&#x27;s resolution accordingly.  This result is only available for surface and planar surface 3D model finder result buffers.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPATIBLE</code></td><td>Specifies that the resolution was compatible.</td></tr><tr><td><code>M_INCOMPATIBLE</code></td><td>Specifies that the resolution was not compatible.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-a-result-of-a-single-occurrence-or-all-occurrences-from-the-3d-model-finder-result-buffer">For retrieving a result of a single occurrence or all occurrences from the 3D model finder result buffer<a href="#for-retrieving-a-result-of-a-single-occurrence-or-all-occurrences-from-the-3d-model-finder-result-buffer" class="hash-link" aria-label="Direct link to For retrieving a result of a single occurrence or all occurrences from the 3D model finder result buffer" title="Direct link to For retrieving a result of a single occurrence or all occurrences from the 3D model finder result buffer" translate="no">​</a></h3>
+<p>To retrieve a result for a single occurrence or for all occurrences, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>ResultType</code></a> parameter should be set to one of the following values. In this case, you must set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>ResultIndex</code></a> to the index of the occurrence or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_ALL</code></a>. The following results are only available for retrieval after a 3D model finder operation.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="box-3d-model-finder-result-buffer-id"><code>Box 3D model finder result buffer ID</code><a href="#box-3d-model-finder-result-buffer-id" class="hash-link" aria-label="Direct link to box-3d-model-finder-result-buffer-id" title="Direct link to box-3d-model-finder-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies a box 3D model finder result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M3dmodAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M_FIND_BOX_RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><code>M3dmodFind</code></a> results.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_area"><code>M_AREA</code><a href="#m_area" class="hash-link" aria-label="Direct link to m_area" title="Direct link to m_area" translate="no">​</a></h4>
+<p>Retrieves the surface area of the model occurrence. The surface area is calculated using the following formula: <code>_SA_ = 2(_l_ * _w_ + _l_ * _h_ + _w_ * _h_)</code>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x"><code>M_CENTER_X</code><a href="#m_center_x" class="hash-link" aria-label="Direct link to m_center_x" title="Direct link to m_center_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the center point of the box occurrence or its specified face (depending on whether you add <strong>M_FACE_INDEX()</strong> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_CENTER_X</code></a>), expressed in the working coordinate system.  For a box occurrence, the X-coordinate of the box&#x27;s center point is retrieved.  For a box occurrence&#x27;s face, the X-coordinate of the face&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y"><code>M_CENTER_Y</code><a href="#m_center_y" class="hash-link" aria-label="Direct link to m_center_y" title="Direct link to m_center_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the center point of the box occurrence or its specified face (depending on whether you add <strong>M_FACE_INDEX()</strong> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_CENTER_Y</code></a>), expressed in the working coordinate system.  For a box occurrence, the Y-coordinate of the box&#x27;s center point is retrieved.  For a box occurrence&#x27;s face, the Y-coordinate of the face&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z"><code>M_CENTER_Z</code><a href="#m_center_z" class="hash-link" aria-label="Direct link to m_center_z" title="Direct link to m_center_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the center point of the box occurrence or its specified face (depending on whether you add <strong>M_FACE_INDEX()</strong> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_CENTER_Z</code></a>), expressed in the working coordinate system.  For a box occurrence, the Z-coordinate of the box&#x27;s center point is retrieved.  For a box occurrence&#x27;s face, the Z-coordinate of the face&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_completion_status"><code>M_COMPLETION_STATUS</code><a href="#m_completion_status" class="hash-link" aria-label="Direct link to m_completion_status" title="Direct link to m_completion_status" translate="no">​</a></h4>
+<p>Retrieves which method was used to complete the box.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPLETION_TO_BACKGROUND</code></td><td>Specifies that the face was extruded to a background plane.</td></tr><tr><td><code>M_COMPLETION_TO_STAIRCASE</code></td><td>Specifies that the face was extruded to an edge of a staircase plane.</td></tr><tr><td><code>M_COMPLETION_TO_USER_SIZE</code></td><td>Specifies that the face was extruded to the completion size.</td></tr><tr><td><code>M_NONE</code></td><td>Specifies that no completion method was used because an occurrence with more than 1 face was found.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coverage"><code>M_COVERAGE</code><a href="#m_coverage" class="hash-link" aria-label="Direct link to m_coverage" title="Direct link to m_coverage" translate="no">​</a></h4>
+<p>Retrieves the plane coverage of the box occurrence&#x27;s specified face. The plane coverage is the percentage of a plane&#x27;s surface found in the face and covered by inlier points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the plane coverage, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_x"><code>M_NORMAL_X</code><a href="#m_normal_x" class="hash-link" aria-label="Direct link to m_normal_x" title="Direct link to m_normal_x" translate="no">​</a></h4>
+<p>Retrieves the X-component of the normal unit vector of the box occurrence&#x27;s specified face.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &lt;= Value &lt;= 1.0</code></td><td>Specifies the X-component of the box face&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_y"><code>M_NORMAL_Y</code><a href="#m_normal_y" class="hash-link" aria-label="Direct link to m_normal_y" title="Direct link to m_normal_y" translate="no">​</a></h4>
+<p>Retrieves the Y-component of the normal unit vector of the box occurrence&#x27;s specified face.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &lt;= Value &lt;= 1.0</code></td><td>Specifies the Y-component of the box face&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_z"><code>M_NORMAL_Z</code><a href="#m_normal_z" class="hash-link" aria-label="Direct link to m_normal_z" title="Direct link to m_normal_z" translate="no">​</a></h4>
+<p>Retrieves the Z-component of the normal unit vector of the box occurrence&#x27;s specified face.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &lt;= Value &lt;= 1.0</code></td><td>Specifies the Z-component of the box face&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points"><code>M_NUMBER_OF_POINTS</code><a href="#m_number_of_points" class="hash-link" aria-label="Direct link to m_number_of_points" title="Direct link to m_number_of_points" translate="no">​</a></h4>
+<p>Retrieves the number of points in the box occurrence or its specified face, depending on whether you add <strong>M_FACE_INDEX()</strong> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_NUMBER_OF_POINTS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_reserved"><code>M_NUMBER_OF_POINTS_RESERVED</code><a href="#m_number_of_points_reserved" class="hash-link" aria-label="Direct link to m_number_of_points_reserved" title="Direct link to m_number_of_points_reserved" translate="no">​</a></h4>
+<p>Retrieves the number of reserved points in the box occurrence or its specified face, depending on whether you add <strong>M_FACE_INDEX()</strong> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_NUMBER_OF_POINTS_RESERVED</code></a>. These are the points in the reserved area around the occurrence. They are not considered in the fit, are not included in the calculation of the score, and are not considered for other occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_visible_faces"><code>M_NUMBER_OF_VISIBLE_FACES</code><a href="#m_number_of_visible_faces" class="hash-link" aria-label="Direct link to m_number_of_visible_faces" title="Direct link to m_number_of_visible_faces" translate="no">​</a></h4>
+<p>Retrieves the number of visible faces (planes) used to fit the box occurrence.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of visible faces (planes).</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rms_error"><code>M_RMS_ERROR</code><a href="#m_rms_error" class="hash-link" aria-label="Direct link to m_rms_error" title="Direct link to m_rms_error" translate="no">​</a></h4>
+<p>Retrieves the root-mean-square (RMS) error between the points found in the box occurrence or its specified face (depending on whether you add <strong>M_FACE_INDEX()</strong> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_RMS_ERROR</code></a>) and the source model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score"><code>M_SCORE</code><a href="#m_score" class="hash-link" aria-label="Direct link to m_score" title="Direct link to m_score" translate="no">​</a></h4>
+<p>Retrieves the score of the occurrence, where the score is based on the occurrence&#x27;s model coverage. The model coverage is the percentage of the model&#x27;s surface found in the occurrence and covered by inlier points. The score is defined relative to the maximum expected model coverage, such that an occurrence with a score of 100% has a model coverage equal to the maximum expected model coverage. You can set the maximum expected model coverage, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_COVERAGE_MAX</code></a>.  You can add <strong>M_FACE_INDEX()</strong> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_SCORE</code></a> to retrieve this result for one or all of the box occurrence&#x27;s faces. The score of a box face is defined relative to the maximum expected plane coverage. In this case, a face with a score of 100% has a plane coverage equal to the maximum expected plane coverage. You can set the maximum expected plane coverage, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_PLANE_MAX_COVERAGE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the score of the occurrence, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x"><code>M_SIZE_X</code><a href="#m_size_x" class="hash-link" aria-label="Direct link to m_size_x" title="Direct link to m_size_x" translate="no">​</a></h4>
+<p>Retrieves the length of the box occurrence along its X-axis.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y"><code>M_SIZE_Y</code><a href="#m_size_y" class="hash-link" aria-label="Direct link to m_size_y" title="Direct link to m_size_y" translate="no">​</a></h4>
+<p>Retrieves the length of the box occurrence along its Y-axis.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_z"><code>M_SIZE_Z</code><a href="#m_size_z" class="hash-link" aria-label="Direct link to m_size_z" title="Direct link to m_size_z" translate="no">​</a></h4>
+<p>Retrieves the length of the box occurrence along its Z-axis.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_max_x"><code>M_UNROTATED_MAX_X</code><a href="#m_unrotated_max_x" class="hash-link" aria-label="Direct link to m_unrotated_max_x" title="Direct link to m_unrotated_max_x" translate="no">​</a></h4>
+<p>Retrieves the box occurrence&#x27;s maximum X-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_max_y"><code>M_UNROTATED_MAX_Y</code><a href="#m_unrotated_max_y" class="hash-link" aria-label="Direct link to m_unrotated_max_y" title="Direct link to m_unrotated_max_y" translate="no">​</a></h4>
+<p>Retrieves the box occurrence&#x27;s maximum Y-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_max_z"><code>M_UNROTATED_MAX_Z</code><a href="#m_unrotated_max_z" class="hash-link" aria-label="Direct link to m_unrotated_max_z" title="Direct link to m_unrotated_max_z" translate="no">​</a></h4>
+<p>Retrieves the box occurrence&#x27;s maximum Z-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_min_x"><code>M_UNROTATED_MIN_X</code><a href="#m_unrotated_min_x" class="hash-link" aria-label="Direct link to m_unrotated_min_x" title="Direct link to m_unrotated_min_x" translate="no">​</a></h4>
+<p>Retrieves the box occurrence&#x27;s minimum X-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_min_y"><code>M_UNROTATED_MIN_Y</code><a href="#m_unrotated_min_y" class="hash-link" aria-label="Direct link to m_unrotated_min_y" title="Direct link to m_unrotated_min_y" translate="no">​</a></h4>
+<p>Retrieves the box occurrence&#x27;s minimum Y-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_unrotated_min_z"><code>M_UNROTATED_MIN_Z</code><a href="#m_unrotated_min_z" class="hash-link" aria-label="Direct link to m_unrotated_min_z" title="Direct link to m_unrotated_min_z" translate="no">​</a></h4>
+<p>Retrieves the box occurrence&#x27;s minimum Z-coordinate, ignoring the box&#x27;s rotation. The coordinate is returned as if the box is axis-aligned.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_visible"><code>M_VISIBLE</code><a href="#m_visible" class="hash-link" aria-label="Direct link to m_visible" title="Direct link to m_visible" translate="no">​</a></h4>
+<p>Retrieves whether the box occurrence&#x27;s specified face was visible in the target. A face is only considered a visible face of the box occurrence if its score is greater than or equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodInquire"><code>M_PLANE_ACCEPTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the face was not visible.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the face was visible.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume"><code>M_VOLUME</code><a href="#m_volume" class="hash-link" aria-label="Direct link to m_volume" title="Direct link to m_volume" translate="no">​</a></h4>
+<p>Retrieves the volume of the model occurrence. The volume is calculated using the following formula: <code>_V_ = _l_ * _w_ * _h_</code>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cylinder-3d-model-finder-result-buffer-id"><code>Cylinder 3D model finder result buffer ID</code><a href="#cylinder-3d-model-finder-result-buffer-id" class="hash-link" aria-label="Direct link to cylinder-3d-model-finder-result-buffer-id" title="Direct link to cylinder-3d-model-finder-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies a cylinder 3D model finder result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M3dmodAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M_FIND_CYLINDER_RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><code>M3dmodFind</code></a> results.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_area-1"><code>M_AREA</code><a href="#m_area-1" class="hash-link" aria-label="Direct link to m_area-1" title="Direct link to m_area-1" translate="no">​</a></h4>
+<p>Retrieves the surface area of the model occurrence. The surface area of a cylinder occurrence with no bases is calculated using the following formula: <code>_SA_ = 2π_r_ _h_</code>. The surface area of a cylinder occurrence with bases is calculated using the following formula: <code>_SA_ = 2π_r_ _h_ + 2π_r_ &lt;sup&gt;2&lt;/sup&gt;</code>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_x"><code>M_AXIS_X</code><a href="#m_axis_x" class="hash-link" aria-label="Direct link to m_axis_x" title="Direct link to m_axis_x" translate="no">​</a></h4>
+<p>Retrieves the X-component of the cylinder occurrence&#x27;s central axis unit vector. This vector does not reflect the cylinder&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the X-component of the unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_y"><code>M_AXIS_Y</code><a href="#m_axis_y" class="hash-link" aria-label="Direct link to m_axis_y" title="Direct link to m_axis_y" translate="no">​</a></h4>
+<p>Retrieves the Y-component of the cylinder occurrence&#x27;s central axis unit vector. This vector does not reflect the cylinder&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Y-component of the unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_z"><code>M_AXIS_Z</code><a href="#m_axis_z" class="hash-link" aria-label="Direct link to m_axis_z" title="Direct link to m_axis_z" translate="no">​</a></h4>
+<p>Retrieves the Z-component of the cylinder occurrence&#x27;s central axis unit vector. This vector does not reflect the cylinder&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Z-component of the unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x-1"><code>M_CENTER_X</code><a href="#m_center_x-1" class="hash-link" aria-label="Direct link to m_center_x-1" title="Direct link to m_center_x-1" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a cylinder model occurrence, the X-coordinate of the center point on the cylinder&#x27;s central axis is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y-1"><code>M_CENTER_Y</code><a href="#m_center_y-1" class="hash-link" aria-label="Direct link to m_center_y-1" title="Direct link to m_center_y-1" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a cylinder model occurrence, the Y-coordinate of the center point on the cylinder&#x27;s central axis is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z-1"><code>M_CENTER_Z</code><a href="#m_center_z-1" class="hash-link" aria-label="Direct link to m_center_z-1" title="Direct link to m_center_z-1" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a cylinder model occurrence, the Z-coordinate of the center point on the cylinder&#x27;s central axis is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_x"><code>M_END_POINT_X</code><a href="#m_end_point_x" class="hash-link" aria-label="Direct link to m_end_point_x" title="Direct link to m_end_point_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the cylinder occurrence&#x27;s end point, expressed in the working coordinate system. The end position is located at the center of the cylinder&#x27;s second circular base.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_y"><code>M_END_POINT_Y</code><a href="#m_end_point_y" class="hash-link" aria-label="Direct link to m_end_point_y" title="Direct link to m_end_point_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the cylinder occurrence&#x27;s end point, expressed in the working coordinate system. The end position is located at the center of the cylinder&#x27;s second circular base.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_z"><code>M_END_POINT_Z</code><a href="#m_end_point_z" class="hash-link" aria-label="Direct link to m_end_point_z" title="Direct link to m_end_point_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the cylinder occurrence&#x27;s end point, expressed in the working coordinate system. The end position is located at the center of the cylinder&#x27;s second circular base.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_length"><code>M_LENGTH</code><a href="#m_length" class="hash-link" aria-label="Direct link to m_length" title="Direct link to m_length" translate="no">​</a></h4>
+<p>Retrieves the length of the cylinder occurrence in world units.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points-1"><code>M_NUMBER_OF_POINTS</code><a href="#m_number_of_points-1" class="hash-link" aria-label="Direct link to m_number_of_points-1" title="Direct link to m_number_of_points-1" translate="no">​</a></h4>
+<p>Retrieves the number of points in the model occurrence.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_reserved-1"><code>M_NUMBER_OF_POINTS_RESERVED</code><a href="#m_number_of_points_reserved-1" class="hash-link" aria-label="Direct link to m_number_of_points_reserved-1" title="Direct link to m_number_of_points_reserved-1" translate="no">​</a></h4>
+<p>Retrieves the number of reserved points in the model occurrence. These are the points in the reserved area around the occurrence (established using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_RESERVED_POINTS_DISTANCE</code></a>). They are not considered in the fit, are not included in the calculation of the score, and are not considered for other occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_radius"><code>M_RADIUS</code><a href="#m_radius" class="hash-link" aria-label="Direct link to m_radius" title="Direct link to m_radius" translate="no">​</a></h4>
+<p>Retrieves the radius of the cylinder occurrence in world units.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rms_error-1"><code>M_RMS_ERROR</code><a href="#m_rms_error-1" class="hash-link" aria-label="Direct link to m_rms_error-1" title="Direct link to m_rms_error-1" translate="no">​</a></h4>
+<p>Retrieves the root-mean-square (RMS) error between the points found in the occurrence and the source model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score-1"><code>M_SCORE</code><a href="#m_score-1" class="hash-link" aria-label="Direct link to m_score-1" title="Direct link to m_score-1" translate="no">​</a></h4>
+<p>Retrieves the score of the occurrence, where the score is based on the occurrence&#x27;s model coverage. The model coverage is the percentage of the model&#x27;s surface found in the occurrence and covered by inlier points. The score is defined relative to the maximum expected model coverage, such that an occurrence with a score of 100% has a model coverage equal to the maximum expected model coverage. You can set the maximum expected model coverage, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_COVERAGE_MAX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the score of the occurrence, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_x"><code>M_START_POINT_X</code><a href="#m_start_point_x" class="hash-link" aria-label="Direct link to m_start_point_x" title="Direct link to m_start_point_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the cylinder occurrence&#x27;s start point, expressed in the working coordinate system. The start position is located at the center of the cylinder&#x27;s first circular base.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_y"><code>M_START_POINT_Y</code><a href="#m_start_point_y" class="hash-link" aria-label="Direct link to m_start_point_y" title="Direct link to m_start_point_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the cylinder occurrence&#x27;s start point, expressed in the working coordinate system. The start position is located at the center of the cylinder&#x27;s first circular base.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_z"><code>M_START_POINT_Z</code><a href="#m_start_point_z" class="hash-link" aria-label="Direct link to m_start_point_z" title="Direct link to m_start_point_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the cylinder&#x27;s occurrence&#x27;s start point, expressed in the working coordinate system. The start position is located at the center of the cylinder&#x27;s first circular base.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume-1"><code>M_VOLUME</code><a href="#m_volume-1" class="hash-link" aria-label="Direct link to m_volume-1" title="Direct link to m_volume-1" translate="no">​</a></h4>
+<p>Retrieves the volume of the model occurrence. The volume is calculated using the following formula: <code>_V_ = π_r_ &lt;sup&gt;2&lt;/sup&gt; _h_</code>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rectangular-plane-3d-model-finder-result-buffer-id"><code>Rectangular plane 3D model finder result buffer ID</code><a href="#rectangular-plane-3d-model-finder-result-buffer-id" class="hash-link" aria-label="Direct link to rectangular-plane-3d-model-finder-result-buffer-id" title="Direct link to rectangular-plane-3d-model-finder-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies a rectangular plane 3D model finder result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M3dmodAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M_FIND_RECTANGULAR_PLANE_RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><code>M3dmodFind</code></a> results.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_area-2"><code>M_AREA</code><a href="#m_area-2" class="hash-link" aria-label="Direct link to m_area-2" title="Direct link to m_area-2" translate="no">​</a></h4>
+<p>Retrieves the surface area of the model occurrence. The surface area is calculated using the following formula: <code>_SA_ = _l_ * _w_</code>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x-2"><code>M_CENTER_X</code><a href="#m_center_x-2" class="hash-link" aria-label="Direct link to m_center_x-2" title="Direct link to m_center_x-2" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a rectangular plane model occurrence, the X-coordinate of the center point of the rectangular plane&#x27;s bounding box is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y-2"><code>M_CENTER_Y</code><a href="#m_center_y-2" class="hash-link" aria-label="Direct link to m_center_y-2" title="Direct link to m_center_y-2" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a rectangular plane model occurrence, the Y-coordinate of the center point of the rectangular plane&#x27;s bounding box is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z-2"><code>M_CENTER_Z</code><a href="#m_center_z-2" class="hash-link" aria-label="Direct link to m_center_z-2" title="Direct link to m_center_z-2" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a rectangular plane model occurrence, the Z-coordinate of the center point of the rectangular plane&#x27;s bounding box is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_x"><code>M_CLOSEST_TO_ORIGIN_X</code><a href="#m_closest_to_origin_x" class="hash-link" aria-label="Direct link to m_closest_to_origin_x" title="Direct link to m_closest_to_origin_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the point on the rectangular plane occurrence closest to the origin of the working coordinate system.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_y"><code>M_CLOSEST_TO_ORIGIN_Y</code><a href="#m_closest_to_origin_y" class="hash-link" aria-label="Direct link to m_closest_to_origin_y" title="Direct link to m_closest_to_origin_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the point on the rectangular plane occurrence closest to the origin of the working coordinate system.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_z"><code>M_CLOSEST_TO_ORIGIN_Z</code><a href="#m_closest_to_origin_z" class="hash-link" aria-label="Direct link to m_closest_to_origin_z" title="Direct link to m_closest_to_origin_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the point on the rectangular plane occurrence closest to the origin of the working coordinate system.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_a"><code>M_COEFFICIENT_A</code><a href="#m_coefficient_a" class="hash-link" aria-label="Direct link to m_coefficient_a" title="Direct link to m_coefficient_a" translate="no">​</a></h4>
+<p>Retrieves the coefficient A of the plane equation,<code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient A of the plane equation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_b"><code>M_COEFFICIENT_B</code><a href="#m_coefficient_b" class="hash-link" aria-label="Direct link to m_coefficient_b" title="Direct link to m_coefficient_b" translate="no">​</a></h4>
+<p>Retrieves the coefficient B of the plane equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient B of the plane equation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_c"><code>M_COEFFICIENT_C</code><a href="#m_coefficient_c" class="hash-link" aria-label="Direct link to m_coefficient_c" title="Direct link to m_coefficient_c" translate="no">​</a></h4>
+<p>Retrieves the coefficient C of the plane equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient C of the plane equation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_d"><code>M_COEFFICIENT_D</code><a href="#m_coefficient_d" class="hash-link" aria-label="Direct link to m_coefficient_d" title="Direct link to m_coefficient_d" translate="no">​</a></h4>
+<p>Retrieves the coefficient D of the plane equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the coefficient D of the plane equation.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_x-1"><code>M_NORMAL_X</code><a href="#m_normal_x-1" class="hash-link" aria-label="Direct link to m_normal_x-1" title="Direct link to m_normal_x-1" translate="no">​</a></h4>
+<p>Retrieves the X-component of the rectangular plane occurrence&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the X-component of the rectangular plane occurrence&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_y-1"><code>M_NORMAL_Y</code><a href="#m_normal_y-1" class="hash-link" aria-label="Direct link to m_normal_y-1" title="Direct link to m_normal_y-1" translate="no">​</a></h4>
+<p>Retrieves the Y-component of the rectangular plane occurrence&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Y-component of the rectangular plane occurrence&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_z-1"><code>M_NORMAL_Z</code><a href="#m_normal_z-1" class="hash-link" aria-label="Direct link to m_normal_z-1" title="Direct link to m_normal_z-1" translate="no">​</a></h4>
+<p>Retrieves the Z-component of the rectangular plane occurrence&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Z-component of the rectangular plane occurrence&#x27;s normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points-2"><code>M_NUMBER_OF_POINTS</code><a href="#m_number_of_points-2" class="hash-link" aria-label="Direct link to m_number_of_points-2" title="Direct link to m_number_of_points-2" translate="no">​</a></h4>
+<p>Retrieves the number of points in the model occurrence.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_reserved-2"><code>M_NUMBER_OF_POINTS_RESERVED</code><a href="#m_number_of_points_reserved-2" class="hash-link" aria-label="Direct link to m_number_of_points_reserved-2" title="Direct link to m_number_of_points_reserved-2" translate="no">​</a></h4>
+<p>Retrieves the number of reserved points in the model occurrence. These are the points in the reserved area around the occurrence. They are not considered in the fit, are not included in the calculation of the score, and are not considered for other occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rms_error-2"><code>M_RMS_ERROR</code><a href="#m_rms_error-2" class="hash-link" aria-label="Direct link to m_rms_error-2" title="Direct link to m_rms_error-2" translate="no">​</a></h4>
+<p>Retrieves the root-mean-square (RMS) error between the points found in the occurrence and the source model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score-2"><code>M_SCORE</code><a href="#m_score-2" class="hash-link" aria-label="Direct link to m_score-2" title="Direct link to m_score-2" translate="no">​</a></h4>
+<p>Retrieves the score of the occurrence, where the score is based on the occurrence&#x27;s model coverage. The model coverage is the percentage of the model&#x27;s surface found in the occurrence and covered by inlier points. The score is defined relative to the maximum expected model coverage, such that an occurrence with a score of 100% has a model coverage equal to the maximum expected model coverage. You can set the maximum expected model coverage, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_COVERAGE_MAX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the score of the occurrence, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x-1"><code>M_SIZE_X</code><a href="#m_size_x-1" class="hash-link" aria-label="Direct link to m_size_x-1" title="Direct link to m_size_x-1" translate="no">​</a></h4>
+<p>Retrieves the length of the rectangular plane occurrence along its X-axis.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y-1"><code>M_SIZE_Y</code><a href="#m_size_y-1" class="hash-link" aria-label="Direct link to m_size_y-1" title="Direct link to m_size_y-1" translate="no">​</a></h4>
+<p>Retrieves the length of the rectangular plane occurrence along its Y-axis.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sphere-3d-model-finder-result-buffer-id"><code>Sphere 3D model finder result buffer ID</code><a href="#sphere-3d-model-finder-result-buffer-id" class="hash-link" aria-label="Direct link to sphere-3d-model-finder-result-buffer-id" title="Direct link to sphere-3d-model-finder-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies a sphere 3D model finder result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M3dmodAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M_FIND_SPHERE_RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><code>M3dmodFind</code></a> results.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_area-3"><code>M_AREA</code><a href="#m_area-3" class="hash-link" aria-label="Direct link to m_area-3" title="Direct link to m_area-3" translate="no">​</a></h4>
+<p>Retrieves the surface area of the model occurrence. The surface area is calculated using the following formula: <code>_SA_ = 4π_r_ &lt;sup&gt;2&lt;/sup&gt;</code>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x-3"><code>M_CENTER_X</code><a href="#m_center_x-3" class="hash-link" aria-label="Direct link to m_center_x-3" title="Direct link to m_center_x-3" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a sphere model occurrence, the X-coordinate of the sphere&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y-3"><code>M_CENTER_Y</code><a href="#m_center_y-3" class="hash-link" aria-label="Direct link to m_center_y-3" title="Direct link to m_center_y-3" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a sphere model occurrence, the Y-coordinate of the sphere&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z-3"><code>M_CENTER_Z</code><a href="#m_center_z-3" class="hash-link" aria-label="Direct link to m_center_z-3" title="Direct link to m_center_z-3" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a sphere model occurrence, the Z-coordinate of the sphere&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points-3"><code>M_NUMBER_OF_POINTS</code><a href="#m_number_of_points-3" class="hash-link" aria-label="Direct link to m_number_of_points-3" title="Direct link to m_number_of_points-3" translate="no">​</a></h4>
+<p>Retrieves the number of points in the model occurrence.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_reserved-3"><code>M_NUMBER_OF_POINTS_RESERVED</code><a href="#m_number_of_points_reserved-3" class="hash-link" aria-label="Direct link to m_number_of_points_reserved-3" title="Direct link to m_number_of_points_reserved-3" translate="no">​</a></h4>
+<p>Retrieves the number of reserved points in the model occurrence. These are the points in the reserved area around the occurrence (established using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_RESERVED_POINTS_DISTANCE</code></a>). They are not considered in the fit, are not included in the calculation of the score, and are not considered for other occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_radius-1"><code>M_RADIUS</code><a href="#m_radius-1" class="hash-link" aria-label="Direct link to m_radius-1" title="Direct link to m_radius-1" translate="no">​</a></h4>
+<p>Retrieves the radius of the sphere occurrence in world units.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rms_error-3"><code>M_RMS_ERROR</code><a href="#m_rms_error-3" class="hash-link" aria-label="Direct link to m_rms_error-3" title="Direct link to m_rms_error-3" translate="no">​</a></h4>
+<p>Retrieves the root-mean-square (RMS) error between the points found in the occurrence and the source model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score-3"><code>M_SCORE</code><a href="#m_score-3" class="hash-link" aria-label="Direct link to m_score-3" title="Direct link to m_score-3" translate="no">​</a></h4>
+<p>Retrieves the score of the occurrence, where the score is based on the occurrence&#x27;s model coverage. The model coverage is the percentage of the model&#x27;s surface found in the occurrence and covered by inlier points. The score is defined relative to the maximum expected model coverage, such that an occurrence with a score of 100% has a model coverage equal to the maximum expected model coverage. You can set the maximum expected model coverage, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_COVERAGE_MAX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the score of the occurrence, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume-2"><code>M_VOLUME</code><a href="#m_volume-2" class="hash-link" aria-label="Direct link to m_volume-2" title="Direct link to m_volume-2" translate="no">​</a></h4>
+<p>Retrieves the volume of the model occurrence. The volume is calculated using the following formula: <code>_V_ = (4/3)π_r_ &lt;sup&gt;3&lt;/sup&gt;</code>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="surface-or-planar-surface-3d-model-finder-result-buffer-id"><code>Surface or planar surface 3D model finder result buffer ID</code><a href="#surface-or-planar-surface-3d-model-finder-result-buffer-id" class="hash-link" aria-label="Direct link to surface-or-planar-surface-3d-model-finder-result-buffer-id" title="Direct link to surface-or-planar-surface-3d-model-finder-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies a surface or planar surface 3D model finder result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M3dmodAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M_FIND_SURFACE_RESULT</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodAllocResult"><code>M_FIND_PLANAR_SURFACE_RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFind"><code>M3dmodFind</code></a> results.  Note that <strong>M_SCORE_GRIP()</strong>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_SCORE_GRIP_BEST</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodGetResult"><code>M_SCORE_GRIP_BEST_LABEL</code></a> are not available for planar surface 3D model finder result buffers.</p>
+<h4><code>?</code></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the grip score, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x-4"><code>M_CENTER_X</code><a href="#m_center_x-4" class="hash-link" aria-label="Direct link to m_center_x-4" title="Direct link to m_center_x-4" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a surface model occurrence, the X-coordinate of the center of the surface&#x27;s bounding box is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y-4"><code>M_CENTER_Y</code><a href="#m_center_y-4" class="hash-link" aria-label="Direct link to m_center_y-4" title="Direct link to m_center_y-4" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a surface model occurrence, the Y-coordinate of the center of the surface&#x27;s bounding box is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z-4"><code>M_CENTER_Z</code><a href="#m_center_z-4" class="hash-link" aria-label="Direct link to m_center_z-4" title="Direct link to m_center_z-4" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the center point of the model occurrence, expressed in the working coordinate system.  For a surface model occurrence, the Z-coordinate of the center of the surface&#x27;s bounding box is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points-4"><code>M_NUMBER_OF_POINTS</code><a href="#m_number_of_points-4" class="hash-link" aria-label="Direct link to m_number_of_points-4" title="Direct link to m_number_of_points-4" translate="no">​</a></h4>
+<p>Retrieves the number of points in the model occurrence.  This result is only available if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_SAVE_FIT_INFO</code></a> was enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_reserved-4"><code>M_NUMBER_OF_POINTS_RESERVED</code><a href="#m_number_of_points_reserved-4" class="hash-link" aria-label="Direct link to m_number_of_points_reserved-4" title="Direct link to m_number_of_points_reserved-4" translate="no">​</a></h4>
+<p>Retrieves the number of reserved points in the model occurrence. These are the points in the reserved area around the occurrence. They are not considered in the fit, are not included in the calculation of the score, and are not considered for other occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_x"><code>M_POSITION_X</code><a href="#m_position_x" class="hash-link" aria-label="Direct link to m_position_x" title="Direct link to m_position_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the surface occurrence. This is the X-position of the model&#x27;s reference axis transformed at the occurrence.  Note, the origin of the model&#x27;s reference axis is at the origin of the working coordinate system of the original point cloud from which the surface model was defined.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_y"><code>M_POSITION_Y</code><a href="#m_position_y" class="hash-link" aria-label="Direct link to m_position_y" title="Direct link to m_position_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the surface occurrence. This is the Y-position of the model&#x27;s reference axis transformed at the occurrence.  Note, the origin of the model&#x27;s reference axis is at the origin of the working coordinate system of the original point cloud from which the surface model was defined.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_z"><code>M_POSITION_Z</code><a href="#m_position_z" class="hash-link" aria-label="Direct link to m_position_z" title="Direct link to m_position_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the surface occurrence. This is the Z-position of the model&#x27;s reference axis transformed at the occurrence.  Note, the origin of the model&#x27;s reference axis is at the origin of the working coordinate system of the original point cloud from which the surface model was defined.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rms_error-4"><code>M_RMS_ERROR</code><a href="#m_rms_error-4" class="hash-link" aria-label="Direct link to m_rms_error-4" title="Direct link to m_rms_error-4" translate="no">​</a></h4>
+<p>Retrieves the root-mean-square (RMS) error between the points found in the occurrence and the source model. For a surface model, this result is only available if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_SAVE_FIT_INFO</code></a> was enabled. To improve fit results, you should also enable refine registration (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_REFINE_REGISTRATION</code></a>) prior to performing the search. By default, Aurora Imaging Library uses the features of the model and target to find occurrences, but it doesn&#x27;t do any fitting. To get more accurate score and pose information, you should enable refine registration.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score-4"><code>M_SCORE</code><a href="#m_score-4" class="hash-link" aria-label="Direct link to m_score-4" title="Direct link to m_score-4" translate="no">​</a></h4>
+<p>Retrieves the score of the occurrence, where the score is based on the occurrence&#x27;s model coverage. The model coverage is the percentage of the model&#x27;s surface found in the occurrence and covered by inlier points. The score is defined relative to the maximum expected model coverage, such that an occurrence with a score of 100% has a model coverage equal to the maximum expected model coverage. You can set the maximum expected model coverage, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_COVERAGE_MAX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the score of the occurrence, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_color"><code>M_SCORE_COLOR</code><a href="#m_score_color" class="hash-link" aria-label="Direct link to m_score_color" title="Direct link to m_score_color" translate="no">​</a></h4>
+<p>Retrieves the color score of the occurrence, where the color score indicates the similarity between the color of the model and the color of the occurrence.  This result is only available if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_USE_COLOR</code></a> was enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the color score of the occurrence, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_fit"><code>M_SCORE_FIT</code><a href="#m_score_fit" class="hash-link" aria-label="Direct link to m_score_fit" title="Direct link to m_score_fit" translate="no">​</a></h4>
+<p>Retrieves the fit score of the occurrence, where the fit score is based on the Euclidean distance between the occurrence&#x27;s points and the model. The score is calculated as follows:  <code>Fit Score = 1 - Normalized RMS error</code>  This result is only available if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_SAVE_FIT_INFO</code></a> was enabled. To improve fit results, you should also enable refine registration (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M3dmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_REFINE_REGISTRATION</code></a>) prior to performing the search. By default, Aurora Imaging Library uses the features of the model and target to find occurrences, but it doesn&#x27;t do any fitting. To get more accurate score and pose information, you should enable refine registration.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the fit score of the occurrence, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_grip_best"><code>M_SCORE_GRIP_BEST</code><a href="#m_score_grip_best" class="hash-link" aria-label="Direct link to m_score_grip_best" title="Direct link to m_score_grip_best" translate="no">​</a></h4>
+<p>Retrieves the highest grip score among all labels. The grip score is the percentage of the model&#x27;s labeled surface found in the occurrence and covered by inlier points.  This result is only available for surface 3D model finder result buffers and only if a grip label image that contains non-zero values was copied to the find surface 3D model finder context, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodCopy"><code>M3dmodCopy</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodCopy"><code>M_GRIP_LABEL_IMAGE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the best grip score.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_grip_best_label"><code>M_SCORE_GRIP_BEST_LABEL</code><a href="#m_score_grip_best_label" class="hash-link" aria-label="Direct link to m_score_grip_best_label" title="Direct link to m_score_grip_best_label" translate="no">​</a></h4>
+<p>Retrieves the label with the highest grip score. The grip score is the percentage of the model&#x27;s labeled surface found in the occurrence and covered by inlier points.  This result is only available for surface 3D model finder result buffers and only if a grip label image that contains non-zero values was copied to the find surface 3D model finder context, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodCopy"><code>M3dmodCopy</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodCopy"><code>M_GRIP_LABEL_IMAGE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt; Value &lt;= 255</code></td><td>Specifies the label.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score_target"><code>M_SCORE_TARGET</code><a href="#m_score_target" class="hash-link" aria-label="Direct link to m_score_target" title="Direct link to m_score_target" translate="no">​</a></h4>
+<p>Retrieves the target score of the occurrence, where the target score is based on the target coverage. Target coverage is a measure of the points found in the occurrence that don&#x27;t have matching points in the original model (that is, extra points), weighted by the deviation in position of the common points. Points found in the occurrence that are not present in the model will reduce the target score. For example, a target score of 100% means that there are no points in the occurrence that do not fit the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 100.0</code></td><td>Specifies the target score of the occurrence, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_refine_registration-1"><code>M_STATUS_REFINE_REGISTRATION</code><a href="#m_status_refine_registration-1" class="hash-link" aria-label="Direct link to m_status_refine_registration-1" title="Direct link to m_status_refine_registration-1" translate="no">​</a></h4>
+<p>Retrieves the status of the refine registration applied to the occurrence. This result is only available for surface model occurrences and only if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_REFINE_REGISTRATION</code></a> was enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_APPLIED</code></td><td>Specifies that refine registration was applied successfully to the occurrence.</td></tr><tr><td><code>M_APPLIED_AND_REJECTED</code></td><td>Specifies that even though<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodControl"><code>M_REFINE_REGISTRATION</code></a> was enabled, at least one registration was not applied successfully to the occurrence.</td></tr><tr><td><code>M_NOT_APPLIED</code></td><td>Specifies that refine registration was not enabled, so it was not applied to the occurrence.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-box-faces-index">Combination Constants — For specifying the box face&#x27;s index<a href="#combination-constants--for-specifying-the-box-faces-index" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the box face&#x27;s index" title="Direct link to Combination Constants — For specifying the box face&#x27;s index" translate="no">​</a></h3>
+<blockquote>
+<p><em>Essential.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You must add one of the following values to the above-mentioned values to specify for which face of the box to retrieve results.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FACE_INDEX</code></td><td>Specifies to retrieve results for a specific face of a box occurrence.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values">Combination Constants — For determining the required array size (number of elements) to store the returned values<a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" title="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required array size (number of elements) to store the returned values.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to a required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_DOUBLE</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_DOUBLE</em>. If the requested information does not fit into an <em>AIL_DOUBLE</em>, this function will return <code>M_NULL</code> or truncate the information.</p>
+<p>This result is always available.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodFree"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dmodFree</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/M3dmodInquire"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dmodInquire</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#result3dmodid-in-ail_id" class="table-of-contents__link toc-highlight"><code>Result3dmodId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#resultindex-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ResultIndex</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#resulttype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ResultType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#resultarrayptr-out-void" class="table-of-contents__link toc-highlight"><code>ResultArrayPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-retrieving-general-results-from-the-3d-model-finder-result-buffer" class="table-of-contents__link toc-highlight">For retrieving general results from the 3D model finder result buffer</a></li><li><a href="#3d-model-finder-result-buffer-id" class="table-of-contents__link toc-highlight"><code>3D model finder result buffer ID</code></a></li><li><a href="#for-retrieving-a-result-of-a-single-occurrence-or-all-occurrences-from-the-3d-model-finder-result-buffer" class="table-of-contents__link toc-highlight">For retrieving a result of a single occurrence or all occurrences from the 3D model finder result buffer</a></li><li><a href="#box-3d-model-finder-result-buffer-id" class="table-of-contents__link toc-highlight"><code>Box 3D model finder result buffer ID</code></a></li><li><a href="#cylinder-3d-model-finder-result-buffer-id" class="table-of-contents__link toc-highlight"><code>Cylinder 3D model finder result buffer ID</code></a></li><li><a href="#rectangular-plane-3d-model-finder-result-buffer-id" class="table-of-contents__link toc-highlight"><code>Rectangular plane 3D model finder result buffer ID</code></a></li><li><a href="#sphere-3d-model-finder-result-buffer-id" class="table-of-contents__link toc-highlight"><code>Sphere 3D model finder result buffer ID</code></a></li><li><a href="#surface-or-planar-surface-3d-model-finder-result-buffer-id" class="table-of-contents__link toc-highlight"><code>Surface or planar surface 3D model finder result buffer ID</code></a></li><li><a href="#combination-constants--for-specifying-the-box-faces-index" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the box face&#39;s index</a></li><li><a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required array size (number of elements) to store the returned values</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

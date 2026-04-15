@@ -1,0 +1,1823 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/agm/MagmInquire" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MagmInquire | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MagmInquire | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"agm","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"},{"@type":"ListItem","position":2,"name":"MagmInquire","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Collapse sidebar category &#x27;agm&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><span title="MagmAlloc" class="linkLabel_WmDU">MagmAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAllocResult"><span title="MagmAllocResult" class="linkLabel_WmDU">MagmAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><span title="MagmControl" class="linkLabel_WmDU">MagmControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmCopyResult"><span title="MagmCopyResult" class="linkLabel_WmDU">MagmCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><span title="MagmDefine" class="linkLabel_WmDU">MagmDefine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDraw"><span title="MagmDraw" class="linkLabel_WmDU">MagmDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><span title="MagmFind" class="linkLabel_WmDU">MagmFind</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFree"><span title="MagmFree" class="linkLabel_WmDU">MagmFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><span title="MagmGetResult" class="linkLabel_WmDU">MagmGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><span title="MagmInquire" class="linkLabel_WmDU">MagmInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmPreprocess"><span title="MagmPreprocess" class="linkLabel_WmDU">MagmPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmRestore"><span title="MagmRestore" class="linkLabel_WmDU">MagmRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmSave"><span title="MagmSave" class="linkLabel_WmDU">MagmSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmStream"><span title="MagmStream" class="linkLabel_WmDU">MagmStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><span title="MagmTrain" class="linkLabel_WmDU">MagmTrain</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span>agm</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MagmInquire</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MagmInquire</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire information about a specified AGM context, model, or result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT64 </span><span class="token function" style="color:#d73a49">MagmInquire</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    ContextOrResultId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 Index</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr          </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires about a setting of an AGM context, a model contained therein, or an AGM result buffer.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultid-in-ail_id"><code>ContextOrResultId</code> <em>(in, AIL_ID)</em><a href="#contextorresultid-in-ail_id" class="hash-link" aria-label="Direct link to contextorresultid-in-ail_id" title="Direct link to contextorresultid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the find or train AGM context or result buffer about which to inquire information.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="index-in-ail_int64"><code>Index</code> <em>(in, AIL_INT64)</em><a href="#index-in-ail_int64" class="hash-link" aria-label="Direct link to index-in-ail_int64" title="Direct link to index-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies that information will be inquired about an AGM context, an individual model, or an AGM result buffer. Set this parameter to one of the following values:</p>
+<p><em>For specifying a context, model, or result buffer</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default.</td></tr></tbody></table>
+<p>If an AGM context is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_CONTEXT</code></a>.</p>
+<p>If an AGM result buffer is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_GENERAL</code></a>. |
+| <code>M_AGM_MODEL_INDEX</code> | Inquires information about an individual model. |
+| <code>M_CONTEXT</code> | Inquires information about an AGM context. |
+| <code>M_GENERAL</code> | Inquires information about an AGM result buffer. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of information about which to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>MagmInquire</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-find-or-train-agm-context">For inquiring about a find or train AGM context<a href="#for-inquiring-about-a-find-or-train-agm-context" class="hash-link" aria-label="Direct link to For inquiring about a find or train AGM context" title="Direct link to For inquiring about a find or train AGM context" translate="no">​</a></h3>
+<p>To inquire information about a find or train AGM context, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>InquireType</code></a> parameter can be set to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>Index</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_CONTEXT</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DEFAULT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="agm-context-id"><code>AGM context ID</code><a href="#agm-context-id" class="hash-link" aria-label="Direct link to agm-context-id" title="Direct link to agm-context-id" translate="no">​</a></h3>
+<p>Specifies the identifier of a find or train AGM context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>MagmAlloc</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_modification_count"><code>M_MODIFICATION_COUNT</code><a href="#m_modification_count" class="hash-link" aria-label="Direct link to m_modification_count" title="Direct link to m_modification_count" translate="no">​</a></h4>
+<p>Inquires the current value of the modification counter. The modification counter is increased by one each time settings for the context are modified.  Although you cannot identify the modification counter&#x27;s contents, you can compare them throughout your application to know if the context has been altered. If the modification counter has changed you can, for example, prompt the user to save before closing the application.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the current value of the modification counter.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_models"><code>M_NUMBER_OF_MODELS</code><a href="#m_number_of_models" class="hash-link" aria-label="Direct link to m_number_of_models" title="Direct link to m_number_of_models" translate="no">​</a></h4>
+<p>Inquires the number of models in the AGM context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt;= Value &lt;= 1</code></td><td>Specifies the number of models.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system"><code>M_OWNER_SYSTEM</code><a href="#m_owner_system" class="hash-link" aria-label="Direct link to m_owner_system" title="Direct link to m_owner_system" translate="no">​</a></h4>
+<p>Inquires the identifier of the system on which the AGM context was allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT_HOST</code></td><td>Specifies the default Host system of the current Aurora Imaging Library application.</td></tr><tr><td><code>System identifier</code></td><td>Specifies a valid system identifier, previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysAlloc"><code>MsysAlloc</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_preprocessed"><code>M_PREPROCESSED</code><a href="#m_preprocessed" class="hash-link" aria-label="Direct link to m_preprocessed" title="Direct link to m_preprocessed" translate="no">​</a></h4>
+<p>Inquires whether the AGM context is preprocessed. The context must be preprocessed (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmPreprocess"><code>MagmPreprocess</code></a>) before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a>. After certain settings of the AGM context are changed with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>MagmControl</code></a>, a model is added or removed with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>MagmDefine</code></a>, or a composite-definition model is copied with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmCopyResult"><code>MagmCopyResult</code></a>, this inquire type will indicate that the context is no longer in its preprocessed state.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the context is not preprocessed.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the context is preprocessed.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-the-type-of-model-in-a-find-or-train-agm-context">For inquiring about the type of model in a find or train AGM context<a href="#for-inquiring-about-the-type-of-model-in-a-find-or-train-agm-context" class="hash-link" aria-label="Direct link to For inquiring about the type of model in a find or train AGM context" title="Direct link to For inquiring about the type of model in a find or train AGM context" translate="no">​</a></h3>
+<p>To inquire information about the type of model in a find or train AGM context, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>InquireType</code></a> parameter can be set to the following value. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>Index</code></a> parameter to the index of a specific model, using <strong>M_AGM_MODEL_INDEX()</strong>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="agm-context-id-with-a-model"><code>AGM context ID with a model</code><a href="#agm-context-id-with-a-model" class="hash-link" aria-label="Direct link to agm-context-id-with-a-model" title="Direct link to agm-context-id-with-a-model" translate="no">​</a></h3>
+<p>Specifies a find or train AGM context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>MagmAlloc</code></a>. It must contain a model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_type"><code>M_MODEL_TYPE</code><a href="#m_model_type" class="hash-link" aria-label="Direct link to m_model_type" title="Direct link to m_model_type" translate="no">​</a></h4>
+<p>Inquires the type of the specified model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPOSITE</code></td><td>Specifies a composite-definition model.</td></tr><tr><td><code>M_SINGLE</code></td><td>Specifies a single-definition model.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-model-in-an-agm-context">For inquiring about a model in an AGM context<a href="#for-inquiring-about-a-model-in-an-agm-context" class="hash-link" aria-label="Direct link to For inquiring about a model in an AGM context" title="Direct link to For inquiring about a model in an AGM context" translate="no">​</a></h3>
+<p>To inquire information about a model in an AGM context, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>InquireType</code></a> parameter can be set to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>Index</code></a> parameter to the index of a specific model, using <strong>M_AGM_MODEL_INDEX()</strong>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="find-agm-context-id-with-a-composite-definition-model"><code>Find AGM context ID with a composite-definition model</code><a href="#find-agm-context-id-with-a-composite-definition-model" class="hash-link" aria-label="Direct link to find-agm-context-id-with-a-composite-definition-model" title="Direct link to find-agm-context-id-with-a-composite-definition-model" translate="no">​</a></h3>
+<p>Specifies a find AGM context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>MagmAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>M_GLOBAL_EDGE_BASED_FIND</code></a> and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> operations. It must contain a composite-definition model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_coverage"><code>M_ACCEPTANCE_COVERAGE</code><a href="#m_acceptance_coverage" class="hash-link" aria-label="Direct link to m_acceptance_coverage" title="Direct link to m_acceptance_coverage" translate="no">​</a></h4>
+<p>Inquires the minimum coverage score required for an occurrence to be considered a match.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_COVERAGE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_detection"><code>M_ACCEPTANCE_DETECTION</code><a href="#m_acceptance_detection" class="hash-link" aria-label="Direct link to m_acceptance_detection" title="Direct link to m_acceptance_detection" translate="no">​</a></h4>
+<p>Inquires the minimum detection score required for an occurrence to be considered a match.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_DETECTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_detection_from_train"><code>M_ACCEPTANCE_DETECTION_FROM_TRAIN</code><a href="#m_acceptance_detection_from_train" class="hash-link" aria-label="Direct link to m_acceptance_detection_from_train" title="Direct link to m_acceptance_detection_from_train" translate="no">​</a></h4>
+<p>Inquires the minimum detection score required for an occurrence to be considered a match; this score was automatically determined during the training of the composite-definition model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code></td><td>Specifies the minimum acceptable detection score, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_detection_source"><code>M_ACCEPTANCE_DETECTION_SOURCE</code><a href="#m_acceptance_detection_source" class="hash-link" aria-label="Direct link to m_acceptance_detection_source" title="Direct link to m_acceptance_detection_source" translate="no">​</a></h4>
+<p>Inquires whether the trained acceptance level or a custom acceptance level is used for the detection score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_DETECTION_SOURCE</code></a>)</em></td><td></td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the value specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_ACCEPTANCE_DETECTION</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_fit"><code>M_ACCEPTANCE_FIT</code><a href="#m_acceptance_fit" class="hash-link" aria-label="Direct link to m_acceptance_fit" title="Direct link to m_acceptance_fit" translate="no">​</a></h4>
+<p>Inquires the minimum fit score required for an occurrence to be considered a match.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_FIT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_fit_overall"><code>M_ACCEPTANCE_FIT_OVERALL</code><a href="#m_acceptance_fit_overall" class="hash-link" aria-label="Direct link to m_acceptance_fit_overall" title="Direct link to m_acceptance_fit_overall" translate="no">​</a></h4>
+<p>Inquires the minimum overall fit score required for an occurrence to be considered a match.  This inquire type is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_MODEL_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_USER_IMAGE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_FIT_OVERALL</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_angle_source"><code>M_DETECTION_DELTA_ANGLE_SOURCE</code><a href="#m_detection_delta_angle_source" class="hash-link" aria-label="Direct link to m_detection_delta_angle_source" title="Direct link to m_detection_delta_angle_source" translate="no">​</a></h4>
+<p>Inquires whether to use the trained detection angle range or a custom detection angle range to limit the angle of detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_ANGLE_SOURCE</code></a>)</em></td><td></td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the values set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_neg_angle"><code>M_DETECTION_DELTA_NEG_ANGLE</code><a href="#m_detection_delta_neg_angle" class="hash-link" aria-label="Direct link to m_detection_delta_neg_angle" title="Direct link to m_detection_delta_neg_angle" translate="no">​</a></h4>
+<p>Inquires the lower limit of the detection angle range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_REF_ANGLE</code></a>). That is, <em>LowerLimit</em> = <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_REF_ANGLE</code></a>  - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_pos_angle"><code>M_DETECTION_DELTA_POS_ANGLE</code><a href="#m_detection_delta_pos_angle" class="hash-link" aria-label="Direct link to m_detection_delta_pos_angle" title="Direct link to m_detection_delta_pos_angle" translate="no">​</a></h4>
+<p>Inquires the upper limit of the detection angle range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_REF_ANGLE</code></a>). That is, <em>UpperLimit</em> = <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_REF_ANGLE</code></a>  + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_multi_angle_mode"><code>M_DETECTION_MULTI_ANGLE_MODE</code><a href="#m_detection_multi_angle_mode" class="hash-link" aria-label="Direct link to m_detection_multi_angle_mode" title="Direct link to m_detection_multi_angle_mode" translate="no">​</a></h4>
+<p>Inquires the mode with which to detect occurrences when searching at multiple angles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_MULTI_ANGLE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_ref_angle"><code>M_DETECTION_REF_ANGLE</code><a href="#m_detection_ref_angle" class="hash-link" aria-label="Direct link to m_detection_ref_angle" title="Direct link to m_detection_ref_angle" translate="no">​</a></h4>
+<p>Inquires the nominal search angle; this is the angle at which you expect to find the model&#x27;s reference axis in the target.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_step_angle"><code>M_DETECTION_STEP_ANGLE</code><a href="#m_detection_step_angle" class="hash-link" aria-label="Direct link to m_detection_step_angle" title="Direct link to m_detection_step_angle" translate="no">​</a></h4>
+<p>Inquires the step angle at which to search for occurrences of the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_STEP_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_empty_regions_mode"><code>M_EMPTY_REGIONS_MODE</code><a href="#m_empty_regions_mode" class="hash-link" aria-label="Direct link to m_empty_regions_mode" title="Direct link to m_empty_regions_mode" translate="no">​</a></h4>
+<p>Inquires whether the regions of the trained composite-definition model that do not contain edges are considered when searching for model occurrences. Note that you can set this in the train AGM context using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_EMPTY_REGIONS_MODE</code></a> before training; once the model is trained and copied to a find AGM context, you cannot change this setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_EMPTY_REGIONS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_mode"><code>M_FIT_MODE</code><a href="#m_fit_mode" class="hash-link" aria-label="Direct link to m_fit_mode" title="Direct link to m_fit_mode" translate="no">​</a></h4>
+<p>Inquires the mode of the fit operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_user_model"><code>M_HAS_USER_MODEL</code><a href="#m_has_user_model" class="hash-link" aria-label="Direct link to m_has_user_model" title="Direct link to m_has_user_model" translate="no">​</a></h4>
+<p>Inquires whether the model contains a separate image to use for the fit and coverage calculations when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_USER_IMAGE</code></a>.  For a find AGM context containing a trained composite-definition model, you can specify a model image buffer using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>MagmControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_IMAGE</code></a>. You can then set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a> to use this model image for the fit and coverage calculations. If a model image buffer was not specified, this inquire type will return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_FALSE</code></a>, and the trained composite-definition model will be used for these calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the model does not contain a separate image.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the model contains a separate image.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_accepted_overlap"><code>M_MAX_ACCEPTED_OVERLAP</code><a href="#m_max_accepted_overlap" class="hash-link" aria-label="Direct link to m_max_accepted_overlap" title="Direct link to m_max_accepted_overlap" translate="no">​</a></h4>
+<p>Inquires the maximum allowable overlap between found occurrences, as a percentage.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ACCEPTED_OVERLAP</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_association_distance"><code>M_MAX_ASSOCIATION_DISTANCE</code><a href="#m_max_association_distance" class="hash-link" aria-label="Direct link to m_max_association_distance" title="Direct link to m_max_association_distance" translate="no">​</a></h4>
+<p>Inquires the maximum distance that a model edgel can be from the nearest occurrence edgel for that edgel to count towards the regular fit operation and increase the coverage score. Note that the maximum association distance has no effect on the overall fit score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ASSOCIATION_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_precision"><code>M_MODEL_PRECISION</code><a href="#m_model_precision" class="hash-link" aria-label="Direct link to m_model_precision" title="Direct link to m_model_precision" translate="no">​</a></h4>
+<p>Inquires the percentage of the trained composite-definition model&#x27;s edgels to use when searching for occurrences. Note that you can set this in the train AGM context using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_MODEL_PRECISION</code></a> before training; once the model is trained and copied to a find AGM context, you cannot change this setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_PRECISION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_source"><code>M_MODEL_SOURCE</code><a href="#m_model_source" class="hash-link" aria-label="Direct link to m_model_source" title="Direct link to m_model_source" translate="no">​</a></h4>
+<p>Inquires whether the trained composite-definition model or a prototypical image of the model is used for the fit and coverage calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a>)</em></td><td></td></tr><tr><td><code>M_USER_IMAGE</code></td><td>Specifies to use the image set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_IMAGE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_perseverance_detection"><code>M_PERSEVERANCE_DETECTION</code><a href="#m_perseverance_detection" class="hash-link" aria-label="Direct link to m_perseverance_detection" title="Direct link to m_perseverance_detection" translate="no">​</a></h4>
+<p>Inquires the algorithm&#x27;s perseverance when searching for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PERSEVERANCE_DETECTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_x"><code>M_REFERENCE_X</code><a href="#m_reference_x" class="hash-link" aria-label="Direct link to m_reference_x" title="Direct link to m_reference_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the origin of the model&#x27;s reference axis, relative to the model origin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_REFERENCE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_y"><code>M_REFERENCE_Y</code><a href="#m_reference_y" class="hash-link" aria-label="Direct link to m_reference_y" title="Direct link to m_reference_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the origin of the model&#x27;s reference axis, relative to the model origin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_REFERENCE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x"><code>M_SIZE_X</code><a href="#m_size_x" class="hash-link" aria-label="Direct link to m_size_x" title="Direct link to m_size_x" translate="no">​</a></h4>
+<p>Inquires the width of the model. The width of the trained composite-definition model is the same width as the training images&#x27; rectangles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 6</code></td><td>Specifies the width of the model, in pixels.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y"><code>M_SIZE_Y</code><a href="#m_size_y" class="hash-link" aria-label="Direct link to m_size_y" title="Direct link to m_size_y" translate="no">​</a></h4>
+<p>Inquires the height of the model. The height of the trained composite-definition model is the same height as the training images&#x27; rectangles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 6</code></td><td>Specifies the height of the model, in pixels.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness"><code>M_SMOOTHNESS</code><a href="#m_smoothness" class="hash-link" aria-label="Direct link to m_smoothness" title="Direct link to m_smoothness" translate="no">​</a></h4>
+<p>Inquires the degree of smoothness (noise reduction) applied to the model image and target image(s) during the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SMOOTHNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness_from_train"><code>M_SMOOTHNESS_FROM_TRAIN</code><a href="#m_smoothness_from_train" class="hash-link" aria-label="Direct link to m_smoothness_from_train" title="Direct link to m_smoothness_from_train" translate="no">​</a></h4>
+<p>Inquires the degree of smoothness (noise reduction) applied to the training images during the edge extraction. Note that you can set this in the train AGM context using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_SMOOTHNESS</code></a> before training; once the model is trained and copied to a find AGM context, you cannot change this setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SMOOTHNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness_source"><code>M_SMOOTHNESS_SOURCE</code><a href="#m_smoothness_source" class="hash-link" aria-label="Direct link to m_smoothness_source" title="Direct link to m_smoothness_source" translate="no">​</a></h4>
+<p>Inquires whether the smoothness value set during training or a custom smoothness value is used for the degree of noise reduction applied to the model image and target image(s) during the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FROM_TRAIN</code></td><td>Specifies to use the smoothness value set during the training of the model.  This value was set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_SMOOTHNESS</code></a> in a train AGM context.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the smoothness value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_SMOOTHNESS</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sort_candidates_score"><code>M_SORT_CANDIDATES_SCORE</code><a href="#m_sort_candidates_score" class="hash-link" aria-label="Direct link to m_sort_candidates_score" title="Direct link to m_sort_candidates_score" translate="no">​</a></h4>
+<p>Inquires the type of score used to sort candidates.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SORT_CANDIDATES_SCORE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stable_edgels_mode"><code>M_STABLE_EDGELS_MODE</code><a href="#m_stable_edgels_mode" class="hash-link" aria-label="Direct link to m_stable_edgels_mode" title="Direct link to m_stable_edgels_mode" translate="no">​</a></h4>
+<p>Inquires whether only stable edges are used when searching for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STABLE_EDGELS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_x"><code>M_STEP_X</code><a href="#m_step_x" class="hash-link" aria-label="Direct link to m_step_x" title="Direct link to m_step_x" translate="no">​</a></h4>
+<p>Inquires the X step size of explored positions to search for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_y"><code>M_STEP_Y</code><a href="#m_step_y" class="hash-link" aria-label="Direct link to m_step_y" title="Direct link to m_step_y" translate="no">​</a></h4>
+<p>Inquires the Y step size of explored positions to search for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode"><code>M_THRESHOLD_MODE</code><a href="#m_threshold_mode" class="hash-link" aria-label="Direct link to m_threshold_mode" title="Direct link to m_threshold_mode" translate="no">​</a></h4>
+<p>Inquires the threshold mode of the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode_from_train"><code>M_THRESHOLD_MODE_FROM_TRAIN</code><a href="#m_threshold_mode_from_train" class="hash-link" aria-label="Direct link to m_threshold_mode_from_train" title="Direct link to m_threshold_mode_from_train" translate="no">​</a></h4>
+<p>Inquires the threshold mode of the edge extraction used during training.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode_source"><code>M_THRESHOLD_MODE_SOURCE</code><a href="#m_threshold_mode_source" class="hash-link" aria-label="Direct link to m_threshold_mode_source" title="Direct link to m_threshold_mode_source" translate="no">​</a></h4>
+<p>Inquires whether the threshold mode set during training or a custom threshold mode is used for the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FROM_TRAIN</code></td><td>Specifies to use the threshold mode set during the training of the model.  This value was set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_THRESHOLD_MODE</code></a> in a train AGM context.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the threshold mode set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_THRESHOLD_MODE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_detection_angle"><code>M_TRAIN_DETECTION_ANGLE</code><a href="#m_train_detection_angle" class="hash-link" aria-label="Direct link to m_train_detection_angle" title="Direct link to m_train_detection_angle" translate="no">​</a></h4>
+<p>Inquires whether using rotated labeled image regions (red and blue rectangles) to train the composite-definition model was enabled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the use of rotated labeled image regions was disabled.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the use of rotated labeled image regions was enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="find-agm-context-id-with-a-single-definition-model"><code>Find AGM context ID with a single-definition model</code><a href="#find-agm-context-id-with-a-single-definition-model" class="hash-link" aria-label="Direct link to find-agm-context-id-with-a-single-definition-model" title="Direct link to find-agm-context-id-with-a-single-definition-model" translate="no">​</a></h3>
+<p>Specifies a find AGM context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>MagmAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>M_GLOBAL_EDGE_BASED_FIND</code></a> and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> operations. It must contain a single-definition model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_coverage-1"><code>M_ACCEPTANCE_COVERAGE</code><a href="#m_acceptance_coverage-1" class="hash-link" aria-label="Direct link to m_acceptance_coverage-1" title="Direct link to m_acceptance_coverage-1" translate="no">​</a></h4>
+<p>Inquires the minimum coverage score required for an occurrence to be considered a match.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_COVERAGE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_detection-1"><code>M_ACCEPTANCE_DETECTION</code><a href="#m_acceptance_detection-1" class="hash-link" aria-label="Direct link to m_acceptance_detection-1" title="Direct link to m_acceptance_detection-1" translate="no">​</a></h4>
+<p>Inquires the minimum detection score required for an occurrence to be considered a match.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_DETECTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_fit-1"><code>M_ACCEPTANCE_FIT</code><a href="#m_acceptance_fit-1" class="hash-link" aria-label="Direct link to m_acceptance_fit-1" title="Direct link to m_acceptance_fit-1" translate="no">​</a></h4>
+<p>Inquires the minimum fit score required for an occurrence to be considered a match.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_FIT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_fit_overall-1"><code>M_ACCEPTANCE_FIT_OVERALL</code><a href="#m_acceptance_fit_overall-1" class="hash-link" aria-label="Direct link to m_acceptance_fit_overall-1" title="Direct link to m_acceptance_fit_overall-1" translate="no">​</a></h4>
+<p>Inquires the minimum overall fit score required for an occurrence to be considered a match.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_FIT_OVERALL</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_bottom"><code>M_BOX_MARGIN_BOTTOM</code><a href="#m_box_margin_bottom" class="hash-link" aria-label="Direct link to m_box_margin_bottom" title="Direct link to m_box_margin_bottom" translate="no">​</a></h4>
+<p>Inquires the margin at the bottom of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_BOX_MARGIN_BOTTOM</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_left"><code>M_BOX_MARGIN_LEFT</code><a href="#m_box_margin_left" class="hash-link" aria-label="Direct link to m_box_margin_left" title="Direct link to m_box_margin_left" translate="no">​</a></h4>
+<p>Inquires the margin at the left of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_BOX_MARGIN_LEFT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_right"><code>M_BOX_MARGIN_RIGHT</code><a href="#m_box_margin_right" class="hash-link" aria-label="Direct link to m_box_margin_right" title="Direct link to m_box_margin_right" translate="no">​</a></h4>
+<p>Inquires the margin at the right of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_BOX_MARGIN_RIGHT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_top"><code>M_BOX_MARGIN_TOP</code><a href="#m_box_margin_top" class="hash-link" aria-label="Direct link to m_box_margin_top" title="Direct link to m_box_margin_top" translate="no">​</a></h4>
+<p>Inquires the margin at the top of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_BOX_MARGIN_TOP</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_offset_x"><code>M_BOX_OFFSET_X</code><a href="#m_box_offset_x" class="hash-link" aria-label="Direct link to m_box_offset_x" title="Direct link to m_box_offset_x" translate="no">​</a></h4>
+<p>Inquires the X-offset of the top-left corner of the model box from the model origin, if the model was defined from a CAD DXF file.  For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a> models, the origin is the same as the one defined in the CAD DXF file.  The model box is defined by the bounding box of the model&#x27;s active edges plus the specified margins. You can inquire the margins using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_BOX_MARGIN_...</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_BOX_OFFSET_X</code></a> is updated when the margins that define the model box are changed.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-offset, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_offset_y"><code>M_BOX_OFFSET_Y</code><a href="#m_box_offset_y" class="hash-link" aria-label="Direct link to m_box_offset_y" title="Direct link to m_box_offset_y" translate="no">​</a></h4>
+<p>Inquires the Y-offset of the top-left corner of the model box from the model origin, if the model was defined from a CAD DXF file.  For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a> models, the origin is the same as the one defined in the CAD DXF file.  The model box is defined by the bounding box of the model&#x27;s active edges plus the specified margins. You can inquire the margins using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_BOX_MARGIN_...</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_BOX_OFFSET_Y</code></a> is updated when the margins that define the model box are changed.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-offset, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_size_x"><code>M_BOX_SIZE_X</code><a href="#m_box_size_x" class="hash-link" aria-label="Direct link to m_box_size_x" title="Direct link to m_box_size_x" translate="no">​</a></h4>
+<p>Inquires the size along the X-axis of the model box, if the model was defined from a CAD DXF file.  The model box is defined by the bounding box of the model&#x27;s active edges plus the specified margins. You can inquire the margins using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_BOX_MARGIN_...</code></a>.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-size, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_size_y"><code>M_BOX_SIZE_Y</code><a href="#m_box_size_y" class="hash-link" aria-label="Direct link to m_box_size_y" title="Direct link to m_box_size_y" translate="no">​</a></h4>
+<p>Inquires the size along the Y-axis of the model box, if the model was defined from a CAD DXF file.  The model box is defined by the bounding box of the model&#x27;s active edges plus the specified margins. You can inquire the margins using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_BOX_MARGIN_...</code></a>.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-size, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cad_y_axis"><code>M_CAD_Y_AXIS</code><a href="#m_cad_y_axis" class="hash-link" aria-label="Direct link to m_cad_y_axis" title="Direct link to m_cad_y_axis" translate="no">​</a></h4>
+<p>Inquires the direction of the Y-axis for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_CAD_Y_AXIS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_neg_angle-1"><code>M_DETECTION_DELTA_NEG_ANGLE</code><a href="#m_detection_delta_neg_angle-1" class="hash-link" aria-label="Direct link to m_detection_delta_neg_angle-1" title="Direct link to m_detection_delta_neg_angle-1" translate="no">​</a></h4>
+<p>Inquires the lower limit of the detection angle range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_REF_ANGLE</code></a>). That is, <em>LowerLimit</em> = <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_REF_ANGLE</code></a>  - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_pos_angle-1"><code>M_DETECTION_DELTA_POS_ANGLE</code><a href="#m_detection_delta_pos_angle-1" class="hash-link" aria-label="Direct link to m_detection_delta_pos_angle-1" title="Direct link to m_detection_delta_pos_angle-1" translate="no">​</a></h4>
+<p>Inquires the upper limit of the detection angle range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_REF_ANGLE</code></a>). That is, <em>UpperLimit</em> = <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_REF_ANGLE</code></a>  + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_multi_angle_mode-1"><code>M_DETECTION_MULTI_ANGLE_MODE</code><a href="#m_detection_multi_angle_mode-1" class="hash-link" aria-label="Direct link to m_detection_multi_angle_mode-1" title="Direct link to m_detection_multi_angle_mode-1" translate="no">​</a></h4>
+<p>Inquires the mode with which to detect occurrences when searching at multiple angles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_MULTI_ANGLE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_ref_angle-1"><code>M_DETECTION_REF_ANGLE</code><a href="#m_detection_ref_angle-1" class="hash-link" aria-label="Direct link to m_detection_ref_angle-1" title="Direct link to m_detection_ref_angle-1" translate="no">​</a></h4>
+<p>Inquires the nominal search angle; this is the angle at which you expect to find the model&#x27;s reference axis in the target.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_step_angle-1"><code>M_DETECTION_STEP_ANGLE</code><a href="#m_detection_step_angle-1" class="hash-link" aria-label="Direct link to m_detection_step_angle-1" title="Direct link to m_detection_step_angle-1" translate="no">​</a></h4>
+<p>Inquires the step angle at which to search for occurrences of the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_STEP_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edgel_angle_mode"><code>M_EDGEL_ANGLE_MODE</code><a href="#m_edgel_angle_mode" class="hash-link" aria-label="Direct link to m_edgel_angle_mode" title="Direct link to m_edgel_angle_mode" translate="no">​</a></h4>
+<p>Inquires whether edgel orientation, defined by a gradient angle, is considered when searching for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_EDGEL_ANGLE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edges_box_size_x"><code>M_EDGES_BOX_SIZE_X</code><a href="#m_edges_box_size_x" class="hash-link" aria-label="Direct link to m_edges_box_size_x" title="Direct link to m_edges_box_size_x" translate="no">​</a></h4>
+<p>Inquires the size along the X-axis of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-size, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edges_box_size_y"><code>M_EDGES_BOX_SIZE_Y</code><a href="#m_edges_box_size_y" class="hash-link" aria-label="Direct link to m_edges_box_size_y" title="Direct link to m_edges_box_size_y" translate="no">​</a></h4>
+<p>Inquires the size along the Y-axis of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-size, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_empty_regions_mode-1"><code>M_EMPTY_REGIONS_MODE</code><a href="#m_empty_regions_mode-1" class="hash-link" aria-label="Direct link to m_empty_regions_mode-1" title="Direct link to m_empty_regions_mode-1" translate="no">​</a></h4>
+<p>Inquires whether the regions of the model that do not contain edges are considered when searching for model occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_EMPTY_REGIONS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_level"><code>M_FIRST_LEVEL</code><a href="#m_first_level" class="hash-link" aria-label="Direct link to m_first_level" title="Direct link to m_first_level" translate="no">​</a></h4>
+<p>Inquires the resolution level for the initial stage of the search when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_PYRAMID_LEVELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIRST_LEVEL</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_level_used"><code>M_FIRST_LEVEL_USED</code><a href="#m_first_level_used" class="hash-link" aria-label="Direct link to m_first_level_used" title="Direct link to m_first_level_used" translate="no">​</a></h4>
+<p>Inquires the resolution level used for the initial stage of the search.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_PYRAMID_LEVELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_USER_DEFINED</code></a>, this value is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_FIRST_LEVEL</code></a>. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_PYRAMID_LEVELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_AUTO_CONTENT_BASED</code></a>, this value is the first level that was automatically determined during preprocessing.  Note, this value is only available after preprocessing.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt;= Value &lt;= 7</code></td><td>Specifies the resolution level used.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_mode-1"><code>M_FIT_MODE</code><a href="#m_fit_mode-1" class="hash-link" aria-label="Direct link to m_fit_mode-1" title="Direct link to m_fit_mode-1" translate="no">​</a></h4>
+<p>Inquires the mode of the fit operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_last_level"><code>M_LAST_LEVEL</code><a href="#m_last_level" class="hash-link" aria-label="Direct link to m_last_level" title="Direct link to m_last_level" translate="no">​</a></h4>
+<p>Inquires the resolution level for the final stage of the search when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_PYRAMID_LEVELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_LAST_LEVEL</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_last_level_used"><code>M_LAST_LEVEL_USED</code><a href="#m_last_level_used" class="hash-link" aria-label="Direct link to m_last_level_used" title="Direct link to m_last_level_used" translate="no">​</a></h4>
+<p>Inquires the resolution level used for the final stage of the search.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_PYRAMID_LEVELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_USER_DEFINED</code></a>, this value is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_LAST_LEVEL</code></a>. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_PYRAMID_LEVELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_AUTO_CONTENT_BASED</code></a>, this value is the last level that was automatically determined during preprocessing.  Note, this value is only available after preprocessing.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt;= Value &lt;= 7</code></td><td>Specifies the resolution level used.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_accepted_overlap-1"><code>M_MAX_ACCEPTED_OVERLAP</code><a href="#m_max_accepted_overlap-1" class="hash-link" aria-label="Direct link to m_max_accepted_overlap-1" title="Direct link to m_max_accepted_overlap-1" translate="no">​</a></h4>
+<p>Inquires the maximum allowable overlap between found occurrences, as a percentage.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ACCEPTED_OVERLAP</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_association_distance-1"><code>M_MAX_ASSOCIATION_DISTANCE</code><a href="#m_max_association_distance-1" class="hash-link" aria-label="Direct link to m_max_association_distance-1" title="Direct link to m_max_association_distance-1" translate="no">​</a></h4>
+<p>Inquires the maximum distance that a model edgel can be from the nearest occurrence edgel for that edgel to count towards the regular fit operation and increase the coverage score. Note that the maximum association distance has no effect on the overall fit score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ASSOCIATION_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_precision-1"><code>M_MODEL_PRECISION</code><a href="#m_model_precision-1" class="hash-link" aria-label="Direct link to m_model_precision-1" title="Direct link to m_model_precision-1" translate="no">​</a></h4>
+<p>Inquires the percentage of model edgels to use when searching for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_PRECISION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_perseverance_detection-1"><code>M_PERSEVERANCE_DETECTION</code><a href="#m_perseverance_detection-1" class="hash-link" aria-label="Direct link to m_perseverance_detection-1" title="Direct link to m_perseverance_detection-1" translate="no">​</a></h4>
+<p>Inquires the algorithm&#x27;s perseverance when searching for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PERSEVERANCE_DETECTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_scale"><code>M_PIXEL_SCALE</code><a href="#m_pixel_scale" class="hash-link" aria-label="Direct link to m_pixel_scale" title="Direct link to m_pixel_scale" translate="no">​</a></h4>
+<p>Inquires the pixel scale of the model, if the model was defined from a CAD DXF file.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PIXEL_SCALE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_polarity"><code>M_POLARITY</code><a href="#m_polarity" class="hash-link" aria-label="Direct link to m_polarity" title="Direct link to m_polarity" translate="no">​</a></h4>
+<p>Inquires the expected polarity of occurrences, compared to that of the model.  This inquire type is not available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_POLARITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pyramid_levels_mode"><code>M_PYRAMID_LEVELS_MODE</code><a href="#m_pyramid_levels_mode" class="hash-link" aria-label="Direct link to m_pyramid_levels_mode" title="Direct link to m_pyramid_levels_mode" translate="no">​</a></h4>
+<p>Inquires how to establish the resolution levels for the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PYRAMID_LEVELS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_x-1"><code>M_REFERENCE_X</code><a href="#m_reference_x-1" class="hash-link" aria-label="Direct link to m_reference_x-1" title="Direct link to m_reference_x-1" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the origin of the model&#x27;s reference axis, relative to the model origin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_REFERENCE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_y-1"><code>M_REFERENCE_Y</code><a href="#m_reference_y-1" class="hash-link" aria-label="Direct link to m_reference_y-1" title="Direct link to m_reference_y-1" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the origin of the model&#x27;s reference axis, relative to the model origin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_REFERENCE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness-1"><code>M_SMOOTHNESS</code><a href="#m_smoothness-1" class="hash-link" aria-label="Direct link to m_smoothness-1" title="Direct link to m_smoothness-1" translate="no">​</a></h4>
+<p>Inquires the degree of smoothness (noise reduction) applied to the model image and target image(s) during the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SMOOTHNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sort_candidates_score-1"><code>M_SORT_CANDIDATES_SCORE</code><a href="#m_sort_candidates_score-1" class="hash-link" aria-label="Direct link to m_sort_candidates_score-1" title="Direct link to m_sort_candidates_score-1" translate="no">​</a></h4>
+<p>Inquires the type of score used to sort candidates.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SORT_CANDIDATES_SCORE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stable_edgels_mode-1"><code>M_STABLE_EDGELS_MODE</code><a href="#m_stable_edgels_mode-1" class="hash-link" aria-label="Direct link to m_stable_edgels_mode-1" title="Direct link to m_stable_edgels_mode-1" translate="no">​</a></h4>
+<p>Inquires whether only stable edges are used when searching for occurrences.  This inquire type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_IMAGE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_IMAGE_REGION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STABLE_EDGELS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_x-1"><code>M_STEP_X</code><a href="#m_step_x-1" class="hash-link" aria-label="Direct link to m_step_x-1" title="Direct link to m_step_x-1" translate="no">​</a></h4>
+<p>Inquires the X step size of explored positions to search for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_y-1"><code>M_STEP_Y</code><a href="#m_step_y-1" class="hash-link" aria-label="Direct link to m_step_y-1" title="Direct link to m_step_y-1" translate="no">​</a></h4>
+<p>Inquires the Y step size of explored positions to search for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode-1"><code>M_THRESHOLD_MODE</code><a href="#m_threshold_mode-1" class="hash-link" aria-label="Direct link to m_threshold_mode-1" title="Direct link to m_threshold_mode-1" translate="no">​</a></h4>
+<p>Inquires the threshold mode of the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_use_magnitude_target"><code>M_USE_MAGNITUDE_TARGET</code><a href="#m_use_magnitude_target" class="hash-link" aria-label="Direct link to m_use_magnitude_target" title="Direct link to m_use_magnitude_target" translate="no">​</a></h4>
+<p>Inquires whether to use the gradient magnitude or to use extracted edges when searching for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USE_MAGNITUDE_TARGET</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="train-agm-context-id-with-a-composite-definition-model"><code>Train AGM context ID with a composite-definition model</code><a href="#train-agm-context-id-with-a-composite-definition-model" class="hash-link" aria-label="Direct link to train-agm-context-id-with-a-composite-definition-model" title="Direct link to train-agm-context-id-with-a-composite-definition-model" translate="no">​</a></h3>
+<p>Specifies a train AGM context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>MagmAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>M_GLOBAL_EDGE_BASED_TRAIN</code></a> and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> operations. It must contain a composite-definition model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_empty_regions_mode-2"><code>M_EMPTY_REGIONS_MODE</code><a href="#m_empty_regions_mode-2" class="hash-link" aria-label="Direct link to m_empty_regions_mode-2" title="Direct link to m_empty_regions_mode-2" translate="no">​</a></h4>
+<p>Inquires whether the regions of the model appearances that do not contain edges are considered when training the composite-definition model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_EMPTY_REGIONS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_precision-2"><code>M_MODEL_PRECISION</code><a href="#m_model_precision-2" class="hash-link" aria-label="Direct link to m_model_precision-2" title="Direct link to m_model_precision-2" translate="no">​</a></h4>
+<p>Inquires the percentage of the trained composite-definition model&#x27;s edgels to use when searching for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_PRECISION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_negative_labels_max_overlap"><code>M_NEGATIVE_LABELS_MAX_OVERLAP</code><a href="#m_negative_labels_max_overlap" class="hash-link" aria-label="Direct link to m_negative_labels_max_overlap" title="Direct link to m_negative_labels_max_overlap" translate="no">​</a></h4>
+<p>Inquires the maximum allowable overlap between two automatically generated negative (red) rectangles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_NEGATIVE_LABELS_MAX_OVERLAP</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_negative_labels_mode"><code>M_NEGATIVE_LABELS_MODE</code><a href="#m_negative_labels_mode" class="hash-link" aria-label="Direct link to m_negative_labels_mode" title="Direct link to m_negative_labels_mode" translate="no">​</a></h4>
+<p>Inquires whether to automatically label negative model locations in the training images or to use manually defined labels.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_NEGATIVE_LABELS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_negative_labels_positive_max_overlap"><code>M_NEGATIVE_LABELS_POSITIVE_MAX_OVERLAP</code><a href="#m_negative_labels_positive_max_overlap" class="hash-link" aria-label="Direct link to m_negative_labels_positive_max_overlap" title="Direct link to m_negative_labels_positive_max_overlap" translate="no">​</a></h4>
+<p>Inquires the maximum allowable overlap between an automatically generated negative (red) rectangle and a positive (blue) rectangle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_NEGATIVE_LABELS_POSITIVE_MAX_OVERLAP</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_realign_strength"><code>M_REALIGN_STRENGTH</code><a href="#m_realign_strength" class="hash-link" aria-label="Direct link to m_realign_strength" title="Direct link to m_realign_strength" translate="no">​</a></h4>
+<p>Inquires the strength with which to displace the blue rectangles, which define the positive model locations in the training images, to better align them.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_REALIGN_STRENGTH</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness-2"><code>M_SMOOTHNESS</code><a href="#m_smoothness-2" class="hash-link" aria-label="Direct link to m_smoothness-2" title="Direct link to m_smoothness-2" translate="no">​</a></h4>
+<p>Inquires the degree of smoothness (noise reduction) applied to the training images during the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SMOOTHNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode-2"><code>M_THRESHOLD_MODE</code><a href="#m_threshold_mode-2" class="hash-link" aria-label="Direct link to m_threshold_mode-2" title="Direct link to m_threshold_mode-2" translate="no">​</a></h4>
+<p>Inquires the threshold mode of the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_detection_angle-1"><code>M_TRAIN_DETECTION_ANGLE</code><a href="#m_train_detection_angle-1" class="hash-link" aria-label="Direct link to m_train_detection_angle-1" title="Direct link to m_train_detection_angle-1" translate="no">​</a></h4>
+<p>Inquires whether to train the composite-definition model using rotated labeled image regions (red and blue rectangles).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_TRAIN_DETECTION_ANGLE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_labels_noise_mode"><code>M_TRAIN_LABELS_NOISE_MODE</code><a href="#m_train_labels_noise_mode" class="hash-link" aria-label="Direct link to m_train_labels_noise_mode" title="Direct link to m_train_labels_noise_mode" translate="no">​</a></h4>
+<p>Inquires the mode with which to handle substandard labeled image regions when training the composite-definition model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_TRAIN_LABELS_NOISE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_use_magnitude_target-1"><code>M_USE_MAGNITUDE_TARGET</code><a href="#m_use_magnitude_target-1" class="hash-link" aria-label="Direct link to m_use_magnitude_target-1" title="Direct link to m_use_magnitude_target-1" translate="no">​</a></h4>
+<p>Inquires whether to use the gradient magnitude or to use extracted edges when training the composite-definition model and searching for occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USE_MAGNITUDE_TARGET</code></a>)</em></td><td></td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-find-or-train-agm-result-buffer">For inquiring about a find or train AGM result buffer<a href="#for-inquiring-about-a-find-or-train-agm-result-buffer" class="hash-link" aria-label="Direct link to For inquiring about a find or train AGM result buffer" title="Direct link to For inquiring about a find or train AGM result buffer" translate="no">​</a></h3>
+<p>To inquire information about a find or train AGM result buffer, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>InquireType</code></a> parameter can be set to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>Index</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_GENERAL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_DEFAULT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="agm-result-buffer-id"><code>AGM result buffer ID</code><a href="#agm-result-buffer-id" class="hash-link" aria-label="Direct link to agm-result-buffer-id" title="Direct link to agm-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies the identifier of a find or train AGM result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAllocResult"><code>MagmAllocResult</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_modification_count-1"><code>M_MODIFICATION_COUNT</code><a href="#m_modification_count-1" class="hash-link" aria-label="Direct link to m_modification_count-1" title="Direct link to m_modification_count-1" translate="no">​</a></h4>
+<p>Inquires the current value of the modification counter. The modification counter is increased by one each time that you call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a>.  Although you cannot identify the modification counter&#x27;s contents, you can compare them throughout your application to know if the result buffer has been altered.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_MODIFICATION_COUNT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system-1"><code>M_OWNER_SYSTEM</code><a href="#m_owner_system-1" class="hash-link" aria-label="Direct link to m_owner_system-1" title="Direct link to m_owner_system-1" translate="no">​</a></h4>
+<p>Inquires the identifier of the system on which the AGM result buffer was allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT_HOST</code></td><td>Specifies the default Host system of the current Aurora Imaging Library application.</td></tr><tr><td><code>System identifier</code></td><td>Specifies a valid system identifier, previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysAlloc"><code>MsysAlloc</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-about-the-default-value">Combination Constants — For inquiring about the default value<a href="#combination-constants--for-inquiring-about-the-default-value" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring about the default value" title="Direct link to Combination Constants — For inquiring about the default value" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get information about the default value of an inquire type, regardless of the current value of the inquire type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h4>
+<p>Inquires the default value of the specified inquire type.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_is_set_to_default"><code>M_IS_SET_TO_DEFAULT</code><a href="#m_is_set_to_default" class="hash-link" aria-label="Direct link to m_is_set_to_default" title="Direct link to m_is_set_to_default" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is set to its default value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not set to its default value.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is set to its default value.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--to-inquire-whether-an-inquire-type-is-supported">Combination Constants — To inquire whether an inquire type is supported<a href="#combination-constants--to-inquire-whether-an-inquire-type-is-supported" class="hash-link" aria-label="Direct link to Combination Constants — To inquire whether an inquire type is supported" title="Direct link to Combination Constants — To inquire whether an inquire type is supported" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether an inquire type is supported.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_default"><code>M_HAS_DEFAULT</code><a href="#m_has_default" class="hash-link" aria-label="Direct link to m_has_default" title="Direct link to m_has_default" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type has a default value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type does not have a default value.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type has a default value.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_supported"><code>M_SUPPORTED</code><a href="#m_supported" class="hash-link" aria-label="Direct link to m_supported" title="Direct link to m_supported" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is supported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not supported.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is supported.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--to-specify-the-data-type">Combination Constants — To specify the data type<a href="#combination-constants--to-specify-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — To specify the data type" title="Direct link to Combination Constants — To specify the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to a required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_float"><code>M_TYPE_AIL_FLOAT</code><a href="#m_type_ail_float" class="hash-link" aria-label="Direct link to m_type_ail_float" title="Direct link to m_type_ail_float" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_FLOAT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_id"><code>M_TYPE_AIL_ID</code><a href="#m_type_ail_id" class="hash-link" aria-label="Direct link to m_type_ail_id" title="Direct link to m_type_ail_id" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_ID</em>. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_TYPE_AIL_ID</code></a> should only be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_OWNER_SYSTEM</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT64</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT64</em>. If the requested information does not fit into an <em>AIL_INT64</em>, this function will return <code>M_NULL</code>or truncate the information.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MagmGetResult</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmPreprocess"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MagmPreprocess</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#index-in-ail_int64" class="table-of-contents__link toc-highlight"><code>Index</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-about-a-find-or-train-agm-context" class="table-of-contents__link toc-highlight">For inquiring about a find or train AGM context</a></li><li><a href="#agm-context-id" class="table-of-contents__link toc-highlight"><code>AGM context ID</code></a></li><li><a href="#for-inquiring-about-the-type-of-model-in-a-find-or-train-agm-context" class="table-of-contents__link toc-highlight">For inquiring about the type of model in a find or train AGM context</a></li><li><a href="#agm-context-id-with-a-model" class="table-of-contents__link toc-highlight"><code>AGM context ID with a model</code></a></li><li><a href="#for-inquiring-about-a-model-in-an-agm-context" class="table-of-contents__link toc-highlight">For inquiring about a model in an AGM context</a></li><li><a href="#find-agm-context-id-with-a-composite-definition-model" class="table-of-contents__link toc-highlight"><code>Find AGM context ID with a composite-definition model</code></a></li><li><a href="#find-agm-context-id-with-a-single-definition-model" class="table-of-contents__link toc-highlight"><code>Find AGM context ID with a single-definition model</code></a></li><li><a href="#train-agm-context-id-with-a-composite-definition-model" class="table-of-contents__link toc-highlight"><code>Train AGM context ID with a composite-definition model</code></a></li><li><a href="#for-inquiring-about-a-find-or-train-agm-result-buffer" class="table-of-contents__link toc-highlight">For inquiring about a find or train AGM result buffer</a></li><li><a href="#agm-result-buffer-id" class="table-of-contents__link toc-highlight"><code>AGM result buffer ID</code></a></li><li><a href="#combination-constants--for-inquiring-about-the-default-value" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring about the default value</a></li><li><a href="#combination-constants--to-inquire-whether-an-inquire-type-is-supported" class="table-of-contents__link toc-highlight">Combination Constants — To inquire whether an inquire type is supported</a></li><li><a href="#combination-constants--to-specify-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — To specify the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

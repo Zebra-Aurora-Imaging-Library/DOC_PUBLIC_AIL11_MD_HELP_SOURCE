@@ -1,0 +1,1842 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/mod/MmodControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MmodControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MmodControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"mod","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"},{"@type":"ListItem","position":2,"name":"MmodControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Collapse sidebar category &#x27;mod&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><span title="MmodAlloc" class="linkLabel_WmDU">MmodAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><span title="MmodAllocResult" class="linkLabel_WmDU">MmodAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><span title="MmodControl" class="linkLabel_WmDU">MmodControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><span title="MmodDefine" class="linkLabel_WmDU">MmodDefine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefineFromFile"><span title="MmodDefineFromFile" class="linkLabel_WmDU">MmodDefineFromFile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDraw"><span title="MmodDraw" class="linkLabel_WmDU">MmodDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><span title="MmodFind" class="linkLabel_WmDU">MmodFind</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFree"><span title="MmodFree" class="linkLabel_WmDU">MmodFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><span title="MmodGetResult" class="linkLabel_WmDU">MmodGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><span title="MmodInquire" class="linkLabel_WmDU">MmodInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodMask"><span title="MmodMask" class="linkLabel_WmDU">MmodMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodPreprocess"><span title="MmodPreprocess" class="linkLabel_WmDU">MmodPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodRestore"><span title="MmodRestore" class="linkLabel_WmDU">MmodRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodSave"><span title="MmodSave" class="linkLabel_WmDU">MmodSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodStream"><span title="MmodStream" class="linkLabel_WmDU">MmodStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span>mod</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MmodControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MmodControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control a Model Finder context, individual model setting, or Model Finder result buffer setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MmodControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextOrResultId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT    Index</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function allows you to control a setting of a Model Finder context, one (or all) of the models contained therein, or a Model Finder result buffer. These settings control the execution of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a> operations. Most of the control type settings can be inquired using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>MmodInquire</code></a>.</p>
+<p>The units in which you should provide values (for example, position and width), depend on the model and context that you are using. In general, provide values as follows:</p>
+<ul>
+<li class="">For a non-synthetic model, provide values in the pixel coordinate system, even if the target is calibrated. The only exception is when specifying angles (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_REFERENCE_ANGLE</code></a>); in these cases, you must specify the angles in the relative coordinate system if the target is calibrated.</li>
+<li class="">For a synthetic model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> context, provide values in the user-defined units for the model; their relationship to pixels is defined using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_PIXEL_SCALE</code></a>. If the target is not calibrated, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_PIXEL_SCALE</code></a> is used for the match. If the target is calibrated, model units are used; note that these should be the same as the calibrated units. In a few cases, instead of providing values in model units, you must provide values in pixel units (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_...</code></a>); these cases are clearly indicated.</li>
+<li class="">For a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> context, provide values in model units, which in this case are the same as the target units. If the target is calibrated, the model&#x27;s settings will be interpreted in world units. If the target is not calibrated, the model&#x27;s settings will be interpreted in pixel units.</li>
+</ul>
+<p>For each model defined in your Model Finder context, you can restrict the region in which to find the reference position of the model (the search region) to a rectangular subsection of your target image; this is useful if you know that occurrences can only be found in one region of the target image. There are three methods to do so:</p>
+<ul>
+<li class="">You can manually define the search region using successive calls to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_POSITION_RANGE</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ENABLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_NEG_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_NEG_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_POS_X</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_POS_Y</code></a>. For models in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type Model Finder contexts, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_REGION</code></a> control type is also available, which allows you to set your rectangular search region at a non-zero angle.</li>
+<li class="">You can call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_POSITION_RANGE</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ENABLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_POSITION_FROM_GRAPHIC_LIST</code></a>, and the identifier of a 2D graphics list. The 2D graphics list must contain one graphic of type rectangle, and have its input units set to pixels; Aurora Imaging Library will use its position and dimensions to define the search region. Note that for models in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type Model Finder contexts, the rectangular graphic must be set with no angle, but for models in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type contexts, it can be set at any angle.</li>
+<li class="">For models in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type Model Finder contexts, you can call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a> directly with a target image buffer that is associated with a rectangular region of interest at any angle.</li>
+</ul>
+<p>Changing certain control type settings might require preprocessing of the Model Finder context again, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodPreprocess"><code>MmodPreprocess</code></a>. To know if the Model Finder context needs to be preprocessed, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>MmodInquire</code></a> with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_PREPROCESSED</code></a> inquire type.</p>
+<p>You can automatically define an image-type model that is based on specified control settings using this function with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_AUTO_DEFINE</code></a>. To have specified settings taken into account during model definition, you must allocate an empty image-type model using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>MmodDefine</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_AUTO_DEFINE</code></a>, set the appropriate control types using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a>, and then call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_AUTO_DEFINE</code></a>. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_AUTO_DEFINE</code></a> defines a unique model by searching the model source image for unique geometric features that match the settings specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a>. When the most suitable geometric features are found, the function automatically defines a model from those features. If none are found, no model is allocated and an error is reported. It can take several seconds to find the best model (or more for large or small images). To be useful, the model source image should be a typical target image; otherwise, the selected area for the model might never be present in the target image. For more information on defining an image-type model automatically, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C08_Geometric_Model_Finder/S05_Defining_and_adding_models_to_your_model_finder_context">Image-type models</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultid-out-ail_id"><code>ContextOrResultId</code> <em>(out, AIL_ID)</em><a href="#contextorresultid-out-ail_id" class="hash-link" aria-label="Direct link to contextorresultid-out-ail_id" title="Direct link to contextorresultid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the Model Finder context or Model Finder result buffer whose settings you want to modify. The Model Finder context or result buffer must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>MmodAlloc</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><code>MmodAllocResult</code></a>, respectively.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="index-in-ail_int"><code>Index</code> <em>(in, AIL_INT)</em><a href="#index-in-ail_int" class="hash-link" aria-label="Direct link to index-in-ail_int" title="Direct link to index-in-ail_int" translate="no">​</a></h3>
+<p>Specifies that the Model Finder context, an individual model, or a Model Finder result buffer is controlled. Set this parameter to one of the following values:</p>
+<p><em>For specifying a context, model, or result buffer</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default.</td></tr></tbody></table>
+<p>If a Model Finder context is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a>.</p>
+<p>If a Model Finder result buffer is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_GENERAL</code></a>. |
+| <code>M_ALL</code> | Applies the specified control setting to all models, if a Model Finder context is specified.</p>
+<p>All the models in the Model Finder context must support the specified control type, otherwise, an error is returned. |
+| <code>M_CONTEXT</code> | Controls a general setting of a specified Model Finder context, if one is specified. |
+| <code>M_GENERAL</code> | Controls a general setting of a Model Finder result buffer when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ContextOrResultId</code></a> is a result buffer. |
+| <code>0 &lt;= Value &lt; M_NUMBER_MODELS</code> | Specifies the index of the individual model to control, if a Model Finder context is specified.</p>
+<p>User labels cannot be used as indices; to retrieve the index of a model from its user label, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>MmodInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_INDEX_FROM_LABEL</code></a>. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the setting&#x27;s new value.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-the-context-and-models">For the context and models<a href="#for-the-context-and-models" class="hash-link" aria-label="Direct link to For the context and models" title="Direct link to For the context and models" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ControlValue</code></a> settings can be specified for both the Model Finder context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_CONTEXT</code></a>) and each individual model (or all models) in the Model Finder context:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number"><code>M_NUMBER</code><a href="#m_number" class="hash-link" aria-label="Direct link to m_number" title="Direct link to m_number" translate="no">​</a></h3>
+<p>Sets the number of occurrences for which to search.  For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_CONTEXT</code></a>, this control type sets the maximum number of all model occurrences for which to search in the target.  For a model, this control type sets the maximum number of occurrences of the specified model, for which to search in the target.  Once the number of occurrences for the context, with scores and target scores greater than or equal to their certainty levels, has been reached, the search will stop, regardless of whether the actual number set for any individual model has been found.  To further illustrate the relationship between the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_NUMBER</code></a> setting for the context and that of the individual models, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C08_Geometric_Model_Finder/S11_Customizing_search_settings">Expected number of occurrences</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default value.  For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_CONTEXT</code></a>, the default is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a>.  For a model, the default value is 1.</td></tr><tr><td><code>M_ALL</code></td><td>Specifies to find all occurrences.  For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_CONTEXT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a> finds all the occurrences specified for each model in the context.  For a model, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a> finds all the occurrences of the specified model.  Note that this setting can increase the search time; always set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_NUMBER</code></a> to a specific number whenever possible.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the number of occurrences.  For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_CONTEXT</code></a>, this value specifies the number of occurrences, for all models within the context, to find in the target.  For a model, this value specifies the maximum number of occurrences of the specified model to find in the target.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-the-context">For the context<a href="#for-the-context" class="hash-link" aria-label="Direct link to For the context" title="Direct link to For the context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ControlValue</code></a> settings can be specified for the Model Finder context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_CONTEXT</code></a>):</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_accuracy"><code>M_ACCURACY</code><a href="#m_accuracy" class="hash-link" aria-label="Direct link to m_accuracy" title="Direct link to m_accuracy" translate="no">​</a></h3>
+<p>Sets the accuracy with which to find occurrences. The precision achieved is dependent on the quality of the model and the target. In addition, positional accuracy is slightly affected by the setting of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SPEED</code></a>.  Note that lower accuracy can speed up the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a> operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code></td><td>Specifies high accuracy.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies low accuracy.</td></tr><tr><td><code>M_MEDIUM</code> <em>(default)</em></td><td>Specifies medium accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active_edgels"><code>M_ACTIVE_EDGELS</code><a href="#m_active_edgels" class="hash-link" aria-label="Direct link to m_active_edgels" title="Direct link to m_active_edgels" translate="no">​</a></h3>
+<p>Sets the degree to which Aurora Imaging Library processes edgels in the target (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a>) The target edgels that Aurora Imaging Library processes are considered active. By limiting the active edgels in the target, you can speed up the search. To draw the active edgels in the target, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDraw"><code>MmodDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDraw"><code>M_DRAW_ACTIVE_EDGELS</code></a>.  This control type is only supported for a geometric Model Finder context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>MmodAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the degree to which Aurora Imaging Library processes target edgels, as a percentage. Lower settings typically result in fewer active edgels in the target and faster searches, although accuracy can be compromised. Conversely, higher settings result in more active edgels in the target and higher accuracy, although searches can take longer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_aspect_ratio"><code>M_ASPECT_RATIO</code><a href="#m_aspect_ratio" class="hash-link" aria-label="Direct link to m_aspect_ratio" title="Direct link to m_aspect_ratio" translate="no">​</a></h3>
+<p>Sets the aspect ratio to apply to the target before starting the search. When the target is not calibrated, this control type allows you to quickly compensate for aspect ratio distortion in the target, typically a side effect of the sampling rate used by the frame grabber. When the target is calibrated, this control type is ignored.  This control type is mainly useful when dealing with synthetic models since it does not compensate for aspect ratio distortion in the model.  When performing the search, the nominal search aspect ratio is taken into account horizontally, adjusting the target pixel width to equal the pixel height. As such, results will be returned for this corrected target coordinate system. However, the results are converted to the original target coordinate system if you draw them using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDraw"><code>MmodDraw</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.5 &lt;= Value &lt;= 2.0</code> <em>(default)</em></td><td>Specifies the pixel width/pixel height of the target.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detail_level"><code>M_DETAIL_LEVEL</code><a href="#m_detail_level" class="hash-link" aria-label="Direct link to m_detail_level" title="Direct link to m_detail_level" translate="no">​</a></h3>
+<p>Sets the level of details to extract from model images and target images during edge extraction. The detail level determines what is considered an edge/background.  A higher detail level will include more edges than a lower detail level.  This setting is used when dealing with image-type models and/or image-type targets.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code></td><td>Specifies a high level of detail.</td></tr><tr><td><code>M_MEDIUM</code> <em>(default)</em></td><td>Specifies a medium level of detail.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies a very high level of detail.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edge_accuracy"><code>M_EDGE_ACCURACY</code><a href="#m_edge_accuracy" class="hash-link" aria-label="Direct link to m_edge_accuracy" title="Direct link to m_edge_accuracy" translate="no">​</a></h3>
+<p>Controls the edge accuracy to be used when calculating the edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code> <em>(default)</em></td><td>Specifies a high level of edge accuracy.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies a very high level of edge accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_level"><code>M_FIRST_LEVEL</code><a href="#m_first_level" class="hash-link" aria-label="Direct link to m_first_level" title="Direct link to m_first_level" translate="no">​</a></h3>
+<p>Sets the resolution level for the initial stage (lowest resolution) of the search.  Level 0 is the original target and each higher level is half the size (and resolution) of the previous one. If the specified level is not supported by the search algorithm, the highest possible level will be used.  A higher first level speeds up the initial search but might make it less reliable because the model might not retain enough distinctive features at a lower resolution.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_FIRST_LEVEL</code></a> is for advanced users of the Model Finder module. The default setting usually provides the best results for the search operation.  &gt; <strong>Note:</strong> Note that if you set a lower value for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_FIRST_LEVEL</code></a> than the one assigned to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_LAST_LEVEL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> will override your settings and automatically assign <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_FIRST_LEVEL</code></a> the same value as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_LAST_LEVEL</code></a>. This implies that only one resolution level will be used for the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies that the first resolution is determined automatically.</td></tr><tr><td><code>0 &lt;= Value &lt;= 7</code></td><td>Specifies the resolution level. Only integer values are accepted.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_last_level"><code>M_LAST_LEVEL</code><a href="#m_last_level" class="hash-link" aria-label="Direct link to m_last_level" title="Direct link to m_last_level" translate="no">​</a></h3>
+<p>Sets the resolution level for the final stage (the highest resolution) of the search.  Level 0 is the original target and each higher level is half the size (and resolution) of the previous one. If the specified level is not supported by the search algorithm, the highest possible level will be used.  A higher last level speeds up the initial search but might make it less reliable and less accurate because the model might not retain enough distinctive features at a low resolution.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_LAST_LEVEL</code></a> is for advanced users of the Model Finder module. The default setting usually provides the best results for the search operation.  &gt; <strong>Note:</strong> Note that if you set a higher value for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_LAST_LEVEL</code></a> than the one assigned to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_FIRST_LEVEL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> will override your settings and automatically assign <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_FIRST_LEVEL</code></a> the same value as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_LAST_LEVEL</code></a>. This implies that only one resolution level will be used for the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies that the last resolution is determined automatically.</td></tr><tr><td><code>0 &lt;= Value &lt;= 7</code></td><td>Specifies the resolution level. Only integer values are accepted.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_resolution_coarseness_level"><code>M_RESOLUTION_COARSENESS_LEVEL</code><a href="#m_resolution_coarseness_level" class="hash-link" aria-label="Direct link to m_resolution_coarseness_level" title="Direct link to m_resolution_coarseness_level" translate="no">​</a></h3>
+<p>Sets the resolution of edge approximation.  This control type is only valid for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> Model finder contexts.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the resolution. When set to 0.0, a very fine edge approximation is performed. When set to 100.0, a coarse edge approximation is performed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_target_edges"><code>M_SAVE_TARGET_EDGES</code><a href="#m_save_target_edges" class="hash-link" aria-label="Direct link to m_save_target_edges" title="Direct link to m_save_target_edges" translate="no">​</a></h3>
+<p>Sets whether to save the target edges in the result buffer. By enabling this control type, you can retrieve target chain information using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a> and you can draw target edges using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDraw"><code>MmodDraw</code></a>.  For an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of context, this control type must be enabled if you want to use the search results as a target for a subsequent search of a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that target edges cannot be saved.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that target edges can be saved.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_angle_range"><code>M_SEARCH_ANGLE_RANGE</code><a href="#m_search_angle_range" class="hash-link" aria-label="Direct link to m_search_angle_range" title="Direct link to m_search_angle_range" translate="no">​</a></h3>
+<p>Sets whether to perform calculations specific to angular-range search strategies.  Typically, to search for models within their specified angular range (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>-<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_NEG</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>+<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_POS</code></a>) in the target, calculations specific to angular-range search strategies should be enabled for the context. These calculations are not required to search for models at their nominal angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>). In addition, if you expect that the occurrences sought are close to their model&#x27;s nominal angle, you can try disabling these calculations to see if Model Finder can still find the required occurrences. Disabling these calculations might speed up the search depending on the model and the target.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_ANGLE_RANGE</code></a> must be enabled to search for rotation-invariant non-synthetic models (for example, an image-type model of a circle).  Also note that candidates can only be returned as occurrences if found within the angular range specified for their model. Therefore, whether you enable or disable the calculation, you can restrict which candidates are returned as occurrences by narrowing the angular range.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default value.  The default is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ENABLE</code></a> if the Model Finder context uses a general geometric search algorithm.  The default is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_DISABLE</code></a> if the Model Finder context uses a controlled geometric search algorithm.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that calculations specific to angular-range search strategies are disabled.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that calculations specific to angular-range search strategies are enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_position_range"><code>M_SEARCH_POSITION_RANGE</code><a href="#m_search_position_range" class="hash-link" aria-label="Direct link to m_search_position_range" title="Direct link to m_search_position_range" translate="no">​</a></h3>
+<p>Sets whether to perform calculations specific to position-range search strategies.  Typically, to search for models within their specified position range (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_NEG_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_POS_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_NEG_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_POS_Y</code></a>) in the target, calculations specific to position-range search strategies should be enabled for the context. These calculations are not required to search for models at their nominal position (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a>). In addition, if you expect that the occurrences sought are close to their model&#x27;s nominal position, you can try disabling these calculations to see if Model Finder can still find the required occurrences. Disabling these calculations might speed up the search depending on the model and the target.  Note that candidates can only be returned as occurrences if found within the position range specified for their model. Therefore, whether you enable or disable the calculations, you can restrict which candidates are returned as occurrences by narrowing the position range.  Finally, if these calculations are disabled and no nominal position is specified (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a>), no occurrences will be found and no errors will be returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that calculations specific to position-range search strategies are disabled.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that calculations specific to position-range search strategies are enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_scale_range"><code>M_SEARCH_SCALE_RANGE</code><a href="#m_search_scale_range" class="hash-link" aria-label="Direct link to m_search_scale_range" title="Direct link to m_search_scale_range" translate="no">​</a></h3>
+<p>Sets whether to perform calculations specific to scale-range search strategies.  Typically, to search for models within their specified scale range (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE</code></a>x <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE_MIN_FACTOR</code></a>) to (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE</code></a>x <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE_MAX_FACTOR</code></a>) in the target, calculations specific to scale-range search strategies should be enabled for the context. These calculations are not required to search for models at their nominal scale (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE</code></a>). In addition, if you expect that the occurrences sought are close to their model&#x27;s nominal scale, you can try disabling these calculations to see if Model Finder can still find the required occurrences. Disabling these calculations might speed up the search depending on the model and the target.  Note that candidates can only be returned as occurrences if found within the scale range specified for their model. Therefore, whether you enable or disable the calculation, you can restrict which candidates are returned as occurrences by narrowing the scale range.  This control type cannot be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ENABLE</code></a> if the Model Finder context is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that calculations specific to scale-range search strategies are disabled.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that calculations specific to scale-range search strategies are enabled.  Note that when these calculations are enabled, limiting the scale range to the minimum required generally decreases the search time.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_shared_edges"><code>M_SHARED_EDGES</code><a href="#m_shared_edges" class="hash-link" aria-label="Direct link to m_shared_edges" title="Direct link to m_shared_edges" translate="no">​</a></h3>
+<p>Sets whether to enable sharing of edges between occurrences.  This control type is not supported for a model defined in an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a>, an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a>, or an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a>type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to disable the sharing of edges. When disabled, edges that are part of more than one occurrence are considered as part of the occurrence with the greatest score only.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to enable the sharing of edges.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness"><code>M_SMOOTHNESS</code><a href="#m_smoothness" class="hash-link" aria-label="Direct link to m_smoothness" title="Direct link to m_smoothness" translate="no">​</a></h3>
+<p>Sets the degree of smoothness (noise reduction) applied to the model images and target images during the edge extraction.  This setting is only used when dealing with image-type models or using image-type targets.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the smoothness value applied to the images.  A setting of 0.0 indicates almost no noise reduction effect, while a setting of 100.0 indicates a very strong noise reduction effect.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_speed"><code>M_SPEED</code><a href="#m_speed" class="hash-link" aria-label="Direct link to m_speed" title="Direct link to m_speed" translate="no">​</a></h3>
+<p>Sets the algorithm&#x27;s search speed. Note that increasing the search speed can decrease the robustness and subpixel accuracy of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a> operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code></td><td>Specifies a high speed.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies a low speed.</td></tr><tr><td><code>M_MEDIUM</code> <em>(default)</em></td><td>Specifies a medium speed.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies a very high speed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stop_find"><code>M_STOP_FIND</code><a href="#m_stop_find" class="hash-link" aria-label="Direct link to m_stop_find" title="Direct link to m_stop_find" translate="no">​</a></h3>
+<p>Stops the current <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a> operation. You must call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_STOP_FIND</code></a> from another thread (typically of higher priority). The number of occurrences found at that point will be returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Implements the default behavior.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_target_caching"><code>M_TARGET_CACHING</code><a href="#m_target_caching" class="hash-link" aria-label="Direct link to m_target_caching" title="Direct link to m_target_caching" translate="no">​</a></h3>
+<p>Sets whether target caching is enabled. When target caching is enabled, the geometric representation of the target, generated by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a>, is kept in the result.  Subsequent calls to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a> can reuse the representation, if they use the same result buffer and target. This increases the speed of the searches.  Note that the geometric representation generated with a given Model Finder context might not be compatible with another context. In such a case, the cache will not be used.  Also note that this constant cannot be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ENABLE</code></a> if the Model Finder context is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to disable target caching. Each call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a> will generate the geometric representation of the target.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to enable target caching in the result.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_timeout"><code>M_TIMEOUT</code><a href="#m_timeout" class="hash-link" aria-label="Direct link to m_timeout" title="Direct link to m_timeout" translate="no">​</a></h3>
+<p>Sets the maximum search time for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a>, in msec. If a search times out, the number of occurrences found at that point will be returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies an infinite amount of search time.</td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the maximum search time, in msecs.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-one-or-all-models">For one or all models<a href="#for-one-or-all-models" class="hash-link" aria-label="Direct link to For one or all models" title="Direct link to For one or all models" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ControlValue</code></a> settings can be specified for each individual model or all models in the Model Finder context:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance"><code>M_ACCEPTANCE</code><a href="#m_acceptance" class="hash-link" aria-label="Direct link to m_acceptance" title="Direct link to m_acceptance" translate="no">​</a></h3>
+<p>Sets the acceptance level for the score. An occurrence will be returned only if the match score between the target and the model is greater than or equal to this level.  The score is a measure, as a percentage, of the presence and fit of the model&#x27;s active edges in the occurrence. Using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_FIT_ERROR_WEIGHTING_FACTOR</code></a>, you can specify how much the fit influences the score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies an acceptable score, as a percentage. 100% indicates that for every active edge in the model, a corresponding edge must be found in the occurrence with a perfect fit (generally hard to obtain).</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_target"><code>M_ACCEPTANCE_TARGET</code><a href="#m_acceptance_target" class="hash-link" aria-label="Direct link to m_acceptance_target" title="Direct link to m_acceptance_target" translate="no">​</a></h3>
+<p>Sets the acceptance level for the target score. An occurrence will be returned only if the target score between the target and the model is greater than or equal to this level.  The target score is a measure, as a percentage, of edges found in the occurrence that are not found in the original model, weighted by the deviation in position of the common edges. Using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_FIT_ERROR_WEIGHTING_FACTOR</code></a>, you can specify how much the fit influences the target score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies an acceptable target score, as a percentage. At 0.0%, any number of extra edges is tolerated (100% allows for no extra edges in the occurrence and the occurrence must have a perfect fit).</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle"><code>M_ANGLE</code><a href="#m_angle" class="hash-link" aria-label="Direct link to m_angle" title="Direct link to m_angle" translate="no">​</a></h3>
+<p>Sets the nominal search angle; this is the angle at which you expect to find the model&#x27;s reference axis (specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_REFERENCE_ANGLE</code></a>) in the target.  For a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context, the model&#x27;s reference axis is, by default, aligned with its principle axis (its width).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the nominal search angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_delta_neg"><code>M_ANGLE_DELTA_NEG</code><a href="#m_angle_delta_neg" class="hash-link" aria-label="Direct link to m_angle_delta_neg" title="Direct link to m_angle_delta_neg" translate="no">​</a></h3>
+<p>Sets the lower limit of the angular range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>). Occurrences with angles outside the angular-range cannot be returned as results.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 180.0</code> <em>(default)</em></td><td>Specifies the lower limit of the angular range, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_delta_pos"><code>M_ANGLE_DELTA_POS</code><a href="#m_angle_delta_pos" class="hash-link" aria-label="Direct link to m_angle_delta_pos" title="Direct link to m_angle_delta_pos" translate="no">​</a></h3>
+<p>Sets the upper limit of the angular range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>). Occurrences with angles outside the angular-range cannot be returned as results.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 180.0</code> <em>(default)</em></td><td>Specifies the upper limit of the angular range, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_multiple_range"><code>M_ANGLE_MULTIPLE_RANGE</code><a href="#m_angle_multiple_range" class="hash-link" aria-label="Direct link to m_angle_multiple_range" title="Direct link to m_angle_multiple_range" translate="no">​</a></h3>
+<p>Sets whether to search for occurrences in multiple angular ranges. This allows you to search for occurrences at their nominal angle and at an angle perpendicular to the nominal search angle. For a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of context, this also allows you to search for occurrences with opposite segment gradient directions (for example, along an edge of a chessboard grid row).  If you only want to search for occurrences at the nominal angle, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>, these calculations are not required.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that searching in multiple angular ranges is disabled.  This value is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</td></tr><tr><td><code>M_STEP_90</code></td><td>Specifies to search for models at angular ranges at 90 degree steps from the nominal search angle.  It specifies to search for models within the specified angular range (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>-<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_NEG</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>+<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_POS</code></a>), and also within the angular range at all 90 degree rotations of the specified angular range (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>+ 90 - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_NEG</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>+ 90 + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_POS</code></a>) in the target.</td></tr><tr><td><code>M_STEP_180</code> <em>(default)</em></td><td>Specifies to search for models at a 180 degree step.  It specifies to search for models within the specified angular range (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>-<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_NEG</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>+<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_POS</code></a>), and also within the angular range at a 180 degree rotation of the specified angular range ( <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>+ 180 - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_NEG</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>+ 180 + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_DELTA_POS</code></a>) in the target.  Note that a rectangle occurrence found at an angle of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>, and a rectangle occurrence found at an angle of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a> + 180 degrees, are considered the same rectangle.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_region"><code>M_ANGLE_REGION</code><a href="#m_angle_region" class="hash-link" aria-label="Direct link to m_angle_region" title="Direct link to m_angle_region" translate="no">​</a></h3>
+<p>Sets the angle of the search region defined by the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_...</code></a> control types.  Setting the angle of the search region does not set or affect the nominal search angle in any way; it only limits the location in which the reference position of the model can be found. If you expect to find occurrences at an angle, you must also set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE</code></a>. Likewise, searching within a region at an angle has no effect on the angle of a found occurrence&#x27;s reference axis returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a>.  This control type is only valid for models in<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> contexts.  For models in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> contexts, you can alternatively set the search region at an angle by specifying<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_POSITION_FROM_GRAPHIC_LIST</code></a> and passing the identifier of a 2D graphics list containing a rotated rectangular graphic, or by passing a target image buffer associated with a rotated rectangular region of interest to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the angle of the search region, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_associated_calibration"><code>M_ASSOCIATED_CALIBRATION</code><a href="#m_associated_calibration" class="hash-link" aria-label="Direct link to m_associated_calibration" title="Direct link to m_associated_calibration" translate="no">​</a></h3>
+<p>Associates the specified camera calibration context with the specified model. Note that if you do not save, with the Model Finder context, the camera calibration contexts associated with the models (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodSave"><code>MmodSave</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodStream"><code>MmodStream</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodSave"><code>M_WITH_CALIBRATION</code></a>), you must re-associate each model with its camera calibration context after restoring the context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodRestore"><code>MmodRestore</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodStream"><code>MmodStream</code></a>).  In addition, for a synthetic model, you should use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ASSOCIATED_CALIBRATION</code></a> to associate the camera calibration context of a calibrated target with the model. Note that the camera calibration contexts associated with synthetic models are not saved or restored by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodSave"><code>MmodSave</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodRestore"><code>MmodRestore</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodStream"><code>MmodStream</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NULL</code> <em>(default)</em></td><td>Removes the association between the model and a camera calibration context.</td></tr><tr><td><code>Calibration context identifier</code></td><td>Specifies the camera calibration context to associate with the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_auto_define"><code>M_AUTO_DEFINE</code><a href="#m_auto_define" class="hash-link" aria-label="Direct link to m_auto_define" title="Direct link to m_auto_define" translate="no">​</a></h3>
+<p>Defines a unique model from a source image, automatically. This control type is only supported for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_AUTO_DEFINE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Source image identifier</code></td><td>Specifies the identifier of the image buffer (model source image) from which to extract the model. The image buffer must be a 1-band 8-bit unsigned buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_bottom"><code>M_BOX_MARGIN_BOTTOM</code><a href="#m_box_margin_bottom" class="hash-link" aria-label="Direct link to m_box_margin_bottom" title="Direct link to m_box_margin_bottom" translate="no">​</a></h3>
+<p>Sets a margin at the bottom of the bounding box of the model&#x27;s active edges.  The bounding box of the model&#x27;s active edges plus the specified margins define the size of the model box.  The model box is used to compute the target score and to set the different masks of the model. If you change this value, all of this model&#x27;s previous masks are discarded, since their size is no longer valid.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_BOX_MARGIN_BOTTOM</code></a> is only available for synthetic models.  This control type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these contexts, the bottom margin is always 10.0% of the height of the bounding box of the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the height of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_left"><code>M_BOX_MARGIN_LEFT</code><a href="#m_box_margin_left" class="hash-link" aria-label="Direct link to m_box_margin_left" title="Direct link to m_box_margin_left" translate="no">​</a></h3>
+<p>Sets a margin at the left side of the bounding box of the model&#x27;s active edges.  The bounding box of the model&#x27;s active edges plus the specified margins define the size of the model box.  The model box is used to compute the target score and to set the different masks of the model. If you change this value, all of this model&#x27;s previous masks are discarded, since their size is no longer valid.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_BOX_MARGIN_LEFT</code></a> is only available for synthetic models.  This control type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these contexts, the left margin is always 10.0% of the width of the bounding box of the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the width of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_right"><code>M_BOX_MARGIN_RIGHT</code><a href="#m_box_margin_right" class="hash-link" aria-label="Direct link to m_box_margin_right" title="Direct link to m_box_margin_right" translate="no">​</a></h3>
+<p>Sets a margin at the right side of the bounding box of the model&#x27;s active edges.  The bounding box of the model&#x27;s active edges plus the specified margins define the size of the model box.  The model box is used to compute the target score and to set the different masks of the model. If you change this value, all of this model&#x27;s previous masks are discarded, since their size is no longer valid.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_BOX_MARGIN_RIGHT</code></a>is only available for synthetic models.  This control type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these contexts, the right margin is always 10.0% of the width of the bounding box of the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the width of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_top"><code>M_BOX_MARGIN_TOP</code><a href="#m_box_margin_top" class="hash-link" aria-label="Direct link to m_box_margin_top" title="Direct link to m_box_margin_top" translate="no">​</a></h3>
+<p>Sets a margin at the top of the bounding box of the model&#x27;s active edges.  The bounding box of the model&#x27;s active edges plus the specified margins define the size of the model box.  The model box is used to compute the target score and to set the different masks of the model. If you change this value, all of this model&#x27;s previous masks are discarded, since their size is no longer valid.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_BOX_MARGIN_TOP</code></a> is only available for synthetic models.  This control type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these contexts, the top margin is always 10.0% of the height of the bounding box of the model&#x27;s active edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the height of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cad_y_axis"><code>M_CAD_Y_AXIS</code><a href="#m_cad_y_axis" class="hash-link" aria-label="Direct link to m_cad_y_axis" title="Direct link to m_cad_y_axis" translate="no">​</a></h3>
+<p>Sets the direction of the Y-axis for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefineFromFile"><code>M_DXF_FILE</code></a>.  When the model is added to the Model Finder context from a CAD DXF file, the model will retain its coordinate system (the origin and the axis). Most CAD DXF files are oriented so that the Y-axis is positive going up, whereas the coordinate system Aurora Imaging Library uses is oriented with the Y-axis positive going down. So if you take the edge coordinates of an object from a CAD DXF file and put them in an image, the imaged object will look flipped when compared to the original object. This is also the case for a model defined from a CAD DXF file. This means that, unless the object is symmetrical, the match will not be made.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value. The default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_FLIP</code></a> for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefineFromFile"><code>M_DXF_FILE</code></a>. If the model is not of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefineFromFile"><code>M_DXF_FILE</code></a>, this control type must remain set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_DEFAULT</code></a>, otherwise an error is generated.</td></tr><tr><td><code>M_FLIP</code></td><td>Specifies to flip the Y-axis for the model so that the Y-axis is positive going down.</td></tr><tr><td><code>M_NO_FLIP</code></td><td>Specifies not to flip the Y-axis for the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_certainty"><code>M_CERTAINTY</code><a href="#m_certainty" class="hash-link" aria-label="Direct link to m_certainty" title="Direct link to m_certainty" translate="no">​</a></h3>
+<p>Sets the certainty level for the score, as a percentage. If both the score and target scores are greater than or equal to their respective certainty levels, the occurrence is considered a match, without searching the rest of the target for better matches (provided the specified number of occurrences has been found).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the certainty level for the score, as a percentage.  If you set the certainty level too high (close to 100.0%), you slow down the search because you force the search algorithm to check the whole position range for the best possible match(es). A good certainty level is slightly lower than the expected score, so that the search can finish as soon as a match is found. However, if you set the certainty level too low, false matches might be found.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_certainty_target"><code>M_CERTAINTY_TARGET</code><a href="#m_certainty_target" class="hash-link" aria-label="Direct link to m_certainty_target" title="Direct link to m_certainty_target" translate="no">​</a></h3>
+<p>Sets the certainty level for the target score. If both the score and target scores are greater than or equal to their respective certainty levels, the occurrence is considered a match, without searching the rest of the target for better matches (provided the specified number of occurrences has been found).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the certainty level for the target score, as a percentage. See the possible values of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_CERTAINTY</code></a> for more details.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_corner_radius"><code>M_CORNER_RADIUS</code><a href="#m_corner_radius" class="hash-link" aria-label="Direct link to m_corner_radius" title="Direct link to m_corner_radius" translate="no">​</a></h3>
+<p>Sets the radius used to round all the corners of predefined-shaped models that have corners.  <em>[Image: DefineCornerRadius.png]</em>  This control type is only valid for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_RECTANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_SQUARE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_DIAMOND</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_TRIANGLE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_CROSS</code></a>. Attempting to use this value for any other model type will generate an error.  This control type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><code>M_SHAPE_...</code></a> type of Model Finder result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the radius, in model units. If you set the radius to 0.0, there will be no rounding.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coverage_max"><code>M_COVERAGE_MAX</code><a href="#m_coverage_max" class="hash-link" aria-label="Direct link to m_coverage_max" title="Direct link to m_coverage_max" translate="no">​</a></h3>
+<p>Specifies the maximum expected model coverage.  This control type is only supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the maximum expected model coverage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coverage_min"><code>M_COVERAGE_MIN</code><a href="#m_coverage_min" class="hash-link" aria-label="Direct link to m_coverage_min" title="Direct link to m_coverage_min" translate="no">​</a></h3>
+<p>Specifies the minimum expected model coverage.  This control type is only supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum expected model coverage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_deviation_tolerance"><code>M_DEVIATION_TOLERANCE</code><a href="#m_deviation_tolerance" class="hash-link" aria-label="Direct link to m_deviation_tolerance" title="Direct link to m_deviation_tolerance" translate="no">​</a></h3>
+<p>Sets the tolerance for finding deformed rectangles or segments, for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context, respectively, given the other specified Model Finder constraints. This tolerance sets the allowable deformation of rectangles and line segments such that rectangles or segments that are not perfectly straight, or rectangles or segments that are broken up, would still be identified as potential occurrences.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the tolerance as a percentage of the allowable deformation of a rectangle or segment, given the other Model Finder constraints.  A value of 0.0% means that the rectangular shape or segment being sought needs to be as close as possible to a perfect model. A value of 100.0% means that the algorithm has the maximum tolerance for finding deformed rectangles or segments. This could lead to finding distorted rectangular shapes or segments.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ellipse_tolerance_to_circle"><code>M_ELLIPSE_TOLERANCE_TO_CIRCLE</code><a href="#m_ellipse_tolerance_to_circle" class="hash-link" aria-label="Direct link to m_ellipse_tolerance_to_circle" title="Direct link to m_ellipse_tolerance_to_circle" translate="no">​</a></h3>
+<p>Sets the tolerance for approximating the aspect ratio of an ellipse occurrence to 1 (that is, reporting that the ellipse model matched a circle).  Internally, the full precision of the aspect ratio of an occurrence is used to find the best occurrences of an ellipse. When you retrieve the resulting aspect ratio and height of the ellipse occurrence(s), using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_ASPECT_RATIO</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_HEIGHT</code></a>, the values are adjusted if the aspect ratio is close to 1 to account for pixelization and noise. If close enough to 1, the aspect ratio is returned as 1 and the height is returned as being the same as the width. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ELLIPSE_TOLERANCE_TO_CIRCLE</code></a> to control how close to 1 the aspect ratio must be for it to be rounded to 1 and for the height to be adjusted.  Aurora Imaging Library applies the tolerance to the aspect ratio between the ellipse&#x27;s major and minor axis.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ELLIPSE_TOLERANCE_TO_CIRCLE</code></a> is only supported for a model defined in an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 0.5</code> <em>(default)</em></td><td>Specifies the tolerance applied to the ellipse occurrence&#x27;s aspect ratio. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ASPECT_RATIO</code></a>-1 is within the range (0,<em>Value</em>), then the ellipse is approximated as a circle.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_error_weighting_factor"><code>M_FIT_ERROR_WEIGHTING_FACTOR</code><a href="#m_fit_error_weighting_factor" class="hash-link" aria-label="Direct link to m_fit_error_weighting_factor" title="Direct link to m_fit_error_weighting_factor" translate="no">​</a></h3>
+<p>Sets the fit error weighting factor. This factor determines the contribution of the fit error in the score and target score calculation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the fit error weighting factor, as a percentage. The higher the percentage, the greater the contribution of the fit error in determining the score and target score.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_score_min"><code>M_FIT_SCORE_MIN</code><a href="#m_fit_score_min" class="hash-link" aria-label="Direct link to m_fit_score_min" title="Direct link to m_fit_score_min" translate="no">​</a></h3>
+<p>Sets the minimum expected occurrence fit score.  This control type is only supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum expected occurrence fit score.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_angle"><code>M_MIN_SEPARATION_ANGLE</code><a href="#m_min_separation_angle" class="hash-link" aria-label="Direct link to m_min_separation_angle" title="Direct link to m_min_separation_angle" translate="no">​</a></h3>
+<p>Sets the minimum angular separation required for two occurrences to be considered two distinct matches (two separate occurrences). Note, only one of the separation criteria needs to be met for occurrences to be considered distinct.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Disables the minimum angle separation criteria. When disabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_DISABLE</code></a>), the angle is not a factor when determining if occurrences are distinct.</td></tr><tr><td><code>0.0 &lt; Value &lt;= 180.0</code> <em>(default)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_aspect_ratio"><code>M_MIN_SEPARATION_ASPECT_RATIO</code><a href="#m_min_separation_aspect_ratio" class="hash-link" aria-label="Direct link to m_min_separation_aspect_ratio" title="Direct link to m_min_separation_aspect_ratio" translate="no">​</a></h3>
+<p>Specifies the minimum separation required in aspect ratios, for two occurrences to be considered distinct matches. This value is specified as an aspect ratio factor. Note, only one of the separation criteria needs to be met for occurrences to be considered distinct.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the minimum aspect ratio separation criteria. When disabled, the aspect ratio is not a factor when determining if occurrences are distinct.</td></tr><tr><td><code>1.0 &lt; Value &lt;= 4.0</code> <em>(default)</em></td><td>Specifies the criteria for minimum separation of aspect ratios.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_scale"><code>M_MIN_SEPARATION_SCALE</code><a href="#m_min_separation_scale" class="hash-link" aria-label="Direct link to m_min_separation_scale" title="Direct link to m_min_separation_scale" translate="no">​</a></h3>
+<p>Sets the minimum separation required in scale for two occurrences to be considered distinct matches (two separate occurrences). This value is specified as a scale factor. Note, only one of the separation criteria needs to be met for occurrences to be considered distinct.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the minimum scale separation criteria. When disabled, the scale is not a factor when determining if occurrences are distinct.</td></tr><tr><td><code>1.0 &lt; Value &lt;= 4.0</code> <em>(default)</em></td><td>Specifies the criteria for minimum separation in scale.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_x"><code>M_MIN_SEPARATION_X</code><a href="#m_min_separation_x" class="hash-link" aria-label="Direct link to m_min_separation_x" title="Direct link to m_min_separation_x" translate="no">​</a></h3>
+<p>Sets the minimum separation required along the X-axis for two occurrences to be considered distinct matches (two separate occurrences). Note, only one of the separation criteria needs to be met for occurrences to be considered distinct.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the minimum separation in X criteria. When disabled, separation along the X-axis is not a factor when determining if occurrences are distinct.</td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the minimum separation as a percentage of the model&#x27;s width at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE</code></a>. This value can be greater than 100%.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_separation_y"><code>M_MIN_SEPARATION_Y</code><a href="#m_min_separation_y" class="hash-link" aria-label="Direct link to m_min_separation_y" title="Direct link to m_min_separation_y" translate="no">​</a></h3>
+<p>Sets the minimum separation required along the Y-axis for two occurrences to be considered distinct matches (two separate occurrences). Note, only one of the separation criteria needs to be met for occurrences to be considered distinct.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the minimum separation in Y criteria. When disabled, separation along the Y-axis is not a factor when determining if occurrences are distinct.</td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the minimum separation as a percentage of the model&#x27;s height at <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE</code></a>. This value can be greater than 100%.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_side_coverage"><code>M_MIN_SIDE_COVERAGE</code><a href="#m_min_side_coverage" class="hash-link" aria-label="Direct link to m_min_side_coverage" title="Direct link to m_min_side_coverage" translate="no">​</a></h3>
+<p>Sets the minimum coverage on each of the sides of a rectangular model. Note that at least a portion of each side must be visible.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>1.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum side coverage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_aspect_ratio"><code>M_MODEL_ASPECT_RATIO</code><a href="#m_model_aspect_ratio" class="hash-link" aria-label="Direct link to m_model_aspect_ratio" title="Direct link to m_model_aspect_ratio" translate="no">​</a></h3>
+<p>Sets the nominal aspect ratio factor for the model. The nominal aspect ratio factor is inversely applied to the height of the model, leaving the model&#x27;s width constant.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context. For other types of Model Finder contexts, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ASPECT_RATIO</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIRCLE_ASPECT_RATIO</code></td><td>Specifies the minimum possible value for this control type.</td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the value of the nominal aspect ratio for the model.  &gt; <strong>Note:</strong> Note that the final aspect ratio must be greater than or equal to 1. That is to say that the width of the model divided by the height of the model, multiplied by the value set for this control type must be greater than or equal to 1.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_aspect_ratio_max_factor"><code>M_MODEL_ASPECT_RATIO_MAX_FACTOR</code><a href="#m_model_aspect_ratio_max_factor" class="hash-link" aria-label="Direct link to m_model_aspect_ratio_max_factor" title="Direct link to m_model_aspect_ratio_max_factor" translate="no">​</a></h3>
+<p>Sets the factor used to determine the upper limit (maximum permitted aspect ratio) of the model&#x27;s aspect ratio. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_MODEL_ASPECT_RATIO</code></a> is multiplied by this factor. Occurrences with aspect ratios outside of this range cannot be returned as results.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies that the maximum factor for the aspect ratio of a model is infinite.</td></tr><tr><td><code>Value &gt;= 1.0</code> <em>(default)</em></td><td>Specifies the factor that determines the maximum aspect ratio for a model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_aspect_ratio_min_factor"><code>M_MODEL_ASPECT_RATIO_MIN_FACTOR</code><a href="#m_model_aspect_ratio_min_factor" class="hash-link" aria-label="Direct link to m_model_aspect_ratio_min_factor" title="Direct link to m_model_aspect_ratio_min_factor" translate="no">​</a></h3>
+<p>Sets the factor used to determine the lower limit (minimum permitted aspect ratio) of the model&#x27;s aspect ratio. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_MODEL_ASPECT_RATIO</code></a> is multiplied by this factor. Occurrences with aspect ratios outside of this range cannot be returned as results.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CIRCLE_ASPECT_RATIO</code></td><td>Specifies the minimum factor for the aspect ratio of a model.</td></tr><tr><td><code>0.0 &lt; Value &lt;= 1.0</code> <em>(default)</em></td><td>Specifies the factor that determines the minimum aspect ratio for a model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_scale"><code>M_PIXEL_SCALE</code><a href="#m_pixel_scale" class="hash-link" aria-label="Direct link to m_pixel_scale" title="Direct link to m_pixel_scale" translate="no">​</a></h3>
+<p>Sets the pixel scale of the model, if it is a synthetic model. This value is the scale to apply to the model to go from model units to pixel units.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_PIXEL_SCALE</code></a> is used for the match if the target is not calibrated; if the target is calibrated, this value is not used for the match nor for the returned results. Regardless if calibrated, this value will affect <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>MmodInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodInquire"><code>M_ALLOC_SIZE_Y</code></a>, and it will also be used for draw operations.  This is only valid for synthetic models.  This control type is not supported for a model defined in an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context. For these types of contexts, model units are interpreted to be in the units of the target. If the target is calibrated, the units are interpreted to be in calibrated units. If the target is not, the units are interpreted to be in pixel units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default value of the pixel scale.  If it is a calibrated model, the default is 1/(pixel size in X of the associated camera calibration).  If it is not a calibrated model, the default is 1.0.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the pixel scale.  Note that if the model is not a synthetic model, the only valid value is 1.0. Any other value will generate an error.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_polarity"><code>M_POLARITY</code><a href="#m_polarity" class="hash-link" aria-label="Direct link to m_polarity" title="Direct link to m_polarity" translate="no">​</a></h3>
+<p>Sets the expected polarity of occurrences, compared to that of the model.  <em>[Image: PolaritiesCR.png]</em>  This control type is not supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.  For a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context, the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SAME</code></a>.  For a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context, the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SAME_OR_REVERSE</code></a>.</td></tr><tr><td><code>M_ANY</code></td><td>Specifies that the occurrences can be a mixture of polarities.</td></tr><tr><td><code>M_REVERSE</code></td><td>Specifies that the polarity of occurrences is the reverse of that of the model.</td></tr><tr><td><code>M_SAME</code></td><td>Specifies that the polarity of occurrences is the same as that of the model.</td></tr><tr><td><code>M_SAME_OR_REVERSE</code></td><td>Specifies that the polarity of occurrences can be either the same or the reverse of that of the model.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_delta_neg_x"><code>M_POSITION_DELTA_NEG_X</code><a href="#m_position_delta_neg_x" class="hash-link" aria-label="Direct link to m_position_delta_neg_x" title="Direct link to m_position_delta_neg_x" translate="no">​</a></h3>
+<p>Sets the valid position range in the negative X-direction, relative to the nominal position (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a>).  The position range limits the region in which the position of a model occurrence can be found; position coordinates which fall outside this region cannot be returned as results (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_POSITION_Y</code></a>). Note that the position returned for an occurrence is determined by the model&#x27;s reference axis position. The region defined by the position range can lie partially, or totally, outside the target.  Note that typically, to search for model occurrences within the position range, calculations specific to position-range search strategies should be enabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_POSITION_RANGE</code></a>) for the context. When enabled, using a small position range generally decreases the search time, depending on the number of details present in the target. Always set the position range to the minimum required when speed is a consideration.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_NEG_X</code></a> will be treated as if set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_INFINITE</code></a> regardless of its actual setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies the position range as the entire image plane in the negative X-direction. This means that any X-coordinate in the negative X-direction from the nominal position (even outside the target) can be returned as a result.</td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the position range&#x27;s negative X-offset, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the offset in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_delta_neg_y"><code>M_POSITION_DELTA_NEG_Y</code><a href="#m_position_delta_neg_y" class="hash-link" aria-label="Direct link to m_position_delta_neg_y" title="Direct link to m_position_delta_neg_y" translate="no">​</a></h3>
+<p>Sets the valid position range in the negative Y-direction, relative to the nominal position (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a>).  The position range limits the region in which the position of a model occurrence can be found; position coordinates which fall outside this region cannot be returned as results (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_POSITION_Y</code></a>). Note that the position returned for an occurrence is determined by the model&#x27;s reference axis position. The region defined by the position range can lie partially, or totally, outside the target.  Note that typically, to search for model occurrences within the position range, calculations specific to position-range search strategies should be enabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_POSITION_RANGE</code></a>) for the context. When enabled, using a small position range generally decreases the search time, depending on the number of details present in the target. Always set the position range to the minimum required when speed is a consideration.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_NEG_Y</code></a> will be treated as if set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_INFINITE</code></a> regardless of its actual setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies the position range as the entire image plane in the negative Y-direction. This means that any Y-coordinate in the negative Y-direction from the nominal position (even outside the target) can be returned as a result.</td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the position range&#x27;s negative Y-offset, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the offset in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_delta_pos_x"><code>M_POSITION_DELTA_POS_X</code><a href="#m_position_delta_pos_x" class="hash-link" aria-label="Direct link to m_position_delta_pos_x" title="Direct link to m_position_delta_pos_x" translate="no">​</a></h3>
+<p>Sets the valid position range in the positive X-direction, relative to the nominal position (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a>).  The position range limits the region in which the position of a model occurrence can be found; position coordinates which fall outside this region cannot be returned as results (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_POSITION_Y</code></a>). Note that the position returned for an occurrence is determined by the model&#x27;s reference axis position. The region defined by the position range can lie partially, or totally, outside the target.  Note that typically, to search for model occurrences within the position range, calculations specific to position-range search strategies should be enabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_POSITION_RANGE</code></a>) for the context. When enabled, using a small position range generally decreases the search time, depending on the number of details present in the target. Always set the position range to the minimum required when speed is a consideration.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_POS_X</code></a> will be treated as if set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_INFINITE</code></a> regardless of its actual setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies the position range as the entire image plane in the positive X-direction. This means that any X-coordinate in the positive X-direction from the nominal position (even outside the target) can be returned as a result.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the position range&#x27;s positive X-offset, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the offset in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_delta_pos_y"><code>M_POSITION_DELTA_POS_Y</code><a href="#m_position_delta_pos_y" class="hash-link" aria-label="Direct link to m_position_delta_pos_y" title="Direct link to m_position_delta_pos_y" translate="no">​</a></h3>
+<p>Sets the valid position range in the positive Y-direction, relative to the nominal position (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a>).  The position range limits the region in which the position of a model occurrence can be found; position coordinates which fall outside this region cannot be returned as results (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_POSITION_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_POSITION_Y</code></a>). Note that the position returned for an occurrence is determined by the model&#x27;s reference axis position. The region defined by the position range can lie partially, or totally, outside the target.  Note that typically, to search for model occurrences within the position range, calculations specific to position-range search strategies should be enabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_POSITION_RANGE</code></a>) for the context. When enabled, using a small position range generally decreases the search time, depending on the number of details present in the target. Always set the position range to the minimum required when speed is a consideration.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_POS_Y</code></a> will be treated as if set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_INFINITE</code></a> regardless of its actual setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies the position range as the entire image plane in the positive Y-direction. This means that any Y-coordinate in the positive Y-axis from the nominal position (even outside the target) can be returned as a result.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the position range&#x27;s positive Y-offset, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the offset in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_x"><code>M_POSITION_X</code><a href="#m_position_x" class="hash-link" aria-label="Direct link to m_position_x" title="Direct link to m_position_x" translate="no">​</a></h3>
+<p>Sets the nominal search position for the X-coordinate.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALL</code> <em>(default)</em></td><td>Specifies all X-coordinates.</td></tr><tr><td><code>Value</code></td><td>Specifies the nominal search position, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the position in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_y"><code>M_POSITION_Y</code><a href="#m_position_y" class="hash-link" aria-label="Direct link to m_position_y" title="Direct link to m_position_y" translate="no">​</a></h3>
+<p>Sets the nominal search position for the Y-coordinate.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALL</code> <em>(default)</em></td><td>Specifies all Y-coordinates.</td></tr><tr><td><code>Value</code></td><td>Specifies the nominal search position, in pixels, and can be specified with subpixel accuracy; for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, specify the position in the units of the target&#x27;s coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_angle"><code>M_REFERENCE_ANGLE</code><a href="#m_reference_angle" class="hash-link" aria-label="Direct link to m_reference_angle" title="Direct link to m_reference_angle" translate="no">​</a></h3>
+<p>Sets the angle of the reference axis for the model. Angle results are returned relative to this axis, rather than to the model source image axis. For example, you can define a model from a source image and then search the same image by passing the image buffer to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodFind"><code>MmodFind</code></a>. If you then call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>M_ANGLE</code></a> to retrieve the angle of the occurrence, which is identical in shape and orientation to the model, the returned angle of the occurrence will match <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_REFERENCE_ANGLE</code></a>.  By default, for an ellipse model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context, the reference axis is aligned with the principal axis of the model (the width).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_x"><code>M_REFERENCE_X</code><a href="#m_reference_x" class="hash-link" aria-label="Direct link to m_reference_x" title="Direct link to m_reference_x" translate="no">​</a></h3>
+<p>Sets the X-offset of the origin of the model&#x27;s reference axis, relative to the model origin. Position results return the X-coordinate of the model&#x27;s reference axis origin transformed at the model occurrence. Position results are relative to the target origin.  Note that the reference axis origin need not be in the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies that the default X-offset will be used.  For a synthetic model, the default value is 0.0. For other types of models, the default value is the center of the model.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-offset value. The value is in pixels, and can be specified with subpixel accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_y"><code>M_REFERENCE_Y</code><a href="#m_reference_y" class="hash-link" aria-label="Direct link to m_reference_y" title="Direct link to m_reference_y" translate="no">​</a></h3>
+<p>Sets the Y-offset of the origin of the model&#x27;s reference axis, relative to the model origin. Position results return the Y-coordinate of the model&#x27;s reference axis origin transformed at the model occurrence. Position results are relative to the target origin.  Note that the reference axis origin need not be in the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies that the default Y-offset will be used.  For a synthetic model, the default value is 0.0. For other types of models, the default value is the center of the model.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-offset value. The value is in pixels, and can be specified with subpixel accuracy.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sagitta_tolerance"><code>M_SAGITTA_TOLERANCE</code><a href="#m_sagitta_tolerance" class="hash-link" aria-label="Direct link to m_sagitta_tolerance" title="Direct link to m_sagitta_tolerance" translate="no">​</a></h3>
+<p>Sets the tolerance for finding deformed circles (allowable radii variation) for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context, given the other specified Model Finder constraints.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the tolerance as a percentage of the allowable radii variation given the other Model Finder constraints.  A value of 0.0% means that the circular shape being sought needs to be as close as possible to a perfect circle. A value of 100.0% means that the algorithm has the maximum tolerance for finding deformed circles. This could lead to finding elliptical shapes or circular type shapes with noise around the edges.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale"><code>M_SCALE</code><a href="#m_scale" class="hash-link" aria-label="Direct link to m_scale" title="Direct link to m_scale" translate="no">​</a></h3>
+<p>Sets the nominal search scale.  For a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context, scale calculations are taken with respect to the model&#x27;s width. The model&#x27;s height is not taken into account. Use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_MODEL_ASPECT_RATIO</code></a> to account for height differences. For example, if the model has a width of 4 and a height of 2 and the occurrence is expected to have a height of 2 and a width of 8, set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE</code></a> to 2 and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_MODEL_ASPECT_RATIO</code></a> to 2. Recall that the width of a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_RECTANGLE</code></a> type of Model Finder context, or the width of an occurrence of this type of model, is always measured along its principal axis.  For a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context, scale calculations are taken with respect to the model&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the value of the nominal search scale.  For a synthetic model, the nominal scale can be any positive value. For all other models, the nominal scale must be from 0.5 to 2.0.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_max_factor"><code>M_SCALE_MAX_FACTOR</code><a href="#m_scale_max_factor" class="hash-link" aria-label="Direct link to m_scale_max_factor" title="Direct link to m_scale_max_factor" translate="no">​</a></h3>
+<p>Sets the factor used to determine the upper limit (maximum permitted scale) of the scale range. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE</code></a> is multiplied by this factor. Occurrences with scales outside the scale-range cannot be returned as results.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies that the upper limit of the scale range is infinite.  &gt; <strong>Note:</strong> This control value is only supported for a model defined in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</td></tr><tr><td><code>1.0 &lt;= Value &lt;= 2.0</code> <em>(default)</em></td><td>Specifies the factor that determines the maximum scale of the occurrence for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context.</td></tr><tr><td><code>Value &gt;= 1.0</code></td><td>Specifies the factor that determines the maximum scale of the occurrence for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_min_factor"><code>M_SCALE_MIN_FACTOR</code><a href="#m_scale_min_factor" class="hash-link" aria-label="Direct link to m_scale_min_factor" title="Direct link to m_scale_min_factor" translate="no">​</a></h3>
+<p>Sets the factor used to determine the lower limit (minimum permitted scale) of the scale range. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SCALE</code></a> is multiplied by this factor. Occurrences with scales outside the scale-range cannot be returned as results.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 1.0</code> <em>(default)</em></td><td>Specifies the factor that determines the minimum scale of the occurrence for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</td></tr><tr><td><code>0.5 &lt;= Value &lt;= 1.0</code></td><td>Specifies the factor that determines the minimum scale of the occurrence for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> type of Model Finder context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_aspect_ratio_constraint"><code>M_SEARCH_ASPECT_RATIO_CONSTRAINT</code><a href="#m_search_aspect_ratio_constraint" class="hash-link" aria-label="Direct link to m_search_aspect_ratio_constraint" title="Direct link to m_search_aspect_ratio_constraint" translate="no">​</a></h3>
+<p>Sets whether to constrain candidates to the nearest bound of the aspect ratio range if the candidate is outside of the range. For example, if the maximum effective aspect ratio being sought is 2.0, and a candidate&#x27;s aspect ratio is 2.3, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_ASPECT_RATIO_CONSTRAINT</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ENABLE</code></a>, the candidate can be identified as an occurrence, with a reduced score, while if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_ASPECT_RATIO_CONSTRAINT</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_DISABLE</code></a>, it is not.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_ELLIPSE</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that for a candidate to be considered an occurrence, it must have an aspect ratio within the defined aspect ratio range. Using this control value will limit the number of occurrences returned, but they will all conform to the defined aspect ratio range.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to consider candidates with an aspect ratio that falls outside of the specified aspect ratio range, but constrain their fit to the closest bound of the aspect ratio range, and reduce their score accordingly. This allows for more potential occurrences to be returned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_position_from_graphic_list"><code>M_SEARCH_POSITION_FROM_GRAPHIC_LIST</code><a href="#m_search_position_from_graphic_list" class="hash-link" aria-label="Direct link to m_search_position_from_graphic_list" title="Direct link to m_search_position_from_graphic_list" translate="no">​</a></h3>
+<p>Specifies to use a search region defined from a 2D graphics list.  The 2D graphics list must contain a maximum of one graphic of type rectangle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraRect"><code>MgraRect</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraRectAngle"><code>MgraRectAngle</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInteractive"><code>MgraInteractive</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInteractive"><code>M_GRAPHIC_TYPE_RECT</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraRectFill"><code>MgraRectFill</code></a>) and have its input units set to pixels (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraControlList"><code>MgraControlList</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraControlList"><code>M_INPUT_UNITS</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraControlList"><code>M_PIXEL</code></a>).  For models in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_GEOMETRIC_CONTROLLED</code></a> contexts, the rectangular graphic in your 2D graphics list must be defined with an angle of 0 degrees. For models in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> contexts, the rectangular graphic in your 2D graphics list can have any angle.  Using this value is effectively equivalent to making multiple calls to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>MmodControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_NEG_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_NEG_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_POS_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_POSITION_DELTA_POS_Y</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ANGLE_REGION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>2D graphics list identifier</code></td><td>Specifies the identifier of the 2D graphics list containing the rectangular region that will be used as the model search region.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_segment_consistent_gradient"><code>M_SEGMENT_CONSISTENT_GRADIENT</code><a href="#m_segment_consistent_gradient" class="hash-link" aria-label="Direct link to m_segment_consistent_gradient" title="Direct link to m_segment_consistent_gradient" translate="no">​</a></h3>
+<p>Sets whether the gradients of the segment model occurrences need to be consistent.  This control type is only supported for a model in an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_SEGMENT</code></a> type of Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies that the segment model occurrences can have the same gradients or reverse gradients.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the gradients of the segment model occurrences must be consistent.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_user_label"><code>M_USER_LABEL</code><a href="#m_user_label" class="hash-link" aria-label="Direct link to m_user_label" title="Direct link to m_user_label" translate="no">​</a></h3>
+<p>Sets a unique user-defined label for the specified model. This label can be used as a means of identifying your model, independently from its index, in the Model Finder context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NO_LABEL</code> <em>(default)</em></td><td>Specifies that no user label is associated with the model.</td></tr><tr><td><code>Value</code></td><td>Specifies the user label of the model. The value must be an integer value that is not associated as a label with any other model in the Model Finder context. Since the same label cannot be associated with multiple models, you cannot pass a user label if the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>Index</code></a> parameter of this function is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_ALL</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-result-buffer">For a result buffer<a href="#for-a-result-buffer" class="hash-link" aria-label="Direct link to For a result buffer" title="Direct link to For a result buffer" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>ControlValue</code></a> settings can be specified for a Model Finder result buffer:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mod_define_compatible"><code>M_MOD_DEFINE_COMPATIBLE</code><a href="#m_mod_define_compatible" class="hash-link" aria-label="Direct link to m_mod_define_compatible" title="Direct link to m_mod_define_compatible" translate="no">​</a></h3>
+<p>Saves all the necessary information in the result buffer to be able to define a model from a result occurrence (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>MmodDefine</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><code>M_MOD_RESULT</code></a>).  This control type is not supported for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><code>M_SHAPE_...</code></a> type of Model Finder result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to save any information.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to save all the necessary information.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_output_units"><code>M_RESULT_OUTPUT_UNITS</code><a href="#m_result_output_units" class="hash-link" aria-label="Direct link to m_result_output_units" title="Direct link to m_result_output_units" translate="no">​</a></h3>
+<p>Sets whether to return results in pixels or world units. This essentially sets the output coordinate system to use. The setting of this control type will only affect functions within this module which return positional results. This control type can be changed at any time to return results in the required output units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_CALIBRATION</code> <em>(default)</em></td><td>Specifies that results are returned in world units if the result was calculated on an image associated with a camera calibration context; otherwise, specifies that results are returned in pixel units.</td></tr><tr><td><code>M_PIXEL</code></td><td>Specifies that results are returned in pixel units, with respect to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies that results are returned in world units, with respect to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodGetResult"><code>MmodGetResult</code></a> generates an error if the result was not calculated on a calibrated image.</td></tr></tbody></table>
+<p>This control type is not supported for an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</p>
+<p>DISTINCT OCCURRENCE = (Separation in X) OR (Separation in Y) OR (Separation in Angle) OR (Separation in Scale) OR (Separation in Aspect Ratio).</p>
+<p>Note that typically, to search for model occurrences within the angular range, calculations specific to angular-range search strategies should be enabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_ANGLE_RANGE</code></a>) for the context. When enabled, the angular range should be used to cover an expected variance in angle. Note that the actual angle of the occurrence does not affect search speed. If you need to search for a model at discrete angles only (for example, at intervals of 90 degrees), it is typically more efficient to define several models with different expected angles, than to search through the full angular range.</p>
+<p>Note that typically, to search for model occurrences within the scale range, calculations specific to scale-range search strategies should be enabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodControl"><code>M_SEARCH_SCALE_RANGE</code></a>) for the context. When enabled, the scale range should only cover the expected variance in scale to avoid slowing down the search and avoid finding unwanted occurrences. A search through a range of scales is performed in parallel, meaning that the actual scale of an occurrence has no bearing on which occurrence will be found first.</p>
+<p>This control type is not supported for a model defined in an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_CIRCLE</code></a> type of Model Finder context.</p>
+<p>This control type is not supported for a model defined in an<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAlloc"><code>M_SHAPE_...</code></a> type of Model Finder context.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodAllocResult"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MmodAllocResult</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/MmodDefine"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MmodDefine</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#index-in-ail_int" class="table-of-contents__link toc-highlight"><code>Index</code> <em>(in, AIL_INT)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-the-context-and-models" class="table-of-contents__link toc-highlight">For the context and models</a></li><li><a href="#m_number" class="table-of-contents__link toc-highlight"><code>M_NUMBER</code></a></li><li><a href="#for-the-context" class="table-of-contents__link toc-highlight">For the context</a></li><li><a href="#m_accuracy" class="table-of-contents__link toc-highlight"><code>M_ACCURACY</code></a></li><li><a href="#m_active_edgels" class="table-of-contents__link toc-highlight"><code>M_ACTIVE_EDGELS</code></a></li><li><a href="#m_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_ASPECT_RATIO</code></a></li><li><a href="#m_detail_level" class="table-of-contents__link toc-highlight"><code>M_DETAIL_LEVEL</code></a></li><li><a href="#m_edge_accuracy" class="table-of-contents__link toc-highlight"><code>M_EDGE_ACCURACY</code></a></li><li><a href="#m_first_level" class="table-of-contents__link toc-highlight"><code>M_FIRST_LEVEL</code></a></li><li><a href="#m_last_level" class="table-of-contents__link toc-highlight"><code>M_LAST_LEVEL</code></a></li><li><a href="#m_resolution_coarseness_level" class="table-of-contents__link toc-highlight"><code>M_RESOLUTION_COARSENESS_LEVEL</code></a></li><li><a href="#m_save_target_edges" class="table-of-contents__link toc-highlight"><code>M_SAVE_TARGET_EDGES</code></a></li><li><a href="#m_search_angle_range" class="table-of-contents__link toc-highlight"><code>M_SEARCH_ANGLE_RANGE</code></a></li><li><a href="#m_search_position_range" class="table-of-contents__link toc-highlight"><code>M_SEARCH_POSITION_RANGE</code></a></li><li><a href="#m_search_scale_range" class="table-of-contents__link toc-highlight"><code>M_SEARCH_SCALE_RANGE</code></a></li><li><a href="#m_shared_edges" class="table-of-contents__link toc-highlight"><code>M_SHARED_EDGES</code></a></li><li><a href="#m_smoothness" class="table-of-contents__link toc-highlight"><code>M_SMOOTHNESS</code></a></li><li><a href="#m_speed" class="table-of-contents__link toc-highlight"><code>M_SPEED</code></a></li><li><a href="#m_stop_find" class="table-of-contents__link toc-highlight"><code>M_STOP_FIND</code></a></li><li><a href="#m_target_caching" class="table-of-contents__link toc-highlight"><code>M_TARGET_CACHING</code></a></li><li><a href="#m_timeout" class="table-of-contents__link toc-highlight"><code>M_TIMEOUT</code></a></li><li><a href="#for-one-or-all-models" class="table-of-contents__link toc-highlight">For one or all models</a></li><li><a href="#m_acceptance" class="table-of-contents__link toc-highlight"><code>M_ACCEPTANCE</code></a></li><li><a href="#m_acceptance_target" class="table-of-contents__link toc-highlight"><code>M_ACCEPTANCE_TARGET</code></a></li><li><a href="#m_angle" class="table-of-contents__link toc-highlight"><code>M_ANGLE</code></a></li><li><a href="#m_angle_delta_neg" class="table-of-contents__link toc-highlight"><code>M_ANGLE_DELTA_NEG</code></a></li><li><a href="#m_angle_delta_pos" class="table-of-contents__link toc-highlight"><code>M_ANGLE_DELTA_POS</code></a></li><li><a href="#m_angle_multiple_range" class="table-of-contents__link toc-highlight"><code>M_ANGLE_MULTIPLE_RANGE</code></a></li><li><a href="#m_angle_region" class="table-of-contents__link toc-highlight"><code>M_ANGLE_REGION</code></a></li><li><a href="#m_associated_calibration" class="table-of-contents__link toc-highlight"><code>M_ASSOCIATED_CALIBRATION</code></a></li><li><a href="#m_auto_define" class="table-of-contents__link toc-highlight"><code>M_AUTO_DEFINE</code></a></li><li><a href="#m_box_margin_bottom" class="table-of-contents__link toc-highlight"><code>M_BOX_MARGIN_BOTTOM</code></a></li><li><a href="#m_box_margin_left" class="table-of-contents__link toc-highlight"><code>M_BOX_MARGIN_LEFT</code></a></li><li><a href="#m_box_margin_right" class="table-of-contents__link toc-highlight"><code>M_BOX_MARGIN_RIGHT</code></a></li><li><a href="#m_box_margin_top" class="table-of-contents__link toc-highlight"><code>M_BOX_MARGIN_TOP</code></a></li><li><a href="#m_cad_y_axis" class="table-of-contents__link toc-highlight"><code>M_CAD_Y_AXIS</code></a></li><li><a href="#m_certainty" class="table-of-contents__link toc-highlight"><code>M_CERTAINTY</code></a></li><li><a href="#m_certainty_target" class="table-of-contents__link toc-highlight"><code>M_CERTAINTY_TARGET</code></a></li><li><a href="#m_corner_radius" class="table-of-contents__link toc-highlight"><code>M_CORNER_RADIUS</code></a></li><li><a href="#m_coverage_max" class="table-of-contents__link toc-highlight"><code>M_COVERAGE_MAX</code></a></li><li><a href="#m_coverage_min" class="table-of-contents__link toc-highlight"><code>M_COVERAGE_MIN</code></a></li><li><a href="#m_deviation_tolerance" class="table-of-contents__link toc-highlight"><code>M_DEVIATION_TOLERANCE</code></a></li><li><a href="#m_ellipse_tolerance_to_circle" class="table-of-contents__link toc-highlight"><code>M_ELLIPSE_TOLERANCE_TO_CIRCLE</code></a></li><li><a href="#m_fit_error_weighting_factor" class="table-of-contents__link toc-highlight"><code>M_FIT_ERROR_WEIGHTING_FACTOR</code></a></li><li><a href="#m_fit_score_min" class="table-of-contents__link toc-highlight"><code>M_FIT_SCORE_MIN</code></a></li><li><a href="#m_min_separation_angle" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_ANGLE</code></a></li><li><a href="#m_min_separation_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_ASPECT_RATIO</code></a></li><li><a href="#m_min_separation_scale" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_SCALE</code></a></li><li><a href="#m_min_separation_x" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_X</code></a></li><li><a href="#m_min_separation_y" class="table-of-contents__link toc-highlight"><code>M_MIN_SEPARATION_Y</code></a></li><li><a href="#m_min_side_coverage" class="table-of-contents__link toc-highlight"><code>M_MIN_SIDE_COVERAGE</code></a></li><li><a href="#m_model_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_MODEL_ASPECT_RATIO</code></a></li><li><a href="#m_model_aspect_ratio_max_factor" class="table-of-contents__link toc-highlight"><code>M_MODEL_ASPECT_RATIO_MAX_FACTOR</code></a></li><li><a href="#m_model_aspect_ratio_min_factor" class="table-of-contents__link toc-highlight"><code>M_MODEL_ASPECT_RATIO_MIN_FACTOR</code></a></li><li><a href="#m_pixel_scale" class="table-of-contents__link toc-highlight"><code>M_PIXEL_SCALE</code></a></li><li><a href="#m_polarity" class="table-of-contents__link toc-highlight"><code>M_POLARITY</code></a></li><li><a href="#m_position_delta_neg_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_DELTA_NEG_X</code></a></li><li><a href="#m_position_delta_neg_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_DELTA_NEG_Y</code></a></li><li><a href="#m_position_delta_pos_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_DELTA_POS_X</code></a></li><li><a href="#m_position_delta_pos_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_DELTA_POS_Y</code></a></li><li><a href="#m_position_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_X</code></a></li><li><a href="#m_position_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_Y</code></a></li><li><a href="#m_reference_angle" class="table-of-contents__link toc-highlight"><code>M_REFERENCE_ANGLE</code></a></li><li><a href="#m_reference_x" class="table-of-contents__link toc-highlight"><code>M_REFERENCE_X</code></a></li><li><a href="#m_reference_y" class="table-of-contents__link toc-highlight"><code>M_REFERENCE_Y</code></a></li><li><a href="#m_sagitta_tolerance" class="table-of-contents__link toc-highlight"><code>M_SAGITTA_TOLERANCE</code></a></li><li><a href="#m_scale" class="table-of-contents__link toc-highlight"><code>M_SCALE</code></a></li><li><a href="#m_scale_max_factor" class="table-of-contents__link toc-highlight"><code>M_SCALE_MAX_FACTOR</code></a></li><li><a href="#m_scale_min_factor" class="table-of-contents__link toc-highlight"><code>M_SCALE_MIN_FACTOR</code></a></li><li><a href="#m_search_aspect_ratio_constraint" class="table-of-contents__link toc-highlight"><code>M_SEARCH_ASPECT_RATIO_CONSTRAINT</code></a></li><li><a href="#m_search_position_from_graphic_list" class="table-of-contents__link toc-highlight"><code>M_SEARCH_POSITION_FROM_GRAPHIC_LIST</code></a></li><li><a href="#m_segment_consistent_gradient" class="table-of-contents__link toc-highlight"><code>M_SEGMENT_CONSISTENT_GRADIENT</code></a></li><li><a href="#m_user_label" class="table-of-contents__link toc-highlight"><code>M_USER_LABEL</code></a></li><li><a href="#for-a-result-buffer" class="table-of-contents__link toc-highlight">For a result buffer</a></li><li><a href="#m_mod_define_compatible" class="table-of-contents__link toc-highlight"><code>M_MOD_DEFINE_COMPATIBLE</code></a></li><li><a href="#m_result_output_units" class="table-of-contents__link toc-highlight"><code>M_RESULT_OUTPUT_UNITS</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

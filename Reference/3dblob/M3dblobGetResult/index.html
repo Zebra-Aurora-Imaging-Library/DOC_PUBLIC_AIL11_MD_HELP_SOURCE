@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dblob/M3dblobGetResult" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dblobGetResult | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dblobGetResult | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dblob","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"},{"@type":"ListItem","position":2,"name":"M3dblobGetResult","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Collapse sidebar category &#x27;3dblob&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAlloc"><span title="M3dblobAlloc" class="linkLabel_WmDU">M3dblobAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAllocResult"><span title="M3dblobAllocResult" class="linkLabel_WmDU">M3dblobAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCalculate"><span title="M3dblobCalculate" class="linkLabel_WmDU">M3dblobCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCombine"><span title="M3dblobCombine" class="linkLabel_WmDU">M3dblobCombine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><span title="M3dblobControl" class="linkLabel_WmDU">M3dblobControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControlDraw"><span title="M3dblobControlDraw" class="linkLabel_WmDU">M3dblobControlDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCopyResult"><span title="M3dblobCopyResult" class="linkLabel_WmDU">M3dblobCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobDraw3d"><span title="M3dblobDraw3d" class="linkLabel_WmDU">M3dblobDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobExtract"><span title="M3dblobExtract" class="linkLabel_WmDU">M3dblobExtract</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobFree"><span title="M3dblobFree" class="linkLabel_WmDU">M3dblobFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><span title="M3dblobGetResult" class="linkLabel_WmDU">M3dblobGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobInquire"><span title="M3dblobInquire" class="linkLabel_WmDU">M3dblobInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobInquireDraw"><span title="M3dblobInquireDraw" class="linkLabel_WmDU">M3dblobInquireDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobRestore"><span title="M3dblobRestore" class="linkLabel_WmDU">M3dblobRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSave"><span title="M3dblobSave" class="linkLabel_WmDU">M3dblobSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><span title="M3dblobSegment" class="linkLabel_WmDU">M3dblobSegment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSelect"><span title="M3dblobSelect" class="linkLabel_WmDU">M3dblobSelect</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSort"><span title="M3dblobSort" class="linkLabel_WmDU">M3dblobSort</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobStream"><span title="M3dblobStream" class="linkLabel_WmDU">M3dblobStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span>3dblob</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dblobGetResult</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dblobGetResult</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Get calculated feature results for the specified blobs, from a 3D blob analysis result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_DOUBLE </span><span class="token function" style="color:#d73a49">M3dblobGetResult</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    Result3dblobId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 LabelOrIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ResultType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">      </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    ResultArrayPtr   </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function retrieves the results for a specified feature of one or all blobs, from the specified 3D blob analysis result buffer.</p>
+<p>The specified feature(s) must have already been calculated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCalculate"><code>M3dblobCalculate</code></a>. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> generates an error if you try to retrieve a result whose corresponding feature was not calculated. You can add the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_AVAILABLE</code></a> combination constant to a feature to determine if the result is available for retrieval.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="result3dblobid-in-ail_id"><code>Result3dblobId</code> <em>(in, AIL_ID)</em><a href="#result3dblobid-in-ail_id" class="hash-link" aria-label="Direct link to result3dblobid-in-ail_id" title="Direct link to result3dblobid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 3D blob analysis result buffer from which to get results.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="labelorindex-in-ail_int64"><code>LabelOrIndex</code> <em>(in, AIL_INT64)</em><a href="#labelorindex-in-ail_int64" class="hash-link" aria-label="Direct link to labelorindex-in-ail_int64" title="Direct link to labelorindex-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the label or index of the blob for which to get results, or specifies that you are getting general results related to all blobs. This parameter must be set to one of the following values:</p>
+<p><em>For specifying the blob label or index</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_BLOB_INDEX</code></td><td>Specifies the index of the blob listed in the specified result buffer.</td></tr><tr><td><code>M_BLOB_LABEL</code></td><td>Specifies the label of the blob listed in the specified result buffer.</td></tr></tbody></table>
+<p>Note that blob labels are not consecutive; use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_INDEX_VALUE</code></a> to establish if a blob with a given label exists. With the exception of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_INDEX_VALUE</code></a>, if you specify a blob label that does not exist, Aurora Imaging Library returns an error. |
+| <code>M_ALL_BLOBS</code> | Specifies to retrieve results from all blobs listed in the specified result buffer. |
+| <code>M_GENERAL</code> <em>(default)</em> | Specifies to retrieve general results from the 3D blob analysis result buffer. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resulttype-in-ail_int64"><code>ResultType</code> <em>(in, AIL_INT64)</em><a href="#resulttype-in-ail_int64" class="hash-link" aria-label="Direct link to resulttype-in-ail_int64" title="Direct link to resulttype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of result to retrieve.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultarrayptr-out-void"><code>ResultArrayPtr</code> *(out, <em>void)</em><a href="#resultarrayptr-out-void" class="hash-link" aria-label="Direct link to resultarrayptr-out-void" title="Direct link to resultarrayptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the results. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> function also returns the results, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-general-results-from-the-3d-blob-analysis-result-buffer">For retrieving general results from the 3D blob analysis result buffer<a href="#for-retrieving-general-results-from-the-3d-blob-analysis-result-buffer" class="hash-link" aria-label="Direct link to For retrieving general results from the 3D blob analysis result buffer" title="Direct link to For retrieving general results from the 3D blob analysis result buffer" translate="no">​</a></h3>
+<p>To retrieve a general result, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>ResultType</code></a> parameter should be set to one of the following values. In this case, you must set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>LabelOrIndex</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_GENERAL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_DEFAULT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_container_id"><code>M_CONTAINER_ID</code><a href="#m_container_id" class="hash-link" aria-label="Direct link to m_container_id" title="Direct link to m_container_id" translate="no">​</a></h3>
+<p>Retrieves the identifier of the container that was used for the segmentation. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> has not been called yet or if it was called with a label image instead of a container, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_NULL</code></a> is returned.  If this result is not null, post-segmentation functions that take a container (such as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCalculate"><code>M3dblobCalculate</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobExtract"><code>M3dblobExtract</code></a>) expect this container as input.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> has not been called or that it was called with a label image instead of a container.</td></tr><tr><td><code>Container identifier</code></td><td>Specifies the Aurora Imaging Library identifier of the container that was used for the segmentation.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_index_image_size_bit"><code>M_INDEX_IMAGE_SIZE_BIT</code><a href="#m_index_image_size_bit" class="hash-link" aria-label="Direct link to m_index_image_size_bit" title="Direct link to m_index_image_size_bit" translate="no">​</a></h3>
+<p>Retrieves the minimum bit size required for the index image, assuming an unsigned buffer.  Note that you can use this value to allocate an image buffer of an appropriate size for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCopyResult"><code>M3dblobCopyResult</code></a> to create an index image.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_label_image_size_bit"><code>M_LABEL_IMAGE_SIZE_BIT</code><a href="#m_label_image_size_bit" class="hash-link" aria-label="Direct link to m_label_image_size_bit" title="Direct link to m_label_image_size_bit" translate="no">​</a></h3>
+<p>Retrieves the minimum bit size required for the label image, assuming an unsigned buffer.  Note that you can use this value to allocate an image buffer of an appropriate size for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCopyResult"><code>M3dblobCopyResult</code></a> to create a label image.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_distance"><code>M_MAX_DISTANCE</code><a href="#m_max_distance" class="hash-link" aria-label="Direct link to m_max_distance" title="Direct link to m_max_distance" translate="no">​</a></h3>
+<p>Retrieves the maximum distance within which two points are considered neighbors, depending on the maximum distance mode. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MAX_DISTANCE_MODE</code></a> was not set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_USER_DEFINED</code></a>, this is the value that was computed during segmentation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INFINITE</code></td><td>Specifies no maximum distance.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the maximum distance value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_label_value"><code>M_MAX_LABEL_VALUE</code><a href="#m_max_label_value" class="hash-link" aria-label="Direct link to m_max_label_value" title="Direct link to m_max_label_value" translate="no">​</a></h3>
+<p>Retrieves the maximum label value of all blobs in the result buffer.  Label values for blobs are generated when a call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCalculate"><code>M3dblobCalculate</code></a> is made. The maximum label value is not necessarily the same as the total number of blobs (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_NUMBER</code></a>) because some label values might not be used. You can call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_LABEL_IMAGE_SIZE_BIT</code></a> to determine the bit depth required when creating a label image using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCopyResult"><code>M3dblobCopyResult</code></a>.  Note that if zero is returned, no blobs were found.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_distance_max"><code>M_NORMAL_DISTANCE_MAX</code><a href="#m_normal_distance_max" class="hash-link" aria-label="Direct link to m_normal_distance_max" title="Direct link to m_normal_distance_max" translate="no">​</a></h3>
+<p>Retrieves the maximum angle between normal vectors within which two points are considered neighbors. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NORMAL_DISTANCE_MAX_MODE</code></a> was not set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_USER_DEFINED</code></a>, this is the value that was computed during segmentation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INFINITE</code></td><td>Specifies no maximum angle.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the maximum angle value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number"><code>M_NUMBER</code><a href="#m_number" class="hash-link" aria-label="Direct link to m_number" title="Direct link to m_number" translate="no">​</a></h3>
+<p>Retrieves the number of blobs that are listed in the result buffer.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_x"><code>M_RESULT_IMAGE_SIZE_X</code><a href="#m_result_image_size_x" class="hash-link" aria-label="Direct link to m_result_image_size_x" title="Direct link to m_result_image_size_x" translate="no">​</a></h3>
+<p>Retrieves the size in X of the container or image used for the blob segmentation.  Note that you can use this value to allocate an image buffer of an appropriate size for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCopyResult"><code>M3dblobCopyResult</code></a> to create an index image, label image, or mask image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the size in X, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_y"><code>M_RESULT_IMAGE_SIZE_Y</code><a href="#m_result_image_size_y" class="hash-link" aria-label="Direct link to m_result_image_size_y" title="Direct link to m_result_image_size_y" translate="no">​</a></h3>
+<p>Retrieves the size in Y of the container or image used for the blob segmentation.  Note that you can use this value to allocate an image buffer of an appropriate size for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCopyResult"><code>M3dblobCopyResult</code></a> to create an index image, label image, or mask image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the size in Y, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status"><code>M_STATUS</code><a href="#m_status" class="hash-link" aria-label="Direct link to m_status" title="Direct link to m_status" translate="no">​</a></h3>
+<p>Retrieves the status of the segmentation operation, or why the segmentation failed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CONTAINER_NOT_ORGANIZED</code></td><td>Specifies that the segmentation failed because the source point cloud container was unorganized.</td></tr><tr><td><code>M_MISSING_COMPONENT_MESH_AIL</code></td><td>Specifies that the segmentation failed because the source point cloud container did not have an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_MESH_AIL</code></a> component.</td></tr><tr><td><code>M_MISSING_COMPONENT_NORMALS_AIL</code></td><td>Specifies that the segmentation failed because the source point cloud container did not have an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_NORMALS_AIL</code></a> component.</td></tr><tr><td><code>M_NOT_INITIALIZED</code></td><td>Specifies that the 3D blob analysis result buffer was not used in a call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a>, and contains no results.</td></tr><tr><td><code>M_STOPPED_BY_REQUEST</code></td><td>Specifies that the blob segmentation operation was stopped from another thread using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_STOP_SEGMENT</code></a>.</td></tr><tr><td><code>M_SUCCESS</code></td><td>Specifies that the blob segmentation operation completed successfully.</td></tr><tr><td><code>M_TIMEOUT_REACHED</code></td><td>Specifies that the blob segmentation operation took longer than the allowed value, specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_TIMEOUT</code></a>, and has stopped before completion.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_total_number_of_points"><code>M_TOTAL_NUMBER_OF_POINTS</code><a href="#m_total_number_of_points" class="hash-link" aria-label="Direct link to m_total_number_of_points" title="Direct link to m_total_number_of_points" translate="no">​</a></h3>
+<p>Retrieves the total number of points across all blobs.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-that-are-always-available-from-a-single-blob-or-all-blobs">For retrieving results that are always available from a single blob or all blobs<a href="#for-retrieving-results-that-are-always-available-from-a-single-blob-or-all-blobs" class="hash-link" aria-label="Direct link to For retrieving results that are always available from a single blob or all blobs" title="Direct link to For retrieving results that are always available from a single blob or all blobs" translate="no">​</a></h3>
+<p>To retrieve an always-available result of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> operation, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>ResultType</code></a> parameter should be set to one of the following values. In this case, you must set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>LabelOrIndex</code></a> to <strong>M_BLOB_INDEX()</strong>, <strong>M_BLOB_LABEL()</strong>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_ALL_BLOBS</code></a>. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>LabelOrIndex</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_ALL_BLOBS</code></a>, the results are returned in an array instead of a single value.  &gt; <strong>Note:</strong> These results are available after an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> operation, and remain available after an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCalculate"><code>M3dblobCalculate</code></a> operation that uses the results of the blob segmentation. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> has not yet been called on this result, you will receive an error.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_blob_touching_image_borders"><code>M_BLOB_TOUCHING_IMAGE_BORDERS</code><a href="#m_blob_touching_image_borders" class="hash-link" aria-label="Direct link to m_blob_touching_image_borders" title="Direct link to m_blob_touching_image_borders" translate="no">​</a></h3>
+<p>Retrieves information about which side(s) of the container or label image that the blob touches. This is either the side(s) of an organized point cloud container&#x27;s range component or a 2D label image. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_BLOB_TOUCHING_IMAGE_BORDERS</code></a> is available only when the object used for segmentation (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>ContainerOrLabelImageBufId</code></a>) is an organized point cloud or 2D label image.  Note that a combination of the values below can be returned. For example, if the blob touches the bottom-left, the function returns <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_BOTTOM</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_LEFT</code></a>. Bitwise operators must be used to verify the borders that the blob touches.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code></td><td>Specifies that no blob touches a side.</td></tr><tr><td><code>M_BOTTOM</code></td><td>Specifies that the blob touches the bottom of the container or label image.</td></tr><tr><td><code>M_LEFT</code></td><td>Specifies that the blob touches the left of the container or label image.</td></tr><tr><td><code>M_RIGHT</code></td><td>Specifies that the blob touches the right of the container or label image.</td></tr><tr><td><code>M_TOP</code></td><td>Specifies that the blob touches the top of the container or label image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_pixel_x"><code>M_FIRST_PIXEL_X</code><a href="#m_first_pixel_x" class="hash-link" aria-label="Direct link to m_first_pixel_x" title="Direct link to m_first_pixel_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the first pixel in the blob. This is the left-most pixel on the top-most line of the blob&#x27;s stored location in the container&#x27;s 2D grid organization, or it is the equivalent pixel in the label image. The value returned is the same as the first X-coordinate returned with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PIXEL_X</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PIXEL_PACKED</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_pixel_y"><code>M_FIRST_PIXEL_Y</code><a href="#m_first_pixel_y" class="hash-link" aria-label="Direct link to m_first_pixel_y" title="Direct link to m_first_pixel_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the first pixel in the blob. This is the left-most pixel on the top-most line of the blob&#x27;s stored location in the container&#x27;s 2D grid organization, or it is the equivalent pixel in the label image. The value returned is the same as the first Y-coordinate returned with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PIXEL_Y</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PIXEL_PACKED</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_index_value"><code>M_INDEX_VALUE</code><a href="#m_index_value" class="hash-link" aria-label="Direct link to m_index_value" title="Direct link to m_index_value" translate="no">​</a></h3>
+<p>Retrieves the index of the blob. You can use this result type to establish if a blob with a given label exists. If the label is valid, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_INDEX_VALUE</code></a> returns the corresponding index; if the label is not valid, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_INVALID</code></a> is returned instead of an Aurora Imaging Library error.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies an invalid index.</td></tr><tr><td><code>0 &lt;= Value &lt; M_NUMBER</code></td><td>Specifies the index of the blob.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_label_value"><code>M_LABEL_VALUE</code><a href="#m_label_value" class="hash-link" aria-label="Direct link to m_label_value" title="Direct link to m_label_value" translate="no">​</a></h3>
+<p>Retrieves the label of the blob.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0 &lt; Value &lt;= M_MAX_LABEL_VALUE</code></td><td>Specifies the label of the blob.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points"><code>M_NUMBER_OF_POINTS</code><a href="#m_number_of_points" class="hash-link" aria-label="Direct link to m_number_of_points" title="Direct link to m_number_of_points" translate="no">​</a></h3>
+<p>Retrieves the number of points in the blob.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_max_x"><code>M_PIXEL_MAX_X</code><a href="#m_pixel_max_x" class="hash-link" aria-label="Direct link to m_pixel_max_x" title="Direct link to m_pixel_max_x" translate="no">​</a></h3>
+<p>Retrieves the maximum X-coordinate of the blob&#x27;s stored location in the container&#x27;s 2D grid organization (or the equivalent coordinate in the label image), expressed in pixel units.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_max_y"><code>M_PIXEL_MAX_Y</code><a href="#m_pixel_max_y" class="hash-link" aria-label="Direct link to m_pixel_max_y" title="Direct link to m_pixel_max_y" translate="no">​</a></h3>
+<p>Retrieves the maximum Y-coordinate of the blob&#x27;s stored location in the container&#x27;s 2D grid organization (or the equivalent coordinate in the label image), expressed in pixel units.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_min_x"><code>M_PIXEL_MIN_X</code><a href="#m_pixel_min_x" class="hash-link" aria-label="Direct link to m_pixel_min_x" title="Direct link to m_pixel_min_x" translate="no">​</a></h3>
+<p>Retrieves the minimum X-coordinate of the blob&#x27;s stored location in the container&#x27;s 2D grid organization (or the equivalent coordinate in the label image), expressed in pixel units.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_min_y"><code>M_PIXEL_MIN_Y</code><a href="#m_pixel_min_y" class="hash-link" aria-label="Direct link to m_pixel_min_y" title="Direct link to m_pixel_min_y" translate="no">​</a></h3>
+<p>Retrieves the minimum Y-coordinate of the blob&#x27;s stored location in the container&#x27;s 2D grid organization (or the equivalent coordinate in the label image), expressed in pixel units.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_packed"><code>M_PIXEL_PACKED</code><a href="#m_pixel_packed" class="hash-link" aria-label="Direct link to m_pixel_packed" title="Direct link to m_pixel_packed" translate="no">​</a></h3>
+<p>Retrieves the packed X- and Y-coordinates of the blob&#x27;s stored location in the container&#x27;s 2D grid organization (or the equivalent coordinates in the label image). The coordinates are returned in an interleaved manner: <code>[X&lt;sub&gt;0&lt;/sub&gt;, Y&lt;sub&gt;0&lt;/sub&gt;, X&lt;sub&gt;1&lt;/sub&gt;, Y&lt;sub&gt;1&lt;/sub&gt;, ...]</code>. Note that the order is from left to right, top to bottom, starting with the blob&#x27;s top-left stored location in the container (or equivalent location in the label image).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_x"><code>M_PIXEL_X</code><a href="#m_pixel_x" class="hash-link" aria-label="Direct link to m_pixel_x" title="Direct link to m_pixel_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinates of the blob&#x27;s stored location in the container&#x27;s 2D grid organization (or the equivalent coordinates in the label image).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_y"><code>M_PIXEL_Y</code><a href="#m_pixel_y" class="hash-link" aria-label="Direct link to m_pixel_y" title="Direct link to m_pixel_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinates of the blob&#x27;s stored location in the container&#x27;s 2D grid organization (or the equivalent coordinates in the label image).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-that-are-sometimes-available-from-a-single-blob-or-all-blobs">For retrieving results that are sometimes available from a single blob or all blobs<a href="#for-retrieving-results-that-are-sometimes-available-from-a-single-blob-or-all-blobs" class="hash-link" aria-label="Direct link to For retrieving results that are sometimes available from a single blob or all blobs" title="Direct link to For retrieving results that are sometimes available from a single blob or all blobs" translate="no">​</a></h3>
+<p>To retrieve a sometimes-available result of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCalculate"><code>M3dblobCalculate</code></a> operation, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>ResultType</code></a> parameter should be set to one of the following values. In this case, you must set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>LabelOrIndex</code></a> to <strong>M_BLOB_INDEX()</strong>, <strong>M_BLOB_LABEL()</strong>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_ALL_BLOBS</code></a>. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>LabelOrIndex</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_ALL_BLOBS</code></a>, the results are returned in an array instead of a single value.  &gt; <strong>Note:</strong> If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> has not yet been called on this result, an error is thrown.</p>
+<hr>
+<h3><code>?</code></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-1"><code>?</code><a href="#-1" class="hash-link" aria-label="Direct link to -1" title="Direct link to -1" translate="no">​</a></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-2"><code>?</code><a href="#-2" class="hash-link" aria-label="Direct link to -2" title="Direct link to -2" translate="no">​</a></h3>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_average_normal_x"><code>M_AVERAGE_NORMAL_X</code><a href="#m_average_normal_x" class="hash-link" aria-label="Direct link to m_average_normal_x" title="Direct link to m_average_normal_x" translate="no">​</a></h3>
+<p>Retrieves the X-component of the blob&#x27;s average normal vector.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_average_normal_y"><code>M_AVERAGE_NORMAL_Y</code><a href="#m_average_normal_y" class="hash-link" aria-label="Direct link to m_average_normal_y" title="Direct link to m_average_normal_y" translate="no">​</a></h3>
+<p>Retrieves the Y-component of the blob&#x27;s average normal vector.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_average_normal_z"><code>M_AVERAGE_NORMAL_Z</code><a href="#m_average_normal_z" class="hash-link" aria-label="Direct link to m_average_normal_z" title="Direct link to m_average_normal_z" translate="no">​</a></h3>
+<p>Retrieves the Z-component of the blob&#x27;s average normal vector.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_center_x"><code>M_BOX_CENTER_X</code><a href="#m_box_center_x" class="hash-link" aria-label="Direct link to m_box_center_x" title="Direct link to m_box_center_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the center of the blob&#x27;s bounding box. The default bounding box is axis-aligned. To specify the PCA or semi-oriented box, use the respective combination value <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SEMI_ORIENTED_BOX</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_center_y"><code>M_BOX_CENTER_Y</code><a href="#m_box_center_y" class="hash-link" aria-label="Direct link to m_box_center_y" title="Direct link to m_box_center_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the center of the blob&#x27;s bounding box. The default bounding box is axis-aligned. To specify the PCA or semi-oriented box, use the respective combination value <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SEMI_ORIENTED_BOX</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_center_z"><code>M_BOX_CENTER_Z</code><a href="#m_box_center_z" class="hash-link" aria-label="Direct link to m_box_center_z" title="Direct link to m_box_center_z" translate="no">​</a></h3>
+<p>Retrieves the Z-coordinate of the center of the blob&#x27;s bounding box. The default bounding box is axis-aligned. To specify the PCA or semi-oriented box, use the respective combination value <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SEMI_ORIENTED_BOX</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_centroid_x"><code>M_CENTROID_X</code><a href="#m_centroid_x" class="hash-link" aria-label="Direct link to m_centroid_x" title="Direct link to m_centroid_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the centroid of the blob.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_centroid_y"><code>M_CENTROID_Y</code><a href="#m_centroid_y" class="hash-link" aria-label="Direct link to m_centroid_y" title="Direct link to m_centroid_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the centroid of the blob.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_centroid_z"><code>M_CENTROID_Z</code><a href="#m_centroid_z" class="hash-link" aria-label="Direct link to m_centroid_z" title="Direct link to m_centroid_z" translate="no">​</a></h3>
+<p>Retrieves the Z-coordinate of the centroid of the blob.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_covariance_matrix"><code>M_COVARIANCE_MATRIX</code><a href="#m_covariance_matrix" class="hash-link" aria-label="Direct link to m_covariance_matrix" title="Direct link to m_covariance_matrix" translate="no">​</a></h3>
+<p>Retrieves the 9 entries that make up the covariance matrix, in row-major order. The covariance matrix is defined as a 3x3 matrix of second order central moments:  |   |   |   | | --- | --- | --- | | xx | xy | xz | | xy | yy | yz | | xz | yz | zz |</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_eigenvalue_1"><code>M_EIGENVALUE_1</code><a href="#m_eigenvalue_1" class="hash-link" aria-label="Direct link to m_eigenvalue_1" title="Direct link to m_eigenvalue_1" translate="no">​</a></h3>
+<p>Retrieves the eigenvalue corresponding to the first principal axis. The first principal axis is the direction along which there is the most variance.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_eigenvalue_2"><code>M_EIGENVALUE_2</code><a href="#m_eigenvalue_2" class="hash-link" aria-label="Direct link to m_eigenvalue_2" title="Direct link to m_eigenvalue_2" translate="no">​</a></h3>
+<p>Retrieves the eigenvalue corresponding to the second principal axis. The second principal axis is the direction along which there is the second most variance, perpendicular to the first principal axis.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_eigenvalue_3"><code>M_EIGENVALUE_3</code><a href="#m_eigenvalue_3" class="hash-link" aria-label="Direct link to m_eigenvalue_3" title="Direct link to m_eigenvalue_3" translate="no">​</a></h3>
+<p>Retrieves the eigenvalue corresponding to the third principal axis. The third principal axis is perpendicular to the first and second principal axes.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_at_principal_axis_1"><code>M_FERET_AT_PRINCIPAL_AXIS_1</code><a href="#m_feret_at_principal_axis_1" class="hash-link" aria-label="Direct link to m_feret_at_principal_axis_1" title="Direct link to m_feret_at_principal_axis_1" translate="no">​</a></h3>
+<p>Retrieves the length of the Feret along the first principal axis. This result is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_X</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a>.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_at_principal_axis_2"><code>M_FERET_AT_PRINCIPAL_AXIS_2</code><a href="#m_feret_at_principal_axis_2" class="hash-link" aria-label="Direct link to m_feret_at_principal_axis_2" title="Direct link to m_feret_at_principal_axis_2" translate="no">​</a></h3>
+<p>Retrieves the length of the Feret along the second principal axis. This result is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_Y</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a>.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_at_principal_axis_3"><code>M_FERET_AT_PRINCIPAL_AXIS_3</code><a href="#m_feret_at_principal_axis_3" class="hash-link" aria-label="Direct link to m_feret_at_principal_axis_3" title="Direct link to m_feret_at_principal_axis_3" translate="no">​</a></h3>
+<p>Retrieves the length of the Feret along the third principal axis. This result is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_Z</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a>.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_general"><code>M_FERET_GENERAL</code><a href="#m_feret_general" class="hash-link" aria-label="Direct link to m_feret_general" title="Direct link to m_feret_general" translate="no">​</a></h3>
+<p>Retrieves the length of the Feret in the direction specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_GENERAL</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_DIRECTION_...</code></a>.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_GENERAL</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_max_diameter"><code>M_FERET_MAX_DIAMETER</code><a href="#m_feret_max_diameter" class="hash-link" aria-label="Direct link to m_feret_max_diameter" title="Direct link to m_feret_max_diameter" translate="no">​</a></h3>
+<p>Retrieves the length of the longest Feret in the blob.  &gt; <strong>Note:</strong> Note that, when you combine this result type with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_DIRECTION_...</code></a> combination value, the direction is accurate up to the angle specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_PRECISION</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_MAX_DIAMETER</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_min_diameter"><code>M_FERET_MIN_DIAMETER</code><a href="#m_feret_min_diameter" class="hash-link" aria-label="Direct link to m_feret_min_diameter" title="Direct link to m_feret_min_diameter" translate="no">​</a></h3>
+<p>Retrieves the length of the shortest Feret in the blob.  &gt; <strong>Note:</strong> Note that, when you combine this result type with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_DIRECTION_...</code></a> combination value, the direction is accurate up the angle specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_PRECISION</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_MIN_DIAMETER</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_semi_oriented_height"><code>M_FERET_SEMI_ORIENTED_HEIGHT</code><a href="#m_feret_semi_oriented_height" class="hash-link" aria-label="Direct link to m_feret_semi_oriented_height" title="Direct link to m_feret_semi_oriented_height" translate="no">​</a></h3>
+<p>Retrieves the height (smallest XY side) of the semi-oriented box. This result is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_Y</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SEMI_ORIENTED_BOX</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_semi_oriented_width"><code>M_FERET_SEMI_ORIENTED_WIDTH</code><a href="#m_feret_semi_oriented_width" class="hash-link" aria-label="Direct link to m_feret_semi_oriented_width" title="Direct link to m_feret_semi_oriented_width" translate="no">​</a></h3>
+<p>Retrieves the width (longest XY side) of the semi-oriented box. This result is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_X</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SEMI_ORIENTED_BOX</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_x"><code>M_FERET_X</code><a href="#m_feret_x" class="hash-link" aria-label="Direct link to m_feret_x" title="Direct link to m_feret_x" translate="no">​</a></h3>
+<p>Retrieves the length of the X-aligned Feret (same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_X</code></a>).  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_y"><code>M_FERET_Y</code><a href="#m_feret_y" class="hash-link" aria-label="Direct link to m_feret_y" title="Direct link to m_feret_y" translate="no">​</a></h3>
+<p>Retrieves the length of the Y-aligned Feret (same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_Y</code></a>).  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_z"><code>M_FERET_Z</code><a href="#m_feret_z" class="hash-link" aria-label="Direct link to m_feret_z" title="Direct link to m_feret_z" translate="no">​</a></h3>
+<p>Retrieves the length of the Z-aligned Feret (same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_Z</code></a>).  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_SEMI_ORIENTED_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_linearity"><code>M_LINEARITY</code><a href="#m_linearity" class="hash-link" aria-label="Direct link to m_linearity" title="Direct link to m_linearity" translate="no">​</a></h3>
+<p>Retrieves the degree to which the specified blob is linear, where 1.0 is a perfect line and 0.0 is a perfect sphere. This is equal to the following equation: <code>1 - sqrt([</code>M_EIGENVALUE_2<code>](../../Reference/3dblob/M3dblobGetResult.md)/[</code>M_EIGENVALUE_1<code>](../../Reference/3dblob/M3dblobGetResult.md))</code>.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_LINEARITY</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>). Otherwise, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> and set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENT_ORDER</code></a> to an order of at least 2.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 1.0</code></td><td>Specifies the degree to which the blob is linear.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_x"><code>M_MAX_X</code><a href="#m_max_x" class="hash-link" aria-label="Direct link to m_max_x" title="Direct link to m_max_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the maximum corner of the blob&#x27;s axis-aligned bounding box.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_y"><code>M_MAX_Y</code><a href="#m_max_y" class="hash-link" aria-label="Direct link to m_max_y" title="Direct link to m_max_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the maximum corner of the blob&#x27;s axis-aligned bounding box.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_z"><code>M_MAX_Z</code><a href="#m_max_z" class="hash-link" aria-label="Direct link to m_max_z" title="Direct link to m_max_z" translate="no">​</a></h3>
+<p>Retrieves the Z-coordinate of the maximum corner of the blob&#x27;s axis-aligned or semi-oriented bounding box.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_SEMI_ORIENTED_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_x"><code>M_MIN_X</code><a href="#m_min_x" class="hash-link" aria-label="Direct link to m_min_x" title="Direct link to m_min_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the minimum corner of the blob&#x27;s axis-aligned bounding box.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_y"><code>M_MIN_Y</code><a href="#m_min_y" class="hash-link" aria-label="Direct link to m_min_y" title="Direct link to m_min_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the minimum corner of the blob&#x27;s axis-aligned bounding box.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_z"><code>M_MIN_Z</code><a href="#m_min_z" class="hash-link" aria-label="Direct link to m_min_z" title="Direct link to m_min_z" translate="no">​</a></h3>
+<p>Retrieves the Z-coordinate of the minimum corner of the blob&#x27;s axis-aligned or semi-oriented bounding box.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_SEMI_ORIENTED_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nearest_blob"><code>M_NEAREST_BLOB</code><a href="#m_nearest_blob" class="hash-link" aria-label="Direct link to m_nearest_blob" title="Direct link to m_nearest_blob" translate="no">​</a></h3>
+<p>Retrieves the label of the nearest blob. If there are no other blobs, or if the nearest blob is further than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NEAREST_BLOB</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MAX_DISTANCE</code></a>, the label is 0 and no other nearest blob results are available.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NEAREST_BLOB</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nearest_blob_distance"><code>M_NEAREST_BLOB_DISTANCE</code><a href="#m_nearest_blob_distance" class="hash-link" aria-label="Direct link to m_nearest_blob_distance" title="Direct link to m_nearest_blob_distance" translate="no">​</a></h3>
+<p>Retrieves the minimum distance to the nearest blob.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NEAREST_BLOB</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>) and there must be at least one blob within the specified maximum distance (that is, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_NEAREST_BLOB</code></a> must not return 0).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_planarity"><code>M_PLANARITY</code><a href="#m_planarity" class="hash-link" aria-label="Direct link to m_planarity" title="Direct link to m_planarity" translate="no">​</a></h3>
+<p>Retrieves the degree to which the specified blob is planar, where 1.0 is a perfect plane and 0.0 is a perfect sphere. This is equal to the following equation: <code>1 - sqrt([</code>M_EIGENVALUE_3<code>](../../Reference/3dblob/M3dblobGetResult.md)/ [</code>M_EIGENVALUE_2<code>](../../Reference/3dblob/M3dblobGetResult.md))</code>.  To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PLANARITY</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>). Otherwise, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> and set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENT_ORDER</code></a> to an order of at least 2.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt;= 1.0</code></td><td>Specifies the degree to which the blob is planar.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_1_x"><code>M_PRINCIPAL_AXIS_1_X</code><a href="#m_principal_axis_1_x" class="hash-link" aria-label="Direct link to m_principal_axis_1_x" title="Direct link to m_principal_axis_1_x" translate="no">​</a></h3>
+<p>Retrieves the X-component of the normalized vector along the first principal axis, which is the axis with the largest eigenvalue.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_1_y"><code>M_PRINCIPAL_AXIS_1_Y</code><a href="#m_principal_axis_1_y" class="hash-link" aria-label="Direct link to m_principal_axis_1_y" title="Direct link to m_principal_axis_1_y" translate="no">​</a></h3>
+<p>Retrieves the Y-component of the normalized vector along the first principal axis, which is the axis with the largest eigenvalue.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_1_z"><code>M_PRINCIPAL_AXIS_1_Z</code><a href="#m_principal_axis_1_z" class="hash-link" aria-label="Direct link to m_principal_axis_1_z" title="Direct link to m_principal_axis_1_z" translate="no">​</a></h3>
+<p>Retrieves the Z-component of the normalized vector along the first principal axis, which is the axis with the largest eigenvalue.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_2_x"><code>M_PRINCIPAL_AXIS_2_X</code><a href="#m_principal_axis_2_x" class="hash-link" aria-label="Direct link to m_principal_axis_2_x" title="Direct link to m_principal_axis_2_x" translate="no">​</a></h3>
+<p>Retrieves the X-component of the normalized vector along the second principal axis, which is the axis with the second largest eigenvalue.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_2_y"><code>M_PRINCIPAL_AXIS_2_Y</code><a href="#m_principal_axis_2_y" class="hash-link" aria-label="Direct link to m_principal_axis_2_y" title="Direct link to m_principal_axis_2_y" translate="no">​</a></h3>
+<p>Retrieves the Y-component of the normalized vector along the second principal axis, which is the axis with the second largest eigenvalue.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_2_z"><code>M_PRINCIPAL_AXIS_2_Z</code><a href="#m_principal_axis_2_z" class="hash-link" aria-label="Direct link to m_principal_axis_2_z" title="Direct link to m_principal_axis_2_z" translate="no">​</a></h3>
+<p>Retrieves the Z-component of the normalized vector along the second principal axis, which is the axis with the second largest eigenvalue.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_3_x"><code>M_PRINCIPAL_AXIS_3_X</code><a href="#m_principal_axis_3_x" class="hash-link" aria-label="Direct link to m_principal_axis_3_x" title="Direct link to m_principal_axis_3_x" translate="no">​</a></h3>
+<p>Retrieves the X-component of the normalized vector along the third principal axis, which is the axis perpendicular to the first and second principal axes.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_3_y"><code>M_PRINCIPAL_AXIS_3_Y</code><a href="#m_principal_axis_3_y" class="hash-link" aria-label="Direct link to m_principal_axis_3_y" title="Direct link to m_principal_axis_3_y" translate="no">​</a></h3>
+<p>Retrieves the Y-component of the normalized vector along the third principal axis, which is the axis perpendicular to the first and second principal axes.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_axis_3_z"><code>M_PRINCIPAL_AXIS_3_Z</code><a href="#m_principal_axis_3_z" class="hash-link" aria-label="Direct link to m_principal_axis_3_z" title="Direct link to m_principal_axis_3_z" translate="no">​</a></h3>
+<p>Retrieves the Z-component of the normalized vector along the third principal axis, which is the axis perpendicular to the first and second principal axes.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_semi_oriented_box_angle"><code>M_SEMI_ORIENTED_BOX_ANGLE</code><a href="#m_semi_oriented_box_angle" class="hash-link" aria-label="Direct link to m_semi_oriented_box_angle" title="Direct link to m_semi_oriented_box_angle" translate="no">​</a></h3>
+<p>Retrieves the angle of the semi-oriented bounding box&#x27;s rotation around the Z-axis, measured from the X-axis to the box&#x27;s longest XY-side, respecting the right-hand rule.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>0.0 &lt;= Value &lt; 180.0</code></td><td>Specifies the angle of the semi-oriented bounding box.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x"><code>M_SIZE_X</code><a href="#m_size_x" class="hash-link" aria-label="Direct link to m_size_x" title="Direct link to m_size_x" translate="no">​</a></h3>
+<p>Retrieves the size in X of the blob&#x27;s bounding box. The default bounding box is axis-aligned. To specify the PCA or semi-oriented box, use the respective combination values <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SEMI_ORIENTED_BOX</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y"><code>M_SIZE_Y</code><a href="#m_size_y" class="hash-link" aria-label="Direct link to m_size_y" title="Direct link to m_size_y" translate="no">​</a></h3>
+<p>Retrieves the size in Y of the blob&#x27;s bounding box. The default bounding box is axis-aligned. To specify the PCA or semi-oriented box, use the respective combination values <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SEMI_ORIENTED_BOX</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_z"><code>M_SIZE_Z</code><a href="#m_size_z" class="hash-link" aria-label="Direct link to m_size_z" title="Direct link to m_size_z" translate="no">​</a></h3>
+<p>Retrieves the size in Z of the 3D blob&#x27;s bounding box. The default bounding box is axis-aligned. To specify the PCA or semi-oriented box, use the respective combination values <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PCA_BOX</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SEMI_ORIENTED_BOX</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_standard_deviation_x"><code>M_STANDARD_DEVIATION_X</code><a href="#m_standard_deviation_x" class="hash-link" aria-label="Direct link to m_standard_deviation_x" title="Direct link to m_standard_deviation_x" translate="no">​</a></h3>
+<p>Retrieves the standard deviation of points in the blob along the X-axis. This is equivalent to the following formula, where <em>N</em> is the number of points in the blob, and _x<sub>i</sub> _ and_µ<sub>x</sub> _ are the X-coordinates of the blob&#x27;s <em>i</em> <sup>th</sup> point and centroid, respectively:  <em>[Image: 3dblob_StdDevFormula_X.png]</em></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_standard_deviation_y"><code>M_STANDARD_DEVIATION_Y</code><a href="#m_standard_deviation_y" class="hash-link" aria-label="Direct link to m_standard_deviation_y" title="Direct link to m_standard_deviation_y" translate="no">​</a></h3>
+<p>Retrieves the standard deviation of points in the blob along the Y-axis. This is equivalent to the following formula, where <em>N</em> is the number of points in the blob, and _y<sub>i</sub> _ and_µ<sub>y</sub> _ are the Y-coordinates of the blob&#x27;s <em>i</em> <sup>th</sup> point and centroid, respectively:  <em>[Image: 3dblob_StdDevFormula_Y.png]</em></p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_standard_deviation_z"><code>M_STANDARD_DEVIATION_Z</code><a href="#m_standard_deviation_z" class="hash-link" aria-label="Direct link to m_standard_deviation_z" title="Direct link to m_standard_deviation_z" translate="no">​</a></h3>
+<p>Retrieves the standard deviation of points in the blob along the Z-axis. This is equivalent to the following formula, where <em>N</em> is the number of points in the blob, and _z<sub>i</sub> _ and_µ<sub>z</sub> _ are the Z-coordinates of the blob&#x27;s <em>i</em> <sup>th</sup> point and centroid, respectively:  <em>[Image: 3dblob_StdDevFormula_Z.png]</em></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-type-of-bounding-box">Combination Constants — For specifying the type of bounding box<a href="#combination-constants--for-specifying-the-type-of-bounding-box" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the type of bounding box" title="Direct link to Combination Constants — For specifying the type of bounding box" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify the type of bounding box for which to return results.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_PCA_BOX</code></td><td>Specifies to return results associated with the PCA bounding box.</td></tr><tr><td><code>M_SEMI_ORIENTED_BOX</code></td><td>Specifies to return results associated with the semi-oriented bounding box.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-retrieving-feret-contact-points">Combination Constants — For retrieving Feret contact points<a href="#combination-constants--for-retrieving-feret-contact-points" class="hash-link" aria-label="Direct link to Combination Constants — For retrieving Feret contact points" title="Direct link to Combination Constants — For retrieving Feret contact points" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify to retrieve the contact points of the Feret.</p>
+</blockquote>
+<p>To retrieve these results, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_CONTACT_POINTS</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FERET_CONTACT_POINTS_X1</code></td><td>Retrieves the X-coordinate of the start point of the blob&#x27;s Feret diameter.</td></tr><tr><td><code>M_FERET_CONTACT_POINTS_X2</code></td><td>Retrieves the X-coordinate of the end point of the blob&#x27;s Feret diameter.</td></tr><tr><td><code>M_FERET_CONTACT_POINTS_Y1</code></td><td>Retrieves the Y-coordinate of the start point of the blob&#x27;s Feret diameter.</td></tr><tr><td><code>M_FERET_CONTACT_POINTS_Y2</code></td><td>Retrieves the Y-coordinate of the end point of the blob&#x27;s Feret diameter.</td></tr><tr><td><code>M_FERET_CONTACT_POINTS_Z1</code></td><td>Retrieves the Z-coordinate of the start point of the blob&#x27;s Feret diameter.</td></tr><tr><td><code>M_FERET_CONTACT_POINTS_Z2</code></td><td>Retrieves the Z-coordinate of the end point of the blob&#x27;s Feret diameter.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-retrieving-the-feret-direction">Combination Constants — For retrieving the Feret direction<a href="#combination-constants--for-retrieving-the-feret-direction" class="hash-link" aria-label="Direct link to Combination Constants — For retrieving the Feret direction" title="Direct link to Combination Constants — For retrieving the Feret direction" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify to retrieve the direction of the Feret.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FERET_DIRECTION_X</code></td><td>Retrieves the X-component of the Feret&#x27;s direction vector. For example, the direction of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_X</code></a> is (1, 0, 0).</td></tr><tr><td><code>M_FERET_DIRECTION_Y</code></td><td>Retrieves the Y-component of the Feret&#x27;s direction vector. For example, the direction of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_Y</code></a> is (0, 1, 0).</td></tr><tr><td><code>M_FERET_DIRECTION_Z</code></td><td>Retrieves the Z-component of the Feret&#x27;s direction vector. For example, the direction of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_Z</code></a> is (0, 0, 1).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-retrieving-the-closest-points-between-neighboring-3d-blobs">Combination Constants — For retrieving the closest points between neighboring 3D blobs<a href="#combination-constants--for-retrieving-the-closest-points-between-neighboring-3d-blobs" class="hash-link" aria-label="Direct link to Combination Constants — For retrieving the closest points between neighboring 3D blobs" title="Direct link to Combination Constants — For retrieving the closest points between neighboring 3D blobs" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the coordinates of the closest points between the current blob and its nearest neighbor.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NEAREST_POINT_X1</code></td><td>Retrieves the X-coordinate of the point inside the current blob that is closest to the nearest neighboring blob.</td></tr><tr><td><code>M_NEAREST_POINT_X2</code></td><td>Retrieves the X-coordinate of the point inside the nearest neighboring blob that is closest to the current blob.</td></tr><tr><td><code>M_NEAREST_POINT_Y1</code></td><td>Retrieves the Y-coordinate of the point inside the current blob that is closest to the nearest neighboring blob.</td></tr><tr><td><code>M_NEAREST_POINT_Y2</code></td><td>Retrieves the Y-coordinate of the point inside the nearest neighboring blob that is closest to the current blob.</td></tr><tr><td><code>M_NEAREST_POINT_Z1</code></td><td>Retrieves the Z-coordinate of the point inside the current blob that is closest to the nearest neighboring blob.</td></tr><tr><td><code>M_NEAREST_POINT_Z2</code></td><td>Retrieves the Z-coordinate of the point inside the nearest neighboring blob that is closest to the current blob.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-whether-results-are-available">Combination Constants — For determining whether results are available<a href="#combination-constants--for-determining-whether-results-are-available" class="hash-link" aria-label="Direct link to Combination Constants — For determining whether results are available" title="Direct link to Combination Constants — For determining whether results are available" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether a result is available.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_available"><code>M_AVAILABLE</code><a href="#m_available" class="hash-link" aria-label="Direct link to m_available" title="Direct link to m_available" translate="no">​</a></h4>
+<p>Retrieves whether the requested result type is available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the requested result type is not available.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the requested result type is available.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_float"><code>M_TYPE_AIL_FLOAT</code><a href="#m_type_ail_float" class="hash-link" aria-label="Direct link to m_type_ail_float" title="Direct link to m_type_ail_float" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_FLOAT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_DOUBLE</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_DOUBLE</em>. If the requested information does not fit into an <em>AIL_DOUBLE</em>, this function will return <code>M_NULL</code> or truncate the information.</p>
+<p>To retrieve this result, you must have set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_GLOBAL_NORMAL_DISTANCE_MAX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>) to a specific angle value (not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_INFINITE</code></a>).</p>
+<blockquote>
+<p><strong>Note:</strong> This result is internally calculated during the segmentation, provided the above condition.</p>
+</blockquote>
+<p>To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<p>To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA_BOX</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_SEMI_ORIENTED_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p>
+<p>To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_CENTROID</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>). Otherwise, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> and set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENT_ORDER</code></a> to an order of at least 1.</p>
+<p>To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>) and set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENT_ORDER</code></a> to an order of at least 2.</p>
+<p>To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>). Otherwise, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> and set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENT_ORDER</code></a> to an order of at least 2.</p>
+<p>To retrieve this result, you must have enabled <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_SEMI_ORIENTED_BOX</code></a> (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M3dblobControl</code></a>).</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobFree"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dblobFree</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobInquire"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dblobInquire</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#result3dblobid-in-ail_id" class="table-of-contents__link toc-highlight"><code>Result3dblobId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#labelorindex-in-ail_int64" class="table-of-contents__link toc-highlight"><code>LabelOrIndex</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#resulttype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ResultType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#resultarrayptr-out-void" class="table-of-contents__link toc-highlight"><code>ResultArrayPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-retrieving-general-results-from-the-3d-blob-analysis-result-buffer" class="table-of-contents__link toc-highlight">For retrieving general results from the 3D blob analysis result buffer</a></li><li><a href="#m_container_id" class="table-of-contents__link toc-highlight"><code>M_CONTAINER_ID</code></a></li><li><a href="#m_index_image_size_bit" class="table-of-contents__link toc-highlight"><code>M_INDEX_IMAGE_SIZE_BIT</code></a></li><li><a href="#m_label_image_size_bit" class="table-of-contents__link toc-highlight"><code>M_LABEL_IMAGE_SIZE_BIT</code></a></li><li><a href="#m_max_distance" class="table-of-contents__link toc-highlight"><code>M_MAX_DISTANCE</code></a></li><li><a href="#m_max_label_value" class="table-of-contents__link toc-highlight"><code>M_MAX_LABEL_VALUE</code></a></li><li><a href="#m_normal_distance_max" class="table-of-contents__link toc-highlight"><code>M_NORMAL_DISTANCE_MAX</code></a></li><li><a href="#m_number" class="table-of-contents__link toc-highlight"><code>M_NUMBER</code></a></li><li><a href="#m_result_image_size_x" class="table-of-contents__link toc-highlight"><code>M_RESULT_IMAGE_SIZE_X</code></a></li><li><a href="#m_result_image_size_y" class="table-of-contents__link toc-highlight"><code>M_RESULT_IMAGE_SIZE_Y</code></a></li><li><a href="#m_status" class="table-of-contents__link toc-highlight"><code>M_STATUS</code></a></li><li><a href="#m_total_number_of_points" class="table-of-contents__link toc-highlight"><code>M_TOTAL_NUMBER_OF_POINTS</code></a></li><li><a href="#for-retrieving-results-that-are-always-available-from-a-single-blob-or-all-blobs" class="table-of-contents__link toc-highlight">For retrieving results that are always available from a single blob or all blobs</a></li><li><a href="#m_blob_touching_image_borders" class="table-of-contents__link toc-highlight"><code>M_BLOB_TOUCHING_IMAGE_BORDERS</code></a></li><li><a href="#m_first_pixel_x" class="table-of-contents__link toc-highlight"><code>M_FIRST_PIXEL_X</code></a></li><li><a href="#m_first_pixel_y" class="table-of-contents__link toc-highlight"><code>M_FIRST_PIXEL_Y</code></a></li><li><a href="#m_index_value" class="table-of-contents__link toc-highlight"><code>M_INDEX_VALUE</code></a></li><li><a href="#m_label_value" class="table-of-contents__link toc-highlight"><code>M_LABEL_VALUE</code></a></li><li><a href="#m_number_of_points" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_POINTS</code></a></li><li><a href="#m_pixel_max_x" class="table-of-contents__link toc-highlight"><code>M_PIXEL_MAX_X</code></a></li><li><a href="#m_pixel_max_y" class="table-of-contents__link toc-highlight"><code>M_PIXEL_MAX_Y</code></a></li><li><a href="#m_pixel_min_x" class="table-of-contents__link toc-highlight"><code>M_PIXEL_MIN_X</code></a></li><li><a href="#m_pixel_min_y" class="table-of-contents__link toc-highlight"><code>M_PIXEL_MIN_Y</code></a></li><li><a href="#m_pixel_packed" class="table-of-contents__link toc-highlight"><code>M_PIXEL_PACKED</code></a></li><li><a href="#m_pixel_x" class="table-of-contents__link toc-highlight"><code>M_PIXEL_X</code></a></li><li><a href="#m_pixel_y" class="table-of-contents__link toc-highlight"><code>M_PIXEL_Y</code></a></li><li><a href="#for-retrieving-results-that-are-sometimes-available-from-a-single-blob-or-all-blobs" class="table-of-contents__link toc-highlight">For retrieving results that are sometimes available from a single blob or all blobs</a></li><li><a href="#" class="table-of-contents__link toc-highlight"><code>?</code></a></li><li><a href="#-1" class="table-of-contents__link toc-highlight"><code>?</code></a></li><li><a href="#-2" class="table-of-contents__link toc-highlight"><code>?</code></a></li><li><a href="#m_average_normal_x" class="table-of-contents__link toc-highlight"><code>M_AVERAGE_NORMAL_X</code></a></li><li><a href="#m_average_normal_y" class="table-of-contents__link toc-highlight"><code>M_AVERAGE_NORMAL_Y</code></a></li><li><a href="#m_average_normal_z" class="table-of-contents__link toc-highlight"><code>M_AVERAGE_NORMAL_Z</code></a></li><li><a href="#m_box_center_x" class="table-of-contents__link toc-highlight"><code>M_BOX_CENTER_X</code></a></li><li><a href="#m_box_center_y" class="table-of-contents__link toc-highlight"><code>M_BOX_CENTER_Y</code></a></li><li><a href="#m_box_center_z" class="table-of-contents__link toc-highlight"><code>M_BOX_CENTER_Z</code></a></li><li><a href="#m_centroid_x" class="table-of-contents__link toc-highlight"><code>M_CENTROID_X</code></a></li><li><a href="#m_centroid_y" class="table-of-contents__link toc-highlight"><code>M_CENTROID_Y</code></a></li><li><a href="#m_centroid_z" class="table-of-contents__link toc-highlight"><code>M_CENTROID_Z</code></a></li><li><a href="#m_covariance_matrix" class="table-of-contents__link toc-highlight"><code>M_COVARIANCE_MATRIX</code></a></li><li><a href="#m_eigenvalue_1" class="table-of-contents__link toc-highlight"><code>M_EIGENVALUE_1</code></a></li><li><a href="#m_eigenvalue_2" class="table-of-contents__link toc-highlight"><code>M_EIGENVALUE_2</code></a></li><li><a href="#m_eigenvalue_3" class="table-of-contents__link toc-highlight"><code>M_EIGENVALUE_3</code></a></li><li><a href="#m_feret_at_principal_axis_1" class="table-of-contents__link toc-highlight"><code>M_FERET_AT_PRINCIPAL_AXIS_1</code></a></li><li><a href="#m_feret_at_principal_axis_2" class="table-of-contents__link toc-highlight"><code>M_FERET_AT_PRINCIPAL_AXIS_2</code></a></li><li><a href="#m_feret_at_principal_axis_3" class="table-of-contents__link toc-highlight"><code>M_FERET_AT_PRINCIPAL_AXIS_3</code></a></li><li><a href="#m_feret_general" class="table-of-contents__link toc-highlight"><code>M_FERET_GENERAL</code></a></li><li><a href="#m_feret_max_diameter" class="table-of-contents__link toc-highlight"><code>M_FERET_MAX_DIAMETER</code></a></li><li><a href="#m_feret_min_diameter" class="table-of-contents__link toc-highlight"><code>M_FERET_MIN_DIAMETER</code></a></li><li><a href="#m_feret_semi_oriented_height" class="table-of-contents__link toc-highlight"><code>M_FERET_SEMI_ORIENTED_HEIGHT</code></a></li><li><a href="#m_feret_semi_oriented_width" class="table-of-contents__link toc-highlight"><code>M_FERET_SEMI_ORIENTED_WIDTH</code></a></li><li><a href="#m_feret_x" class="table-of-contents__link toc-highlight"><code>M_FERET_X</code></a></li><li><a href="#m_feret_y" class="table-of-contents__link toc-highlight"><code>M_FERET_Y</code></a></li><li><a href="#m_feret_z" class="table-of-contents__link toc-highlight"><code>M_FERET_Z</code></a></li><li><a href="#m_linearity" class="table-of-contents__link toc-highlight"><code>M_LINEARITY</code></a></li><li><a href="#m_max_x" class="table-of-contents__link toc-highlight"><code>M_MAX_X</code></a></li><li><a href="#m_max_y" class="table-of-contents__link toc-highlight"><code>M_MAX_Y</code></a></li><li><a href="#m_max_z" class="table-of-contents__link toc-highlight"><code>M_MAX_Z</code></a></li><li><a href="#m_min_x" class="table-of-contents__link toc-highlight"><code>M_MIN_X</code></a></li><li><a href="#m_min_y" class="table-of-contents__link toc-highlight"><code>M_MIN_Y</code></a></li><li><a href="#m_min_z" class="table-of-contents__link toc-highlight"><code>M_MIN_Z</code></a></li><li><a href="#m_nearest_blob" class="table-of-contents__link toc-highlight"><code>M_NEAREST_BLOB</code></a></li><li><a href="#m_nearest_blob_distance" class="table-of-contents__link toc-highlight"><code>M_NEAREST_BLOB_DISTANCE</code></a></li><li><a href="#m_planarity" class="table-of-contents__link toc-highlight"><code>M_PLANARITY</code></a></li><li><a href="#m_principal_axis_1_x" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_1_X</code></a></li><li><a href="#m_principal_axis_1_y" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_1_Y</code></a></li><li><a href="#m_principal_axis_1_z" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_1_Z</code></a></li><li><a href="#m_principal_axis_2_x" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_2_X</code></a></li><li><a href="#m_principal_axis_2_y" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_2_Y</code></a></li><li><a href="#m_principal_axis_2_z" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_2_Z</code></a></li><li><a href="#m_principal_axis_3_x" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_3_X</code></a></li><li><a href="#m_principal_axis_3_y" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_3_Y</code></a></li><li><a href="#m_principal_axis_3_z" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_AXIS_3_Z</code></a></li><li><a href="#m_semi_oriented_box_angle" class="table-of-contents__link toc-highlight"><code>M_SEMI_ORIENTED_BOX_ANGLE</code></a></li><li><a href="#m_size_x" class="table-of-contents__link toc-highlight"><code>M_SIZE_X</code></a></li><li><a href="#m_size_y" class="table-of-contents__link toc-highlight"><code>M_SIZE_Y</code></a></li><li><a href="#m_size_z" class="table-of-contents__link toc-highlight"><code>M_SIZE_Z</code></a></li><li><a href="#m_standard_deviation_x" class="table-of-contents__link toc-highlight"><code>M_STANDARD_DEVIATION_X</code></a></li><li><a href="#m_standard_deviation_y" class="table-of-contents__link toc-highlight"><code>M_STANDARD_DEVIATION_Y</code></a></li><li><a href="#m_standard_deviation_z" class="table-of-contents__link toc-highlight"><code>M_STANDARD_DEVIATION_Z</code></a></li><li><a href="#combination-constants--for-specifying-the-type-of-bounding-box" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the type of bounding box</a></li><li><a href="#combination-constants--for-retrieving-feret-contact-points" class="table-of-contents__link toc-highlight">Combination Constants — For retrieving Feret contact points</a></li><li><a href="#combination-constants--for-retrieving-the-feret-direction" class="table-of-contents__link toc-highlight">Combination Constants — For retrieving the Feret direction</a></li><li><a href="#combination-constants--for-retrieving-the-closest-points-between-neighboring-3d-blobs" class="table-of-contents__link toc-highlight">Combination Constants — For retrieving the closest points between neighboring 3D blobs</a></li><li><a href="#combination-constants--for-determining-whether-results-are-available" class="table-of-contents__link toc-highlight">Combination Constants — For determining whether results are available</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

@@ -1,0 +1,1632 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dmeas/M3dmeasInquireDraw" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dmeasInquireDraw | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dmeasInquireDraw | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dmeas","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"},{"@type":"ListItem","position":2,"name":"M3dmeasInquireDraw","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Collapse sidebar category &#x27;3dmeas&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasAlloc"><span title="M3dmeasAlloc" class="linkLabel_WmDU">M3dmeasAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasAllocResult"><span title="M3dmeasAllocResult" class="linkLabel_WmDU">M3dmeasAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControl"><span title="M3dmeasControl" class="linkLabel_WmDU">M3dmeasControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><span title="M3dmeasControlDraw" class="linkLabel_WmDU">M3dmeasControlDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasCopy"><span title="M3dmeasCopy" class="linkLabel_WmDU">M3dmeasCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasCopyResult"><span title="M3dmeasCopyResult" class="linkLabel_WmDU">M3dmeasCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDefine"><span title="M3dmeasDefine" class="linkLabel_WmDU">M3dmeasDefine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw"><span title="M3dmeasDraw" class="linkLabel_WmDU">M3dmeasDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><span title="M3dmeasDraw3d" class="linkLabel_WmDU">M3dmeasDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasFindMarker"><span title="M3dmeasFindMarker" class="linkLabel_WmDU">M3dmeasFindMarker</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasFit"><span title="M3dmeasFit" class="linkLabel_WmDU">M3dmeasFit</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasFree"><span title="M3dmeasFree" class="linkLabel_WmDU">M3dmeasFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasGetResult"><span title="M3dmeasGetResult" class="linkLabel_WmDU">M3dmeasGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquire"><span title="M3dmeasInquire" class="linkLabel_WmDU">M3dmeasInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><span title="M3dmeasInquireDraw" class="linkLabel_WmDU">M3dmeasInquireDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasRestore"><span title="M3dmeasRestore" class="linkLabel_WmDU">M3dmeasRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasSave"><span title="M3dmeasSave" class="linkLabel_WmDU">M3dmeasSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasStream"><span title="M3dmeasStream" class="linkLabel_WmDU">M3dmeasStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span>3dmeas</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dmeasInquireDraw</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dmeasInquireDraw</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire about a setting of a draw 3D measurement context.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT64 </span><span class="token function" style="color:#d73a49">M3dmeasInquireDraw</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    DrawContext3dmeasId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 Operation</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">            </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">          </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr            </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires about a specified setting of a draw 3D measurement context. These settings establish which 3D measurement results to draw into the 3D graphics list when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a> and how to draw them.</p>
+<p>You can control the draw 3D measurement context settings using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M3dmeasControlDraw</code></a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="drawcontext3dmeasid-in-ail_id"><code>DrawContext3dmeasId</code> <em>(in, AIL_ID)</em><a href="#drawcontext3dmeasid-in-ail_id" class="hash-link" aria-label="Direct link to drawcontext3dmeasid-in-ail_id" title="Direct link to drawcontext3dmeasid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the draw 3D measurement context to inquire. The draw 3D measurement context must have been previously allocated on the required system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasAlloc"><code>M3dmeasAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasAlloc"><code>M_DRAW_3D_PROFILE_CONTEXT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasAlloc"><code>M_DRAW_3D_PATH_CONTEXT</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasAlloc"><code>M_DRAW_3D_TEMPLATE_CONTEXT</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="operation-in-ail_int64"><code>Operation</code> <em>(in, AIL_INT64)</em><a href="#operation-in-ail_int64" class="hash-link" aria-label="Direct link to operation-in-ail_int64" title="Direct link to operation-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the draw operation about which to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of setting about which to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><code>M3dmeasInquireDraw</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-a-draw-profile-path-or-template-3d-measurement-context">For inquiring a draw profile, path, or template 3D measurement context<a href="#for-inquiring-a-draw-profile-path-or-template-3d-measurement-context" class="hash-link" aria-label="Direct link to For inquiring a draw profile, path, or template 3D measurement context" title="Direct link to For inquiring a draw profile, path, or template 3D measurement context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><code>Operation</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><code>InquireType</code></a> parameter settings are available to inquire about draw profile, path, or template 3D measurement context settings.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_markers"><code>M_DRAW_MARKERS</code><a href="#m_draw_markers" class="hash-link" aria-label="Direct link to m_draw_markers" title="Direct link to m_draw_markers" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the cross-like symbol at each specified marker&#x27;s position, and for pair markers, a rectangle connecting the two transitions with a cross-like symbol at each transition position, when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active"><code>M_ACTIVE</code><a href="#m_active" class="hash-link" aria-label="Direct link to m_active" title="Direct link to m_active" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance"><code>M_APPEARANCE</code><a href="#m_appearance" class="hash-link" aria-label="Direct link to m_appearance" title="Direct link to m_appearance" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color"><code>M_COLOR</code><a href="#m_color" class="hash-link" aria-label="Direct link to m_color" title="Direct link to m_color" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity"><code>M_OPACITY</code><a href="#m_opacity" class="hash-link" aria-label="Direct link to m_opacity" title="Direct link to m_opacity" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness"><code>M_THICKNESS</code><a href="#m_thickness" class="hash-link" aria-label="Direct link to m_thickness" title="Direct link to m_thickness" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_markers_position"><code>M_DRAW_MARKERS_POSITION</code><a href="#m_draw_markers_position" class="hash-link" aria-label="Direct link to m_draw_markers_position" title="Direct link to m_draw_markers_position" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the cross-like symbol at each specified marker&#x27;s position when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-1"><code>M_ACTIVE</code><a href="#m_active-1" class="hash-link" aria-label="Direct link to m_active-1" title="Direct link to m_active-1" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-1"><code>M_APPEARANCE</code><a href="#m_appearance-1" class="hash-link" aria-label="Direct link to m_appearance-1" title="Direct link to m_appearance-1" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-1"><code>M_COLOR</code><a href="#m_color-1" class="hash-link" aria-label="Direct link to m_color-1" title="Direct link to m_color-1" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-1"><code>M_OPACITY</code><a href="#m_opacity-1" class="hash-link" aria-label="Direct link to m_opacity-1" title="Direct link to m_opacity-1" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-1"><code>M_THICKNESS</code><a href="#m_thickness-1" class="hash-link" aria-label="Direct link to m_thickness-1" title="Direct link to m_thickness-1" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_markers_width"><code>M_DRAW_MARKERS_WIDTH</code><a href="#m_draw_markers_width" class="hash-link" aria-label="Direct link to m_draw_markers_width" title="Direct link to m_draw_markers_width" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the width of each specified pair marker when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>. The width is drawn as a rectangle connecting the two transitions with a cross-like symbol at each transition position.  This operation is only supported for pair markers.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-2"><code>M_ACTIVE</code><a href="#m_active-2" class="hash-link" aria-label="Direct link to m_active-2" title="Direct link to m_active-2" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-2"><code>M_APPEARANCE</code><a href="#m_appearance-2" class="hash-link" aria-label="Direct link to m_appearance-2" title="Direct link to m_appearance-2" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-2"><code>M_COLOR</code><a href="#m_color-2" class="hash-link" aria-label="Direct link to m_color-2" title="Direct link to m_color-2" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-2"><code>M_OPACITY</code><a href="#m_opacity-2" class="hash-link" aria-label="Direct link to m_opacity-2" title="Direct link to m_opacity-2" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-2"><code>M_THICKNESS</code><a href="#m_thickness-2" class="hash-link" aria-label="Direct link to m_thickness-2" title="Direct link to m_thickness-2" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_profile_extracted"><code>M_DRAW_PROFILE_EXTRACTED</code><a href="#m_draw_profile_extracted" class="hash-link" aria-label="Direct link to m_draw_profile_extracted" title="Direct link to m_draw_profile_extracted" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the extracted points that form each specified profile when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-3"><code>M_ACTIVE</code><a href="#m_active-3" class="hash-link" aria-label="Direct link to m_active-3" title="Direct link to m_active-3" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-3"><code>M_APPEARANCE</code><a href="#m_appearance-3" class="hash-link" aria-label="Direct link to m_appearance-3" title="Direct link to m_appearance-3" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-3"><code>M_COLOR</code><a href="#m_color-3" class="hash-link" aria-label="Direct link to m_color-3" title="Direct link to m_color-3" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-3"><code>M_OPACITY</code><a href="#m_opacity-3" class="hash-link" aria-label="Direct link to m_opacity-3" title="Direct link to m_opacity-3" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-3"><code>M_THICKNESS</code><a href="#m_thickness-3" class="hash-link" aria-label="Direct link to m_thickness-3" title="Direct link to m_thickness-3" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_profile_region"><code>M_DRAW_PROFILE_REGION</code><a href="#m_draw_profile_region" class="hash-link" aria-label="Direct link to m_draw_profile_region" title="Direct link to m_draw_profile_region" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the region where each specified profile was extracted when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-4"><code>M_ACTIVE</code><a href="#m_active-4" class="hash-link" aria-label="Direct link to m_active-4" title="Direct link to m_active-4" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-4"><code>M_APPEARANCE</code><a href="#m_appearance-4" class="hash-link" aria-label="Direct link to m_appearance-4" title="Direct link to m_appearance-4" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-4"><code>M_COLOR</code><a href="#m_color-4" class="hash-link" aria-label="Direct link to m_color-4" title="Direct link to m_color-4" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-4"><code>M_OPACITY</code><a href="#m_opacity-4" class="hash-link" aria-label="Direct link to m_opacity-4" title="Direct link to m_opacity-4" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-4"><code>M_THICKNESS</code><a href="#m_thickness-4" class="hash-link" aria-label="Direct link to m_thickness-4" title="Direct link to m_thickness-4" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_profile_response"><code>M_DRAW_PROFILE_RESPONSE</code><a href="#m_draw_profile_response" class="hash-link" aria-label="Direct link to m_draw_profile_response" title="Direct link to m_draw_profile_response" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the response of each specified profile (after applying the filter) when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-5"><code>M_ACTIVE</code><a href="#m_active-5" class="hash-link" aria-label="Direct link to m_active-5" title="Direct link to m_active-5" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-5"><code>M_APPEARANCE</code><a href="#m_appearance-5" class="hash-link" aria-label="Direct link to m_appearance-5" title="Direct link to m_appearance-5" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-5"><code>M_COLOR</code><a href="#m_color-5" class="hash-link" aria-label="Direct link to m_color-5" title="Direct link to m_color-5" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-5"><code>M_OPACITY</code><a href="#m_opacity-5" class="hash-link" aria-label="Direct link to m_opacity-5" title="Direct link to m_opacity-5" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-5"><code>M_THICKNESS</code><a href="#m_thickness-5" class="hash-link" aria-label="Direct link to m_thickness-5" title="Direct link to m_thickness-5" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_transitions"><code>M_DRAW_TRANSITIONS</code><a href="#m_draw_transitions" class="hash-link" aria-label="Direct link to m_draw_transitions" title="Direct link to m_draw_transitions" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the step-like symbol at each specified marker&#x27;s transition position when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-6"><code>M_ACTIVE</code><a href="#m_active-6" class="hash-link" aria-label="Direct link to m_active-6" title="Direct link to m_active-6" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-6"><code>M_APPEARANCE</code><a href="#m_appearance-6" class="hash-link" aria-label="Direct link to m_appearance-6" title="Direct link to m_appearance-6" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-6"><code>M_COLOR</code><a href="#m_color-6" class="hash-link" aria-label="Direct link to m_color-6" title="Direct link to m_color-6" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-6"><code>M_OPACITY</code><a href="#m_opacity-6" class="hash-link" aria-label="Direct link to m_opacity-6" title="Direct link to m_opacity-6" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-6"><code>M_THICKNESS</code><a href="#m_thickness-6" class="hash-link" aria-label="Direct link to m_thickness-6" title="Direct link to m_thickness-6" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_global_draw_settings"><code>M_GLOBAL_DRAW_SETTINGS</code><a href="#m_global_draw_settings" class="hash-link" aria-label="Direct link to m_global_draw_settings" title="Direct link to m_global_draw_settings" translate="no">​</a></h3>
+<p>Inquires a global draw 3D measurement context setting.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pseudo_color_offset"><code>M_PSEUDO_COLOR_OFFSET</code><a href="#m_pseudo_color_offset" class="hash-link" aria-label="Direct link to m_pseudo_color_offset" title="Direct link to m_pseudo_color_offset" translate="no">​</a></h4>
+<p>Inquires the index of the volume element to draw.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_PSEUDO_COLOR_OFFSET</code></a>)</em></td><td></td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-a-draw-path-3d-measurement-context">For inquiring a draw path 3D measurement context<a href="#for-inquiring-a-draw-path-3d-measurement-context" class="hash-link" aria-label="Direct link to For inquiring a draw path 3D measurement context" title="Direct link to For inquiring a draw path 3D measurement context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><code>Operation</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><code>InquireType</code></a> parameter settings are available to inquire about draw path 3D measurement context settings.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_path"><code>M_DRAW_PATH</code><a href="#m_draw_path" class="hash-link" aria-label="Direct link to m_draw_path" title="Direct link to m_draw_path" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the path defined in the path 3D measurement context when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-7"><code>M_ACTIVE</code><a href="#m_active-7" class="hash-link" aria-label="Direct link to m_active-7" title="Direct link to m_active-7" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-7"><code>M_APPEARANCE</code><a href="#m_appearance-7" class="hash-link" aria-label="Direct link to m_appearance-7" title="Direct link to m_appearance-7" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-7"><code>M_COLOR</code><a href="#m_color-7" class="hash-link" aria-label="Direct link to m_color-7" title="Direct link to m_color-7" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-7"><code>M_OPACITY</code><a href="#m_opacity-7" class="hash-link" aria-label="Direct link to m_opacity-7" title="Direct link to m_opacity-7" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-7"><code>M_THICKNESS</code><a href="#m_thickness-7" class="hash-link" aria-label="Direct link to m_thickness-7" title="Direct link to m_thickness-7" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_path_projected"><code>M_DRAW_PATH_PROJECTED</code><a href="#m_draw_path_projected" class="hash-link" aria-label="Direct link to m_draw_path_projected" title="Direct link to m_draw_path_projected" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the projection of the path defined in the path 3D measurement context when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-8"><code>M_ACTIVE</code><a href="#m_active-8" class="hash-link" aria-label="Direct link to m_active-8" title="Direct link to m_active-8" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-8"><code>M_APPEARANCE</code><a href="#m_appearance-8" class="hash-link" aria-label="Direct link to m_appearance-8" title="Direct link to m_appearance-8" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-8"><code>M_COLOR</code><a href="#m_color-8" class="hash-link" aria-label="Direct link to m_color-8" title="Direct link to m_color-8" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-8"><code>M_OPACITY</code><a href="#m_opacity-8" class="hash-link" aria-label="Direct link to m_opacity-8" title="Direct link to m_opacity-8" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-8"><code>M_THICKNESS</code><a href="#m_thickness-8" class="hash-link" aria-label="Direct link to m_thickness-8" title="Direct link to m_thickness-8" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-a-draw-template-3d-measurement-context">For inquiring a draw template 3D measurement context<a href="#for-inquiring-a-draw-template-3d-measurement-context" class="hash-link" aria-label="Direct link to For inquiring a draw template 3D measurement context" title="Direct link to For inquiring a draw template 3D measurement context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><code>Operation</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquireDraw"><code>InquireType</code></a> parameter settings are available to inquire about draw template 3D measurement context settings.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_find_geometry"><code>M_DRAW_FIND_GEOMETRY</code><a href="#m_draw_find_geometry" class="hash-link" aria-label="Direct link to m_draw_find_geometry" title="Direct link to m_draw_find_geometry" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the line segments connecting the extracted markers when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-9"><code>M_ACTIVE</code><a href="#m_active-9" class="hash-link" aria-label="Direct link to m_active-9" title="Direct link to m_active-9" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-9"><code>M_APPEARANCE</code><a href="#m_appearance-9" class="hash-link" aria-label="Direct link to m_appearance-9" title="Direct link to m_appearance-9" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-9"><code>M_COLOR</code><a href="#m_color-9" class="hash-link" aria-label="Direct link to m_color-9" title="Direct link to m_color-9" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-9"><code>M_OPACITY</code><a href="#m_opacity-9" class="hash-link" aria-label="Direct link to m_opacity-9" title="Direct link to m_opacity-9" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-9"><code>M_THICKNESS</code><a href="#m_thickness-9" class="hash-link" aria-label="Direct link to m_thickness-9" title="Direct link to m_thickness-9" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_find_geometry_projected"><code>M_DRAW_FIND_GEOMETRY_PROJECTED</code><a href="#m_draw_find_geometry_projected" class="hash-link" aria-label="Direct link to m_draw_find_geometry_projected" title="Direct link to m_draw_find_geometry_projected" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the planes connecting the projections of the extracted markers when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-10"><code>M_ACTIVE</code><a href="#m_active-10" class="hash-link" aria-label="Direct link to m_active-10" title="Direct link to m_active-10" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-10"><code>M_APPEARANCE</code><a href="#m_appearance-10" class="hash-link" aria-label="Direct link to m_appearance-10" title="Direct link to m_appearance-10" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-10"><code>M_COLOR</code><a href="#m_color-10" class="hash-link" aria-label="Direct link to m_color-10" title="Direct link to m_color-10" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-10"><code>M_OPACITY</code><a href="#m_opacity-10" class="hash-link" aria-label="Direct link to m_opacity-10" title="Direct link to m_opacity-10" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-10"><code>M_THICKNESS</code><a href="#m_thickness-10" class="hash-link" aria-label="Direct link to m_thickness-10" title="Direct link to m_thickness-10" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_fit_geometry"><code>M_DRAW_FIT_GEOMETRY</code><a href="#m_draw_fit_geometry" class="hash-link" aria-label="Direct link to m_draw_fit_geometry" title="Direct link to m_draw_fit_geometry" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the fitted 3D geometry when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-11"><code>M_ACTIVE</code><a href="#m_active-11" class="hash-link" aria-label="Direct link to m_active-11" title="Direct link to m_active-11" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-11"><code>M_APPEARANCE</code><a href="#m_appearance-11" class="hash-link" aria-label="Direct link to m_appearance-11" title="Direct link to m_appearance-11" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-11"><code>M_COLOR</code><a href="#m_color-11" class="hash-link" aria-label="Direct link to m_color-11" title="Direct link to m_color-11" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-11"><code>M_OPACITY</code><a href="#m_opacity-11" class="hash-link" aria-label="Direct link to m_opacity-11" title="Direct link to m_opacity-11" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-11"><code>M_THICKNESS</code><a href="#m_thickness-11" class="hash-link" aria-label="Direct link to m_thickness-11" title="Direct link to m_thickness-11" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_fit_geometry_projected"><code>M_DRAW_FIT_GEOMETRY_PROJECTED</code><a href="#m_draw_fit_geometry_projected" class="hash-link" aria-label="Direct link to m_draw_fit_geometry_projected" title="Direct link to m_draw_fit_geometry_projected" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the projection of the fitted 3D geometry when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-12"><code>M_ACTIVE</code><a href="#m_active-12" class="hash-link" aria-label="Direct link to m_active-12" title="Direct link to m_active-12" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-12"><code>M_APPEARANCE</code><a href="#m_appearance-12" class="hash-link" aria-label="Direct link to m_appearance-12" title="Direct link to m_appearance-12" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-12"><code>M_COLOR</code><a href="#m_color-12" class="hash-link" aria-label="Direct link to m_color-12" title="Direct link to m_color-12" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-12"><code>M_OPACITY</code><a href="#m_opacity-12" class="hash-link" aria-label="Direct link to m_opacity-12" title="Direct link to m_opacity-12" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-12"><code>M_THICKNESS</code><a href="#m_thickness-12" class="hash-link" aria-label="Direct link to m_thickness-12" title="Direct link to m_thickness-12" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_fit_markers"><code>M_DRAW_FIT_MARKERS</code><a href="#m_draw_fit_markers" class="hash-link" aria-label="Direct link to m_draw_fit_markers" title="Direct link to m_draw_fit_markers" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the cross-like symbol at the position of each marker that was used for the fit operation when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-13"><code>M_ACTIVE</code><a href="#m_active-13" class="hash-link" aria-label="Direct link to m_active-13" title="Direct link to m_active-13" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-13"><code>M_APPEARANCE</code><a href="#m_appearance-13" class="hash-link" aria-label="Direct link to m_appearance-13" title="Direct link to m_appearance-13" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-13"><code>M_COLOR</code><a href="#m_color-13" class="hash-link" aria-label="Direct link to m_color-13" title="Direct link to m_color-13" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-13"><code>M_OPACITY</code><a href="#m_opacity-13" class="hash-link" aria-label="Direct link to m_opacity-13" title="Direct link to m_opacity-13" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-13"><code>M_THICKNESS</code><a href="#m_thickness-13" class="hash-link" aria-label="Direct link to m_thickness-13" title="Direct link to m_thickness-13" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_fit_markers_outliers"><code>M_DRAW_FIT_MARKERS_OUTLIERS</code><a href="#m_draw_fit_markers_outliers" class="hash-link" aria-label="Direct link to m_draw_fit_markers_outliers" title="Direct link to m_draw_fit_markers_outliers" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the cross-like symbol at the position of each marker that was considered an outlier for the fit operation when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-14"><code>M_ACTIVE</code><a href="#m_active-14" class="hash-link" aria-label="Direct link to m_active-14" title="Direct link to m_active-14" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-14"><code>M_APPEARANCE</code><a href="#m_appearance-14" class="hash-link" aria-label="Direct link to m_appearance-14" title="Direct link to m_appearance-14" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-14"><code>M_COLOR</code><a href="#m_color-14" class="hash-link" aria-label="Direct link to m_color-14" title="Direct link to m_color-14" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-14"><code>M_OPACITY</code><a href="#m_opacity-14" class="hash-link" aria-label="Direct link to m_opacity-14" title="Direct link to m_opacity-14" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-14"><code>M_THICKNESS</code><a href="#m_thickness-14" class="hash-link" aria-label="Direct link to m_thickness-14" title="Direct link to m_thickness-14" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_template"><code>M_DRAW_TEMPLATE</code><a href="#m_draw_template" class="hash-link" aria-label="Direct link to m_draw_template" title="Direct link to m_draw_template" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the template defined in the template 3D measurement context when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-15"><code>M_ACTIVE</code><a href="#m_active-15" class="hash-link" aria-label="Direct link to m_active-15" title="Direct link to m_active-15" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-15"><code>M_APPEARANCE</code><a href="#m_appearance-15" class="hash-link" aria-label="Direct link to m_appearance-15" title="Direct link to m_appearance-15" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-15"><code>M_COLOR</code><a href="#m_color-15" class="hash-link" aria-label="Direct link to m_color-15" title="Direct link to m_color-15" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-15"><code>M_OPACITY</code><a href="#m_opacity-15" class="hash-link" aria-label="Direct link to m_opacity-15" title="Direct link to m_opacity-15" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-15"><code>M_THICKNESS</code><a href="#m_thickness-15" class="hash-link" aria-label="Direct link to m_thickness-15" title="Direct link to m_thickness-15" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_template_projected"><code>M_DRAW_TEMPLATE_PROJECTED</code><a href="#m_draw_template_projected" class="hash-link" aria-label="Direct link to m_draw_template_projected" title="Direct link to m_draw_template_projected" translate="no">​</a></h3>
+<p>Inquires whether and how to draw the projection of the template defined in the template 3D measurement context when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasDraw3d"><code>M3dmeasDraw3d</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_active-16"><code>M_ACTIVE</code><a href="#m_active-16" class="hash-link" aria-label="Direct link to m_active-16" title="Direct link to m_active-16" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_ACTIVE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_appearance-16"><code>M_APPEARANCE</code><a href="#m_appearance-16" class="hash-link" aria-label="Direct link to m_appearance-16" title="Direct link to m_appearance-16" translate="no">​</a></h4>
+<p>Inquires whether to draw the graphic(s) as a solid surface, wireframe, or points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_APPEARANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color-16"><code>M_COLOR</code><a href="#m_color-16" class="hash-link" aria-label="Direct link to m_color-16" title="Direct link to m_color-16" translate="no">​</a></h4>
+<p>Inquires the color with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_COLOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_opacity-16"><code>M_OPACITY</code><a href="#m_opacity-16" class="hash-link" aria-label="Direct link to m_opacity-16" title="Direct link to m_opacity-16" translate="no">​</a></h4>
+<p>Inquires the opacity with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_OPACITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_thickness-16"><code>M_THICKNESS</code><a href="#m_thickness-16" class="hash-link" aria-label="Direct link to m_thickness-16" title="Direct link to m_thickness-16" translate="no">​</a></h4>
+<p>Inquires the thickness with which to draw the graphic(s).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasControlDraw"><code>M_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-about-the-default-value">Combination Constants — For inquiring about the default value<a href="#combination-constants--for-inquiring-about-the-default-value" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring about the default value" title="Direct link to Combination Constants — For inquiring about the default value" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get information about the default value of an inquire type, regardless of the current value of the inquire type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h4>
+<p>Inquires the default value of the specified inquire type.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_is_set_to_default"><code>M_IS_SET_TO_DEFAULT</code><a href="#m_is_set_to_default" class="hash-link" aria-label="Direct link to m_is_set_to_default" title="Direct link to m_is_set_to_default" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is set to its default value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not set to its default value.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is set to its default value.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-whether-an-inquire-type-has-a-default-value-or-whether-it-is-supported">Combination Constants — For inquiring whether an inquire type has a default value or whether it is supported<a href="#combination-constants--for-inquiring-whether-an-inquire-type-has-a-default-value-or-whether-it-is-supported" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring whether an inquire type has a default value or whether it is supported" title="Direct link to Combination Constants — For inquiring whether an inquire type has a default value or whether it is supported" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether an inquire type has a default value or whether it is supported.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_default"><code>M_HAS_DEFAULT</code><a href="#m_has_default" class="hash-link" aria-label="Direct link to m_has_default" title="Direct link to m_has_default" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type has a default value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type does not have a default value.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type has a default value.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_supported"><code>M_SUPPORTED</code><a href="#m_supported" class="hash-link" aria-label="Direct link to m_supported" title="Direct link to m_supported" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is supported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not supported.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is supported.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_float"><code>M_TYPE_AIL_FLOAT</code><a href="#m_type_ail_float" class="hash-link" aria-label="Direct link to m_type_ail_float" title="Direct link to m_type_ail_float" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_FLOAT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT64</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT64</em>. If the requested information does not fit into an <em>AIL_INT64</em>, this function will return <code>M_NULL</code>or truncate the information.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasInquire"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dmeasInquire</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/M3dmeasRestore"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dmeasRestore</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#drawcontext3dmeasid-in-ail_id" class="table-of-contents__link toc-highlight"><code>DrawContext3dmeasId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#operation-in-ail_int64" class="table-of-contents__link toc-highlight"><code>Operation</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-a-draw-profile-path-or-template-3d-measurement-context" class="table-of-contents__link toc-highlight">For inquiring a draw profile, path, or template 3D measurement context</a></li><li><a href="#m_draw_markers" class="table-of-contents__link toc-highlight"><code>M_DRAW_MARKERS</code></a></li><li><a href="#m_draw_markers_position" class="table-of-contents__link toc-highlight"><code>M_DRAW_MARKERS_POSITION</code></a></li><li><a href="#m_draw_markers_width" class="table-of-contents__link toc-highlight"><code>M_DRAW_MARKERS_WIDTH</code></a></li><li><a href="#m_draw_profile_extracted" class="table-of-contents__link toc-highlight"><code>M_DRAW_PROFILE_EXTRACTED</code></a></li><li><a href="#m_draw_profile_region" class="table-of-contents__link toc-highlight"><code>M_DRAW_PROFILE_REGION</code></a></li><li><a href="#m_draw_profile_response" class="table-of-contents__link toc-highlight"><code>M_DRAW_PROFILE_RESPONSE</code></a></li><li><a href="#m_draw_transitions" class="table-of-contents__link toc-highlight"><code>M_DRAW_TRANSITIONS</code></a></li><li><a href="#m_global_draw_settings" class="table-of-contents__link toc-highlight"><code>M_GLOBAL_DRAW_SETTINGS</code></a></li><li><a href="#for-inquiring-a-draw-path-3d-measurement-context" class="table-of-contents__link toc-highlight">For inquiring a draw path 3D measurement context</a></li><li><a href="#m_draw_path" class="table-of-contents__link toc-highlight"><code>M_DRAW_PATH</code></a></li><li><a href="#m_draw_path_projected" class="table-of-contents__link toc-highlight"><code>M_DRAW_PATH_PROJECTED</code></a></li><li><a href="#for-inquiring-a-draw-template-3d-measurement-context" class="table-of-contents__link toc-highlight">For inquiring a draw template 3D measurement context</a></li><li><a href="#m_draw_find_geometry" class="table-of-contents__link toc-highlight"><code>M_DRAW_FIND_GEOMETRY</code></a></li><li><a href="#m_draw_find_geometry_projected" class="table-of-contents__link toc-highlight"><code>M_DRAW_FIND_GEOMETRY_PROJECTED</code></a></li><li><a href="#m_draw_fit_geometry" class="table-of-contents__link toc-highlight"><code>M_DRAW_FIT_GEOMETRY</code></a></li><li><a href="#m_draw_fit_geometry_projected" class="table-of-contents__link toc-highlight"><code>M_DRAW_FIT_GEOMETRY_PROJECTED</code></a></li><li><a href="#m_draw_fit_markers" class="table-of-contents__link toc-highlight"><code>M_DRAW_FIT_MARKERS</code></a></li><li><a href="#m_draw_fit_markers_outliers" class="table-of-contents__link toc-highlight"><code>M_DRAW_FIT_MARKERS_OUTLIERS</code></a></li><li><a href="#m_draw_template" class="table-of-contents__link toc-highlight"><code>M_DRAW_TEMPLATE</code></a></li><li><a href="#m_draw_template_projected" class="table-of-contents__link toc-highlight"><code>M_DRAW_TEMPLATE_PROJECTED</code></a></li><li><a href="#combination-constants--for-inquiring-about-the-default-value" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring about the default value</a></li><li><a href="#combination-constants--for-inquiring-whether-an-inquire-type-has-a-default-value-or-whether-it-is-supported" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring whether an inquire type has a default value or whether it is supported</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

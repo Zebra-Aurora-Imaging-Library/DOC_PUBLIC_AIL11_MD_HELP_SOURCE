@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-BoardSpecificNotes/Rapixo_CL/S08_Rapixo_CL_SF_DF_connectors_and_signal_names" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Zebra Rapixo CL SF and CL Pro SF/DF connectors and signal names | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S08_Rapixo_CL_SF_DF_connectors_and_signal_names"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Zebra Rapixo CL SF and CL Pro SF/DF connectors and signal names | Aurora Imaging Library"><meta data-rh="true" name="description" content="This section serves as a reference to match Zebra Rapixo CL SF, Pro SF, and Pro DF&#x27;s connectors and auxiliary signals with Aurora Imaging Library information, such as Aurora Imaging Library auxiliary/camera control signal numbers. To set/inquire all the settings for this board&#x27;s auxiliary signals (for example, signal routing and timer settings), use MdigControl/MdigInquire, respectively."><meta data-rh="true" property="og:description" content="This section serves as a reference to match Zebra Rapixo CL SF, Pro SF, and Pro DF&#x27;s connectors and auxiliary signals with Aurora Imaging Library information, such as Aurora Imaging Library auxiliary/camera control signal numbers. To set/inquire all the settings for this board&#x27;s auxiliary signals (for example, signal routing and timer settings), use MdigControl/MdigInquire, respectively."><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S08_Rapixo_CL_SF_DF_connectors_and_signal_names"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S08_Rapixo_CL_SF_DF_connectors_and_signal_names" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S08_Rapixo_CL_SF_DF_connectors_and_signal_names" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Zebra Rapixo CL SF and CL Pro SF/DF connectors and signal names","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S08_Rapixo_CL_SF_DF_connectors_and_signal_names"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/4Sight/ChapterInformation"><span title="4Sight" class="categoryLinkLabel_W154">4Sight</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/AltiZ/ChapterInformation"><span title="AltiZ" class="categoryLinkLabel_W154">AltiZ</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/AltiZ_4200/ChapterInformation"><span title="AltiZ_4200" class="categoryLinkLabel_W154">AltiZ_4200</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Clarity_UHD/ChapterInformation"><span title="Clarity_UHD" class="categoryLinkLabel_W154">Clarity_UHD</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Concord_PoE/ChapterInformation"><span title="Concord_PoE" class="categoryLinkLabel_W154">Concord_PoE</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GenTL/ChapterInformation"><span title="GenTL" class="categoryLinkLabel_W154">GenTL</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GevIQ/ChapterInformation"><span title="GevIQ" class="categoryLinkLabel_W154">GevIQ</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/GigE_Vision/ChapterInformation"><span title="GigE_Vision" class="categoryLinkLabel_W154">GigE_Vision</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Indio/ChapterInformation"><span title="Indio" class="categoryLinkLabel_W154">Indio</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Iris_GTX/ChapterInformation"><span title="Iris_GTX" class="categoryLinkLabel_W154">Iris_GTX</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Radient_eV-CL/ChapterInformation"><span title="Radient_eV-CL" class="categoryLinkLabel_W154">Radient_eV-CL</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo-CXP/ChapterInformation"><span title="Rapixo-CXP" class="categoryLinkLabel_W154">Rapixo-CXP</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo-CoF/ChapterInformation"><span title="Rapixo-CoF" class="categoryLinkLabel_W154">Rapixo-CoF</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/ChapterInformation"><span title="Rapixo_CL" class="categoryLinkLabel_W154">Rapixo_CL</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/ChapterInformation"><span title="Zebra Rapixo CL" class="linkLabel_WmDU">Zebra Rapixo CL</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S01_Rapixo_CL_specific_features"><span title="Zebra Rapixo CL overview" class="linkLabel_WmDU">Zebra Rapixo CL overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S02_Using_Rapixo_CL"><span title="Using Zebra Rapixo CL with Aurora Imaging Library" class="linkLabel_WmDU">Using Zebra Rapixo CL with Aurora Imaging Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S03_Allocating_digitizers_on_Rapixo_CL"><span title="Allocating independent Aurora Imaging Library digitizers on Zebra Rapixo CL boards" class="linkLabel_WmDU">Allocating independent Aurora Imaging Library digitizers on Zebra Rapixo CL boards</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S04_Minimum_latency_and_grabbing_all_frames"><span title="Minimum latency and grabbing all frames" class="linkLabel_WmDU">Minimum latency and grabbing all frames</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S05_Using_hook_data"><span title="Using Zebra Rapixo CL data latches" class="linkLabel_WmDU">Using Zebra Rapixo CL data latches</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S06_Rapixo_CL_utilities"><span title="Zebra Rapixo Series CL tools" class="linkLabel_WmDU">Zebra Rapixo Series CL tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S07_Rapixo_CL_DB_QB_connectors_and_signal_names"><span title="Zebra Rapixo CL DB and Pro DB/QB connectors and signal names" class="linkLabel_WmDU">Zebra Rapixo CL DB and Pro DB/QB connectors and signal names</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S08_Rapixo_CL_SF_DF_connectors_and_signal_names"><span title="Zebra Rapixo CL SF and CL Pro SF/DF connectors and signal names" class="linkLabel_WmDU">Zebra Rapixo CL SF and CL Pro SF/DF connectors and signal names</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S09_Rapixo_CL_board_flow_diagrams"><span title="Zebra Rapixo CL board flow diagrams" class="linkLabel_WmDU">Zebra Rapixo CL board flow diagrams</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S10_Additional_Rapixo_CL_notes_User_guide"><span title="Miscellaneous user guide information for Zebra Rapixo CL" class="linkLabel_WmDU">Miscellaneous user guide information for Zebra Rapixo CL</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/USB3_Vision/ChapterInformation"><span title="USB3_Vision" class="categoryLinkLabel_W154">USB3_Vision</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/V4L2/ChapterInformation"><span title="V4L2" class="categoryLinkLabel_W154">V4L2</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Rapixo_CL</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Zebra Rapixo CL SF and CL Pro SF/DF connectors and signal names</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Zebra Rapixo CL SF and CL Pro SF/DF connectors and signal names</h1></header>
+<p>This section serves as a reference to match Zebra Rapixo CL SF, Pro SF, and Pro DF&#x27;s connectors and auxiliary signals with Aurora Imaging Library information, such as Aurora Imaging Library auxiliary/camera control signal numbers. To set/inquire all the settings for this board&#x27;s auxiliary signals (for example, signal routing and timer settings), use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>MdigControl</code></a>/<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigInquire"><code>MdigInquire</code></a>, respectively.</p>
+<p>Zebra Rapixo CL family members have a different number of acquisition paths and auxiliary/camera control signals. For each Zebra Rapixo CL family member, only the auxiliary/camera control signals associated with the following digitizer device numbers are supported:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Zebra Rapixo CL type</th><th>Digitizer device #</th></tr></thead><tbody><tr><td>Zebra Rapixo CL SF</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a>.</td></tr><tr><td>Zebra Rapixo CL Pro SF</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a>.</td></tr><tr><td>Zebra Rapixo CL Pro DF</td><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a>.</td></tr></tbody></table>
+<p>The following table lists the connectors of the auxiliary/control signals that can be used for each digitizer device number:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Digitizer device #</th><th>Zebra Rapixo CL SF</th><th>Zebra Rapixo CL Pro SF</th><th>Zebra Rapixo CL Pro DF</th></tr></thead><tbody><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a></td><td>Auxiliary I/O connector A and C</td><td>Auxiliary I/O connector A and C</td><td>Auxiliary I/O connector A and C</td></tr><tr><td><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a></td><td>Auxiliary I/O connector B and D</td><td></td><td></td></tr></tbody></table>
+<p>Auxiliary I/O signals can have one or more functionalities (for example, trigger input, timer output, or user output, depending on the signal). Their possible functionalities are described in their description in the pinout table below. Note that, unlike some other Zebra frame grabbers, there is no limit to the number of events that can be triggered simultaneously using the auxiliary input signals, nor is there a restriction on which auxiliary signal can be used to trigger the event.</p>
+<p>Only those auxiliary signals that have matching Aurora Imaging Library information are included in this section. For information on internal connectors and a comprehensive list of all available input and output signals, refer to the board&#x27;s installation and hardware reference manual.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="board-connectors">Board connectors<a href="#board-connectors" class="hash-link" aria-label="Direct link to Board connectors" title="Direct link to Board connectors" translate="no">​</a></h2>
+<p>The Zebra Rapixo CL SF, Pro SF, and Pro DF boards and cable adapter brackets provide several interface connectors. On the bracket of Zebra Rapixo CL and Pro SF, there are two Camera Link video input connectors and an auxiliary I/O connector. On the double bracket of Zebra Rapixo CL Pro DF, there are two pairs of Camera Link video input connectors and two auxiliary I/O connectors. On the cable adapter bracket, there are two external auxiliary I/O connectors.</p>
+<p><em>[Image: rapixo_CL_Pro__DB_SF_side_view_with_adapter.png]</em></p>
+<p><em>[Image: rapixo_CL_Pro_DF_QB_side_view_with_adapter.png]</em></p>
+<p>Only the following connectors have auxiliary signals with matching Aurora Imaging Library information.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Connector Name</th><th>Connector Abbreviation</th><th>Image</th><th>Description</th></tr></thead><tbody><tr><td>Camera Link video input connectors</td><td>SDR (0, 1, 2, and 3)</td><td><em>[Image: conn_Camera_Link_mini.png]</em></td><td>The Camera Link video input connectors are 26-pin high-density female mini Camera Link connectors. They are used to receive video input, timing, synchronization signals and transmit/receive communication signals between the video source and the frame grabber. There are two Camera Link video input connectors (SDR 0 and 1) on Zebra Rapixo CL SF and Pro SF. There are four Camera Link video input connectors (SDR 0, 1, 2 and 3) on Zebra Rapixo CL Pro DF.</td></tr><tr><td>External auxiliary I/O connector</td><td>HD-15 <sup><a href="#user-content-fn-hd-15_connector" id="user-content-fnref-hd-15_connector" data-footnote-ref="" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>(A, B, C, and D)</td><td><em>[Image: db15M_rev1.png]</em></td><td>The external auxiliary I/O connectors are high-density D-subminiature 15-pin male connectors. They are used to transmit/receive auxiliary signals. External auxiliary I/O connectors A and (if present) B are located on Zebra Rapixo CL Pro, and external auxiliary I/O connectors C and D are located on the cable adapter bracket.</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="signal-names-and-their-matching-aurora-imaging-library-constants">Signal names and their matching Aurora Imaging Library constants<a href="#signal-names-and-their-matching-aurora-imaging-library-constants" class="hash-link" aria-label="Direct link to Signal names and their matching Aurora Imaging Library constants" title="Direct link to Signal names and their matching Aurora Imaging Library constants" translate="no">​</a></h2>
+<p>The table below lists the auxiliary signals with their associated Aurora Imaging Library information.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Direction</th><th>Signal</th><th>Auxiliary</th><th>Description</th><th>Connector</th></tr></thead><tbody><tr><td>Out</td><td><code>CC1 (0)</code></td><td><code>M_CC_IO1</code></td><td>Camera control output 1 for acquisition path 0, which supports: timer output, user output, VSYNC output, HSYNC output, clock output, or rerouting of specific auxiliary input signals. Only the following auxiliary input signals can be rerouted to this output signal:</td><td></td></tr></tbody></table>
+<ul>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO1</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>OPTO_AUX_IN9</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO2</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>TTL_AUX_IO_6</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO5</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>LVDS_AUX_IN11</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO7</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>OPTO_AUX_IN1</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO8</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>TTL_AUX_IO_4</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO10</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>LVDS_AUX_IN2</code>). | HDR/SDR (0) (pin 18, 5) |
+| Out | <code>CC1 (2)</code> | <code>M_CC_IO1</code> | Camera control output 1 for acquisition path 1, which supports: timer output, user output, VSYNC output, HSYNC output, clock output, or rerouting of specific auxiliary input signals. Only the following auxiliary input signals can be rerouted to this output signal:</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO1</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>OPTO_AUX_IN25</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO2</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>TTL_AUX_IO_22</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO5</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>LVDS_AUX_IN27</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO7</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>OPTO_AUX_IN17</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO8</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>TTL_AUX_IO_20</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO10</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>LVDS_AUX_IN18</code>). | HDR/SDR (2) (pin 18, 5) |
+| Out | <code>CC2 (0)</code> | <code>M_CC_IO2</code> | Camera control output 2 for acquisition path 0, which supports: timer output, user output, VSYNC output, HSYNC output, clock output, or rerouting of specific auxiliary input signals. Only the following auxiliary input signals can be rerouted to this output signal:</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO1</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>OPTO_AUX_IN9</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO2</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>TTL_AUX_IO_6</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO5</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>LVDS_AUX_IN11</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO7</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>OPTO_AUX_IN1</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO8</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>TTL_AUX_IO_4</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO10</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>LVDS_AUX_IN2</code>). | HDR/SDR (0) (pin 4, 17) |
+| Out | <code>CC2 (2)</code> | <code>M_CC_IO2</code> | Camera control output 2 for acquisition path 1, which supports: timer output, user output, VSYNC output, HSYNC output, clock output, or rerouting of specific auxiliary input signals. Only the following auxiliary input signals can be rerouted to this output signal:</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO1</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>OPTO_AUX_IN25</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO2</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>TTL_AUX_IO_22</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO5</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>LVDS_AUX_IN27</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO7</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>OPTO_AUX_IN17</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO8</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>TTL_AUX_IO_20</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO10</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>LVDS_AUX_IN18</code>). | HDR/SDR (2) (pin 4, 17) |
+| Out | <code>CC3 (0)</code> | <code>M_CC_IO3</code> | Camera control output 3 for acquisition path 0, which supports: timer output, user output, VSYNC output, HSYNC output, clock output, or rerouting of specific auxiliary input signals. Only the following auxiliary input signals can be rerouted to this output signal:</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO1</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>OPTO_AUX_IN9</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO2</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>TTL_AUX_IO_6</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO5</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>LVDS_AUX_IN11</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO7</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>OPTO_AUX_IN1</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO8</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>TTL_AUX_IO_4</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO10</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>LVDS_AUX_IN2</code>). | HDR/SDR (0) (pin 16, 3) |
+| Out | <code>CC3 (2)</code> | <code>M_CC_IO3</code> | Camera control output 3 for acquisition path 1, which supports: timer output, user output, VSYNC output, HSYNC output, clock output, or rerouting of specific auxiliary input signals. Only the following auxiliary input signals can be rerouted to this output signal:</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO1</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>OPTO_AUX_IN25</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO2</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>TTL_AUX_IO_22</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO5</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>LVDS_AUX_IN27</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO7</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>OPTO_AUX_IN17</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO8</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>TTL_AUX_IO_20</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO10</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>LVDS_AUX_IN18</code>). | HDR/SDR (2) (pin 16, 3) |
+| Out | <code>CC4 (0)</code> | <code>M_CC_IO4</code> | Camera control output 4 for acquisition path 0, which supports: timer output, user output, VSYNC output, HSYNC output, clock output, or rerouting of specific auxiliary input signals. Only the following auxiliary input signals can be rerouted to this output signal:</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO1</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>OPTO_AUX_IN9</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO2</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>TTL_AUX_IO_6</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO5</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>LVDS_AUX_IN11</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO7</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>OPTO_AUX_IN1</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO8</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>TTL_AUX_IO_4</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO10</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV0</code></a> (<code>LVDS_AUX_IN2</code>). | HDR/SDR (0) (pin 2, 15) |
+| Out | <code>CC4 (2)</code> | <code>M_CC_IO4</code> | Camera control output 4 for acquisition path 1, which supports: timer output, user output, VSYNC output, HSYNC output, clock output, or rerouting of specific auxiliary input signals. Only the following auxiliary input signals can be rerouted to this output signal:</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO1</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>OPTO_AUX_IN25</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO2</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>TTL_AUX_IO_22</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO5</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>LVDS_AUX_IN27</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO7</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>OPTO_AUX_IN17</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO8</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>TTL_AUX_IO_20</code>).</p>
+</li>
+<li class="">
+<p><a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigControl"><code>M_AUX_IO10</code></a> on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/MdigAlloc"><code>M_DEV1</code></a> (<code>LVDS_AUX_IN18</code>). | HDR/SDR (2) (pin 2, 15) |
+| In | <code>LVDS_AUX_IN2</code> | <code>M_AUX_IO10</code> | LVDS auxiliary signal (input) for acquisition path 0, which supports: trigger input, user input, or quadrature input bit 0. | HD-15 (A) (pin 5, 4) |
+| In | <code>LVDS_AUX_IN3</code> | <code>M_AUX_IO11</code> | LVDS auxiliary signal (input) for acquisition path 0, which supports: user input, trigger input, timer-clock input, or quadrature input bit 1. | HD-15 (A) (pin 8, 6) |
+| In | <code>LVDS_AUX_IN10</code> | <code>M_AUX_IO4</code> | LVDS auxiliary signal (input) for acquisition path 0, which supports: trigger input or user input. | HD-15 (C) (pin 5, 4) |
+| In | <code>LVDS_AUX_IN11</code> | <code>M_AUX_IO5</code> | LVDS auxiliary signal (input) for acquisition path 0, which supports: trigger input or user input. | HD-15 (C) (pin 8, 6) |
+| In | <code>LVDS_AUX_IN18</code> | <code>M_AUX_IO10</code> | LVDS auxiliary signal (input) for acquisition path 1, which supports: trigger input, user input, or quadrature input bit 0. | HD-15 (B) (pin 5, 4) |
+| In | <code>LVDS_AUX_IN19</code> | <code>M_AUX_IO11</code> | LVDS auxiliary signal (input) for acquisition path 1, which supports: user input, trigger input, timer-clock input, or quadrature input bit 1. | HD-15 (B) (pin 8, 6) |
+| In | <code>LVDS_AUX_IN26</code> | <code>M_AUX_IO4</code> | LVDS auxiliary signal (input) for acquisition path 1, which supports: trigger input or user input. | HD-15 (D) (pin 5, 4) |
+| In | <code>LVDS_AUX_IN27</code> | <code>M_AUX_IO5</code> | LVDS auxiliary signal (input) for acquisition path 1, which supports: trigger input or user input. | HD-15 (D) (pin 8, 6) |
+| Out | <code>LVDS_AUX_OUT7</code> | <code>M_AUX_IO12</code> | LVDS auxiliary signal (output) for acquisition path 0, which supports: timer output or user output. | HD-15 (A) (pin 14, 13) |
+| Out | <code>LVDS_AUX_OUT23</code> | <code>M_AUX_IO13</code> | LVDS auxiliary signal (output) for acquisition path 1, which supports: timer output or user output. | HD-15 (B) (pin 14, 13) |
+| In | <code>OPTO_AUX_IN0</code> | <code>M_AUX_IO6</code> | Opto-isolated auxiliary signal (input) for acquisition path 0, which supports: user input or trigger input. | HD-15 (A) (pin 9, 15) |
+| In | <code>OPTO_AUX_IN1</code> | <code>M_AUX_IO7</code> | Opto-isolated auxiliary signal (input) for acquisition path 0, which supports: user input or trigger input. | HD-15 (A) (pin 11, 12) |
+| In | <code>OPTO_AUX_IN8</code> | <code>M_AUX_IO0</code> | Opto-isolated auxiliary signal (input) for acquisition path 0, which supports: trigger input or user input. | HD-15 (C) (pin 9, 15) |
+| In | <code>OPTO_AUX_IN9</code> | <code>M_AUX_IO1</code> | Opto-isolated auxiliary signal (input) for acquisition path 0, which supports: trigger input or user input. | HD-15 (C) (pin 11, 12) |
+| In | <code>OPTO_AUX_IN16</code> | <code>M_AUX_IO6</code> | Opto-isolated auxiliary signal (input) for acquisition path 1, which supports: user input or trigger input. | HD-15 (B) (pin 9, 15) |
+| In | <code>OPTO_AUX_IN17</code> | <code>M_AUX_IO7</code> | Opto-isolated auxiliary signal (input) for acquisition path 1, which supports: user input or trigger input. | HD-15 (B) (pin 11, 12) |
+| In | <code>OPTO_AUX_IN24</code> | <code>M_AUX_IO0</code> | Opto-isolated auxiliary signal (input) for acquisition path 1, which supports: trigger input or user input. | HD-15 (D) (pin 9, 15) |
+| In | <code>OPTO_AUX_IN25</code> | <code>M_AUX_IO1</code> | Opto-isolated auxiliary signal (input) for acquisition path 1, which supports: trigger input or user input. | HD-15 (D) (pin 11, 12) |
+| In-Out | <code>TTL_AUX_IO_4</code> | <code>M_AUX_IO8</code> | TTL auxiliary signal (input/output) for acquisition path 0, which supports: user input/output, trigger input. | HD-15 (A) (pin 1) |
+| In-Out | <code>TTL_AUX_IO_5</code> | <code>M_AUX_IO9</code> | TTL auxiliary signal (input/output) for acquisition path 0, which supports: timer output, trigger input, user input, or user output. | HD-15 (A) (pin 2) |
+| In-Out | <code>TTL_AUX_IO_6</code> | <code>M_AUX_IO2</code> | TTL auxiliary signal (input/output) for acquisition path 0, which supports: trigger input, user input, user output, or timer output. | HD-15 (A) (pin 3) |
+| In-Out | <code>TTL_AUX_IO_14</code> | <code>M_AUX_IO3</code> | TTL auxiliary signal (input/output) for acquisition path 0, which supports: trigger input, user input, or user output. | HD-15 (C) (pin 3) |
+| In-Out | <code>TTL_AUX_IO_20</code> | <code>M_AUX_IO8</code> | TTL auxiliary signal (input/output) for acquisition path 1, which supports: trigger input, user input, or user output. | HD-15 (B) (pin 1) |
+| In-Out | <code>TTL_AUX_IO_21</code> | <code>M_AUX_IO9</code> | TTL auxiliary signal (input/output) for acquisition path 1, which supports: timer output, trigger input, user input, or user output. | HD-15 (B) (pin 2) |
+| In-Out | <code>TTL_AUX_IO_22</code> | <code>M_AUX_IO2</code> | TTL auxiliary signal (input/output) for acquisition path 1, which supports: timer output, trigger input, user input, or user output. | HD-15 (B) (pin 3) |
+| In-Out | <code>TTL_AUX_IO_30</code> | <code>M_AUX_IO3</code> | TTL auxiliary signal (input/output) for acquisition path 1, which supports: trigger input, user input, or user output. | HD-15 (D) (pin 3) |</p>
+</li>
+</ul>
+<!-- -->
+<section data-footnotes="" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="#footnote-label" class="hash-link" aria-label="Direct link to Footnotes" title="Direct link to Footnotes" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-hd-15_connector">
+<p>Previously referred to as DBHD-15, but more accurately known as DE-15. <a href="#user-content-fnref-hd-15_connector" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S07_Rapixo_CL_DB_QB_connectors_and_signal_names"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Zebra Rapixo CL DB and Pro DB/QB connectors and signal names</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/Rapixo_CL/S09_Rapixo_CL_board_flow_diagrams"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Zebra Rapixo CL board flow diagrams</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#board-connectors" class="table-of-contents__link toc-highlight">Board connectors</a></li><li><a href="#signal-names-and-their-matching-aurora-imaging-library-constants" class="table-of-contents__link toc-highlight">Signal names and their matching Aurora Imaging Library constants</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

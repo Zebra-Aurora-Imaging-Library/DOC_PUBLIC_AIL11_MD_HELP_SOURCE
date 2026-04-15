@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dblob/M3dblobControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dblobControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dblobControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dblob","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"},{"@type":"ListItem","position":2,"name":"M3dblobControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Collapse sidebar category &#x27;3dblob&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAlloc"><span title="M3dblobAlloc" class="linkLabel_WmDU">M3dblobAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAllocResult"><span title="M3dblobAllocResult" class="linkLabel_WmDU">M3dblobAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCalculate"><span title="M3dblobCalculate" class="linkLabel_WmDU">M3dblobCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCombine"><span title="M3dblobCombine" class="linkLabel_WmDU">M3dblobCombine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><span title="M3dblobControl" class="linkLabel_WmDU">M3dblobControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControlDraw"><span title="M3dblobControlDraw" class="linkLabel_WmDU">M3dblobControlDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCopyResult"><span title="M3dblobCopyResult" class="linkLabel_WmDU">M3dblobCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobDraw3d"><span title="M3dblobDraw3d" class="linkLabel_WmDU">M3dblobDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobExtract"><span title="M3dblobExtract" class="linkLabel_WmDU">M3dblobExtract</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobFree"><span title="M3dblobFree" class="linkLabel_WmDU">M3dblobFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><span title="M3dblobGetResult" class="linkLabel_WmDU">M3dblobGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobInquire"><span title="M3dblobInquire" class="linkLabel_WmDU">M3dblobInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobInquireDraw"><span title="M3dblobInquireDraw" class="linkLabel_WmDU">M3dblobInquireDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobRestore"><span title="M3dblobRestore" class="linkLabel_WmDU">M3dblobRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSave"><span title="M3dblobSave" class="linkLabel_WmDU">M3dblobSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><span title="M3dblobSegment" class="linkLabel_WmDU">M3dblobSegment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSelect"><span title="M3dblobSelect" class="linkLabel_WmDU">M3dblobSelect</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSort"><span title="M3dblobSort" class="linkLabel_WmDU">M3dblobSort</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobStream"><span title="M3dblobStream" class="linkLabel_WmDU">M3dblobStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span>3dblob</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dblobControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dblobControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control a 3D blob analysis context or result buffer setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">M3dblobControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextOrResult3dblobId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  LabelOrIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">             </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function controls the settings of a 3D blob analysis context or result buffer.</p>
+<p>You can inquire most of these settings using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobInquire"><code>M3dblobInquire</code></a>.</p>
+<p>To control draw 3D blob analysis settings for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobDraw3d"><code>M3dblobDraw3d</code></a>, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControlDraw"><code>M3dblobControlDraw</code></a> instead.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresult3dblobid-out-ail_id"><code>ContextOrResult3dblobId</code> <em>(out, AIL_ID)</em><a href="#contextorresult3dblobid-out-ail_id" class="hash-link" aria-label="Direct link to contextorresult3dblobid-out-ail_id" title="Direct link to contextorresult3dblobid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 3D blob analysis context or result buffer to control. The 3D blob analysis context or result buffer must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAlloc"><code>M3dblobAlloc</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAllocResult"><code>M3dblobAllocResult</code></a>, respectively.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="labelorindex-in-ail_int64"><code>LabelOrIndex</code> <em>(in, AIL_INT64)</em><a href="#labelorindex-in-ail_int64" class="hash-link" aria-label="Direct link to labelorindex-in-ail_int64" title="Direct link to labelorindex-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the label or index of the blob to control, or specifies to control all blobs. This parameter must be set to one of the following values:</p>
+<p><em>For specifying the blob label or index</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.</td></tr></tbody></table>
+<p>If a 3D blob analysis context is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_CONTEXT</code></a>.</p>
+<p>If a 3D blob analysis result buffer is specified, same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_GENERAL</code></a>. |
+| <code>M_BLOB_INDEX</code> | Specifies the index of the blob. |
+| <code>M_BLOB_LABEL</code> | Specifies the label of the blob. |
+| <code>M_ALL_BLOBS</code> | Specifies to apply the control setting to all blobs. |
+| <code>M_CONTEXT</code> | Specifies to control a general setting of a 3D blob analysis context. |
+| <code>M_GENERAL</code> | Specifies to control a general setting of a 3D blob analysis result buffer. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the setting&#x27;s new value.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-the-control-type-and-control-value-for-a-3d-blob-analysis-context-or-result-buffer">For specifying the control type and control value for a 3D blob analysis context or result buffer<a href="#for-specifying-the-control-type-and-control-value-for-a-3d-blob-analysis-context-or-result-buffer" class="hash-link" aria-label="Direct link to For specifying the control type and control value for a 3D blob analysis context or result buffer" title="Direct link to For specifying the control type and control value for a 3D blob analysis context or result buffer" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>ContextOrResult3dblobId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>ControlType</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>ControlValue</code></a> parameter settings can be specified for different types of 3D blob analysis contexts or result buffers.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="calculate-3d-blob-analysis-context-id"><code>Calculate 3D blob analysis context ID</code><a href="#calculate-3d-blob-analysis-context-id" class="hash-link" aria-label="Direct link to calculate-3d-blob-analysis-context-id" title="Direct link to calculate-3d-blob-analysis-context-id" translate="no">​</a></h3>
+<p>Specifies a calculate 3D blob analysis context. allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAlloc"><code>M3dblobAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAlloc"><code>M_CALCULATE_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCalculate"><code>M3dblobCalculate</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_all_features"><code>M_ALL_FEATURES</code><a href="#m_all_features" class="hash-link" aria-label="Direct link to m_all_features" title="Direct link to m_all_features" translate="no">​</a></h4>
+<p>Sets whether to calculate all blob features. You can then selectively enable or disable specific features for calculation.  It is not recommended to use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_ALL_FEATURES</code></a> in your final application. This is because programs using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_ALL_FEATURES</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_ENABLE</code></a> might become slower when new Aurora Imaging Library versions are released, if new features have been added.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the calculation of all features.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to enable the calculation of all features.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_bounding_box"><code>M_BOUNDING_BOX</code><a href="#m_bounding_box" class="hash-link" aria-label="Direct link to m_bounding_box" title="Direct link to m_bounding_box" translate="no">​</a></h4>
+<p>Sets whether to calculate the axis-aligned bounding box and its related Ferets. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_BOX_CENTER_...</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_Z</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MAX_...</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MIN_...</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_...</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the axis-aligned bounding box and its related Ferets.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the axis-aligned bounding box and its related Ferets.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_centroid"><code>M_CENTROID</code><a href="#m_centroid" class="hash-link" aria-label="Direct link to m_centroid" title="Direct link to m_centroid" translate="no">​</a></h4>
+<p>Sets whether to calculate the centroid. This is equivalent to enabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> with an order of at least 1. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_CENTROID_...</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the centroid.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the centroid.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_contact_points"><code>M_FERET_CONTACT_POINTS</code><a href="#m_feret_contact_points" class="hash-link" aria-label="Direct link to m_feret_contact_points" title="Direct link to m_feret_contact_points" translate="no">​</a></h4>
+<p>Sets whether to save the contact points at each Feret; the contact points are the coordinates of the Feret diameter&#x27;s start and end points. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_...</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_CONTACT_POINTS_...</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to save the contact points at each Feret.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to save the contact points at each Feret.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_general"><code>M_FERET_GENERAL</code><a href="#m_feret_general" class="hash-link" aria-label="Direct link to m_feret_general" title="Direct link to m_feret_general" translate="no">​</a></h4>
+<p>Sets whether to calculate the Feret along a custom direction specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_GENERAL</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_DIRECTION_...</code></a>. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_GENERAL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the Feret along a custom direction.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the Feret along a custom direction.  &gt; <strong>Note:</strong> Note that you must specify the direction vector with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_DIRECTION_...</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_max_diameter"><code>M_FERET_MAX_DIAMETER</code><a href="#m_feret_max_diameter" class="hash-link" aria-label="Direct link to m_feret_max_diameter" title="Direct link to m_feret_max_diameter" translate="no">​</a></h4>
+<p>Sets whether to calculate the longest Feret. Note that the Feret&#x27;s direction is accurate up to the angle specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_PRECISION</code></a>. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_MAX_DIAMETER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the longest Feret.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the longest Feret.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_min_diameter"><code>M_FERET_MIN_DIAMETER</code><a href="#m_feret_min_diameter" class="hash-link" aria-label="Direct link to m_feret_min_diameter" title="Direct link to m_feret_min_diameter" translate="no">​</a></h4>
+<p>Sets whether to calculate the shortest Feret. Note that the Feret&#x27;s direction is accurate up to the angle specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_FERET_PRECISION</code></a>. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_MIN_DIAMETER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the shortest Feret.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the shortest Feret.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_precision"><code>M_FERET_PRECISION</code><a href="#m_feret_precision" class="hash-link" aria-label="Direct link to m_feret_precision" title="Direct link to m_feret_precision" translate="no">​</a></h4>
+<p>Sets the accuracy when calculating the minimum and maximum Feret directions. The smaller the specified angle, the longer the calculation will take.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt; 90.0</code> <em>(default)</em></td><td>Specifies the precision (in degrees).</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_linearity"><code>M_LINEARITY</code><a href="#m_linearity" class="hash-link" aria-label="Direct link to m_linearity" title="Direct link to m_linearity" translate="no">​</a></h4>
+<p>Sets whether to calculate the degree to which the blobs are linear. This is equivalent to enabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> with an order of at least 2. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_LINEARITY</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the linearity.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the linearity.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_order"><code>M_MOMENT_ORDER</code><a href="#m_moment_order" class="hash-link" aria-label="Direct link to m_moment_order" title="Direct link to m_moment_order" translate="no">​</a></h4>
+<p>Sets the order up to which moments are calculated. For example, setting this to 3 will calculate third order moments, but also second and first order moments.  Note that there are <code>(_N_+1)(_N_+2)/2</code> moments for order <em>N</em>. For example, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENT_ORDER</code></a> is set to 3, the number of computed moments are 10, 6, and 3 for third, second, and first order moments, respectively.  See <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> for the moments feature results that are available, depending on the order specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENT_ORDER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0</code> <em>(default)</em></td><td>Specifies the moment order.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moments"><code>M_MOMENTS</code><a href="#m_moments" class="hash-link" aria-label="Direct link to m_moments" title="Direct link to m_moments" translate="no">​</a></h4>
+<p>Sets whether to calculate all moments up to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENT_ORDER</code></a>. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MOMENT_CENTRAL_XYZ()</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MOMENT_XYZ()</code></a>. If the moment order is set to at least 1, you can also retrieve <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_CENTROID_...</code></a> results; if the moment order is set to at least 2, you can also retrieve <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_COVARIANCE_MATRIX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_EIGENVALUE_...</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_LINEARITY</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PLANARITY</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PRINCIPAL_AXIS_...</code></a> results.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the moments.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the moments.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nearest_blob"><code>M_NEAREST_BLOB</code><a href="#m_nearest_blob" class="hash-link" aria-label="Direct link to m_nearest_blob" title="Direct link to m_nearest_blob" translate="no">​</a></h4>
+<p>Sets whether to calculate features related to the nearest blob. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_NEAREST_BLOB</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_NEAREST_BLOB_DISTANCE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_NEAREST_POINT_...</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate features related to the nearest blob.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate features related to the nearest blob.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pca"><code>M_PCA</code><a href="#m_pca" class="hash-link" aria-label="Direct link to m_pca" title="Direct link to m_pca" translate="no">​</a></h4>
+<p>Sets whether to calculate the principal components, which are used in a principal component analysis (PCA) or when calculating <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA_BOX</code></a>. This is equivalent to enabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> with an order of at least 2. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PRINCIPAL_AXIS_...</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the principal components.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the principal components.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pca_box"><code>M_PCA_BOX</code><a href="#m_pca_box" class="hash-link" aria-label="Direct link to m_pca_box" title="Direct link to m_pca_box" translate="no">​</a></h4>
+<p>Sets whether to calculate the PCA-aligned bounding box and its related Ferets. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_BOX_CENTER_...</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_AT_PRINCIPAL_AXIS_...</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_SIZE_...</code></a>.  The PCA-aligned bounding box is typically a tighter fit than other boxes (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a>) for highly planar or linear objects.  &gt; <strong>Note:</strong> Note that enabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA_BOX</code></a> automatically enables <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the PCA-aligned bounding box and its related Ferets.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the PCA-aligned bounding box and its related Ferets.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_planarity"><code>M_PLANARITY</code><a href="#m_planarity" class="hash-link" aria-label="Direct link to m_planarity" title="Direct link to m_planarity" translate="no">​</a></h4>
+<p>Sets whether to calculate the degree to which the blobs are planar. This is equivalent to enabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MOMENTS</code></a> with an order of at least 2. You can retrieve results for this feature using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_PLANARITY</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the planarity.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the planarity.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_semi_oriented_box"><code>M_SEMI_ORIENTED_BOX</code><a href="#m_semi_oriented_box" class="hash-link" aria-label="Direct link to m_semi_oriented_box" title="Direct link to m_semi_oriented_box" translate="no">​</a></h4>
+<p>Sets whether to calculate the semi-oriented bounding box and its related Ferets. You can retrieve results for these features using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_BOX_CENTER_...</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_SEMI_ORIENTED_HEIGHT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_SEMI_ORIENTED_WIDTH</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_FERET_Z</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MAX_Z</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MIN_Z</code></a>.  The semi-oriented bounding box is the minimum volume box that is axis-aligned in Z but not in X and Y. This box is useful when the objects lay flat in 1 dimension (for example, on a conveyor).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to calculate the semi-oriented bounding box and its related Ferets.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to calculate the semi-oriented bounding box and its related Ferets.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="segmentation-3d-blob-analysis-context-id"><code>Segmentation 3D blob analysis context ID</code><a href="#segmentation-3d-blob-analysis-context-id" class="hash-link" aria-label="Direct link to segmentation-3d-blob-analysis-context-id" title="Direct link to segmentation-3d-blob-analysis-context-id" translate="no">​</a></h3>
+<p>Specifies a segmentation 3D blob analysis context. allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAlloc"><code>M3dblobAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAlloc"><code>M_SEGMENTATION_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color_distance_max"><code>M_COLOR_DISTANCE_MAX</code><a href="#m_color_distance_max" class="hash-link" aria-label="Direct link to m_color_distance_max" title="Direct link to m_color_distance_max" translate="no">​</a></h4>
+<p>Sets the maximum difference between the color of two points for them to be considered neighbors. Set how to calculate the distance with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_COLOR_DISTANCE_MODE</code></a>. This control type is available when the component <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_REFLECTANCE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_INTENSITY</code></a> exists in the source container. If you set a non-infinite value, and neither a reflectance nor intensity component exists, am Aurora Imaging Library error is reported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies not to consider the color.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the maximum color difference.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color_distance_mode"><code>M_COLOR_DISTANCE_MODE</code><a href="#m_color_distance_mode" class="hash-link" aria-label="Direct link to m_color_distance_mode" title="Direct link to m_color_distance_mode" translate="no">​</a></h4>
+<p>Sets how to calculate the difference in color between two points. If the intensity or reflectance component is monochrome, both modes calculate the same color difference.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_EUCLIDEAN</code> <em>(default)</em></td><td>Specifies to use the Euclidean distance to calculate the color difference.  A Euclidean distance is the square root of the sum of the squared differences between the color of each point&#x27;s corresponding element in its intensity or reflectance component&#x27;s 2D grid organization.</td></tr><tr><td><code>M_MANHATTAN</code></td><td>Specifies to use the Manhattan distance to calculate the color difference.  A Manhattan distance is the sum of the absolute value of the differences between the color of each point&#x27;s corresponding element in its intensity or reflectance component&#x27;s 2D grid organization.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_custom_distance_component"><code>M_CUSTOM_DISTANCE_COMPONENT</code><a href="#m_custom_distance_component" class="hash-link" aria-label="Direct link to m_custom_distance_component" title="Direct link to m_custom_distance_component" translate="no">​</a></h4>
+<p>Sets to use an extra component during the segmentation. The custom component must be 1-band and have the same size as the range component. Points are considered neighbors if their respective values in the custom component differ by less than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_CUSTOM_DISTANCE_MAX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPONENT_CONFIDENCE</code></td><td>Specifies that the component stores confidence information for the<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_COMPONENT_RANGE</code></a>or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_COMPONENT_DISPARITY</code></a>component of the container.</td></tr><tr><td><code>M_COMPONENT_COORDINATE_MAP_A_AIL</code></td><td>Specifies that the component stores the A coordinate map provided by the camera.</td></tr><tr><td><code>M_COMPONENT_COORDINATE_MAP_B_AIL</code></td><td>Specifies that the component stores the B coordinate map provided by the camera.</td></tr><tr><td><code>M_COMPONENT_CUSTOM + n</code></td><td>Specifies that the component has a custom component type, identified by <em>n</em>, where n can be a value between 0 and 254.</td></tr><tr><td><code>M_COMPONENT_DISPARITY</code></td><td>Specifies that the component stores a disparity map.</td></tr><tr><td><code>M_COMPONENT_INFRARED</code></td><td>Specifies that the component stores an intensity image of infrared light.</td></tr><tr><td><code>M_COMPONENT_INTENSITY</code></td><td>Specifies that the component stores an intensity image of visible light.</td></tr><tr><td><code>M_COMPONENT_METADATA</code></td><td>Specifies that the component stores metadata information.</td></tr><tr><td><code>M_COMPONENT_MULTISPECTRAL</code></td><td>Specifies that the component stores an intensity image where each band represents the intensity of a specific wavelength of light.</td></tr><tr><td><code>M_COMPONENT_RANGE</code></td><td>Specifies that the component stores 3D distance/position information.</td></tr><tr><td><code>M_COMPONENT_REFLECTANCE</code></td><td>Specifies that the component stores a reflectance map.</td></tr><tr><td><code>M_COMPONENT_REGION_AIL</code></td><td>Specifies that the component stores a region of interest (ROI) for the<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_COMPONENT_RANGE</code></a> component of the container.</td></tr><tr><td><code>M_COMPONENT_SCATTER</code></td><td>Specifies that the component stores a scatter map.</td></tr><tr><td><code>M_COMPONENT_ULTRAVIOLET</code></td><td>Specifies that the component stores an intensity image of ultraviolet light.</td></tr><tr><td><code>M_COMPONENT_UNDEFINED</code></td><td>Specifies that the component stores information of an unknown type.</td></tr><tr><td><code>M_NULL</code> <em>(default)</em></td><td>Specifies that there is no custom component.</td></tr><tr><td><code>M_COMPONENT_BY_ID</code></td><td>Specifies to use the component, in the container, that has the specified buffer identifier. An error will be generated if the container does not have a component with this buffer identifier.</td></tr><tr><td><code>M_COMPONENT_BY_INDEX</code></td><td>Specifies to use the component, in the container, at the specified index. An error will be generated if the container does not have a component at this index.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_custom_distance_max"><code>M_CUSTOM_DISTANCE_MAX</code><a href="#m_custom_distance_max" class="hash-link" aria-label="Direct link to m_custom_distance_max" title="Direct link to m_custom_distance_max" translate="no">​</a></h4>
+<p>Sets the maximum difference within which two points are considered neighbors in the custom component. This control type is available only when you have specified a custom component with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_CUSTOM_DISTANCE_COMPONENT</code></a>. If you set a non-infinite value, and the source container does not have the specified custom component, an Aurora Imaging Library error is reported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies that there is no custom component.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the maximum difference between points in the custom component.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_global_normal_distance_max"><code>M_GLOBAL_NORMAL_DISTANCE_MAX</code><a href="#m_global_normal_distance_max" class="hash-link" aria-label="Direct link to m_global_normal_distance_max" title="Direct link to m_global_normal_distance_max" translate="no">​</a></h4>
+<p>Sets the maximum angle between the normal of a point and a blob&#x27;s average normal, for the point to be added to the blob. This control type can be used to segment a point cloud into planar blobs to distinguish between relatively flat regions.  You can specify how to calculate the angle with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NORMAL_DISTANCE_MODE</code></a>. Setting a smaller maximum angle forces the blobs into more planar (flatter) regions, allowing for less variation in each blob. Since this control is solely based upon normal vectors, parallel but distinct blobs can still merge together, unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_GLOBAL_PLANE_DISTANCE_MAX</code></a> is specified as well.  This control type is available when an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_NORMALS_AIL</code></a> component exists in the source container. If the normals component is not present, the segmentation will fail and the operation&#x27;s status returns <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MISSING_COMPONENT_NORMALS_AIL</code></a>, when requested using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_STATUS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies not to consider the angle.</td></tr><tr><td><code>0.0 &lt; Value &lt;= 180.0</code></td><td>Specifies the maximum angle, in degrees.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_global_plane_distance_max"><code>M_GLOBAL_PLANE_DISTANCE_MAX</code><a href="#m_global_plane_distance_max" class="hash-link" aria-label="Direct link to m_global_plane_distance_max" title="Direct link to m_global_plane_distance_max" translate="no">​</a></h4>
+<p>Sets the maximum distance between a point and a blob&#x27;s average plane, for the point to be added to the blob. The blob&#x27;s average plane is defined by the average normal and passes through the centroid.  This control type requires that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_GLOBAL_NORMAL_DISTANCE_MAX</code></a> has been set, and is used to prevent parallel planar blobs from merging together.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies not to consider the distance.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the maximum distance.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_distance"><code>M_MAX_DISTANCE</code><a href="#m_max_distance" class="hash-link" aria-label="Direct link to m_max_distance" title="Direct link to m_max_distance" translate="no">​</a></h4>
+<p>Sets the maximum distance within which two points are considered neighbors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies that there is no maximum distance. Instead, the function will use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code></a> to determine a point&#x27;s neighborhood.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the maximum distance.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_distance_mode"><code>M_MAX_DISTANCE_MODE</code><a href="#m_max_distance_mode" class="hash-link" aria-label="Direct link to m_max_distance_mode" title="Direct link to m_max_distance_mode" translate="no">​</a></h4>
+<p>Sets whether to use, for the maximum distance between points, the value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MAX_DISTANCE</code></a> or an automatic threshold. This is the maximum distance within which two points are considered neighbors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code></td><td>Specifies to automatically calculate the maximum distance.</td></tr><tr><td><code>M_USER_DEFINED</code> <em>(default)</em></td><td>Specifies to use the value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MAX_DISTANCE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_maximum_number_neighbors"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code><a href="#m_maximum_number_neighbors" class="hash-link" aria-label="Direct link to m_maximum_number_neighbors" title="Direct link to m_maximum_number_neighbors" translate="no">​</a></h4>
+<p>Sets the maximum number of neighbors to consider at each point. If there are more neighbors than the specified maximum, only the closest points are kept.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_search_mode"><code>M_NEIGHBOR_SEARCH_MODE</code><a href="#m_neighbor_search_mode" class="hash-link" aria-label="Direct link to m_neighbor_search_mode" title="Direct link to m_neighbor_search_mode" translate="no">​</a></h4>
+<p>Sets the search mode for finding the neighbors of a point.  &gt; <strong>Note:</strong> Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_ORGANIZED</code></a> is usually faster, but is less robust to noise. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_TREE</code></a> is typically the most precise because it chooses points that are closest in 3D space, using the Euclidean distance.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_MESH</code></td><td>Specifies to use the point cloud&#x27;s mesh component to determine the neighbors of a point. A mesh&#x27;s triangular faces are composed of connected neighboring points.  &gt; <strong>Note:</strong> This option is available only when the source container has an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_MESH_AIL</code></a> component. If the mesh component is not present, the segmentation will fail and the operation&#x27;s status returns <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MISSING_COMPONENT_MESH_AIL</code></a>, when requested using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_STATUS</code></a>.</td></tr><tr><td><code>M_ORGANIZED</code></td><td>Specifies to use the point cloud&#x27;s organizational structure to determine the neighbors of a point. This option is supported only for an organized point cloud.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_ORGANIZED</code></a> is specified, you must set either <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code></a> to determine the extent of the neighborhood.  &gt; <strong>Note:</strong> If the point cloud is unorganized, the segmentation will fail and the operation&#x27;s status returns <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_CONTAINER_NOT_ORGANIZED</code></a>, when requested using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_STATUS</code></a>.</td></tr><tr><td><code>M_TREE</code> <em>(default)</em></td><td>Specifies to use a KD tree search mode to determine a point&#x27;s neighbors.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_TREE</code></a> is specified, you must also set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_organized_size"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code><a href="#m_neighborhood_organized_size" class="hash-link" aria-label="Direct link to m_neighborhood_organized_size" title="Direct link to m_neighborhood_organized_size" translate="no">​</a></h4>
+<p>Sets the neighborhood size, which must be an odd number, when finding the neighbors of a point in an organized point cloud. The size determines the number of elements along a row or column of the 2D buffer of the range and confidence components. For example, if you set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code></a> to 7, the neighborhood is a 7-element by 7-element region in the source container&#x27;s 2D grid organization (specifically, in the organized point cloud&#x27;s <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_RANGE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_CONFIDENCE</code></a> components).  Calculations for points close to the edge of the 2D buffer use a clipped neighborhood.  This control type is supported only when using an organized point cloud and only if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NEIGHBOR_SEARCH_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_ORGANIZED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_distance_max"><code>M_NORMAL_DISTANCE_MAX</code><a href="#m_normal_distance_max" class="hash-link" aria-label="Direct link to m_normal_distance_max" title="Direct link to m_normal_distance_max" translate="no">​</a></h4>
+<p>Sets the maximum angle between normal vectors within which two points are considered neighbors. Specify how to calculate the angle with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NORMAL_DISTANCE_MODE</code></a>.  This control type is available when an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_NORMALS_AIL</code></a> component exists in the source container. If the normals component is not present, the segmentation will fail and the operation&#x27;s status returns <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MISSING_COMPONENT_NORMALS_AIL</code></a>, when requested using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_STATUS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies not to consider the normals.</td></tr><tr><td><code>0.0 &lt; Value &lt;= 180.0</code></td><td>Specifies the maximum angle, in degrees.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_distance_max_mode"><code>M_NORMAL_DISTANCE_MAX_MODE</code><a href="#m_normal_distance_max_mode" class="hash-link" aria-label="Direct link to m_normal_distance_max_mode" title="Direct link to m_normal_distance_max_mode" translate="no">​</a></h4>
+<p>Sets whether to use, for the maximum angle between normal vectors, the value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NORMAL_DISTANCE_MAX</code></a> or an automatic threshold. This is the maximum angle between the normal vectors of two neighboring points for the points to be considered neighbors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code></td><td>Specifies to automatically calculate the maximum angle.</td></tr><tr><td><code>M_USER_DEFINED</code> <em>(default)</em></td><td>Specifies to use the value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NORMAL_DISTANCE_MAX</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_distance_mode"><code>M_NORMAL_DISTANCE_MODE</code><a href="#m_normal_distance_mode" class="hash-link" aria-label="Direct link to m_normal_distance_mode" title="Direct link to m_normal_distance_mode" translate="no">​</a></h4>
+<p>Sets how to calculate the angle difference between the normal vectors of two points. If required, set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NORMAL_DISTANCE_MODE</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_ORIENTATION</code></a> to ensure that the segmentation is invariant to the normal viewpoint.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DIRECTION</code> <em>(default)</em></td><td>Specifies to calculate the angle from 0 to 180 degrees.</td></tr><tr><td><code>M_ORIENTATION</code></td><td>Specifies to calculate the angle from 0 to 90 degrees; when specified, this control value considers flipped normals to be the same.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_max"><code>M_NUMBER_OF_POINTS_MAX</code><a href="#m_number_of_points_max" class="hash-link" aria-label="Direct link to m_number_of_points_max" title="Direct link to m_number_of_points_max" translate="no">​</a></h4>
+<p>Sets the maximum number of points for a blob to be considered valid. Blobs with more points than the specified value will be discarded and their points assigned the label 0. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NUMBER_OF_POINTS_MAX</code></a> to remove the background, which is often the largest blob.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies that there is no maximum number of points.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the maximum number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_min"><code>M_NUMBER_OF_POINTS_MIN</code><a href="#m_number_of_points_min" class="hash-link" aria-label="Direct link to m_number_of_points_min" title="Direct link to m_number_of_points_min" translate="no">​</a></h4>
+<p>Sets the minimum number of points for a blob to be considered valid. Blobs with fewer points than the specified value will be discarded and their points will be assigned the label 0. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NUMBER_OF_POINTS_MIN</code></a> to remove blobs corresponding to a few isolated points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the minimum number of points.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_relabel_consecutive"><code>M_RELABEL_CONSECUTIVE</code><a href="#m_relabel_consecutive" class="hash-link" aria-label="Direct link to m_relabel_consecutive" title="Direct link to m_relabel_consecutive" translate="no">​</a></h4>
+<p>Sets whether to force the labels to be consecutive from 1 to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MAX_LABEL_VALUE</code></a>. When calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> with a label image, this will recompute the labels instead of using those from the label image.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_RELABEL_CONSECUTIVE</code></a> sets each blob label to the blob&#x27;s index + 1.  Note that this operation will change the value of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MAX_LABEL_VALUE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to force the labels to be consecutive.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to force the labels to be consecutive.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_segmentation_mode"><code>M_SEGMENTATION_MODE</code><a href="#m_segmentation_mode" class="hash-link" aria-label="Direct link to m_segmentation_mode" title="Direct link to m_segmentation_mode" translate="no">​</a></h4>
+<p>Sets the type of segmentation to perform.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_EUCLIDEAN</code> <em>(default)</em></td><td>Specifies to segment the point cloud based on the (Euclidean) distance between points. Use the other segmentation context control settings to modify the segmentation criteria.</td></tr><tr><td><code>M_LABEL_IMAGE</code></td><td>Specifies to copy a label image into the specified result buffer (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a>). You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_LABEL_IMAGE</code></a> to copy an external segmentation (for example, a label image created using the 2D Blob Analysis module). All segmentation control types except <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NUMBER_OF_POINTS_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NUMBER_OF_POINTS_MIN</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_RELABEL_CONSECUTIVE</code></a> are ignored in this mode.  &gt; <strong>Note:</strong> Note that you can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> with the predefined context <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M_SEGMENTATION_CONTEXT_LABEL_IMAGE</code></a>. In this case, all segmentation context control types are set to their default, except for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_SEGMENTATION_MODE</code></a> which is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_LABEL_IMAGE</code></a>.</td></tr><tr><td><code>M_WHOLE_IMAGE</code></td><td>Specifies to group all valid points into a single blob, which allows you to perform calculations on the entire point cloud. All segmentation control types except <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NUMBER_OF_POINTS_MAX</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_NUMBER_OF_POINTS_MIN</code></a> are ignored in this mode.  &gt; <strong>Note:</strong> Note that you can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> with the predefined context <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M_SEGMENTATION_CONTEXT_WHOLE_IMAGE</code></a>. In this case, all segmentation context control types are set to their default, except for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_SEGMENTATION_MODE</code></a> which is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_WHOLE_IMAGE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_timeout"><code>M_TIMEOUT</code><a href="#m_timeout" class="hash-link" aria-label="Direct link to m_timeout" title="Direct link to m_timeout" translate="no">​</a></h4>
+<p>Sets the maximum amount of time for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> to complete the blob segmentation operation before generating a time-out error.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that there is no timeout value.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the timeout value, in msec.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="segmentation-3d-blob-analysis-result-id-for-a-single-blob-or-all-blobs"><code>Segmentation 3D blob analysis result ID, for a single blob or all blobs</code><a href="#segmentation-3d-blob-analysis-result-id-for-a-single-blob-or-all-blobs" class="hash-link" aria-label="Direct link to segmentation-3d-blob-analysis-result-id-for-a-single-blob-or-all-blobs" title="Direct link to segmentation-3d-blob-analysis-result-id-for-a-single-blob-or-all-blobs" translate="no">​</a></h3>
+<p>Specifies a segmentation 3D blob analysis result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAllocResult"><code>M3dblobAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAllocResult"><code>M_SEGMENTATION_RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> results.</p>
+<h4><code>?</code></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>ControlValue</code></td><td>Specifies the custom feature&#x27;s computed value.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_merge"><code>M_MERGE</code><a href="#m_merge" class="hash-link" aria-label="Direct link to m_merge" title="Direct link to m_merge" translate="no">​</a></h4>
+<p>Merges the blob specified using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>ControlValue</code></a> parameter with the one specified using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>LabelOrIndex</code></a> parameter. The resulting blob retains the label of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>LabelOrIndex</code></a> blob. Since this operation changes the segmentation (unlike when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSelect"><code>M3dblobSelect</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSort"><code>M3dblobSort</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCombine"><code>M3dblobCombine</code></a>), this result buffer becomes incompatible with sibling result buffers (for example, you cannot combine the set of blobs in this result buffer with those in sibling result buffers).  &gt; <strong>Note:</strong> Note that, since the merge changes the number of blobs, the index of any blob might change.  If the two blobs contain calculated features, the merged blob will contain all features that can be trivially merged (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_BOUNDING_BOX</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_PCA</code></a>), but not features that would need to be recomputed from scratch (for example, minimum/maximum diameter and nearest blob). The merged blob will also never contain any custom features.  For a successful merge, both blobs must be singular; that is, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_ALL_BLOBS</code></a> must not be specified. If you want to treat all blobs as one, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> with either the predefined context <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M_SEGMENTATION_CONTEXT_WHOLE_IMAGE</code></a> or a previously allocated <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAlloc"><code>M_SEGMENTATION_CONTEXT</code></a> context for which you have set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_SEGMENTATION_MODE</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_WHOLE_IMAGE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_BLOB_INDEX</code></td><td>Specifies the index of the blob.</td></tr><tr><td><code>M_BLOB_LABEL</code></td><td>Specifies the label of the blob.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_remove_feature"><code>M_REMOVE_FEATURE</code><a href="#m_remove_feature" class="hash-link" aria-label="Direct link to m_remove_feature" title="Direct link to m_remove_feature" translate="no">​</a></h4>
+<p>Sets the custom feature(s) to remove from the blob. If a feature is not available, no error is reported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CUSTOM_FEATURE</code></td><td>Removes a custom feature from the blob(s).</td></tr><tr><td><code>M_ALL</code></td><td>Specifies to remove all custom features.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="segmentation-3d-blob-analysis-result-id-for-general-results"><code>Segmentation 3D blob analysis result ID, for general results</code><a href="#segmentation-3d-blob-analysis-result-id-for-general-results" class="hash-link" aria-label="Direct link to segmentation-3d-blob-analysis-result-id-for-general-results" title="Direct link to segmentation-3d-blob-analysis-result-id-for-general-results" translate="no">​</a></h3>
+<p>Specifies a segmentation 3D blob analysis result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAllocResult"><code>M3dblobAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobAllocResult"><code>M_SEGMENTATION_RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a> results.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_index_mode"><code>M_INDEX_MODE</code><a href="#m_index_mode" class="hash-link" aria-label="Direct link to m_index_mode" title="Direct link to m_index_mode" translate="no">​</a></h4>
+<p>Sets how to interpret the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>LabelOrIndex</code></a> parameter in all functions (such as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M3dblobGetResult</code></a>) that use the 3D blob analysis result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INDEX</code></td><td>Specifies that the index will be passed directly to the function&#x27;s <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>LabelOrIndex</code></a> parameter, without any macros.</td></tr><tr><td><code>M_LABEL</code></td><td>Specifies that the label will be passed directly to the function&#x27;s <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/MblobGetResult"><code>LabelOrIndex</code></a> parameter, without any macros.</td></tr><tr><td><code>M_USE_MACRO</code> <em>(default)</em></td><td>Specifies that the label or index must be passed using the macro <strong>M_BLOB_LABEL()</strong> or <strong>M_BLOB_INDEX()</strong>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_relabel_consecutive-1"><code>M_RELABEL_CONSECUTIVE</code><a href="#m_relabel_consecutive-1" class="hash-link" aria-label="Direct link to m_relabel_consecutive-1" title="Direct link to m_relabel_consecutive-1" translate="no">​</a></h4>
+<p>Relabels the blobs in consecutive order, from 1 to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MAX_LABEL_VALUE</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_RELABEL_CONSECUTIVE</code></a> sets each blob label to the blob&#x27;s index + 1.  Note that this operation will change the value of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobGetResult"><code>M_MAX_LABEL_VALUE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default behavior.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reset"><code>M_RESET</code><a href="#m_reset" class="hash-link" aria-label="Direct link to m_reset" title="Direct link to m_reset" translate="no">​</a></h4>
+<p>Removes all results from the segmentation 3D blob analysis result buffer. This does not delete the result buffer, as is the case with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobFree"><code>M3dblobFree</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default behavior.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stop_segment"><code>M_STOP_SEGMENT</code><a href="#m_stop_segment" class="hash-link" aria-label="Direct link to m_stop_segment" title="Direct link to m_stop_segment" translate="no">​</a></h4>
+<p>Stops the current execution of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobSegment"><code>M3dblobSegment</code></a>. This can only be done from another thread of higher priority. Results already available in the result buffer become invalid and will be discarded.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default behavior.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-custom-feret-direction">Combination Constants — For specifying the custom Feret direction<a href="#combination-constants--for-specifying-the-custom-feret-direction" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the custom Feret direction" title="Direct link to Combination Constants — For specifying the custom Feret direction" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to set the direction along which to calculate the custom Feret.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_direction_x"><code>M_FERET_DIRECTION_X</code><a href="#m_feret_direction_x" class="hash-link" aria-label="Direct link to m_feret_direction_x" title="Direct link to m_feret_direction_x" translate="no">​</a></h4>
+<p>Sets the X-component of the direction vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the X-component of the direction vector.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_direction_y"><code>M_FERET_DIRECTION_Y</code><a href="#m_feret_direction_y" class="hash-link" aria-label="Direct link to m_feret_direction_y" title="Direct link to m_feret_direction_y" translate="no">​</a></h4>
+<p>Sets the Y-component of the direction vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the Y-component of the direction vector.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_feret_direction_z"><code>M_FERET_DIRECTION_Z</code><a href="#m_feret_direction_z" class="hash-link" aria-label="Direct link to m_feret_direction_z" title="Direct link to m_feret_direction_z" translate="no">​</a></h4>
+<p>Sets the Z-component of the direction vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the Z-component of the direction vector.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-maximum-distance-to-the-nearest-blob">Combination Constants — For specifying the maximum distance to the nearest blob<a href="#combination-constants--for-specifying-the-maximum-distance-to-the-nearest-blob" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the maximum distance to the nearest blob" title="Direct link to Combination Constants — For specifying the maximum distance to the nearest blob" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to set the maximum distance to the nearest blob.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_distance-1"><code>M_MAX_DISTANCE</code><a href="#m_max_distance-1" class="hash-link" aria-label="Direct link to m_max_distance-1" title="Direct link to m_max_distance-1" translate="no">​</a></h4>
+<p>Sets the maximum distance within which Aurora Imaging Library considers a nearby blob to be the closest.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies no distance constraint.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the maximum distance. If the nearest blob is further than the specified value, the returned label will be 0.</td></tr></tbody></table>
+<p>In this case, you must set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>LabelOrIndex</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_CONTEXT</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControl"><code>M_DEFAULT</code></a>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobCombine"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dblobCombine</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/M3dblobControlDraw"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dblobControlDraw</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresult3dblobid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResult3dblobId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#labelorindex-in-ail_int64" class="table-of-contents__link toc-highlight"><code>LabelOrIndex</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-specifying-the-control-type-and-control-value-for-a-3d-blob-analysis-context-or-result-buffer" class="table-of-contents__link toc-highlight">For specifying the control type and control value for a 3D blob analysis context or result buffer</a></li><li><a href="#calculate-3d-blob-analysis-context-id" class="table-of-contents__link toc-highlight"><code>Calculate 3D blob analysis context ID</code></a></li><li><a href="#segmentation-3d-blob-analysis-context-id" class="table-of-contents__link toc-highlight"><code>Segmentation 3D blob analysis context ID</code></a></li><li><a href="#segmentation-3d-blob-analysis-result-id-for-a-single-blob-or-all-blobs" class="table-of-contents__link toc-highlight"><code>Segmentation 3D blob analysis result ID, for a single blob or all blobs</code></a></li><li><a href="#segmentation-3d-blob-analysis-result-id-for-general-results" class="table-of-contents__link toc-highlight"><code>Segmentation 3D blob analysis result ID, for general results</code></a></li><li><a href="#combination-constants--for-specifying-the-custom-feret-direction" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the custom Feret direction</a></li><li><a href="#combination-constants--for-specifying-the-maximum-distance-to-the-nearest-blob" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the maximum distance to the nearest blob</a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

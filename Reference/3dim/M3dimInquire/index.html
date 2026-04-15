@@ -1,0 +1,2591 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dim/M3dimInquire" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dimInquire | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dimInquire | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dim","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"},{"@type":"ListItem","position":2,"name":"M3dimInquire","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Collapse sidebar category &#x27;3dim&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><span title="M3dimAlloc" class="linkLabel_WmDU">M3dimAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAllocResult"><span title="M3dimAllocResult" class="linkLabel_WmDU">M3dimAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimArith"><span title="M3dimArith" class="linkLabel_WmDU">M3dimArith</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimCalculateMapSize"><span title="M3dimCalculateMapSize" class="linkLabel_WmDU">M3dimCalculateMapSize</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimCalibrateDepthMap"><span title="M3dimCalibrateDepthMap" class="linkLabel_WmDU">M3dimCalibrateDepthMap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><span title="M3dimControl" class="linkLabel_WmDU">M3dimControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimConvertDepthMap"><span title="M3dimConvertDepthMap" class="linkLabel_WmDU">M3dimConvertDepthMap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimCopy"><span title="M3dimCopy" class="linkLabel_WmDU">M3dimCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimCopyResult"><span title="M3dimCopyResult" class="linkLabel_WmDU">M3dimCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimCrop"><span title="M3dimCrop" class="linkLabel_WmDU">M3dimCrop</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimDraw3d"><span title="M3dimDraw3d" class="linkLabel_WmDU">M3dimDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimFillGaps"><span title="M3dimFillGaps" class="linkLabel_WmDU">M3dimFillGaps</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimFilter"><span title="M3dimFilter" class="linkLabel_WmDU">M3dimFilter</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimFindTransformation"><span title="M3dimFindTransformation" class="linkLabel_WmDU">M3dimFindTransformation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimFix"><span title="M3dimFix" class="linkLabel_WmDU">M3dimFix</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimFree"><span title="M3dimFree" class="linkLabel_WmDU">M3dimFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimGet"><span title="M3dimGet" class="linkLabel_WmDU">M3dimGet</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimGetList"><span title="M3dimGetList" class="linkLabel_WmDU">M3dimGetList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimGetResult"><span title="M3dimGetResult" class="linkLabel_WmDU">M3dimGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><span title="M3dimInquire" class="linkLabel_WmDU">M3dimInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimLattice"><span title="M3dimLattice" class="linkLabel_WmDU">M3dimLattice</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimMatrixTransform"><span title="M3dimMatrixTransform" class="linkLabel_WmDU">M3dimMatrixTransform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimMatrixTransformList"><span title="M3dimMatrixTransformList" class="linkLabel_WmDU">M3dimMatrixTransformList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimMerge"><span title="M3dimMerge" class="linkLabel_WmDU">M3dimMerge</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimMesh"><span title="M3dimMesh" class="linkLabel_WmDU">M3dimMesh</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimNormals"><span title="M3dimNormals" class="linkLabel_WmDU">M3dimNormals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimOutliers"><span title="M3dimOutliers" class="linkLabel_WmDU">M3dimOutliers</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimProfile"><span title="M3dimProfile" class="linkLabel_WmDU">M3dimProfile</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimProfileEx"><span title="M3dimProfileEx" class="linkLabel_WmDU">M3dimProfileEx</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimProject"><span title="M3dimProject" class="linkLabel_WmDU">M3dimProject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimProjectEx"><span title="M3dimProjectEx" class="linkLabel_WmDU">M3dimProjectEx</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimRemapDepthMap"><span title="M3dimRemapDepthMap" class="linkLabel_WmDU">M3dimRemapDepthMap</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimRemovePoints"><span title="M3dimRemovePoints" class="linkLabel_WmDU">M3dimRemovePoints</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimRestore"><span title="M3dimRestore" class="linkLabel_WmDU">M3dimRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimRotate"><span title="M3dimRotate" class="linkLabel_WmDU">M3dimRotate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimSample"><span title="M3dimSample" class="linkLabel_WmDU">M3dimSample</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimSave"><span title="M3dimSave" class="linkLabel_WmDU">M3dimSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimScale"><span title="M3dimScale" class="linkLabel_WmDU">M3dimScale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimStat"><span title="M3dimStat" class="linkLabel_WmDU">M3dimStat</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimStream"><span title="M3dimStream" class="linkLabel_WmDU">M3dimStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimTranslate"><span title="M3dimTranslate" class="linkLabel_WmDU">M3dimTranslate</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span>3dim</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dimInquire</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dimInquire</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire about a 3D image processing context or result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT64 </span><span class="token function" style="color:#d73a49">M3dimInquire</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    Context3dimId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr      </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires about a specified setting of a 3D image processing context or lattice 3D image processing result buffer.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="context3dimid-in-ail_id"><code>Context3dimId</code> <em>(in, AIL_ID)</em><a href="#context3dimid-in-ail_id" class="hash-link" aria-label="Direct link to context3dimid-in-ail_id" title="Direct link to context3dimid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 3D image processing context or result buffer about which to inquire information.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M3dimInquire</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code> when the return type is <em>AIL_INT</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-3d-image-processing-context-or-result-buffer">For inquiring about a 3D image processing context or result buffer<a href="#for-inquiring-about-a-3d-image-processing-context-or-result-buffer" class="hash-link" aria-label="Direct link to For inquiring about a 3D image processing context or result buffer" title="Direct link to For inquiring about a 3D image processing context or result buffer" translate="no">​</a></h3>
+<p>To inquire about a 3D image processing context or lattice 3D image processing result buffer, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>Context3dimId</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>InquireType</code></a> parameters to one of the following.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="calculate-map-size-context-id"><code>Calculate map size context ID</code><a href="#calculate-map-size-context-id" class="hash-link" aria-label="Direct link to calculate-map-size-context-id" title="Direct link to calculate-map-size-context-id" translate="no">​</a></h3>
+<p>Specifies a calculate map size 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_CALCULATE_MAP_SIZE_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimCalculateMapSize"><code>M3dimCalculateMapSize</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_aspect_ratio"><code>M_PIXEL_ASPECT_RATIO</code><a href="#m_pixel_aspect_ratio" class="hash-link" aria-label="Direct link to m_pixel_aspect_ratio" title="Direct link to m_pixel_aspect_ratio" translate="no">​</a></h4>
+<p>Inquires the pixel aspect ratio of the depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PIXEL_ASPECT_RATIO</code></a>)</em></td><td></td></tr><tr><td><code>M_NULL</code></td><td>Specifies that other data determines the pixel aspect ratio, such as the values set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_PIXEL_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_PIXEL_SIZE_Y</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_size_constraint"><code>M_PIXEL_SIZE_CONSTRAINT</code><a href="#m_pixel_size_constraint" class="hash-link" aria-label="Direct link to m_pixel_size_constraint" title="Direct link to m_pixel_size_constraint" translate="no">​</a></h4>
+<p>Inquires how to calculate the depth map pixel sizes to fit the required pixel aspect ratio (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_PIXEL_ASPECT_RATIO</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PIXEL_SIZE_CONSTRAINT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_size_x"><code>M_PIXEL_SIZE_X</code><a href="#m_pixel_size_x" class="hash-link" aria-label="Direct link to m_pixel_size_x" title="Direct link to m_pixel_size_x" translate="no">​</a></h4>
+<p>Inquires the length in X of one pixel in the depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PIXEL_SIZE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_size_y"><code>M_PIXEL_SIZE_Y</code><a href="#m_pixel_size_y" class="hash-link" aria-label="Direct link to m_pixel_size_y" title="Direct link to m_pixel_size_y" translate="no">​</a></h4>
+<p>Inquires the length in Y of one pixel in the depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PIXEL_SIZE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x"><code>M_SIZE_X</code><a href="#m_size_x" class="hash-link" aria-label="Direct link to m_size_x" title="Direct link to m_size_x" translate="no">​</a></h4>
+<p>Inquires the image size of the depth map along the X dimension.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SIZE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y"><code>M_SIZE_Y</code><a href="#m_size_y" class="hash-link" aria-label="Direct link to m_size_y" title="Direct link to m_size_y" translate="no">​</a></h4>
+<p>Inquires the image size of the depth map along the Y dimension.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SIZE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fill-gaps-context-id"><code>Fill gaps context ID</code><a href="#fill-gaps-context-id" class="hash-link" aria-label="Direct link to fill-gaps-context-id" title="Direct link to fill-gaps-context-id" translate="no">​</a></h3>
+<p>Specifies a fill gaps 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_FILL_GAPS_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimFillGaps"><code>M3dimFillGaps</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_border"><code>M_FILL_BORDER</code><a href="#m_fill_border" class="hash-link" aria-label="Direct link to m_fill_border" title="Direct link to m_fill_border" translate="no">​</a></h4>
+<p>Inquires whether to propagate the boundary value across each gap that touches the image border.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FILL_BORDER</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_mode"><code>M_FILL_MODE</code><a href="#m_fill_mode" class="hash-link" aria-label="Direct link to m_fill_mode" title="Direct link to m_fill_mode" translate="no">​</a></h4>
+<p>Inquires the mode in which to fill gaps in depth maps.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FILL_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_sharp_elevation"><code>M_FILL_SHARP_ELEVATION</code><a href="#m_fill_sharp_elevation" class="hash-link" aria-label="Direct link to m_fill_sharp_elevation" title="Direct link to m_fill_sharp_elevation" translate="no">​</a></h4>
+<p>Inquires which boundary to use to fill sharp elevation gaps in depth maps.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FILL_SHARP_ELEVATION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_sharp_elevation_depth"><code>M_FILL_SHARP_ELEVATION_DEPTH</code><a href="#m_fill_sharp_elevation_depth" class="hash-link" aria-label="Direct link to m_fill_sharp_elevation_depth" title="Direct link to m_fill_sharp_elevation_depth" translate="no">​</a></h4>
+<p>Inquires the threshold used to differentiate between gradual elevation gaps and sharp elevation gaps in the depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FILL_SHARP_ELEVATION_DEPTH</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_threshold_x"><code>M_FILL_THRESHOLD_X</code><a href="#m_fill_threshold_x" class="hash-link" aria-label="Direct link to m_fill_threshold_x" title="Direct link to m_fill_threshold_x" translate="no">​</a></h4>
+<p>Inquires the maximum X-size of gaps that will be filled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FILL_THRESHOLD_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fill_threshold_y"><code>M_FILL_THRESHOLD_Y</code><a href="#m_fill_threshold_y" class="hash-link" aria-label="Direct link to m_fill_threshold_y" title="Direct link to m_fill_threshold_y" translate="no">​</a></h4>
+<p>Inquires the maximum Y-size of gaps that will be filled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FILL_THRESHOLD_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_input_units"><code>M_INPUT_UNITS</code><a href="#m_input_units" class="hash-link" aria-label="Direct link to m_input_units" title="Direct link to m_input_units" translate="no">​</a></h4>
+<p>Inquires the units with which to interpret <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_FILL_SHARP_ELEVATION_DEPTH</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_FILL_THRESHOLD_X</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_FILL_THRESHOLD_Y</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_INPUT_UNITS</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filter-context-id"><code>Filter context ID</code><a href="#filter-context-id" class="hash-link" aria-label="Direct link to filter-context-id" title="Direct link to filter-context-id" translate="no">​</a></h3>
+<p>Specifies a filter 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_FILTER_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimFilter"><code>M3dimFilter</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance_weight"><code>M_DISTANCE_WEIGHT</code><a href="#m_distance_weight" class="hash-link" aria-label="Direct link to m_distance_weight" title="Direct link to m_distance_weight" translate="no">​</a></h4>
+<p>Inquires the amount of smoothing. A larger value applies more smoothing than a smaller value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DISTANCE_WEIGHT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_filter_mode"><code>M_FILTER_MODE</code><a href="#m_filter_mode" class="hash-link" aria-label="Direct link to m_filter_mode" title="Direct link to m_filter_mode" translate="no">​</a></h4>
+<p>Inquires the type of smoothing operation to perform.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FILTER_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normals_context_id"><code>M_NORMALS_CONTEXT_ID</code><a href="#m_normals_context_id" class="hash-link" aria-label="Direct link to m_normals_context_id" title="Direct link to m_normals_context_id" translate="no">​</a></h4>
+<p>Inquires the identifier of the internal normals context. The internal context is used to set the neighborhood of a point, and, if normals are computed, it specifies the normals&#x27; orientation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normals_weight_factor"><code>M_NORMALS_WEIGHT_FACTOR</code><a href="#m_normals_weight_factor" class="hash-link" aria-label="Direct link to m_normals_weight_factor" title="Direct link to m_normals_weight_factor" translate="no">​</a></h4>
+<p>Inquires how well edges are preserved for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_SMOOTH_BILATERAL</code></a> operation. A smaller value results in more edge preservation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NORMALS_WEIGHT_FACTOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_use_source_normals"><code>M_USE_SOURCE_NORMALS</code><a href="#m_use_source_normals" class="hash-link" aria-label="Direct link to m_use_source_normals" title="Direct link to m_use_source_normals" translate="no">​</a></h4>
+<p>Inquires whether to use the source point cloud&#x27;s normals information, stored in the source container&#x27;s <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufAllocComponent"><code>M_COMPONENT_NORMALS_AIL</code></a> component.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_USE_SOURCE_NORMALS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_weight_mode"><code>M_WEIGHT_MODE</code><a href="#m_weight_mode" class="hash-link" aria-label="Direct link to m_weight_mode" title="Direct link to m_weight_mode" translate="no">​</a></h4>
+<p>Inquires how the Gaussian weights are determined in the smoothing calculation set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_FILTER_MODE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_WEIGHT_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lattice-context-id"><code>Lattice context ID</code><a href="#lattice-context-id" class="hash-link" aria-label="Direct link to lattice-context-id" title="Direct link to lattice-context-id" translate="no">​</a></h3>
+<p>Specifies a lattice 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_LATTICE_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimLattice"><code>M3dimLattice</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fraction_of_points"><code>M_FRACTION_OF_POINTS</code><a href="#m_fraction_of_points" class="hash-link" aria-label="Direct link to m_fraction_of_points" title="Direct link to m_fraction_of_points" translate="no">​</a></h4>
+<p>Inquires the ratio of the total number of required (non-empty) cells to the total number of valid points in the point cloud.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FRACTION_OF_POINTS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fraction_of_points_tolerance"><code>M_FRACTION_OF_POINTS_TOLERANCE</code><a href="#m_fraction_of_points_tolerance" class="hash-link" aria-label="Direct link to m_fraction_of_points_tolerance" title="Direct link to m_fraction_of_points_tolerance" translate="no">​</a></h4>
+<p>Inquires the tolerance to use for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_FRACTION_OF_POINTS</code></a> when calculating the lattice.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FRACTION_OF_POINTS_TOLERANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_lattice_mode"><code>M_LATTICE_MODE</code><a href="#m_lattice_mode" class="hash-link" aria-label="Direct link to m_lattice_mode" title="Direct link to m_lattice_mode" translate="no">​</a></h4>
+<p>Inquires the mode with which to calculate the lattice.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_LATTICE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_relative_cell_size_x"><code>M_RELATIVE_CELL_SIZE_X</code><a href="#m_relative_cell_size_x" class="hash-link" aria-label="Direct link to m_relative_cell_size_x" title="Direct link to m_relative_cell_size_x" translate="no">​</a></h4>
+<p>Inquires the proportion of the cell size along the X dimension relative to the cell sizes along the Y and Z dimensions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_RELATIVE_CELL_SIZE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_relative_cell_size_y"><code>M_RELATIVE_CELL_SIZE_Y</code><a href="#m_relative_cell_size_y" class="hash-link" aria-label="Direct link to m_relative_cell_size_y" title="Direct link to m_relative_cell_size_y" translate="no">​</a></h4>
+<p>Inquires the proportion of the cell size along the Y dimension relative to the cell sizes along the X and Z dimensions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_RELATIVE_CELL_SIZE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_relative_cell_size_z"><code>M_RELATIVE_CELL_SIZE_Z</code><a href="#m_relative_cell_size_z" class="hash-link" aria-label="Direct link to m_relative_cell_size_z" title="Direct link to m_relative_cell_size_z" translate="no">​</a></h4>
+<p>Inquires the proportion of the cell size along the Z dimension relative to the cell sizes along the X and Y dimensions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_RELATIVE_CELL_SIZE_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sparsity_dimension_tolerance"><code>M_SPARSITY_DIMENSION_TOLERANCE</code><a href="#m_sparsity_dimension_tolerance" class="hash-link" aria-label="Direct link to m_sparsity_dimension_tolerance" title="Direct link to m_sparsity_dimension_tolerance" translate="no">​</a></h4>
+<p>Inquires the minimum difference in dimensionality between consecutive grid sizes when calculating the lattice.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SPARSITY_DIMENSION_TOLERANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lattice-result-buffer-id"><code>Lattice result buffer ID</code><a href="#lattice-result-buffer-id" class="hash-link" aria-label="Direct link to lattice-result-buffer-id" title="Direct link to lattice-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies a lattice 3D image processing result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAllocResult"><code>M3dimAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAllocResult"><code>M_LATTICE_RESULT</code></a>, and used to store <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimLattice"><code>M3dimLattice</code></a> results.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_size_index"><code>M_GRID_SIZE_INDEX</code><a href="#m_grid_size_index" class="hash-link" aria-label="Direct link to m_grid_size_index" title="Direct link to m_grid_size_index" translate="no">​</a></h4>
+<p>Inquires the grid size for which to return all lattice results.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_GRID_SIZE_INDEX</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mesh-context-id"><code>Mesh context ID</code><a href="#mesh-context-id" class="hash-link" aria-label="Direct link to mesh-context-id" title="Direct link to mesh-context-id" translate="no">​</a></h3>
+<p>Specifies a mesh 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_MESH_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimMesh"><code>M3dimMesh</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_distance"><code>M_MAX_DISTANCE</code><a href="#m_max_distance" class="hash-link" aria-label="Direct link to m_max_distance" title="Direct link to m_max_distance" translate="no">​</a></h4>
+<p>Inquires the maximum distance at which to connect 2 neighboring points.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MAX_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_maximum_number_neighbors"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code><a href="#m_maximum_number_neighbors" class="hash-link" aria-label="Direct link to m_maximum_number_neighbors" title="Direct link to m_maximum_number_neighbors" translate="no">​</a></h4>
+<p>Inquires the maximum number of neighbors to consider when computing a local plane at each point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mesh_mode"><code>M_MESH_MODE</code><a href="#m_mesh_mode" class="hash-link" aria-label="Direct link to m_mesh_mode" title="Direct link to m_mesh_mode" translate="no">​</a></h4>
+<p>Inquires the surface reconstruction mode to use for mesh generation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MESH_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mesh_step_x"><code>M_MESH_STEP_X</code><a href="#m_mesh_step_x" class="hash-link" aria-label="Direct link to m_mesh_step_x" title="Direct link to m_mesh_step_x" translate="no">​</a></h4>
+<p>Inquires the step interval between points, along the X-axis of the range component, in pixels.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MESH_STEP_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mesh_step_y"><code>M_MESH_STEP_Y</code><a href="#m_mesh_step_y" class="hash-link" aria-label="Direct link to m_mesh_step_y" title="Direct link to m_mesh_step_y" translate="no">​</a></h4>
+<p>Inquires the step interval between points, along the Y-axis of the range component, in pixels.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MESH_STEP_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_mesh_trimming_level"><code>M_MESH_TRIMMING_LEVEL</code><a href="#m_mesh_trimming_level" class="hash-link" aria-label="Direct link to m_mesh_trimming_level" title="Direct link to m_mesh_trimming_level" translate="no">​</a></h4>
+<p>Inquires the trimming level for a mesh.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MESH_TRIMMING_LEVEL</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_search_mode"><code>M_NEIGHBOR_SEARCH_MODE</code><a href="#m_neighbor_search_mode" class="hash-link" aria-label="Direct link to m_neighbor_search_mode" title="Direct link to m_neighbor_search_mode" translate="no">​</a></h4>
+<p>Inquires the search mode for finding the neighbors of a point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBOR_SEARCH_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_distance"><code>M_NEIGHBORHOOD_DISTANCE</code><a href="#m_neighborhood_distance" class="hash-link" aria-label="Direct link to m_neighborhood_distance" title="Direct link to m_neighborhood_distance" translate="no">​</a></h4>
+<p>Inquires the distance that defines the neighborhood of a point; only points within this distance are considered when calculating the local plane of the point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_organized_size"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code><a href="#m_neighborhood_organized_size" class="hash-link" aria-label="Direct link to m_neighborhood_organized_size" title="Direct link to m_neighborhood_organized_size" translate="no">​</a></h4>
+<p>Inquires the neighborhood size when finding the neighbors of a point in an organized point cloud.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_points_per_cell"><code>M_NUMBER_POINTS_PER_CELL</code><a href="#m_number_points_per_cell" class="hash-link" aria-label="Direct link to m_number_points_per_cell" title="Direct link to m_number_points_per_cell" translate="no">​</a></h4>
+<p>Inquires the number of points within a single octree cell at which the cell will not be split further.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NUMBER_POINTS_PER_CELL</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_surface_angle_max"><code>M_SURFACE_ANGLE_MAX</code><a href="#m_surface_angle_max" class="hash-link" aria-label="Direct link to m_surface_angle_max" title="Direct link to m_surface_angle_max" translate="no">​</a></h4>
+<p>Inquires the maximum acceptable angle, in degrees, between the normal of a point and that of a neighboring point for the neighbor to be considered for triangulation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SURFACE_ANGLE_MAX</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tree_max_depth"><code>M_TREE_MAX_DEPTH</code><a href="#m_tree_max_depth" class="hash-link" aria-label="Direct link to m_tree_max_depth" title="Direct link to m_tree_max_depth" translate="no">​</a></h4>
+<p>Inquires the maximum allowed depth of the octree.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_TREE_MAX_DEPTH</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_triangle_angle_max"><code>M_TRIANGLE_ANGLE_MAX</code><a href="#m_triangle_angle_max" class="hash-link" aria-label="Direct link to m_triangle_angle_max" title="Direct link to m_triangle_angle_max" translate="no">​</a></h4>
+<p>Inquires the maximum interior angle, in degrees, for each mesh triangle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_TRIANGLE_ANGLE_MAX</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_triangle_angle_min"><code>M_TRIANGLE_ANGLE_MIN</code><a href="#m_triangle_angle_min" class="hash-link" aria-label="Direct link to m_triangle_angle_min" title="Direct link to m_triangle_angle_min" translate="no">​</a></h4>
+<p>Inquires the minimum interior angle, in degrees, for each mesh triangle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_TRIANGLE_ANGLE_MIN</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="normals-context-id"><code>Normals context ID</code><a href="#normals-context-id" class="hash-link" aria-label="Direct link to normals-context-id" title="Direct link to normals-context-id" translate="no">​</a></h3>
+<p>Specifies a normals 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_NORMALS_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimNormals"><code>M3dimNormals</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_direction_mode"><code>M_DIRECTION_MODE</code><a href="#m_direction_mode" class="hash-link" aria-label="Direct link to m_direction_mode" title="Direct link to m_direction_mode" translate="no">​</a></h4>
+<p>Inquires the orientation of the normal vectors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DIRECTION_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_direction_reference_x"><code>M_DIRECTION_REFERENCE_X</code><a href="#m_direction_reference_x" class="hash-link" aria-label="Direct link to m_direction_reference_x" title="Direct link to m_direction_reference_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinate or vector component along X for the reference point or vector (respectively) that determines normal vector orientation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DIRECTION_REFERENCE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_direction_reference_y"><code>M_DIRECTION_REFERENCE_Y</code><a href="#m_direction_reference_y" class="hash-link" aria-label="Direct link to m_direction_reference_y" title="Direct link to m_direction_reference_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate or vector component along Y for the reference point or vector (respectively) that determines normal vector orientation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DIRECTION_REFERENCE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_direction_reference_z"><code>M_DIRECTION_REFERENCE_Z</code><a href="#m_direction_reference_z" class="hash-link" aria-label="Direct link to m_direction_reference_z" title="Direct link to m_direction_reference_z" translate="no">​</a></h4>
+<p>Inquires the Z-coordinate or vector component along Z for the reference point or vector (respectively) that determines normal vector orientation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DIRECTION_REFERENCE_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_enforce_continuity"><code>M_ENFORCE_CONTINUITY</code><a href="#m_enforce_continuity" class="hash-link" aria-label="Direct link to m_enforce_continuity" title="Direct link to m_enforce_continuity" translate="no">​</a></h4>
+<p>Inquires whether to maintain the general direction of the normals, which prevents large, discontinuous jumps between normal vectors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_ENFORCE_CONTINUITY</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_maximum_number_neighbors-1"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code><a href="#m_maximum_number_neighbors-1" class="hash-link" aria-label="Direct link to m_maximum_number_neighbors-1" title="Direct link to m_maximum_number_neighbors-1" translate="no">​</a></h4>
+<p>Inquires the maximum number of neighbors to consider when computing a point&#x27;s normal vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_search_mode-1"><code>M_NEIGHBOR_SEARCH_MODE</code><a href="#m_neighbor_search_mode-1" class="hash-link" aria-label="Direct link to m_neighbor_search_mode-1" title="Direct link to m_neighbor_search_mode-1" translate="no">​</a></h4>
+<p>Inquires the search mode for finding the neighbors of a point, when calculating a point&#x27;s surface normal vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBOR_SEARCH_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_distance-1"><code>M_NEIGHBORHOOD_DISTANCE</code><a href="#m_neighborhood_distance-1" class="hash-link" aria-label="Direct link to m_neighborhood_distance-1" title="Direct link to m_neighborhood_distance-1" translate="no">​</a></h4>
+<p>Inquires the distance that defines the neighborhood of a point; only points within this distance are considered for normal vector calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_organized_size-1"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code><a href="#m_neighborhood_organized_size-1" class="hash-link" aria-label="Direct link to m_neighborhood_organized_size-1" title="Direct link to m_neighborhood_organized_size-1" translate="no">​</a></h4>
+<p>Inquires the neighborhood size when finding the neighbors of a point in an organized point cloud.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="outliers-context-id"><code>Outliers context ID</code><a href="#outliers-context-id" class="hash-link" aria-label="Direct link to outliers-context-id" title="Direct link to outliers-context-id" translate="no">​</a></h3>
+<p>Specifies an outliers 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_OUTLIERS_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimOutliers"><code>M3dimOutliers</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance_threshold_mode"><code>M_DISTANCE_THRESHOLD_MODE</code><a href="#m_distance_threshold_mode" class="hash-link" aria-label="Direct link to m_distance_threshold_mode" title="Direct link to m_distance_threshold_mode" translate="no">​</a></h4>
+<p>Inquires the threshold mode for a local distance operation.  &gt; <strong>Note:</strong> This inquire type is supported only when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_OUTLIER_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_LOCAL_DISTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DISTANCE_THRESHOLD_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_minimum_number_neighbors"><code>M_MINIMUM_NUMBER_NEIGHBORS</code><a href="#m_minimum_number_neighbors" class="hash-link" aria-label="Direct link to m_minimum_number_neighbors" title="Direct link to m_minimum_number_neighbors" translate="no">​</a></h4>
+<p>Inquires the minimum number of neighbors that a point must have to be considered an inlier, within the distance that defines the neighborhood.  &gt; <strong>Note:</strong> This inquire type is supported only when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_OUTLIER_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_NUMBER_WITHIN_DISTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MINIMUM_NUMBER_NEIGHBORS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_search_mode-2"><code>M_NEIGHBOR_SEARCH_MODE</code><a href="#m_neighbor_search_mode-2" class="hash-link" aria-label="Direct link to m_neighbor_search_mode-2" title="Direct link to m_neighbor_search_mode-2" translate="no">​</a></h4>
+<p>Inquires the search mode for finding the neighbors of a point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBOR_SEARCH_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_distance-2"><code>M_NEIGHBORHOOD_DISTANCE</code><a href="#m_neighborhood_distance-2" class="hash-link" aria-label="Direct link to m_neighborhood_distance-2" title="Direct link to m_neighborhood_distance-2" translate="no">​</a></h4>
+<p>Inquires the distance from a point within which other points are considered its neighbors.  &gt; <strong>Note:</strong> This inquire type is supported only when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_OUTLIER_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_NUMBER_WITHIN_DISTANCE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_NEIGHBORHOOD_DISTANCE_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_distance_metric"><code>M_NEIGHBORHOOD_DISTANCE_METRIC</code><a href="#m_neighborhood_distance_metric" class="hash-link" aria-label="Direct link to m_neighborhood_distance_metric" title="Direct link to m_neighborhood_distance_metric" translate="no">​</a></h4>
+<p>Inquires how to establish the neighborhood of a point, either as a spherical volume around the point (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_EUCLIDEAN</code></a>), or as a distance in the Z-direction (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_DIRECTION_Z</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_DISTANCE_METRIC</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_distance_mode"><code>M_NEIGHBORHOOD_DISTANCE_MODE</code><a href="#m_neighborhood_distance_mode" class="hash-link" aria-label="Direct link to m_neighborhood_distance_mode" title="Direct link to m_neighborhood_distance_mode" translate="no">​</a></h4>
+<p>Inquires the mode for computing a point&#x27;s neighborhood distance.  &gt; <strong>Note:</strong> This inquire type is supported only when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_OUTLIER_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_NUMBER_WITHIN_DISTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies to automatically compute the neighborhood distance.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the distance set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_NEIGHBORHOOD_DISTANCE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_organized_size-2"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code><a href="#m_neighborhood_organized_size-2" class="hash-link" aria-label="Direct link to m_neighborhood_organized_size-2" title="Direct link to m_neighborhood_organized_size-2" translate="no">​</a></h4>
+<p>Inquires the neighborhood size when finding the neighbors of a point in an organized point cloud.  &gt; <strong>Note:</strong> This inquire type is supported only when using an organized point cloud and only if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_NEIGHBOR_SEARCH_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_ORGANIZED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_neighbors"><code>M_NUMBER_NEIGHBORS</code><a href="#m_number_neighbors" class="hash-link" aria-label="Direct link to m_number_neighbors" title="Direct link to m_number_neighbors" translate="no">​</a></h4>
+<p>Inquires the number of neighboring points used to calculate a point&#x27;s local average distance distribution.  &gt; <strong>Note:</strong> This inquire type is supported only when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_OUTLIER_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_LOCAL_DENSITY_PROBABILITY</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NUMBER_NEIGHBORS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_outlier_mode"><code>M_OUTLIER_MODE</code><a href="#m_outlier_mode" class="hash-link" aria-label="Direct link to m_outlier_mode" title="Direct link to m_outlier_mode" translate="no">​</a></h4>
+<p>Inquires the mode for determining whether a point is an outlier.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_OUTLIER_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_probability_threshold_factor"><code>M_PROBABILITY_THRESHOLD_FACTOR</code><a href="#m_probability_threshold_factor" class="hash-link" aria-label="Direct link to m_probability_threshold_factor" title="Direct link to m_probability_threshold_factor" translate="no">​</a></h4>
+<p>Inquires the scale factor to use in the probability calculation that determines whether a point is an outlier, when working in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_LOCAL_DENSITY_PROBABILITY</code></a> outlier mode.  &gt; <strong>Note:</strong> This inquire type is supported only when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_OUTLIER_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_LOCAL_DENSITY_PROBABILITY</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROBABILITY_THRESHOLD_FACTOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_std_deviation_factor"><code>M_STD_DEVIATION_FACTOR</code><a href="#m_std_deviation_factor" class="hash-link" aria-label="Direct link to m_std_deviation_factor" title="Direct link to m_std_deviation_factor" translate="no">​</a></h4>
+<p>Inquires the scale factor to use when calculating the local outlier threshold, when working in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_LOCAL_DISTANCE</code></a> outlier mode. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_DISTANCE_THRESHOLD_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_STD_DEVIATION</code></a>, it is the factor multiplying the standard deviation of the local average distance distribution. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_DISTANCE_THRESHOLD_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_ROBUST_STD_DEVIATION</code></a>, it is the factor multiplying the mean absolute deviation (MAD) of the local average distance distribution.  &gt; <strong>Note:</strong> This inquire type is supported only when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_OUTLIER_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_LOCAL_DISTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_STD_DEVIATION_FACTOR</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="profile-context-id"><code>Profile context ID</code><a href="#profile-context-id" class="hash-link" aria-label="Direct link to profile-context-id" title="Direct link to profile-context-id" translate="no">​</a></h3>
+<p>Specifies a profile 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_PROFILE_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimProfileEx"><code>M3dimProfileEx</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_profile_accumulate_type"><code>M_PROFILE_ACCUMULATE_TYPE</code><a href="#m_profile_accumulate_type" class="hash-link" aria-label="Direct link to m_profile_accumulate_type" title="Direct link to m_profile_accumulate_type" translate="no">​</a></h4>
+<p>Inquires how points in a given sample are accumulated to create a single profile point when there are multiple points within the thickness of the profile line.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROFILE_ACCUMULATE_TYPE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_profile_interpolation_average_fraction"><code>M_PROFILE_INTERPOLATION_AVERAGE_FRACTION</code><a href="#m_profile_interpolation_average_fraction" class="hash-link" aria-label="Direct link to m_profile_interpolation_average_fraction" title="Direct link to m_profile_interpolation_average_fraction" translate="no">​</a></h4>
+<p>Inquires the fraction of the sampling distance to use when taking a weighted average of the area surrounding the profile point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROFILE_INTERPOLATION_AVERAGE_FRACTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_profile_interpolation_mode"><code>M_PROFILE_INTERPOLATION_MODE</code><a href="#m_profile_interpolation_mode" class="hash-link" aria-label="Direct link to m_profile_interpolation_mode" title="Direct link to m_profile_interpolation_mode" translate="no">​</a></h4>
+<p>Inquires the interpolation mode used to calculate the value for each point in the sample that will be used to create the profile point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROFILE_INTERPOLATION_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_profile_min_valid_percentage"><code>M_PROFILE_MIN_VALID_PERCENTAGE</code><a href="#m_profile_min_valid_percentage" class="hash-link" aria-label="Direct link to m_profile_min_valid_percentage" title="Direct link to m_profile_min_valid_percentage" translate="no">​</a></h4>
+<p>Inquires the minimum percentage of points in a given sample that must be valid to set the corresponding profile point to a valid value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROFILE_MIN_VALID_PERCENTAGE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_profile_sample_size"><code>M_PROFILE_SAMPLE_SIZE</code><a href="#m_profile_sample_size" class="hash-link" aria-label="Direct link to m_profile_sample_size" title="Direct link to m_profile_sample_size" translate="no">​</a></h4>
+<p>Inquires the sampling distance between two consecutive points along the profile line.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROFILE_SAMPLE_SIZE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_profile_sample_size_mode"><code>M_PROFILE_SAMPLE_SIZE_MODE</code><a href="#m_profile_sample_size_mode" class="hash-link" aria-label="Direct link to m_profile_sample_size_mode" title="Direct link to m_profile_sample_size_mode" translate="no">​</a></h4>
+<p>Inquires how to interpret the specified sampling distance (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_PROFILE_SAMPLE_SIZE</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROFILE_SAMPLE_SIZE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_profile_thickness"><code>M_PROFILE_THICKNESS</code><a href="#m_profile_thickness" class="hash-link" aria-label="Direct link to m_profile_thickness" title="Direct link to m_profile_thickness" translate="no">​</a></h4>
+<p>Inquires the thickness of the profile line (slicing plane).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROFILE_THICKNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_profile_thickness_mode"><code>M_PROFILE_THICKNESS_MODE</code><a href="#m_profile_thickness_mode" class="hash-link" aria-label="Direct link to m_profile_thickness_mode" title="Direct link to m_profile_thickness_mode" translate="no">​</a></h4>
+<p>Inquires how to interpret the specified thickness value (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_PROFILE_THICKNESS</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROFILE_THICKNESS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="project-context-id"><code>Project context ID</code><a href="#project-context-id" class="hash-link" aria-label="Direct link to project-context-id" title="Direct link to project-context-id" translate="no">​</a></h3>
+<p>Specifies a project 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_PROJECT_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimProjectEx"><code>M3dimProjectEx</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calculate_size_mode"><code>M_CALCULATE_SIZE_MODE</code><a href="#m_calculate_size_mode" class="hash-link" aria-label="Direct link to m_calculate_size_mode" title="Direct link to m_calculate_size_mode" translate="no">​</a></h4>
+<p>Inquires whether the source point cloud container is organized.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALCULATE_SIZE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calibration_alignment"><code>M_CALIBRATION_ALIGNMENT</code><a href="#m_calibration_alignment" class="hash-link" aria-label="Direct link to m_calibration_alignment" title="Direct link to m_calibration_alignment" translate="no">​</a></h4>
+<p>Inquires where to place valid values in the depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALIBRATION_ALIGNMENT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_depth_map_type"><code>M_DEPTH_MAP_TYPE</code><a href="#m_depth_map_type" class="hash-link" aria-label="Direct link to m_depth_map_type" title="Direct link to m_depth_map_type" translate="no">​</a></h4>
+<p>Inquires the data type and depth required for the destination container&#x27;s range component.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DEPTH_MAP_TYPE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overlap_mode"><code>M_OVERLAP_MODE</code><a href="#m_overlap_mode" class="hash-link" aria-label="Direct link to m_overlap_mode" title="Direct link to m_overlap_mode" translate="no">​</a></h4>
+<p>Inquires the overlap mode, which determines a pixel&#x27;s gray level when multiple points correspond to the same destination depth map pixel.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_OVERLAP_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_aspect_ratio-1"><code>M_PIXEL_ASPECT_RATIO</code><a href="#m_pixel_aspect_ratio-1" class="hash-link" aria-label="Direct link to m_pixel_aspect_ratio-1" title="Direct link to m_pixel_aspect_ratio-1" translate="no">​</a></h4>
+<p>Inquires the pixel aspect ratio of the depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PIXEL_ASPECT_RATIO</code></a>)</em></td><td></td></tr><tr><td><code>M_NULL</code></td><td>Specifies that other data determines the pixel aspect ratio, such as the values set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_PIXEL_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_PIXEL_SIZE_Y</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_size_x-1"><code>M_PIXEL_SIZE_X</code><a href="#m_pixel_size_x-1" class="hash-link" aria-label="Direct link to m_pixel_size_x-1" title="Direct link to m_pixel_size_x-1" translate="no">​</a></h4>
+<p>Inquires the length in X of one pixel in the depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PIXEL_SIZE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_size_y-1"><code>M_PIXEL_SIZE_Y</code><a href="#m_pixel_size_y-1" class="hash-link" aria-label="Direct link to m_pixel_size_y-1" title="Direct link to m_pixel_size_y-1" translate="no">​</a></h4>
+<p>Inquires the length in Y of one pixel in the depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PIXEL_SIZE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_projected_components"><code>M_PROJECTED_COMPONENTS</code><a href="#m_projected_components" class="hash-link" aria-label="Direct link to m_projected_components" title="Direct link to m_projected_components" translate="no">​</a></h4>
+<p>Inquires which components to project into the destination depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROJECTED_COMPONENTS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_projection_mode"><code>M_PROJECTION_MODE</code><a href="#m_projection_mode" class="hash-link" aria-label="Direct link to m_projection_mode" title="Direct link to m_projection_mode" translate="no">​</a></h4>
+<p>Inquires the projection mode.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PROJECTION_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_saturation"><code>M_SATURATION</code><a href="#m_saturation" class="hash-link" aria-label="Direct link to m_saturation" title="Direct link to m_saturation" translate="no">​</a></h4>
+<p>Inquires whether to saturate pixels.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SATURATION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sign_z"><code>M_SIGN_Z</code><a href="#m_sign_z" class="hash-link" aria-label="Direct link to m_sign_z" title="Direct link to m_sign_z" translate="no">​</a></h4>
+<p>Inquires the sign of the Z-scale in the destination depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SIGN_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x-1"><code>M_SIZE_X</code><a href="#m_size_x-1" class="hash-link" aria-label="Direct link to m_size_x-1" title="Direct link to m_size_x-1" translate="no">​</a></h4>
+<p>Inquires the size of the depth map along the X dimension.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SIZE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y-1"><code>M_SIZE_Y</code><a href="#m_size_y-1" class="hash-link" aria-label="Direct link to m_size_y-1" title="Direct link to m_size_y-1" translate="no">​</a></h4>
+<p>Inquires the size of the depth map along the Y dimension.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SIZE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="remap-context-id"><code>Remap context ID</code><a href="#remap-context-id" class="hash-link" aria-label="Direct link to remap-context-id" title="Direct link to remap-context-id" translate="no">​</a></h3>
+<p>Specifies a remap 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_REMAP_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimRemapDepthMap"><code>M3dimRemapDepthMap</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_direction_z"><code>M_DIRECTION_Z</code><a href="#m_direction_z" class="hash-link" aria-label="Direct link to m_direction_z" title="Direct link to m_direction_z" translate="no">​</a></h4>
+<p>Inquires the sign of the Z-scale in the destination depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DIRECTION_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_z"><code>M_MAX_Z</code><a href="#m_max_z" class="hash-link" aria-label="Direct link to m_max_z" title="Direct link to m_max_z" translate="no">​</a></h4>
+<p>Inquires the maximum Z-value for the destination depth map when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_REMAP_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MAX_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_z"><code>M_MIN_Z</code><a href="#m_min_z" class="hash-link" aria-label="Direct link to m_min_z" title="Direct link to m_min_z" translate="no">​</a></h4>
+<p>Inquires the minimum Z-value for the destination depth map when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_REMAP_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MIN_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_remap_mode"><code>M_REMAP_MODE</code><a href="#m_remap_mode" class="hash-link" aria-label="Direct link to m_remap_mode" title="Direct link to m_remap_mode" translate="no">​</a></h4>
+<p>Inquires how to determine the Z-range of the destination depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_REMAP_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_standard_deviation_factor"><code>M_STANDARD_DEVIATION_FACTOR</code><a href="#m_standard_deviation_factor" class="hash-link" aria-label="Direct link to m_standard_deviation_factor" title="Direct link to m_standard_deviation_factor" translate="no">​</a></h4>
+<p>Inquires the standard deviation factor, for when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_REMAP_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_GAUSSIAN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_STANDARD_DEVIATION_FACTOR</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="statistics-context-id"><code>Statistics context ID</code><a href="#statistics-context-id" class="hash-link" aria-label="Direct link to statistics-context-id" title="Direct link to statistics-context-id" translate="no">​</a></h3>
+<p>Specifies a statistics 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_STATISTICS_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimStat"><code>M3dimStat</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_bounding_box"><code>M_BOUNDING_BOX</code><a href="#m_bounding_box" class="hash-link" aria-label="Direct link to m_bounding_box" title="Direct link to m_bounding_box" translate="no">​</a></h4>
+<p>Inquires whether to enable bounding box statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_BOUNDING_BOX</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_bounding_box_algorithm"><code>M_BOUNDING_BOX_ALGORITHM</code><a href="#m_bounding_box_algorithm" class="hash-link" aria-label="Direct link to m_bounding_box_algorithm" title="Direct link to m_bounding_box_algorithm" translate="no">​</a></h4>
+<p>Inquires the algorithm to use when bounding box calculations have been enabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_BOUNDING_BOX</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_BOUNDING_BOX_ALGORITHM</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_bounding_box_outlier_ratio_x"><code>M_BOUNDING_BOX_OUTLIER_RATIO_X</code><a href="#m_bounding_box_outlier_ratio_x" class="hash-link" aria-label="Direct link to m_bounding_box_outlier_ratio_x" title="Direct link to m_bounding_box_outlier_ratio_x" translate="no">​</a></h4>
+<p>Inquires the fraction of points to exclude from the bounding box, based on X-coordinates. A point is excluded when its X-coordinate places the point in an outlier position, and therefore outside the bounding box.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_BOUNDING_BOX_OUTLIER_RATIO_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_bounding_box_outlier_ratio_y"><code>M_BOUNDING_BOX_OUTLIER_RATIO_Y</code><a href="#m_bounding_box_outlier_ratio_y" class="hash-link" aria-label="Direct link to m_bounding_box_outlier_ratio_y" title="Direct link to m_bounding_box_outlier_ratio_y" translate="no">​</a></h4>
+<p>Inquires the fraction of points to exclude from the bounding box, based on Y-coordinates. A point is excluded when its Y-coordinate places the point in an outlier position, and therefore outside the bounding box.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_BOUNDING_BOX_OUTLIER_RATIO_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_bounding_box_outlier_ratio_z"><code>M_BOUNDING_BOX_OUTLIER_RATIO_Z</code><a href="#m_bounding_box_outlier_ratio_z" class="hash-link" aria-label="Direct link to m_bounding_box_outlier_ratio_z" title="Direct link to m_bounding_box_outlier_ratio_z" translate="no">​</a></h4>
+<p>Inquires the fraction of points to exclude from the bounding box, based on Z-coordinates. A point is excluded when its Z-coordinate places the point in an outlier position, and therefore outside the bounding box.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_BOUNDING_BOX_OUTLIER_RATIO_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_orientation"><code>M_BOX_ORIENTATION</code><a href="#m_box_orientation" class="hash-link" aria-label="Direct link to m_box_orientation" title="Direct link to m_box_orientation" translate="no">​</a></h4>
+<p>Inquires whether to compute an axis-aligned or semi-oriented bounding box.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_BOX_ORIENTATION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_semi_oriented_rotation_axis"><code>M_BOX_SEMI_ORIENTED_ROTATION_AXIS</code><a href="#m_box_semi_oriented_rotation_axis" class="hash-link" aria-label="Direct link to m_box_semi_oriented_rotation_axis" title="Direct link to m_box_semi_oriented_rotation_axis" translate="no">​</a></h4>
+<p>Inquires the axis with which to align the semi-oriented bounding box, when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_BOX_ORIENTATION</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_SEMI_ORIENTED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_BOX_SEMI_ORIENTED_ROTATION_AXIS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calculate_average"><code>M_CALCULATE_AVERAGE</code><a href="#m_calculate_average" class="hash-link" aria-label="Direct link to m_calculate_average" title="Direct link to m_calculate_average" translate="no">​</a></h4>
+<p>Inquires whether to calculate the average value for distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALCULATE_AVERAGE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calculate_max"><code>M_CALCULATE_MAX</code><a href="#m_calculate_max" class="hash-link" aria-label="Direct link to m_calculate_max" title="Direct link to m_calculate_max" translate="no">​</a></h4>
+<p>Inquires whether to calculate the maximum value for distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALCULATE_MAX</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calculate_median"><code>M_CALCULATE_MEDIAN</code><a href="#m_calculate_median" class="hash-link" aria-label="Direct link to m_calculate_median" title="Direct link to m_calculate_median" translate="no">​</a></h4>
+<p>Inquires whether to calculate the median value for distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALCULATE_MEDIAN</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calculate_min"><code>M_CALCULATE_MIN</code><a href="#m_calculate_min" class="hash-link" aria-label="Direct link to m_calculate_min" title="Direct link to m_calculate_min" translate="no">​</a></h4>
+<p>Inquires whether to calculate the minimum value for distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALCULATE_MIN</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calculate_robust_stdev"><code>M_CALCULATE_ROBUST_STDEV</code><a href="#m_calculate_robust_stdev" class="hash-link" aria-label="Direct link to m_calculate_robust_stdev" title="Direct link to m_calculate_robust_stdev" translate="no">​</a></h4>
+<p>Inquires whether to calculate the robust standard deviation for distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors calculations. This is computed using the median absolute deviation (MAD) and a scale factor of 1.4826.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALCULATE_ROBUST_STDEV</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calculate_stdev"><code>M_CALCULATE_STDEV</code><a href="#m_calculate_stdev" class="hash-link" aria-label="Direct link to m_calculate_stdev" title="Direct link to m_calculate_stdev" translate="no">​</a></h4>
+<p>Inquires whether to calculate the standard deviation for distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALCULATE_STDEV</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_centroid"><code>M_CENTROID</code><a href="#m_centroid" class="hash-link" aria-label="Direct link to m_centroid" title="Direct link to m_centroid" translate="no">​</a></h4>
+<p>Inquires whether to enable centroid statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CENTROID</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_component_of_interest"><code>M_COMPONENT_OF_INTEREST</code><a href="#m_component_of_interest" class="hash-link" aria-label="Direct link to m_component_of_interest" title="Direct link to m_component_of_interest" translate="no">​</a></h4>
+<p>Inquires the component for which to calculate statistics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_COMPONENT_OF_INTEREST</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance_to_nearest_neighbor"><code>M_DISTANCE_TO_NEAREST_NEIGHBOR</code><a href="#m_distance_to_nearest_neighbor" class="hash-link" aria-label="Direct link to m_distance_to_nearest_neighbor" title="Direct link to m_distance_to_nearest_neighbor" translate="no">​</a></h4>
+<p>Inquires whether to enable distance-to-nearest-neighbor statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DISTANCE_TO_NEAREST_NEIGHBOR</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_distance-1"><code>M_MAX_DISTANCE</code><a href="#m_max_distance-1" class="hash-link" aria-label="Direct link to m_max_distance-1" title="Direct link to m_max_distance-1" translate="no">​</a></h4>
+<p>Inquires the maximum distance used to find neighbors when calculating distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors statistics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MAX_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_maximum_number_neighbors-2"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code><a href="#m_maximum_number_neighbors-2" class="hash-link" aria-label="Direct link to m_maximum_number_neighbors-2" title="Direct link to m_maximum_number_neighbors-2" translate="no">​</a></h4>
+<p>Inquires the maximum number of neighbors to consider when calculating distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors statistics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MAXIMUM_NUMBER_NEIGHBORS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moment_order"><code>M_MOMENT_ORDER</code><a href="#m_moment_order" class="hash-link" aria-label="Direct link to m_moment_order" title="Direct link to m_moment_order" translate="no">​</a></h4>
+<p>Inquires the order up to which moments are calculated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MOMENT_ORDER</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_moments"><code>M_MOMENTS</code><a href="#m_moments" class="hash-link" aria-label="Direct link to m_moments" title="Direct link to m_moments" translate="no">​</a></h4>
+<p>Inquires whether to enable moments statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_MOMENTS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighbor_search_mode-3"><code>M_NEIGHBOR_SEARCH_MODE</code><a href="#m_neighbor_search_mode-3" class="hash-link" aria-label="Direct link to m_neighbor_search_mode-3" title="Direct link to m_neighbor_search_mode-3" translate="no">​</a></h4>
+<p>Inquires the search mode for finding the neighbors of a point when calculating distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors statistics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBOR_SEARCH_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_aspect_ratio"><code>M_NEIGHBORHOOD_ASPECT_RATIO</code><a href="#m_neighborhood_aspect_ratio" class="hash-link" aria-label="Direct link to m_neighborhood_aspect_ratio" title="Direct link to m_neighborhood_aspect_ratio" translate="no">​</a></h4>
+<p>Inquires whether to enable local aspect ratio statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_ASPECT_RATIO</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_aspect_ratio_clipping_value"><code>M_NEIGHBORHOOD_ASPECT_RATIO_CLIPPING_VALUE</code><a href="#m_neighborhood_aspect_ratio_clipping_value" class="hash-link" aria-label="Direct link to m_neighborhood_aspect_ratio_clipping_value" title="Direct link to m_neighborhood_aspect_ratio_clipping_value" translate="no">​</a></h4>
+<p>Inquires the maximum value of the neighborhood aspect ratio, to avoid skewed statistics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_ASPECT_RATIO_CLIPPING_VALUE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_healthy_threshold"><code>M_NEIGHBORHOOD_HEALTHY_THRESHOLD</code><a href="#m_neighborhood_healthy_threshold" class="hash-link" aria-label="Direct link to m_neighborhood_healthy_threshold" title="Direct link to m_neighborhood_healthy_threshold" translate="no">​</a></h4>
+<p>Inquires the minimum number of neighbors that constitute a healthy neighborhood for the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimGetResult"><code>M_NEIGHBORHOOD_HEALTHY_PERCENTAGE</code></a> result type (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimGetResult"><code>M3dimGetResult</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_HEALTHY_THRESHOLD</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_organized_size-3"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code><a href="#m_neighborhood_organized_size-3" class="hash-link" aria-label="Direct link to m_neighborhood_organized_size-3" title="Direct link to m_neighborhood_organized_size-3" translate="no">​</a></h4>
+<p>Inquires the kernel size to use when using organized search mode for distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_ORGANIZED_SIZE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normalization_mode"><code>M_NORMALIZATION_MODE</code><a href="#m_normalization_mode" class="hash-link" aria-label="Direct link to m_normalization_mode" title="Direct link to m_normalization_mode" translate="no">​</a></h4>
+<p>Inquires whether the normalization matrix should transform the point cloud to fit a signed or unsigned unit box.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NORMALIZATION_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normalization_scale"><code>M_NORMALIZATION_SCALE</code><a href="#m_normalization_scale" class="hash-link" aria-label="Direct link to m_normalization_scale" title="Direct link to m_normalization_scale" translate="no">​</a></h4>
+<p>Inquires how to apply scale values when transforming the point cloud or 3D geometry to fit a unit box. If set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_UNIFORM</code></a>, each dimension is scaled using the same value such that the largest dimension fits a unit box, and the remaining dimensions will have the same or smaller lengths. If set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_NON_UNIFORM</code></a>, scale values are applied such that all dimensions have the same length and fit a unit cube.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NORMALIZATION_SCALE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points"><code>M_NUMBER_OF_POINTS</code><a href="#m_number_of_points" class="hash-link" aria-label="Direct link to m_number_of_points" title="Direct link to m_number_of_points" translate="no">​</a></h4>
+<p>Inquires whether to enable number-of-points statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NUMBER_OF_POINTS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_samples"><code>M_NUMBER_OF_SAMPLES</code><a href="#m_number_of_samples" class="hash-link" aria-label="Direct link to m_number_of_samples" title="Direct link to m_number_of_samples" translate="no">​</a></h4>
+<p>Inquires the number of sample points to use when calculating distance-to-nearest-neighbor, surface variation, aspect ratio, and number-of-valid-neighbors statistics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NUMBER_OF_SAMPLES</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_valid_neighbors"><code>M_NUMBER_OF_VALID_NEIGHBORS</code><a href="#m_number_of_valid_neighbors" class="hash-link" aria-label="Direct link to m_number_of_valid_neighbors" title="Direct link to m_number_of_valid_neighbors" translate="no">​</a></h4>
+<p>Inquires whether to enable number-of-valid-neighbors statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NUMBER_OF_VALID_NEIGHBORS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pca"><code>M_PCA</code><a href="#m_pca" class="hash-link" aria-label="Direct link to m_pca" title="Direct link to m_pca" translate="no">​</a></h4>
+<p>Inquires whether to enable principal component analysis (PCA) statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PCA</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pca_mode"><code>M_PCA_MODE</code><a href="#m_pca_mode" class="hash-link" aria-label="Direct link to m_pca_mode" title="Direct link to m_pca_mode" translate="no">​</a></h4>
+<p>Inquires whether to calculate the principal component analysis (PCA) around the origin (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_ORDINARY</code></a>) or around the centroid (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_CENTRAL</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_PCA_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_surface_area"><code>M_SURFACE_AREA</code><a href="#m_surface_area" class="hash-link" aria-label="Direct link to m_surface_area" title="Direct link to m_surface_area" translate="no">​</a></h4>
+<p>Inquires whether to calculate the surface area of the mesh.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SURFACE_AREA</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_surface_variation"><code>M_SURFACE_VARIATION</code><a href="#m_surface_variation" class="hash-link" aria-label="Direct link to m_surface_variation" title="Direct link to m_surface_variation" translate="no">​</a></h4>
+<p>Inquires whether to enable surface variation statistics calculations.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SURFACE_VARIATION</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stitch-context-id"><code>Stitch context ID</code><a href="#stitch-context-id" class="hash-link" aria-label="Direct link to stitch-context-id" title="Direct link to stitch-context-id" translate="no">​</a></h3>
+<p>Specifies a stitch 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_STITCH_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimMerge"><code>M3dimMerge</code></a> operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calibration_mode"><code>M_CALIBRATION_MODE</code><a href="#m_calibration_mode" class="hash-link" aria-label="Direct link to m_calibration_mode" title="Direct link to m_calibration_mode" translate="no">​</a></h4>
+<p>Inquires the calibration mode with which to map depth map pixel coordinates to real-world coordinates.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_CALIBRATION_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_interpolation_fallback_mode"><code>M_INTERPOLATION_FALLBACK_MODE</code><a href="#m_interpolation_fallback_mode" class="hash-link" aria-label="Direct link to m_interpolation_fallback_mode" title="Direct link to m_interpolation_fallback_mode" translate="no">​</a></h4>
+<p>Inquires the type of interpolation to use when stitching the depth maps and there are invalid pixels in the neighborhood of a point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_INTERPOLATION_FALLBACK_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_offset_x"><code>M_OFFSET_X</code><a href="#m_offset_x" class="hash-link" aria-label="Direct link to m_offset_x" title="Direct link to m_offset_x" translate="no">​</a></h4>
+<p>Inquires the X-coordinate of the top-left corner of the destination depth map.  &gt; <strong>Note:</strong> This inquire type is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_CALIBRATION_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_OFFSET_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_offset_y"><code>M_OFFSET_Y</code><a href="#m_offset_y" class="hash-link" aria-label="Direct link to m_offset_y" title="Direct link to m_offset_y" translate="no">​</a></h4>
+<p>Inquires the Y-coordinate of the top-left corner of the destination depth map.  &gt; <strong>Note:</strong> This inquire type is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_CALIBRATION_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_OFFSET_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overlap_mode-1"><code>M_OVERLAP_MODE</code><a href="#m_overlap_mode-1" class="hash-link" aria-label="Direct link to m_overlap_mode-1" title="Direct link to m_overlap_mode-1" translate="no">​</a></h4>
+<p>Inquires how to determine the pixel value when two or more depth maps overlap.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_OVERLAP_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_x-2"><code>M_SIZE_X</code><a href="#m_size_x-2" class="hash-link" aria-label="Direct link to m_size_x-2" title="Direct link to m_size_x-2" translate="no">​</a></h4>
+<p>Inquires the size of the stitched destination depth map along the X dimension.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SIZE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_size_y-2"><code>M_SIZE_Y</code><a href="#m_size_y-2" class="hash-link" aria-label="Direct link to m_size_y-2" title="Direct link to m_size_y-2" translate="no">​</a></h4>
+<p>Inquires the size of the stitched destination depth map along the Y dimension.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SIZE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_static_index"><code>M_STATIC_INDEX</code><a href="#m_static_index" class="hash-link" aria-label="Direct link to m_static_index" title="Direct link to m_static_index" translate="no">​</a></h4>
+<p>Inquires the source depth map to which all other depth map pixels will be stitched.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_STATIC_INDEX</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stitch_direction"><code>M_STITCH_DIRECTION</code><a href="#m_stitch_direction" class="hash-link" aria-label="Direct link to m_stitch_direction" title="Direct link to m_stitch_direction" translate="no">​</a></h4>
+<p>Inquires the direction in which to stitch the point clouds&#x27; component values.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_STITCH_DIRECTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stitch_mode"><code>M_STITCH_MODE</code><a href="#m_stitch_mode" class="hash-link" aria-label="Direct link to m_stitch_mode" title="Direct link to m_stitch_mode" translate="no">​</a></h4>
+<p>Inquires the algorithm to use for stitching depth maps.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_STITCH_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="subsample-context-id"><code>Subsample context ID</code><a href="#subsample-context-id" class="hash-link" aria-label="Direct link to subsample-context-id" title="Direct link to subsample-context-id" translate="no">​</a></h3>
+<p>Specifies a subsample 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_SUBSAMPLE_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimSample"><code>M3dimSample</code></a> subsampling operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distinct_angle_difference"><code>M_DISTINCT_ANGLE_DIFFERENCE</code><a href="#m_distinct_angle_difference" class="hash-link" aria-label="Direct link to m_distinct_angle_difference" title="Direct link to m_distinct_angle_difference" translate="no">​</a></h4>
+<p>Inquires the minimum angle difference between the normal vector of a point and that of its neighbors, for the point to be kept in the subsample.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_DISTINCT_ANGLE_DIFFERENCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fraction_of_points-1"><code>M_FRACTION_OF_POINTS</code><a href="#m_fraction_of_points-1" class="hash-link" aria-label="Direct link to m_fraction_of_points-1" title="Direct link to m_fraction_of_points-1" translate="no">​</a></h4>
+<p>Inquires the fraction of all valid points to select from the source point cloud.  This only applies when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_SUBSAMPLE_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_SUBSAMPLE_RANDOM</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_SUBSAMPLE_GEOMETRIC</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_FRACTION_OF_POINTS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_size_x"><code>M_GRID_SIZE_X</code><a href="#m_grid_size_x" class="hash-link" aria-label="Direct link to m_grid_size_x" title="Direct link to m_grid_size_x" translate="no">​</a></h4>
+<p>Inquires the cell size in the X-direction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_GRID_SIZE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_size_y"><code>M_GRID_SIZE_Y</code><a href="#m_grid_size_y" class="hash-link" aria-label="Direct link to m_grid_size_y" title="Direct link to m_grid_size_y" translate="no">​</a></h4>
+<p>Inquires the cell size in the Y-direction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_GRID_SIZE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_size_z"><code>M_GRID_SIZE_Z</code><a href="#m_grid_size_z" class="hash-link" aria-label="Direct link to m_grid_size_z" title="Direct link to m_grid_size_z" translate="no">​</a></h4>
+<p>Inquires the cell size in the Z-direction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_GRID_SIZE_Z</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_neighborhood_distance-3"><code>M_NEIGHBORHOOD_DISTANCE</code><a href="#m_neighborhood_distance-3" class="hash-link" aria-label="Direct link to m_neighborhood_distance-3" title="Direct link to m_neighborhood_distance-3" translate="no">​</a></h4>
+<p>Inquires the distance that defines the neighborhood of a point; for a point to be kept in the subsample, it must be distinct in this neighborhood.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_NEIGHBORHOOD_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_organization_type"><code>M_ORGANIZATION_TYPE</code><a href="#m_organization_type" class="hash-link" aria-label="Direct link to m_organization_type" title="Direct link to m_organization_type" translate="no">​</a></h4>
+<p>Inquires the resulting subsampled point cloud&#x27;s organizational type.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_ORGANIZATION_TYPE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_point_selected"><code>M_POINT_SELECTED</code><a href="#m_point_selected" class="hash-link" aria-label="Direct link to m_point_selected" title="Direct link to m_point_selected" translate="no">​</a></h4>
+<p>Inquires which point to choose when multiple points occupy the same cell.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CENTER</code></td><td>Specifies to select the point closest to the center of each 2D cell, as if the point cloud is collapsed onto the plane formed by the 2 non-infinite dimensions.</td></tr><tr><td><code>M_MAX</code></td><td>Specifies to select the highest point along the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_INFINITE</code></a> axis, for each cell. This is the default setting for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_ORGANIZED</code></a> destination point cloud.</td></tr><tr><td><code>M_MIN</code></td><td>Specifies to select the lowest point along the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_INFINITE</code></a> axis, for each cell.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_seed_value"><code>M_SEED_VALUE</code><a href="#m_seed_value" class="hash-link" aria-label="Direct link to m_seed_value" title="Direct link to m_seed_value" translate="no">​</a></h4>
+<p>Inquires the seed for the random selection of points, for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_SUBSAMPLE_RANDOM</code></a> operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SEED_VALUE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_size_x"><code>M_STEP_SIZE_X</code><a href="#m_step_size_x" class="hash-link" aria-label="Direct link to m_step_size_x" title="Direct link to m_step_size_x" translate="no">​</a></h4>
+<p>Inquires the step interval between points, along the X dimension.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_STEP_SIZE_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_size_y"><code>M_STEP_SIZE_Y</code><a href="#m_step_size_y" class="hash-link" aria-label="Direct link to m_step_size_y" title="Direct link to m_step_size_y" translate="no">​</a></h4>
+<p>Inquires the step interval between points, along the Y dimension.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_STEP_SIZE_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_subsample_mode"><code>M_SUBSAMPLE_MODE</code><a href="#m_subsample_mode" class="hash-link" aria-label="Direct link to m_subsample_mode" title="Direct link to m_subsample_mode" translate="no">​</a></h4>
+<p>Inquires the type of subsampling operation to perform.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SUBSAMPLE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_subsample_normal_mode"><code>M_SUBSAMPLE_NORMAL_MODE</code><a href="#m_subsample_normal_mode" class="hash-link" aria-label="Direct link to m_subsample_normal_mode" title="Direct link to m_subsample_normal_mode" translate="no">​</a></h4>
+<p>Inquires the algorithm to use for subsampling based on normals.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SUBSAMPLE_NORMAL_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="surface-sample-context-id"><code>Surface sample context ID</code><a href="#surface-sample-context-id" class="hash-link" aria-label="Direct link to surface-sample-context-id" title="Direct link to surface-sample-context-id" translate="no">​</a></h3>
+<p>Specifies a surface sample 3D image processing context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M3dimAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimAlloc"><code>M_SURFACE_SAMPLE_CONTEXT</code></a>, and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimSample"><code>M3dimSample</code></a> surface sampling operations.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_resolution"><code>M_RESOLUTION</code><a href="#m_resolution" class="hash-link" aria-label="Direct link to m_resolution" title="Direct link to m_resolution" translate="no">​</a></h4>
+<p>Inquires the resolution at which to sample the mesh or 3D geometry. This represents the distance between neighboring points on the surface; the smaller the resolution, the more points generated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_RESOLUTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mode"><code>M_SAMPLE_MODE</code><a href="#m_sample_mode" class="hash-link" aria-label="Direct link to m_sample_mode" title="Direct link to m_sample_mode" translate="no">​</a></h4>
+<p>Inquires the mode of the surface sampling operation. The mode establishes whether the destination point cloud will have a mesh structure.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimControl"><code>M_SAMPLE_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-about-the-default-value">Combination Constants — For inquiring about the default value<a href="#combination-constants--for-inquiring-about-the-default-value" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring about the default value" title="Direct link to Combination Constants — For inquiring about the default value" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get information about the default value of an inquire type, regardless of the current value of the inquire type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h4>
+<p>Inquires the default value of the specified inquire type.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_is_set_to_default"><code>M_IS_SET_TO_DEFAULT</code><a href="#m_is_set_to_default" class="hash-link" aria-label="Direct link to m_is_set_to_default" title="Direct link to m_is_set_to_default" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is set to its default value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not set to its default value.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is set to its default value.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-whether-an-inquire-type-is-supported">Combination Constants — For inquiring whether an inquire type is supported<a href="#combination-constants--for-inquiring-whether-an-inquire-type-is-supported" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring whether an inquire type is supported" title="Direct link to Combination Constants — For inquiring whether an inquire type is supported" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether an inquire type is supported.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_default"><code>M_HAS_DEFAULT</code><a href="#m_has_default" class="hash-link" aria-label="Direct link to m_has_default" title="Direct link to m_has_default" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type has a default value.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type does not have a default value.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type has a default value.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_supported"><code>M_SUPPORTED</code><a href="#m_supported" class="hash-link" aria-label="Direct link to m_supported" title="Direct link to m_supported" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is supported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not supported.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is supported.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_float"><code>M_TYPE_AIL_FLOAT</code><a href="#m_type_ail_float" class="hash-link" aria-label="Direct link to m_type_ail_float" title="Direct link to m_type_ail_float" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_FLOAT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT64</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT64</em>. If the requested information does not fit into an <em>AIL_INT64</em>, this function will return <code>M_NULL</code>or truncate the information.</p>
+<blockquote>
+<p><strong>Note:</strong> This inquire type is available only when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_MESH_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_MESH_LOCAL_PLANE</code></a>.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> This inquire type is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_MESH_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_MESH_ORGANIZED</code></a>.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> This inquire type is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_MESH_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimInquire"><code>M_MESH_SMOOTHED</code></a>.</p>
+</blockquote></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimGetResult"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dimGetResult</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/M3dimLattice"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dimLattice</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#context3dimid-in-ail_id" class="table-of-contents__link toc-highlight"><code>Context3dimId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-about-a-3d-image-processing-context-or-result-buffer" class="table-of-contents__link toc-highlight">For inquiring about a 3D image processing context or result buffer</a></li><li><a href="#calculate-map-size-context-id" class="table-of-contents__link toc-highlight"><code>Calculate map size context ID</code></a></li><li><a href="#fill-gaps-context-id" class="table-of-contents__link toc-highlight"><code>Fill gaps context ID</code></a></li><li><a href="#filter-context-id" class="table-of-contents__link toc-highlight"><code>Filter context ID</code></a></li><li><a href="#lattice-context-id" class="table-of-contents__link toc-highlight"><code>Lattice context ID</code></a></li><li><a href="#lattice-result-buffer-id" class="table-of-contents__link toc-highlight"><code>Lattice result buffer ID</code></a></li><li><a href="#mesh-context-id" class="table-of-contents__link toc-highlight"><code>Mesh context ID</code></a></li><li><a href="#normals-context-id" class="table-of-contents__link toc-highlight"><code>Normals context ID</code></a></li><li><a href="#outliers-context-id" class="table-of-contents__link toc-highlight"><code>Outliers context ID</code></a></li><li><a href="#profile-context-id" class="table-of-contents__link toc-highlight"><code>Profile context ID</code></a></li><li><a href="#project-context-id" class="table-of-contents__link toc-highlight"><code>Project context ID</code></a></li><li><a href="#remap-context-id" class="table-of-contents__link toc-highlight"><code>Remap context ID</code></a></li><li><a href="#statistics-context-id" class="table-of-contents__link toc-highlight"><code>Statistics context ID</code></a></li><li><a href="#stitch-context-id" class="table-of-contents__link toc-highlight"><code>Stitch context ID</code></a></li><li><a href="#subsample-context-id" class="table-of-contents__link toc-highlight"><code>Subsample context ID</code></a></li><li><a href="#surface-sample-context-id" class="table-of-contents__link toc-highlight"><code>Surface sample context ID</code></a></li><li><a href="#combination-constants--for-inquiring-about-the-default-value" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring about the default value</a></li><li><a href="#combination-constants--for-inquiring-whether-an-inquire-type-is-supported" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring whether an inquire type is supported</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

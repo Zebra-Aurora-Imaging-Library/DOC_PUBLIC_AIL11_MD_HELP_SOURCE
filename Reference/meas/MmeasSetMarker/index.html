@@ -1,0 +1,1346 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/meas/MmeasSetMarker" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MmeasSetMarker | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MmeasSetMarker | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"meas","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"},{"@type":"ListItem","position":2,"name":"MmeasSetMarker","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Collapse sidebar category &#x27;meas&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocContext"><span title="MmeasAllocContext" class="linkLabel_WmDU">MmeasAllocContext</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><span title="MmeasAllocMarker" class="linkLabel_WmDU">MmeasAllocMarker</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocResult"><span title="MmeasAllocResult" class="linkLabel_WmDU">MmeasAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasCalculate"><span title="MmeasCalculate" class="linkLabel_WmDU">MmeasCalculate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasControl"><span title="MmeasControl" class="linkLabel_WmDU">MmeasControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><span title="MmeasDraw" class="linkLabel_WmDU">MmeasDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><span title="MmeasFindMarker" class="linkLabel_WmDU">MmeasFindMarker</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFree"><span title="MmeasFree" class="linkLabel_WmDU">MmeasFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResult"><span title="MmeasGetResult" class="linkLabel_WmDU">MmeasGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResultSingle"><span title="MmeasGetResultSingle" class="linkLabel_WmDU">MmeasGetResultSingle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetScore"><span title="MmeasGetScore" class="linkLabel_WmDU">MmeasGetScore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasInquire"><span title="MmeasInquire" class="linkLabel_WmDU">MmeasInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasRestoreMarker"><span title="MmeasRestoreMarker" class="linkLabel_WmDU">MmeasRestoreMarker</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSaveMarker"><span title="MmeasSaveMarker" class="linkLabel_WmDU">MmeasSaveMarker</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><span title="MmeasSetMarker" class="linkLabel_WmDU">MmeasSetMarker</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetScore"><span title="MmeasSetScore" class="linkLabel_WmDU">MmeasSetScore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasStream"><span title="MmeasStream" class="linkLabel_WmDU">MmeasStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span>meas</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MmeasSetMarker</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MmeasSetMarker</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Set an essential characteristic of a marker.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MmeasSetMarker</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     MarkerId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">             </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  CharacteristicToSet</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE FirstValue</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">           </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE SecondValue           </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function sets an essential characteristic of a marker. Essential characteristics are used in determining the location of an edge, stripe, or circle marker in a target image, or specifying the position of point markers, which are generally used as a reference marker. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>MmeasFindMarker</code></a> locates the edges, stripes, or circle that best correspond to the specified marker&#x27;s characteristics. A marker&#x27;s characteristics should describe the marker as accurately as possible to ensure that it will be successfully located in an image.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="markerid-out-ail_id"><code>MarkerId</code> <em>(out, AIL_ID)</em><a href="#markerid-out-ail_id" class="hash-link" aria-label="Direct link to markerid-out-ail_id" title="Direct link to markerid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the marker.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="characteristictoset-in-ail_int64"><code>CharacteristicToSet</code> <em>(in, AIL_INT64)</em><a href="#characteristictoset-in-ail_int64" class="hash-link" aria-label="Direct link to characteristictoset-in-ail_int64" title="Direct link to characteristictoset-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of characteristic to set.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="firstvalue-in-ail_double"><code>FirstValue</code> <em>(in, AIL_DOUBLE)</em><a href="#firstvalue-in-ail_double" class="hash-link" aria-label="Direct link to firstvalue-in-ail_double" title="Direct link to firstvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the first value to assign to the characteristic.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="secondvalue-in-ail_double"><code>SecondValue</code> <em>(in, AIL_DOUBLE)</em><a href="#secondvalue-in-ail_double" class="hash-link" aria-label="Direct link to secondvalue-in-ail_double" title="Direct link to secondvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the second value to assign to the characteristic. If only one value is to be returned, it will be returned to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> should be set to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for">For<a href="#for" class="hash-link" aria-label="Direct link to For" title="Direct link to For" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_POINT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_EDGE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_STRIPE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_CIRCLE</code></a> markers, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>CharacteristicToSet</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameters can be set to the following.  Note that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameter should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NULL</code></a> if no parameter setting is required.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_marker_reference"><code>M_MARKER_REFERENCE</code><a href="#m_marker_reference" class="hash-link" aria-label="Direct link to m_marker_reference" title="Direct link to m_marker_reference" translate="no">​</a></h3>
+<p>Sets the offset at which to place the marker&#x27;s reference position, relative to the marker&#x27;s actual position. The reference position is only used in calculations between two markers (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasCalculate"><code>MmeasCalculate</code></a>).  - For point markers, Aurora Imaging Library measures the specified offset relative to the X- and Y-coordinates set for the point using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POSITION</code></a>. - For edge markers, Aurora Imaging Library measures the specified offset relative to the X- and Y-coordinates of the edge&#x27;s maximum edgevalue. - For stripe markers, Aurora Imaging Library measures the specified offset relative to the X- and Y-coordinates at the center of a theoretical line between the position (maximum edgevalue) of the stripe&#x27;s two outermost edges. - For circle markers, Aurora Imaging Library measures the specified offset relative to the X- and Y-coordinates at the circle&#x27;s center.  By default, the marker&#x27;s reference position is the same as its actual position (the default offset is 0).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the X-offset value, in the same units as the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MARKER_REFERENCE_INPUT_UNITS</code></a>.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the Y-offset value, in the same units as the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MARKER_REFERENCE_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_marker_reference_input_units"><code>M_MARKER_REFERENCE_INPUT_UNITS</code><a href="#m_marker_reference_input_units" class="hash-link" aria-label="Direct link to m_marker_reference_input_units" title="Direct link to m_marker_reference_input_units" translate="no">​</a></h3>
+<p>Sets the units with which to interpret <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MARKER_REFERENCE</code></a>. This essentially sets the input coordinate system to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_PIXEL</code> <em>(default)</em></td><td>Specifies to interpret the value in pixel units, according to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies to interpret the value in world units, according to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>MmeasDraw</code></a> to draw expected marker characteristics or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>MmeasFindMarker</code></a> generates an error if the operation is not performed on a calibrated image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_output_units"><code>M_RESULT_OUTPUT_UNITS</code><a href="#m_result_output_units" class="hash-link" aria-label="Direct link to m_result_output_units" title="Direct link to m_result_output_units" translate="no">​</a></h3>
+<p>Sets whether to return results in pixels or world units. This essentially sets the output coordinate system to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_CALIBRATION</code> <em>(default)</em></td><td>Specifies that results are returned in world units if the result was calculated on an image associated with a camera calibration context; otherwise, specifies that results are returned in pixel units.</td></tr><tr><td><code>M_PIXEL</code></td><td>Specifies that results are returned in pixel units, according to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies that results are returned in world units, according to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResult"><code>MmeasGetResult</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResultSingle"><code>MmeasGetResultSingle</code></a> generates an error if the result was not calculated on a calibrated image.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-1">For<a href="#for-1" class="hash-link" aria-label="Direct link to For" title="Direct link to For" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_POINT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_EDGE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_STRIPE</code></a> markers, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>CharacteristicToSet</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameters can be set to the following.  Note that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameter should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NULL</code></a> if no parameter setting is required.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number"><code>M_NUMBER</code><a href="#m_number" class="hash-link" aria-label="Direct link to m_number" title="Direct link to m_number" translate="no">​</a></h3>
+<p>Sets the number of edges or stripes to locate in the box search region, or the number of points to explicitly define (points are typically used as a reference marker). In the first case, this can be referred to as the number of marker occurrences.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NUMBER</code></a> is set to a value greater than 1, the marker is considered a multiple-occurrence marker. Note that a circle marker cannot be set as a multiple-occurrence marker.  For edges and stripes, unless a minimum number (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NUMBER_MIN</code></a>) is specified, no results will be returned if the number of marker occurrences found falls below <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NUMBER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALL</code></td><td>Specifies that the search should locate all edges or stripes in the box search region. This setting cannot be used for a point marker.  If using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_ALL</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NUMBER_MIN</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NUMBER_MIN</code></a> is ignored and Aurora Imaging Library will find as many marker occurrences as it can in the image. However, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NUMBER_MIN</code></a> is set to a value other than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>, this value is respected and results are returned, provided that the specified minimum number of markers are found.  &gt; <strong>Note:</strong> Note that when working with a very large image with many stripes, searching for an unknown number of stripes can significantly increase processing time.</td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the number of edges or stripes to locate, or point markers to define.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-2">For<a href="#for-2" class="hash-link" aria-label="Direct link to For" title="Direct link to For" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_EDGE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_STRIPE</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_CIRCLE</code></a> markers, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>CharacteristicToSet</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameters can be set to the following.  Note that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameter should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NULL</code></a> if no parameter setting is required.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edgevalue_min"><code>M_EDGEVALUE_MIN</code><a href="#m_edgevalue_min" class="hash-link" aria-label="Direct link to m_edgevalue_min" title="Direct link to m_edgevalue_min" translate="no">​</a></h3>
+<p>Sets the minimum edgevalue required for it to be considered an occurrence of the marker.  <em>[Image: edgedetectionedgevalueminandvarmin2.png]</em>  Aurora Imaging Library establishes edgevalues by taking the normalized first derivative of the intensity profile, which generally resembles a peak when an edge is present. When searching for multiple edges, you might need to further constrain the edgevalues that Aurora Imaging Library considers, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EDGEVALUE_VAR_MIN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum edgevalue.  A setting of 0.0 indicates that Aurora Imaging Library considers all edgevalues, while a setting of 100.0 indicates that Aurora Imaging Library only considers the greatest possible edgevalue. The greatest possible edgevalue results from a perfectly straight, perfectly white to perfectly black (or vice versa) grayscale transition over one pixel. If you set the minimum edgevalue to a very low value, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>MmeasFindMarker</code></a> can take longer to execute.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edgevalue_var_min"><code>M_EDGEVALUE_VAR_MIN</code><a href="#m_edgevalue_var_min" class="hash-link" aria-label="Direct link to m_edgevalue_var_min" title="Direct link to m_edgevalue_var_min" translate="no">​</a></h3>
+<p>Sets the minimum prominence required for an edge peak, for it to be considered an occurrence of the marker. To determine if the minimum prominence is met, Aurora Imaging Library establishes a local threshold for each peak by subtracting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EDGEVALUE_VAR_MIN</code></a> from it.  <em>[Image: edgedetectionedgevalueminandvarmin4.png]</em>  The portion of the profile above the local threshold that contains the edge peak can be referred to as the peak&#x27;s interval, provided that the profile eventually dips below the local threshold on both sides of its edge peak. For Aurora Imaging Library to consider a peak to be an edge, there must be no edgevalues greater than that peak within its interval. If the local threshold calculated with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EDGEVALUE_VAR_MIN</code></a> is less than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EDGEVALUE_MIN</code></a>, the local threshold equals <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EDGEVALUE_MIN</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EDGEVALUE_VAR_MIN</code></a> is typically used by advanced applications where you are trying to find multiple neighboring edges in the search region, which are formed such that the foreground of the first edge becomes the background of the next edge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum prominence.  A setting of 0.0 indicates no prominence; that is, Aurora Imaging Library only considers the maximum edgevalue of the peak&#x27;s interval. A setting of 100.0 (default) indicates the greatest possible prominence; that is, Aurora Imaging Library considers all edgevalues of the peak&#x27;s interval that are above <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EDGEVALUE_MIN</code></a>. In this case, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EDGEVALUE_VAR_MIN</code></a> has no effect.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_filter_smoothness"><code>M_FILTER_SMOOTHNESS</code><a href="#m_filter_smoothness" class="hash-link" aria-label="Direct link to m_filter_smoothness" title="Direct link to m_filter_smoothness" translate="no">​</a></h3>
+<p>Sets the degree of smoothness (strength of denoising) applied to the internal projection buffer of the search region during the edge extraction. The recursive edge extraction process involves a denoising operation.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_FILTER_SMOOTHNESS</code></a> is only available if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_FILTER_TYPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SHEN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the smoothness value.  A value of 100.0 results in a strong noise reduction effect, while a value of 0.0 has almost no noise reduction effect.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_filter_type"><code>M_FILTER_TYPE</code><a href="#m_filter_type" class="hash-link" aria-label="Direct link to m_filter_type" title="Direct link to m_filter_type" translate="no">​</a></h3>
+<p>Sets the type of the first derivative filter with which to perform the edge extraction. The edgevalue calculated for each projection value of the search region is dependent on this setting.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_EULER</code> <em>(default)</em></td><td>Specifies an Euler FIR filter. This filter performs a non-recursive edge extraction operation with a predefined kernel of size 2: [-1,1].  This filter is faster but more sensitive to noise, compared to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_PREWITT</code></a> filter.</td></tr><tr><td><code>M_PREWITT</code></td><td>Specifies a Prewitt FIR filter. This filter performs a non-recursive edge extraction operation with a predefined kernel of size 3: [-1,0,1].  This filter is slower but less sensitive to noise, compared to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EULER</code></a> filter.</td></tr><tr><td><code>M_SHEN</code></td><td>Specifies a Shen-Castan Infinite Support Exponential filter. This is an exponential weighting function, of the general form:  <em>[Image: ShenFunction.png]</em>  This filter performs a recursive edge extraction operation using an IIR filter. If this filter actually used a kernel, the kernel size would be theoretically infinite.  This IIR filter is slower than FIR filters (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_EULER</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_PREWITT</code></a>). However, this filter is less sensitive to noise and provides more accurate results. You can also control the strength of denoising applied to the projection buffer of the search region during the edge extraction, using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_FILTER_SMOOTHNESS</code></a> setting.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_association_distance"><code>M_MAX_ASSOCIATION_DISTANCE</code><a href="#m_max_association_distance" class="hash-link" aria-label="Direct link to m_max_association_distance" title="Direct link to m_max_association_distance" translate="no">​</a></h3>
+<p>Sets the maximum distance between a marker&#x27;s edge (either straight or circular) and its associated subedges. The subedges&#x27; positions are points extracted from the marker&#x27;s subregions that are used during the fit operation. For edge and stripe markers, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MAX_ASSOCIATION_DISTANCE</code></a> is measured perpendicular from the fitted edge position, along to the search direction. For circle markers, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MAX_ASSOCIATION_DISTANCE</code></a> is measured radially from the fitted circle perimeter.  Subedges falling outside the specified maximum distance are considered outliers and are not used to perform the marker&#x27;s line or circle fit operation. For edge and stripe markers, this leads to fitted edges more in line with the marker orientation and, for circle markers, this ensures that the fitted circle will be fitted on subedges roughly at the same distance from the fitted circle center.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_MAX_POSSIBLE_VALUE</code> <em>(default)</em></td><td>Specifies that there is no maximum distance; the entire search region is searched for subedges.</td></tr><tr><td><code>Value</code></td><td>Specifies the distance, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MAX_ASSOCIATION_DISTANCE_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_association_distance_input_units"><code>M_MAX_ASSOCIATION_DISTANCE_INPUT_UNITS</code><a href="#m_max_association_distance_input_units" class="hash-link" aria-label="Direct link to m_max_association_distance_input_units" title="Direct link to m_max_association_distance_input_units" translate="no">​</a></h3>
+<p>Sets the units with which to interpret <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MAX_ASSOCIATION_DISTANCE</code></a>. This essentially sets the input coordinate system to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_PIXEL</code> <em>(default)</em></td><td>Specifies to interpret the value in pixel units, according to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies to interpret the value in world units, according to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>MmeasDraw</code></a> to draw expected marker characteristics or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>MmeasFindMarker</code></a> generates an error if the operation is not performed on a calibrated image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_polarity"><code>M_POLARITY</code><a href="#m_polarity" class="hash-link" aria-label="Direct link to m_polarity" title="Direct link to m_polarity" translate="no">​</a></h3>
+<p>Specifies the polarity of the marker. Polarity indicates whether an edge must be a rising edge (increase in grayscale value) or a falling edge (decrease in grayscale value).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that polarity is not considered.</td></tr><tr><td><code>M_NEGATIVE</code></td><td>Specifies that the polarity of the edge is negative (falling edge). For circle markers, this indicates that the inside of the ring-shaped region has a greater grayscale value (falling edge from inside to outside).</td></tr><tr><td><code>M_POSITIVE</code></td><td>Specifies that the polarity of the edge is positive (rising edge). For circle markers, this indicates that the inside of the ring-shaped region has a lower grayscale value (rising edge from inside to outside).</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NULL</code></td><td>Specifies that this parameter does not apply.  This setting must be used for edge and circle markers.</td></tr><tr><td><code>M_ANY</code></td><td>Specifies that the polarity is not considered.</td></tr><tr><td><code>M_NEGATIVE</code></td><td>Specifies that the polarity of the second edge is negative (falling edge).</td></tr><tr><td><code>M_OPPOSITE</code> <em>(default)</em></td><td>Specifies that the polarity of the second edge of a stripe marker is the opposite of that of the first edge.</td></tr><tr><td><code>M_POSITIVE</code></td><td>Specifies that the polarity of the second edge is positive (rising edge).</td></tr><tr><td><code>M_SAME</code></td><td>Specifies that the polarity of the second edge of a stripe marker is the same as that of the first edge.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_region_clipping"><code>M_SEARCH_REGION_CLIPPING</code><a href="#m_search_region_clipping" class="hash-link" aria-label="Direct link to m_search_region_clipping" title="Direct link to m_search_region_clipping" translate="no">​</a></h3>
+<p>Sets whether Aurora Imaging Library can automatically clip the marker&#x27;s search region, when it falls outside the image.  &gt; <strong>Note:</strong> This setting is ignored unless the search region&#x27;s size is explicitly set. That is, the values specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_SIZE</code></a> are not set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the search region cannot be automatically clipped. In this case, if the search region falls outside the image, the marker cannot be found (unless you are using subregions).</td></tr><tr><td><code>M_MAXIMIZE_AREA</code></td><td>Specifies that, if the search region falls outside the image, Aurora Imaging Library can automatically clip the region according to the best valid area in which to search, and the marker can still be found. The modified region is internally created by Aurora Imaging Library; the actual search region that you defined is never altered.  The automatically determined region must be inscribed by the defined search region, must be within the boundaries of the image, and must meet the specified <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_CLIPPING_...</code></a> conditions. Aurora Imaging Library will not clip the region if it cannot adhere to all of these requirements.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_region_clipping_min_area"><code>M_SEARCH_REGION_CLIPPING_MIN_AREA</code><a href="#m_search_region_clipping_min_area" class="hash-link" aria-label="Direct link to m_search_region_clipping_min_area" title="Direct link to m_search_region_clipping_min_area" translate="no">​</a></h3>
+<p>Sets the minimum area requirement for the clipped region that can be internally created when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_CLIPPING</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MAXIMIZE_AREA</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the minimum area required for the clipped region, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_region_clipping_min_height"><code>M_SEARCH_REGION_CLIPPING_MIN_HEIGHT</code><a href="#m_search_region_clipping_min_height" class="hash-link" aria-label="Direct link to m_search_region_clipping_min_height" title="Direct link to m_search_region_clipping_min_height" translate="no">​</a></h3>
+<p>Sets the minimum width requirement for the clipped region that can be internally created when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_CLIPPING</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MAXIMIZE_AREA</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the minimum height required for the clipped region, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_region_clipping_min_width"><code>M_SEARCH_REGION_CLIPPING_MIN_WIDTH</code><a href="#m_search_region_clipping_min_width" class="hash-link" aria-label="Direct link to m_search_region_clipping_min_width" title="Direct link to m_search_region_clipping_min_width" translate="no">​</a></h3>
+<p>Sets the minimum width requirement for the clipped region that can be internally created when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_CLIPPING</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MAXIMIZE_AREA</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the minimum width required for the clipped region, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_region_clipping_preserve_center"><code>M_SEARCH_REGION_CLIPPING_PRESERVE_CENTER</code><a href="#m_search_region_clipping_preserve_center" class="hash-link" aria-label="Direct link to m_search_region_clipping_preserve_center" title="Direct link to m_search_region_clipping_preserve_center" translate="no">​</a></h3>
+<p>Sets the center requirement for the clipped region that can be internally created when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_CLIPPING</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MAXIMIZE_AREA</code></a>. All the settings are available to edge and stripe markers, but only <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_AUTO</code></a> are available to circle markers.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALONG_HEIGHT</code></td><td>Specifies that the center, along the height of the defined search region, must be preserved in the clipped region. This setting is not available for circle markers.</td></tr><tr><td><code>M_ALONG_WIDTH</code></td><td>Specifies that the center, along the width of the defined search region, must be preserved in the clipped region. This setting is not available for circle markers.</td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies that Aurora Imaging Library will determine how the center of the defined search region will be preserved in the clipped region. For edge and stripe markers, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_AUTO</code></a> is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NONE</code></a>. For circle markers, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_AUTO</code></a> is the only possible value.</td></tr><tr><td><code>M_NONE</code></td><td>Specifies that the clipped region need not preserve the center of the defined search region. This setting is not available for circle markers.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_region_input_units"><code>M_SEARCH_REGION_INPUT_UNITS</code><a href="#m_search_region_input_units" class="hash-link" aria-label="Direct link to m_search_region_input_units" title="Direct link to m_search_region_input_units" translate="no">​</a></h3>
+<p>Sets the units with which to interpret <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_CENTER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ORIGIN</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_SIZE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE_ACCURACY</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE_TOLERANCE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE_DELTA_POS</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE_DELTA_NEG</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_RING_CENTER</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_RING_RADII</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SUB_REGIONS_CHORD_ANGLE</code></a>. This essentially sets the input coordinate system to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_PIXEL</code> <em>(default)</em></td><td>Specifies to interpret the values in pixel units, according to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies to interpret the values in world units, according to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>MmeasDraw</code></a> to draw expected marker characteristics or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>MmeasFindMarker</code></a> generates an error if the operation is not performed on a calibrated image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sub_regions_number"><code>M_SUB_REGIONS_NUMBER</code><a href="#m_sub_regions_number" class="hash-link" aria-label="Direct link to m_sub_regions_number" title="Direct link to m_sub_regions_number" translate="no">​</a></h3>
+<p>Sets the number of sections in which to divide the search region. Since a subregion of each section is processed, this number also corresponds to the number of subregions to process.  For circle markers, this value will give each subregion the same area; that is, each subregion will occupy <code>(360/[</code>M_SUB_REGIONS_NUMBER<code>](../../Reference/meas/MmeasSetMarker.md))&lt;sup&gt;o&lt;/sup&gt;</code> of the circle.  For edge and stripe markers, if you specify one subregion when multiple subregions are required (for example, when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>MmeasFindMarker</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>M_DEFAULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>M_ANGLE</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>M_LINE_EQUATION</code></a>), Aurora Imaging Library internally uses three subregions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value. For edge and stripe markers, the default is one. For circle markers, the default is eight.</td></tr><tr><td><code>1 &lt;= Value &lt; 8</code></td><td>Specifies a number of sections (subregions) that can only be used for edge and stripe markers.</td></tr><tr><td><code>Value &gt;= 8</code></td><td>Specifies a number of sections (subregions) that can be used for edge, stripe, and circle markers.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_subpixel_mode"><code>M_SUBPIXEL_MODE</code><a href="#m_subpixel_mode" class="hash-link" aria-label="Direct link to m_subpixel_mode" title="Direct link to m_subpixel_mode" translate="no">​</a></h3>
+<p>Sets how Aurora Imaging Library calculates subpixel positions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_GLOBAL</code></td><td>Specifies that Aurora Imaging Library calculates subpixel positions based on the entire region within which the edge is found. This mode is recommended when measuring wide edges.</td></tr><tr><td><code>M_LOCAL</code> <em>(default)</em></td><td>Specifies that Aurora Imaging Library calculates subpixel positions based on the immediate neighborhood within which the edge&#x27;s maximum edgevalue is found. This mode offers more precision, but can be less stable with wide edges.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-3">For<a href="#for-3" class="hash-link" aria-label="Direct link to For" title="Direct link to For" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_EDGE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_STRIPE</code></a> markers, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>CharacteristicToSet</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameters can be set to the following.  Note that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameter should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NULL</code></a> if no parameter setting is required.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_angle"><code>M_BOX_ANGLE</code><a href="#m_box_angle" class="hash-link" aria-label="Direct link to m_box_angle" title="Direct link to m_box_angle" translate="no">​</a></h3>
+<p>Sets the angle of the box search region.  The center of rotation of the box search region is set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE_REFERENCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code></td><td>Specifies that the content of the box search region is analyzed to automatically determine the angle of the marker.</td></tr><tr><td><code>0 &lt;= Value &lt;= 360</code> <em>(default)</em></td><td>Specifies the angle of the box search region, in degrees, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.  An angle interpreted using the pixel coordinate system is always measured counter-clockwise. For information on the angle&#x27;s direction of rotation when interpreting the angle according to the relative coordinate system, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C28_Calibration/S09_Working_with_realworld_units">Angle convention in Aurora Imaging Library</a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_angle_accuracy"><code>M_BOX_ANGLE_ACCURACY</code><a href="#m_box_angle_accuracy" class="hash-link" aria-label="Direct link to m_box_angle_accuracy" title="Direct link to m_box_angle_accuracy" translate="no">​</a></h3>
+<p>Sets the accuracy of the angular search.  This determines the size of the step angle to use once the approximate location of the marker is found.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies the angle of accuracy to be equal to the angle of tolerance.</td></tr><tr><td><code>0.1 &lt;= Value &lt;= 180.0</code></td><td>Specifies the accuracy of the angular search, in degrees, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_angle_delta_neg"><code>M_BOX_ANGLE_DELTA_NEG</code><a href="#m_box_angle_delta_neg" class="hash-link" aria-label="Direct link to m_box_angle_delta_neg" title="Direct link to m_box_angle_delta_neg" translate="no">​</a></h3>
+<p>Sets the negative range of angles within which to search for the marker.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default negative range of angles, in degrees.  For a symmetrical stripe marker (a marker set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_OPPOSITE</code></a>), the default is 180.0.  For an edge marker or a non-symmetrical stripe marker, the default is 360.0.</td></tr><tr><td><code>0.1 &lt;= Value &lt;= 360.0</code></td><td>Specifies the negative range of angles, in degrees, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_angle_delta_pos"><code>M_BOX_ANGLE_DELTA_POS</code><a href="#m_box_angle_delta_pos" class="hash-link" aria-label="Direct link to m_box_angle_delta_pos" title="Direct link to m_box_angle_delta_pos" translate="no">​</a></h3>
+<p>Sets the positive range of angles within which to search for the marker.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default positive range of angles, in degrees.  For a symmetrical stripe marker (a marker set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_OPPOSITE</code></a>), the default is 180.0.  For an edge marker or a non-symmetrical stripe marker, the default is 360.0.</td></tr><tr><td><code>0.1 &lt;= Value &lt;= 360.0</code></td><td>Specifies the positive range of angles, in degrees, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_angle_mode"><code>M_BOX_ANGLE_MODE</code><a href="#m_box_angle_mode" class="hash-link" aria-label="Direct link to m_box_angle_mode" title="Direct link to m_box_angle_mode" translate="no">​</a></h3>
+<p>Enables the use of multiple-angle search, as specified by the settings of other <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE...</code></a> characteristics. The angle of the marker with the highest match score is returned. For an edge marker, this is the score of the edge, and for a stripe marker, this is the mean score of the edges.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the search should only be performed at the angle specified by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE</code></a>.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that multiple-angle search is enabled.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_angle_reference"><code>M_BOX_ANGLE_REFERENCE</code><a href="#m_box_angle_reference" class="hash-link" aria-label="Direct link to m_box_angle_reference" title="Direct link to m_box_angle_reference" translate="no">​</a></h3>
+<p>Sets the center of rotation to use when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE</code></a> is not zero.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_BOX_CENTER</code> <em>(default)</em></td><td>Specifies the center of the box search region as the center of rotation. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_CENTER</code></a> characteristic to set the coordinates of the center of the box search region.</td></tr><tr><td><code>M_BOX_ORIGIN</code></td><td>Specifies the top-left corner of the box search region as the center of rotation. Use the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ORIGIN</code></a> characteristic to set the coordinates of the top-left corner of the box search region.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_angle_tolerance"><code>M_BOX_ANGLE_TOLERANCE</code><a href="#m_box_angle_tolerance" class="hash-link" aria-label="Direct link to m_box_angle_tolerance" title="Direct link to m_box_angle_tolerance" translate="no">​</a></h3>
+<p>Sets the rotation tolerance of the marker.  This is the full range of degrees within which a marker can be rotated from a box search region that is at a specific angle and still be found. This determines the step angle used for a multiple-angle search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.1 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the rotation tolerance, in degrees, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_center"><code>M_BOX_CENTER</code><a href="#m_box_center" class="hash-link" aria-label="Direct link to m_box_center" title="Direct link to m_box_center" translate="no">​</a></h3>
+<p>Sets the coordinates of the center of the box search region.  When you change <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_CENTER</code></a>, Aurora Imaging Library recalculates <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ORIGIN</code></a>, relative to the new center position.  <em>[Image: box6.png]</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default X-coordinate of the center of the box search region. This depends on the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>. If using pixel units, the default center is the center of the pixel coordinate system. If using world units, the default center is the origin of the relative coordinate system.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the center of the box search region, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default Y-coordinate of the center of the box search region. This depends on the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>. If using pixel units, the default center is the center of the pixel coordinate system. If using world units, the default center is the origin of the relative coordinate system.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the center of the box search region, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_origin"><code>M_BOX_ORIGIN</code><a href="#m_box_origin" class="hash-link" aria-label="Direct link to m_box_origin" title="Direct link to m_box_origin" translate="no">​</a></h3>
+<p>Sets the coordinates of the top-left corner of the box search region.  When you change <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ORIGIN</code></a>, Aurora Imaging Library recalculates <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_CENTER</code></a>, relative to the new box origin.  <em>[Image: box7.png]</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default X-coordinate of the origin of the box search region. The default origin is the origin of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the origin of the box search region, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr><tr><td><code>M_DEFAULT</code></td><td>Specifies the default Y-coordinate of the origin of the box search region. The default origin is the origin of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the origin of the box search region, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_size"><code>M_BOX_SIZE</code><a href="#m_box_size" class="hash-link" aria-label="Direct link to m_box_size" title="Direct link to m_box_size" translate="no">​</a></h3>
+<p>Sets the width and height of the box search region.  &gt; <strong>Note:</strong> If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_WORLD</code></a>, the Measurement module uses the world dimensions specified to estimate a rectangular box in pixel units. The module will then use this approximation for internal calculations.  Note that the search region must fit entirely inside the target image, unless subregions are used or clipping is enabled. If don&#x27;t use subregions or enable clipping, and you choose a location, size, or search angle that causes the box to extend beyond the edge of the target image, the marker cannot be found (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResult"><code>MmeasGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResult"><code>M_VALID_FLAG</code></a> will return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResult"><code>M_FALSE</code></a>).  When you set the width and height of the search region, the search region expands or shrinks with respect to its origin, set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ORIGIN</code></a>. When the width or height changes, Aurora Imaging Library recalculates <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_CENTER</code></a>, relative to the box search region&#x27;s origin.  <em>[Image: box5.png]</em>  Note that if you have enabled clipping, the size of the box search region internally use might be smaller than the specified size. This is only a temporary effect; it does not change the specified size. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C19_Measurements/S06_Search_region">Search region</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies to use the width of the entire target image. If you specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_WORLD</code></a>, you must also set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>; otherwise, an error will occur.</td></tr><tr><td><code>Value</code></td><td>Specifies the width of the box search region within the target image, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>. This value must be positive.</td></tr><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies to use the height of the entire target image. If you specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_WORLD</code></a>, you must also set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>; otherwise, an error will occur.</td></tr><tr><td><code>Value</code></td><td>Specifies the height of the box search region within the target image, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>. This value must be positive.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_profile_scale_offset"><code>M_DRAW_PROFILE_SCALE_OFFSET</code><a href="#m_draw_profile_scale_offset" class="hash-link" aria-label="Direct link to m_draw_profile_scale_offset" title="Direct link to m_draw_profile_scale_offset" translate="no">​</a></h3>
+<p>Sets the scale and offset to use when drawing the edge profile or edgevalue characteristics using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>MmeasDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>M_DRAW_EDGES_PROFILE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>M_DRAW_EDGEVALUE_MIN_IN_PROFILE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>M_DRAW_EDGEVALUE_PEAK_WIDTH_IN_PROFILE</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>M_DRAW_POSITION_IN_PROFILE</code></a>.  <em>[Image: EdgesProfileScaleOffset.png]</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_AUTO_SCALE_PROFILE</code> <em>(default)</em></td><td>Specifies to automatically compute the greatest scale factor that will fit the entire drawing within the destination buffer (or within the area that corresponds to the search region, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>M_DRAW_IN_BOX</code></a> is combined when drawing) after the offset has been applied.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the scale multiplier.</td></tr><tr><td><code>M_AUTO_OFFSET_PROFILE</code> <em>(default)</em></td><td>Specifies to automatically compute the offset such that the maximum and minimum of the drawing are touching the ends of the destination buffer (or the area that corresponds to the search region, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>M_DRAW_IN_BOX</code></a> is combined when drawing). This value can only be used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> is set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_AUTO_SCALE_PROFILE</code></a>.  Note that this value is optimized for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>M_DRAW_EDGES_PROFILE</code></a>. Using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_AUTO_OFFSET_PROFILE</code></a> with other <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>M_DRAW_..._PROFILE</code></a> values might draw outside of the destination (image buffer or the area corresponding to the search region).</td></tr><tr><td><code>Value</code></td><td>Specifies the offset from the middle of the height of the destination buffer or the area corresponding to the search region. The ends of the destination buffer or the area corresponding to the search region correspond to offsets -100 and 100. There is no limit to the offset value. However, large values might cause the required drawing to be drawn outside the visible area.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_min"><code>M_NUMBER_MIN</code><a href="#m_number_min" class="hash-link" aria-label="Direct link to m_number_min" title="Direct link to m_number_min" translate="no">​</a></h3>
+<p>Sets the minimum number of edges or stripes to locate in the box search region.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.  The default number of edges or stripes is the same as the value set in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NUMBER</code></a>.</td></tr><tr><td><code>Value</code></td><td>Specifies the minimum number of edges or stripes to locate.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_orientation"><code>M_ORIENTATION</code><a href="#m_orientation" class="hash-link" aria-label="Direct link to m_orientation" title="Direct link to m_orientation" translate="no">​</a></h3>
+<p>Sets the orientation of the edge or stripe marker.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code></td><td>Specifies that the orientation of the marker is unknown; both horizontal and vertical orientations are searched.</td></tr><tr><td><code>M_HORIZONTAL</code></td><td>Specifies that the marker has a horizontal orientation.</td></tr><tr><td><code>M_VERTICAL</code> <em>(default)</em></td><td>Specifies that the marker has a vertical orientation.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_search_region_angle_interpolation_mode"><code>M_SEARCH_REGION_ANGLE_INTERPOLATION_MODE</code><a href="#m_search_region_angle_interpolation_mode" class="hash-link" aria-label="Direct link to m_search_region_angle_interpolation_mode" title="Direct link to m_search_region_angle_interpolation_mode" translate="no">​</a></h3>
+<p>Sets the type of interpolation to use when searching for markers. This only has an effect when either <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE_MODE</code></a> is enabled or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE</code></a> is set to a value other than 0.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_BICUBIC</code></td><td>Specifies bicubic interpolation. The new value is determined by taking a weighted average of the 16 values (4x4) that surround the source point. Note that the sum of the weights used for bicubic interpolation might be greater than one. If this occurs and the result reflects an overflow or underflow, the result is saturated.</td></tr><tr><td><code>M_BILINEAR</code> <em>(default)</em></td><td>Specifies bilinear interpolation. The new value is determined by taking a weighted average of the 4 values (2x2) that surround the source point.</td></tr><tr><td><code>M_NEAREST_NEIGHBOR</code></td><td>Specifies nearest neighbor interpolation. The new value is that of the pixel closest to the source point.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sub_regions_offset"><code>M_SUB_REGIONS_OFFSET</code><a href="#m_sub_regions_offset" class="hash-link" aria-label="Direct link to m_sub_regions_offset" title="Direct link to m_sub_regions_offset" translate="no">​</a></h3>
+<p>Sets the offset of the subregions, from the center point of each of their sections.  Specify the offset as a percentage of the distance from the center point of the section to the maximum possible offset in each section. 100 corresponds to the maximum possible offset. The direction of the offset (X or Y) is taken from <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_ORIENTATION</code></a>, with positive values shifting the subregion down or to the right, and negative values shifting up or to the left.  <em>[Image: subregion_offset.png]</em>  Note that subregions are offset as a group.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>-100 &lt;= Value &lt;= 100</code> <em>(default)</em></td><td>Specifies the offset of the subregions.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sub_regions_size"><code>M_SUB_REGIONS_SIZE</code><a href="#m_sub_regions_size" class="hash-link" aria-label="Direct link to m_sub_regions_size" title="Direct link to m_sub_regions_size" translate="no">​</a></h3>
+<p>Sets the size of the subregions, as a percentage of their section.  Subregions are always rectangular and extend from one edge of the box search region to the other in the orientation direction. If made smaller than their section, the subregions become thinner and occupy the specified percentage of their section. In this case, subregions will remain centered unless moved with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SUB_REGIONS_OFFSET</code></a>.  Note that the size of subregions are set as a group.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0 &lt;= Value &lt;= 100</code> <em>(default)</em></td><td>Specifies the size of the subregions, as a percentage. If the size is set to 100, subregions will be evenly distributed within the box search region, with no space between them.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-4">For<a href="#for-4" class="hash-link" aria-label="Direct link to For" title="Direct link to For" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_POINT</code></a> markers only, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>CharacteristicToSet</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameters can be set to the following.  Note that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameter should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NULL</code></a> if no parameter setting is required.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_multiple_point_angle"><code>M_MULTIPLE_POINT_ANGLE</code><a href="#m_multiple_point_angle" class="hash-link" aria-label="Direct link to m_multiple_point_angle" title="Direct link to m_multiple_point_angle" translate="no">​</a></h3>
+<p>Sets the angle at which subsequent points are placed, in a theoretical line, for a multiple point marker (at the interval set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SPACING</code></a> and proceeding from the coordinates defined by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POSITION</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0 &lt;= Value &lt;= 360</code> <em>(default)</em></td><td>Specifies the angle for a multiple point marker, in degrees, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POINT_INPUT_UNITS</code></a>.  An angle interpreted according to the pixel coordinate system is always measured counter-clockwise. For information on the angle&#x27;s direction of rotation when interpreting the angle according to the relative coordinate system, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C28_Calibration/S09_Working_with_realworld_units">Angle convention in Aurora Imaging Library</a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_point_input_units"><code>M_POINT_INPUT_UNITS</code><a href="#m_point_input_units" class="hash-link" aria-label="Direct link to m_point_input_units" title="Direct link to m_point_input_units" translate="no">​</a></h3>
+<p>Sets the units with which to interpret <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POSITION</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SPACING</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_MULTIPLE_POINT_ANGLE</code></a>. This essentially sets the input coordinate system to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_PIXEL</code> <em>(default)</em></td><td>Specifies to interpret the values in pixel units, according to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies to interpret the values in world units, according to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>MmeasDraw</code></a> to draw expected marker characteristics generates an error if the operation is not performed on a calibrated image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position"><code>M_POSITION</code><a href="#m_position" class="hash-link" aria-label="Direct link to m_position" title="Direct link to m_position" translate="no">​</a></h3>
+<p>Sets the coordinates of a point marker.  For a multiple point marker, this defines the position of the first point.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that the position is invalid. When a point marker is allocated, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POSITION</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_ANY</code></a>. After allocation, you must explicitly set a position (X-coordinate, Y-coordinate); otherwise, an error will occur.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the point marker, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POINT_INPUT_UNITS</code></a>.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that the position is invalid. When a point marker is allocated, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POSITION</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_ANY</code></a>. After allocation, you must explicitly set a position (X-coordinate, Y-coordinate); otherwise, an error will occur.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the point marker, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POINT_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_spacing"><code>M_SPACING</code><a href="#m_spacing" class="hash-link" aria-label="Direct link to m_spacing" title="Direct link to m_spacing" translate="no">​</a></h3>
+<p>Sets the spacing (distance) between points of a point marker. This setting is only available for multiple point markers.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that the spacing is invalid. When a point marker is allocated, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SPACING</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_ANY</code></a>. After allocation, you must explicitly set the spacing; otherwise, an error will occur.</td></tr><tr><td><code>Value</code></td><td>Specifies the spacing, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_POINT_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-5">For<a href="#for-5" class="hash-link" aria-label="Direct link to For" title="Direct link to For" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_STRIPE</code></a> markers only, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>CharacteristicToSet</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameters can be set to the following.  Note that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameter should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NULL</code></a> if no parameter setting is required.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_inclusion_point"><code>M_INCLUSION_POINT</code><a href="#m_inclusion_point" class="hash-link" aria-label="Direct link to m_inclusion_point" title="Direct link to m_inclusion_point" translate="no">​</a></h3>
+<p>Sets a position (inclusion point) in the target image that must either be included or not included in the stripe marker found, depending on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT_INSIDE_STRIPE</code></a>. If you specify an inclusion point, you must also set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT_INSIDE_STRIPE</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_YES</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NO</code></a>; otherwise, the specified inclusion point is ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies no inclusion point. In this case, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT_INSIDE_STRIPE</code></a> is ignored.</td></tr><tr><td><code>Value</code></td><td>Specifies the inclusion point&#x27;s X-coordinate, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT_INPUT_UNITS</code></a>.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies no inclusion point. In this case, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT_INSIDE_STRIPE</code></a> is ignored.</td></tr><tr><td><code>Value</code></td><td>Specifies the inclusion point&#x27;s Y-coordinate, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_inclusion_point_input_units"><code>M_INCLUSION_POINT_INPUT_UNITS</code><a href="#m_inclusion_point_input_units" class="hash-link" aria-label="Direct link to m_inclusion_point_input_units" title="Direct link to m_inclusion_point_input_units" translate="no">​</a></h3>
+<p>Sets the units with which to interpret <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT</code></a>. This essentially sets the input coordinate system to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_PIXEL</code> <em>(default)</em></td><td>Specifies to interpret the value in pixel units, according to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies to interpret the value in world units, according to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasDraw"><code>MmeasDraw</code></a> to draw expected marker characteristics or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasFindMarker"><code>MmeasFindMarker</code></a> generates an error if the operation is not performed on a calibrated image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_inclusion_point_inside_stripe"><code>M_INCLUSION_POINT_INSIDE_STRIPE</code><a href="#m_inclusion_point_inside_stripe" class="hash-link" aria-label="Direct link to m_inclusion_point_inside_stripe" title="Direct link to m_inclusion_point_inside_stripe" translate="no">​</a></h3>
+<p>Sets whether the stripe marker found must contain the inclusion point (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_INCLUSION_POINT</code></a> is ignored.</td></tr><tr><td><code>M_NO</code></td><td>Specifies that only stripes that have the inclusion point falling outside its two outer edges can be found.</td></tr><tr><td><code>M_YES</code></td><td>Specifies that only stripes that have the inclusion point falling between its two outer edges can be found.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-6">For<a href="#for-6" class="hash-link" aria-label="Direct link to For" title="Direct link to For" translate="no">​</a></h3>
+<p>For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasAllocMarker"><code>M_CIRCLE</code></a> markers only, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>CharacteristicToSet</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>FirstValue</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameters can be set to the following.  Note that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>SecondValue</code></a> parameter should be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_NULL</code></a> if no parameter setting is required.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_accuracy"><code>M_CIRCLE_ACCURACY</code><a href="#m_circle_accuracy" class="hash-link" aria-label="Direct link to m_circle_accuracy" title="Direct link to m_circle_accuracy" translate="no">​</a></h3>
+<p>Sets the accuracy of the circle&#x27;s fit operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_HIGH</code> <em>(default)</em></td><td>Specifies that the circle&#x27;s fit operation will be performed with high accuracy. This typically takes longer than low accuracy, but can produce more precise results.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies that the circle&#x27;s fit operation will be performed with low accuracy. This is typically faster than high accuracy, but can produce less precise results, particularly with noisy or badly contrasted images.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_circle_inside_search_region"><code>M_CIRCLE_INSIDE_SEARCH_REGION</code><a href="#m_circle_inside_search_region" class="hash-link" aria-label="Direct link to m_circle_inside_search_region" title="Direct link to m_circle_inside_search_region" translate="no">​</a></h3>
+<p>Sets whether the circle&#x27;s fit operation can result in a circle that is outside the ring search region.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the circle&#x27;s fit operation can result in a circle that is outside the ring search region.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the circle&#x27;s fit operation cannot result in a circle that is outside the ring search region.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ring_center"><code>M_RING_CENTER</code><a href="#m_ring_center" class="hash-link" aria-label="Direct link to m_ring_center" title="Direct link to m_ring_center" translate="no">​</a></h3>
+<p>Sets the coordinates of the center of the ring search region. The ring&#x27;s center is considered to be its position.  Note that at least three valid subregions must be within the target image for the circle marker to be found (even if clipping is enabled).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default X-coordinate of the center of the ring search region. This depends on the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>. If using pixel units, the default center is the center of the pixel coordinate system. If using world units, the default center is the origin of the relative coordinate system.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the center of the ring search region, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default Y-coordinate of the center of the ring search region. This depends on the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>. If using pixel units, the default center is the center of the pixel coordinate system. If using world units, the default center is the origin of the relative coordinate system.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the center of the ring search region, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ring_radii"><code>M_RING_RADII</code><a href="#m_ring_radii" class="hash-link" aria-label="Direct link to m_ring_radii" title="Direct link to m_ring_radii" translate="no">​</a></h3>
+<p>Sets the inner and outer radius of the ring search region. The radii values are set according to the region&#x27;s center (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_RING_CENTER</code></a>). The inner and outer radius must be set concurrently. The inner radius must be less than the outer radius; this creates a ring within which the circle must be found.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies an inner radius of 0.0. If the outer radius is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>, the inner radius must also be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>; otherwise, an error will occur.</td></tr><tr><td><code>Value &gt;= 0</code></td><td>Specifies the inner radius, relative to the center of the ring search region, in the units specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Specifies the default outer radius. This value corresponds to either half the target image&#x27;s width (X-size x 0.5) or half its height (Y-size x 0.5), depending on which is smaller. Note that if the outer radius is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>, the inner radius must also be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_DEFAULT</code></a>; otherwise, an error will occur.</td></tr><tr><td><code>Value &gt; Inner radius</code></td><td>Specifies the outer radius, relative to the center of the ring search region, in the units specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sub_regions_chord_angle"><code>M_SUB_REGIONS_CHORD_ANGLE</code><a href="#m_sub_regions_chord_angle" class="hash-link" aria-label="Direct link to m_sub_regions_chord_angle" title="Direct link to m_sub_regions_chord_angle" translate="no">​</a></h3>
+<p>Sets the angle with which to set the ring search region&#x27;s outer ring segment (chord). The projection of this chord segment determines the dimension of the rectangular subregion that is perpendicular to radial direction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt;= 45.0</code> <em>(default)</em></td><td>Specifies the angle, in degrees, in the units of the input coordinate system specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_SEARCH_REGION_INPUT_UNITS</code></a>.  An angle interpreted according to the pixel coordinate system is always measured counter-clockwise. For information on the angle&#x27;s direction of rotation when interpreting the angle according to the relative coordinate system, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C28_Calibration/S09_Working_with_realworld_units">Angle convention in Aurora Imaging Library</a>.</td></tr></tbody></table>
+<p>The search is performed between the range of angles defined by: (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE</code></a> - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE_DELTA_NEG</code></a>) to (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE_DELTA_POS</code></a>), inclusively, starting with an angle closest to that of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetMarker"><code>M_BOX_ANGLE</code></a>.</p>
+<p>Note that the search region must fit entirely inside the target image, unless subregions are used or clipping is enabled. If don&#x27;t use subregions or enable clipping, and you choose a location, size, or search angle that causes the box to extend beyond the edge of the target image, the marker cannot be found (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResult"><code>MmeasGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResult"><code>M_VALID_FLAG</code></a> will return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasGetResult"><code>M_FALSE</code></a>).</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSaveMarker"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MmeasSaveMarker</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/MmeasSetScore"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MmeasSetScore</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#markerid-out-ail_id" class="table-of-contents__link toc-highlight"><code>MarkerId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#characteristictoset-in-ail_int64" class="table-of-contents__link toc-highlight"><code>CharacteristicToSet</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#firstvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>FirstValue</code> <em>(in, AIL_DOUBLE)</em></a></li><li><a href="#secondvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>SecondValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for" class="table-of-contents__link toc-highlight">For</a></li><li><a href="#m_marker_reference" class="table-of-contents__link toc-highlight"><code>M_MARKER_REFERENCE</code></a></li><li><a href="#m_marker_reference_input_units" class="table-of-contents__link toc-highlight"><code>M_MARKER_REFERENCE_INPUT_UNITS</code></a></li><li><a href="#m_result_output_units" class="table-of-contents__link toc-highlight"><code>M_RESULT_OUTPUT_UNITS</code></a></li><li><a href="#for-1" class="table-of-contents__link toc-highlight">For</a></li><li><a href="#m_number" class="table-of-contents__link toc-highlight"><code>M_NUMBER</code></a></li><li><a href="#for-2" class="table-of-contents__link toc-highlight">For</a></li><li><a href="#m_edgevalue_min" class="table-of-contents__link toc-highlight"><code>M_EDGEVALUE_MIN</code></a></li><li><a href="#m_edgevalue_var_min" class="table-of-contents__link toc-highlight"><code>M_EDGEVALUE_VAR_MIN</code></a></li><li><a href="#m_filter_smoothness" class="table-of-contents__link toc-highlight"><code>M_FILTER_SMOOTHNESS</code></a></li><li><a href="#m_filter_type" class="table-of-contents__link toc-highlight"><code>M_FILTER_TYPE</code></a></li><li><a href="#m_max_association_distance" class="table-of-contents__link toc-highlight"><code>M_MAX_ASSOCIATION_DISTANCE</code></a></li><li><a href="#m_max_association_distance_input_units" class="table-of-contents__link toc-highlight"><code>M_MAX_ASSOCIATION_DISTANCE_INPUT_UNITS</code></a></li><li><a href="#m_polarity" class="table-of-contents__link toc-highlight"><code>M_POLARITY</code></a></li><li><a href="#m_search_region_clipping" class="table-of-contents__link toc-highlight"><code>M_SEARCH_REGION_CLIPPING</code></a></li><li><a href="#m_search_region_clipping_min_area" class="table-of-contents__link toc-highlight"><code>M_SEARCH_REGION_CLIPPING_MIN_AREA</code></a></li><li><a href="#m_search_region_clipping_min_height" class="table-of-contents__link toc-highlight"><code>M_SEARCH_REGION_CLIPPING_MIN_HEIGHT</code></a></li><li><a href="#m_search_region_clipping_min_width" class="table-of-contents__link toc-highlight"><code>M_SEARCH_REGION_CLIPPING_MIN_WIDTH</code></a></li><li><a href="#m_search_region_clipping_preserve_center" class="table-of-contents__link toc-highlight"><code>M_SEARCH_REGION_CLIPPING_PRESERVE_CENTER</code></a></li><li><a href="#m_search_region_input_units" class="table-of-contents__link toc-highlight"><code>M_SEARCH_REGION_INPUT_UNITS</code></a></li><li><a href="#m_sub_regions_number" class="table-of-contents__link toc-highlight"><code>M_SUB_REGIONS_NUMBER</code></a></li><li><a href="#m_subpixel_mode" class="table-of-contents__link toc-highlight"><code>M_SUBPIXEL_MODE</code></a></li><li><a href="#for-3" class="table-of-contents__link toc-highlight">For</a></li><li><a href="#m_box_angle" class="table-of-contents__link toc-highlight"><code>M_BOX_ANGLE</code></a></li><li><a href="#m_box_angle_accuracy" class="table-of-contents__link toc-highlight"><code>M_BOX_ANGLE_ACCURACY</code></a></li><li><a href="#m_box_angle_delta_neg" class="table-of-contents__link toc-highlight"><code>M_BOX_ANGLE_DELTA_NEG</code></a></li><li><a href="#m_box_angle_delta_pos" class="table-of-contents__link toc-highlight"><code>M_BOX_ANGLE_DELTA_POS</code></a></li><li><a href="#m_box_angle_mode" class="table-of-contents__link toc-highlight"><code>M_BOX_ANGLE_MODE</code></a></li><li><a href="#m_box_angle_reference" class="table-of-contents__link toc-highlight"><code>M_BOX_ANGLE_REFERENCE</code></a></li><li><a href="#m_box_angle_tolerance" class="table-of-contents__link toc-highlight"><code>M_BOX_ANGLE_TOLERANCE</code></a></li><li><a href="#m_box_center" class="table-of-contents__link toc-highlight"><code>M_BOX_CENTER</code></a></li><li><a href="#m_box_origin" class="table-of-contents__link toc-highlight"><code>M_BOX_ORIGIN</code></a></li><li><a href="#m_box_size" class="table-of-contents__link toc-highlight"><code>M_BOX_SIZE</code></a></li><li><a href="#m_draw_profile_scale_offset" class="table-of-contents__link toc-highlight"><code>M_DRAW_PROFILE_SCALE_OFFSET</code></a></li><li><a href="#m_number_min" class="table-of-contents__link toc-highlight"><code>M_NUMBER_MIN</code></a></li><li><a href="#m_orientation" class="table-of-contents__link toc-highlight"><code>M_ORIENTATION</code></a></li><li><a href="#m_search_region_angle_interpolation_mode" class="table-of-contents__link toc-highlight"><code>M_SEARCH_REGION_ANGLE_INTERPOLATION_MODE</code></a></li><li><a href="#m_sub_regions_offset" class="table-of-contents__link toc-highlight"><code>M_SUB_REGIONS_OFFSET</code></a></li><li><a href="#m_sub_regions_size" class="table-of-contents__link toc-highlight"><code>M_SUB_REGIONS_SIZE</code></a></li><li><a href="#for-4" class="table-of-contents__link toc-highlight">For</a></li><li><a href="#m_multiple_point_angle" class="table-of-contents__link toc-highlight"><code>M_MULTIPLE_POINT_ANGLE</code></a></li><li><a href="#m_point_input_units" class="table-of-contents__link toc-highlight"><code>M_POINT_INPUT_UNITS</code></a></li><li><a href="#m_position" class="table-of-contents__link toc-highlight"><code>M_POSITION</code></a></li><li><a href="#m_spacing" class="table-of-contents__link toc-highlight"><code>M_SPACING</code></a></li><li><a href="#for-5" class="table-of-contents__link toc-highlight">For</a></li><li><a href="#m_inclusion_point" class="table-of-contents__link toc-highlight"><code>M_INCLUSION_POINT</code></a></li><li><a href="#m_inclusion_point_input_units" class="table-of-contents__link toc-highlight"><code>M_INCLUSION_POINT_INPUT_UNITS</code></a></li><li><a href="#m_inclusion_point_inside_stripe" class="table-of-contents__link toc-highlight"><code>M_INCLUSION_POINT_INSIDE_STRIPE</code></a></li><li><a href="#for-6" class="table-of-contents__link toc-highlight">For</a></li><li><a href="#m_circle_accuracy" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_ACCURACY</code></a></li><li><a href="#m_circle_inside_search_region" class="table-of-contents__link toc-highlight"><code>M_CIRCLE_INSIDE_SEARCH_REGION</code></a></li><li><a href="#m_ring_center" class="table-of-contents__link toc-highlight"><code>M_RING_CENTER</code></a></li><li><a href="#m_ring_radii" class="table-of-contents__link toc-highlight"><code>M_RING_RADII</code></a></li><li><a href="#m_sub_regions_chord_angle" class="table-of-contents__link toc-highlight"><code>M_SUB_REGIONS_CHORD_ANGLE</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

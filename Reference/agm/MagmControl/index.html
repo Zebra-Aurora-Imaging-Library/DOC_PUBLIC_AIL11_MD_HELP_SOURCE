@@ -1,0 +1,1695 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/agm/MagmControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MagmControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MagmControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"agm","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"},{"@type":"ListItem","position":2,"name":"MagmControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Collapse sidebar category &#x27;agm&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><span title="MagmAlloc" class="linkLabel_WmDU">MagmAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAllocResult"><span title="MagmAllocResult" class="linkLabel_WmDU">MagmAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><span title="MagmControl" class="linkLabel_WmDU">MagmControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmCopyResult"><span title="MagmCopyResult" class="linkLabel_WmDU">MagmCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><span title="MagmDefine" class="linkLabel_WmDU">MagmDefine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDraw"><span title="MagmDraw" class="linkLabel_WmDU">MagmDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><span title="MagmFind" class="linkLabel_WmDU">MagmFind</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFree"><span title="MagmFree" class="linkLabel_WmDU">MagmFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><span title="MagmGetResult" class="linkLabel_WmDU">MagmGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><span title="MagmInquire" class="linkLabel_WmDU">MagmInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmPreprocess"><span title="MagmPreprocess" class="linkLabel_WmDU">MagmPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmRestore"><span title="MagmRestore" class="linkLabel_WmDU">MagmRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmSave"><span title="MagmSave" class="linkLabel_WmDU">MagmSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmStream"><span title="MagmStream" class="linkLabel_WmDU">MagmStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><span title="MagmTrain" class="linkLabel_WmDU">MagmTrain</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span>agm</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MagmControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MagmControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control a model in an AGM context or a train AGM result buffer setting.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MagmControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextOrResultId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  Index</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">              </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function allows you to control a setting of a single-definition or composite-definition model in a find AGM context, of a composite-definition model in a train AGM context, or of a train AGM result buffer. These settings control the execution of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> operations. Most of the control type settings can be inquired using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>MagmInquire</code></a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultid-out-ail_id"><code>ContextOrResultId</code> <em>(out, AIL_ID)</em><a href="#contextorresultid-out-ail_id" class="hash-link" aria-label="Direct link to contextorresultid-out-ail_id" title="Direct link to contextorresultid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of a find or train AGM context or train AGM result buffer to control.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="index-in-ail_int64"><code>Index</code> <em>(in, AIL_INT64)</em><a href="#index-in-ail_int64" class="hash-link" aria-label="Direct link to index-in-ail_int64" title="Direct link to index-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies what to control. Set this parameter to one of the following values:</p>
+<p><em>For specifying a model or result buffer</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_AGM_MODEL_INDEX</code></td><td>Specifies to control an individual model in an AGM context, if one is specified.</td></tr><tr><td><code>M_GENERAL</code></td><td>Specifies to control a general setting of an AGM result buffer, if one is specified.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the setting&#x27;s new value.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-controlling-a-model-in-an-agm-context">For controlling a model in an AGM context<a href="#for-controlling-a-model-in-an-agm-context" class="hash-link" aria-label="Direct link to For controlling a model in an AGM context" title="Direct link to For controlling a model in an AGM context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>ContextOrResultId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>ControlType</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>ControlValue</code></a> parameter settings can be specified for models in AGM contexts. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>Index</code></a> parameter to the index of a specific model, using <strong>M_AGM_MODEL_INDEX()</strong>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="find-agm-context-id-with-a-composite-definition-model"><code>Find AGM context ID with a composite-definition model</code><a href="#find-agm-context-id-with-a-composite-definition-model" class="hash-link" aria-label="Direct link to find-agm-context-id-with-a-composite-definition-model" title="Direct link to find-agm-context-id-with-a-composite-definition-model" translate="no">​</a></h3>
+<p>Specifies a find AGM context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>MagmAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>M_GLOBAL_EDGE_BASED_FIND</code></a> and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> operations. It must contain a trained composite-definition model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_coverage"><code>M_ACCEPTANCE_COVERAGE</code><a href="#m_acceptance_coverage" class="hash-link" aria-label="Direct link to m_acceptance_coverage" title="Direct link to m_acceptance_coverage" translate="no">​</a></h4>
+<p>Sets the minimum coverage score required for an occurrence to be considered a match.  The coverage score is the percentage of the total length of the model&#x27;s edgels found in the occurrence. 100% indicates that for each of the model&#x27;s edgels, a corresponding edgel was found in the occurrence.  Note, a model&#x27;s edgel corresponds to an edgel in the occurrence if the distance between them is less than or equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ASSOCIATION_DISTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum acceptable coverage score, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_detection"><code>M_ACCEPTANCE_DETECTION</code><a href="#m_acceptance_detection" class="hash-link" aria-label="Direct link to m_acceptance_detection" title="Direct link to m_acceptance_detection" translate="no">​</a></h4>
+<p>Sets the minimum detection score required for an occurrence to be considered a match.  The detection score represents how confident you should be that Aurora Imaging Library found a true occurrence.  Note, this value is only used if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_DETECTION_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum acceptable detection score, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_detection_source"><code>M_ACCEPTANCE_DETECTION_SOURCE</code><a href="#m_acceptance_detection_source" class="hash-link" aria-label="Direct link to m_acceptance_detection_source" title="Direct link to m_acceptance_detection_source" translate="no">​</a></h4>
+<p>Sets whether to use the trained acceptance level or a custom acceptance level for the detection score. You can typically start with the acceptance level established during training and specify a higher acceptance level if the search speed is too slow, or if the search finds false occurrences. You should specify a lower acceptance level if the search does not find all model occurrences.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FROM_TRAIN</code> <em>(default)</em></td><td>Specifies to use the detection score&#x27;s acceptance level established during the training of the model.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_DETECTION</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_fit"><code>M_ACCEPTANCE_FIT</code><a href="#m_acceptance_fit" class="hash-link" aria-label="Direct link to m_acceptance_fit" title="Direct link to m_acceptance_fit" translate="no">​</a></h4>
+<p>Sets the minimum fit score required for an occurrence to be considered a match.  The fit score is a measure of the correlation of the edgels in the model to their corresponding edgels in the occurrence. It is based on the distance between the model&#x27;s edgels and the occurrence&#x27;s edgels.  Note, only those model edgels that are less than or equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ASSOCIATION_DISTANCE</code></a> from an occurrence edgel are used in the fit score calculation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum acceptable fit score, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_fit_overall"><code>M_ACCEPTANCE_FIT_OVERALL</code><a href="#m_acceptance_fit_overall" class="hash-link" aria-label="Direct link to m_acceptance_fit_overall" title="Direct link to m_acceptance_fit_overall" translate="no">​</a></h4>
+<p>Sets the minimum overall fit score required for an occurrence to be considered a match.  The overall fit score is a measure of the correlation of all edgels in the model to those of the occurrence. It is based on the distance between the model&#x27;s edgels and the occurrence&#x27;s edgels.  Note, all model edgels are used in the overall fit score calculation, including those without a corresponding edgel in the occurrence.  This control type is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_IMAGE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum acceptable overall fit score, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_angle_source"><code>M_DETECTION_DELTA_ANGLE_SOURCE</code><a href="#m_detection_delta_angle_source" class="hash-link" aria-label="Direct link to m_detection_delta_angle_source" title="Direct link to m_detection_delta_angle_source" translate="no">​</a></h4>
+<p>Sets whether to use the trained detection angle range or a custom detection angle range to limit the angle of detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FROM_TRAIN</code> <em>(default)</em></td><td>Specifies to use the detection angle range established during the training of the model. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_TRAIN_DETECTION_ANGLE</code></a> was set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ENABLE</code></a>, the detection angle range is 360.0°. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_TRAIN_DETECTION_ANGLE</code></a> was set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DISABLE</code></a>, the detection angle range is 0.0°.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the values set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_neg_angle"><code>M_DETECTION_DELTA_NEG_ANGLE</code><a href="#m_detection_delta_neg_angle" class="hash-link" aria-label="Direct link to m_detection_delta_neg_angle" title="Direct link to m_detection_delta_neg_angle" translate="no">​</a></h4>
+<p>Sets the lower limit of the detection angle range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>). That is, <em>LowerLimit</em> = <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>  - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a>. The detection angle range should be used to cover the expected variance in the angle of detection.  Note that the detection angle range only limits the angle of detection. The angle at which an occurrence is detected might not be exact; its true angle can typically be within 10° of the angle of detection, even if that falls outside of the detection angle range. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is disabled, the returned angle of an occurrence will always be the angle at which it was detected and will therefore always be within the detection angle range. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is enabled, a fit operation is performed starting from the angle of detection. In refining the angle so that it is more accurate, the angle of the occurrence&#x27;s reference axis returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>MagmGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>M_ANGLE</code></a> can end up being outside of the detection angle range.  Note that the greater the range of angles to be searched, the slower the search.  To set the upper limit for the detection angle range, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>.  This control type is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_ANGLE_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the lower limit of the detection angle range, in degrees. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a> cannot be greater than 360.0°.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_pos_angle"><code>M_DETECTION_DELTA_POS_ANGLE</code><a href="#m_detection_delta_pos_angle" class="hash-link" aria-label="Direct link to m_detection_delta_pos_angle" title="Direct link to m_detection_delta_pos_angle" translate="no">​</a></h4>
+<p>Sets the upper limit of the detection angle range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>). That is, <em>UpperLimit</em> = <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>  + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>. The detection angle range should be used to cover the expected variance in the angle of detection.  Note that the detection angle range only limits the angle of detection. The angle at which an occurrence is detected might not be exact; its true angle can typically be within 10° of the angle of detection, even if that falls outside of the detection angle range. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is disabled, the returned angle of an occurrence will always be the angle at which it was detected and will therefore always be within the detection angle range. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is enabled, a fit operation is performed starting from the angle of detection. In refining the angle so that it is more accurate, the angle of the occurrence&#x27;s reference axis returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>MagmGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>M_ANGLE</code></a> can end up being outside of the detection angle range.  Note that the greater the range of angles to be searched, the slower the search.  To set the lower limit for the detection angle range, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a>.  This control type is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_ANGLE_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the upper limit of the detection angle range, in degrees. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a> cannot be greater than 360.0°.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_multi_angle_mode"><code>M_DETECTION_MULTI_ANGLE_MODE</code><a href="#m_detection_multi_angle_mode" class="hash-link" aria-label="Direct link to m_detection_multi_angle_mode" title="Direct link to m_detection_multi_angle_mode" translate="no">​</a></h4>
+<p>Sets the mode with which to detect occurrences when searching at multiple angles.  The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_GLOBAL</code></a> mode can accelerate search speed, but can also increase the risk of missing overlapping occurrences that have close centers. You should specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_INDIVIDUAL</code></a> if the search is not finding all model occurrences, but note that this will slow down the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_GLOBAL</code> <em>(default)</em></td><td>Specifies to detect occurrences across all search angles globally.</td></tr><tr><td><code>M_INDIVIDUAL</code></td><td>Specifies to detect occurrences at each search angle individually.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_ref_angle"><code>M_DETECTION_REF_ANGLE</code><a href="#m_detection_ref_angle" class="hash-link" aria-label="Direct link to m_detection_ref_angle" title="Direct link to m_detection_ref_angle" translate="no">​</a></h4>
+<p>Sets the nominal search angle; this is the angle at which you expect to find the model&#x27;s reference axis in the target. Note that occurrences can be slightly rotated from the search angle and still be detected. The exact degree varies depending on your model, but the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> operation will typically detect occurrences within 10° of the search angle. If you expect greater degrees in variation, you should specify a detection angle range, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>.  Note that specifying a nominal search angle does not decrease the search speed.  This control type is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_ANGLE_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt; 360.0</code> <em>(default)</em></td><td>Specifies the nominal search angle, in degrees.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_step_angle"><code>M_DETECTION_STEP_ANGLE</code><a href="#m_detection_step_angle" class="hash-link" aria-label="Direct link to m_detection_step_angle" title="Direct link to m_detection_step_angle" translate="no">​</a></h4>
+<p>Sets the step angle at which to search for occurrences of the model within the specified detection angle range. Note that the smaller the step angle, the slower the search. The search is performed at the nominal search angle and at every +/- <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_STEP_ANGLE</code></a> degrees within the detection angle range. Note that occurrences can be slightly rotated from the search angle and still be detected. You should typically set the step angle to this rotation * 2. For example, if your model can tolerate the occurrence being offset from its search angle by ±5°, you should set the step angle to 10°.  This control type is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_ANGLE_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>5.0 &lt;= Value &lt;= 180.0</code> <em>(default)</em></td><td>Specifies the step angle, in degrees.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_mode"><code>M_FIT_MODE</code><a href="#m_fit_mode" class="hash-link" aria-label="Direct link to m_fit_mode" title="Direct link to m_fit_mode" translate="no">​</a></h4>
+<p>Sets the mode of the fit operation. The fit mode affects positional accuracy and search speed. The positional results are most accurate when the fit operation uses subpixel precision, but this can reduce the speed of the search.  Note that the fit can only be calculated with subpixel precision when you have explicitly specified an image of the model to use for the fit calculations (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_IMAGE</code></a>) and the edges of the target images are extracted (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USE_MAGNITUDE_TARGET</code></a> is disabled).  You can disable the fit operation to speed up the search, in which case Aurora Imaging Library uses the features of the model and target to find occurrences, but it doesn&#x27;t do any fitting. This results in a lower accuracy because the positional results are simply the positions of detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the fit operation; the positional results are determined by detection only.</td></tr><tr><td><code>M_PIXEL_PRECISION</code> <em>(default)</em></td><td>Specifies to calculate the fit with pixel precision.</td></tr><tr><td><code>M_SUBPIXEL_PRECISION</code></td><td>Specifies to calculate the fit with subpixel precision.  This value is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USE_MAGNITUDE_TARGET</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DISABLE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_IMAGE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_accepted_overlap"><code>M_MAX_ACCEPTED_OVERLAP</code><a href="#m_max_accepted_overlap" class="hash-link" aria-label="Direct link to m_max_accepted_overlap" title="Direct link to m_max_accepted_overlap" translate="no">​</a></h4>
+<p>Sets the maximum allowable overlap between found occurrences, as a percentage.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ACCEPTED_OVERLAP</code></a> is applied after possible occurrences are sorted.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the acceptable overlap, as a percentage. If set to 100%, found occurrences can overlap completely. If set to 0%, no found occurrence can overlap another by any amount.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_association_distance"><code>M_MAX_ASSOCIATION_DISTANCE</code><a href="#m_max_association_distance" class="hash-link" aria-label="Direct link to m_max_association_distance" title="Direct link to m_max_association_distance" translate="no">​</a></h4>
+<p>Sets the maximum distance between a model edgel and the nearest occurrence edgel. Model edgels falling outside the specified maximum distance are not used to perform the occurrence&#x27;s regular fit operation, but will decrease the overall fit score and the coverage score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>1.0 &lt;= Value &lt;= 4.0</code> <em>(default)</em></td><td>Specifies the maximum association distance, in pixels.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_image"><code>M_MODEL_IMAGE</code><a href="#m_model_image" class="hash-link" aria-label="Direct link to m_model_image" title="Direct link to m_model_image" translate="no">​</a></h4>
+<p>Sets the image buffer that contains the image of the model to use for the fit and coverage calculations. The model image should have a prototypical appearance with well-defined edges. You can prepare the image manually or define a child buffer within a training image. You must specify a model image when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_IMAGE</code></a>. Specifying a prototypical image of the model allows for higher fit and coverage scores when model appearances are varied and the trained composite-definition model contains more edgels than a typical appearance.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>ModelImageId</code></td><td>Specifies the identifier of the image buffer containing the model image. Note that this buffer must be a 1-band, 8-bit unsigned image buffer.  This image buffer must be the same size as the trained composite-definition model. You can inquire the size of the trained composite-definition model, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>MagmInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_SIZE_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_SIZE_Y</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_source"><code>M_MODEL_SOURCE</code><a href="#m_model_source" class="hash-link" aria-label="Direct link to m_model_source" title="Direct link to m_model_source" translate="no">​</a></h4>
+<p>Sets whether to use the trained composite-definition model or a prototypical image of the model for the fit and coverage calculations. You should use the trained composite-definition model if the labeled model appearances in your training images are uniform. When model appearances are varied, the trained composite-definition model contains additional edges. You can view the edges of the trained composite-definition model using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDraw"><code>MagmDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDraw"><code>M_DRAW_TRAINED_MODEL</code></a>. If the trained composite-definition model contains a lot of edges, you should choose a model image for the fit and coverage.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FROM_TRAIN</code> <em>(default)</em></td><td>Specifies to use the trained composite-definition model.</td></tr><tr><td><code>M_USER_IMAGE</code></td><td>Specifies to use the image set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_IMAGE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_perseverance_detection"><code>M_PERSEVERANCE_DETECTION</code><a href="#m_perseverance_detection" class="hash-link" aria-label="Direct link to m_perseverance_detection" title="Direct link to m_perseverance_detection" translate="no">​</a></h4>
+<p>Sets the algorithm&#x27;s perseverance when searching for occurrences. This affects the number of candidates the algorithm attempts to validate. Increasing the perseverance will increase robustness, but will increase search time.  You should try increasing the perseverance if the search is not finding all model occurrences, or if the target is complex and decreasing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> is insufficient.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the perseverance, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_x"><code>M_REFERENCE_X</code><a href="#m_reference_x" class="hash-link" aria-label="Direct link to m_reference_x" title="Direct link to m_reference_x" translate="no">​</a></h4>
+<p>Sets the X-coordinate of the origin of the model&#x27;s reference axis, relative to the model origin. Position results return the X-coordinate of the model&#x27;s reference axis origin transformed at the model occurrence. Position results are relative to the target origin.  Note that the reference axis origin need not be in the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that the default X-coordinate will be used.  For a composite-definition model, the default value is the center of the model.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate, in pixels. This value can be specified with subpixel accuracy.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_y"><code>M_REFERENCE_Y</code><a href="#m_reference_y" class="hash-link" aria-label="Direct link to m_reference_y" title="Direct link to m_reference_y" translate="no">​</a></h4>
+<p>Sets the Y-coordinate of the origin of the model&#x27;s reference axis, relative to the model origin. Position results return the Y-coordinate of the model&#x27;s reference axis origin transformed at the model occurrence. Position results are relative to the target origin.  Note that the reference axis origin need not be in the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that the default Y-coordinate will be used.  For a composite-definition model, the default value is the center of the model.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate, in pixels. This value can be specified with subpixel accuracy.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness"><code>M_SMOOTHNESS</code><a href="#m_smoothness" class="hash-link" aria-label="Direct link to m_smoothness" title="Direct link to m_smoothness" translate="no">​</a></h4>
+<p>Sets the degree of smoothness (noise reduction) applied to the model image and target image(s) during the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the smoothness value applied to the images, as a percentage.  A setting of 0.0 indicates almost no noise reduction effect, while a setting of 100.0 indicates a very strong noise reduction effect.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness_source"><code>M_SMOOTHNESS_SOURCE</code><a href="#m_smoothness_source" class="hash-link" aria-label="Direct link to m_smoothness_source" title="Direct link to m_smoothness_source" translate="no">​</a></h4>
+<p>Sets whether to use the smoothness value set during training or a custom smoothness value for the degree of noise reduction applied to the model image and target image(s) during the edge extraction. You should customize the smoothness value if your training and target images have dissimilar noise levels.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FROM_TRAIN</code> <em>(default)</em></td><td>Specifies to use the smoothness value set during the training of the model.  This value was set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SMOOTHNESS</code></a> in a train AGM context.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the smoothness value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SMOOTHNESS</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sort_candidates_score"><code>M_SORT_CANDIDATES_SCORE</code><a href="#m_sort_candidates_score" class="hash-link" aria-label="Direct link to m_sort_candidates_score" title="Direct link to m_sort_candidates_score" translate="no">​</a></h4>
+<p>Sets the score used to sort candidates. Candidates are sorted in decreasing score order.  The specified score affects which possible occurrences are filtered out. When two possible occurrences overlap above the value specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ACCEPTED_OVERLAP</code></a>, the possible occurrence with the lower score is removed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_SCORE_COVERAGE</code></td><td>Specifies to use the coverage score to sort candidates.</td></tr><tr><td><code>M_SCORE_DETECTION</code> <em>(default)</em></td><td>Specifies to use the detection score to sort candidates.</td></tr><tr><td><code>M_SCORE_FIT</code></td><td>Specifies to use the fit score to sort candidates.</td></tr><tr><td><code>M_SCORE_FIT_OVERALL</code></td><td>Specifies to use the overall fit score to sort candidates.  This value is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_IMAGE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stable_edgels_mode"><code>M_STABLE_EDGELS_MODE</code><a href="#m_stable_edgels_mode" class="hash-link" aria-label="Direct link to m_stable_edgels_mode" title="Direct link to m_stable_edgels_mode" translate="no">​</a></h4>
+<p>Sets whether to use only stable edgels when searching for occurrences. A stable edgel is an edgel that remains persistent when extracting edges with slightly different smoothness values.  This control type is only used and should only be enabled when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_IMAGE</code></a>. Otherwise, an error is generated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to use only stable edgels. All edgels are considered when searching for occurrences.</td></tr><tr><td><code>M_SMOOTHNESS_STABLE</code></td><td>Specifies to use only stable edgels. Unstable (noisy) edgels are ignored when searching for occurrences.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_x"><code>M_STEP_X</code><a href="#m_step_x" class="hash-link" aria-label="Direct link to m_step_x" title="Direct link to m_step_x" translate="no">​</a></h4>
+<p>Sets the X step size of explored positions to search for occurrences. Increasing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> can accelerate search speed, but can also increase the risk of missing favorable occurrences.  You can typically start with a value of 1 and increase <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> if the speed is too slow. Increasing these values when you have a large model can decrease the search time while minimally affecting the occurrences&#x27; detection, fit, and coverage scores.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 1</code> <em>(default)</em></td><td>Specifies the X step size.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_y"><code>M_STEP_Y</code><a href="#m_step_y" class="hash-link" aria-label="Direct link to m_step_y" title="Direct link to m_step_y" translate="no">​</a></h4>
+<p>Sets the Y step size of explored positions to search for occurrences. Increasing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> can accelerate search speed, but can also increase the risk of missing favorable occurrences.  You can typically start with a value of 1 and increase <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> if the speed is too slow. Increasing these values when you have a large model can decrease the search time while minimally affecting the occurrences&#x27; detection, fit, and coverage scores.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 1</code> <em>(default)</em></td><td>Specifies the Y step size.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode"><code>M_THRESHOLD_MODE</code><a href="#m_threshold_mode" class="hash-link" aria-label="Direct link to m_threshold_mode" title="Direct link to m_threshold_mode" translate="no">​</a></h4>
+<p>Sets the threshold mode of the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies no threshold. All edges are extracted.</td></tr><tr><td><code>M_HIGH</code> <em>(default)</em></td><td>Specifies a high threshold. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_HIGH</code></a> should be used for images with some contrast variations, noise, and non-uniform illumination. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_HIGH</code></a> always results in a lower (or equal) number of edgels than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MEDIUM</code></a>.</td></tr><tr><td><code>M_LOW</code></td><td>Specifies a low threshold. All edges over a minimum noise-based estimated threshold are extracted. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_LOW</code></a> always results in a lower (or equal) number of edgels than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DISABLE</code></a>.</td></tr><tr><td><code>M_MEDIUM</code></td><td>Specifies a medium threshold. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MEDIUM</code></a> should be used for multi-contrast images, or for images with a lot of noise or non-uniform illumination. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MEDIUM</code></a> always results in a lower (or equal) number of edgels than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_LOW</code></a>.</td></tr><tr><td><code>M_VERY_HIGH</code></td><td>Specifies a very high threshold. Only the strongest edges in the image are extracted. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_VERY_HIGH</code></a> always results in a lower (or equal) number of edgels than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_HIGH</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode_source"><code>M_THRESHOLD_MODE_SOURCE</code><a href="#m_threshold_mode_source" class="hash-link" aria-label="Direct link to m_threshold_mode_source" title="Direct link to m_threshold_mode_source" translate="no">​</a></h4>
+<p>Sets whether to use the threshold mode set during training or a custom threshold mode for the edge extraction. You can use the threshold mode set during training if your training and target images have similar illumination and contrast. If your training and target images were captured in different conditions, the illumination and contrast might vary and you should customize the threshold mode accordingly.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FROM_TRAIN</code> <em>(default)</em></td><td>Specifies to use the threshold mode set during the training of the model.  This value was set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a> in a train AGM context.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the threshold mode set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="find-agm-context-id-with-a-single-definition-model"><code>Find AGM context ID with a single-definition model</code><a href="#find-agm-context-id-with-a-single-definition-model" class="hash-link" aria-label="Direct link to find-agm-context-id-with-a-single-definition-model" title="Direct link to find-agm-context-id-with-a-single-definition-model" translate="no">​</a></h3>
+<p>Specifies a find AGM context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>MagmAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>M_GLOBAL_EDGE_BASED_FIND</code></a> and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> operations. It must contain a single-definition model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_coverage-1"><code>M_ACCEPTANCE_COVERAGE</code><a href="#m_acceptance_coverage-1" class="hash-link" aria-label="Direct link to m_acceptance_coverage-1" title="Direct link to m_acceptance_coverage-1" translate="no">​</a></h4>
+<p>Sets the minimum coverage score required for an occurrence to be considered a match.  The coverage score is the percentage of the total length of the model&#x27;s edgels found in the occurrence. 100% indicates that for each of the model&#x27;s edgels, a corresponding edgel was found in the occurrence.  Note, a model&#x27;s edgel corresponds to an edgel in the occurrence if the distance between them is less than or equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ASSOCIATION_DISTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the minimum acceptable coverage score, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_detection-1"><code>M_ACCEPTANCE_DETECTION</code><a href="#m_acceptance_detection-1" class="hash-link" aria-label="Direct link to m_acceptance_detection-1" title="Direct link to m_acceptance_detection-1" translate="no">​</a></h4>
+<p>Sets the minimum detection score required for an occurrence to be considered a match.  The detection score represents how confident you should be that Aurora Imaging Library found a true occurrence.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_DETECTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_fit-1"><code>M_ACCEPTANCE_FIT</code><a href="#m_acceptance_fit-1" class="hash-link" aria-label="Direct link to m_acceptance_fit-1" title="Direct link to m_acceptance_fit-1" translate="no">​</a></h4>
+<p>Sets the minimum fit score required for an occurrence to be considered a match.  The fit score is a measure of the correlation of the edgels in the model to their corresponding edgels in the occurrence. It is based on the distance between the model&#x27;s edgels and the occurrence&#x27;s edgels.  Note, only those model edgels that are less than or equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ASSOCIATION_DISTANCE</code></a> from an occurrence edgel are used in the fit score calculation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_FIT</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_fit_overall-1"><code>M_ACCEPTANCE_FIT_OVERALL</code><a href="#m_acceptance_fit_overall-1" class="hash-link" aria-label="Direct link to m_acceptance_fit_overall-1" title="Direct link to m_acceptance_fit_overall-1" translate="no">​</a></h4>
+<p>Sets the minimum overall fit score required for an occurrence to be considered a match.  The overall fit score is a measure of the correlation of all edgels in the model to those of the occurrence. It is based on the distance between the model&#x27;s edgels and the occurrence&#x27;s edgels.  Note, all model edgels are used in the overall fit score calculation, including those without a corresponding edgel in the occurrence.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ACCEPTANCE_FIT_OVERALL</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_bottom"><code>M_BOX_MARGIN_BOTTOM</code><a href="#m_box_margin_bottom" class="hash-link" aria-label="Direct link to m_box_margin_bottom" title="Direct link to m_box_margin_bottom" translate="no">​</a></h4>
+<p>Sets a margin at the bottom of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  The bounding box of the model&#x27;s active edges plus the specified margins define the size of the model box.  This control type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the height of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 163840000.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_left"><code>M_BOX_MARGIN_LEFT</code><a href="#m_box_margin_left" class="hash-link" aria-label="Direct link to m_box_margin_left" title="Direct link to m_box_margin_left" translate="no">​</a></h4>
+<p>Sets a margin at the left side of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  The bounding box of the model&#x27;s active edges plus the specified margins define the size of the model box.  This control type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the width of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 163840000.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_right"><code>M_BOX_MARGIN_RIGHT</code><a href="#m_box_margin_right" class="hash-link" aria-label="Direct link to m_box_margin_right" title="Direct link to m_box_margin_right" translate="no">​</a></h4>
+<p>Sets a margin at the right side of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  The bounding box of the model&#x27;s active edges plus the specified margins define the size of the model box.  This control type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the width of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 163840000.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_box_margin_top"><code>M_BOX_MARGIN_TOP</code><a href="#m_box_margin_top" class="hash-link" aria-label="Direct link to m_box_margin_top" title="Direct link to m_box_margin_top" translate="no">​</a></h4>
+<p>Sets a margin at the top of the bounding box of the model&#x27;s active edges, if the model was defined from a CAD DXF file.  The bounding box of the model&#x27;s active edges plus the specified margins define the size of the model box.  This control type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 10.0% of the height of the bounding box of the model&#x27;s active edges.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 163840000.0</code></td><td>Specifies the margin, in model units.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_cad_y_axis"><code>M_CAD_Y_AXIS</code><a href="#m_cad_y_axis" class="hash-link" aria-label="Direct link to m_cad_y_axis" title="Direct link to m_cad_y_axis" translate="no">​</a></h4>
+<p>Sets the direction of the Y-axis for a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.  When the model is added to the AGM context from a CAD DXF file, the model will retain its coordinate system (the origin and the axes). Most CAD DXF files are oriented so that the Y-axis is positive going up, whereas the coordinate system Aurora Imaging Library uses is oriented with the Y-axis positive going down. So if you take the edge coordinates of an object from a CAD DXF file and put them in an image, the imaged object will look flipped when compared to the original object. This is also the case for a model defined from a CAD DXF file. This means that, unless the object is symmetrical, the match will not be made.  This control type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FLIP</code> <em>(default)</em></td><td>Specifies to flip the Y-axis for the model so that the Y-axis is positive going down.</td></tr><tr><td><code>M_NO_FLIP</code></td><td>Specifies not to flip the Y-axis for the model.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_neg_angle-1"><code>M_DETECTION_DELTA_NEG_ANGLE</code><a href="#m_detection_delta_neg_angle-1" class="hash-link" aria-label="Direct link to m_detection_delta_neg_angle-1" title="Direct link to m_detection_delta_neg_angle-1" translate="no">​</a></h4>
+<p>Sets the lower limit of the detection angle range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>). That is, <em>LowerLimit</em> = <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>  - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a>. The detection angle range should be used to cover the expected variance in the angle of detection.  Note that the detection angle range only limits the angle of detection. The angle at which an occurrence is detected might not be exact; its true angle can typically be within 10° of the angle of detection, even if that falls outside of the detection angle range. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is disabled, the returned angle of an occurrence will always be the angle at which it was detected and will therefore always be within the detection angle range. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is enabled, a fit operation is performed starting from the angle of detection. In refining the angle so that it is more accurate, the angle of the occurrence&#x27;s reference axis returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>MagmGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>M_ANGLE</code></a> can end up being outside of the detection angle range.  Note that the greater the range of angles to be searched, the slower the search.  To set the upper limit for the detection angle range, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the lower limit of the detection angle range, in degrees. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a> cannot be greater than 360.0°.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_delta_pos_angle-1"><code>M_DETECTION_DELTA_POS_ANGLE</code><a href="#m_detection_delta_pos_angle-1" class="hash-link" aria-label="Direct link to m_detection_delta_pos_angle-1" title="Direct link to m_detection_delta_pos_angle-1" translate="no">​</a></h4>
+<p>Sets the upper limit of the detection angle range, relative to the nominal search angle (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>). That is, <em>UpperLimit</em> = <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_REF_ANGLE</code></a>  + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>. The detection angle range should be used to cover the expected variance in the angle of detection.  Note that the detection angle range only limits the angle of detection. The angle at which an occurrence is detected might not be exact; its true angle can typically be within 10° of the angle of detection, even if that falls outside of the detection angle range. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is disabled, the returned angle of an occurrence will always be the angle at which it was detected and will therefore always be within the detection angle range. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is enabled, a fit operation is performed starting from the angle of detection. In refining the angle so that it is more accurate, the angle of the occurrence&#x27;s reference axis returned by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>MagmGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>M_ANGLE</code></a> can end up being outside of the detection angle range.  Note that the greater the range of angles to be searched, the slower the search.  To set the lower limit for the detection angle range, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies the upper limit of the detection angle range, in degrees. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a> cannot be greater than 360.0°.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_multi_angle_mode-1"><code>M_DETECTION_MULTI_ANGLE_MODE</code><a href="#m_detection_multi_angle_mode-1" class="hash-link" aria-label="Direct link to m_detection_multi_angle_mode-1" title="Direct link to m_detection_multi_angle_mode-1" translate="no">​</a></h4>
+<p>Sets the mode with which to detect occurrences when searching at multiple angles.  The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_GLOBAL</code></a> mode can accelerate search speed, but can also increase the risk of missing overlapping occurrences that have close centers. You should specify <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_INDIVIDUAL</code></a> if the search is not finding all model occurrences, but note that this will slow down the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_GLOBAL</code> <em>(default)</em></td><td>Specifies to detect occurrences across all search angles globally.</td></tr><tr><td><code>M_INDIVIDUAL</code></td><td>Specifies to detect occurrences at each search angle individually.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_ref_angle-1"><code>M_DETECTION_REF_ANGLE</code><a href="#m_detection_ref_angle-1" class="hash-link" aria-label="Direct link to m_detection_ref_angle-1" title="Direct link to m_detection_ref_angle-1" translate="no">​</a></h4>
+<p>Sets the nominal search angle; this is the angle at which you expect to find the model&#x27;s reference axis in the target. Note that occurrences can be slightly rotated from the search angle and still be detected. The exact degree varies depending on your model, but the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> operation will typically detect occurrences within 10° of the search angle. If you expect greater degrees in variation, you should specify a detection angle range, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_NEG_ANGLE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_DELTA_POS_ANGLE</code></a>.  Note that specifying a nominal search angle does not decrease the search speed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt; 360.0</code> <em>(default)</em></td><td>Specifies the nominal search angle, in degrees.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_detection_step_angle-1"><code>M_DETECTION_STEP_ANGLE</code><a href="#m_detection_step_angle-1" class="hash-link" aria-label="Direct link to m_detection_step_angle-1" title="Direct link to m_detection_step_angle-1" translate="no">​</a></h4>
+<p>Sets the step angle at which to search for occurrences of the model within the specified detection angle range. Note that the smaller the step angle, the slower the search. The search is performed at the nominal search angle and at every +/- <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DETECTION_STEP_ANGLE</code></a> degrees within the detection angle range. Note that occurrences can be slightly rotated from the search angle and still be detected. You should typically set the step angle to this rotation * 2. For example, if your model can tolerate the occurrence being offset from its search angle by ±5°, you should set the step angle to 10°.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>5.0 &lt;= Value &lt;= 180.0</code> <em>(default)</em></td><td>Specifies the step angle, in degrees.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_edgel_angle_mode"><code>M_EDGEL_ANGLE_MODE</code><a href="#m_edgel_angle_mode" class="hash-link" aria-label="Direct link to m_edgel_angle_mode" title="Direct link to m_edgel_angle_mode" translate="no">​</a></h4>
+<p>Sets whether to consider edgel orientation, defined by a gradient angle, when searching for occurrences. A smaller difference in orientation between model and occurrence edgels produces a closer match.  The gradient angle is the direction of maximum change in brightness at the edgel&#x27;s position. Note that edgel orientation is indifferent to whether the brightness changes from dark to light or the reverse. This means that the maximum difference in orientation between two edgels is 90 degrees.  Disabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_EDGEL_ANGLE_MODE</code></a> will increase the search speed. You can typically disable this control when your target images are uncluttered with minimal noise.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to consider edgel orientation.</td></tr><tr><td><code>M_ORIENTATION</code> <em>(default)</em></td><td>Specifies to consider edgel orientation.  The difference in orientation between model and occurrence edgels is negatively correlated with the occurrence&#x27;s detection, fit, and coverage scores. Smaller comparative differences result in higher scores (and vice versa).</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_empty_regions_mode"><code>M_EMPTY_REGIONS_MODE</code><a href="#m_empty_regions_mode" class="hash-link" aria-label="Direct link to m_empty_regions_mode" title="Direct link to m_empty_regions_mode" translate="no">​</a></h4>
+<p>Sets whether to consider the regions of the model that do not contain edges when searching for model occurrences. If the model has a consistent region without edges, you can enable this control type to improve the detection score of favorable occurrences. If edges are present in this region of the occurrence, the detection score will decrease.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code></td><td>Specifies to automatically determine the empty regions. If no empty regions are found, the outcome is the same as disabling empty regions.</td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to consider empty regions.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_first_level"><code>M_FIRST_LEVEL</code><a href="#m_first_level" class="hash-link" aria-label="Direct link to m_first_level" title="Direct link to m_first_level" translate="no">​</a></h4>
+<p>Sets the resolution level for the initial stage (lowest resolution) of the search when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PYRAMID_LEVELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_DEFINED</code></a>.  Level 0 is the original target and each higher level is half the size (and resolution) of the previous one. Note that very small models and search regions cannot be subsampled as many times as large ones. If the specified level results in a model that is too small or does not have enough edgels, an error will occur when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmPreprocess"><code>MagmPreprocess</code></a>.  A higher first level speeds up the initial search but might make it less reliable because the model might not retain enough distinctive features at a lower resolution.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIRST_LEVEL</code></a> is for advanced users of the AGM module. The default setting usually provides the best results for the search operation.  Note, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIRST_LEVEL</code></a> cannot be lower than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_LAST_LEVEL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0 &lt;= Value &lt;= 7</code> <em>(default)</em></td><td>Specifies the resolution level. Only integer values are accepted.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_mode-1"><code>M_FIT_MODE</code><a href="#m_fit_mode-1" class="hash-link" aria-label="Direct link to m_fit_mode-1" title="Direct link to m_fit_mode-1" translate="no">​</a></h4>
+<p>Sets the mode of the fit operation. The fit mode affects positional accuracy and search speed. The positional results are most accurate when the fit operation uses subpixel precision, but this can reduce the speed of the search.  Note that the fit can only be calculated with subpixel precision when the edges of the target images are extracted (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USE_MAGNITUDE_TARGET</code></a> is disabled).  You can disable the fit operation to speed up the search, in which case Aurora Imaging Library uses the features of the model and target to find occurrences, but it doesn&#x27;t do any fitting. This results in a lower accuracy because the positional results are simply the positions of detection.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to disable the fit operation; the positional results are determined by detection only.</td></tr><tr><td><code>M_PIXEL_PRECISION</code> <em>(default)</em></td><td>Specifies to calculate the fit with pixel precision.</td></tr><tr><td><code>M_SUBPIXEL_PRECISION</code></td><td>Specifies to calculate the fit with subpixel precision.  This value is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USE_MAGNITUDE_TARGET</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DISABLE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_last_level"><code>M_LAST_LEVEL</code><a href="#m_last_level" class="hash-link" aria-label="Direct link to m_last_level" title="Direct link to m_last_level" translate="no">​</a></h4>
+<p>Sets the resolution level for the final stage (the highest resolution) of the search when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PYRAMID_LEVELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_DEFINED</code></a>.  Level 0 is the original target and each higher level is half the size (and resolution) of the previous one. Note that very small models and search regions cannot be subsampled as many times as large ones. If the specified level results in a model that is too small or does not have enough edgels, an error will occur when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmPreprocess"><code>MagmPreprocess</code></a>.  A higher last level speeds up the initial search but might make it less reliable and less accurate because the model might not retain enough distinctive features at a low resolution.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_LAST_LEVEL</code></a> is for advanced users of the AGM module. The default setting usually provides the best results for the search operation.  Note, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_LAST_LEVEL</code></a> cannot be higher than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIRST_LEVEL</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0 &lt;= Value &lt;= 7</code> <em>(default)</em></td><td>Specifies the resolution level. Only integer values are accepted.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_accepted_overlap-1"><code>M_MAX_ACCEPTED_OVERLAP</code><a href="#m_max_accepted_overlap-1" class="hash-link" aria-label="Direct link to m_max_accepted_overlap-1" title="Direct link to m_max_accepted_overlap-1" translate="no">​</a></h4>
+<p>Sets the maximum allowable overlap between found occurrences, as a percentage.  Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ACCEPTED_OVERLAP</code></a> is applied after possible occurrences are sorted.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ACCEPTED_OVERLAP</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_association_distance-1"><code>M_MAX_ASSOCIATION_DISTANCE</code><a href="#m_max_association_distance-1" class="hash-link" aria-label="Direct link to m_max_association_distance-1" title="Direct link to m_max_association_distance-1" translate="no">​</a></h4>
+<p>Sets the maximum distance between a model edgel and the nearest occurrence edgel. Model edgels falling outside the specified maximum distance are not used to perform the occurrence&#x27;s regular fit operation, but will decrease the overall fit score and the coverage score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ASSOCIATION_DISTANCE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_precision"><code>M_MODEL_PRECISION</code><a href="#m_model_precision" class="hash-link" aria-label="Direct link to m_model_precision" title="Direct link to m_model_precision" translate="no">​</a></h4>
+<p>Sets the percentage of model edgels to use when searching for occurrences.  Specifying a high value can increase the detection, fit, and coverage scores, which increases the likelihood of finding all occurrences, but can also decrease the search speed. Specifying a low value can decrease the detection, fit, and coverage scores, which increases the likelihood of missing favorable occurrences or finding false occurrences, but can also increase the search speed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the amount of model edgels, as a percentage. A value of 100% indicates that all model edgels are used.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_perseverance_detection-1"><code>M_PERSEVERANCE_DETECTION</code><a href="#m_perseverance_detection-1" class="hash-link" aria-label="Direct link to m_perseverance_detection-1" title="Direct link to m_perseverance_detection-1" translate="no">​</a></h4>
+<p>Sets the algorithm&#x27;s perseverance when searching for occurrences. This affects the number of candidates the algorithm attempts to validate. Increasing the perseverance will increase robustness, but will increase search time.  You should try increasing the perseverance if the search is not finding all model occurrences, or if the target is complex and decreasing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> is insufficient.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PERSEVERANCE_DETECTION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pixel_scale"><code>M_PIXEL_SCALE</code><a href="#m_pixel_scale" class="hash-link" aria-label="Direct link to m_pixel_scale" title="Direct link to m_pixel_scale" translate="no">​</a></h4>
+<p>Sets the pixel scale of the model, if the model was defined from a CAD DXF file. This value is the scale to apply to the model to go from DXF units to pixel units. For example, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_BOX_SIZE_X</code></a> is 50.0 DXF units and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PIXEL_SCALE</code></a> is set to 100.0, the model box will be 5000.0 pixels wide.  This control type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt; Value &lt; 10000.0</code> <em>(default)</em></td><td>Specifies the pixel scale. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_BOX_SIZE_...</code></a> * <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PIXEL_SCALE</code></a> must be less than or equal to 32768 pixels and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmInquire"><code>M_EDGES_BOX_SIZE_...</code></a> * <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_PIXEL_SCALE</code></a> must be between 6 and 32768 pixels to avoid an Aurora Imaging Library error when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmPreprocess"><code>MagmPreprocess</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDraw"><code>MagmDraw</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_polarity"><code>M_POLARITY</code><a href="#m_polarity" class="hash-link" aria-label="Direct link to m_polarity" title="Direct link to m_polarity" translate="no">​</a></h4>
+<p>Sets the expected polarity of occurrences, compared to that of the model.  This control type is not available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code> <em>(default)</em></td><td>Specifies that the occurrences can be any polarity. That is, they can be the same or reverse of that of the model, or a mixture of polarities.</td></tr><tr><td><code>M_REVERSE</code></td><td>Specifies that the polarity of occurrences is the reverse of that of the model.</td></tr><tr><td><code>M_SAME</code></td><td>Specifies that the polarity of occurrences is the same as that of the model.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pyramid_levels_mode"><code>M_PYRAMID_LEVELS_MODE</code><a href="#m_pyramid_levels_mode" class="hash-link" aria-label="Direct link to m_pyramid_levels_mode" title="Direct link to m_pyramid_levels_mode" translate="no">​</a></h4>
+<p>Sets how to establish the resolution levels for the search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO_CONTENT_BASED</code> <em>(default)</em></td><td>Specifies to automatically determine the levels according to the model content.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the values set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIRST_LEVEL</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_LAST_LEVEL</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_x-1"><code>M_REFERENCE_X</code><a href="#m_reference_x-1" class="hash-link" aria-label="Direct link to m_reference_x-1" title="Direct link to m_reference_x-1" translate="no">​</a></h4>
+<p>Sets the X-coordinate of the origin of the model&#x27;s reference axis, relative to the model origin. Position results return the X-coordinate of the model&#x27;s reference axis origin transformed at the model occurrence. Position results are relative to the target origin.  Note that the reference axis origin need not be in the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that the default X-coordinate will be used.  For a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>, the default value is the origin of the CAD DXF file. For other types of models, the default value is the center of the model.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate, in pixels. This value can be specified with subpixel accuracy.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reference_y-1"><code>M_REFERENCE_Y</code><a href="#m_reference_y-1" class="hash-link" aria-label="Direct link to m_reference_y-1" title="Direct link to m_reference_y-1" translate="no">​</a></h4>
+<p>Sets the Y-coordinate of the origin of the model&#x27;s reference axis, relative to the model origin. Position results return the Y-coordinate of the model&#x27;s reference axis origin transformed at the model occurrence. Position results are relative to the target origin.  Note that the reference axis origin need not be in the model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that the default Y-coordinate will be used.  For a model of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_DXF_FILE</code></a>, the default value is the origin of the CAD DXF file. For other types of models, the default value is the center of the model.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate, in pixels. This value can be specified with subpixel accuracy.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness-1"><code>M_SMOOTHNESS</code><a href="#m_smoothness-1" class="hash-link" aria-label="Direct link to m_smoothness-1" title="Direct link to m_smoothness-1" translate="no">​</a></h4>
+<p>Sets the degree of smoothness (noise reduction) applied to the model image and target image(s) during the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SMOOTHNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sort_candidates_score-1"><code>M_SORT_CANDIDATES_SCORE</code><a href="#m_sort_candidates_score-1" class="hash-link" aria-label="Direct link to m_sort_candidates_score-1" title="Direct link to m_sort_candidates_score-1" translate="no">​</a></h4>
+<p>Sets the score used to sort candidates. Candidates are sorted in decreasing score order.  The specified score affects which possible occurrences are filtered out. When two possible occurrences overlap above the value specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ACCEPTED_OVERLAP</code></a>, the possible occurrence with the lower score is removed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_SCORE_COVERAGE</code> <em>(default)</em></td><td>Specifies to use the coverage score to sort candidates.</td></tr><tr><td><code>M_SCORE_DETECTION</code></td><td>Specifies to use the detection score to sort candidates.</td></tr><tr><td><code>M_SCORE_FIT</code></td><td>Specifies to use the fit score to sort candidates.</td></tr><tr><td><code>M_SCORE_FIT_OVERALL</code></td><td>Specifies to use the overall fit score to sort candidates.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stable_edgels_mode-1"><code>M_STABLE_EDGELS_MODE</code><a href="#m_stable_edgels_mode-1" class="hash-link" aria-label="Direct link to m_stable_edgels_mode-1" title="Direct link to m_stable_edgels_mode-1" translate="no">​</a></h4>
+<p>Sets whether to use only stable edgels when searching for occurrences. A stable edgel is an edgel that remains persistent when extracting edges with slightly different smoothness values.  This control type is only available for models of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_IMAGE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDefine"><code>M_IMAGE_REGION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to use only stable edgels. All edgels are considered when searching for occurrences.</td></tr><tr><td><code>M_SMOOTHNESS_STABLE</code> <em>(default)</em></td><td>Specifies to use only stable edgels. Unstable (noisy) edgels are ignored when searching for occurrences.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_x-1"><code>M_STEP_X</code><a href="#m_step_x-1" class="hash-link" aria-label="Direct link to m_step_x-1" title="Direct link to m_step_x-1" translate="no">​</a></h4>
+<p>Sets the X step size of explored positions to search for occurrences. Increasing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> can accelerate search speed, but can also increase the risk of missing favorable occurrences.  You can typically start with a value of 1 and increase <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> if the speed is too slow. Increasing these values when you have a large model can decrease the search time while minimally affecting the occurrences&#x27; detection, fit, and coverage scores.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_y-1"><code>M_STEP_Y</code><a href="#m_step_y-1" class="hash-link" aria-label="Direct link to m_step_y-1" title="Direct link to m_step_y-1" translate="no">​</a></h4>
+<p>Sets the Y step size of explored positions to search for occurrences. Increasing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> can accelerate search speed, but can also increase the risk of missing favorable occurrences.  You can typically start with a value of 1 and increase <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a> if the speed is too slow. Increasing these values when you have a large model can decrease the search time while minimally affecting the occurrences&#x27; detection, fit, and coverage scores.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_STEP_Y</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode-1"><code>M_THRESHOLD_MODE</code><a href="#m_threshold_mode-1" class="hash-link" aria-label="Direct link to m_threshold_mode-1" title="Direct link to m_threshold_mode-1" translate="no">​</a></h4>
+<p>Sets the threshold mode of the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_use_magnitude_target"><code>M_USE_MAGNITUDE_TARGET</code><a href="#m_use_magnitude_target" class="hash-link" aria-label="Direct link to m_use_magnitude_target" title="Direct link to m_use_magnitude_target" translate="no">​</a></h4>
+<p>Sets whether to use the gradient magnitude or to use extracted edges when searching for occurrences.  When this control type is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ENABLE</code></a>, thresholding is not applied to the target images, and the magnitude of the gradient is used instead. This is useful when there are contrast variations within or between images, such that there is no single threshold capable of detecting all pertinent edgels without introducing noisy background edges, leading to false positives.  When set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DISABLE</code></a>, edges are extracted from the target images based on a thresholding of the magnitude values. When the occurrences have strong contrasted edges that can be detected without introducing noisy background edges, using edges can lead to more robust results.  Note that even if this control type is enabled, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a> is used to extract the edges of the model.  This control type is not available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SUBPIXEL_PRECISION</code></a> or when using an Edge Finder result buffer as the target.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to extract and use edges.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to use the magnitude of the gradient.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="train-agm-context-id-with-a-composite-definition-model"><code>Train AGM context ID with a composite-definition model</code><a href="#train-agm-context-id-with-a-composite-definition-model" class="hash-link" aria-label="Direct link to train-agm-context-id-with-a-composite-definition-model" title="Direct link to train-agm-context-id-with-a-composite-definition-model" translate="no">​</a></h3>
+<p>Specifies a train AGM context, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>MagmAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAlloc"><code>M_GLOBAL_EDGE_BASED_TRAIN</code></a> and used in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> operations. It must contain a composite-definition model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_empty_regions_mode-1"><code>M_EMPTY_REGIONS_MODE</code><a href="#m_empty_regions_mode-1" class="hash-link" aria-label="Direct link to m_empty_regions_mode-1" title="Direct link to m_empty_regions_mode-1" translate="no">​</a></h4>
+<p>Sets whether to consider the regions of the model appearances that do not contain edges when training the composite-definition model. This will slow down training, but if the model has a consistent region without edges, using empty regions can improve the detection score of favorable occurrences. If edges are present in this region of the occurrence, the detection score will decrease.  The setting of this control type is also used for the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmFind"><code>MagmFind</code></a> operation when searching for the trained composite-definition model.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_EMPTY_REGIONS_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_model_precision-1"><code>M_MODEL_PRECISION</code><a href="#m_model_precision-1" class="hash-link" aria-label="Direct link to m_model_precision-1" title="Direct link to m_model_precision-1" translate="no">​</a></h4>
+<p>Sets the percentage of the trained composite-definition model&#x27;s edgels to use when searching for occurrences.  Specifying a high value can increase the detection, fit, and coverage scores, which increases the likelihood of finding all occurrences, but can also decrease the search speed. Specifying a low value can decrease the detection, fit, and coverage scores, which increases the likelihood of missing favorable occurrences or finding false occurrences, but can also increase the search speed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_PRECISION</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_negative_labels_max_overlap"><code>M_NEGATIVE_LABELS_MAX_OVERLAP</code><a href="#m_negative_labels_max_overlap" class="hash-link" aria-label="Direct link to m_negative_labels_max_overlap" title="Direct link to m_negative_labels_max_overlap" translate="no">​</a></h4>
+<p>Sets the maximum allowable overlap between two automatically generated negative (red) rectangles.  This control type is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_NEGATIVE_LABELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_AUTO</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt; 90.0</code> <em>(default)</em></td><td>Specifies the maximum allowable overlap, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_negative_labels_mode"><code>M_NEGATIVE_LABELS_MODE</code><a href="#m_negative_labels_mode" class="hash-link" aria-label="Direct link to m_negative_labels_mode" title="Direct link to m_negative_labels_mode" translate="no">​</a></h4>
+<p>Sets whether to automatically label negative model locations in the training images or to use manually defined labels. If set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_AUTO</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> will automatically identify and label background areas with red rectangles.  Note that the number of automatically generated red rectangles depends on the complexity of the training images. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>MagmGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmGetResult"><code>M_NUMBER_NEG_RECTANGLES</code></a> to retrieve the number of red rectangles across all training images. You can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDraw"><code>MagmDraw</code></a> to view the rectangles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_LABELS</code> <em>(default)</em></td><td>Specifies to use manually defined negative (red) rectangles if there is at least one red rectangle in the set of training images; otherwise, specifies to automatically label the negative model locations.</td></tr><tr><td><code>M_AUTO</code></td><td>Specifies to automatically label the negative model locations. At least one training image must have a minimum of one blue rectangle, and no training images can have any red rectangles. Note, there can be training images with no rectangles.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use manually defined negative (red) rectangles. At least one training image must have a minimum of one red rectangle, and at least one training image must have a minimum of one blue rectangle. Note, there can be training images with only red rectangles or only blue rectangles. You can also include training images with no rectangles, but they will not be used during training.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_negative_labels_positive_max_overlap"><code>M_NEGATIVE_LABELS_POSITIVE_MAX_OVERLAP</code><a href="#m_negative_labels_positive_max_overlap" class="hash-link" aria-label="Direct link to m_negative_labels_positive_max_overlap" title="Direct link to m_negative_labels_positive_max_overlap" translate="no">​</a></h4>
+<p>Sets the maximum allowable overlap between an automatically generated negative (red) rectangle and a positive (blue) rectangle.  This control type is only used when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_NEGATIVE_LABELS_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_AUTO</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt; 80.0</code> <em>(default)</em></td><td>Specifies the maximum allowable overlap, as a percentage.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_realign_strength"><code>M_REALIGN_STRENGTH</code><a href="#m_realign_strength" class="hash-link" aria-label="Direct link to m_realign_strength" title="Direct link to m_realign_strength" translate="no">​</a></h4>
+<p>Sets the strength with which to displace the blue rectangles, which define the positive model locations in the training images, to better align them. The more aligned the blue rectangles are, the more accurate the search with the resulting trained composite-definition model will be.  You should attempt to label your training images such that all model occurrences appear in the exact same position within each blue rectangle. If the blue rectangles are not precise, you can use this control to allow the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> operation to displace the blue rectangles. The higher the realignment strength, the further <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> can displace the blue rectangles so that the model occurrences appear in the same position within each blue rectangle. When the realignment strength is set to 0.0, no realignment occurs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the strength of the realignment.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_smoothness-2"><code>M_SMOOTHNESS</code><a href="#m_smoothness-2" class="hash-link" aria-label="Direct link to m_smoothness-2" title="Direct link to m_smoothness-2" translate="no">​</a></h4>
+<p>Sets the degree of smoothness (noise reduction) applied to the training images during the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SMOOTHNESS</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_threshold_mode-2"><code>M_THRESHOLD_MODE</code><a href="#m_threshold_mode-2" class="hash-link" aria-label="Direct link to m_threshold_mode-2" title="Direct link to m_threshold_mode-2" translate="no">​</a></h4>
+<p>Sets the threshold mode of the edge extraction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a>)</em></td><td></td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_detection_angle"><code>M_TRAIN_DETECTION_ANGLE</code><a href="#m_train_detection_angle" class="hash-link" aria-label="Direct link to m_train_detection_angle" title="Direct link to m_train_detection_angle" translate="no">​</a></h4>
+<p>Sets whether to train the composite-definition model using rotated labeled image regions (red and blue rectangles). You should enable this control to increase the likelihood of finding occurrences at any angle. A composite-definition model trained without rotation is more likely to miss rotated occurrences.  Note that if this control type is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DISABLE</code></a>, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> generates an error if your training images contain rotated labeled image regions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_LABELS</code> <em>(default)</em></td><td>Specifies to use rotated labeled image regions if there is at least one rotated labeled image region in the set of training images; otherwise, specifies not to use rotated labeled image regions.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to use rotated labeled image regions. All labeled image regions must have an angle of 0.0°.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to use rotated labeled image regions. Labeled image regions can have any angle.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_train_labels_noise_mode"><code>M_TRAIN_LABELS_NOISE_MODE</code><a href="#m_train_labels_noise_mode" class="hash-link" aria-label="Direct link to m_train_labels_noise_mode" title="Direct link to m_train_labels_noise_mode" translate="no">​</a></h4>
+<p>Sets the mode with which to handle substandard labeled image regions when training the composite-definition model. If this control type is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_LABELS_CONFIDENCE</code></a>, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> operation will be robust to substandard labeled image regions that might cause distortion due to the presence of a lot of noise, blue rectangles (positive model locations) that have missing or extra features in comparison to other blue rectangles, red rectangles (negative model locations) that contain similar features to the model, or incorrect labeling (model appearances labeled with negative (red) rectangles or background samples labeled with positive (blue) rectangles).  Disabling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_TRAIN_LABELS_NOISE_MODE</code></a> can increase the training speed, but can result in a more distorted trained composite-definition model if the training images contain any substandard labeled image regions, as listed above.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to handle substandard labeled image regions differently. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a> will strongly attempt to correctly classify all labeled regions, including outlier labeled regions, incorrect labeled regions, or labeled regions with a lot of noise, which can cause the model to overfit on the training data.</td></tr><tr><td><code>M_LABELS_CONFIDENCE</code> <em>(default)</em></td><td>Specifies to be robust to substandard labels. To prevent overfitting on the training data, labels that are hard to correctly classify, such as outlier labels, incorrect labels, or labels with a lot of noise, will have less of an affect on the resulting trained composite-definition model.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_use_magnitude_target-1"><code>M_USE_MAGNITUDE_TARGET</code><a href="#m_use_magnitude_target-1" class="hash-link" aria-label="Direct link to m_use_magnitude_target-1" title="Direct link to m_use_magnitude_target-1" translate="no">​</a></h4>
+<p>Sets whether to use the gradient magnitude or to use extracted edges when training the composite-definition model and searching for occurrences.  When this control type is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_ENABLE</code></a>, thresholding is not applied to the training images or target images, and the magnitude of the gradient is used instead. This is useful when there are contrast variations within or between images, such that there is no single threshold capable of detecting all pertinent edgels without introducing noisy background edges, leading to false positives.  When set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_DISABLE</code></a>, edges are extracted from the training and target images based on a thresholding of the magnitude values. When the occurrences have strong contrasted edges that can be detected without introducing noisy background edges, using edges can lead to more robust results.  Note that even if this control type is enabled, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_THRESHOLD_MODE</code></a> will be copied to the find AGM context, and used to extract the edges of the model when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MODEL_SOURCE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_USER_IMAGE</code></a>.  This control type is not available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_FIT_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_SUBPIXEL_PRECISION</code></a> or when using an Edge Finder result buffer as the target.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies to extract and use edges.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to use the magnitude of the gradient.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-controlling-a-train-agm-result-buffer">For controlling a train AGM result buffer<a href="#for-controlling-a-train-agm-result-buffer" class="hash-link" aria-label="Direct link to For controlling a train AGM result buffer" title="Direct link to For controlling a train AGM result buffer" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>ContextOrResultId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>ControlType</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>ControlValue</code></a> parameter settings can be specified for a train AGM result buffer. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>Index</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_GENERAL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="train-agm-result-buffer-id"><code>Train AGM result buffer ID</code><a href="#train-agm-result-buffer-id" class="hash-link" aria-label="Direct link to train-agm-result-buffer-id" title="Direct link to train-agm-result-buffer-id" translate="no">​</a></h3>
+<p>Specifies a train AGM result buffer, allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAllocResult"><code>MagmAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAllocResult"><code>M_GLOBAL_EDGE_BASED_TRAIN_RESULT</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stop_train"><code>M_STOP_TRAIN</code><a href="#m_stop_train" class="hash-link" aria-label="Direct link to m_stop_train" title="Direct link to m_stop_train" translate="no">​</a></h4>
+<p>Stops the current execution of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmTrain"><code>MagmTrain</code></a>. This can only be done from another thread of higher priority. Results already available in the result buffer become invalid and will be discarded.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default behavior.</td></tr></tbody></table>
+<p>The margins add a black space around the model, which affect whether two occurrences are considered overlapping. For example, even if none of an occurrence&#x27;s edges touch another occurrence, if the margin around the bounding box of its edges overlaps with the margin and/or bounding box of another occurrence by any amount, the occurrences will be considered overlapping, and might be filtered out according to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmControl"><code>M_MAX_ACCEPTED_OVERLAP</code></a>. Note that the margins will be included when drawing the model using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmDraw"><code>MagmDraw</code></a>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmAllocResult"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MagmAllocResult</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/MagmCopyResult"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MagmCopyResult</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#index-in-ail_int64" class="table-of-contents__link toc-highlight"><code>Index</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-controlling-a-model-in-an-agm-context" class="table-of-contents__link toc-highlight">For controlling a model in an AGM context</a></li><li><a href="#find-agm-context-id-with-a-composite-definition-model" class="table-of-contents__link toc-highlight"><code>Find AGM context ID with a composite-definition model</code></a></li><li><a href="#find-agm-context-id-with-a-single-definition-model" class="table-of-contents__link toc-highlight"><code>Find AGM context ID with a single-definition model</code></a></li><li><a href="#train-agm-context-id-with-a-composite-definition-model" class="table-of-contents__link toc-highlight"><code>Train AGM context ID with a composite-definition model</code></a></li><li><a href="#for-controlling-a-train-agm-result-buffer" class="table-of-contents__link toc-highlight">For controlling a train AGM result buffer</a></li><li><a href="#train-agm-result-buffer-id" class="table-of-contents__link toc-highlight"><code>Train AGM result buffer ID</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/bead/MbeadGetResult" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MbeadGetResult | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MbeadGetResult | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"bead","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"},{"@type":"ListItem","position":2,"name":"MbeadGetResult","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Collapse sidebar category &#x27;bead&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadAlloc"><span title="MbeadAlloc" class="linkLabel_WmDU">MbeadAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadAllocResult"><span title="MbeadAllocResult" class="linkLabel_WmDU">MbeadAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><span title="MbeadControl" class="linkLabel_WmDU">MbeadControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadDraw"><span title="MbeadDraw" class="linkLabel_WmDU">MbeadDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadFree"><span title="MbeadFree" class="linkLabel_WmDU">MbeadFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetNeighbors"><span title="MbeadGetNeighbors" class="linkLabel_WmDU">MbeadGetNeighbors</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><span title="MbeadGetResult" class="linkLabel_WmDU">MbeadGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadInquire"><span title="MbeadInquire" class="linkLabel_WmDU">MbeadInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadRestore"><span title="MbeadRestore" class="linkLabel_WmDU">MbeadRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadSave"><span title="MbeadSave" class="linkLabel_WmDU">MbeadSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadStream"><span title="MbeadStream" class="linkLabel_WmDU">MbeadStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadTemplate"><span title="MbeadTemplate" class="linkLabel_WmDU">MbeadTemplate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadTrain"><span title="MbeadTrain" class="linkLabel_WmDU">MbeadTrain</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadVerify"><span title="MbeadVerify" class="linkLabel_WmDU">MbeadVerify</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span>bead</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MbeadGetResult</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MbeadGetResult</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Get results from a bead result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MbeadGetResult</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    ResultBeadId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT   LabelOrIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT   ResultIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">   </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ResultType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr     </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function retrieves results of the specified type from a bead result buffer. Results are only available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadVerify"><code>MbeadVerify</code></a>.</p>
+<p>Results for the specified bead template or trained point are based on how they compare with their corresponding measured bead or measured point in the verification&#x27;s target image. The returned results are ordered by the label value of their template.</p>
+<p>If your target image was associated with a camera calibration context, positional and dimensional results are returned with respect to the relative coordinate system of the target image. Otherwise, these results are returned in pixels, relative to the top-left pixel in the target image.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultbeadid-in-ail_id"><code>ResultBeadId</code> <em>(in, AIL_ID)</em><a href="#resultbeadid-in-ail_id" class="hash-link" aria-label="Direct link to resultbeadid-in-ail_id" title="Direct link to resultbeadid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the bead result buffer from which to get results.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="labelorindex-in-ail_int"><code>LabelOrIndex</code> <em>(in, AIL_INT)</em><a href="#labelorindex-in-ail_int" class="hash-link" aria-label="Direct link to labelorindex-in-ail_int" title="Direct link to labelorindex-in-ail_int" translate="no">​</a></h3>
+<p>Specifies the label or index of the template for which to get results, or specifies that you are getting general results related to all templates. This parameter must be set to one of the following values:</p>
+<p><em>For specifying where you are getting results</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_TEMPLATE_INDEX</code></td><td>Specifies the index of the template for which to get results.</td></tr><tr><td><code>M_TEMPLATE_LABEL</code></td><td>Specifies the label of the template for which to get results.</td></tr><tr><td><code>M_GENERAL</code></td><td>Specifies to get general results related to all templates.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultindex-in-ail_int"><code>ResultIndex</code> <em>(in, AIL_INT)</em><a href="#resultindex-in-ail_int" class="hash-link" aria-label="Direct link to resultindex-in-ail_int" title="Direct link to resultindex-in-ail_int" translate="no">​</a></h3>
+<p>Specifies the trained points (one or all) for which to get results or specifies that you are getting general results. This parameter must be set to one of the following values:</p>
+<p><em>For specifying the trained points for which to get results or for specifying general results</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>.</td></tr><tr><td><code>M_ALL</code></td><td>Specifies to get results for each trained point in the template.</td></tr></tbody></table>
+<p>In this case, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter must be set to <strong>M_TEMPLATE_INDEX()</strong> or <strong>M_TEMPLATE_LABEL()</strong>. |
+| <code>M_GENERAL</code> | Specifies to get general results.</p>
+<p>To get general results related to all templates, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>.</p>
+<p>To get general results related to a specific template, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter must be set to <strong>M_TEMPLATE_INDEX()</strong> or <strong>M_TEMPLATE_LABEL()</strong>. |
+| <code>Value</code> | Specifies the index of the trained point for which to get results. Valid indices range from 0 (the first point) to the total number of trained points in the template minus 1. To get the number of trained points in the template, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>MbeadGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_NUMBER</code></a>.</p>
+<p>When specifying the index of the trained point, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter must be set to <strong>M_TEMPLATE_INDEX()</strong> or <strong>M_TEMPLATE_LABEL()</strong>. |</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resulttype-in-ail_int64"><code>ResultType</code> <em>(in, AIL_INT64)</em><a href="#resulttype-in-ail_int64" class="hash-link" aria-label="Direct link to resulttype-in-ail_int64" title="Direct link to resulttype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the result to get.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-the-status-of-results">For retrieving the status of results<a href="#for-retrieving-the-status-of-results" class="hash-link" aria-label="Direct link to For retrieving the status of results" title="Direct link to For retrieving the status of results" translate="no">​</a></h3>
+<p>To get the status of results, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultType</code></a> parameter can be set to the following value.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status"><code>M_STATUS</code><a href="#m_status" class="hash-link" aria-label="Direct link to m_status" title="Direct link to m_status" translate="no">​</a></h3>
+<p>Retrieves whether results have passed or failed verification.  To retrieve the status of results related to all templates, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>. In this case, you will get a passing status only if all status results (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_...</code></a>) of all templates have passed verification.  To retrieve the status of results related to a specific template, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter to the label or index of the template and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>. In this case, you will get a passing status only if the template&#x27;s corresponding measured bead has passed all of the following: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_GAP_TOLERANCE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_GAP_MAX</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_SCORE</code></a>.  To retrieve the status of results related to one or all trained points, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter to the label or index of a template and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific value or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>. In this case, you will get a passing status only if the trained point&#x27;s corresponding measured point has passed all of the following: <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_SEARCH</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_FOUND</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_OFFSET</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_WIDTH_MAX</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_WIDTH_MIN</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_STATUS_GAP_MAX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies that the results have not passed verification.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies that the results have passed verification.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-the-number-of-templates-or-the-number-of-trained-points-in-a-template">For retrieving the number of templates or the number of trained points in a template<a href="#for-retrieving-the-number-of-templates-or-the-number-of-trained-points-in-a-template" class="hash-link" aria-label="Direct link to For retrieving the number of templates or the number of trained points in a template" title="Direct link to For retrieving the number of templates or the number of trained points in a template" translate="no">​</a></h3>
+<p>To retrieve the number of templates or the number of trained points in a template, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultType</code></a> parameter can be set to the following value.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number"><code>M_NUMBER</code><a href="#m_number" class="hash-link" aria-label="Direct link to m_number" title="Direct link to m_number" translate="no">​</a></h3>
+<p>Retrieves the number of templates or the number of trained points in a template. To retrieve the number of templates, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameters to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>. To retrieve the number of trained points in a template, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter to the index or label of the template and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-related-to-a-template-measured-bead">For retrieving results related to a template (measured bead)<a href="#for-retrieving-results-related-to-a-template-measured-bead" class="hash-link" aria-label="Direct link to For retrieving results related to a template (measured bead)" title="Direct link to For retrieving results related to a template (measured bead)" translate="no">​</a></h3>
+<p>To retrieve results related to a template&#x27;s corresponding measured bead, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultType</code></a> parameter should be set to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter to the index or label of the template for which to get results (<strong>M_TEMPLATE_INDEX()</strong> or <strong>M_TEMPLATE_LABEL()</strong>) and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closure"><code>M_CLOSURE</code><a href="#m_closure" class="hash-link" aria-label="Direct link to m_closure" title="Direct link to m_closure" translate="no">​</a></h3>
+<p>Retrieves whether the measured bead is closed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the measured bead is not closed.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the measured bead is closed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gap_coverage"><code>M_GAP_COVERAGE</code><a href="#m_gap_coverage" class="hash-link" aria-label="Direct link to m_gap_coverage" title="Direct link to m_gap_coverage" translate="no">​</a></h3>
+<p>Retrieves the percentage of the total gap in the measured bead, relative to the length of the expected measured bead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gap_max_length"><code>M_GAP_MAX_LENGTH</code><a href="#m_gap_max_length" class="hash-link" aria-label="Direct link to m_gap_max_length" title="Direct link to m_gap_max_length" translate="no">​</a></h3>
+<p>Retrieves the length of the longest uninterrupted chain of trained points that were not found in the bead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intensity_max"><code>M_INTENSITY_MAX</code><a href="#m_intensity_max" class="hash-link" aria-label="Direct link to m_intensity_max" title="Direct link to m_intensity_max" translate="no">​</a></h3>
+<p>Retrieves the maximum pixel intensity of the measured bead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intensity_max_index"><code>M_INTENSITY_MAX_INDEX</code><a href="#m_intensity_max_index" class="hash-link" aria-label="Direct link to m_intensity_max_index" title="Direct link to m_intensity_max_index" translate="no">​</a></h3>
+<p>Retrieves the index of the trained point that corresponds to the maximum intensity of the measured bead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that Aurora Imaging Library could not establish a maximum pixel intensity. This can occur if, for example, no bead was found in the target image.</td></tr><tr><td><code>Value</code></td><td>Specifies the index of the trained point that corresponds to the maximum intensity.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intensity_min"><code>M_INTENSITY_MIN</code><a href="#m_intensity_min" class="hash-link" aria-label="Direct link to m_intensity_min" title="Direct link to m_intensity_min" translate="no">​</a></h3>
+<p>Retrieves the minimum pixel intensity of the measured bead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intensity_min_index"><code>M_INTENSITY_MIN_INDEX</code><a href="#m_intensity_min_index" class="hash-link" aria-label="Direct link to m_intensity_min_index" title="Direct link to m_intensity_min_index" translate="no">​</a></h3>
+<p>Retrieves the index of the trained point that corresponds to the minimum intensity of the measured bead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that Aurora Imaging Library could not establish a minimum pixel intensity. This can occur if, for example, no bead was found in the target image.</td></tr><tr><td><code>Value</code></td><td>Specifies the index of the trained point that corresponds to the minimum intensity.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_label_value"><code>M_LABEL_VALUE</code><a href="#m_label_value" class="hash-link" aria-label="Direct link to m_label_value" title="Direct link to m_label_value" translate="no">​</a></h3>
+<p>Retrieves the label of the template corresponding to the index specified with <strong>M_TEMPLATE_INDEX()</strong>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_found"><code>M_NUMBER_FOUND</code><a href="#m_number_found" class="hash-link" aria-label="Direct link to m_number_found" title="Direct link to m_number_found" translate="no">​</a></h3>
+<p>Retrieves the number of trained points that have a corresponding measured point in the bead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_offset_max"><code>M_OFFSET_MAX</code><a href="#m_offset_max" class="hash-link" aria-label="Direct link to m_offset_max" title="Direct link to m_offset_max" translate="no">​</a></h3>
+<p>Retrieves the maximum linear distance between the position of a trained point and the position of its corresponding measured point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_offset_max_index"><code>M_OFFSET_MAX_INDEX</code><a href="#m_offset_max_index" class="hash-link" aria-label="Direct link to m_offset_max_index" title="Direct link to m_offset_max_index" translate="no">​</a></h3>
+<p>Retrieves the index of the trained point that represents the maximum offset of the measured bead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that Aurora Imaging Library could not establish a maximum offset. This can occur if, for example, no bead was found in the target image.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies the index of the trained point that corresponds to the maximum offset.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_score"><code>M_SCORE</code><a href="#m_score" class="hash-link" aria-label="Direct link to m_score" title="Direct link to m_score" translate="no">​</a></h3>
+<p>Retrieves the percentage of trained points that have a corresponding measured point with a passing status, relative to the total number of trained points in the template.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_gap_tolerance"><code>M_STATUS_GAP_TOLERANCE</code><a href="#m_status_gap_tolerance" class="hash-link" aria-label="Direct link to m_status_gap_tolerance" title="Direct link to m_status_gap_tolerance" translate="no">​</a></h3>
+<p>Retrieves whether the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GAP_COVERAGE</code></a> result has passed or failed the gap tolerance criterion, as specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>MbeadControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_GAP_TOLERANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies that the result is greater than the gap tolerance criterion.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies that the result is less than or equal to the gap tolerance criterion.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_score"><code>M_STATUS_SCORE</code><a href="#m_status_score" class="hash-link" aria-label="Direct link to m_status_score" title="Direct link to m_status_score" translate="no">​</a></h3>
+<p>Retrieves whether the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_SCORE</code></a> result has passed or failed the acceptance criterion, as specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>MbeadControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_ACCEPTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies that the result is greater than the acceptance criterion.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies that the result is less than or equal to the acceptance criterion.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_width_average"><code>M_WIDTH_AVERAGE</code><a href="#m_width_average" class="hash-link" aria-label="Direct link to m_width_average" title="Direct link to m_width_average" translate="no">​</a></h3>
+<p>Retrieves the average width of the measured bead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_width_max"><code>M_WIDTH_MAX</code><a href="#m_width_max" class="hash-link" aria-label="Direct link to m_width_max" title="Direct link to m_width_max" translate="no">​</a></h3>
+<p>Retrieves the maximum width of the measured bead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_width_max_index"><code>M_WIDTH_MAX_INDEX</code><a href="#m_width_max_index" class="hash-link" aria-label="Direct link to m_width_max_index" title="Direct link to m_width_max_index" translate="no">​</a></h3>
+<p>Retrieves the index of the trained point that corresponds to the maximum width of the measured bead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that Aurora Imaging Library could not establish a maximum width. This can occur if, for example, no bead was found in the target image.</td></tr><tr><td><code>Value</code></td><td>Specifies the index of the trained point that corresponds to the maximum width.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_width_min"><code>M_WIDTH_MIN</code><a href="#m_width_min" class="hash-link" aria-label="Direct link to m_width_min" title="Direct link to m_width_min" translate="no">​</a></h3>
+<p>Retrieves the minimum width of the measured bead.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_width_min_index"><code>M_WIDTH_MIN_INDEX</code><a href="#m_width_min_index" class="hash-link" aria-label="Direct link to m_width_min_index" title="Direct link to m_width_min_index" translate="no">​</a></h3>
+<p>Retrieves the index of the trained point that corresponds to the minimum width of the measured bead.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID</code></td><td>Specifies that Aurora Imaging Library could not establish a minimum width. This can occur if, for example, no bead was found in the target image.</td></tr><tr><td><code>Value</code></td><td>Specifies the index of the trained point that corresponds to the minimum width.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-related-to-trained-points-measured-points">For retrieving results related to trained points (measured points)<a href="#for-retrieving-results-related-to-trained-points-measured-points" class="hash-link" aria-label="Direct link to For retrieving results related to trained points (measured points)" title="Direct link to For retrieving results related to trained points (measured points)" translate="no">​</a></h3>
+<p>To retrieve results related to a trained point&#x27;s (one or all) corresponding measured point, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultType</code></a> parameter should be set to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter to the index or label of the template for which to get results (<strong>M_TEMPLATE_INDEX()</strong> or <strong>M_TEMPLATE_LABEL()</strong>) and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific value or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle"><code>M_ANGLE</code><a href="#m_angle" class="hash-link" aria-label="Direct link to m_angle" title="Direct link to m_angle" translate="no">​</a></h3>
+<p>Retrieves the angle of the measured bead at the position of the measured point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_pos_x"><code>M_END_POS_X</code><a href="#m_end_pos_x" class="hash-link" aria-label="Direct link to m_end_pos_x" title="Direct link to m_end_pos_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the right edge of the bead, at a point that is collinear with the measured point and a corresponding point on the left edge. Note that left and right are established from the bead&#x27;s direction, which follows the sequence of measured points in increasing order. This value is only supported for stripe-beads.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_pos_y"><code>M_END_POS_Y</code><a href="#m_end_pos_y" class="hash-link" aria-label="Direct link to m_end_pos_y" title="Direct link to m_end_pos_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the right edge of the bead, at a point that is collinear with the measured point and a corresponding point on the left edge. Note that left and right are established from the bead&#x27;s direction, which follows the sequence of measured points in increasing order. This value is only supported for stripe-beads.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intensity"><code>M_INTENSITY</code><a href="#m_intensity" class="hash-link" aria-label="Direct link to m_intensity" title="Direct link to m_intensity" translate="no">​</a></h3>
+<p>Retrieves the intensity of the measured bead at the position of the measured point. This value is only supported for stripe-beads.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_offset"><code>M_OFFSET</code><a href="#m_offset" class="hash-link" aria-label="Direct link to m_offset" title="Direct link to m_offset" translate="no">​</a></h3>
+<p>Retrieves the linear distance between the trained point and its corresponding measured point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_x"><code>M_POSITION_X</code><a href="#m_position_x" class="hash-link" aria-label="Direct link to m_position_x" title="Direct link to m_position_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the measured point. The position is taken at the center of the bead width, at that point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_position_y"><code>M_POSITION_Y</code><a href="#m_position_y" class="hash-link" aria-label="Direct link to m_position_y" title="Direct link to m_position_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the measured point. The position is taken at the center of the bead width, at that point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_pos_x"><code>M_START_POS_X</code><a href="#m_start_pos_x" class="hash-link" aria-label="Direct link to m_start_pos_x" title="Direct link to m_start_pos_x" translate="no">​</a></h3>
+<p>Retrieves the X-coordinate of the left edge of the bead, at a point that is collinear with the measured point and a corresponding point on the right edge. Note that left and right are established from the bead&#x27;s direction, which follows the sequence of measured points in increasing order. This value is only supported for stripe-beads.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_pos_y"><code>M_START_POS_Y</code><a href="#m_start_pos_y" class="hash-link" aria-label="Direct link to m_start_pos_y" title="Direct link to m_start_pos_y" translate="no">​</a></h3>
+<p>Retrieves the Y-coordinate of the left edge of the bead, at a point that is collinear with the measured point and a corresponding point on the right edge. Note that left and right are established from the bead&#x27;s direction, which follows the sequence of measured points in increasing order. This value is only supported for stripe-beads.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_search"><code>M_STATUS_SEARCH</code><a href="#m_status_search" class="hash-link" aria-label="Direct link to m_status_search" title="Direct link to m_status_search" translate="no">​</a></h3>
+<p>Retrieves whether Aurora Imaging Library considers it possible to establish the measured point, given the current settings. For example, if the search box corresponding to a measured point falls outside the target image, Aurora Imaging Library returns <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> since you can never establish a measured point that is beyond the boundaries of the image.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies that Aurora Imaging Library considers it impossible to establish the measured point.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies that Aurora Imaging Library considers it possible to establish the measured point.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_trained_index"><code>M_TRAINED_INDEX</code><a href="#m_trained_index" class="hash-link" aria-label="Direct link to m_trained_index" title="Direct link to m_trained_index" translate="no">​</a></h3>
+<p>Retrieves the index of the trained point that corresponds to the measured point. This can be useful to get the indices of all trained points (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_trained_position_x"><code>M_TRAINED_POSITION_X</code><a href="#m_trained_position_x" class="hash-link" aria-label="Direct link to m_trained_position_x" title="Direct link to m_trained_position_x" translate="no">​</a></h3>
+<p>Retrieves the X-position of the trained point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_trained_position_y"><code>M_TRAINED_POSITION_Y</code><a href="#m_trained_position_y" class="hash-link" aria-label="Direct link to m_trained_position_y" title="Direct link to m_trained_position_y" translate="no">​</a></h3>
+<p>Retrieves the Y-position of the trained point.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_width_value"><code>M_WIDTH_VALUE</code><a href="#m_width_value" class="hash-link" aria-label="Direct link to m_width_value" title="Direct link to m_width_value" translate="no">​</a></h3>
+<p>Retrieves the width of the measured bead at the position of the measured point. This value is only supported for stripe-beads.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-related-to-a-template-measured-bead-or-to-trained-points-measured-points">For retrieving results related to a template (measured bead) or to trained points (measured points)<a href="#for-retrieving-results-related-to-a-template-measured-bead-or-to-trained-points-measured-points" class="hash-link" aria-label="Direct link to For retrieving results related to a template (measured bead) or to trained points (measured points)" title="Direct link to For retrieving results related to a template (measured bead) or to trained points (measured points)" translate="no">​</a></h3>
+<p>To retrieve results related to a template&#x27;s corresponding measured bead, or to a trained point&#x27;s (one or all) corresponding measured point, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultType</code></a> parameter can be set to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>LabelOrIndex</code></a> parameter to the index or label of the template for which to get results (<strong>M_TEMPLATE_INDEX()</strong> or <strong>M_TEMPLATE_LABEL()</strong>). When retrieving results related to a template, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>. When retrieving results related to the trained points, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific value or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_found"><code>M_STATUS_FOUND</code><a href="#m_status_found" class="hash-link" aria-label="Direct link to m_status_found" title="Direct link to m_status_found" translate="no">​</a></h3>
+<p>Retrieves the found status of the related template or trained point.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned if all trained points have a corresponding measured point (all were found). Otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> is returned.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned for each trained point, depending on whether the corresponding measured point was found. If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific trained point, only the status of that point is returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies a failing status.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies a passing status.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_gap_max"><code>M_STATUS_GAP_MAX</code><a href="#m_status_gap_max" class="hash-link" aria-label="Direct link to m_status_gap_max" title="Direct link to m_status_gap_max" translate="no">​</a></h3>
+<p>Retrieves whether the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GAP_MAX_LENGTH</code></a> result has passed or failed the maximum gap criterion, as specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>MbeadControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_GAP_MAX_LENGTH</code></a>.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned if the longest uninterrupted chain of trained points that were not found in the measured bead is less than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GAP_MAX_LENGTH</code></a>. Otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> is returned.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned for each trained point, depending on whether its associated measured point was not found, and is part of a gap that has failed the maximum gap criterion. If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific trained point, only the status of that point is returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies a failing status.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies a passing status.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_intensity_max"><code>M_STATUS_INTENSITY_MAX</code><a href="#m_status_intensity_max" class="hash-link" aria-label="Direct link to m_status_intensity_max" title="Direct link to m_status_intensity_max" translate="no">​</a></h3>
+<p>Retrieves whether the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_INTENSITY</code></a> result has passed or failed the criterion for the highest pixel intensity allowed, as specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>MbeadControl</code></a> with <em>NominalIntensity</em> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_INTENSITY_DELTA_POS</code></a>. This value is only supported for stripe-beads. The nominal intensity can either be established by the training phase (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_AUTO</code></a>) or with an explicit value (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_INTENSITY_NOMINAL</code></a>).  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned if all measured points have an intensity that is lower than the highest intensity allowed. Otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> is returned.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned for each trained point, depending on whether its corresponding measured point has failed or passed the maximum color criterion. If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific trained point, only the status of that point is returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies a failing status.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies a passing status.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_intensity_min"><code>M_STATUS_INTENSITY_MIN</code><a href="#m_status_intensity_min" class="hash-link" aria-label="Direct link to m_status_intensity_min" title="Direct link to m_status_intensity_min" translate="no">​</a></h3>
+<p>Retrieves whether the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_INTENSITY</code></a> result has passed or failed the criterion for the lowest intensity allowed, as specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>MbeadControl</code></a> with <em>NominalIntensity</em> - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_INTENSITY_DELTA_NEG</code></a>. This value is only supported for stripe-beads. The nominal intensity can either be established by the training phase (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_AUTO</code></a>) or with an explicit value (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_INTENSITY_NOMINAL</code></a>).  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned if all measured points have an intensity that is higher than the lowest intensity allowed. Otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> is returned.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned for each trained point, depending on whether its measured point has failed or passed the minimum color criterion. If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific trained point, only the status of that point is returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies a failing status.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies a passing status.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_offset"><code>M_STATUS_OFFSET</code><a href="#m_status_offset" class="hash-link" aria-label="Direct link to m_status_offset" title="Direct link to m_status_offset" translate="no">​</a></h3>
+<p>Retrieves whether the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_OFFSET</code></a> result has passed or failed the maximum offset criterion, as specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>MbeadControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_OFFSET_MAX</code></a>.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned if all measured points pass the maximum offset criterion. Otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> is returned.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned for each trained point, depending on whether its measured point has failed or passed the maximum offset criterion. If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific trained point, only the status of that point is returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies a failing status.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies a passing status.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_width_max"><code>M_STATUS_WIDTH_MAX</code><a href="#m_status_width_max" class="hash-link" aria-label="Direct link to m_status_width_max" title="Direct link to m_status_width_max" translate="no">​</a></h3>
+<p>Retrieves whether the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_WIDTH_VALUE</code></a> result has passed or failed the maximum width criterion, as specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>MbeadControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_TRAINING_WIDTH_NOMINAL</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_WIDTH_DELTA_POS</code></a>.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned if all measured points pass the maximum width criterion. Otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> is returned.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned for each trained point, depending on whether its measured point has failed or passed the maximum width criterion. If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific trained point, only the status of that point is returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies a failing status.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies a passing status.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_width_min"><code>M_STATUS_WIDTH_MIN</code><a href="#m_status_width_min" class="hash-link" aria-label="Direct link to m_status_width_min" title="Direct link to m_status_width_min" translate="no">​</a></h3>
+<p>Retrieves whether the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_WIDTH_VALUE</code></a> result has passed or failed the minimum width criterion, as specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>MbeadControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_TRAINING_WIDTH_NOMINAL</code></a> - <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadControl"><code>M_WIDTH_DELTA_NEG</code></a>.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned if all measured points pass the minimum width criterion. Otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> is returned.  If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_FAIL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>M_PASS</code></a> is returned for each trained point, depending on whether its measured point has failed or passed the minimum width criterion. If you set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetResult"><code>ResultIndex</code></a> parameter to a specific trained point, only the status of that point is returned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies a failing status.</td></tr><tr><td><code>M_PASS</code></td><td>Specifies a passing status.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-whether-results-are-available">Combination Constants — For determining whether results are available<a href="#combination-constants--for-determining-whether-results-are-available" class="hash-link" aria-label="Direct link to Combination Constants — For determining whether results are available" title="Direct link to Combination Constants — For determining whether results are available" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify whether a result is available.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_available"><code>M_AVAILABLE</code><a href="#m_available" class="hash-link" aria-label="Direct link to m_available" title="Direct link to m_available" translate="no">​</a></h4>
+<p>Retrieves whether the requested result type is available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the requested result type is not available.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the requested result type is available.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values">Combination Constants — For determining the required array size (number of elements) to store the returned values<a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" title="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required array size (number of elements) to store the returned values.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested results to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_id"><code>M_TYPE_AIL_ID</code><a href="#m_type_ail_id" class="hash-link" aria-label="Direct link to m_type_ail_id" title="Direct link to m_type_ail_id" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_ID</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT64</em>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadGetNeighbors"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MbeadGetNeighbors</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/MbeadInquire"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MbeadInquire</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#resultbeadid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ResultBeadId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#labelorindex-in-ail_int" class="table-of-contents__link toc-highlight"><code>LabelOrIndex</code> <em>(in, AIL_INT)</em></a></li><li><a href="#resultindex-in-ail_int" class="table-of-contents__link toc-highlight"><code>ResultIndex</code> <em>(in, AIL_INT)</em></a></li><li><a href="#resulttype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ResultType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-retrieving-the-status-of-results" class="table-of-contents__link toc-highlight">For retrieving the status of results</a></li><li><a href="#m_status" class="table-of-contents__link toc-highlight"><code>M_STATUS</code></a></li><li><a href="#for-retrieving-the-number-of-templates-or-the-number-of-trained-points-in-a-template" class="table-of-contents__link toc-highlight">For retrieving the number of templates or the number of trained points in a template</a></li><li><a href="#m_number" class="table-of-contents__link toc-highlight"><code>M_NUMBER</code></a></li><li><a href="#for-retrieving-results-related-to-a-template-measured-bead" class="table-of-contents__link toc-highlight">For retrieving results related to a template (measured bead)</a></li><li><a href="#m_closure" class="table-of-contents__link toc-highlight"><code>M_CLOSURE</code></a></li><li><a href="#m_gap_coverage" class="table-of-contents__link toc-highlight"><code>M_GAP_COVERAGE</code></a></li><li><a href="#m_gap_max_length" class="table-of-contents__link toc-highlight"><code>M_GAP_MAX_LENGTH</code></a></li><li><a href="#m_intensity_max" class="table-of-contents__link toc-highlight"><code>M_INTENSITY_MAX</code></a></li><li><a href="#m_intensity_max_index" class="table-of-contents__link toc-highlight"><code>M_INTENSITY_MAX_INDEX</code></a></li><li><a href="#m_intensity_min" class="table-of-contents__link toc-highlight"><code>M_INTENSITY_MIN</code></a></li><li><a href="#m_intensity_min_index" class="table-of-contents__link toc-highlight"><code>M_INTENSITY_MIN_INDEX</code></a></li><li><a href="#m_label_value" class="table-of-contents__link toc-highlight"><code>M_LABEL_VALUE</code></a></li><li><a href="#m_number_found" class="table-of-contents__link toc-highlight"><code>M_NUMBER_FOUND</code></a></li><li><a href="#m_offset_max" class="table-of-contents__link toc-highlight"><code>M_OFFSET_MAX</code></a></li><li><a href="#m_offset_max_index" class="table-of-contents__link toc-highlight"><code>M_OFFSET_MAX_INDEX</code></a></li><li><a href="#m_score" class="table-of-contents__link toc-highlight"><code>M_SCORE</code></a></li><li><a href="#m_status_gap_tolerance" class="table-of-contents__link toc-highlight"><code>M_STATUS_GAP_TOLERANCE</code></a></li><li><a href="#m_status_score" class="table-of-contents__link toc-highlight"><code>M_STATUS_SCORE</code></a></li><li><a href="#m_width_average" class="table-of-contents__link toc-highlight"><code>M_WIDTH_AVERAGE</code></a></li><li><a href="#m_width_max" class="table-of-contents__link toc-highlight"><code>M_WIDTH_MAX</code></a></li><li><a href="#m_width_max_index" class="table-of-contents__link toc-highlight"><code>M_WIDTH_MAX_INDEX</code></a></li><li><a href="#m_width_min" class="table-of-contents__link toc-highlight"><code>M_WIDTH_MIN</code></a></li><li><a href="#m_width_min_index" class="table-of-contents__link toc-highlight"><code>M_WIDTH_MIN_INDEX</code></a></li><li><a href="#for-retrieving-results-related-to-trained-points-measured-points" class="table-of-contents__link toc-highlight">For retrieving results related to trained points (measured points)</a></li><li><a href="#m_angle" class="table-of-contents__link toc-highlight"><code>M_ANGLE</code></a></li><li><a href="#m_end_pos_x" class="table-of-contents__link toc-highlight"><code>M_END_POS_X</code></a></li><li><a href="#m_end_pos_y" class="table-of-contents__link toc-highlight"><code>M_END_POS_Y</code></a></li><li><a href="#m_intensity" class="table-of-contents__link toc-highlight"><code>M_INTENSITY</code></a></li><li><a href="#m_offset" class="table-of-contents__link toc-highlight"><code>M_OFFSET</code></a></li><li><a href="#m_position_x" class="table-of-contents__link toc-highlight"><code>M_POSITION_X</code></a></li><li><a href="#m_position_y" class="table-of-contents__link toc-highlight"><code>M_POSITION_Y</code></a></li><li><a href="#m_start_pos_x" class="table-of-contents__link toc-highlight"><code>M_START_POS_X</code></a></li><li><a href="#m_start_pos_y" class="table-of-contents__link toc-highlight"><code>M_START_POS_Y</code></a></li><li><a href="#m_status_search" class="table-of-contents__link toc-highlight"><code>M_STATUS_SEARCH</code></a></li><li><a href="#m_trained_index" class="table-of-contents__link toc-highlight"><code>M_TRAINED_INDEX</code></a></li><li><a href="#m_trained_position_x" class="table-of-contents__link toc-highlight"><code>M_TRAINED_POSITION_X</code></a></li><li><a href="#m_trained_position_y" class="table-of-contents__link toc-highlight"><code>M_TRAINED_POSITION_Y</code></a></li><li><a href="#m_width_value" class="table-of-contents__link toc-highlight"><code>M_WIDTH_VALUE</code></a></li><li><a href="#for-retrieving-results-related-to-a-template-measured-bead-or-to-trained-points-measured-points" class="table-of-contents__link toc-highlight">For retrieving results related to a template (measured bead) or to trained points (measured points)</a></li><li><a href="#m_status_found" class="table-of-contents__link toc-highlight"><code>M_STATUS_FOUND</code></a></li><li><a href="#m_status_gap_max" class="table-of-contents__link toc-highlight"><code>M_STATUS_GAP_MAX</code></a></li><li><a href="#m_status_intensity_max" class="table-of-contents__link toc-highlight"><code>M_STATUS_INTENSITY_MAX</code></a></li><li><a href="#m_status_intensity_min" class="table-of-contents__link toc-highlight"><code>M_STATUS_INTENSITY_MIN</code></a></li><li><a href="#m_status_offset" class="table-of-contents__link toc-highlight"><code>M_STATUS_OFFSET</code></a></li><li><a href="#m_status_width_max" class="table-of-contents__link toc-highlight"><code>M_STATUS_WIDTH_MAX</code></a></li><li><a href="#m_status_width_min" class="table-of-contents__link toc-highlight"><code>M_STATUS_WIDTH_MIN</code></a></li><li><a href="#combination-constants--for-determining-whether-results-are-available" class="table-of-contents__link toc-highlight">Combination Constants — For determining whether results are available</a></li><li><a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required array size (number of elements) to store the returned values</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

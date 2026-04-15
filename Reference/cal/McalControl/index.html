@@ -1,0 +1,1274 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/cal/McalControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">McalControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="McalControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"cal","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"},{"@type":"ListItem","position":2,"name":"McalControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Collapse sidebar category &#x27;cal&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><span title="McalAlloc" class="linkLabel_WmDU">McalAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAllocResult"><span title="McalAllocResult" class="linkLabel_WmDU">McalAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAssociate"><span title="McalAssociate" class="linkLabel_WmDU">McalAssociate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalCalculateHandEye"><span title="McalCalculateHandEye" class="linkLabel_WmDU">McalCalculateHandEye</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><span title="McalControl" class="linkLabel_WmDU">McalControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalCopyResult"><span title="McalCopyResult" class="linkLabel_WmDU">McalCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw"><span title="McalDraw" class="linkLabel_WmDU">McalDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw3d"><span title="McalDraw3d" class="linkLabel_WmDU">McalDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalFixture"><span title="McalFixture" class="linkLabel_WmDU">McalFixture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalFree"><span title="McalFree" class="linkLabel_WmDU">McalFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGetCoordinateSystem"><span title="McalGetCoordinateSystem" class="linkLabel_WmDU">McalGetCoordinateSystem</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><span title="McalGrid" class="linkLabel_WmDU">McalGrid</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalInquire"><span title="McalInquire" class="linkLabel_WmDU">McalInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalInquireSingle"><span title="McalInquireSingle" class="linkLabel_WmDU">McalInquireSingle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalList"><span title="McalList" class="linkLabel_WmDU">McalList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalRelativeOrigin"><span title="McalRelativeOrigin" class="linkLabel_WmDU">McalRelativeOrigin</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalRestore"><span title="McalRestore" class="linkLabel_WmDU">McalRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalSave"><span title="McalSave" class="linkLabel_WmDU">McalSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalSetCoordinateSystem"><span title="McalSetCoordinateSystem" class="linkLabel_WmDU">McalSetCoordinateSystem</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalStream"><span title="McalStream" class="linkLabel_WmDU">McalStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformCoordinate"><span title="McalTransformCoordinate" class="linkLabel_WmDU">McalTransformCoordinate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformCoordinate3dList"><span title="McalTransformCoordinate3dList" class="linkLabel_WmDU">McalTransformCoordinate3dList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformCoordinateList"><span title="McalTransformCoordinateList" class="linkLabel_WmDU">McalTransformCoordinateList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformImage"><span title="McalTransformImage" class="linkLabel_WmDU">McalTransformImage</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformResult"><span title="McalTransformResult" class="linkLabel_WmDU">McalTransformResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformResultAtPosition"><span title="McalTransformResultAtPosition" class="linkLabel_WmDU">McalTransformResultAtPosition</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalUniform"><span title="McalUniform" class="linkLabel_WmDU">McalUniform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalWarp"><span title="McalWarp" class="linkLabel_WmDU">McalWarp</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span>cal</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">McalControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>McalControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control the camera calibration information of a camera calibration context, calibrated image, or 3D draw calibration context.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">McalControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextCalOrCalibratedAilObjectId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">                        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue                        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function allows you to control a specified setting of a camera calibration context, calibrated image, or 3D draw calibration context.</p>
+<p>If you control a camera calibration setting of a calibrated image with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_VECTOR_AND_RASTER</code></a> ROI, the raster information will be discarded, causing the ROI to become an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufInquire"><code>M_VECTOR</code></a> ROI. See <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufSetRegion"><code>MbufSetRegion</code></a> for more information.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextcalorcalibratedailobjectid-out-ail_id"><code>ContextCalOrCalibratedAilObjectId</code> <em>(out, AIL_ID)</em><a href="#contextcalorcalibratedailobjectid-out-ail_id" class="hash-link" aria-label="Direct link to contextcalorcalibratedailobjectid-out-ail_id" title="Direct link to contextcalorcalibratedailobjectid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the camera calibration context, calibrated image, or 3D draw calibration context.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the setting to change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the setting&#x27;s new value.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-camera-calibration-context">For a camera calibration context<a href="#for-a-camera-calibration-context" class="hash-link" aria-label="Direct link to For a camera calibration context" title="Direct link to For a camera calibration context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlType</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlValue</code></a> parameter settings can be specified for a camera calibration context:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calibration_plane"><code>M_CALIBRATION_PLANE</code><a href="#m_calibration_plane" class="hash-link" aria-label="Direct link to m_calibration_plane" title="Direct link to m_calibration_plane" translate="no">​</a></h3>
+<p>Sets the plane in which the calibration points are defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.  For most calibration modes, the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_ABSOLUTE_COORDINATE_SYSTEM</code></a>. For an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_STATIONARY_CAMERA</code></a> type of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_3D_ROBOTICS</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_3D_ROBOTICS_ZHANG_BASED</code></a> camera calibration mode, the default is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_RELATIVE_COORDINATE_SYSTEM</code></a>.</td></tr><tr><td><code>M_ABSOLUTE_COORDINATE_SYSTEM</code></td><td>Specifies that the calibration points are defined in the absolute coordinate system.</td></tr><tr><td><code>M_RELATIVE_COORDINATE_SYSTEM</code></td><td>Specifies that the calibration points are defined in the relative coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_calibration_error_scale_factor"><code>M_DRAW_CALIBRATION_ERROR_SCALE_FACTOR</code><a href="#m_draw_calibration_error_scale_factor" class="hash-link" aria-label="Direct link to m_draw_calibration_error_scale_factor" title="Direct link to m_draw_calibration_error_scale_factor" translate="no">​</a></h3>
+<p>Sets the scale factor used when drawing arrows, representing the camera calibration error, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw"><code>McalDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw"><code>M_DRAW_CALIBRATION_ERROR</code></a>. This scale factor is either applied directly to the arrows, or applied in conjunction with Aurora Imaging Library&#x27;s automatic scaling factor, depending on whether<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DRAW_CALIBRATION_ERROR_SCALE_MODE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_ABSOLUTE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_AUTO</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the scale factor.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_calibration_error_scale_mode"><code>M_DRAW_CALIBRATION_ERROR_SCALE_MODE</code><a href="#m_draw_calibration_error_scale_mode" class="hash-link" aria-label="Direct link to m_draw_calibration_error_scale_mode" title="Direct link to m_draw_calibration_error_scale_mode" translate="no">​</a></h3>
+<p>Sets the scale mode used when drawing arrows, representing the camera calibration error, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw"><code>McalDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw"><code>M_DRAW_CALIBRATION_ERROR</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_ABSOLUTE</code> <em>(default)</em></td><td>Specifies to use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DRAW_CALIBRATION_ERROR_SCALE_FACTOR</code></a> as a scaling factor that directly multiplies the arrows&#x27; horizontal and vertical displacements.</td></tr><tr><td><code>M_AUTO</code></td><td>Specifies that Aurora Imaging Library determines the scale mode. To do this, Aurora Imaging Library makes internal assumptions to establish an ideal scaling factor that optimizes the space taken by the arrows in the destination (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw"><code>DstImageBufOrListGraId</code></a>) while reducing the chance of overlapping arrows. When using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraVectors"><code>M_AUTO</code></a>, Aurora Imaging Library multiplies the arrows&#x27; horizontal and vertical displacements by both <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DRAW_CALIBRATION_ERROR_SCALE_FACTOR</code></a> and the internally established scale factor.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_foreground_value"><code>M_FOREGROUND_VALUE</code><a href="#m_foreground_value" class="hash-link" aria-label="Direct link to m_foreground_value" title="Direct link to m_foreground_value" translate="no">​</a></h3>
+<p>Sets whether the circles in a circle grid, used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a>, are lighter or darker than the background.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code> <em>(default)</em></td><td>Determines the appropriate setting automatically.</td></tr><tr><td><code>M_FOREGROUND_BLACK</code></td><td>Specifies that the grid&#x27;s circles are darker than the background.</td></tr><tr><td><code>M_FOREGROUND_WHITE</code></td><td>Specifies that the grid&#x27;s circles are lighter than the background.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_fiducial"><code>M_GRID_FIDUCIAL</code><a href="#m_grid_fiducial" class="hash-link" aria-label="Direct link to m_grid_fiducial" title="Direct link to m_grid_fiducial" translate="no">​</a></h3>
+<p>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> will look for a fiducial in the grid.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DATAMATRIX</code></td><td>Specifies that a Data Matrix code is used as a fiducial in a chessboard grid.  This control type is only used for camera calibrations performed using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>M_CHESSBOARD_GRID</code></a>.  You must set<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>McalControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_PARTIAL</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_ENABLE</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_ANGLE_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_X</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_Y</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_NONE</code></a>. Setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_FIDUCIAL</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DATAMATRIX</code></a> in any other circumstance will generate an error when calling<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a>.</td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies that there is no fiducial in the grid.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_hint_angle_x"><code>M_GRID_HINT_ANGLE_X</code><a href="#m_grid_hint_angle_x" class="hash-link" aria-label="Direct link to m_grid_hint_angle_x" title="Direct link to m_grid_hint_angle_x" translate="no">​</a></h3>
+<p>Specifies the hint angle used to establish the direction of the X-axis of the absolute (or relative) coordinate system, when calibrating with a partial chessboard grid.  To determine the X-axis of the absolute coordinate system when using a partial grid, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> first determines the two grid lines intersecting at the reference calibration point. The X- and Y-axes are always aligned with these grid lines. By default, the X-axis of the absolute coordinate system is the grid line intersecting the reference calibration point and closest to the image&#x27;s X-axis, with the positive X-axis pointing right. To specify the other grid line and/or direction for the positive X-axis, you must specify a hint angle. When you specify a hint angle, the positive X-axis will be the grid line intersecting the reference calibration point and closest in angle to the hint angle.  This control type is only used for camera calibrations performed using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>M_CHESSBOARD_GRID</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>McalControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_PARTIAL</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_ENABLE</code></a>. Setting this control type in any other circumstance will generate an error when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies that no hint angle is used. The positive X-axis is the right-pointing grid line closest to the horizontal.</td></tr><tr><td><code>Value</code></td><td>Specifies the hint angle, measured counter-clockwise.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_hint_pixel_x"><code>M_GRID_HINT_PIXEL_X</code><a href="#m_grid_hint_pixel_x" class="hash-link" aria-label="Direct link to m_grid_hint_pixel_x" title="Direct link to m_grid_hint_pixel_x" translate="no">​</a></h3>
+<p>Specifies the X-coordinate of the hint pixel. The hint pixel is used to help <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> determine the location of the grid&#x27;s reference calibration point. Specify an X- and Y-coordinate for the hint pixel that is close to the grid&#x27;s reference calibration point in the image.  For complete grids, the corner calibration point closest to the origin of the pixel coordinate system (top-left corner of the image) is the default reference calibration point. If your grid&#x27;s reference calibration point is not near the origin of the pixel coordinate system (for instance, if the grid is rotated in the image), you must specify a hint pixel. For complete grids, the corner calibration point closest to the hint pixel will be the grid&#x27;s reference calibration point.  For complete grids, given that the number of rows and columns are specified, there can be either 2 valid corners (for a rectangle grid) or 4 corners (for a square grid), so the approximate X-coordinate does not have to be very precise.  For partial chessboard grids (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_PARTIAL</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_ENABLE</code></a>), the calibration point closest to the center of the image is the default reference calibration point. If you need your grid&#x27;s reference calibration point in another place, you must specify a hint pixel; the calibration point closest to the hint pixel will be the grid&#x27;s reference calibration point.  This control type is only used for camera calibrations performed using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies not to use a hint pixel.  When using a complete grid, the calibration point closest to the top-left corner of the image is used as the grid&#x27;s reference calibration point.  When using a partial grid, the calibration point closest to the center of the image is used as the grid&#x27;s reference calibration point.  &gt; <strong>Note:</strong> Note that when you set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_X</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_NONE</code></a>, you must also set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_Y</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_NONE</code></a>.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate of the hint pixel, in the pixel coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_hint_pixel_y"><code>M_GRID_HINT_PIXEL_Y</code><a href="#m_grid_hint_pixel_y" class="hash-link" aria-label="Direct link to m_grid_hint_pixel_y" title="Direct link to m_grid_hint_pixel_y" translate="no">​</a></h3>
+<p>Specifies the Y-coordinate of the hint pixel. The hint pixel is used to help <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> determine the location of the grid&#x27;s reference calibration point. Specify an X- and Y-coordinate for the hint pixel that is close to the grid&#x27;s reference calibration point in the image.  For complete grids, the corner calibration point closest to the origin of the pixel coordinate system (top-left corner of the image) is the default reference calibration point. If your grid&#x27;s reference calibration point is not near the origin of the pixel coordinate system (for instance, if the grid is rotated in the image), you must specify a hint pixel. For complete grids, the corner calibration point closest to the hint pixel will be the grid&#x27;s reference calibration point.  For complete grids, given that the number of rows and columns are specified, there can be either 2 valid corners (for a rectangle grid) or 4 corners (for a square grid), so the approximate Y-coordinate does not have to be very precise.  For partial chessboard grids (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_PARTIAL</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_ENABLE</code></a>), the calibration point closest to the center of the image is the default reference calibration point. If you need your grid&#x27;s reference calibration point in another place, you must specify a hint pixel; the calibration point closest to the hint pixel will be the grid&#x27;s reference calibration point.  This control type is only used for camera calibrations performed using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies not to use a hint pixel.  When using a complete grid, the calibration point closest to the top-left corner of the image is used as the grid&#x27;s reference calibration point.  When using a partial grid, the calibration point closest to the center of the image is used as the grid&#x27;s reference calibration point.  &gt; <strong>Note:</strong> Note that when you set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_Y</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_NONE</code></a>, you must also set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_X</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_NONE</code></a>.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate of the hint pixel, in the pixel coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_partial"><code>M_GRID_PARTIAL</code><a href="#m_grid_partial" class="hash-link" aria-label="Direct link to m_grid_partial" title="Direct link to m_grid_partial" translate="no">​</a></h3>
+<p>Specifies whether <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> can assume that the chessboard grid is complete. A complete grid is one the has the exact number of rows and columns specified when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> will only calibrate the camera setup when a complete grid is found in the image.  For complete grids, the grid&#x27;s default reference calibration point is the calibration point at the corner of the grid, closest to the top-left corner of the image. To specify the calibration point at another corner of the grid, for instance to indicate that the physical grid is rotated, you must specify a hint pixel using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_Y</code></a>.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> can calibrate the camera setup when a partial grid is found in the image.  When you enable partial grids, the calibration point closest to the center of the image is the grid&#x27;s default reference calibration point. You can specify an alternative reference calibration point by specifying a hint pixel using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_X</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_HINT_PIXEL_Y</code></a>.  When you enable partial grids, you can specify how to handle potential outlying false calibration points using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_SHAPE</code></a>.  When enabling partial grids, you must specify that the grid is an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>M_CHESSBOARD_GRID</code></a> type grid when calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a>, which includes both chessboard grids and fiducial grids. Enabling partial grids with an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>M_CIRCLE_GRID</code></a> type grid will result in an error.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_grid_shape"><code>M_GRID_SHAPE</code><a href="#m_grid_shape" class="hash-link" aria-label="Direct link to m_grid_shape" title="Direct link to m_grid_shape" translate="no">​</a></h3>
+<p>Specifies how to handle potential outlying calibration points, using assumptions about the grid&#x27;s shape in the image.  When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_PARTIAL</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DISABLE</code></a>, you must set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_GRID_SHAPE</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_RECTANGLE</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> will try to find the outside edges of a partial chessboard grid if it is assumed to be rectangular. This affects whether potential calibration points are included in the camera calibration or are excluded as outliers.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ANY</code></td><td>Specifies to include all potential calibration points in the image; <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> will not look for the boundary of the real-world grid. In this case, the shape of the partial grid is not bound.  Set this value when the partial grid in the image is not a rectangle. This can be either when the real-world grid is a rectangle, but is occluded by an object in the image, as in the image on the left, or when the real-world grid is not a rectangle, as in the image on the right.  <em>[Image: cal_grid_shape_any.png]</em>  With no fixed shape, no potential calibration point can be excluded as an outlier because it is not clear where the boundary of the partial grid is. This could lead to outlying false calibration points being included in the camera calibration, which would reduce the calibration&#x27;s precision. In this case, it is highly recommended to check all calibration points extracted from the image using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a>are valid, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw"><code>McalDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw"><code>M_DRAW_IMAGE_POINTS</code></a>.</td></tr><tr><td><code>M_RECTANGLE</code> <em>(default)</em></td><td>Specifies to exclude potential calibration points in the image that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> determines are outside the boundaries of the partial grid. In this case, the shape of the partial grid is a rectangle.  Set this value if the real-world grid is rectangular and the image of the partial grid is not occluded by any objects in the image. Note that a partial grid is still considered rectangular if the boundary of the partial grid is obscured by the end of the image.  <em>[Image: cal_grid_shape_rectangle.png]</em>  In this case, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> will look for the boundaries of the partial grid in the image. This allows the possibility of excluding false calibration points outside of the grid.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_link_tool_and_head"><code>M_LINK_TOOL_AND_HEAD</code><a href="#m_link_tool_and_head" class="hash-link" aria-label="Direct link to m_link_tool_and_head" title="Direct link to m_link_tool_and_head" translate="no">​</a></h3>
+<p>Sets a rigid link between the head (camera or relative) coordinate system and the tool coordinate system.  When a rigid link exists between the tool and the head, moving one automatically moves the other accordingly. However, this link can be broken using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_LINK_TOOL_AND_HEAD</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DISABLE</code></a>. You can then set the tool coordinate system to a known location without affecting the head coordinate system. After moving the tool coordinate system, you can then re-establish the link so that you move the head coordinate system by moving the tool coordinate system.  &gt; <strong>Note:</strong> Note that for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_LINK_TOOL_AND_HEAD</code></a>, the head represents a camera or a reference/calibration object depending on the type of robotic setup. When the robotic setup is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_MOVING_CAMERA</code></a>, the head refers to a camera attached to the last joint of the robotic arm. When the robotic setup is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_STATIONARY_CAMERA</code></a>, the head refers to a reference/calibration object attached to the last joint of the robotic arm.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies to remove the link between the two coordinate systems, allowing both to be moved independently.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to link the two coordinate systems, allowing both to be moved together.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_localization_nb_iterations_max"><code>M_LOCALIZATION_NB_ITERATIONS_MAX</code><a href="#m_localization_nb_iterations_max" class="hash-link" aria-label="Direct link to m_localization_nb_iterations_max" title="Direct link to m_localization_nb_iterations_max" translate="no">​</a></h3>
+<p>Specifies the maximum number of iterations to attempt to fit the provided points when calculating the new position of the camera or relative coordinate system, when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalList"><code>McalList</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>M_DISPLACE_CAMERA_COORD</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>M_DISPLACE_RELATIVE_COORD</code></a> respectively. If the specified number of iterations is large, the computation could take longer to run, but the algorithm will be more robust. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_LOCALIZATION_NB_OUTLIERS_MAX</code></a> is set to 0, only 1 iteration is required and no more will be performed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 1</code> <em>(default)</em></td><td>Specifies the number of expected outliers. Only integer values are accepted.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_localization_nb_outliers_max"><code>M_LOCALIZATION_NB_OUTLIERS_MAX</code><a href="#m_localization_nb_outliers_max" class="hash-link" aria-label="Direct link to m_localization_nb_outliers_max" title="Direct link to m_localization_nb_outliers_max" translate="no">​</a></h3>
+<p>Specifies the maximum number of possible outliers that can occur in the dataset used by <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalList"><code>McalList</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>M_DISPLACE_CAMERA_COORD</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>M_DISPLACE_RELATIVE_COORD</code></a>. If the specified number of outliers is large, more iterations are required to determine which points provide the best solution; therefore, computation can take longer, but the function will be more robust to outliers. Also, the function could fail if the value of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_LOCALIZATION_NB_ITERATIONS_MAX</code></a> is too low.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0</code> <em>(default)</em></td><td>Specifies the number of expected outliers. Only integer values are accepted.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tool_position_x"><code>M_TOOL_POSITION_X</code><a href="#m_tool_position_x" class="hash-link" aria-label="Direct link to m_tool_position_x" title="Direct link to m_tool_position_x" translate="no">​</a></h3>
+<p>Sets the X-position of the tool coordinate system in the absolute coordinate system. The X-position is initialized to 0.0.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-coordinate, in world units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tool_position_y"><code>M_TOOL_POSITION_Y</code><a href="#m_tool_position_y" class="hash-link" aria-label="Direct link to m_tool_position_y" title="Direct link to m_tool_position_y" translate="no">​</a></h3>
+<p>Sets the Y-position of the tool coordinate system in the absolute coordinate system. The Y-position is initialized to 0.0.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-coordinate, in world units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tool_position_z"><code>M_TOOL_POSITION_Z</code><a href="#m_tool_position_z" class="hash-link" aria-label="Direct link to m_tool_position_z" title="Direct link to m_tool_position_z" translate="no">​</a></h3>
+<p>Sets the Z-position of the tool coordinate system in the absolute coordinate system. The Z-position is initialized to 0.0.  &gt; <strong>Note:</strong> When using the linear interpolation or perspective transformation camera calibration mode, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_TOOL_POSITION_Z</code></a> must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DEFAULT</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the Z-coordinate, in world units.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_tool_rotation_z"><code>M_TOOL_ROTATION_Z</code><a href="#m_tool_rotation_z" class="hash-link" aria-label="Direct link to m_tool_rotation_z" title="Direct link to m_tool_rotation_z" translate="no">​</a></h3>
+<p>Sets the angle at which to rotate the tool coordinate system about its Z-axis.  A positive angle rotates the tool coordinate system in the counter-clockwise direction (from the positive X-axis to the negative Y-axis of the tool coordinate system). The rotation angle is initialized to 0.0.  <em>[Image: tool_rotation.png]</em>  &gt; <strong>Note:</strong> Note that this control is only available for 2D-based camera calibration modes (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_UNIFORM_TRANSFORMATION</code></a>,<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_LINEAR_INTERPOLATION</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_PERSPECTIVE_TRANSFORMATION</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the angle, in degrees.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_transform_cache"><code>M_TRANSFORM_CACHE</code><a href="#m_transform_cache" class="hash-link" aria-label="Direct link to m_transform_cache" title="Direct link to m_transform_cache" translate="no">​</a></h3>
+<p>Sets whether to use a cache to accelerate the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformImage"><code>McalTransformImage</code></a> function.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies not to use a cache. Not using a cache saves memory but slows down subsequent calls to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalTransformImage"><code>McalTransformImage</code></a>.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to use a cache.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-3d-based-camera-calibration-context">For a 3D-based camera calibration context<a href="#for-a-3d-based-camera-calibration-context" class="hash-link" aria-label="Direct link to For a 3D-based camera calibration context" title="Direct link to For a 3D-based camera calibration context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlType</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlValue</code></a> parameter settings can be specified only for a 3D-based camera calibration context ( <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_TSAI_BASED</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_ZHANG_BASED</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_3D_ROBOTICS</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_3D_ROBOTICS_ZHANG_BASED</code></a>):</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_ccd_aspect_ratio"><code>M_CCD_ASPECT_RATIO</code><a href="#m_ccd_aspect_ratio" class="hash-link" aria-label="Direct link to m_ccd_aspect_ratio" title="Direct link to m_ccd_aspect_ratio" translate="no">​</a></h3>
+<p>Sets the width-to-height ratio of the individual elements of the CCD. If this value is not set and is required by the camera calibration mode, the ratio will default to 1.0.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1.0</code> <em>(default)</em></td><td>Specifies that the width and height of the CCD element are equal.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the value of the width of a CCD element divided by its height.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distortion_radial_1"><code>M_DISTORTION_RADIAL_1</code><a href="#m_distortion_radial_1" class="hash-link" aria-label="Direct link to m_distortion_radial_1" title="Direct link to m_distortion_radial_1" translate="no">​</a></h3>
+<p>Sets the value of the second order radial distortion coefficient used in the camera calibration algorithm. Radial distortion refers to image distortions caused by the camera&#x27;s lens.  &gt; <strong>Note:</strong> Use this to override the value determined by the previous call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalList"><code>McalList</code></a> if you want to use calibration values from another source.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the value of the second order radial distortion coefficient.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distortion_radial_2"><code>M_DISTORTION_RADIAL_2</code><a href="#m_distortion_radial_2" class="hash-link" aria-label="Direct link to m_distortion_radial_2" title="Direct link to m_distortion_radial_2" translate="no">​</a></h3>
+<p>Sets the value of the fourth order radial distortion coefficient used in the camera calibration algorithm. Radial distortion refers to image distortions caused by the camera&#x27;s lens. This radial distortion coefficient is only supported for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_ZHANG_BASED</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalAlloc"><code>M_3D_ROBOTICS_ZHANG_BASED</code></a> camera calibration modes.  &gt; <strong>Note:</strong> Use this to override the value determined by the previous call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalList"><code>McalList</code></a> if you want to use calibration values from another source.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the value of the fourth order radial distortion coefficient.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_focal_length"><code>M_FOCAL_LENGTH</code><a href="#m_focal_length" class="hash-link" aria-label="Direct link to m_focal_length" title="Direct link to m_focal_length" translate="no">​</a></h3>
+<p>Sets the effective focal length of the pinhole camera model used in the camera calibration.  &gt; <strong>Note:</strong> Use this to override the value determined by the previous call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalGrid"><code>McalGrid</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalList"><code>McalList</code></a> if you want to use calibration values from another source.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the effective focal length of the pinhole camera model, expressed in horizontal pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_point_x"><code>M_PRINCIPAL_POINT_X</code><a href="#m_principal_point_x" class="hash-link" aria-label="Direct link to m_principal_point_x" title="Direct link to m_principal_point_x" translate="no">​</a></h3>
+<p>Sets the X-coordinate of the intersection of the camera&#x27;s optical axis and the image plane.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies half of the image&#x27;s width, in pixels.</td></tr><tr><td><code>Value</code></td><td>Specifies the X-coordinate, in pixels. This only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_PRINCIPAL_POINT_Y</code></a> is not set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DEFAULT</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_principal_point_y"><code>M_PRINCIPAL_POINT_Y</code><a href="#m_principal_point_y" class="hash-link" aria-label="Direct link to m_principal_point_y" title="Direct link to m_principal_point_y" translate="no">​</a></h3>
+<p>Sets the Y-coordinate of the intersection of the camera&#x27;s optical axis and the image plane.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies half of the image&#x27;s height, in pixels.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-coordinate, in pixels. This only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_PRINCIPAL_POINT_X</code></a> is not set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DEFAULT</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-calibrated-image">For a calibrated image<a href="#for-a-calibrated-image" class="hash-link" aria-label="Direct link to For a calibrated image" title="Direct link to For a calibrated image" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlType</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlValue</code></a> parameter settings can be specified for a calibrated image:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calibration_child_offset_x"><code>M_CALIBRATION_CHILD_OFFSET_X</code><a href="#m_calibration_child_offset_x" class="hash-link" aria-label="Direct link to m_calibration_child_offset_x" title="Direct link to m_calibration_child_offset_x" translate="no">​</a></h3>
+<p>Sets the X-offset of a child buffer, relative to its highest order calibrated parent buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-offset, relative to the child buffer&#x27;s highest order calibrated parent buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calibration_child_offset_y"><code>M_CALIBRATION_CHILD_OFFSET_Y</code><a href="#m_calibration_child_offset_y" class="hash-link" aria-label="Direct link to m_calibration_child_offset_y" title="Direct link to m_calibration_child_offset_y" translate="no">​</a></h3>
+<p>Sets the Y-offset of a child buffer, relative to its highest order calibrated parent buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-offset, relative to the child buffer&#x27;s highest order calibrated parent buffer.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-calibrated-and-corrected-image">For a calibrated and corrected image<a href="#for-a-calibrated-and-corrected-image" class="hash-link" aria-label="Direct link to For a calibrated and corrected image" title="Direct link to For a calibrated and corrected image" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlType</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlValue</code></a> parameter settings can be specified for a calibrated image:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_gray_level_size_z"><code>M_GRAY_LEVEL_SIZE_Z</code><a href="#m_gray_level_size_z" class="hash-link" aria-label="Direct link to m_gray_level_size_z" title="Direct link to m_gray_level_size_z" translate="no">​</a></h3>
+<p>Sets the difference in height corresponding to a difference of one gray level in a fully-corrected depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INVALID_SCALE</code> <em>(default)</em></td><td>Specifies that the image is not a depth map.</td></tr><tr><td><code>Value != 0.0</code></td><td>Specifies the height, in world units, corresponding to a difference of one gray level.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_world_pos_z"><code>M_WORLD_POS_Z</code><a href="#m_world_pos_z" class="hash-link" aria-label="Direct link to m_world_pos_z" title="Direct link to m_world_pos_z" translate="no">​</a></h3>
+<p>Sets the real-world Z-offset of a gray level of 0 in the corrected image, useful in depth maps.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the base height of a gray level of 0.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-3d-draw-calibration-context">For a 3D draw calibration context<a href="#for-a-3d-draw-calibration-context" class="hash-link" aria-label="Direct link to For a 3D draw calibration context" title="Direct link to For a 3D draw calibration context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlType</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>ControlValue</code></a> parameter settings can be specified for a 3D draw calibration context:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_absolute_coordinate_system"><code>M_DRAW_ABSOLUTE_COORDINATE_SYSTEM</code><a href="#m_draw_absolute_coordinate_system" class="hash-link" aria-label="Direct link to m_draw_absolute_coordinate_system" title="Direct link to m_draw_absolute_coordinate_system" translate="no">​</a></h3>
+<p>Sets whether to draw the absolute coordinate system&#x27;s axes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw the absolute coordinate system&#x27;s axes.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw the absolute coordinate system&#x27;s axes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_camera_coordinate_system"><code>M_DRAW_CAMERA_COORDINATE_SYSTEM</code><a href="#m_draw_camera_coordinate_system" class="hash-link" aria-label="Direct link to m_draw_camera_coordinate_system" title="Direct link to m_draw_camera_coordinate_system" translate="no">​</a></h3>
+<p>Sets whether to draw the camera coordinate system&#x27;s axes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw the camera coordinate system&#x27;s axes.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw the camera coordinate system&#x27;s axes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_camera_coordinate_system_name"><code>M_DRAW_CAMERA_COORDINATE_SYSTEM_NAME</code><a href="#m_draw_camera_coordinate_system_name" class="hash-link" aria-label="Direct link to m_draw_camera_coordinate_system_name" title="Direct link to m_draw_camera_coordinate_system_name" translate="no">​</a></h3>
+<p>Sets the name to draw for the camera coordinate system; the initial value is &quot;Camera&quot;.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>&quot;String&quot;</code></td><td>Specifies the name of the camera coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_coordinate_system_length"><code>M_DRAW_COORDINATE_SYSTEM_LENGTH</code><a href="#m_draw_coordinate_system_length" class="hash-link" aria-label="Direct link to m_draw_coordinate_system_length" title="Direct link to m_draw_coordinate_system_length" translate="no">​</a></h3>
+<p>Sets the length at which to draw the specified coordinate system&#x27;s axes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the length (in world units) at which to draw the axes of the specified coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_frustum"><code>M_DRAW_FRUSTUM</code><a href="#m_draw_frustum" class="hash-link" aria-label="Direct link to m_draw_frustum" title="Direct link to m_draw_frustum" translate="no">​</a></h3>
+<p>Sets whether to draw the frustum of the camera&#x27;s view. The frustum is the truncated pyramid of vision that originates at the camera&#x27;s position and, when drawn, ends at the relative XY plane. When enabled, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DRAW_FRUSTUM</code></a> draws a wireframe frustum, using the color specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DRAW_FRUSTUM_COLOR</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw the frustum.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw the frustum.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_frustum_color"><code>M_DRAW_FRUSTUM_COLOR</code><a href="#m_draw_frustum_color" class="hash-link" aria-label="Direct link to m_draw_frustum_color" title="Direct link to m_draw_frustum_color" translate="no">​</a></h3>
+<p>Sets the frustum&#x27;s color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value when using the 2D graphics context to draw in an 8-bit, 3-band buffer.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code></td><td>Specifies the color white.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value to draw in an 8-bit, 3-band buffer. The red, green, and blue values must be values between 0 and 255, inclusive.</td></tr><tr><td><code>M_COLOR_YELLOW</code> <em>(default)</em></td><td>Specifies the color yellow.</td></tr><tr><td><code>M_NO_COLOR</code></td><td>Specifies no color.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_relative_coordinate_system"><code>M_DRAW_RELATIVE_COORDINATE_SYSTEM</code><a href="#m_draw_relative_coordinate_system" class="hash-link" aria-label="Direct link to m_draw_relative_coordinate_system" title="Direct link to m_draw_relative_coordinate_system" translate="no">​</a></h3>
+<p>Sets whether to draw the relative coordinate system&#x27;s axes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw the relative coordinate system&#x27;s axes.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw the relative coordinate system&#x27;s axes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_relative_coordinate_system_name"><code>M_DRAW_RELATIVE_COORDINATE_SYSTEM_NAME</code><a href="#m_draw_relative_coordinate_system_name" class="hash-link" aria-label="Direct link to m_draw_relative_coordinate_system_name" title="Direct link to m_draw_relative_coordinate_system_name" translate="no">​</a></h3>
+<p>Sets the name to draw for the relative coordinate system; the initial value is &quot;Relative&quot;.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>&quot;String&quot;</code></td><td>Specifies the name of the relative coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_relative_xy_plane"><code>M_DRAW_RELATIVE_XY_PLANE</code><a href="#m_draw_relative_xy_plane" class="hash-link" aria-label="Direct link to m_draw_relative_xy_plane" title="Direct link to m_draw_relative_xy_plane" translate="no">​</a></h3>
+<p>Sets whether to draw the relative XY plane.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw the relative XY plane.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw the relative XY plane.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_relative_xy_plane_color_fill"><code>M_DRAW_RELATIVE_XY_PLANE_COLOR_FILL</code><a href="#m_draw_relative_xy_plane_color_fill" class="hash-link" aria-label="Direct link to m_draw_relative_xy_plane_color_fill" title="Direct link to m_draw_relative_xy_plane_color_fill" translate="no">​</a></h3>
+<p>Sets the relative XY plane&#x27;s fill color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value when using the 2D graphics context to draw in an 8-bit, 3-band buffer.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code></td><td>Specifies the color white.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value to draw in an 8-bit, 3-band buffer. The red, green, and blue values must be values between 0 and 255, inclusive.</td></tr><tr><td><code>M_AUTO_COLOR</code> <em>(default)</em></td><td>Specifies either the color white or the texture image.  If a texture image is specified (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw3d"><code>McalDraw3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw3d"><code>RelXYPlaneTextureImageBufId</code></a>), the texture image is drawn on the laser plane. Otherwise, the plane is drawn with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_COLOR_WHITE</code></a>.</td></tr><tr><td><code>M_NO_COLOR</code></td><td>Specifies no color.</td></tr><tr><td><code>M_TEXTURE_IMAGE</code></td><td>Specifies to use the image passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw3d"><code>McalDraw3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw3d"><code>RelXYPlaneTextureImageBufId</code></a>, when drawing the relative XY plane. The texture image is typically a 2D image of the 3D scene. For example, you can specify the image used for calibration. If no texture image is specified using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalDraw3d"><code>McalDraw3d</code></a>, setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_DRAW_RELATIVE_XY_PLANE_COLOR_FILL</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalControl"><code>M_TEXTURE_IMAGE</code></a> will cause an error.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_relative_xy_plane_color_outline"><code>M_DRAW_RELATIVE_XY_PLANE_COLOR_OUTLINE</code><a href="#m_draw_relative_xy_plane_color_outline" class="hash-link" aria-label="Direct link to m_draw_relative_xy_plane_color_outline" title="Direct link to m_draw_relative_xy_plane_color_outline" translate="no">​</a></h3>
+<p>Sets the relative XY plane&#x27;s outline color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value when using the 2D graphics context to draw in an 8-bit, 3-band buffer.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value to draw in an 8-bit, 3-band buffer. The red, green, and blue values must be values between 0 and 255, inclusive.</td></tr><tr><td><code>M_COLOR_WHITE</code> <em>(default)</em></td><td>Specifies the color white.</td></tr><tr><td><code>M_NO_COLOR</code></td><td>Specifies no color.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_relative_xy_plane_opacity"><code>M_DRAW_RELATIVE_XY_PLANE_OPACITY</code><a href="#m_draw_relative_xy_plane_opacity" class="hash-link" aria-label="Direct link to m_draw_relative_xy_plane_opacity" title="Direct link to m_draw_relative_xy_plane_opacity" translate="no">​</a></h3>
+<p>Sets the relative XY plane&#x27;s opacity.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the relative XY plane&#x27;s opacity.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_robot_base_coordinate_system"><code>M_DRAW_ROBOT_BASE_COORDINATE_SYSTEM</code><a href="#m_draw_robot_base_coordinate_system" class="hash-link" aria-label="Direct link to m_draw_robot_base_coordinate_system" title="Direct link to m_draw_robot_base_coordinate_system" translate="no">​</a></h3>
+<p>Sets whether to draw the robot base coordinate system&#x27;s axes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw the robot base coordinate system&#x27;s axes.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw the robot base coordinate system&#x27;s axes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_tool_coordinate_system"><code>M_DRAW_TOOL_COORDINATE_SYSTEM</code><a href="#m_draw_tool_coordinate_system" class="hash-link" aria-label="Direct link to m_draw_tool_coordinate_system" title="Direct link to m_draw_tool_coordinate_system" translate="no">​</a></h3>
+<p>Sets whether to draw the tool coordinate system&#x27;s axes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to draw the tool coordinate system&#x27;s axes.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to draw the tool coordinate system&#x27;s axes.</td></tr></tbody></table></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalCalculateHandEye"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">McalCalculateHandEye</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/McalCopyResult"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">McalCopyResult</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextcalorcalibratedailobjectid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextCalOrCalibratedAilObjectId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-a-camera-calibration-context" class="table-of-contents__link toc-highlight">For a camera calibration context</a></li><li><a href="#m_calibration_plane" class="table-of-contents__link toc-highlight"><code>M_CALIBRATION_PLANE</code></a></li><li><a href="#m_draw_calibration_error_scale_factor" class="table-of-contents__link toc-highlight"><code>M_DRAW_CALIBRATION_ERROR_SCALE_FACTOR</code></a></li><li><a href="#m_draw_calibration_error_scale_mode" class="table-of-contents__link toc-highlight"><code>M_DRAW_CALIBRATION_ERROR_SCALE_MODE</code></a></li><li><a href="#m_foreground_value" class="table-of-contents__link toc-highlight"><code>M_FOREGROUND_VALUE</code></a></li><li><a href="#m_grid_fiducial" class="table-of-contents__link toc-highlight"><code>M_GRID_FIDUCIAL</code></a></li><li><a href="#m_grid_hint_angle_x" class="table-of-contents__link toc-highlight"><code>M_GRID_HINT_ANGLE_X</code></a></li><li><a href="#m_grid_hint_pixel_x" class="table-of-contents__link toc-highlight"><code>M_GRID_HINT_PIXEL_X</code></a></li><li><a href="#m_grid_hint_pixel_y" class="table-of-contents__link toc-highlight"><code>M_GRID_HINT_PIXEL_Y</code></a></li><li><a href="#m_grid_partial" class="table-of-contents__link toc-highlight"><code>M_GRID_PARTIAL</code></a></li><li><a href="#m_grid_shape" class="table-of-contents__link toc-highlight"><code>M_GRID_SHAPE</code></a></li><li><a href="#m_link_tool_and_head" class="table-of-contents__link toc-highlight"><code>M_LINK_TOOL_AND_HEAD</code></a></li><li><a href="#m_localization_nb_iterations_max" class="table-of-contents__link toc-highlight"><code>M_LOCALIZATION_NB_ITERATIONS_MAX</code></a></li><li><a href="#m_localization_nb_outliers_max" class="table-of-contents__link toc-highlight"><code>M_LOCALIZATION_NB_OUTLIERS_MAX</code></a></li><li><a href="#m_tool_position_x" class="table-of-contents__link toc-highlight"><code>M_TOOL_POSITION_X</code></a></li><li><a href="#m_tool_position_y" class="table-of-contents__link toc-highlight"><code>M_TOOL_POSITION_Y</code></a></li><li><a href="#m_tool_position_z" class="table-of-contents__link toc-highlight"><code>M_TOOL_POSITION_Z</code></a></li><li><a href="#m_tool_rotation_z" class="table-of-contents__link toc-highlight"><code>M_TOOL_ROTATION_Z</code></a></li><li><a href="#m_transform_cache" class="table-of-contents__link toc-highlight"><code>M_TRANSFORM_CACHE</code></a></li><li><a href="#for-a-3d-based-camera-calibration-context" class="table-of-contents__link toc-highlight">For a 3D-based camera calibration context</a></li><li><a href="#m_ccd_aspect_ratio" class="table-of-contents__link toc-highlight"><code>M_CCD_ASPECT_RATIO</code></a></li><li><a href="#m_distortion_radial_1" class="table-of-contents__link toc-highlight"><code>M_DISTORTION_RADIAL_1</code></a></li><li><a href="#m_distortion_radial_2" class="table-of-contents__link toc-highlight"><code>M_DISTORTION_RADIAL_2</code></a></li><li><a href="#m_focal_length" class="table-of-contents__link toc-highlight"><code>M_FOCAL_LENGTH</code></a></li><li><a href="#m_principal_point_x" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_POINT_X</code></a></li><li><a href="#m_principal_point_y" class="table-of-contents__link toc-highlight"><code>M_PRINCIPAL_POINT_Y</code></a></li><li><a href="#for-a-calibrated-image" class="table-of-contents__link toc-highlight">For a calibrated image</a></li><li><a href="#m_calibration_child_offset_x" class="table-of-contents__link toc-highlight"><code>M_CALIBRATION_CHILD_OFFSET_X</code></a></li><li><a href="#m_calibration_child_offset_y" class="table-of-contents__link toc-highlight"><code>M_CALIBRATION_CHILD_OFFSET_Y</code></a></li><li><a href="#for-a-calibrated-and-corrected-image" class="table-of-contents__link toc-highlight">For a calibrated and corrected image</a></li><li><a href="#m_gray_level_size_z" class="table-of-contents__link toc-highlight"><code>M_GRAY_LEVEL_SIZE_Z</code></a></li><li><a href="#m_world_pos_z" class="table-of-contents__link toc-highlight"><code>M_WORLD_POS_Z</code></a></li><li><a href="#for-a-3d-draw-calibration-context" class="table-of-contents__link toc-highlight">For a 3D draw calibration context</a></li><li><a href="#m_draw_absolute_coordinate_system" class="table-of-contents__link toc-highlight"><code>M_DRAW_ABSOLUTE_COORDINATE_SYSTEM</code></a></li><li><a href="#m_draw_camera_coordinate_system" class="table-of-contents__link toc-highlight"><code>M_DRAW_CAMERA_COORDINATE_SYSTEM</code></a></li><li><a href="#m_draw_camera_coordinate_system_name" class="table-of-contents__link toc-highlight"><code>M_DRAW_CAMERA_COORDINATE_SYSTEM_NAME</code></a></li><li><a href="#m_draw_coordinate_system_length" class="table-of-contents__link toc-highlight"><code>M_DRAW_COORDINATE_SYSTEM_LENGTH</code></a></li><li><a href="#m_draw_frustum" class="table-of-contents__link toc-highlight"><code>M_DRAW_FRUSTUM</code></a></li><li><a href="#m_draw_frustum_color" class="table-of-contents__link toc-highlight"><code>M_DRAW_FRUSTUM_COLOR</code></a></li><li><a href="#m_draw_relative_coordinate_system" class="table-of-contents__link toc-highlight"><code>M_DRAW_RELATIVE_COORDINATE_SYSTEM</code></a></li><li><a href="#m_draw_relative_coordinate_system_name" class="table-of-contents__link toc-highlight"><code>M_DRAW_RELATIVE_COORDINATE_SYSTEM_NAME</code></a></li><li><a href="#m_draw_relative_xy_plane" class="table-of-contents__link toc-highlight"><code>M_DRAW_RELATIVE_XY_PLANE</code></a></li><li><a href="#m_draw_relative_xy_plane_color_fill" class="table-of-contents__link toc-highlight"><code>M_DRAW_RELATIVE_XY_PLANE_COLOR_FILL</code></a></li><li><a href="#m_draw_relative_xy_plane_color_outline" class="table-of-contents__link toc-highlight"><code>M_DRAW_RELATIVE_XY_PLANE_COLOR_OUTLINE</code></a></li><li><a href="#m_draw_relative_xy_plane_opacity" class="table-of-contents__link toc-highlight"><code>M_DRAW_RELATIVE_XY_PLANE_OPACITY</code></a></li><li><a href="#m_draw_robot_base_coordinate_system" class="table-of-contents__link toc-highlight"><code>M_DRAW_ROBOT_BASE_COORDINATE_SYSTEM</code></a></li><li><a href="#m_draw_tool_coordinate_system" class="table-of-contents__link toc-highlight"><code>M_DRAW_TOOL_COORDINATE_SYSTEM</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

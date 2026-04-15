@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/dmr/MdmrControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MdmrControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MdmrControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"dmr","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"},{"@type":"ListItem","position":2,"name":"MdmrControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Collapse sidebar category &#x27;dmr&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrAlloc"><span title="MdmrAlloc" class="linkLabel_WmDU">MdmrAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrAllocResult"><span title="MdmrAllocResult" class="linkLabel_WmDU">MdmrAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><span title="MdmrControl" class="linkLabel_WmDU">MdmrControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><span title="MdmrControlFont" class="linkLabel_WmDU">MdmrControlFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlStringModel"><span title="MdmrControlStringModel" class="linkLabel_WmDU">MdmrControlStringModel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrDraw"><span title="MdmrDraw" class="linkLabel_WmDU">MdmrDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrExportFont"><span title="MdmrExportFont" class="linkLabel_WmDU">MdmrExportFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrFree"><span title="MdmrFree" class="linkLabel_WmDU">MdmrFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrGetResult"><span title="MdmrGetResult" class="linkLabel_WmDU">MdmrGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrImportFont"><span title="MdmrImportFont" class="linkLabel_WmDU">MdmrImportFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><span title="MdmrInquire" class="linkLabel_WmDU">MdmrInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><span title="MdmrInquireFont" class="linkLabel_WmDU">MdmrInquireFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireStringModel"><span title="MdmrInquireStringModel" class="linkLabel_WmDU">MdmrInquireStringModel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrName"><span title="MdmrName" class="linkLabel_WmDU">MdmrName</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrPreprocess"><span title="MdmrPreprocess" class="linkLabel_WmDU">MdmrPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrRead"><span title="MdmrRead" class="linkLabel_WmDU">MdmrRead</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrRestore"><span title="MdmrRestore" class="linkLabel_WmDU">MdmrRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrSave"><span title="MdmrSave" class="linkLabel_WmDU">MdmrSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrStream"><span title="MdmrStream" class="linkLabel_WmDU">MdmrStream</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span>dmr</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MdmrControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MdmrControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control a SureDotOCR context or result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MdmrControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextOrResultDmrId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">           </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue           </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function allows you to control a SureDotOCR context or a SureDotOCR result buffer. This includes adding or deleting a font or string model from a context, or removing all results from a result buffer. To inquire about a context, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><code>MdmrInquire</code></a>. To get results from a result buffer, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrGetResult"><code>MdmrGetResult</code></a>.</p>
+<p>To control the fonts and string models held by a SureDotOCR context, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>MdmrControlFont</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlStringModel"><code>MdmrControlStringModel</code></a>, respectively.</p>
+<p>For a successful read operation, you must specify an explicit value for the control types that set the diameter of the dots in the string&#x27;s characters (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER</code></a>). You must specify the dimensions of the dot-matrix text block using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_TEXT_BLOCK_HEIGHT</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_TEXT_BLOCK_WIDTH</code></a>; the dot-matrix text block is the area in the image buffer (or in the buffer&#x27;s region of interest) that includes all dot-matrix text.</p>
+<p>You must preprocess the SureDotOCR context after you have finished adjusting context settings and before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrRead"><code>MdmrRead</code></a>. To know if a context needs to be preprocessed, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><code>MdmrInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><code>M_PREPROCESSED</code></a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultdmrid-out-ail_id"><code>ContextOrResultDmrId</code> <em>(out, AIL_ID)</em><a href="#contextorresultdmrid-out-ail_id" class="hash-link" aria-label="Direct link to contextorresultdmrid-out-ail_id" title="Direct link to contextorresultdmrid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the SureDotOCR context or result buffer to control. The context must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrAlloc"><code>MdmrAlloc</code></a>. The result buffer must have been previously allocated on the system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrAllocResult"><code>MdmrAllocResult</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of control to set.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the required value for the control.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-controlling-a-suredotocr-context-setting">For controlling a SureDotOCR context setting<a href="#for-controlling-a-suredotocr-context-setting" class="hash-link" aria-label="Direct link to For controlling a SureDotOCR context setting" title="Direct link to For controlling a SureDotOCR context setting" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ControlValue</code></a> parameter settings are used to control a setting of the SureDotOCR context specified with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ContextOrResultDmrId</code></a> parameter. SureDotOCR can only read strings that adhere to these settings (they apply to all strings in the context). If there are strings that require different settings, use a separate context.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dot_diameter"><code>M_DOT_DIAMETER</code><a href="#m_dot_diameter" class="hash-link" aria-label="Direct link to m_dot_diameter" title="Direct link to m_dot_diameter" translate="no">​</a></h3>
+<p>Sets the diameter of the dots that make up the characters in the strings.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the diameter, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dot_diameter_spread"><code>M_DOT_DIAMETER_SPREAD</code><a href="#m_dot_diameter_spread" class="hash-link" aria-label="Direct link to m_dot_diameter_spread" title="Direct link to m_dot_diameter_spread" translate="no">​</a></h3>
+<p>Sets the supported spread of the dots. This essentially sets the tolerance for the size of the dot diameter, as a value centered around the specified nominal dot diameter (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER</code></a>). For example, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER</code></a> is set to 4.0 and this control type is set to 2.0, Aurora Imaging Library will read all dots between the size of 3.0 and 5.0.  This control type is ignored if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER_SPREAD_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DISABLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the tolerance for the size of the dot diameter, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dot_diameter_spread_mode"><code>M_DOT_DIAMETER_SPREAD_MODE</code><a href="#m_dot_diameter_spread_mode" class="hash-link" aria-label="Direct link to m_dot_diameter_spread_mode" title="Direct link to m_dot_diameter_spread_mode" translate="no">​</a></h3>
+<p>Sets whether the dot diameter can vary within a specified range of possible diameters specified using<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER_SPREAD</code></a> is ignored.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER_SPREAD</code></a> is used during a read operation.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_dot_diameter_step"><code>M_DOT_DIAMETER_STEP</code><a href="#m_dot_diameter_step" class="hash-link" aria-label="Direct link to m_dot_diameter_step" title="Direct link to m_dot_diameter_step" translate="no">​</a></h3>
+<p>Sets the increment between steps that will be used when checking for dots in the range of supported dot diameters, set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER_SPREAD</code></a>. For example, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER</code></a> is set to 1.0, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER_SPREAD</code></a> is set to 2.0, and this control type is set to 0.2, Aurora Imaging Library will check 1.2, 1.4, 1.6 and so on.  This control type is ignored if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DOT_DIAMETER_SPREAD_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DISABLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the step, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_foreground_value"><code>M_FOREGROUND_VALUE</code><a href="#m_foreground_value" class="hash-link" aria-label="Direct link to m_foreground_value" title="Direct link to m_foreground_value" translate="no">​</a></h3>
+<p>Sets the foreground value of the characters in the strings.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FOREGROUND_BLACK</code> <em>(default)</em></td><td>Specifies that strings with characters darker than the background will be read. For example, black characters on a white surface.</td></tr><tr><td><code>M_FOREGROUND_WHITE</code></td><td>Specifies that strings with characters lighter than the background will be read. For example, white characters on a black surface.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_italic_angle"><code>M_ITALIC_ANGLE</code><a href="#m_italic_angle" class="hash-link" aria-label="Direct link to m_italic_angle" title="Direct link to m_italic_angle" translate="no">​</a></h3>
+<p>Sets the italic angle of all the characters in the strings. The angle must be provided counter clockwise and is relative a line perpendicular to the angle of the string.<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ITALIC_ANGLE</code></a>only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ITALIC_ANGLE_MODE</code></a>is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ANGLE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>-90.0 &lt;= Value &lt;= 90.0</code> <em>(default)</em></td><td>Specifies the italic angle, in degrees. A positive angle means that the characters are leaning counter-clockwise (left leaning); a negative angle means that the characters are leaning clockwise (right leaning).</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_italic_angle_mode"><code>M_ITALIC_ANGLE_MODE</code><a href="#m_italic_angle_mode" class="hash-link" aria-label="Direct link to m_italic_angle_mode" title="Direct link to m_italic_angle_mode" translate="no">​</a></h3>
+<p>Sets whether the italic angle is detected automatically or explicitly specified. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ITALIC_ANGLE_MODE</code></a>must be set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DEFAULT</code></a>if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_ANGLE_MODE</code></a>is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DEFAULT</code></a>; otherwise, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrPreprocess"><code>MdmrPreprocess</code></a> will generate an error when called.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_AUTO</code></a>.</td></tr><tr><td><code>M_ANGLE</code></td><td>Specifies to use the italic angle specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ITALIC_ANGLE</code></a>. A string will only be read if its characters have the specified italic angle.</td></tr><tr><td><code>M_AUTO</code></td><td>Specifies that the italic angle is detected automatically. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ITALIC_ANGLE</code></a> is ignored.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_italic_pitch"><code>M_ITALIC_PITCH</code><a href="#m_italic_pitch" class="hash-link" aria-label="Direct link to m_italic_pitch" title="Direct link to m_italic_pitch" translate="no">​</a></h3>
+<p>Sets the distance between successive dot centers in the italic angle direction. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ITALIC_PITCH</code></a> only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ITALIC_PITCH_MODE</code></a>is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the pitch, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_italic_pitch_mode"><code>M_ITALIC_PITCH_MODE</code><a href="#m_italic_pitch_mode" class="hash-link" aria-label="Direct link to m_italic_pitch_mode" title="Direct link to m_italic_pitch_mode" translate="no">​</a></h3>
+<p>Sets whether the distance between successive dot centers, in the italic angle direction, is detected automatically or explicitly specified.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_AUTO</code></a>.</td></tr><tr><td><code>M_AUTO</code></td><td>Specifies to automatically establish the distance between dot centers in the italic angle direction.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ITALIC_PITCH</code></a>. A string will only be read if its characters have the specified italic pitch.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_intensity"><code>M_MAX_INTENSITY</code><a href="#m_max_intensity" class="hash-link" aria-label="Direct link to m_max_intensity" title="Direct link to m_max_intensity" translate="no">​</a></h3>
+<p>Sets the maximum pixel intensity of a character&#x27;s dots. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MAX_INTENSITY</code></a> only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MAX_INTENSITY_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 255.0</code> <em>(default)</em></td><td>Specifies the maximum pixel intensity.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_intensity_mode"><code>M_MAX_INTENSITY_MODE</code><a href="#m_max_intensity_mode" class="hash-link" aria-label="Direct link to m_max_intensity_mode" title="Direct link to m_max_intensity_mode" translate="no">​</a></h3>
+<p>Sets how to establish the maximum pixel intensity of a character&#x27;s dots. For a dot to be part of a character, its pixel intensity must be less than or equal to the maximum intensity.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies to automatically establish the maximum pixel intensity of a character&#x27;s dots. By default, SureDotOCR considers dots with any pixel intensity less than or equal to 255.0.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the maximum pixel intensity value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MAX_INTENSITY</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_contrast"><code>M_MIN_CONTRAST</code><a href="#m_min_contrast" class="hash-link" aria-label="Direct link to m_min_contrast" title="Direct link to m_min_contrast" translate="no">​</a></h3>
+<p>Sets the minimum contrast between a character and its background. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MIN_CONTRAST</code></a> only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MIN_CONTRAST_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 255.0</code> <em>(default)</em></td><td>Specifies the minimum contrast.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_contrast_mode"><code>M_MIN_CONTRAST_MODE</code><a href="#m_min_contrast_mode" class="hash-link" aria-label="Direct link to m_min_contrast_mode" title="Direct link to m_min_contrast_mode" translate="no">​</a></h3>
+<p>Sets how to establish the minimum contrast (difference in pixel intensity) between a character (foreground) and its background. For a character to be read, its contrast must be greater than or equal to the minimum contrast.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies to automatically establish the minimum contrast of characters. Regardless of the automatically calculated value, SureDotOCR will not read characters with a contrast less than 15.0.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the minimum contrast value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MIN_CONTRAST</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_intensity"><code>M_MIN_INTENSITY</code><a href="#m_min_intensity" class="hash-link" aria-label="Direct link to m_min_intensity" title="Direct link to m_min_intensity" translate="no">​</a></h3>
+<p>Sets the minimum pixel intensity of a character&#x27;s dots. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MIN_INTENSITY</code></a> only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MIN_INTENSITY_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 255.0</code> <em>(default)</em></td><td>Specifies the minimum pixel intensity.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_min_intensity_mode"><code>M_MIN_INTENSITY_MODE</code><a href="#m_min_intensity_mode" class="hash-link" aria-label="Direct link to m_min_intensity_mode" title="Direct link to m_min_intensity_mode" translate="no">​</a></h3>
+<p>Sets how to establish the minimum pixel intensity of a character&#x27;s dots. For a dot to be part of a character, its intensity must be greater than or equal to the minimum intensity.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies to automatically establish the minimum pixel intensity of character dots. By default, SureDotOCR considers dots with any pixel intensity greater than or equal to 0.0.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the minimum pixel intensity value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_MIN_INTENSITY</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_space_size_max"><code>M_SPACE_SIZE_MAX</code><a href="#m_space_size_max" class="hash-link" aria-label="Direct link to m_space_size_max" title="Direct link to m_space_size_max" translate="no">​</a></h3>
+<p>Sets the value with which to determine the maximum width of a space character. This value is interpreted according to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MAX_MODE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 3.0.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the maximum width value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_space_size_max_mode"><code>M_SPACE_SIZE_MAX_MODE</code><a href="#m_space_size_max_mode" class="hash-link" aria-label="Direct link to m_space_size_max_mode" title="Direct link to m_space_size_max_mode" translate="no">​</a></h3>
+<p>Sets how to determine the maximum width of a space character. If the actual distance between two characters is greater than the maximum width, the read operation considers them part of separate strings. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MAX_MODE</code></a> indicates how to interpret <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MAX</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CHAR_WIDTH_FACTOR</code> <em>(default)</em></td><td>Specifies that the maximum width of a space character is determined by multiplying the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MAX</code></a> value by the string&#x27;s maximum character width, in pixels. For example, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MAX</code></a> is set to 3 (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DEFAULT</code></a>), the maximum space character width is equivalent to three times the string&#x27;s maximum character width.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies no maximum space width. This is equivalent to allowing an infinite amount of maximum space. In this case, no amount of space between aligned characters can cause them to be part of separate strings. This does not apply to characters on separate lines or severely misaligned characters.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_space_size_min"><code>M_SPACE_SIZE_MIN</code><a href="#m_space_size_min" class="hash-link" aria-label="Direct link to m_space_size_min" title="Direct link to m_space_size_min" translate="no">​</a></h3>
+<p>Sets the value with which to determine the minimum width of a space character. This value is interpreted according to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MIN_MODE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 1.0.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the minimum width value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_space_size_min_mode"><code>M_SPACE_SIZE_MIN_MODE</code><a href="#m_space_size_min_mode" class="hash-link" aria-label="Direct link to m_space_size_min_mode" title="Direct link to m_space_size_min_mode" translate="no">​</a></h3>
+<p>Sets how to determine the minimum width of a space character. If the actual distance between two characters is less than the minimum width, SureDotOCR does not consider there to be a space. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MIN_MODE</code></a> indicates how to interpret <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MIN</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CHAR_WIDTH_FACTOR</code> <em>(default)</em></td><td>Specifies that the minimum width of a space character is determined by multiplying the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MIN</code></a> value by the string&#x27;s maximum character width, in pixels. For example, if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_SPACE_SIZE_MIN</code></a> is set to 1 (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_DEFAULT</code></a>), the minimum space character width is equivalent to the string&#x27;s maximum character width.</td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies no minimum space width. This is equivalent to allowing an infinite amount of minimum space. In this case, no amount of space between characters in a string can cause SureDotOCR to recognize an actual space.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_angle"><code>M_STRING_ANGLE</code><a href="#m_string_angle" class="hash-link" aria-label="Direct link to m_string_angle" title="Direct link to m_string_angle" translate="no">​</a></h3>
+<p>Sets at which angle to read a string, with respect to the coordinate system specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_ANGLE_INPUT_UNITS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_REGION</code></td><td>Specifies that the angle is set to the angle of the target image&#x27;s ROI. If this value is chosen but no ROI has been defined, the angle is set to 0.0° in the coordinate system specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_ANGLE_INPUT_UNITS</code></a>.</td></tr><tr><td><code>0.0 &lt;= Value &lt;= 360.0</code> <em>(default)</em></td><td>Specifies a fixed angle at which to read a string, in degrees. This is interpreted with respect to the X-axis of the coordinate system specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_ANGLE_INPUT_UNITS</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_angle_input_units"><code>M_STRING_ANGLE_INPUT_UNITS</code><a href="#m_string_angle_input_units" class="hash-link" aria-label="Direct link to m_string_angle_input_units" title="Direct link to m_string_angle_input_units" translate="no">​</a></h3>
+<p>Sets the coordinate system to use for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_ANGLE</code></a>. This control type is ignored when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_ANGLE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_ACCORDING_TO_REGION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_PIXEL</code> <em>(default)</em></td><td>Specifies to interpret the value in pixel units, with respect to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies to interpret the value in world units, with respect to the relative coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_angle_mode"><code>M_STRING_ANGLE_MODE</code><a href="#m_string_angle_mode" class="hash-link" aria-label="Direct link to m_string_angle_mode" title="Direct link to m_string_angle_mode" translate="no">​</a></h3>
+<p>Sets whether the string angle is detected automatically or explicitly specified.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_AUTO</code></a>.</td></tr><tr><td><code>M_ANGLE</code></td><td>Specifies to use the angle specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_ANGLE</code></a>; the string will be read from left to right with the characters facing upward along the specified angle. A string will only be read if it has the specified angle.</td></tr><tr><td><code>M_AUTO</code></td><td>Specifies that the string angle is detected automatically; <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_ANGLE</code></a> is ignored.</td></tr><tr><td><code>M_ORIENTATION</code></td><td>Specifies that the string will be read from left to right with the characters facing upward, or from right to left with the character facing downward. This is useful in cases where the orientation of a string is rotated 180 degrees, and this rotation does not affect the acceptability of a product (for example, if the product is placed backwards at an inspection point but is still a good part).</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_partial_char_invalid"><code>M_STRING_PARTIAL_CHAR_INVALID</code><a href="#m_string_partial_char_invalid" class="hash-link" aria-label="Direct link to m_string_partial_char_invalid" title="Direct link to m_string_partial_char_invalid" translate="no">​</a></h3>
+<p>Sets the single character string to replace invalid or unrecognized characters if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_PARTIAL_MODE</code></a> is enabled. The default value is &quot;?&quot;.  &gt; <strong>Note:</strong> Note that the specified character is validated during the preprocess operation to confirm that the selected character does not appear in any font in the context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>&quot;?&quot;</code></td><td>Specifies the default value as &quot;?&quot;.</td></tr><tr><td><code>&quot;SingleCharacterString&quot;</code></td><td>Specifies the single character string to replace the invalid or unrecognized characters.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_partial_mode"><code>M_STRING_PARTIAL_MODE</code><a href="#m_string_partial_mode" class="hash-link" aria-label="Direct link to m_string_partial_mode" title="Direct link to m_string_partial_mode" translate="no">​</a></h3>
+<p>Sets how partial strings are returned during the reading process.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies that only complete strings will be returned.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies that the best match for a partial string will be returned; unrecognized characters in the string will be replaced with<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_PARTIAL_CHAR_INVALID</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_pitch"><code>M_STRING_PITCH</code><a href="#m_string_pitch" class="hash-link" aria-label="Direct link to m_string_pitch" title="Direct link to m_string_pitch" translate="no">​</a></h3>
+<p>Sets the distance between successive dot centers, in the string angle direction. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_PITCH</code></a> only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_PITCH_MODE</code></a>is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the pitch, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_pitch_mode"><code>M_STRING_PITCH_MODE</code><a href="#m_string_pitch_mode" class="hash-link" aria-label="Direct link to m_string_pitch_mode" title="Direct link to m_string_pitch_mode" translate="no">​</a></h3>
+<p>Sets whether the distance between successive dot centers, in the string angle direction, is detected automatically or explicitly specified.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_AUTO</code></a>.</td></tr><tr><td><code>M_AUTO</code></td><td>Specifies to automatically establish the distance between dot centers in the string angle direction.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies to use the value set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_STRING_PITCH</code></a>. A string will only be read if it has the specified string pitch.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_text_block_height"><code>M_TEXT_BLOCK_HEIGHT</code><a href="#m_text_block_height" class="hash-link" aria-label="Direct link to m_text_block_height" title="Direct link to m_text_block_height" translate="no">​</a></h3>
+<p>Sets the height of the text block. This is the area that encloses all dot-matrix text in the image buffer (or in the buffer&#x27;s region of interest). The height is oriented along the vertical axis that is perpendicular to the base of the string(s) to read in the text block. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_TEXT_BLOCK_HEIGHT</code></a> only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_TEXT_BLOCK_SIZE_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the height, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_text_block_size_mode"><code>M_TEXT_BLOCK_SIZE_MODE</code><a href="#m_text_block_size_mode" class="hash-link" aria-label="Direct link to m_text_block_size_mode" title="Direct link to m_text_block_size_mode" translate="no">​</a></h3>
+<p>Sets how to establish the size of the text block. This is the area that encloses all dot-matrix text in the image buffer (or in the buffer&#x27;s region of interest).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_USER_DEFINED</code> <em>(default)</em></td><td>Specifies that the size of the rectangular block is defined by the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_TEXT_BLOCK_HEIGHT</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_TEXT_BLOCK_WIDTH</code></a> settings.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_text_block_width"><code>M_TEXT_BLOCK_WIDTH</code><a href="#m_text_block_width" class="hash-link" aria-label="Direct link to m_text_block_width" title="Direct link to m_text_block_width" translate="no">​</a></h3>
+<p>Sets the width of the text block. This is the area that encloses all dot-matrix text in the image buffer (or in the buffer&#x27;s region of interest). The width is oriented along the axis that represents the base of the string(s) to read in the text block. <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_TEXT_BLOCK_WIDTH</code></a> only has an effect if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_TEXT_BLOCK_SIZE_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the width, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_timeout"><code>M_TIMEOUT</code><a href="#m_timeout" class="hash-link" aria-label="Direct link to m_timeout" title="Direct link to m_timeout" translate="no">​</a></h3>
+<p>Sets the maximum read time for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrRead"><code>MdmrRead</code></a>. No results are returned if the read operation times out.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies an infinite amount of read time.</td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the maximum read time, in msec.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-adding-fonts-or-string-models-to-or-deleting-fonts-or-string-models-from-a-suredotocr-context">For adding fonts or string models to, or deleting fonts or string models from, a SureDotOCR context<a href="#for-adding-fonts-or-string-models-to-or-deleting-fonts-or-string-models-from-a-suredotocr-context" class="hash-link" aria-label="Direct link to For adding fonts or string models to, or deleting fonts or string models from, a SureDotOCR context" title="Direct link to For adding fonts or string models to, or deleting fonts or string models from, a SureDotOCR context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ControlValue</code></a> parameter settings are used to add fonts or string models to, or delete fonts or string models from, the SureDotOCR context specified with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ContextOrResultDmrId</code></a> parameter.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_add"><code>M_FONT_ADD</code><a href="#m_font_add" class="hash-link" aria-label="Direct link to m_font_add" title="Direct link to m_font_add" translate="no">​</a></h3>
+<p>Adds an empty font to the context. To add characters to a font, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrImportFont"><code>MdmrImportFont</code></a>. You can also add characters to a font, or modify its settings, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>MdmrControlFont</code></a>. The maximum number of fonts in a context is 255. To inquire the number of fonts in the context, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><code>MdmrInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><code>M_NUMBER_OF_FONTS</code></a>.  When you add an empty font, the dimensions of its dot-matrix template are initially set to 5 columns and 7 rows. If the font is empty, you can change these values by calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>MdmrControlFont</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>M_FONT_SIZE_COLUMNS</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>M_FONT_SIZE_ROWS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NEW_LABEL</code> <em>(default)</em></td><td>Specifies to add a font with an automatically assigned label. To inquire about the label, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>MdmrInquireFont</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireFont"><code>M_FONT_LABEL_VALUE</code></a>. To change the label, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>MdmrControlFont</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><code>M_FONT_LABEL_VALUE</code></a>.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies to add a font with the indicated label, as an <em>integer</em>. The label must be unique among all font labels in the context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_delete"><code>M_FONT_DELETE</code><a href="#m_font_delete" class="hash-link" aria-label="Direct link to m_font_delete" title="Direct link to m_font_delete" translate="no">​</a></h3>
+<p>Deletes one or all fonts from the context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_FONT_INDEX</code></td><td>Specifies to delete the font by indicating its index.</td></tr><tr><td><code>M_FONT_LABEL</code></td><td>Specifies to delete the font by indicating its label.</td></tr><tr><td><code>M_ALL</code> <em>(default)</em></td><td>Specifies to delete all fonts.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_add"><code>M_STRING_ADD</code><a href="#m_string_add" class="hash-link" aria-label="Direct link to m_string_add" title="Direct link to m_string_add" translate="no">​</a></h3>
+<p>Adds an empty string model to a context. To add character constraints to the string model, or to modify its settings, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlStringModel"><code>MdmrControlStringModel</code></a>. The maximum number of string models in a context is 255. To inquire the number of string models in a context, call <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><code>MdmrInquire</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquire"><code>M_NUMBER_OF_STRING_MODELS</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NEW_LABEL</code> <em>(default)</em></td><td>Specifies to add a string model with an automatically assigned label. To inquire about the label, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireStringModel"><code>MdmrInquireStringModel</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrInquireStringModel"><code>M_STRING_LABEL_VALUE</code></a>. To change the label, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlStringModel"><code>MdmrControlStringModel</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlStringModel"><code>M_STRING_LABEL_VALUE</code></a>.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies to add a string model with the indicated label, as an <em>integer</em>. The label must be unique among all string model labels in the context.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_string_delete"><code>M_STRING_DELETE</code><a href="#m_string_delete" class="hash-link" aria-label="Direct link to m_string_delete" title="Direct link to m_string_delete" translate="no">​</a></h3>
+<p>Deletes one or all string models from a context.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_STRING_INDEX</code></td><td>Specifies to delete the string model by indicating its index.</td></tr><tr><td><code>M_STRING_LABEL</code></td><td>Specifies to delete the string model by indicating its label.</td></tr><tr><td><code>M_ALL</code> <em>(default)</em></td><td>Specifies to delete all string models.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-controlling-a-suredotocr-result-buffer">For controlling a SureDotOCR result buffer<a href="#for-controlling-a-suredotocr-result-buffer" class="hash-link" aria-label="Direct link to For controlling a SureDotOCR result buffer" title="Direct link to For controlling a SureDotOCR result buffer" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ControlValue</code></a> parameter settings are used to control the SureDotOCR result buffer specified with the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControl"><code>ContextOrResultDmrId</code></a> parameter.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_reset"><code>M_RESET</code><a href="#m_reset" class="hash-link" aria-label="Direct link to m_reset" title="Direct link to m_reset" translate="no">​</a></h3>
+<p>Removes all results from the SureDotOCR result buffer. This does not delete the result buffer identifier, as is the case with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrFree"><code>MdmrFree</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default behavior.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_output_units"><code>M_RESULT_OUTPUT_UNITS</code><a href="#m_result_output_units" class="hash-link" aria-label="Direct link to m_result_output_units" title="Direct link to m_result_output_units" translate="no">​</a></h3>
+<p>Sets whether to return results in pixels or world units. This essentially sets the output coordinate system to use. The setting of this control type will only affect functions within this module which return positional results. This control type can be changed at any time to return results in the required output units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ACCORDING_TO_CALIBRATION</code> <em>(default)</em></td><td>Specifies that results are returned in world units if the result was calculated on an image associated with a camera calibration context; otherwise, specifies that results are returned in pixel units.</td></tr><tr><td><code>M_PIXEL</code></td><td>Specifies that results are returned in pixel units, with respect to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies that results are returned in world units, with respect to the relative coordinate system. If world units are specified, calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/MstrGetResult"><code>MstrGetResult</code></a> generates an error if the result was not calculated on a calibrated image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stop_read"><code>M_STOP_READ</code><a href="#m_stop_read" class="hash-link" aria-label="Direct link to m_stop_read" title="Direct link to m_stop_read" translate="no">​</a></h3>
+<p>Stops the current read operation. You can only perform this operation from another thread of higher priority. No results are returned if you stop the read operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default behavior.</td></tr></tbody></table></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrAllocResult"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MdmrAllocResult</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/MdmrControlFont"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MdmrControlFont</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultdmrid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultDmrId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-controlling-a-suredotocr-context-setting" class="table-of-contents__link toc-highlight">For controlling a SureDotOCR context setting</a></li><li><a href="#m_dot_diameter" class="table-of-contents__link toc-highlight"><code>M_DOT_DIAMETER</code></a></li><li><a href="#m_dot_diameter_spread" class="table-of-contents__link toc-highlight"><code>M_DOT_DIAMETER_SPREAD</code></a></li><li><a href="#m_dot_diameter_spread_mode" class="table-of-contents__link toc-highlight"><code>M_DOT_DIAMETER_SPREAD_MODE</code></a></li><li><a href="#m_dot_diameter_step" class="table-of-contents__link toc-highlight"><code>M_DOT_DIAMETER_STEP</code></a></li><li><a href="#m_foreground_value" class="table-of-contents__link toc-highlight"><code>M_FOREGROUND_VALUE</code></a></li><li><a href="#m_italic_angle" class="table-of-contents__link toc-highlight"><code>M_ITALIC_ANGLE</code></a></li><li><a href="#m_italic_angle_mode" class="table-of-contents__link toc-highlight"><code>M_ITALIC_ANGLE_MODE</code></a></li><li><a href="#m_italic_pitch" class="table-of-contents__link toc-highlight"><code>M_ITALIC_PITCH</code></a></li><li><a href="#m_italic_pitch_mode" class="table-of-contents__link toc-highlight"><code>M_ITALIC_PITCH_MODE</code></a></li><li><a href="#m_max_intensity" class="table-of-contents__link toc-highlight"><code>M_MAX_INTENSITY</code></a></li><li><a href="#m_max_intensity_mode" class="table-of-contents__link toc-highlight"><code>M_MAX_INTENSITY_MODE</code></a></li><li><a href="#m_min_contrast" class="table-of-contents__link toc-highlight"><code>M_MIN_CONTRAST</code></a></li><li><a href="#m_min_contrast_mode" class="table-of-contents__link toc-highlight"><code>M_MIN_CONTRAST_MODE</code></a></li><li><a href="#m_min_intensity" class="table-of-contents__link toc-highlight"><code>M_MIN_INTENSITY</code></a></li><li><a href="#m_min_intensity_mode" class="table-of-contents__link toc-highlight"><code>M_MIN_INTENSITY_MODE</code></a></li><li><a href="#m_space_size_max" class="table-of-contents__link toc-highlight"><code>M_SPACE_SIZE_MAX</code></a></li><li><a href="#m_space_size_max_mode" class="table-of-contents__link toc-highlight"><code>M_SPACE_SIZE_MAX_MODE</code></a></li><li><a href="#m_space_size_min" class="table-of-contents__link toc-highlight"><code>M_SPACE_SIZE_MIN</code></a></li><li><a href="#m_space_size_min_mode" class="table-of-contents__link toc-highlight"><code>M_SPACE_SIZE_MIN_MODE</code></a></li><li><a href="#m_string_angle" class="table-of-contents__link toc-highlight"><code>M_STRING_ANGLE</code></a></li><li><a href="#m_string_angle_input_units" class="table-of-contents__link toc-highlight"><code>M_STRING_ANGLE_INPUT_UNITS</code></a></li><li><a href="#m_string_angle_mode" class="table-of-contents__link toc-highlight"><code>M_STRING_ANGLE_MODE</code></a></li><li><a href="#m_string_partial_char_invalid" class="table-of-contents__link toc-highlight"><code>M_STRING_PARTIAL_CHAR_INVALID</code></a></li><li><a href="#m_string_partial_mode" class="table-of-contents__link toc-highlight"><code>M_STRING_PARTIAL_MODE</code></a></li><li><a href="#m_string_pitch" class="table-of-contents__link toc-highlight"><code>M_STRING_PITCH</code></a></li><li><a href="#m_string_pitch_mode" class="table-of-contents__link toc-highlight"><code>M_STRING_PITCH_MODE</code></a></li><li><a href="#m_text_block_height" class="table-of-contents__link toc-highlight"><code>M_TEXT_BLOCK_HEIGHT</code></a></li><li><a href="#m_text_block_size_mode" class="table-of-contents__link toc-highlight"><code>M_TEXT_BLOCK_SIZE_MODE</code></a></li><li><a href="#m_text_block_width" class="table-of-contents__link toc-highlight"><code>M_TEXT_BLOCK_WIDTH</code></a></li><li><a href="#m_timeout" class="table-of-contents__link toc-highlight"><code>M_TIMEOUT</code></a></li><li><a href="#for-adding-fonts-or-string-models-to-or-deleting-fonts-or-string-models-from-a-suredotocr-context" class="table-of-contents__link toc-highlight">For adding fonts or string models to, or deleting fonts or string models from, a SureDotOCR context</a></li><li><a href="#m_font_add" class="table-of-contents__link toc-highlight"><code>M_FONT_ADD</code></a></li><li><a href="#m_font_delete" class="table-of-contents__link toc-highlight"><code>M_FONT_DELETE</code></a></li><li><a href="#m_string_add" class="table-of-contents__link toc-highlight"><code>M_STRING_ADD</code></a></li><li><a href="#m_string_delete" class="table-of-contents__link toc-highlight"><code>M_STRING_DELETE</code></a></li><li><a href="#for-controlling-a-suredotocr-result-buffer" class="table-of-contents__link toc-highlight">For controlling a SureDotOCR result buffer</a></li><li><a href="#m_reset" class="table-of-contents__link toc-highlight"><code>M_RESET</code></a></li><li><a href="#m_result_output_units" class="table-of-contents__link toc-highlight"><code>M_RESULT_OUTPUT_UNITS</code></a></li><li><a href="#m_stop_read" class="table-of-contents__link toc-highlight"><code>M_STOP_READ</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

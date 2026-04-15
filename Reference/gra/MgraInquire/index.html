@@ -1,0 +1,1079 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/gra/MgraInquire" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">MgraInquire | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="MgraInquire | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"gra","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"},{"@type":"ListItem","position":2,"name":"MgraInquire","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Collapse sidebar category &#x27;gra&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraAlloc"><span title="MgraAlloc" class="linkLabel_WmDU">MgraAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraAllocList"><span title="MgraAllocList" class="linkLabel_WmDU">MgraAllocList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraArc"><span title="MgraArc" class="linkLabel_WmDU">MgraArc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraArcAngle"><span title="MgraArcAngle" class="linkLabel_WmDU">MgraArcAngle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraArcFill"><span title="MgraArcFill" class="linkLabel_WmDU">MgraArcFill</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraClear"><span title="MgraClear" class="linkLabel_WmDU">MgraClear</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraControl"><span title="MgraControl" class="linkLabel_WmDU">MgraControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraControlList"><span title="MgraControlList" class="linkLabel_WmDU">MgraControlList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraCopy"><span title="MgraCopy" class="linkLabel_WmDU">MgraCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraDot"><span title="MgraDot" class="linkLabel_WmDU">MgraDot</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraDots"><span title="MgraDots" class="linkLabel_WmDU">MgraDots</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraDraw"><span title="MgraDraw" class="linkLabel_WmDU">MgraDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraFill"><span title="MgraFill" class="linkLabel_WmDU">MgraFill</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraFont"><span title="MgraFont" class="linkLabel_WmDU">MgraFont</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraFontScale"><span title="MgraFontScale" class="linkLabel_WmDU">MgraFontScale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraFree"><span title="MgraFree" class="linkLabel_WmDU">MgraFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraGetHookInfo"><span title="MgraGetHookInfo" class="linkLabel_WmDU">MgraGetHookInfo</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraHookFunction"><span title="MgraHookFunction" class="linkLabel_WmDU">MgraHookFunction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><span title="MgraInquire" class="linkLabel_WmDU">MgraInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquireList"><span title="MgraInquireList" class="linkLabel_WmDU">MgraInquireList</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInteractive"><span title="MgraInteractive" class="linkLabel_WmDU">MgraInteractive</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraLine"><span title="MgraLine" class="linkLabel_WmDU">MgraLine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraLines"><span title="MgraLines" class="linkLabel_WmDU">MgraLines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraRect"><span title="MgraRect" class="linkLabel_WmDU">MgraRect</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraRectAngle"><span title="MgraRectAngle" class="linkLabel_WmDU">MgraRectAngle</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraRectFill"><span title="MgraRectFill" class="linkLabel_WmDU">MgraRectFill</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraText"><span title="MgraText" class="linkLabel_WmDU">MgraText</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraVectors"><span title="MgraVectors" class="linkLabel_WmDU">MgraVectors</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraVectorsGrid"><span title="MgraVectorsGrid" class="linkLabel_WmDU">MgraVectorsGrid</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span>gra</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">MgraInquire</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>MgraInquire</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire information about a 2D graphics context.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT </span><span class="token function" style="color:#d73a49">MgraInquire</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    ContextGraId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">   </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr     </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires information about a specified 2D graphics context. To inquire about a 2D graphics list, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquireList"><code>MgraInquireList</code></a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextgraid-in-ail_id"><code>ContextGraId</code> <em>(in, AIL_ID)</em><a href="#contextgraid-in-ail_id" class="hash-link" aria-label="Direct link to contextgraid-in-ail_id" title="Direct link to contextgraid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 2D graphics context about which to inquire information. This parameter must be set to one of the following values:</p>
+<p><em>For specifying the 2D graphics context</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies that the default 2D graphics context of the current Aurora Imaging Library application is used.</td></tr></tbody></table>
+<blockquote>
+<p><strong>Note:</strong> Note that there is a different default 2D graphics context for each thread. |
+| <code>2D graphics context identifier</code> | Specifies a valid 2D graphics context identifier, which you have allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraAlloc"><code>MgraAlloc</code></a>. |</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the 2D graphics context setting to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><code>MgraInquire</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-general-2d-graphics-context-settings">For inquiring about general 2D graphics context settings<a href="#for-inquiring-about-general-2d-graphics-context-settings" class="hash-link" aria-label="Direct link to For inquiring about general 2D graphics context settings" title="Direct link to For inquiring about general 2D graphics context settings" translate="no">​</a></h3>
+<p>To inquire general 2D graphics context settings, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><code>InquireType</code></a> parameter should be set to one of the following values. Unless otherwise specified, these affect all types of graphics.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color"><code>M_COLOR</code><a href="#m_color" class="hash-link" aria-label="Direct link to m_color" title="Direct link to m_color" translate="no">​</a></h3>
+<p>Inquires the foreground color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value when using the 2D graphics context to draw in an 8-bit, 3-band buffer.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code></td><td>Specifies the color white.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>Value</code></td><td>Specifies a grayscale value.</td></tr><tr><td><code>Byte-encoded RGB value</code></td><td>Specifies an encoded RGB value. To verify if the value is a byte-encoded RGB value, use the<strong>M_IS_RGB888</strong> macro. To retrieve the R, G, and B bands, use the <strong>M_RGB888_R</strong>, <strong>M_RGB888_G</strong>, and <strong>M_RGB888_B</strong> macros.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_direction"><code>M_DRAW_DIRECTION</code><a href="#m_draw_direction" class="hash-link" aria-label="Direct link to m_draw_direction" title="Direct link to m_draw_direction" translate="no">​</a></h3>
+<p>Inquires how to draw (render) an arrow pointing in the direction with which a graphic was defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies that no direction is drawn.</td></tr><tr><td><code>M_PRIMARY_DIRECTION</code></td><td>Specifies to draw an arrow showing the primary direction of the graphic.</td></tr><tr><td><code>M_PRIMARY_DIRECTION + M_SECONDARY_DIRECTION</code></td><td>Specifies to draw an arrow showing both the primary and secondary direction of the graphic.</td></tr><tr><td><code>M_SECONDARY_DIRECTION</code></td><td>Specifies to draw an arrow showing the secondary direction of the graphic.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_offset_x"><code>M_DRAW_OFFSET_X</code><a href="#m_draw_offset_x" class="hash-link" aria-label="Direct link to m_draw_offset_x" title="Direct link to m_draw_offset_x" translate="no">​</a></h3>
+<p>Inquires the offset subtracted from the source X-coordinates.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the X-coordinate offset to subtract, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_offset_y"><code>M_DRAW_OFFSET_Y</code><a href="#m_draw_offset_y" class="hash-link" aria-label="Direct link to m_draw_offset_y" title="Direct link to m_draw_offset_y" translate="no">​</a></h3>
+<p>Inquires the offset subtracted from the source Y-coordinates.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the Y-coordinate offset to subtract, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_zoom_x"><code>M_DRAW_ZOOM_X</code><a href="#m_draw_zoom_x" class="hash-link" aria-label="Direct link to m_draw_zoom_x" title="Direct link to m_draw_zoom_x" translate="no">​</a></h3>
+<p>Inquires the scale factor in the X-direction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the scale factor in the X-direction.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_zoom_y"><code>M_DRAW_ZOOM_Y</code><a href="#m_draw_zoom_y" class="hash-link" aria-label="Direct link to m_draw_zoom_y" title="Direct link to m_draw_zoom_y" translate="no">​</a></h3>
+<p>Inquires the scale factor in the Y-direction.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the scale factor in the Y-direction.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fixture"><code>M_FIXTURE</code><a href="#m_fixture" class="hash-link" aria-label="Direct link to m_fixture" title="Direct link to m_fixture" translate="no">​</a></h3>
+<p>Inquires the camera calibration information used when rendering (drawing or displaying) a graphic defined in world units, when both source camera calibration information and destination camera calibration information are available to interpret positioning and dimensioning information.  If with respect to that of the source camera calibration information (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraControlList"><code>M_USE_SOURCE_FIRST</code></a>), positions and dimensions are transformed from this relative coordinate system to the absolute coordinate system; then, since it is assumed that there is only one absolute coordinate system, these positions and dimensions are transformed from the absolute coordinate system to the pixel coordinate system, using the destination camera calibration information.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_USE_DESTINATION_FIRST</code> <em>(default)</em></td><td>Specifies that the camera calibration information of the destination is used when rendering the graphic.</td></tr><tr><td><code>M_USE_SOURCE_FIRST</code></td><td>Specifies that the camera calibration information of the graphic, set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><code>M_GRAPHIC_SOURCE_CALIBRATION</code></a>, is used when rendering the graphic.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_graphic_conversion_mode"><code>M_GRAPHIC_CONVERSION_MODE</code><a href="#m_graphic_conversion_mode" class="hash-link" aria-label="Direct link to m_graphic_conversion_mode" title="Direct link to m_graphic_conversion_mode" translate="no">​</a></h3>
+<p>Inquires how the shape of a graphic, defined in world units, is converted to pixels (rendered).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_PRESERVE_SHAPE_AVERAGE</code></td><td>Specifies to render the graphic so that its shape is preserved, even if it means not respecting the camera calibration information exactly.</td></tr><tr><td><code>M_RESHAPE_FOLLOWING_DISTORTION</code></td><td>Specifies that all points along the contour of the graphic will be converted using the camera calibration information, following any non-linear distortion.</td></tr><tr><td><code>M_RESHAPE_FROM_POINTS</code> <em>(default)</em></td><td>Specifies that only a few key points or features will be converted using the camera calibration information; from these converted points, the rest of the graphic will be rendered respecting the shape of the graphic.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_graphic_source_calibration"><code>M_GRAPHIC_SOURCE_CALIBRATION</code><a href="#m_graphic_source_calibration" class="hash-link" aria-label="Direct link to m_graphic_source_calibration" title="Direct link to m_graphic_source_calibration" translate="no">​</a></h3>
+<p>Inquires the identifier of the camera calibration information used to interpret positioning and dimensioning information of a graphic defined in world units.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code> <em>(default)</em></td><td>Specifies that no source camera calibration information is available to interpret positioning and dimensioning information of a graphic defined in world units, except when the graphic is drawn using the draw function (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw"><code>M...Draw</code></a>) of a processing or analysis module; in this case, the camera calibration information of the context or result will be used.</td></tr><tr><td><code>Aurora Imaging Library Identifier</code></td><td>Specifies the identifier of a camera calibration context, image buffer or processing or analysis module result buffer, whose camera calibration information to use; this object is only associated with the 2D graphics context, not copied.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_input_units"><code>M_INPUT_UNITS</code><a href="#m_input_units" class="hash-link" aria-label="Direct link to m_input_units" title="Direct link to m_input_units" translate="no">​</a></h3>
+<p>Inquires the units with which to interpret the graphic&#x27;s positional and dimensional information.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISPLAY</code></td><td>Specifies to interpret the values in pixel units that, unlike <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><code>M_PIXEL</code></a>, are not altered when the display is panned or zoomed.</td></tr><tr><td><code>M_PIXEL</code> <em>(default)</em></td><td>Specifies to interpret the values in pixel units, with respect to the pixel coordinate system.</td></tr><tr><td><code>M_WORLD</code></td><td>Specifies to interpret the values in world units, with respect to the relative coordinate system.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_line_thickness"><code>M_LINE_THICKNESS</code><a href="#m_line_thickness" class="hash-link" aria-label="Direct link to m_line_thickness" title="Direct link to m_line_thickness" translate="no">​</a></h3>
+<p>Inquires the thickness of the lines and diameter of the dots.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 1</code> <em>(default)</em></td><td>Specifies the thickness of the lines and diameter of the dots, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system"><code>M_OWNER_SYSTEM</code><a href="#m_owner_system" class="hash-link" aria-label="Direct link to m_owner_system" title="Direct link to m_owner_system" translate="no">​</a></h3>
+<p>Inquires the Aurora Imaging Library identifier (<em>AIL_ID</em>) of the system on which the 2D graphics context has been allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT_HOST</code></td><td>Specifies the default Host system of the current Aurora Imaging Library application.</td></tr><tr><td><code>System identifier</code></td><td>Specifies a valid system identifier, previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysAlloc"><code>MsysAlloc</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system_type"><code>M_OWNER_SYSTEM_TYPE</code><a href="#m_owner_system_type" class="hash-link" aria-label="Direct link to m_owner_system_type" title="Direct link to m_owner_system_type" translate="no">​</a></h3>
+<p>Inquires the type of system on which the 2D graphics context was allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_SYSTEM_CLARITY_UHD_TYPE</code></td><td>Specifies an Aurora Imaging Library Clarity UHD system.</td></tr><tr><td><code>M_SYSTEM_CONCORD_POE_TYPE</code></td><td>Specifies an Aurora Imaging Library Concord POE system.</td></tr><tr><td><code>M_SYSTEM_GENTL_TYPE</code></td><td>Specifies an Aurora Imaging Library GenTL system.</td></tr><tr><td><code>M_SYSTEM_GEVIQ_TYPE</code></td><td>Specifies an Aurora Imaging Library GevIQ system.</td></tr><tr><td><code>M_SYSTEM_GIGE_VISION_TYPE</code></td><td>Specifies an Aurora Imaging Library GigE Vision system.</td></tr><tr><td><code>M_SYSTEM_HOST_TYPE</code></td><td>Specifies the Host.</td></tr><tr><td><code>M_SYSTEM_INDIO_TYPE</code></td><td>Specifies an Aurora Imaging Library Indio system.</td></tr><tr><td><code>M_SYSTEM_IRIS_GTX_TYPE</code></td><td>Specifies an Aurora Imaging Library Iris GTX system.</td></tr><tr><td><code>M_SYSTEM_RADIENTEVCL_TYPE</code></td><td>Specifies an Aurora Imaging Library Radient eV-CL system.</td></tr><tr><td><code>M_SYSTEM_RAPIXOCL_TYPE</code></td><td>Specifies an Aurora Imaging Library Rapixo Pro CL system.</td></tr><tr><td><code>M_SYSTEM_RAPIXOCOF_TYPE</code></td><td>Specifies an Aurora Imaging Library Rapixo CoF system.</td></tr><tr><td><code>M_SYSTEM_RAPIXOCXP_TYPE</code></td><td>Specifies an Aurora Imaging Library Rapixo CXP system.</td></tr><tr><td><code>M_SYSTEM_USB3_VISION_TYPE</code></td><td>Specifies an Aurora Imaging Library USB3 Vision system.</td></tr><tr><td><code>M_SYSTEM_V4L2_TYPE</code></td><td>Specifies an Aurora Imaging Library Video4Linux2 system.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-setting-related-to-interactivity">For inquiring about a setting related to interactivity<a href="#for-inquiring-about-a-setting-related-to-interactivity" class="hash-link" aria-label="Direct link to For inquiring about a setting related to interactivity" title="Direct link to For inquiring about a setting related to interactivity" translate="no">​</a></h3>
+<p>To inquire 2D graphics context settings that affect the interactivity of a graphic, drawn in a 2D graphics list associated with a display when interactive mode is enabled (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>MdispControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>M_GRAPHIC_LIST_INTERACTIVE</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/MdispControl"><code>M_ENABLE</code></a>), the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><code>InquireType</code></a> parameter should be set to one of the following values.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_editable"><code>M_EDITABLE</code><a href="#m_editable" class="hash-link" aria-label="Direct link to m_editable" title="Direct link to m_editable" translate="no">​</a></h3>
+<p>Inquires whether a graphic can be edited via user interaction in an interactive display. If a graphic is not visible or if it is not selectable, it is not editable and this setting is ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the graphic cannot be edited via user interaction.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the graphic can be edited via user interaction.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_resizable"><code>M_RESIZABLE</code><a href="#m_resizable" class="hash-link" aria-label="Direct link to m_resizable" title="Direct link to m_resizable" translate="no">​</a></h3>
+<p>Inquires whether a graphic can be resized via user interaction in an interactive display. If a graphic is not visible, not selectable, or not editable, it is not resizable and this setting is ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the graphic cannot be resized via user interaction and the resize handles will not be displayed if a graphic is selected.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the graphic can be resized via user interaction by clicking and dragging one of the resize handles.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rotatable"><code>M_ROTATABLE</code><a href="#m_rotatable" class="hash-link" aria-label="Direct link to m_rotatable" title="Direct link to m_rotatable" translate="no">​</a></h3>
+<p>Inquires whether a graphic can be rotated via user interaction in an interactive display. If a graphic is not visible, not selectable, or not editable, it is not rotatable and this setting is ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the graphic cannot be rotated via user interaction and the rotate handle will not be displayed if a graphic is selected.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the graphic can be rotated via user interaction by clicking and dragging the rotation handle.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_selectable"><code>M_SELECTABLE</code><a href="#m_selectable" class="hash-link" aria-label="Direct link to m_selectable" title="Direct link to m_selectable" translate="no">​</a></h3>
+<p>Inquires whether a graphic in a 2D graphics list can be selected via user interaction in an interactive display. If a graphic is not visible, it is not selectable and this setting is ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the graphic cannot be selected via user interaction.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the graphic can be selected by clicking on it.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_specific_features_editable"><code>M_SPECIFIC_FEATURES_EDITABLE</code><a href="#m_specific_features_editable" class="hash-link" aria-label="Direct link to m_specific_features_editable" title="Direct link to m_specific_features_editable" translate="no">​</a></h3>
+<p>Inquires whether a graphic can be modified via user interaction in an interactive display using handles that are specific to its graphic type. If a graphic is not visible, not selectable, or not editable, it cannot be modified using its type-specific handles and this setting is ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the graphic cannot be modified via user interaction and its specific feature handles will not be displayed if a graphic is selected.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the graphic can be modified via user interaction by clicking and dragging one of the specific feature handles.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_translatable"><code>M_TRANSLATABLE</code><a href="#m_translatable" class="hash-link" aria-label="Direct link to m_translatable" title="Direct link to m_translatable" translate="no">​</a></h3>
+<p>Inquires whether a graphic can be moved (translated) via user interaction in an interactive display. If a graphic is not visible, not selectable, or not editable, it is not movable and this setting is ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that the graphic cannot be moved via user interaction.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that the graphic can be moved via user interaction by clicking and dragging the graphic, its selection box, or its center handle.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_visible"><code>M_VISIBLE</code><a href="#m_visible" class="hash-link" aria-label="Direct link to m_visible" title="Direct link to m_visible" translate="no">​</a></h3>
+<p>Inquires whether a graphic is rendered on the display.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the graphic is not rendered.</td></tr><tr><td><code>M_TRUE</code> <em>(default)</em></td><td>Specifies that the graphic is rendered.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-setting-specific-to-text">For inquiring about a setting specific to text<a href="#for-inquiring-about-a-setting-specific-to-text" class="hash-link" aria-label="Direct link to For inquiring about a setting specific to text" title="Direct link to For inquiring about a setting specific to text" translate="no">​</a></h3>
+<p>To inquire 2D graphics context settings that apply only to text (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraText"><code>MgraText</code></a>), the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><code>InquireType</code></a> parameter should be set to one of the following values.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_backcolor"><code>M_BACKCOLOR</code><a href="#m_backcolor" class="hash-link" aria-label="Direct link to m_backcolor" title="Direct link to m_backcolor" translate="no">​</a></h3>
+<p>Inquires the background color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value when using the 2D graphics context to draw in an 8-bit, 3-band buffer.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code></td><td>Specifies the color white.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>Value</code></td><td>Specifies a grayscale value.</td></tr><tr><td><code>Byte-encoded RGB value</code></td><td>Specifies an encoded RGB value. To verify if the value is a byte-encoded RGB value, use the<strong>M_IS_RGB888</strong> macro. To retrieve the R, G, and B bands, use the <strong>M_RGB888_R</strong>, <strong>M_RGB888_G</strong>, and <strong>M_RGB888_B</strong> macros.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_background_mode"><code>M_BACKGROUND_MODE</code><a href="#m_background_mode" class="hash-link" aria-label="Direct link to m_background_mode" title="Direct link to m_background_mode" translate="no">​</a></h3>
+<p>Inquires whether the text&#x27;s background is filled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_OPAQUE</code> <em>(default)</em></td><td>Specifies that the background will be filled with the current background color before drawing text.</td></tr><tr><td><code>M_TRANSPARENT</code></td><td>Specifies not to change the background before drawing text.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font"><code>M_FONT</code><a href="#m_font" class="hash-link" aria-label="Direct link to m_font" title="Direct link to m_font" translate="no">​</a></h3>
+<p>Inquires the character font.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FONT_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquire"><code>M_FONT_DEFAULT_SMALL</code></a>.</td></tr><tr><td><code>M_FONT_DEFAULT_LARGE</code></td><td>Specifies a large bitmap font, where each character is drawn in a 16x32 pixel area.</td></tr><tr><td><code>M_FONT_DEFAULT_MEDIUM</code></td><td>Specifies a medium bitmap font, where each character is drawn in a 12x24 pixel area.</td></tr><tr><td><code>M_FONT_DEFAULT_SMALL</code></td><td>Specifies a small bitmap font, where each character is drawn in a 8x16 pixel area.</td></tr><tr><td><code>M_FONT_DEFAULT_TTF</code></td><td>Specifies the default TrueType font of your operating system.</td></tr><tr><td><code>M_FONT_TTF</code></td><td>Specifies a TrueType font. This value is returned when you have specified a TrueType font using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraFont"><code>MgraFont</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_auto_select"><code>M_FONT_AUTO_SELECT</code><a href="#m_font_auto_select" class="hash-link" aria-label="Direct link to m_font_auto_select" title="Direct link to m_font_auto_select" translate="no">​</a></h3>
+<p>Inquires whether Aurora Imaging Library will search for a suitable font to draw text if the currently selected font is a TrueType font that does not support the character code.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DISABLE</code></td><td>Specifies that Aurora Imaging Library will not search for a suitable font.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies that Aurora Imaging Library will search for a suitable font.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_size"><code>M_FONT_SIZE</code><a href="#m_font_size" class="hash-link" aria-label="Direct link to m_font_size" title="Direct link to m_font_size" translate="no">​</a></h3>
+<p>Inquires the size text is drawn when using a TrueType font.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 1</code> <em>(default)</em></td><td>Specifies the text&#x27;s font size, in points.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_x_scale"><code>M_FONT_X_SCALE</code><a href="#m_font_x_scale" class="hash-link" aria-label="Direct link to m_font_x_scale" title="Direct link to m_font_x_scale" translate="no">​</a></h3>
+<p>Inquires the font&#x27;s horizontal scaling factor.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the factor by which to multiply the width of the font&#x27;s characters.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_font_y_scale"><code>M_FONT_Y_SCALE</code><a href="#m_font_y_scale" class="hash-link" aria-label="Direct link to m_font_y_scale" title="Direct link to m_font_y_scale" translate="no">​</a></h3>
+<p>Inquires the font&#x27;s vertical scaling factor.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the factor by which to multiply the height of the font&#x27;s characters.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_text_align_horizontal"><code>M_TEXT_ALIGN_HORIZONTAL</code><a href="#m_text_align_horizontal" class="hash-link" aria-label="Direct link to m_text_align_horizontal" title="Direct link to m_text_align_horizontal" translate="no">​</a></h3>
+<p>Inquires the horizontal alignment of text.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CENTER</code></td><td>Specifies that text is horizontally centered.</td></tr><tr><td><code>M_LEFT</code> <em>(default)</em></td><td>Specifies that text is left-aligned.</td></tr><tr><td><code>M_RIGHT</code></td><td>Specifies that text is right-aligned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_text_align_vertical"><code>M_TEXT_ALIGN_VERTICAL</code><a href="#m_text_align_vertical" class="hash-link" aria-label="Direct link to m_text_align_vertical" title="Direct link to m_text_align_vertical" translate="no">​</a></h3>
+<p>Inquires the vertical alignment of text.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_BOTTOM</code></td><td>Specifies that text is bottom-aligned.</td></tr><tr><td><code>M_CENTER</code></td><td>Specifies that text is vertically centered.</td></tr><tr><td><code>M_TOP</code> <em>(default)</em></td><td>Specifies that text is top-aligned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_text_border"><code>M_TEXT_BORDER</code><a href="#m_text_border" class="hash-link" aria-label="Direct link to m_text_border" title="Direct link to m_text_border" translate="no">​</a></h3>
+<p>Inquires how borders are drawn around the text.  Note that a combination of the values below can be returned. Bitwise operators must be used to verify the presence of a specific border.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_BOTTOM</code></td><td>Specifies that a line is drawn underneath the text.</td></tr><tr><td><code>M_LEFT</code></td><td>Specifies that a line is drawn to the left of the text.</td></tr><tr><td><code>M_NONE</code> <em>(default)</em></td><td>Specifies that no border is drawn around the text.</td></tr><tr><td><code>M_RIGHT</code></td><td>Specifies that a line is drawn to the right of the text.</td></tr><tr><td><code>M_TOP</code></td><td>Specifies that a line is drawn above the text.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_text_direction"><code>M_TEXT_DIRECTION</code><a href="#m_text_direction" class="hash-link" aria-label="Direct link to m_text_direction" title="Direct link to m_text_direction" translate="no">​</a></h3>
+<p>Inquires the direction text is drawn when using a TrueType font.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_LEFT_TO_RIGHT</code> <em>(default)</em></td><td>Specifies that text will be drawn from left to right.</td></tr><tr><td><code>M_RIGHT_TO_LEFT</code></td><td>Specifies that text will be drawn from right to left.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-the-color-value-used-for-16--or-32-bit-color-buffers">Combination Constants — For inquiring the color value used (for 16- or 32-bit color buffers)<a href="#combination-constants--for-inquiring-the-color-value-used-for-16--or-32-bit-color-buffers" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring the color value used (for 16- or 32-bit color buffers)" title="Direct link to Combination Constants — For inquiring the color value used (for 16- or 32-bit color buffers)" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to get the color used in the 2D graphics context for a 16-bit or 32-bit color buffer.</p>
+</blockquote>
+<p>You must inquire each color band (R,G, and B) separately.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_BLUE</code></td><td>Inquires the blue color band.</td></tr><tr><td><code>M_GREEN</code></td><td>Inquires the green color band.</td></tr><tr><td><code>M_RED</code></td><td>Inquires the red color band.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to a required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_id"><code>M_TYPE_AIL_ID</code><a href="#m_type_ail_id" class="hash-link" aria-label="Direct link to m_type_ail_id" title="Direct link to m_type_ail_id" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_ID</em>. Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquireList"><code>M_TYPE_AIL_ID</code></a> should only be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquireList"><code>M_OWNER_SYSTEM</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquireList"><code>M_GRAPHIC_SOURCE_CALIBRATION</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT</em>. If the requested information does not fit into an <em>AIL_INT</em>, this function will return <code>M_NULL</code>or truncate the information.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraHookFunction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">MgraHookFunction</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraInquireList"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">MgraInquireList</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextgraid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ContextGraId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-about-general-2d-graphics-context-settings" class="table-of-contents__link toc-highlight">For inquiring about general 2D graphics context settings</a></li><li><a href="#m_color" class="table-of-contents__link toc-highlight"><code>M_COLOR</code></a></li><li><a href="#m_draw_direction" class="table-of-contents__link toc-highlight"><code>M_DRAW_DIRECTION</code></a></li><li><a href="#m_draw_offset_x" class="table-of-contents__link toc-highlight"><code>M_DRAW_OFFSET_X</code></a></li><li><a href="#m_draw_offset_y" class="table-of-contents__link toc-highlight"><code>M_DRAW_OFFSET_Y</code></a></li><li><a href="#m_draw_zoom_x" class="table-of-contents__link toc-highlight"><code>M_DRAW_ZOOM_X</code></a></li><li><a href="#m_draw_zoom_y" class="table-of-contents__link toc-highlight"><code>M_DRAW_ZOOM_Y</code></a></li><li><a href="#m_fixture" class="table-of-contents__link toc-highlight"><code>M_FIXTURE</code></a></li><li><a href="#m_graphic_conversion_mode" class="table-of-contents__link toc-highlight"><code>M_GRAPHIC_CONVERSION_MODE</code></a></li><li><a href="#m_graphic_source_calibration" class="table-of-contents__link toc-highlight"><code>M_GRAPHIC_SOURCE_CALIBRATION</code></a></li><li><a href="#m_input_units" class="table-of-contents__link toc-highlight"><code>M_INPUT_UNITS</code></a></li><li><a href="#m_line_thickness" class="table-of-contents__link toc-highlight"><code>M_LINE_THICKNESS</code></a></li><li><a href="#m_owner_system" class="table-of-contents__link toc-highlight"><code>M_OWNER_SYSTEM</code></a></li><li><a href="#m_owner_system_type" class="table-of-contents__link toc-highlight"><code>M_OWNER_SYSTEM_TYPE</code></a></li><li><a href="#for-inquiring-about-a-setting-related-to-interactivity" class="table-of-contents__link toc-highlight">For inquiring about a setting related to interactivity</a></li><li><a href="#m_editable" class="table-of-contents__link toc-highlight"><code>M_EDITABLE</code></a></li><li><a href="#m_resizable" class="table-of-contents__link toc-highlight"><code>M_RESIZABLE</code></a></li><li><a href="#m_rotatable" class="table-of-contents__link toc-highlight"><code>M_ROTATABLE</code></a></li><li><a href="#m_selectable" class="table-of-contents__link toc-highlight"><code>M_SELECTABLE</code></a></li><li><a href="#m_specific_features_editable" class="table-of-contents__link toc-highlight"><code>M_SPECIFIC_FEATURES_EDITABLE</code></a></li><li><a href="#m_translatable" class="table-of-contents__link toc-highlight"><code>M_TRANSLATABLE</code></a></li><li><a href="#m_visible" class="table-of-contents__link toc-highlight"><code>M_VISIBLE</code></a></li><li><a href="#for-inquiring-about-a-setting-specific-to-text" class="table-of-contents__link toc-highlight">For inquiring about a setting specific to text</a></li><li><a href="#m_backcolor" class="table-of-contents__link toc-highlight"><code>M_BACKCOLOR</code></a></li><li><a href="#m_background_mode" class="table-of-contents__link toc-highlight"><code>M_BACKGROUND_MODE</code></a></li><li><a href="#m_font" class="table-of-contents__link toc-highlight"><code>M_FONT</code></a></li><li><a href="#m_font_auto_select" class="table-of-contents__link toc-highlight"><code>M_FONT_AUTO_SELECT</code></a></li><li><a href="#m_font_size" class="table-of-contents__link toc-highlight"><code>M_FONT_SIZE</code></a></li><li><a href="#m_font_x_scale" class="table-of-contents__link toc-highlight"><code>M_FONT_X_SCALE</code></a></li><li><a href="#m_font_y_scale" class="table-of-contents__link toc-highlight"><code>M_FONT_Y_SCALE</code></a></li><li><a href="#m_text_align_horizontal" class="table-of-contents__link toc-highlight"><code>M_TEXT_ALIGN_HORIZONTAL</code></a></li><li><a href="#m_text_align_vertical" class="table-of-contents__link toc-highlight"><code>M_TEXT_ALIGN_VERTICAL</code></a></li><li><a href="#m_text_border" class="table-of-contents__link toc-highlight"><code>M_TEXT_BORDER</code></a></li><li><a href="#m_text_direction" class="table-of-contents__link toc-highlight"><code>M_TEXT_DIRECTION</code></a></li><li><a href="#combination-constants--for-inquiring-the-color-value-used-for-16--or-32-bit-color-buffers" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring the color value used (for 16- or 32-bit color buffers)</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

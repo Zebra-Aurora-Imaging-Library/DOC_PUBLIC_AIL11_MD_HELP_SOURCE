@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dmet/M3dmetGetResult" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dmetGetResult | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dmetGetResult | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dmet","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"},{"@type":"ListItem","position":2,"name":"M3dmetGetResult","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Collapse sidebar category &#x27;3dmet&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetAlloc"><span title="M3dmetAlloc" class="linkLabel_WmDU">M3dmetAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetAllocResult"><span title="M3dmetAllocResult" class="linkLabel_WmDU">M3dmetAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetControl"><span title="M3dmetControl" class="linkLabel_WmDU">M3dmetControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetControlDraw"><span title="M3dmetControlDraw" class="linkLabel_WmDU">M3dmetControlDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopy"><span title="M3dmetCopy" class="linkLabel_WmDU">M3dmetCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><span title="M3dmetCopyResult" class="linkLabel_WmDU">M3dmetCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistance"><span title="M3dmetDistance" class="linkLabel_WmDU">M3dmetDistance</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistanceEx"><span title="M3dmetDistanceEx" class="linkLabel_WmDU">M3dmetDistanceEx</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDraw3d"><span title="M3dmetDraw3d" class="linkLabel_WmDU">M3dmetDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeature"><span title="M3dmetFeature" class="linkLabel_WmDU">M3dmetFeature</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><span title="M3dmetFeatureEx" class="linkLabel_WmDU">M3dmetFeatureEx</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFit"><span title="M3dmetFit" class="linkLabel_WmDU">M3dmetFit</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFree"><span title="M3dmetFree" class="linkLabel_WmDU">M3dmetFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><span title="M3dmetGetResult" class="linkLabel_WmDU">M3dmetGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetInquire"><span title="M3dmetInquire" class="linkLabel_WmDU">M3dmetInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetInquireDraw"><span title="M3dmetInquireDraw" class="linkLabel_WmDU">M3dmetInquireDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetRestore"><span title="M3dmetRestore" class="linkLabel_WmDU">M3dmetRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetSave"><span title="M3dmetSave" class="linkLabel_WmDU">M3dmetSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetStat"><span title="M3dmetStat" class="linkLabel_WmDU">M3dmetStat</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetStream"><span title="M3dmetStream" class="linkLabel_WmDU">M3dmetStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetVolume"><span title="M3dmetVolume" class="linkLabel_WmDU">M3dmetVolume</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetVolumeEx"><span title="M3dmetVolumeEx" class="linkLabel_WmDU">M3dmetVolumeEx</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span>3dmet</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dmetGetResult</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dmetGetResult</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Get the specified type of result(s) from a 3D metrology result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_DOUBLE </span><span class="token function" style="color:#d73a49">M3dmetGetResult</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    Result3dmetId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ResultType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">     </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    ResultArrayPtr  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function retrieves the result(s) of the specified type from a 3D metrology result buffer. For calculate 3D metrology result buffers, results are available after calling<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistanceEx"><code>M3dmetDistanceEx</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetVolumeEx"><code>M3dmetVolumeEx</code></a>. For fit 3D metrology result buffers, results are available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFit"><code>M3dmetFit</code></a>. For statistics 3D metrology result buffers, results are available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetStat"><code>M3dmetStat</code></a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="result3dmetid-in-ail_id"><code>Result3dmetId</code> <em>(in, AIL_ID)</em><a href="#result3dmetid-in-ail_id" class="hash-link" aria-label="Direct link to result3dmetid-in-ail_id" title="Direct link to result3dmetid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of a calculate 3D metrology result buffer, fit 3D metrology result buffer, or statistics 3D metrology result buffer, from which to retrieve results.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resulttype-in-ail_int64"><code>ResultType</code> <em>(in, AIL_INT64)</em><a href="#resulttype-in-ail_int64" class="hash-link" aria-label="Direct link to resulttype-in-ail_int64" title="Direct link to resulttype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of result to retrieve.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultarrayptr-out-void"><code>ResultArrayPtr</code> *(out, <em>void)</em><a href="#resultarrayptr-out-void" class="hash-link" aria-label="Direct link to resultarrayptr-out-void" title="Direct link to resultarrayptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the results. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M3dmetGetResult</code></a> function also returns the results, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-specifying-the-type-of-result-to-retrieve-from-a-calculate-fit-or-statistics-3d-metrology-result-buffer">For specifying the type of result to retrieve from a calculate, fit, or statistics 3D metrology result buffer<a href="#for-specifying-the-type-of-result-to-retrieve-from-a-calculate-fit-or-statistics-3d-metrology-result-buffer" class="hash-link" aria-label="Direct link to For specifying the type of result to retrieve from a calculate, fit, or statistics 3D metrology result buffer" title="Direct link to For specifying the type of result to retrieve from a calculate, fit, or statistics 3D metrology result buffer" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>Result3dmetId</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>ResultType</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>ResultArrayPtr</code></a> parameter settings can be specified for different types of 3D metrology result buffers.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetdistanceex-operation"><code>Calculate 3D metrology result buffer ID, for retrieving results of an M3dmetDistanceEx operation</code><a href="#calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetdistanceex-operation" class="hash-link" aria-label="Direct link to calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetdistanceex-operation" title="Direct link to calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetdistanceex-operation" translate="no">​</a></h3>
+<p>Specifies the identifier of a calculate 3D metrology result buffer that holds results of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistanceEx"><code>M3dmetDistanceEx</code></a> operation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_x"><code>M_RESULT_IMAGE_SIZE_X</code><a href="#m_result_image_size_x" class="hash-link" aria-label="Direct link to m_result_image_size_x" title="Direct link to m_result_image_size_x" translate="no">​</a></h4>
+<p>Retrieves the size in X of the source point cloud&#x27;s range component or of the source depth map, in pixels. This is the same size in X as the source depth map or as the range of the source container used in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistanceEx"><code>M3dmetDistanceEx</code></a> operation.  Note, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_STATUS_DISTANCE</code></a> must not be <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_NOT_INITIALIZED</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_y"><code>M_RESULT_IMAGE_SIZE_Y</code><a href="#m_result_image_size_y" class="hash-link" aria-label="Direct link to m_result_image_size_y" title="Direct link to m_result_image_size_y" translate="no">​</a></h4>
+<p>Retrieves the size in Y of the source point cloud&#x27;s range component or of the source depth map, in pixels. This is the same size in Y as the source depth map or as the range of the source container used in the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistanceEx"><code>M3dmetDistanceEx</code></a> operation.  Note, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_STATUS_DISTANCE</code></a> must not be <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_NOT_INITIALIZED</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_distance"><code>M_STATUS_DISTANCE</code><a href="#m_status_distance" class="hash-link" aria-label="Direct link to m_status_distance" title="Direct link to m_status_distance" translate="no">​</a></h4>
+<p>Retrieves the global status of the last <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistanceEx"><code>M3dmetDistanceEx</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPLETE</code></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistanceEx"><code>M3dmetDistanceEx</code></a> was called and the operation has been completed successfully.</td></tr><tr><td><code>M_NOT_INITIALIZED</code></td><td>Specifies that the distance 3D metrology result buffer was not use in a call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetDistanceEx"><code>M3dmetDistanceEx</code></a> and contains no results.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetfeatureex-operation"><code>Calculate 3D metrology result buffer ID, for retrieving results of an M3dmetFeatureEx operation</code><a href="#calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetfeatureex-operation" class="hash-link" aria-label="Direct link to calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetfeatureex-operation" title="Direct link to calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetfeatureex-operation" translate="no">​</a></h3>
+<p>Specifies the identifier of a calculate 3D metrology result buffer that holds results of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> operation.</p>
+<h4><code>?</code></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle"><code>M_ANGLE</code><a href="#m_angle" class="hash-link" aria-label="Direct link to m_angle" title="Direct link to m_angle" translate="no">​</a></h4>
+<p>Retrieves the angle between source geometries.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_ANGLE</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_angle_to_edge_case"><code>M_ANGLE_TO_EDGE_CASE</code><a href="#m_angle_to_edge_case" class="hash-link" aria-label="Direct link to m_angle_to_edge_case" title="Direct link to m_angle_to_edge_case" translate="no">​</a></h4>
+<p>Retrieves the angle of the deviation from a degenerate case.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_ORTHOGONALIZE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_PROJECTION</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_RAY_CAST</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_INTERSECTION</code></a> when not calculating the intersection points between a line and a geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calculated_object_type"><code>M_CALCULATED_OBJECT_TYPE</code><a href="#m_calculated_object_type" class="hash-link" aria-label="Direct link to m_calculated_object_type" title="Direct link to m_calculated_object_type" translate="no">​</a></h4>
+<p>Retrieves the type of object contained in the specified calculate 3D metrology result buffer.  This result is always available.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_GEOMETRY</code></td><td>Specifies that a 3D geometry object is contained within the specified calculate 3D metrology result buffer.</td></tr><tr><td><code>M_NONE</code></td><td>Specifies that there is no calculated object contained within the specified calculate 3D metrology result buffer.</td></tr><tr><td><code>M_TRANSFORMATION_MATRIX</code></td><td>Specifies that a transformation matrix object is contained within the specified calculate 3D metrology result buffer.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_difference"><code>M_DIFFERENCE</code><a href="#m_difference" class="hash-link" aria-label="Direct link to m_difference" title="Direct link to m_difference" translate="no">​</a></h4>
+<p>Retrieves the difference between the union and the intersection of two source geometry objects.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_OVERLAP</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance"><code>M_DISTANCE</code><a href="#m_distance" class="hash-link" aria-label="Direct link to m_distance" title="Direct link to m_distance" translate="no">​</a></h4>
+<p>Retrieves the distance calculated during the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> operation.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_DISTANCE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_SHORTEST_LINE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_CLOSEST_POINT</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_FARTHEST_POINT</code></a>.  &gt; <strong>Note:</strong> Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_DISTANCE</code></a> can return either the shortest or the longest distance, depending on the operation used.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_geometry_type"><code>M_GEOMETRY_TYPE</code><a href="#m_geometry_type" class="hash-link" aria-label="Direct link to m_geometry_type" title="Direct link to m_geometry_type" translate="no">​</a></h4>
+<p>Retrieves the type of geometry contained in the specified calculate 3D metrology result buffer.  This result is available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_CALCULATED_OBJECT_TYPE</code></a> returns <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_GEOMETRY</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/M3dgeoInquire"><code>M_GEOMETRY_TYPE</code></a>)</em></td><td></td></tr><tr><td><code>M_NONE</code></td><td>Specifies that there is no geometry contained within the specified calculate 3D metrology result buffer.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intersection"><code>M_INTERSECTION</code><a href="#m_intersection" class="hash-link" aria-label="Direct link to m_intersection" title="Direct link to m_intersection" translate="no">​</a></h4>
+<p>Retrieves the volume of the intersection between two geometries.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_OVERLAP</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_is_inside"><code>M_IS_INSIDE</code><a href="#m_is_inside" class="hash-link" aria-label="Direct link to m_is_inside" title="Direct link to m_is_inside" translate="no">​</a></h4>
+<p>Retrieves whether the first specified source geometry object is inside of the second source geometry object.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_CLIP</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_IS_INSIDE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INSIDE</code></td><td>Specifies that the first source geometry object is completely contained within the second source geometry object.</td></tr><tr><td><code>M_OUTSIDE</code></td><td>Specifies that the first source geometry object is not contained within the second source geometry object.</td></tr><tr><td><code>M_PARTIALLY_INSIDE</code></td><td>Specifies that the first source geometry object is partially contained within the second source geometry object.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number"><code>M_NUMBER</code><a href="#m_number" class="hash-link" aria-label="Direct link to m_number" title="Direct link to m_number" translate="no">​</a></h4>
+<p>Retrieves the number of geometries in the specified calculate 3D metrology result buffer.  This result is always available.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_operation"><code>M_OPERATION</code><a href="#m_operation" class="hash-link" aria-label="Direct link to m_operation" title="Direct link to m_operation" translate="no">​</a></h4>
+<p>Retrieves the operation used during the last call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a>.  This result is always available.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>Operation</code></a>)</em></td><td></td></tr><tr><td><code>M_CLIP</code></td><td>Specifies that a 3D line geometry object was truncated such that it lies inside a second 3D geometry.</td></tr><tr><td><code>M_CLOSEST_POINT</code></td><td>Specifies that the point on the second specified 3D geometry that is closest to the first specified 3D geometry was calculated.</td></tr><tr><td><code>M_EXTRUSION_BORDER</code></td><td>Specifies that an extrusion of a 3D box&#x27;s face was calculated such that the box&#x27;s closest corner meets the specified plane.</td></tr><tr><td><code>M_EXTRUSION_CENTER</code></td><td>Specifies that an extrusion of a 3D box&#x27;s face was calculated such that the center of the face touches the specified plane.</td></tr><tr><td><code>M_FARTHEST_POINT</code></td><td>Specifies that the point on the second specified 3D geometry that is farthest from the first specified 3D geometry was calculated.</td></tr><tr><td><code>M_NORMAL_AT_POSITION</code></td><td>Specifies that a unit normal line (one unit in length) was calculated.</td></tr><tr><td><code>M_NOT_INITIALIZED</code></td><td>Specifies that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> has not been called with this calculate 3D metrology result buffer.</td></tr><tr><td><code>M_ORTHOGONALIZE</code></td><td>Specifies that the specified source 3D geometry was rotated such that it is arranged orthogonally with another 3D geometry.</td></tr><tr><td><code>M_POINT_ON_LINE</code></td><td>Specifies that a point on the source 3D line was created.</td></tr><tr><td><code>M_POINT_ON_LINE_CLIPPED</code></td><td>Specifies that a point on the source 3D line was created such that the point does not fall outside the limits of the line.</td></tr><tr><td><code>M_PROJECTION</code></td><td>Specifies that a point or line was projected onto a second 3D geometry, creating a new point or line on the surface of the second 3D geometry.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_overlap"><code>M_OVERLAP</code><a href="#m_overlap" class="hash-link" aria-label="Direct link to m_overlap" title="Direct link to m_overlap" translate="no">​</a></h4>
+<p>Retrieves the percentage of overlap between two source 3D geometries.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_OVERLAP</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_parallelism"><code>M_PARALLELISM</code><a href="#m_parallelism" class="hash-link" aria-label="Direct link to m_parallelism" title="Direct link to m_parallelism" translate="no">​</a></h4>
+<p>Retrieves the deviation from a parallel orientation between two source 3D geometries.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_ANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_PARALLELISM</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_perpendicularity"><code>M_PERPENDICULARITY</code><a href="#m_perpendicularity" class="hash-link" aria-label="Direct link to m_perpendicularity" title="Direct link to m_perpendicularity" translate="no">​</a></h4>
+<p>Retrieves the deviation from a perpendicular orientation between two source 3D geometries.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_ANGLE</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_PERPENDICULARITY</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_extrusion"><code>M_STATUS_EXTRUSION</code><a href="#m_status_extrusion" class="hash-link" aria-label="Direct link to m_status_extrusion" title="Direct link to m_status_extrusion" translate="no">​</a></h4>
+<p>Retrieves whether the extrusion operation was successful.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_EXTRUSION_CENTER</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_EXTRUSION_BORDER</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL</code></td><td>Specifies that the extrusion operation did not complete successfully. Failed extrusions can occur for an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_EXTRUSION_BORDER</code></a> operation when the plane intersects opposing parallel faces of the box.</td></tr><tr><td><code>M_SUCCESS</code></td><td>Specifies that the extrusion operation completed successfully.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_union"><code>M_UNION</code><a href="#m_union" class="hash-link" aria-label="Direct link to m_union" title="Direct link to m_union" translate="no">​</a></h4>
+<p>Retrieves the volume of the union of two source 3D geometries.  This result is available after calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M3dmetFeatureEx</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFeatureEx"><code>M_OVERLAP</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetvolumeex-operation"><code>Calculate 3D metrology result buffer ID, for retrieving results of an M3dmetVolumeEx operation</code><a href="#calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetvolumeex-operation" class="hash-link" aria-label="Direct link to calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetvolumeex-operation" title="Direct link to calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetvolumeex-operation" translate="no">​</a></h3>
+<p>Specifies the identifier of a calculate 3D metrology result buffer that holds results of an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetVolumeEx"><code>M3dmetVolumeEx</code></a> operation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_element_image_size_x"><code>M_RESULT_ELEMENT_IMAGE_SIZE_X</code><a href="#m_result_element_image_size_x" class="hash-link" aria-label="Direct link to m_result_element_image_size_x" title="Direct link to m_result_element_image_size_x" translate="no">​</a></h4>
+<p>Retrieves the size in X of the source point cloud&#x27;s mesh component or of the source depth map, in pixels. You can use this value to allocate an image buffer of the correct size when retrieving a result image created using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M3dmetCopyResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_ELEMENT_INDEX_IMAGE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_ELEMENT_MASK</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_ELEMENT_STATUS_IMAGE</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_element_image_size_y"><code>M_RESULT_ELEMENT_IMAGE_SIZE_Y</code><a href="#m_result_element_image_size_y" class="hash-link" aria-label="Direct link to m_result_element_image_size_y" title="Direct link to m_result_element_image_size_y" translate="no">​</a></h4>
+<p>Retrieves the size in Y of the source point cloud&#x27;s mesh component or of the source depth map, in pixels. You can use this value to allocate an image buffer of the correct size when retrieving a result image created using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M3dmetCopyResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_ELEMENT_INDEX_IMAGE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_ELEMENT_MASK</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_ELEMENT_STATUS_IMAGE</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_x-1"><code>M_RESULT_IMAGE_SIZE_X</code><a href="#m_result_image_size_x-1" class="hash-link" aria-label="Direct link to m_result_image_size_x-1" title="Direct link to m_result_image_size_x-1" translate="no">​</a></h4>
+<p>Retrieves the size in X of the source point cloud&#x27;s range component or of the source depth map, in pixels. You can use this value to allocate an image buffer of the correct size when retrieving a result image created using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M3dmetCopyResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_SOURCE_POINTS_MASK</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_SOURCE_POINTS_STATUS_IMAGE</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_y-1"><code>M_RESULT_IMAGE_SIZE_Y</code><a href="#m_result_image_size_y-1" class="hash-link" aria-label="Direct link to m_result_image_size_y-1" title="Direct link to m_result_image_size_y-1" translate="no">​</a></h4>
+<p>Retrieves the size in Y of the source point cloud&#x27;s range component or of the source depth map, in pixels. You can use this value to allocate an image buffer of the correct size when retrieving a result image created using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M3dmetCopyResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_SOURCE_POINTS_MASK</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_SOURCE_POINTS_STATUS_IMAGE</code></a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_volume_info"><code>M_SAVE_VOLUME_INFO</code><a href="#m_save_volume_info" class="hash-link" aria-label="Direct link to m_save_volume_info" title="Direct link to m_save_volume_info" translate="no">​</a></h4>
+<p>Retrieves whether volume information has been saved into the calculate 3D metrology result buffer. Volume information is necessary to copy results into an image buffer or container (for example, to create a status image using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M3dmetCopyResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M_VOLUME_ELEMENT_STATUS_IMAGE</code></a>). Volume information is only saved if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetControl"><code>M3dmetControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetControl"><code>M_SAVE_VOLUME_INFO</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetControl"><code>M_TRUE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that volume information has not been saved.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that volume information has been saved.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_volume"><code>M_STATUS_VOLUME</code><a href="#m_status_volume" class="hash-link" aria-label="Direct link to m_status_volume" title="Direct link to m_status_volume" translate="no">​</a></h4>
+<p>Retrieves the status of the volume operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FAIL_GAPS</code></td><td>Specifies that the volume was not successfully computed, since the source Aurora Imaging Library object was a mesh with gaps, and there was no reference Aurora Imaging Library object.</td></tr><tr><td><code>M_FAIL_INVALID_MESH</code></td><td>Specifies that the volume was not successfully computed, since the mesh was not usable.</td></tr><tr><td><code>M_SUCCESS</code></td><td>Specifies that the volume was successfully computed.</td></tr><tr><td><code>M_WARNING_GAPS</code></td><td>Specifies that the volume was successfully computed, but there were gaps in the specified source depth map.</td></tr><tr><td><code>M_NOT_INITIALIZED</code></td><td>Specifies that the calculate 3D metrology result buffer was not used in a call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetVolumeEx"><code>M3dmetVolumeEx</code></a>, and contains no results.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume"><code>M_VOLUME</code><a href="#m_volume" class="hash-link" aria-label="Direct link to m_volume" title="Direct link to m_volume" translate="no">​</a></h4>
+<p>Retrieves the computed volume.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume_mode"><code>M_VOLUME_MODE</code><a href="#m_volume_mode" class="hash-link" aria-label="Direct link to m_volume_mode" title="Direct link to m_volume_mode" translate="no">​</a></h4>
+<p>Retrieves the volume mode used to calculate the volume.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COMPLETE</code> <em>(default)</em></td><td>Specifies to calculate all volume results, which can then be retrieved, copied, or drawn, according to the specified <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetControl"><code>M_VOLUME_OUTPUT_MODE</code></a>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume_nb_elements"><code>M_VOLUME_NB_ELEMENTS</code><a href="#m_volume_nb_elements" class="hash-link" aria-label="Direct link to m_volume_nb_elements" title="Direct link to m_volume_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the number of elements that were used to compute the volume.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume_nb_negative_elements"><code>M_VOLUME_NB_NEGATIVE_ELEMENTS</code><a href="#m_volume_nb_negative_elements" class="hash-link" aria-label="Direct link to m_volume_nb_negative_elements" title="Direct link to m_volume_nb_negative_elements" translate="no">​</a></h4>
+<p>Retrieves the number of elements that were used to compute the negative part of the volume.  For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C39_3D_Metrology/S06_Calculate_volume">How the volume of a meshed point cloud with holes is calculated</a>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume_nb_positive_elements"><code>M_VOLUME_NB_POSITIVE_ELEMENTS</code><a href="#m_volume_nb_positive_elements" class="hash-link" aria-label="Direct link to m_volume_nb_positive_elements" title="Direct link to m_volume_nb_positive_elements" translate="no">​</a></h4>
+<p>Retrieves the number of elements that were used to compute the positive part of the volume.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume_nb_unused_elements"><code>M_VOLUME_NB_UNUSED_ELEMENTS</code><a href="#m_volume_nb_unused_elements" class="hash-link" aria-label="Direct link to m_volume_nb_unused_elements" title="Direct link to m_volume_nb_unused_elements" translate="no">​</a></h4>
+<p>Retrieves the number of valid elements that were not used to compute the volume. To illustrate, for a 10 x 10 depth map with 5 pixels corresponding to invalid data, 95 valid elements remain for a possible volume calculation. If the specified operation is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetControl"><code>M_ABOVE</code></a> and 40 elements contribute positively to the volume calculation, while 0 contribute negatively, then there are 55 valid elements that were not used to calculate the volume (95 - 40 - 0 = 55), and, for this example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_VOLUME_NB_UNUSED_ELEMENTS</code></a> returns 55.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_volume_reference_type"><code>M_VOLUME_REFERENCE_TYPE</code><a href="#m_volume_reference_type" class="hash-link" aria-label="Direct link to m_volume_reference_type" title="Direct link to m_volume_reference_type" translate="no">​</a></h4>
+<p>Retrieves the type of reference object that was used to compute the volume.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_NULL</code></td><td>Specifies that a reference object was not used.</td></tr><tr><td><code>M_DEPTH_MAP</code></td><td>Specifies a depth map reference object.</td></tr><tr><td><code>M_PLANE</code></td><td>Specifies a plane reference object.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fit-3d-metrology-result-id"><code>Fit 3D metrology result ID</code><a href="#fit-3d-metrology-result-id" class="hash-link" aria-label="Direct link to fit-3d-metrology-result-id" title="Direct link to fit-3d-metrology-result-id" translate="no">​</a></h3>
+<p>Specifies the identifier of a fit 3D metrology result buffer.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_x"><code>M_AXIS_X</code><a href="#m_axis_x" class="hash-link" aria-label="Direct link to m_axis_x" title="Direct link to m_axis_x" translate="no">​</a></h4>
+<p>Retrieves the X-component of the fitted 3D geometry&#x27;s unit vector.  If the fitted 3D geometry is a cylinder, the X-component of the cylinder&#x27;s central axis unit vector is retrieved. This vector does not reflect the cylinder&#x27;s length.  If the fitted 3D geometry is a line, the X-component of the line&#x27;s direction unit vector is retrieved. This vector does not reflect the line&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the X-component of the unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_y"><code>M_AXIS_Y</code><a href="#m_axis_y" class="hash-link" aria-label="Direct link to m_axis_y" title="Direct link to m_axis_y" translate="no">​</a></h4>
+<p>Retrieves the Y-component of the fitted 3D geometry&#x27;s unit vector.  If the fitted 3D geometry is a cylinder, the Y-component of the cylinder&#x27;s central axis unit vector is retrieved. This vector does not reflect the cylinder&#x27;s length.  If the fitted 3D geometry is a line, the Y-component of the line&#x27;s direction unit vector is retrieved. This vector does not reflect the line&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Y-component of the unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_axis_z"><code>M_AXIS_Z</code><a href="#m_axis_z" class="hash-link" aria-label="Direct link to m_axis_z" title="Direct link to m_axis_z" translate="no">​</a></h4>
+<p>Retrieves the Z-component of the fitted 3D geometry&#x27;s unit vector.  If the fitted 3D geometry is a cylinder, the Z-component of the cylinder&#x27;s central axis unit vector is retrieved. This vector does not reflect the cylinder&#x27;s length.  If the fitted 3D geometry is a line, then the Z-component of the line&#x27;s direction unit vector is retrieved. This vector does not reflect the line&#x27;s length.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Z-component of the unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_x"><code>M_CENTER_X</code><a href="#m_center_x" class="hash-link" aria-label="Direct link to m_center_x" title="Direct link to m_center_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the center point of the fitted 3D geometry, expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the X-coordinate of the center point on the cylinder&#x27;s central axis is retrieved.  If the fitted 3D geometry is a line, the X-coordinate of the center point on the line is retrieved.  If the fitted 3D geometry is a plane, the X-coordinate of the plane&#x27;s center is retrieved. This center point is equivalent to the centroid of all inlier points.  If the fitted 3D geometry is a sphere, the X-coordinate of the sphere&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_y"><code>M_CENTER_Y</code><a href="#m_center_y" class="hash-link" aria-label="Direct link to m_center_y" title="Direct link to m_center_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the center point of the fitted 3D geometry expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the Y-coordinate of the center point on the cylinder&#x27;s central axis is retrieved.  If the fitted 3D geometry is a line, the Y-coordinate of the center point on the line is retrieved.  If the fitted 3D geometry is a plane, the Y-coordinate of the plane&#x27;s center is retrieved. This center point is equivalent to the centroid of all inlier points.  If the fitted 3D geometry is a sphere, the Y-coordinate of the sphere&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_center_z"><code>M_CENTER_Z</code><a href="#m_center_z" class="hash-link" aria-label="Direct link to m_center_z" title="Direct link to m_center_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the center point of the fitted 3D geometry, expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the Z-coordinate of the center point on the cylinder&#x27;s central axis is retrieved.  If the fitted 3D geometry is a line, the Z-coordinate of the center point on the line is retrieved.  If the fitted 3D geometry is a plane, the Z-coordinate of the plane&#x27;s center is retrieved. This center point is equivalent to the centroid of all inlier points.  If the fitted 3D geometry is a sphere, the Z-coordinate of the sphere&#x27;s center point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_x"><code>M_CLOSEST_TO_ORIGIN_X</code><a href="#m_closest_to_origin_x" class="hash-link" aria-label="Direct link to m_closest_to_origin_x" title="Direct link to m_closest_to_origin_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the point on the fitted 3D plane geometry, closest to the origin of the working coordinate system.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_y"><code>M_CLOSEST_TO_ORIGIN_Y</code><a href="#m_closest_to_origin_y" class="hash-link" aria-label="Direct link to m_closest_to_origin_y" title="Direct link to m_closest_to_origin_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the point on the fitted 3D plane geometry, closest to the origin of the working coordinate system.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_closest_to_origin_z"><code>M_CLOSEST_TO_ORIGIN_Z</code><a href="#m_closest_to_origin_z" class="hash-link" aria-label="Direct link to m_closest_to_origin_z" title="Direct link to m_closest_to_origin_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the point on the fitted 3D plane geometry, closest to the origin of the working coordinate system.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_a"><code>M_COEFFICIENT_A</code><a href="#m_coefficient_a" class="hash-link" aria-label="Direct link to m_coefficient_a" title="Direct link to m_coefficient_a" translate="no">​</a></h4>
+<p>Retrieves the coefficient <em>A</em> of the fitted 3D plane geometry&#x27;s equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient <em>A</em>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_b"><code>M_COEFFICIENT_B</code><a href="#m_coefficient_b" class="hash-link" aria-label="Direct link to m_coefficient_b" title="Direct link to m_coefficient_b" translate="no">​</a></h4>
+<p>Retrieves the coefficient <em>B</em> of the fitted 3D plane geometry&#x27;s equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient <em>B</em>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_c"><code>M_COEFFICIENT_C</code><a href="#m_coefficient_c" class="hash-link" aria-label="Direct link to m_coefficient_c" title="Direct link to m_coefficient_c" translate="no">​</a></h4>
+<p>Retrieves the coefficient <em>C</em> of the fitted 3D plane geometry&#x27;s equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the coefficient <em>C</em>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_coefficient_d"><code>M_COEFFICIENT_D</code><a href="#m_coefficient_d" class="hash-link" aria-label="Direct link to m_coefficient_d" title="Direct link to m_coefficient_d" translate="no">​</a></h4>
+<p>Retrieves the coefficient <em>D</em> of the fitted 3D plane geometry&#x27;s equation, <code>Ax + By + Cz + D = 0</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the coefficient <em>D</em>.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_x"><code>M_END_POINT_X</code><a href="#m_end_point_x" class="hash-link" aria-label="Direct link to m_end_point_x" title="Direct link to m_end_point_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the end point of the fitted 3D geometry, expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the X-coordinate of the cylinder&#x27;s end point (positioned at the center of the cylinder&#x27;s second circular base) is retrieved.  If the fitted 3D geometry is a line, the X-coordinate of the line&#x27;s end point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_y"><code>M_END_POINT_Y</code><a href="#m_end_point_y" class="hash-link" aria-label="Direct link to m_end_point_y" title="Direct link to m_end_point_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the end point of the fitted 3D geometry, expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the Y-coordinate of the cylinder&#x27;s end point (positioned at the center of the cylinder&#x27;s second circular base) is retrieved.  If the fitted 3D geometry is a line, the Y-coordinate of the line&#x27;s end point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_end_point_z"><code>M_END_POINT_Z</code><a href="#m_end_point_z" class="hash-link" aria-label="Direct link to m_end_point_z" title="Direct link to m_end_point_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the end point of the fitted 3D geometry, expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the Z-coordinate of the cylinder&#x27;s end point (positioned at the center of the cylinder&#x27;s second circular base) is retrieved.  If the fitted 3D geometry is a line, the Z-coordinate of the line&#x27;s end point is retrieved.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_fit_rms_error"><code>M_FIT_RMS_ERROR</code><a href="#m_fit_rms_error" class="hash-link" aria-label="Direct link to m_fit_rms_error" title="Direct link to m_fit_rms_error" translate="no">​</a></h4>
+<p>Retrieves the root-mean-squared (RMS) error of the distance between the point cloud or depth map, and the fitted 3D geometry. Only inliers are considered when calculating the RMS error.  For planes, the error corresponds to the distance between the points and the fitted plane.  For spheres and cylinders, the error corresponds to the distance between the points and the surface of the sphere or cylinder. For cylinders, this specifically refers to the distance to the curved surface and not the circular bases.  This result is only available for retrieval after a successful fit.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_geometry_type-1"><code>M_GEOMETRY_TYPE</code><a href="#m_geometry_type-1" class="hash-link" aria-label="Direct link to m_geometry_type-1" title="Direct link to m_geometry_type-1" translate="no">​</a></h4>
+<p>Retrieves the type of the fitted 3D geometry.  This result is only available for retrieval after a successful fit.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_CYLINDER</code></td><td>Specifies a cylinder.</td></tr><tr><td><code>M_LINE</code></td><td>Specifies a line.</td></tr><tr><td><code>M_PLANE</code></td><td>Specifies a plane.</td></tr><tr><td><code>M_SPHERE</code></td><td>Specifies a sphere.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_length"><code>M_LENGTH</code><a href="#m_length" class="hash-link" aria-label="Direct link to m_length" title="Direct link to m_length" translate="no">​</a></h4>
+<p>Retrieves the length of the fitted 3D cylinder geometry, or fitted 3D line geometry, in world units.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_x"><code>M_NORMAL_X</code><a href="#m_normal_x" class="hash-link" aria-label="Direct link to m_normal_x" title="Direct link to m_normal_x" translate="no">​</a></h4>
+<p>Retrieves the X-component of the fitted 3D plane geometry&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the X-component of the normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_y"><code>M_NORMAL_Y</code><a href="#m_normal_y" class="hash-link" aria-label="Direct link to m_normal_y" title="Direct link to m_normal_y" translate="no">​</a></h4>
+<p>Retrieves the Y-component of the fitted 3D plane geometry&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Y-component of the normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_normal_z"><code>M_NORMAL_Z</code><a href="#m_normal_z" class="hash-link" aria-label="Direct link to m_normal_z" title="Direct link to m_normal_z" translate="no">​</a></h4>
+<p>Retrieves the Z-component of the fitted 3D plane geometry&#x27;s normal unit vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>-1.0 &gt;= Value &gt;= 1.0</code></td><td>Specifies the Z-component of the normal unit vector, expressed in the working coordinate system.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_inliers"><code>M_NUMBER_OF_POINTS_INLIERS</code><a href="#m_number_of_points_inliers" class="hash-link" aria-label="Direct link to m_number_of_points_inliers" title="Direct link to m_number_of_points_inliers" translate="no">​</a></h4>
+<p>Retrieves the number of points that were considered inliers during the fit operation.  This result is only available for retrieval after a fit operation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_missing_data"><code>M_NUMBER_OF_POINTS_MISSING_DATA</code><a href="#m_number_of_points_missing_data" class="hash-link" aria-label="Direct link to m_number_of_points_missing_data" title="Direct link to m_number_of_points_missing_data" translate="no">​</a></h4>
+<p>Retrieves the number of points with zero confidence (if you specified a container), or the number of points with an invalid value (if you specified a depth map). Note that in the case of depth maps, this only refers to the points inside the ROI.  This result is only available for retrieval after a fit operation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_outliers"><code>M_NUMBER_OF_POINTS_OUTLIERS</code><a href="#m_number_of_points_outliers" class="hash-link" aria-label="Direct link to m_number_of_points_outliers" title="Direct link to m_number_of_points_outliers" translate="no">​</a></h4>
+<p>Retrieves the number of points that were considered outliers during the fit operation.  This result is only available for retrieval after a fit operation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_total"><code>M_NUMBER_OF_POINTS_TOTAL</code><a href="#m_number_of_points_total" class="hash-link" aria-label="Direct link to m_number_of_points_total" title="Direct link to m_number_of_points_total" translate="no">​</a></h4>
+<p>Retrieves the total number of points. This number is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_NUMBER_OF_POINTS_VALID</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_NUMBER_OF_POINTS_MISSING_DATA</code></a>.  This result is only available for retrieval after a fit operation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_points_valid"><code>M_NUMBER_OF_POINTS_VALID</code><a href="#m_number_of_points_valid" class="hash-link" aria-label="Direct link to m_number_of_points_valid" title="Direct link to m_number_of_points_valid" translate="no">​</a></h4>
+<p>Retrieves the number of valid points, which is equal to the number of points with non-zero confidence. This number is equal to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_NUMBER_OF_POINTS_INLIERS</code></a> + <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetGetResult"><code>M_NUMBER_OF_POINTS_OUTLIERS</code></a>.  This result is only available for retrieval after a fit operation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_outlier_distance"><code>M_OUTLIER_DISTANCE</code><a href="#m_outlier_distance" class="hash-link" aria-label="Direct link to m_outlier_distance" title="Direct link to m_outlier_distance" translate="no">​</a></h4>
+<p>Retrieves the outlier distance used for the fit. When <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFit"><code>M_AUTO_VALUE</code></a> was specified, the function returns the automatically calculated value; otherwise, it returns the value passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFit"><code>M3dmetFit</code></a>.  This result is only available for retrieval after a fit operation.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_radius"><code>M_RADIUS</code><a href="#m_radius" class="hash-link" aria-label="Direct link to m_radius" title="Direct link to m_radius" translate="no">​</a></h4>
+<p>Retrieves the radius of the fitted 3D cylinder geometry or 3D sphere geometry in world units.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_x-2"><code>M_RESULT_IMAGE_SIZE_X</code><a href="#m_result_image_size_x-2" class="hash-link" aria-label="Direct link to m_result_image_size_x-2" title="Direct link to m_result_image_size_x-2" translate="no">​</a></h4>
+<p>Retrieves the size in X of the range component of the source point cloud or depth map, in pixels. Note that you can use this value to allocate an image buffer of an appropriate size for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M3dmetCopyResult</code></a>.  This result is only available for retrieval after a fit operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the size in X.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_result_image_size_y-2"><code>M_RESULT_IMAGE_SIZE_Y</code><a href="#m_result_image_size_y-2" class="hash-link" aria-label="Direct link to m_result_image_size_y-2" title="Direct link to m_result_image_size_y-2" translate="no">​</a></h4>
+<p>Retrieves the size in Y of the range component of the source point cloud or depth map, in pixels. Note that you can use this value to allocate an image buffer of an appropriate size for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetCopyResult"><code>M3dmetCopyResult</code></a>.  This result is only available for retrieval after a fit operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the size in Y.</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_x"><code>M_START_POINT_X</code><a href="#m_start_point_x" class="hash-link" aria-label="Direct link to m_start_point_x" title="Direct link to m_start_point_x" translate="no">​</a></h4>
+<p>Retrieves the X-coordinate of the fitted 3D geometry&#x27;s start point, expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the start point is positioned at the center of the cylinder&#x27;s first circular base.  If the fitted 3D geometry is a line, the start point is positioned at the start of the line.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_y"><code>M_START_POINT_Y</code><a href="#m_start_point_y" class="hash-link" aria-label="Direct link to m_start_point_y" title="Direct link to m_start_point_y" translate="no">​</a></h4>
+<p>Retrieves the Y-coordinate of the fitted 3D geometry&#x27;s start point, expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the start point is positioned at the center of the cylinder&#x27;s first circular base.  If the fitted 3D geometry is a line, the start point is positioned at the start of the line.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_start_point_z"><code>M_START_POINT_Z</code><a href="#m_start_point_z" class="hash-link" aria-label="Direct link to m_start_point_z" title="Direct link to m_start_point_z" translate="no">​</a></h4>
+<p>Retrieves the Z-coordinate of the fitted 3D geometry&#x27;s start point, expressed in the working coordinate system.  If the fitted 3D geometry is a cylinder, the start point is positioned at the center of the cylinder&#x27;s first circular base.  If the fitted 3D geometry is a line, the start point is positioned at the start of the line.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status_fit"><code>M_STATUS_FIT</code><a href="#m_status_fit" class="hash-link" aria-label="Direct link to m_status_fit" title="Direct link to m_status_fit" translate="no">​</a></h4>
+<p>Retrieves the status of the fit operation.  This result is always available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_ALL_POINTS_COLLINEAR</code></td><td>Specifies that the fit failed because the fit operation tried to fit a sphere, cylinder, or plane, to points that lie on the same straight line.</td></tr><tr><td><code>M_ALL_POINTS_COPLANAR</code></td><td>Specifies that the fit failed because the fit operation tried to fit a sphere or cylinder, to points that lie on the same plane.</td></tr><tr><td><code>M_BAD_ESTIMATE</code></td><td>Specifies that the fit failed because the initial fit estimate did not include any valid inliers.</td></tr><tr><td><code>M_NOT_ENOUGH_VALID_DATA</code></td><td>Specifies that the fit failed because there were not enough valid points to fit the specified 3D geometry.</td></tr><tr><td><code>M_NOT_INITIALIZED</code></td><td>Specifies that the fit 3D metrology result buffer was not used in a call to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFit"><code>M3dmetFit</code></a>, and contains no results.</td></tr><tr><td><code>M_SUCCESS</code></td><td>Specifies that the fit operation completed successfully.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="statistics-3d-metrology-result-id"><code>Statistics 3D metrology result ID</code><a href="#statistics-3d-metrology-result-id" class="hash-link" aria-label="Direct link to statistics-3d-metrology-result-id" title="Direct link to statistics-3d-metrology-result-id" translate="no">​</a></h3>
+<p>Specifies the identifier of a statistics 3D metrology result buffer.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_max"><code>M_STAT_MAX</code><a href="#m_stat_max" class="hash-link" aria-label="Direct link to m_stat_max" title="Direct link to m_stat_max" translate="no">​</a></h4>
+<p>Retrieves the maximum distance between the point cloud or depth map, and the reference 3D geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_max_abs"><code>M_STAT_MAX_ABS</code><a href="#m_stat_max_abs" class="hash-link" aria-label="Direct link to m_stat_max_abs" title="Direct link to m_stat_max_abs" translate="no">​</a></h4>
+<p>Retrieves the maximum absolute distance between the point cloud or depth map, and the reference 3D geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_mean"><code>M_STAT_MEAN</code><a href="#m_stat_mean" class="hash-link" aria-label="Direct link to m_stat_mean" title="Direct link to m_stat_mean" translate="no">​</a></h4>
+<p>Retrieves the average distance between the point cloud or depth map, and the reference 3D geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_mean_abs"><code>M_STAT_MEAN_ABS</code><a href="#m_stat_mean_abs" class="hash-link" aria-label="Direct link to m_stat_mean_abs" title="Direct link to m_stat_mean_abs" translate="no">​</a></h4>
+<p>Retrieves the average absolute distance between the point cloud or depth map, and the reference 3D geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_min"><code>M_STAT_MIN</code><a href="#m_stat_min" class="hash-link" aria-label="Direct link to m_stat_min" title="Direct link to m_stat_min" translate="no">​</a></h4>
+<p>Retrieves the minimum distance between the point cloud or depth map, and the reference 3D geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_min_abs"><code>M_STAT_MIN_ABS</code><a href="#m_stat_min_abs" class="hash-link" aria-label="Direct link to m_stat_min_abs" title="Direct link to m_stat_min_abs" translate="no">​</a></h4>
+<p>Retrieves the minimum absolute distance between the point cloud or depth map, and the reference 3D geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_number"><code>M_STAT_NUMBER</code><a href="#m_stat_number" class="hash-link" aria-label="Direct link to m_stat_number" title="Direct link to m_stat_number" translate="no">​</a></h4>
+<p>Retrieves the number of points that satisfied the condition specified when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetStat"><code>M3dmetStat</code></a> was called (using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetStat"><code>Condition</code></a> parameter).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_rms"><code>M_STAT_RMS</code><a href="#m_stat_rms" class="hash-link" aria-label="Direct link to m_stat_rms" title="Direct link to m_stat_rms" translate="no">​</a></h4>
+<p>Retrieves the root-mean-square (RMS) error between the point cloud or depth map, and the reference 3D geometry object. Aurora Imaging Library calculates the RMS error using the following formula:  <em>[Image: 3dreg_RootMeanSquareError_eq.png]</em></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_standard_deviation"><code>M_STAT_STANDARD_DEVIATION</code><a href="#m_stat_standard_deviation" class="hash-link" aria-label="Direct link to m_stat_standard_deviation" title="Direct link to m_stat_standard_deviation" translate="no">​</a></h4>
+<p>Retrieves the standard deviation of all the distances calculated between the point cloud or depth map, and the reference 3D geometry. Aurora Imaging Library calculates the standard deviation using the following formula:  <em>[Image: 3dmet_StandardDeviation_eq.png]</em></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_sum"><code>M_STAT_SUM</code><a href="#m_stat_sum" class="hash-link" aria-label="Direct link to m_stat_sum" title="Direct link to m_stat_sum" translate="no">​</a></h4>
+<p>Retrieves the sum of all the distances calculated between the point cloud or depth map, and the reference 3D geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_sum_abs"><code>M_STAT_SUM_ABS</code><a href="#m_stat_sum_abs" class="hash-link" aria-label="Direct link to m_stat_sum_abs" title="Direct link to m_stat_sum_abs" translate="no">​</a></h4>
+<p>Retrieves the sum of all the absolute distances calculated between the point cloud or depth map, and the reference 3D geometry.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_stat_sum_of_squares"><code>M_STAT_SUM_OF_SQUARES</code><a href="#m_stat_sum_of_squares" class="hash-link" aria-label="Direct link to m_stat_sum_of_squares" title="Direct link to m_stat_sum_of_squares" translate="no">​</a></h4>
+<p>Retrieves the sum of squared distances between the point cloud or depth map, and the reference 3D geometry.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-whether-results-are-available">Combination Constants — For determining whether results are available<a href="#combination-constants--for-determining-whether-results-are-available" class="hash-link" aria-label="Direct link to Combination Constants — For determining whether results are available" title="Direct link to Combination Constants — For determining whether results are available" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether a result is available.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_available"><code>M_AVAILABLE</code><a href="#m_available" class="hash-link" aria-label="Direct link to m_available" title="Direct link to m_available" translate="no">​</a></h4>
+<p>Retrieves whether the requested result type is available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the requested result type is not available.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the requested result type is available.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested results to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_float"><code>M_TYPE_AIL_FLOAT</code><a href="#m_type_ail_float" class="hash-link" aria-label="Direct link to m_type_ail_float" title="Direct link to m_type_ail_float" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_FLOAT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_DOUBLE</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_DOUBLE</em>. If the requested information does not fit into an <em>AIL_DOUBLE</em>, this function will return <code>M_NULL</code>or truncate the information.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetFree"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dmetFree</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/M3dmetInquire"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dmetInquire</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#result3dmetid-in-ail_id" class="table-of-contents__link toc-highlight"><code>Result3dmetId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#resulttype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ResultType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#resultarrayptr-out-void" class="table-of-contents__link toc-highlight"><code>ResultArrayPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-specifying-the-type-of-result-to-retrieve-from-a-calculate-fit-or-statistics-3d-metrology-result-buffer" class="table-of-contents__link toc-highlight">For specifying the type of result to retrieve from a calculate, fit, or statistics 3D metrology result buffer</a></li><li><a href="#calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetdistanceex-operation" class="table-of-contents__link toc-highlight"><code>Calculate 3D metrology result buffer ID, for retrieving results of an M3dmetDistanceEx operation</code></a></li><li><a href="#calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetfeatureex-operation" class="table-of-contents__link toc-highlight"><code>Calculate 3D metrology result buffer ID, for retrieving results of an M3dmetFeatureEx operation</code></a></li><li><a href="#calculate-3d-metrology-result-buffer-id-for-retrieving-results-of-an-m3dmetvolumeex-operation" class="table-of-contents__link toc-highlight"><code>Calculate 3D metrology result buffer ID, for retrieving results of an M3dmetVolumeEx operation</code></a></li><li><a href="#fit-3d-metrology-result-id" class="table-of-contents__link toc-highlight"><code>Fit 3D metrology result ID</code></a></li><li><a href="#statistics-3d-metrology-result-id" class="table-of-contents__link toc-highlight"><code>Statistics 3D metrology result ID</code></a></li><li><a href="#combination-constants--for-determining-whether-results-are-available" class="table-of-contents__link toc-highlight">Combination Constants — For determining whether results are available</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

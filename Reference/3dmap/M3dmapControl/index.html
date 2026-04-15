@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dmap/M3dmapControl" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dmapControl | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dmapControl | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dmap","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"},{"@type":"ListItem","position":2,"name":"M3dmapControl","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Collapse sidebar category &#x27;3dmap&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><span title="M3dmapAddScan" class="linkLabel_WmDU">M3dmapAddScan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><span title="M3dmapAlignScan" class="linkLabel_WmDU">M3dmapAlignScan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><span title="M3dmapAlloc" class="linkLabel_WmDU">M3dmapAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><span title="M3dmapAllocResult" class="linkLabel_WmDU">M3dmapAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCalibrate"><span title="M3dmapCalibrate" class="linkLabel_WmDU">M3dmapCalibrate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCalibrateMultiple"><span title="M3dmapCalibrateMultiple" class="linkLabel_WmDU">M3dmapCalibrateMultiple</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapClear"><span title="M3dmapClear" class="linkLabel_WmDU">M3dmapClear</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><span title="M3dmapControl" class="linkLabel_WmDU">M3dmapControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCopy"><span title="M3dmapCopy" class="linkLabel_WmDU">M3dmapCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCopyResult"><span title="M3dmapCopyResult" class="linkLabel_WmDU">M3dmapCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw"><span title="M3dmapDraw" class="linkLabel_WmDU">M3dmapDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw3d"><span title="M3dmapDraw3d" class="linkLabel_WmDU">M3dmapDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapFree"><span title="M3dmapFree" class="linkLabel_WmDU">M3dmapFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><span title="M3dmapGetResult" class="linkLabel_WmDU">M3dmapGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapInquire"><span title="M3dmapInquire" class="linkLabel_WmDU">M3dmapInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapRestore"><span title="M3dmapRestore" class="linkLabel_WmDU">M3dmapRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapSave"><span title="M3dmapSave" class="linkLabel_WmDU">M3dmapSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapStream"><span title="M3dmapStream" class="linkLabel_WmDU">M3dmapStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapTriangulate"><span title="M3dmapTriangulate" class="linkLabel_WmDU">M3dmapTriangulate</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span>3dmap</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dmapControl</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dmapControl</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Control a 3D alignment context, profiling 3D reconstruction context, draw 3D reconstruction context, or 3D reconstruction result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">M3dmapControl</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID     ContextOrResult3dmapId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT    LabelOrIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">            </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64  ControlType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">             </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_DOUBLE ControlValue             </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function allows you to control a specified setting of a 3D alignment context, profiling 3D reconstruction context, draw 3D reconstruction context, or 3D reconstruction result buffer.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresult3dmapid-out-ail_id"><code>ContextOrResult3dmapId</code> <em>(out, AIL_ID)</em><a href="#contextorresult3dmapid-out-ail_id" class="hash-link" aria-label="Direct link to contextorresult3dmapid-out-ail_id" title="Direct link to contextorresult3dmapid-out-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 3D alignment context, profiling 3D reconstruction context, draw 3D reconstruction context, or 3D reconstruction result buffer whose setting to modify. The 3D alignment context, profiling 3D reconstruction context, or draw 3D reconstruction context must have been previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M3dmapAlloc</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_ALIGN_CONTEXT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_LASER</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_DRAW_3D_CONTEXT</code></a>, respectively. The 3D reconstruction must have been previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M3dmapAllocResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_DEPTH_CORRECTED_DATA</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_LASER_CALIBRATION_DATA</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="labelorindex-in-ail_int"><code>LabelOrIndex</code> <em>(in, AIL_INT)</em><a href="#labelorindex-in-ail_int" class="hash-link" aria-label="Direct link to labelorindex-in-ail_int" title="Direct link to labelorindex-in-ail_int" translate="no">​</a></h3>
+<p>Specifies the point cloud(s) in the specified 3D reconstruction result buffer, or the entire result buffer itself, to control. Only 3D reconstruction result buffers allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a> have point clouds that can be specified using this parameter. For all other types of 3D reconstruction contexts and result buffers, set this parameter to <code>M_DEFAULT</code>.</p>
+<p><em>For specifying the point cloud(s) or point cloud container</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_POINT_CLOUD_INDEX</code></td><td>Specifies the index of a point cloud in the specified 3D reconstruction result buffer.</td></tr><tr><td><code>M_POINT_CLOUD_LABEL</code></td><td>Specifies the label of a point cloud in the specified 3D reconstruction result buffer.</td></tr><tr><td><code>M_ALL</code></td><td>Specifies to apply the control to all point clouds in the specified 3D reconstruction result buffer.</td></tr><tr><td><code>M_GENERAL</code></td><td>Specifies to control the specified 3D reconstruction result buffer allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controltype-in-ail_int64"><code>ControlType</code> <em>(in, AIL_INT64)</em><a href="#controltype-in-ail_int64" class="hash-link" aria-label="Direct link to controltype-in-ail_int64" title="Direct link to controltype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of setting to control.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="controlvalue-in-ail_double"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em><a href="#controlvalue-in-ail_double" class="hash-link" aria-label="Direct link to controlvalue-in-ail_double" title="Direct link to controlvalue-in-ail_double" translate="no">​</a></h3>
+<p>Specifies the required value for the setting.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-3d-alignment-context">For a 3D alignment context<a href="#for-a-3d-alignment-context" class="hash-link" aria-label="Direct link to For a 3D alignment context" title="Direct link to For a 3D alignment context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlValue</code></a> parameter settings can be specified for a 3D alignment context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_ALIGN_CONTEXT</code></a>).  &gt; <strong>Note:</strong> Measurements that rely on the presence of an alignment object will not be calculated if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_FLAT_SURFACE</code></a>. In this case, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SCALE_Y</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SHEAR_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SHEAR_Z</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_HOLES_FOUND</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_Y_MIRRORED</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_RMS_ERROR</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_Y</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_Z</code></a>will not be retrievable using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M3dmapGetResult</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_align_x_position"><code>M_ALIGN_X_POSITION</code><a href="#m_align_x_position" class="hash-link" aria-label="Direct link to m_align_x_position" title="Direct link to m_align_x_position" translate="no">​</a></h3>
+<p>Sets whether to calculate the transformation required to align the origin of the working coordinate system with the origin of the alignment object along the X-axis. The alignment disk&#x27;s origin is at its center; the alignment pyramid&#x27;s origin is at the center of its truncated pyramid.  <em>[Image: M3dmap_m_align_x_position.png]</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_OBJECT_ORIGIN</code></td><td>Specifies to calculate the transformation to align the origin of the working coordinate system with the origin of the alignment object along the X-axis.</td></tr><tr><td><code>M_SAME</code> <em>(default)</em></td><td>Specifies not to calculate the transformation to align the origin of the working coordinate system along the X-axis. The origin of the working coordinate system will remain in its original position.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_align_xy_direction"><code>M_ALIGN_XY_DIRECTION</code><a href="#m_align_xy_direction" class="hash-link" aria-label="Direct link to m_align_xy_direction" title="Direct link to m_align_xy_direction" translate="no">​</a></h3>
+<p>Sets whether to calculate the transformation required to change the direction of the X- and Y-axes of the working coordinate system.  <em>[Image: M3dmap_XY_dir.png]</em>  &gt; <strong>Note:</strong> Note that changing the direction of one axis automatically updates the other axes to maintain the right-hand rule. Also note that Z=0 depends on <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_POSITION</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies to calculate the transformation to align with default direction; this is specific to the type of alignment object.  For the alignment disk (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>) and alignment surface (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_FLAT_SURFACE</code></a>), specifies to use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_SAME_X</code></a>.  For the alignment pyramid (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>), specifies to use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SAME_X</code></a>.</td></tr><tr><td><code>M_OBJECT_REVERSE_X</code></td><td>Specifies to calculate the transformation to align the X-axis of the working coordinate system with the reverse direction of the X-axis of the alignment pyramid. Depending on the setting of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, the Y-axis of the working coordinate system will either align with the same or reverse direction of the Y-axis of the alignment pyramid.  &gt; <strong>Note:</strong> This control value is only supported for the alignment pyramid (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>).</td></tr><tr><td><code>M_OBJECT_REVERSE_Y</code></td><td>Specifies to calculate the transformation to align the Y-axis of the working coordinate system with the reverse direction of the Y-axis of the alignment pyramid. Depending on the setting of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, the X-axis of the working coordinate system will either align with the same or reverse direction of the X-axis of the alignment pyramid.  &gt; <strong>Note:</strong> This control value is only supported for the alignment pyramid (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>).</td></tr><tr><td><code>M_OBJECT_SAME_X</code></td><td>Specifies to calculate the transformation to align the X-axis of the working coordinate system with the direction of the X-axis of the alignment pyramid. Depending on the setting of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, the Y-axis of the working coordinate system will either align with the same or reverse direction of the Y-axis of the alignment pyramid.  &gt; <strong>Note:</strong> This control value is only supported for the alignment pyramid (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>).</td></tr><tr><td><code>M_OBJECT_SAME_Y</code></td><td>Specifies to calculate the transformation to align the Y-axis of the working coordinate system with the direction of the Y-axis of the alignment pyramid. Depending on the setting of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, the X-axis of the working coordinate system will either align with the same or reverse direction of the X-axis of the alignment pyramid.  &gt; <strong>Note:</strong> This control value is only supported for the alignment pyramid (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>).</td></tr><tr><td><code>M_REVERSE_X</code></td><td>Specifies to calculate the transformation required to reverse the direction of the X-axis of the working coordinate system. Depending on the setting of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, the Y-axis of the working coordinate system will either point in the current or reverse direction.  &gt; <strong>Note:</strong> This control value is only supported for the alignment disk (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>) and alignment surface (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_FLAT_SURFACE</code></a>).</td></tr><tr><td><code>M_REVERSE_Y</code></td><td>Specifies to calculate the transformation required to reverse the direction of the Y-axis of the working coordinate system. Depending on the setting of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, the X-axis of the working coordinate system will either point in the current or reverse direction.  &gt; <strong>Note:</strong> This control value is only supported for the alignment disk (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>) and alignment surface (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_FLAT_SURFACE</code></a>).</td></tr><tr><td><code>M_SAME_X</code></td><td>Specifies to maintain the current direction of the X-axis of the working coordinate system. Depending on the setting of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, the Y-axis of the working coordinate system will either point in the current or reverse direction.  &gt; <strong>Note:</strong> This control value is only supported for the alignment disk (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>) and alignment surface (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_FLAT_SURFACE</code></a>).</td></tr><tr><td><code>M_SAME_Y</code></td><td>Specifies to maintain the current direction of the Y-axis of the working coordinate system. Depending on the setting of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, the X-axis of the working coordinate system will either point in the current or reverse direction.  &gt; <strong>Note:</strong> This control value is only supported for the alignment disk (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>) and alignment surface (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_FLAT_SURFACE</code></a>).</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_align_y_position"><code>M_ALIGN_Y_POSITION</code><a href="#m_align_y_position" class="hash-link" aria-label="Direct link to m_align_y_position" title="Direct link to m_align_y_position" translate="no">​</a></h3>
+<p>Sets whether to calculate the transformation required to align the origin of the working coordinate system with the origin of the alignment object along the Y-axis. The alignment disk&#x27;s origin is at its center; the alignment pyramid&#x27;s origin is at the center of its truncated pyramid.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_OBJECT_ORIGIN</code></td><td>Specifies to calculate the transformation to align the origin of the working coordinate system with the origin of the alignment object along the Y-axis.</td></tr><tr><td><code>M_SAME</code> <em>(default)</em></td><td>Specifies not to calculate the transformation to align the origin of the working coordinate system along the Y-axis. The origin of the working coordinate system will remain in its original position.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_align_z_direction"><code>M_ALIGN_Z_DIRECTION</code><a href="#m_align_z_direction" class="hash-link" aria-label="Direct link to m_align_z_direction" title="Direct link to m_align_z_direction" translate="no">​</a></h3>
+<p>Sets whether to calculate the transformation required to align the direction of the Z-axis of the working coordinate system.  &gt; <strong>Note:</strong> Note that changing the direction of one axis automatically updates the other axes to maintain the right-hand rule.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_REVERSE</code></td><td>Specifies to calculate the transformation required to reverse the direction of the Z-axis, relative to its original direction.</td></tr><tr><td><code>M_SAME</code> <em>(default)</em></td><td>Specifies not to calculate the transformation required to change the direction of the Z-axis. The current direction of the Z-axis will be maintained.</td></tr><tr><td><code>M_Z_DOWN</code></td><td>Specifies to calculate the transformation required to point the Z-axis downwards. This means that the Z-coordinates decrease in the direction in which the height increases.  &gt; <strong>Note:</strong> Note that this leads to negative Z-coordinates for the alignment object&#x27;s surface.</td></tr><tr><td><code>M_Z_UP</code></td><td>Specifies to calculate the transformation required to point the Z-axis upwards. This means that the Z-coordinates increase in the direction in which the height increase.  &gt; <strong>Note:</strong> Note that this leads to positive Z-coordinates for the alignment object&#x27;s surface.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_align_z_position"><code>M_ALIGN_Z_POSITION</code><a href="#m_align_z_position" class="hash-link" aria-label="Direct link to m_align_z_position" title="Direct link to m_align_z_position" translate="no">​</a></h3>
+<p>Sets whether to calculate the transformation required to align the origin of the working coordinate system to the top or bottom of the alignment object.  <em>[Image: M3dmap_m_align_z_position.png]</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_OBJECT_BOTTOM</code> <em>(default)</em></td><td>Specifies to calculate the transformation to align the origin of the working coordinate system with the bottom of the alignment object along the Z-axis.</td></tr><tr><td><code>M_OBJECT_TOP</code></td><td>Specifies to calculate the transformation to align the origin of the working coordinate system with the top of the alignment object along the Z-axis.</td></tr><tr><td><code>M_SAME</code></td><td>Specifies not to calculate the transformation to align the origin of the working coordinate system along the Z-axis. The origin of the working coordinate system will remain in its original position.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_camera_tilt_x"><code>M_CAMERA_TILT_X</code><a href="#m_camera_tilt_x" class="hash-link" aria-label="Direct link to m_camera_tilt_x" title="Direct link to m_camera_tilt_x" translate="no">​</a></h3>
+<p>Sets whether to enable camera tilt correction around the X-axis, and in which direction to enable the correction.  &gt; <strong>Note:</strong> Note that this does not apply to the alignment pyramid (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>) for which the tilt direction is automatically deduced.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_NEGATIVE</code></td><td>Specifies that the camera tilt is in the negative direction around the X-axis.</td></tr><tr><td><code>M_POSITIVE</code></td><td>Specifies that the camera tilt is in the positive direction around the X-axis.</td></tr><tr><td><code>M_ZERO</code> <em>(default)</em></td><td>Specifies that there is no camera tilt around the X-axis.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_diameter"><code>M_DIAMETER</code><a href="#m_diameter" class="hash-link" aria-label="Direct link to m_diameter" title="Direct link to m_diameter" translate="no">​</a></h3>
+<p>Sets the diameter of the alignment disk.  &gt; <strong>Note:</strong> Note that if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>, you must set<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DIAMETER</code></a> to a positive value that is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_UNKNOWN</code></a> before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><code>M3dmapAlignScan</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_UNKNOWN</code> <em>(default)</em></td><td>Specifies that the diameter of the alignment disk is unknown.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the diameter of the alignment disk.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_height"><code>M_HEIGHT</code><a href="#m_height" class="hash-link" aria-label="Direct link to m_height" title="Direct link to m_height" translate="no">​</a></h3>
+<p>Sets the height of the alignment object that was specified with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt;= 0.0</code> <em>(default)</em></td><td>Specifies the height of the alignment object.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_object_shape"><code>M_OBJECT_SHAPE</code><a href="#m_object_shape" class="hash-link" aria-label="Direct link to m_object_shape" title="Direct link to m_object_shape" translate="no">​</a></h3>
+<p>Sets the type of alignment object.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISK</code> <em>(default)</em></td><td>Specifies a disk-type object for alignment (alignment disk). The alignment disk is a short cylinder (which includes two holes at specific offsets with respect to the origin of the alignment disk).  <em>[Image: 3dmap_billet_dimensions_ref.png]</em>  The alignment disk must meet the following constraints:  - The alignment disk must cover at least 50% of the scanned width (X-direction). - The alignment disk must cover at least 30% of the scanned length (Y-direction). - The alignment disk&#x27;s edge must be fully visible in the scan. - The alignment disk&#x27;s holes must be at least 30 scan lines in the Y-direction and 30 points in the X-direction. The radii of the holes must be within 5 to 10% of the disk&#x27;s radius, and the depth of the holes must be at least 20% of the total disk&#x27;s height. - The floor (background) must be present in the scan. If you are using a stage, ensure its surface is parallel to the motion.  For more information on the constraints and recommended dimension values, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C42_Grabbing_from_3D_sensors/S08_Alignment_object_requirements">Alignment cylinder constraints and requirements</a>.  &gt; <strong>Note:</strong> You must define the dimensions of the alignment disk (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DIAMETER</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_HEIGHT</code></a>) before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><code>M3dmapAlignScan</code></a>.</td></tr><tr><td><code>M_FLAT_SURFACE</code></td><td>Specifies a flat-surface-type object for alignment (alignment surface).  &gt; <strong>Note:</strong> For example, a flat square-like piece of sandblasted aluminum, or an equivalently flat piece of medium-density fiberboard (MDF).</td></tr><tr><td><code>M_PYRAMID</code></td><td>Specifies a pyramid-type object for alignment (alignment pyramid). The alignment pyramid is a truncated square pyramid on a wider rectangular base that has a chamfer in the bottom right corner. The truncated pyramid is off-center along the length on the wider rectangular base.  <em>[Image: 3dmap_pyramid_dimensions_ref.png]</em>  The alignment pyramid must meet the following constraints:  - The top face and base of its truncated pyramid must be squares. - The angle between the top and side faces of its truncated pyramid must be between 35 to 55 degrees (ideally 45 degrees). - Its truncated pyramid&#x27;s top face length <strong>(A)</strong> must be approximately 50% of the truncated pyramid&#x27;s bottom base length <strong>(B)</strong>. - The alignment pyramid&#x27;s wider rectangular base must be approximately 25% wider <strong>(W)</strong> in the X-direction and 50% longer <strong>(L)</strong> in the Y-direction than its truncated pyramid&#x27;s base <strong>(B)</strong>. - The alignment pyramid must cover at least 50% of the scanned width (X-direction). - The alignment pyramid must cover at least 30% of the scanned length (Y-direction). - Its truncated pyramid&#x27;s faces (top and sides) and the top of the alignment pyramid&#x27;s wider rectangular base must each be composed of at least 2000 points. - The alignment pyramid&#x27;s wider rectangular base must have a chamfer in the bottom right corner <strong>(F)</strong> with a length of at least 30% of the truncated pyramid&#x27;s top face <strong>(A)</strong> at an approximate angle of 45 degrees.  For more information on the constraints and recommended dimension values, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C42_Grabbing_from_3D_sensors/S08_Alignment_object_requirements">Alignment pyramid constraints and requirements</a>.  &gt; <strong>Note:</strong> You must define the dimensions of the alignment pyramid (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID_BASE_LENGTH</code></a>,<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID_TOP_FACE_LENGTH</code></a>, and<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_HEIGHT</code></a>) before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><code>M3dmapAlignScan</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pyramid_base_length"><code>M_PYRAMID_BASE_LENGTH</code><a href="#m_pyramid_base_length" class="hash-link" aria-label="Direct link to m_pyramid_base_length" title="Direct link to m_pyramid_base_length" translate="no">​</a></h3>
+<p>Sets the length of the truncated pyramid&#x27;s bottom base when using an alignment pyramid.  <em>[Image: 3dmap_pyramid_dimensions_bottom_control.png]</em>  &gt; <strong>Note:</strong> Note that if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>, you must set<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID_BASE_LENGTH</code></a> to a positive value that is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_UNKNOWN</code></a> before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><code>M3dmapAlignScan</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_UNKNOWN</code> <em>(default)</em></td><td>Specifies that the length of the truncated pyramid&#x27;s bottom base is unknown.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the length of the truncated pyramid&#x27;s bottom base.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pyramid_top_face_length"><code>M_PYRAMID_TOP_FACE_LENGTH</code><a href="#m_pyramid_top_face_length" class="hash-link" aria-label="Direct link to m_pyramid_top_face_length" title="Direct link to m_pyramid_top_face_length" translate="no">​</a></h3>
+<p>Sets the length of the truncated pyramid&#x27;s top base (top face) when using an alignment pyramid.  <em>[Image: 3dmap_pyramid_dimensions_top_control.png]</em>  &gt; <strong>Note:</strong> Note that if <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is set to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>, you must set<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID_TOP_FACE_LENGTH</code></a> to a positive value that is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_UNKNOWN</code></a> before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><code>M3dmapAlignScan</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_UNKNOWN</code> <em>(default)</em></td><td>Specifies that the length of the truncated pyramid&#x27;s top base is unknown.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies the length of the truncated pyramid&#x27;s top base.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_length"><code>M_STEP_LENGTH</code><a href="#m_step_length" class="hash-link" aria-label="Direct link to m_step_length" title="Direct link to m_step_length" translate="no">​</a></h3>
+<p>Sets the step length (scan step). The step length is the distance between the scan lines.  &gt; <strong>Note:</strong> Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_STEP_LENGTH</code></a> has no affect unless <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_STEP_LENGTH_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_USER_DEFINED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0.0</code> <em>(default)</em></td><td>Specifies the step length value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_length_mode"><code>M_STEP_LENGTH_MODE</code><a href="#m_step_length_mode" class="hash-link" aria-label="Direct link to m_step_length_mode" title="Direct link to m_step_length_mode" translate="no">​</a></h3>
+<p>Sets the step length (scan step) mode. The step length is the distance between the scan lines.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_PIXEL_SIZE_Y</code></td><td>Specifies that the step length is provided with the container that stores the point cloud of the alignment object.  The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SCALE_Y</code></a> result is constrained by the value set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_STEP_LENGTH</code></a>.</td></tr><tr><td><code>M_UNKNOWN</code> <em>(default)</em></td><td>Specifies that the step length is unknown.  The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_STEP_LENGTH</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SCALE_Y</code></a> are found by analyzing the point cloud without any constraints.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies that the step length is explicitly set with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_STEP_LENGTH</code></a>.  The <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SCALE_Y</code></a> result is constrained by the value set using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_STEP_LENGTH</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-profiling-3d-reconstruction-context">For a profiling 3D reconstruction context<a href="#for-a-profiling-3d-reconstruction-context" class="hash-link" aria-label="Direct link to For a profiling 3D reconstruction context" title="Direct link to For a profiling 3D reconstruction context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlValue</code></a> settings are available for any kind of profiling (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_LASER</code></a>) 3D reconstruction context:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_corrected_depth"><code>M_CORRECTED_DEPTH</code><a href="#m_corrected_depth" class="hash-link" aria-label="Direct link to m_corrected_depth" title="Direct link to m_corrected_depth" translate="no">​</a></h3>
+<p>Specifies the Z-coordinate in world units (for point clouds) or gray level (for partially corrected depth maps) used to represent the height of the next reference plane (the next call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>), during 3D reconstruction calibration for depth.  If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ContextOrResult3dmapId</code></a> is a profiling 3D reconstruction context allocated with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_CALIBRATED_CAMERA_LINEAR_MOTION</code></a>, this value must be specified in world units. The specified Z-coordinate is the actual height of the reference plane in the next calibration image.  If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ContextOrResult3dmapId</code></a> is a profiling 3D reconstruction context allocated with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_DEPTH_CORRECTION</code></a>, this value must be specified in gray levels. The specified gray level is paired with the position of the laser line over a reference plane in the calibration image. Note that a partially corrected depth map has no coordinate system, and so there is no actual height involved.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0 &lt;= GrayValue &lt;= 254</code> <em>(default)</em></td><td>Specifies the gray level that will be used to represent the height of the next reference plane, when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M3dmapAlloc</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_DEPTH_CORRECTION</code></a>.  For 8-bit depth maps, the range is 0 to 254. Note that 255 is used to indicate an invalid value (no data).</td></tr><tr><td><code>0 &lt;= GrayValue &lt;= 65534</code></td><td>Specifies the gray level that will be used to represent the height of the next reference plane, when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M3dmapAlloc</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_DEPTH_CORRECTION</code></a>.  For 16-bit depth maps, the range is 0 to 65534. Note that 65535 is used to indicate an invalid value (no data).</td></tr><tr><td><code>ZCoordinateValue</code></td><td>Specifies the Z-coordinate (in world units) of the next reference plane. Generally, this value will be negative, since the Z-axis typically points downwards and has its origin on the conveyor.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extraction_fixed_point"><code>M_EXTRACTION_FIXED_POINT</code><a href="#m_extraction_fixed_point" class="hash-link" aria-label="Direct link to m_extraction_fixed_point" title="Direct link to m_extraction_fixed_point" translate="no">​</a></h3>
+<p>Sets the number of binary digits used for the fractional part of the gray level values in uncorrected depth maps, when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M_LINE_ALREADY_EXTRACTED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0 &lt;= Value &lt;= 7</code> <em>(default)</em></td><td>Specifies the number of binary digits used for the fractional part of gray level values.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-profiling-3d-reconstruction-context-in">For a profiling 3D reconstruction context in<a href="#for-a-profiling-3d-reconstruction-context-in" class="hash-link" aria-label="Direct link to For a profiling 3D reconstruction context in" title="Direct link to For a profiling 3D reconstruction context in" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlType</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlValue</code></a> settings are available only for a profiling 3D reconstruction context in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><code>M_CALIBRATED_CAMERA_LINEAR_MOTION</code></a> 3D reconstruction mode:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extraction_child_offset_x"><code>M_EXTRACTION_CHILD_OFFSET_X</code><a href="#m_extraction_child_offset_x" class="hash-link" aria-label="Direct link to m_extraction_child_offset_x" title="Direct link to m_extraction_child_offset_x" translate="no">​</a></h3>
+<p>Sets the X-offset that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a> assumes the laser line image buffer to have relative to the top-left pixel of the image buffer used during camera calibration.  If you supply <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a> with a child buffer so that it processes only a subset of the grabbed laser line image, and you are generating a fully corrected depth map, you must specify the X- and Y-offsets of that child buffer, relative to the top-left pixel of the image buffer used during camera calibration. If you know, for example, that the laser line will appear only at certain heights in the grabbed laser line image, using a child buffer can be useful to narrow down the search region and reduce processing time.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the X-offset, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extraction_child_offset_y"><code>M_EXTRACTION_CHILD_OFFSET_Y</code><a href="#m_extraction_child_offset_y" class="hash-link" aria-label="Direct link to m_extraction_child_offset_y" title="Direct link to m_extraction_child_offset_y" translate="no">​</a></h3>
+<p>Sets the Y-offset that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a> assumes the laser line image buffer to have relative to the top-left pixel of the image buffer used during camera calibration.  If you supply <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a> with a child buffer so that it processes only a subset of the grabbed laser line image, and you are generating a fully corrected depth map, you must specify the X- and Y-offsets of that child buffer, relative to the top-left pixel of the image buffer used during camera calibration. If you know, for example, that the laser line will appear only at certain heights in the grabbed laser line image, using a child buffer can be useful to narrow down the search region and reduce processing time.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the Y-offset, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extraction_range_z"><code>M_EXTRACTION_RANGE_Z</code><a href="#m_extraction_range_z" class="hash-link" aria-label="Direct link to m_extraction_range_z" title="Direct link to m_extraction_range_z" translate="no">​</a></h3>
+<p>Sets the mode that helps determine the range of valid Z-coordinates for extracted points when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.  An extracted point that has a Z-coordinate outside of this range is set to <strong>M_INVALID_POINT</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_GREATER</code></td><td>Specifies that the Z-axis range is defined by a lower limit corresponding to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a>. All points having a Z coordinate greater than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a> are kept.</td></tr><tr><td><code>M_IN_RANGE</code></td><td>Specifies that the Z-axis range is defined by the inside range of a lower limit and a upper limit corresponding to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT2</code></a>. All points having a Z coordinate greater than or equal to the lower limit and less than or equal to the upper limit are kept.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a> is the lower limit of the Z-coordinate extraction range when it is lower than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT2</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a> is the upper limit of the Z-coordinate extraction range when it is higher than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT2</code></a>.</td></tr><tr><td><code>M_INFINITE</code> <em>(default)</em></td><td>Specifies that the range covers the entire Z-axis, so all points are kept.</td></tr><tr><td><code>M_LESS</code></td><td>Specifies that the Z-axis range is defined by a upper limit corresponding to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a>. All points having a Z coordinate less than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a> are kept.</td></tr><tr><td><code>M_OUT_RANGE</code></td><td>Specifies that the Z-axis range is defined by the outside range of a lower limit and a upper limit corresponding to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT2</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a> is the lower limit of the Z-coordinate extraction range when it is lower than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT2</code></a>.  <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a> is the upper limit of the Z-coordinate extraction range when it is higher than <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z_LIMIT2</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extraction_range_z_limit1"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code><a href="#m_extraction_range_z_limit1" class="hash-link" aria-label="Direct link to m_extraction_range_z_limit1" title="Direct link to m_extraction_range_z_limit1" translate="no">​</a></h3>
+<p>Sets the first limit value that determines the range of valid Z-coordinates for extracted points.  This value is ignored when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_INFINITE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the first limit value, which can be either the lower limit or upper limit.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_extraction_range_z_limit2"><code>M_EXTRACTION_RANGE_Z_LIMIT2</code><a href="#m_extraction_range_z_limit2" class="hash-link" aria-label="Direct link to m_extraction_range_z_limit2" title="Direct link to m_extraction_range_z_limit2" translate="no">​</a></h3>
+<p>Sets the second limit value that determines the range of valid Z-coordinates for extracted points.  &gt; <strong>Note:</strong> Note that when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_EXTRACTION_RANGE_Z</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_INFINITE</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_GREATER</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_LESS</code></a>, this value is ignored.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the second limit value, which can be either the lower limit or upper limit.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scan_speed"><code>M_SCAN_SPEED</code><a href="#m_scan_speed" class="hash-link" aria-label="Direct link to m_scan_speed" title="Direct link to m_scan_speed" translate="no">​</a></h3>
+<p>Sets the speed and direction of the object being scanned, along the object&#x27;s plane of motion.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value</code> <em>(default)</em></td><td>Specifies the speed, in world units per frame. Note that if the object is moving in the negative Y-axis, specify a negative value.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-3d-reconstruction-result-buffer-set-to">For a 3D reconstruction result buffer set to<a href="#for-a-3d-reconstruction-result-buffer-set-to" class="hash-link" aria-label="Direct link to For a 3D reconstruction result buffer set to" title="Direct link to For a 3D reconstruction result buffer set to" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlType</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlValue</code></a> settings are available only for a 3D reconstruction result buffer set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_DEPTH_CORRECTED_DATA</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_LASER_CALIBRATION_DATA</code></a>:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_max_frames"><code>M_MAX_FRAMES</code><a href="#m_max_frames" class="hash-link" aria-label="Direct link to m_max_frames" title="Direct link to m_max_frames" translate="no">​</a></h3>
+<p>Sets the maximum number of scanned laser lines that the 3D reconstruction result buffer should keep internally. Note that, if the value of this control type is changed after it has already been set, laser lines can be lost.  When you specify a 3D reconstruction result buffer of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>LabelOrIndex</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_GENERAL</code></a>), this control will set the maximum number of scanned laser lines kept by each subsequent point cloud generated in this result buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the maximum number of scanned laser lines to keep.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-3d-reconstruction-result-buffer-set-to-1">For a 3D reconstruction result buffer set to<a href="#for-a-3d-reconstruction-result-buffer-set-to-1" class="hash-link" aria-label="Direct link to For a 3D reconstruction result buffer set to" title="Direct link to For a 3D reconstruction result buffer set to" translate="no">​</a></h3>
+<p>The following controls apply to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a> 3D reconstruction result buffers, when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>LabelOrIndex</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_GENERAL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_results_displacement_mode"><code>M_RESULTS_DISPLACEMENT_MODE</code><a href="#m_results_displacement_mode" class="hash-link" aria-label="Direct link to m_results_displacement_mode" title="Direct link to m_results_displacement_mode" translate="no">​</a></h3>
+<p>Sets the displacement mode, which determines whether the coordinates of scanned objects include the movement (displacement) of the conveyor.  By default, the coordinates of scanned objects are stored as though the objects are fixed at their initial position when the first call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a> was made, despite the ongoing movement of the conveyor.  When the coordinates are used (for instance, when returning the coordinates or generating a depth map), the displacement mode specifies whether to include the distance that the conveyor moved since the first call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>. When you include this distance, you are getting the real-time coordinates of the objects at the moment the coordinates are returned or the depth map is generated.  You can retrieve this conveyor displacement (Y-axis displacement) using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M3dmapGetResult</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_TOTAL_DISPLACEMENT_Y</code></a>.  &gt; <strong>Note:</strong> In some circumstances, such as when manually defining the extraction box when generating a depth map, you might have to keep in mind whether an object&#x27;s coordinates will include displacement when used. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/C46_3D_reconstruction_using_laser_line_profiling/S07_3D_coordinate_systems">Results displacement mode</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_CURRENT</code></td><td>Specifies that the results include the ongoing Y-axis displacement. The results return the current position of the object on the conveyor.  Specifically, the results will reflect the 3D coordinates at the last call of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.</td></tr><tr><td><code>M_FIXED</code> <em>(default)</em></td><td>Specifies that the results do not include the ongoing Y-axis displacement. The resulting coordinates are those of the object as if it were still at the original position on the conveyor, just prior to being scanned.  In this mode, you can use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_RESULTS_DISPLACEMENT_Y</code></a> to add a displacement offset to the 3D coordinates.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_results_displacement_y"><code>M_RESULTS_DISPLACEMENT_Y</code><a href="#m_results_displacement_y" class="hash-link" aria-label="Direct link to m_results_displacement_y" title="Direct link to m_results_displacement_y" translate="no">​</a></h3>
+<p>Sets the Y-axis displacement to add to the resulting 3D coordinates of an object when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_RESULTS_DISPLACEMENT_MODE</code></a> is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_FIXED</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default value; the default value is 0.0.</td></tr><tr><td><code>Value</code></td><td>Specifies the Y-axis displacement.  &gt; <strong>Note:</strong> Note that total displacement can be negative depending on the direction of the conveyor.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-a-draw-3d-reconstruction-context">For a draw 3D reconstruction context<a href="#for-a-draw-3d-reconstruction-context" class="hash-link" aria-label="Direct link to For a draw 3D reconstruction context" title="Direct link to For a draw 3D reconstruction context" translate="no">​</a></h3>
+<p>The following <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlType</code></a> and corresponding <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>ControlValue</code></a> settings are available for a draw 3D reconstruction context:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_laser_line_coordinate_system"><code>M_DRAW_LASER_LINE_COORDINATE_SYSTEM</code><a href="#m_draw_laser_line_coordinate_system" class="hash-link" aria-label="Direct link to m_draw_laser_line_coordinate_system" title="Direct link to m_draw_laser_line_coordinate_system" translate="no">​</a></h3>
+<p>Sets whether to draw the laser line coordinate system&#x27;s axes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw the laser line coordinate system&#x27;s axes.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw the laser line coordinate system&#x27;s axes.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_laser_plane"><code>M_DRAW_LASER_PLANE</code><a href="#m_draw_laser_plane" class="hash-link" aria-label="Direct link to m_draw_laser_plane" title="Direct link to m_draw_laser_plane" translate="no">​</a></h3>
+<p>Sets whether to draw the laser plane.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to draw the laser plane.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to draw the laser plane.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_laser_plane_color_fill"><code>M_DRAW_LASER_PLANE_COLOR_FILL</code><a href="#m_draw_laser_plane_color_fill" class="hash-link" aria-label="Direct link to m_draw_laser_plane_color_fill" title="Direct link to m_draw_laser_plane_color_fill" translate="no">​</a></h3>
+<p>Sets the laser plane&#x27;s fill color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value when using the 2D graphics context to draw in an 8-bit, 3-band buffer.</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_WHITE</code></td><td>Specifies the color white.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO_COLOR</code> <em>(default)</em></td><td>Specifies either the color red or the texture image.  If a texture image is specified (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw3d"><code>M3dmapDraw3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw3d"><code>LaserPlaneTextureImageBufId</code></a>), the texture image is drawn on the laser plane. Otherwise, the plane is drawn with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_COLOR_RED</code></a>. The texture image is typically the grabbed image of the laser line.</td></tr><tr><td><code>M_NO_COLOR</code></td><td>Specifies no color.</td></tr><tr><td><code>M_TEXTURE_IMAGE</code></td><td>Specifies to use the image passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw3d"><code>M3dmapDraw3d</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw3d"><code>LaserPlaneTextureImageBufId</code></a>, when drawing the laser plane. The texture image is typically the grabbed image of the laser line. Setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DRAW_LASER_PLANE_COLOR_FILL</code></a> to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_TEXTURE_IMAGE</code></a> and then calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw3d"><code>M3dmapDraw3d</code></a> without passing an image to the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw3d"><code>LaserPlaneTextureImageBufId</code></a> parameter causes an error.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_laser_plane_color_outline"><code>M_DRAW_LASER_PLANE_COLOR_OUTLINE</code><a href="#m_draw_laser_plane_color_outline" class="hash-link" aria-label="Direct link to m_draw_laser_plane_color_outline" title="Direct link to m_draw_laser_plane_color_outline" translate="no">​</a></h3>
+<p>Sets the laser plane&#x27;s outline color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_RGB888</code></td><td>Specifies an RGB value when using the 2D graphics context to draw in an 8-bit, 3-band buffer. The red, green, and blue values must be values between 0 and 255, inclusive. When drawing in a 16-bit or 32-bit color buffer, the bands of the RGB value are cast to the type of the destination buffer&#x27;s bands. To specify a value for a specific band of a 16-bit or 32-bit color buffer, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/MgraControl"><code>MgraControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_COLOR</code></a> combined with the appropriate constant (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_RED</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_GREEN</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_BLUE</code></a>).</td></tr><tr><td><code>M_COLOR_BLACK</code></td><td>Specifies the color black.</td></tr><tr><td><code>M_COLOR_BLUE</code></td><td>Specifies the color blue.</td></tr><tr><td><code>M_COLOR_BRIGHT_GRAY</code></td><td>Specifies the color bright gray.</td></tr><tr><td><code>M_COLOR_CYAN</code></td><td>Specifies the color cyan.</td></tr><tr><td><code>M_COLOR_DARK_BLUE</code></td><td>Specifies the color dark blue.</td></tr><tr><td><code>M_COLOR_DARK_CYAN</code></td><td>Specifies the color dark cyan.</td></tr><tr><td><code>M_COLOR_DARK_GREEN</code></td><td>Specifies the color dark green.</td></tr><tr><td><code>M_COLOR_DARK_MAGENTA</code></td><td>Specifies the color dark magenta.</td></tr><tr><td><code>M_COLOR_DARK_RED</code></td><td>Specifies the color dark red.</td></tr><tr><td><code>M_COLOR_DARK_YELLOW</code></td><td>Specifies the color dark yellow.</td></tr><tr><td><code>M_COLOR_GRAY</code></td><td>Specifies the color gray.</td></tr><tr><td><code>M_COLOR_GREEN</code></td><td>Specifies the color green.</td></tr><tr><td><code>M_COLOR_LIGHT_BLUE</code></td><td>Specifies the color light blue.</td></tr><tr><td><code>M_COLOR_LIGHT_GRAY</code></td><td>Specifies the color light gray.</td></tr><tr><td><code>M_COLOR_LIGHT_GREEN</code></td><td>Specifies the color light green.</td></tr><tr><td><code>M_COLOR_LIGHT_WHITE</code></td><td>Specifies the color light white.</td></tr><tr><td><code>M_COLOR_MAGENTA</code></td><td>Specifies the color magenta.</td></tr><tr><td><code>M_COLOR_RED</code></td><td>Specifies the color red.</td></tr><tr><td><code>M_COLOR_YELLOW</code></td><td>Specifies the color yellow.</td></tr><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_COLOR_WHITE</code> <em>(default)</em></td><td>Specifies the color white.</td></tr><tr><td><code>M_NO_COLOR</code></td><td>Specifies no color.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_draw_laser_plane_opacity"><code>M_DRAW_LASER_PLANE_OPACITY</code><a href="#m_draw_laser_plane_opacity" class="hash-link" aria-label="Direct link to m_draw_laser_plane_opacity" title="Direct link to m_draw_laser_plane_opacity" translate="no">​</a></h3>
+<p>Sets the laser plane&#x27;s opacity.  &gt; <strong>Note:</strong> This control type is only available when the laser plane&#x27;s fill color is set to a uniform color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies the laser plane&#x27;s opacity.</td></tr></tbody></table></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapClear"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dmapClear</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCopy"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dmapCopy</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresult3dmapid-out-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResult3dmapId</code> <em>(out, AIL_ID)</em></a></li><li><a href="#labelorindex-in-ail_int" class="table-of-contents__link toc-highlight"><code>LabelOrIndex</code> <em>(in, AIL_INT)</em></a></li><li><a href="#controltype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ControlType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#controlvalue-in-ail_double" class="table-of-contents__link toc-highlight"><code>ControlValue</code> <em>(in, AIL_DOUBLE)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-a-3d-alignment-context" class="table-of-contents__link toc-highlight">For a 3D alignment context</a></li><li><a href="#m_align_x_position" class="table-of-contents__link toc-highlight"><code>M_ALIGN_X_POSITION</code></a></li><li><a href="#m_align_xy_direction" class="table-of-contents__link toc-highlight"><code>M_ALIGN_XY_DIRECTION</code></a></li><li><a href="#m_align_y_position" class="table-of-contents__link toc-highlight"><code>M_ALIGN_Y_POSITION</code></a></li><li><a href="#m_align_z_direction" class="table-of-contents__link toc-highlight"><code>M_ALIGN_Z_DIRECTION</code></a></li><li><a href="#m_align_z_position" class="table-of-contents__link toc-highlight"><code>M_ALIGN_Z_POSITION</code></a></li><li><a href="#m_camera_tilt_x" class="table-of-contents__link toc-highlight"><code>M_CAMERA_TILT_X</code></a></li><li><a href="#m_diameter" class="table-of-contents__link toc-highlight"><code>M_DIAMETER</code></a></li><li><a href="#m_height" class="table-of-contents__link toc-highlight"><code>M_HEIGHT</code></a></li><li><a href="#m_object_shape" class="table-of-contents__link toc-highlight"><code>M_OBJECT_SHAPE</code></a></li><li><a href="#m_pyramid_base_length" class="table-of-contents__link toc-highlight"><code>M_PYRAMID_BASE_LENGTH</code></a></li><li><a href="#m_pyramid_top_face_length" class="table-of-contents__link toc-highlight"><code>M_PYRAMID_TOP_FACE_LENGTH</code></a></li><li><a href="#m_step_length" class="table-of-contents__link toc-highlight"><code>M_STEP_LENGTH</code></a></li><li><a href="#m_step_length_mode" class="table-of-contents__link toc-highlight"><code>M_STEP_LENGTH_MODE</code></a></li><li><a href="#for-a-profiling-3d-reconstruction-context" class="table-of-contents__link toc-highlight">For a profiling 3D reconstruction context</a></li><li><a href="#m_corrected_depth" class="table-of-contents__link toc-highlight"><code>M_CORRECTED_DEPTH</code></a></li><li><a href="#m_extraction_fixed_point" class="table-of-contents__link toc-highlight"><code>M_EXTRACTION_FIXED_POINT</code></a></li><li><a href="#for-a-profiling-3d-reconstruction-context-in" class="table-of-contents__link toc-highlight">For a profiling 3D reconstruction context in</a></li><li><a href="#m_extraction_child_offset_x" class="table-of-contents__link toc-highlight"><code>M_EXTRACTION_CHILD_OFFSET_X</code></a></li><li><a href="#m_extraction_child_offset_y" class="table-of-contents__link toc-highlight"><code>M_EXTRACTION_CHILD_OFFSET_Y</code></a></li><li><a href="#m_extraction_range_z" class="table-of-contents__link toc-highlight"><code>M_EXTRACTION_RANGE_Z</code></a></li><li><a href="#m_extraction_range_z_limit1" class="table-of-contents__link toc-highlight"><code>M_EXTRACTION_RANGE_Z_LIMIT1</code></a></li><li><a href="#m_extraction_range_z_limit2" class="table-of-contents__link toc-highlight"><code>M_EXTRACTION_RANGE_Z_LIMIT2</code></a></li><li><a href="#m_scan_speed" class="table-of-contents__link toc-highlight"><code>M_SCAN_SPEED</code></a></li><li><a href="#for-a-3d-reconstruction-result-buffer-set-to" class="table-of-contents__link toc-highlight">For a 3D reconstruction result buffer set to</a></li><li><a href="#m_max_frames" class="table-of-contents__link toc-highlight"><code>M_MAX_FRAMES</code></a></li><li><a href="#for-a-3d-reconstruction-result-buffer-set-to-1" class="table-of-contents__link toc-highlight">For a 3D reconstruction result buffer set to</a></li><li><a href="#m_results_displacement_mode" class="table-of-contents__link toc-highlight"><code>M_RESULTS_DISPLACEMENT_MODE</code></a></li><li><a href="#m_results_displacement_y" class="table-of-contents__link toc-highlight"><code>M_RESULTS_DISPLACEMENT_Y</code></a></li><li><a href="#for-a-draw-3d-reconstruction-context" class="table-of-contents__link toc-highlight">For a draw 3D reconstruction context</a></li><li><a href="#m_draw_laser_line_coordinate_system" class="table-of-contents__link toc-highlight"><code>M_DRAW_LASER_LINE_COORDINATE_SYSTEM</code></a></li><li><a href="#m_draw_laser_plane" class="table-of-contents__link toc-highlight"><code>M_DRAW_LASER_PLANE</code></a></li><li><a href="#m_draw_laser_plane_color_fill" class="table-of-contents__link toc-highlight"><code>M_DRAW_LASER_PLANE_COLOR_FILL</code></a></li><li><a href="#m_draw_laser_plane_color_outline" class="table-of-contents__link toc-highlight"><code>M_DRAW_LASER_PLANE_COLOR_OUTLINE</code></a></li><li><a href="#m_draw_laser_plane_opacity" class="table-of-contents__link toc-highlight"><code>M_DRAW_LASER_PLANE_OPACITY</code></a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

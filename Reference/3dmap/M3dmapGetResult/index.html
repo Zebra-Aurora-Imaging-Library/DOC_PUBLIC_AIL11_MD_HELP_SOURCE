@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/3dmap/M3dmapGetResult" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">M3dmapGetResult | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="M3dmapGetResult | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"3dmap","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"},{"@type":"ListItem","position":2,"name":"M3dmapGetResult","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Collapse sidebar category &#x27;3dmap&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><span title="M3dmapAddScan" class="linkLabel_WmDU">M3dmapAddScan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><span title="M3dmapAlignScan" class="linkLabel_WmDU">M3dmapAlignScan</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlloc"><span title="M3dmapAlloc" class="linkLabel_WmDU">M3dmapAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><span title="M3dmapAllocResult" class="linkLabel_WmDU">M3dmapAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCalibrate"><span title="M3dmapCalibrate" class="linkLabel_WmDU">M3dmapCalibrate</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCalibrateMultiple"><span title="M3dmapCalibrateMultiple" class="linkLabel_WmDU">M3dmapCalibrateMultiple</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapClear"><span title="M3dmapClear" class="linkLabel_WmDU">M3dmapClear</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><span title="M3dmapControl" class="linkLabel_WmDU">M3dmapControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCopy"><span title="M3dmapCopy" class="linkLabel_WmDU">M3dmapCopy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapCopyResult"><span title="M3dmapCopyResult" class="linkLabel_WmDU">M3dmapCopyResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw"><span title="M3dmapDraw" class="linkLabel_WmDU">M3dmapDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapDraw3d"><span title="M3dmapDraw3d" class="linkLabel_WmDU">M3dmapDraw3d</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapFree"><span title="M3dmapFree" class="linkLabel_WmDU">M3dmapFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><span title="M3dmapGetResult" class="linkLabel_WmDU">M3dmapGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapInquire"><span title="M3dmapInquire" class="linkLabel_WmDU">M3dmapInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapRestore"><span title="M3dmapRestore" class="linkLabel_WmDU">M3dmapRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapSave"><span title="M3dmapSave" class="linkLabel_WmDU">M3dmapSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapStream"><span title="M3dmapStream" class="linkLabel_WmDU">M3dmapStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapTriangulate"><span title="M3dmapTriangulate" class="linkLabel_WmDU">M3dmapTriangulate</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Expand sidebar category &#x27;col&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span>3dmap</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">M3dmapGetResult</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>M3dmapGetResult</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Get the specified type of result(s) from a 3D alignment or 3D reconstruction result buffer.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">M3dmapGetResult</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    Result3dmapId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT   LabelOrIndex</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">   </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 ResultType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">     </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    ResultArrayPtr  </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function retrieves the result(s) of the specified type from a result buffer. For <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_LASER_CALIBRATION_DATA</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_DEPTH_CORRECTED_DATA</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a> 3D reconstruction result buffers, results are available after using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a> to fill the result buffer with the extracted laser line data. For 3D alignment result buffers, results are available after using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><code>M3dmapAlignScan</code></a>.</p>
+<p>An <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a> 3D reconstruction result buffer contains an array of distinct point clouds. You can retrieve results from an individual point cloud in the result buffer, from an aggregate of all point clouds in the result buffer, or from the result buffer itself using the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>LabelOrIndex</code></a> parameter.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="result3dmapid-in-ail_id"><code>Result3dmapId</code> <em>(in, AIL_ID)</em><a href="#result3dmapid-in-ail_id" class="hash-link" aria-label="Direct link to result3dmapid-in-ail_id" title="Direct link to result3dmapid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the 3D alignment or 3D reconstruction result buffer from which to retrieve results.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="labelorindex-in-ail_int"><code>LabelOrIndex</code> <em>(in, AIL_INT)</em><a href="#labelorindex-in-ail_int" class="hash-link" aria-label="Direct link to labelorindex-in-ail_int" title="Direct link to labelorindex-in-ail_int" translate="no">​</a></h3>
+<p>Specifies the point cloud(s) in the specified 3D reconstruction result buffer, or the entire result buffer itself, from which to get results. Only 3D reconstruction result buffers allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a> have point clouds that can be specified using this parameter. For all other types of 3D reconstruction result buffers, set this parameter to <code>M_DEFAULT</code>.</p>
+<p><em>For specifying the point cloud(s) or point cloud container</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_POINT_CLOUD_INDEX</code></td><td>Specifies the array index of a point cloud in the specified 3D reconstruction result buffer.</td></tr><tr><td><code>M_POINT_CLOUD_LABEL</code></td><td>Specifies the label for a point cloud in the specified 3D reconstruction result buffer.</td></tr><tr><td><code>M_ALL</code></td><td>Specifies to get results about all point clouds in the specified 3D reconstruction result buffer.</td></tr><tr><td><code>M_GENERAL</code></td><td>Specifies to get results about the point cloud container (3D reconstruction result buffer allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a>).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resulttype-in-ail_int64"><code>ResultType</code> <em>(in, AIL_INT64)</em><a href="#resulttype-in-ail_int64" class="hash-link" aria-label="Direct link to resulttype-in-ail_int64" title="Direct link to resulttype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of result to get.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resultarrayptr-out-void"><code>ResultArrayPtr</code> *(out, <em>void)</em><a href="#resultarrayptr-out-void" class="hash-link" aria-label="Direct link to resultarrayptr-out-void" title="Direct link to resultarrayptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the results.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type">For retrieving results from a 3D reconstruction result buffer of type<a href="#for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type" class="hash-link" aria-label="Direct link to For retrieving results from a 3D reconstruction result buffer of type" title="Direct link to For retrieving results from a 3D reconstruction result buffer of type" translate="no">​</a></h3>
+<p>To retrieve a result from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_POINT_CLOUD_RESULT</code></a> 3D reconstruction result buffer, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>ResultType</code></a> parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_has_feature"><code>M_HAS_FEATURE</code><a href="#m_has_feature" class="hash-link" aria-label="Direct link to m_has_feature" title="Direct link to m_has_feature" translate="no">​</a></h3>
+<p>Retrieves whether the specified point cloud(s) have the specified feature (such as position or intensity data). The feature is specified using the combination value.  When the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>LabelOrIndex</code></a> parameter is set to <strong>M_POINT_CLOUD_INDEX()</strong> or <strong>M_POINT_CLOUD_LABEL()</strong>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_HAS_FEATURE</code></a> returns whether the specified point cloud has the feature.  When the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>LabelOrIndex</code></a> parameter is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_HAS_FEATURE</code></a> returns whether all the point clouds in the specified result buffer have the feature.  When the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>LabelOrIndex</code></a> parameter is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_HAS_FEATURE</code></a> returns an array where the value of each element in the array is whether the point cloud at the corresponding index has the feature.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the specified point cloud(s) do not have the feature.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the specified point cloud(s) do have the feature.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_3d_points"><code>M_NUMBER_OF_3D_POINTS</code><a href="#m_number_of_3d_points" class="hash-link" aria-label="Direct link to m_number_of_3d_points" title="Direct link to m_number_of_3d_points" translate="no">​</a></h3>
+<p>Retrieves the number of 3D points extracted from laser line data and stored in the specified point cloud(s).  When the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>LabelOrIndex</code></a> parameter is set to <strong>M_POINT_CLOUD_INDEX()</strong> or <strong>M_POINT_CLOUD_LABEL()</strong>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_NUMBER_OF_3D_POINTS</code></a> returns the number of points in the specified point cloud.  When the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>LabelOrIndex</code></a> parameter is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_GENERAL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_NUMBER_OF_3D_POINTS</code></a> returns the total number of points in all the point clouds in the specified result buffer.  When the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>LabelOrIndex</code></a> parameter is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_ALL</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_NUMBER_OF_3D_POINTS</code></a> returns an array where the value of each element in the array is the number of points in the point cloud at the corresponding index.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value &gt;= 0</code></td><td>Specifies the number of 3D points.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_total_displacement_y"><code>M_TOTAL_DISPLACEMENT_Y</code><a href="#m_total_displacement_y" class="hash-link" aria-label="Direct link to m_total_displacement_y" title="Direct link to m_total_displacement_y" translate="no">​</a></h3>
+<p>Retrieves the total displacement along the Y-axis (typically the conveyor) from the first call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.  If the value of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_SCAN_SPEED</code></a> (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M3dmapControl</code></a>) has remained constant since the last call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapClear"><code>M3dmapClear</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_TOTAL_DISPLACEMENT_Y</code></a> is equivalent to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_SCAN_SPEED</code></a> x (number of calls to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>-1).  &gt; <strong>Note:</strong> <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_TOTAL_DISPLACEMENT_Y</code></a> is only available when the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>LabelOrIndex</code></a> parameter is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_GENERAL</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-feature-to-check">Combination Constants — For specifying the feature to check<a href="#combination-constants--for-specifying-the-feature-to-check" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the feature to check" title="Direct link to Combination Constants — For specifying the feature to check" translate="no">​</a></h3>
+<blockquote>
+<p><em>Essential.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You must add one of the following values to the above-mentioned values to determine whether the feature exists in the specified location.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INTENSITY</code></td><td>Specifies to determine if intensity information exists in the specified point cloud(s).</td></tr><tr><td><code>M_POSITION</code></td><td>Specifies to determine if position information exists in the specified point cloud(s).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-modifying-the-number-of-points-returned">Combination Constants — For modifying the number of points returned<a href="#combination-constants--for-modifying-the-number-of-points-returned" class="hash-link" aria-label="Direct link to Combination Constants — For modifying the number of points returned" title="Direct link to Combination Constants — For modifying the number of points returned" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify which 3D points should be included when returning the number of points.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_EXCLUDE_INVALID_POINTS</code></td><td>Specifies to exclude all points in the specified point cloud(s) that are set to <strong>M_INVALID_POINT</strong>. Only valid points are included in the calculation.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-including-the-last-scan-only">Combination Constants — For including the last scan only<a href="#combination-constants--for-including-the-last-scan-only" class="hash-link" aria-label="Direct link to Combination Constants — For including the last scan only" title="Direct link to Combination Constants — For including the last scan only" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to specify to return the points of the last scan only.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_LAST_SCAN</code></td><td>Specifies to return only those points generated during the last call to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type-1">For retrieving results from a 3D reconstruction result buffer of type<a href="#for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type-1" class="hash-link" aria-label="Direct link to For retrieving results from a 3D reconstruction result buffer of type" title="Direct link to For retrieving results from a 3D reconstruction result buffer of type" translate="no">​</a></h3>
+<p>To retrieve a result about partially corrected depth maps from an <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_DEPTH_CORRECTED_DATA</code></a> 3D reconstruction result buffer, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>ResultType</code></a> parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_partially_corrected_depth_map_buffer_type"><code>M_PARTIALLY_CORRECTED_DEPTH_MAP_BUFFER_TYPE</code><a href="#m_partially_corrected_depth_map_buffer_type" class="hash-link" aria-label="Direct link to m_partially_corrected_depth_map_buffer_type" title="Direct link to m_partially_corrected_depth_map_buffer_type" translate="no">​</a></h3>
+<p>Retrieves the data type and depth that an image buffer should have to store the partially corrected depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies that the image buffer should be an 8-bit unsigned buffer.</td></tr><tr><td><code>M_UNSIGNED + 16</code></td><td>Specifies that the image buffer should be a 16-bit unsigned buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_partially_corrected_depth_map_size_x"><code>M_PARTIALLY_CORRECTED_DEPTH_MAP_SIZE_X</code><a href="#m_partially_corrected_depth_map_size_x" class="hash-link" aria-label="Direct link to m_partially_corrected_depth_map_size_x" title="Direct link to m_partially_corrected_depth_map_size_x" translate="no">​</a></h3>
+<p>Retrieves the X-size, in pixels, that an image buffer should have to store the partially corrected depth map.  If the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimControl"><code>MimControl</code></a> <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimControl"><code>M_SCAN_LANE_DIRECTION</code></a> control type setting is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimControl"><code>M_VERTICAL</code></a>, this is equal to the X-size of the image buffer passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.  If the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimControl"><code>MimControl</code></a> <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimControl"><code>M_SCAN_LANE_DIRECTION</code></a> control type setting is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/MimControl"><code>M_HORIZONTAL</code></a>, this is equal to the Y-size of the image buffer passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_partially_corrected_depth_map_size_y"><code>M_PARTIALLY_CORRECTED_DEPTH_MAP_SIZE_Y</code><a href="#m_partially_corrected_depth_map_size_y" class="hash-link" aria-label="Direct link to m_partially_corrected_depth_map_size_y" title="Direct link to m_partially_corrected_depth_map_size_y" translate="no">​</a></h3>
+<p>Retrieves the Y-size, in pixels, that an image buffer should have to store the partially corrected depth map.  This is equal to the number of times <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a> was called or the value of the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_MAX_FRAMES</code></a> control, whichever is smaller.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type-2">For retrieving results from a 3D reconstruction result buffer of type<a href="#for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type-2" class="hash-link" aria-label="Direct link to For retrieving results from a 3D reconstruction result buffer of type" title="Direct link to For retrieving results from a 3D reconstruction result buffer of type" translate="no">​</a></h3>
+<p>To retrieve a result from a 3D reconstruction result buffer of type <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_LASER_CALIBRATION_DATA</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAllocResult"><code>M_DEPTH_CORRECTED_DATA</code></a>, or from an individual point cloud, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>ResultType</code></a> parameter can be set to one of the following values:</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_camera_image_size_x"><code>M_CAMERA_IMAGE_SIZE_X</code><a href="#m_camera_image_size_x" class="hash-link" aria-label="Direct link to m_camera_image_size_x" title="Direct link to m_camera_image_size_x" translate="no">​</a></h3>
+<p>Retrieves the X-size of the image buffer from which the last laser line was extracted using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_camera_image_size_y"><code>M_CAMERA_IMAGE_SIZE_Y</code><a href="#m_camera_image_size_y" class="hash-link" aria-label="Direct link to m_camera_image_size_y" title="Direct link to m_camera_image_size_y" translate="no">​</a></h3>
+<p>Retrieves the Y-size of the image buffer from which the last laser line was extracted using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_intensity_map_buffer_type"><code>M_INTENSITY_MAP_BUFFER_TYPE</code><a href="#m_intensity_map_buffer_type" class="hash-link" aria-label="Direct link to m_intensity_map_buffer_type" title="Direct link to m_intensity_map_buffer_type" translate="no">​</a></h3>
+<p>Retrieves the data type and depth that an image buffer should have to store the intensity map.  The returned depth and data type are the same as those of the image buffer, passed to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>, containing the grabbed image of the laser line.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies that the image buffer should be an 8-bit unsigned buffer.</td></tr><tr><td><code>M_UNSIGNED + 16</code></td><td>Specifies that the image buffer should be a 16-bit unsigned buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_missing_data_last_scan"><code>M_NUMBER_OF_MISSING_DATA_LAST_SCAN</code><a href="#m_number_of_missing_data_last_scan" class="hash-link" aria-label="Direct link to m_number_of_missing_data_last_scan" title="Direct link to m_number_of_missing_data_last_scan" translate="no">​</a></h3>
+<p>Retrieves the number of points (pixels) with unknown values in the last laser line extracted using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAddScan"><code>M3dmapAddScan</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scan_lane_direction"><code>M_SCAN_LANE_DIRECTION</code><a href="#m_scan_lane_direction" class="hash-link" aria-label="Direct link to m_scan_lane_direction" title="Direct link to m_scan_lane_direction" translate="no">​</a></h3>
+<p>Retrieves whether laser line detection was performed vertically or horizontally.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_uncorrected_depth_map_buffer_type"><code>M_UNCORRECTED_DEPTH_MAP_BUFFER_TYPE</code><a href="#m_uncorrected_depth_map_buffer_type" class="hash-link" aria-label="Direct link to m_uncorrected_depth_map_buffer_type" title="Direct link to m_uncorrected_depth_map_buffer_type" translate="no">​</a></h3>
+<p>Retrieves the data type and depth that an image buffer should have to store the uncorrected depth map.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies that the image buffer should be an 8-bit unsigned buffer.</td></tr><tr><td><code>M_UNSIGNED + 16</code></td><td>Specifies that the image buffer should be a 16-bit unsigned buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_uncorrected_depth_map_fixed_point"><code>M_UNCORRECTED_DEPTH_MAP_FIXED_POINT</code><a href="#m_uncorrected_depth_map_fixed_point" class="hash-link" aria-label="Direct link to m_uncorrected_depth_map_fixed_point" title="Direct link to m_uncorrected_depth_map_fixed_point" translate="no">​</a></h3>
+<p>Retrieves the number of fractional bits used for the uncorrected depth map.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_uncorrected_depth_map_size_x"><code>M_UNCORRECTED_DEPTH_MAP_SIZE_X</code><a href="#m_uncorrected_depth_map_size_x" class="hash-link" aria-label="Direct link to m_uncorrected_depth_map_size_x" title="Direct link to m_uncorrected_depth_map_size_x" translate="no">​</a></h3>
+<p>Retrieves the X-size, in pixels, that an image buffer should have to store the uncorrected depth map.  &gt; <strong>Note:</strong> Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_UNCORRECTED_DEPTH_MAP_SIZE_X</code></a> is also the X-size for storing the intensity map.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_uncorrected_depth_map_size_y"><code>M_UNCORRECTED_DEPTH_MAP_SIZE_Y</code><a href="#m_uncorrected_depth_map_size_y" class="hash-link" aria-label="Direct link to m_uncorrected_depth_map_size_y" title="Direct link to m_uncorrected_depth_map_size_y" translate="no">​</a></h3>
+<p>Retrieves the Y-size, in pixels, that an image buffer should have to store the uncorrected depth map.  &gt; <strong>Note:</strong> Note that <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_UNCORRECTED_DEPTH_MAP_SIZE_Y</code></a> is also the Y-size for storing the intensity map.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-retrieving-results-from-a-3d-alignment-result-buffer">For retrieving results from a 3D alignment result buffer.<a href="#for-retrieving-results-from-a-3d-alignment-result-buffer" class="hash-link" aria-label="Direct link to For retrieving results from a 3D alignment result buffer." title="Direct link to For retrieving results from a 3D alignment result buffer." translate="no">​</a></h3>
+<p>To retrieve a result from a 3D alignment result buffer, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>ResultType</code></a> parameter can be set to one of the following values:  &gt; <strong>Note:</strong> Note that aside from <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_STATUS</code></a>, these result types are only available after a successfully completed alignment operation (when<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_STATUS</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_COMPLETE</code></a>) or if a status warning is returned (when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_STATUS</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_RESULTS_Z_NEED_BACKGROUND</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_MAYBE_IMPRECISE</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_CHAMFER_NOT_FOUND</code></a>).</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_scale_y"><code>M_3D_SCALE_Y</code><a href="#m_3d_scale_y" class="hash-link" aria-label="Direct link to m_3d_scale_y" title="Direct link to m_3d_scale_y" translate="no">​</a></h3>
+<p>Retrieves the Y-scaling factor necessary to correct the Y-coordinates of the point clouds.  &gt; <strong>Note:</strong> Scale distortions in the Y-direction cause shrinking or stretching of the object scanned by the 3D profile sensor.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_shear_x"><code>M_3D_SHEAR_X</code><a href="#m_3d_shear_x" class="hash-link" aria-label="Direct link to m_3d_shear_x" title="Direct link to m_3d_shear_x" translate="no">​</a></h3>
+<p>Retrieves by how much to offset the X-coordinates of the point cloud from the X-coordinates of its previous row to correct the shear in X. Using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlContainer"><code>MbufControlContainer</code></a>, you can set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlContainer"><code>M_3D_SHEAR_X</code></a> of the range component to this value, prior to calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>, to correct the shear in X.  &gt; <strong>Note:</strong> Shear distortions in the X-direction cause skewing of the object scanned by the 3D profile sensor.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_3d_shear_z"><code>M_3D_SHEAR_Z</code><a href="#m_3d_shear_z" class="hash-link" aria-label="Direct link to m_3d_shear_z" title="Direct link to m_3d_shear_z" translate="no">​</a></h3>
+<p>Retrieves by how much to offset the Z-coordinates of the point cloud from the Z-coordinates of its previous row to correct the shear in Z. Using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlContainer"><code>MbufControlContainer</code></a>, you can set <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufControlContainer"><code>M_3D_SHEAR_Z</code></a> of the range component to this value, prior to calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/MbufConvert3d"><code>MbufConvert3d</code></a>, to correct the shear in Z.  &gt; <strong>Note:</strong> Shear distortions in the Z-direction cause inaccurate object thickness scanned by the 3D profile sensor.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_holes_found"><code>M_HOLES_FOUND</code><a href="#m_holes_found" class="hash-link" aria-label="Direct link to m_holes_found" title="Direct link to m_holes_found" translate="no">​</a></h3>
+<p>Retrieves the detection status of the two holes on the alignment disk. This result verifies that the alignment disk&#x27;s holes have been taken into consideration during the alignment operation.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the two holes are not detected on the alignment disk. The two holes have not been taken into consideration during the alignment operation.  &gt; <strong>Note:</strong> Note that if the two holes are not detected on the alignment disk, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_Y_MIRRORED</code></a> will not be correct.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the two holes are detected on the alignment disk. The two holes have been taken into consideration during the alignment operation.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pyramid_corners_x"><code>M_PYRAMID_CORNERS_X</code><a href="#m_pyramid_corners_x" class="hash-link" aria-label="Direct link to m_pyramid_corners_x" title="Direct link to m_pyramid_corners_x" translate="no">​</a></h3>
+<p>Retrieves the uncorrected X-coordinate for each of the corners of the truncated pyramid on the alignment pyramid. The order in which the uncorrected X-coordinates are returned is not guaranteed; however, the results are returned uniformly across the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_Y</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_Z</code></a> result types.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pyramid_corners_y"><code>M_PYRAMID_CORNERS_Y</code><a href="#m_pyramid_corners_y" class="hash-link" aria-label="Direct link to m_pyramid_corners_y" title="Direct link to m_pyramid_corners_y" translate="no">​</a></h3>
+<p>Retrieves the uncorrected Y-coordinate for each of the corners of the truncated pyramid on the alignment pyramid. The order in which the uncorrected Y-coordinates are returned is not guaranteed, however the results are returned uniformly across the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_Y</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_Z</code></a> result types.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_pyramid_corners_z"><code>M_PYRAMID_CORNERS_Z</code><a href="#m_pyramid_corners_z" class="hash-link" aria-label="Direct link to m_pyramid_corners_z" title="Direct link to m_pyramid_corners_z" translate="no">​</a></h3>
+<p>Retrieves the uncorrected Z-coordinate for each of the corners of the truncated pyramid on the alignment pyramid. The order in which the uncorrected Z-coordinates are returned is not guaranteed, however the results are returned uniformly across the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_X</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_Y</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_PYRAMID_CORNERS_Z</code></a> result types.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_rms_error"><code>M_RMS_ERROR</code><a href="#m_rms_error" class="hash-link" aria-label="Direct link to m_rms_error" title="Direct link to m_rms_error" translate="no">​</a></h3>
+<p>Retrieves the root-mean-square (RMS) error. The RMS error is calculated using the distance measured between the alignment pyramid&#x27;s aligned corners and their target corners.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sensor_pitch"><code>M_SENSOR_PITCH</code><a href="#m_sensor_pitch" class="hash-link" aria-label="Direct link to m_sensor_pitch" title="Direct link to m_sensor_pitch" translate="no">​</a></h3>
+<p>Retrieves the angle of the pitch (the angle of rotation around the X-axis) of the 3D profile sensor, in degrees; this is the pitch angle if the required rotation around the Z-axis is applied (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_SENSOR_YAW_BEFORE_PITCH</code></a>) before applying a rotation around the X-axis.  &gt; <strong>Note:</strong> This is not the angle necessary to remove the shear. To retrieve the angle of the pitch of the 3D profile sensor, necessary to remove shear in the Z-direction, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SHEAR_Z</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sensor_pitch_before_yaw"><code>M_SENSOR_PITCH_BEFORE_YAW</code><a href="#m_sensor_pitch_before_yaw" class="hash-link" aria-label="Direct link to m_sensor_pitch_before_yaw" title="Direct link to m_sensor_pitch_before_yaw" translate="no">​</a></h3>
+<p>Retrieves the angle of the pitch (the angle of rotation around the X-axis) of the 3D profile sensor, in degrees; this is the pitch angle if the rotation around the X-axis is applied before applying the required rotation around the Z-axis (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_SENSOR_YAW</code></a>).  &gt; <strong>Note:</strong> This is not the angle necessary to remove the shear. To retrieve the angle of the pitch of the 3D profile sensor, necessary to remove shear in the Z-direction, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SHEAR_Z</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sensor_yaw"><code>M_SENSOR_YAW</code><a href="#m_sensor_yaw" class="hash-link" aria-label="Direct link to m_sensor_yaw" title="Direct link to m_sensor_yaw" translate="no">​</a></h3>
+<p>Retrieves the angle of the yaw (the angle of rotation around the Z-axis) of the 3D profile sensor, in degrees; this is the yaw angle if the required rotation around the X-axis is applied (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_SENSOR_PITCH_BEFORE_YAW</code></a>) before applying a rotation around the Z-axis.  &gt; <strong>Note:</strong> This is not the angle necessary to remove the shear. To retrieve the angle of the yaw of the 3D profile sensor, necessary to remove shear in the X-direction, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SHEAR_X</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sensor_yaw_before_pitch"><code>M_SENSOR_YAW_BEFORE_PITCH</code><a href="#m_sensor_yaw_before_pitch" class="hash-link" aria-label="Direct link to m_sensor_yaw_before_pitch" title="Direct link to m_sensor_yaw_before_pitch" translate="no">​</a></h3>
+<p>Retrieves the angle of the yaw (the angle of rotation around the Z-axis) of the 3D profile sensor, in degrees; this is the yaw angle if the rotation around the Z-axis is applied before applying the required rotation around the X-axis (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_SENSOR_PITCH</code></a>).  &gt; <strong>Note:</strong> This is not the angle necessary to remove the shear. To retrieve the angle of the yaw of the 3D profile sensor, necessary to remove shear in the X-direction, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SHEAR_X</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_status"><code>M_STATUS</code><a href="#m_status" class="hash-link" aria-label="Direct link to m_status" title="Direct link to m_status" translate="no">​</a></h3>
+<p>Retrieves the status of the alignment operation. This result is always available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_ALL_POINTS_COLLINEAR</code></td><td>Specifies that the alignment operation failed. This occurs when all the points found create a line.</td></tr><tr><td><code>M_CHAMFER_NOT_FOUND</code></td><td>Specifies that the alignment pyramid&#x27;s chamfer was not found. When this occurs, the step direction (the sign of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SCALE_Y</code></a>) could be wrong and/or the rotation around the Z-axis might be off by a factor of 90 degrees.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>.</td></tr><tr><td><code>M_COMPLETE</code></td><td>Specifies that the alignment operation completed successfully.</td></tr><tr><td><code>M_DISK_EDGES_NOT_FOUND</code></td><td>Specifies that the alignment disk&#x27;s edges could not be found. This occurs when the disk is clipped during the scan, or the edges of the disk were not clear enough to determine the start and end of the disk.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>.</td></tr><tr><td><code>M_DISK_NOT_FOUND</code></td><td>Specifies that the alignment disk could not be found. This occurs when the scan is too noisy for the disk to be found.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>.</td></tr><tr><td><code>M_INVALID_STEP_LENGTH</code></td><td>Specifies that the step length is invalid. This occurs when the user-defined step length is set to an invalid value.</td></tr><tr><td><code>M_MATHEMATICAL_EXCEPTION</code></td><td>Specifies that the alignment pyramid could not converge to a feasible alignment solution. This occurs when the optimizer throws an exception. This can be resolved by properly following the design constraints of the alignment pyramid, or by setting <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_STEP_LENGTH_MODE</code></a> to a value that is not <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_UNKNOWN</code></a>.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>.</td></tr><tr><td><code>M_MAYBE_IMPRECISE</code></td><td>Specifies that the alignment pyramid is not precise enough (scan resolution). This typically occurs when the chamfer is not detected. This can be resolved by properly following the design constraints of the alignment pyramid, and ensuring that the chamfer is visible in the scan.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>.</td></tr><tr><td><code>M_NOT_ENOUGH_VALID_DATA</code></td><td>Specifies that the alignment operation failed. This occurs when there are not enough valid points.</td></tr><tr><td><code>M_NOT_INITIALIZED</code></td><td>Specifies that the alignment result buffer was not used in a call to<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapAlignScan"><code>M3dmapAlignScan</code></a>, and contains no results.</td></tr><tr><td><code>M_PYRAMID_NOT_FOUND</code></td><td>Specifies that the alignment pyramid could not be found. This occurs when its truncated pyramid&#x27;s faces or corners are not found.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_PYRAMID</code></a>.</td></tr><tr><td><code>M_RESULTS_Z_NEED_BACKGROUND</code></td><td>Specifies that the required background was not found. This occurs when the background is outside the FOV of the 3D profile sensor. In this case, the background will be estimated with respect to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_CAMERA_TILT_X</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ZERO</code></a>.  &gt; <strong>Note:</strong> Note that in this case,<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_3D_SHEAR_Z</code></a> and<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_SENSOR_PITCH</code></a> will not be accurate. The presence of a background is also required for <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_DIRECTION</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_ALIGN_Z_POSITION</code></a>, and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_CAMERA_TILT_X</code></a> in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M3dmapControl</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_step_length"><code>M_STEP_LENGTH</code><a href="#m_step_length" class="hash-link" aria-label="Direct link to m_step_length" title="Direct link to m_step_length" translate="no">​</a></h3>
+<p>Retrieves the norm of the calculated step vector. This vector will include shear in the X and Z-axes, and scale in the Y-axis if they are present.  When the 3D profile sensor is parallel to the plane of motion (conveyor) and has no shear in the X or Z-axes, the step length will be the distance between scan lines in the Y-direction.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_y_mirrored"><code>M_Y_MIRRORED</code><a href="#m_y_mirrored" class="hash-link" aria-label="Direct link to m_y_mirrored" title="Direct link to m_y_mirrored" translate="no">​</a></h3>
+<p>Retrieves whether the alignment will cause a mirroring of the Y-axis. If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_HOLES_FOUND</code></a> returns <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_FALSE</code></a> and the two holes are not detected on the alignment disk, the result of <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapGetResult"><code>M_Y_MIRRORED</code></a> will be incorrect.  &gt; <strong>Note:</strong> This result is only available when <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_OBJECT_SHAPE</code></a> is <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapControl"><code>M_DISK</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the Y-axis is not mirrored.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the Y-axis is mirrored.  &gt; <strong>Note:</strong> After alignment, the scan will be reflected around the Y-axis.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values">Combination Constants — For determining the required array size (number of elements) to store the returned values<a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="hash-link" aria-label="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" title="Direct link to Combination Constants — For determining the required array size (number of elements) to store the returned values" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional, cannot be used alone.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the required array size (number of elements) to store the returned values.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_elements"><code>M_NB_ELEMENTS</code><a href="#m_nb_elements" class="hash-link" aria-label="Direct link to m_nb_elements" title="Direct link to m_nb_elements" translate="no">​</a></h4>
+<p>Retrieves the required array size (number of elements) to store the returned values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-determining-whether-results-are-available">Combination Constants — For determining whether results are available<a href="#combination-constants--for-determining-whether-results-are-available" class="hash-link" aria-label="Direct link to Combination Constants — For determining whether results are available" title="Direct link to Combination Constants — For determining whether results are available" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether a result is available.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_available"><code>M_AVAILABLE</code><a href="#m_available" class="hash-link" aria-label="Direct link to m_available" title="Direct link to m_available" translate="no">​</a></h4>
+<p>Retrieves whether the requested result type is available for retrieval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the requested result type is not available.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the requested result type is available.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested results to the required data type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_float"><code>M_TYPE_AIL_FLOAT</code><a href="#m_type_ail_float" class="hash-link" aria-label="Direct link to m_type_ail_float" title="Direct link to m_type_ail_float" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_FLOAT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_id"><code>M_TYPE_AIL_ID</code><a href="#m_type_ail_id" class="hash-link" aria-label="Direct link to m_type_ail_id" title="Direct link to m_type_ail_id" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_ID</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int16"><code>M_TYPE_AIL_INT16</code><a href="#m_type_ail_int16" class="hash-link" aria-label="Direct link to m_type_ail_int16" title="Direct link to m_type_ail_int16" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT16</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT64</em>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapFree"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">M3dmapFree</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/M3dmapInquire"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">M3dmapInquire</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#result3dmapid-in-ail_id" class="table-of-contents__link toc-highlight"><code>Result3dmapId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#labelorindex-in-ail_int" class="table-of-contents__link toc-highlight"><code>LabelOrIndex</code> <em>(in, AIL_INT)</em></a></li><li><a href="#resulttype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>ResultType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#resultarrayptr-out-void" class="table-of-contents__link toc-highlight"><code>ResultArrayPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type" class="table-of-contents__link toc-highlight">For retrieving results from a 3D reconstruction result buffer of type</a></li><li><a href="#m_has_feature" class="table-of-contents__link toc-highlight"><code>M_HAS_FEATURE</code></a></li><li><a href="#m_number_of_3d_points" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_3D_POINTS</code></a></li><li><a href="#m_total_displacement_y" class="table-of-contents__link toc-highlight"><code>M_TOTAL_DISPLACEMENT_Y</code></a></li><li><a href="#combination-constants--for-specifying-the-feature-to-check" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the feature to check</a></li><li><a href="#combination-constants--for-modifying-the-number-of-points-returned" class="table-of-contents__link toc-highlight">Combination Constants — For modifying the number of points returned</a></li><li><a href="#combination-constants--for-including-the-last-scan-only" class="table-of-contents__link toc-highlight">Combination Constants — For including the last scan only</a></li><li><a href="#for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type-1" class="table-of-contents__link toc-highlight">For retrieving results from a 3D reconstruction result buffer of type</a></li><li><a href="#m_partially_corrected_depth_map_buffer_type" class="table-of-contents__link toc-highlight"><code>M_PARTIALLY_CORRECTED_DEPTH_MAP_BUFFER_TYPE</code></a></li><li><a href="#m_partially_corrected_depth_map_size_x" class="table-of-contents__link toc-highlight"><code>M_PARTIALLY_CORRECTED_DEPTH_MAP_SIZE_X</code></a></li><li><a href="#m_partially_corrected_depth_map_size_y" class="table-of-contents__link toc-highlight"><code>M_PARTIALLY_CORRECTED_DEPTH_MAP_SIZE_Y</code></a></li><li><a href="#for-retrieving-results-from-a-3d-reconstruction-result-buffer-of-type-2" class="table-of-contents__link toc-highlight">For retrieving results from a 3D reconstruction result buffer of type</a></li><li><a href="#m_camera_image_size_x" class="table-of-contents__link toc-highlight"><code>M_CAMERA_IMAGE_SIZE_X</code></a></li><li><a href="#m_camera_image_size_y" class="table-of-contents__link toc-highlight"><code>M_CAMERA_IMAGE_SIZE_Y</code></a></li><li><a href="#m_intensity_map_buffer_type" class="table-of-contents__link toc-highlight"><code>M_INTENSITY_MAP_BUFFER_TYPE</code></a></li><li><a href="#m_number_of_missing_data_last_scan" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_MISSING_DATA_LAST_SCAN</code></a></li><li><a href="#m_scan_lane_direction" class="table-of-contents__link toc-highlight"><code>M_SCAN_LANE_DIRECTION</code></a></li><li><a href="#m_uncorrected_depth_map_buffer_type" class="table-of-contents__link toc-highlight"><code>M_UNCORRECTED_DEPTH_MAP_BUFFER_TYPE</code></a></li><li><a href="#m_uncorrected_depth_map_fixed_point" class="table-of-contents__link toc-highlight"><code>M_UNCORRECTED_DEPTH_MAP_FIXED_POINT</code></a></li><li><a href="#m_uncorrected_depth_map_size_x" class="table-of-contents__link toc-highlight"><code>M_UNCORRECTED_DEPTH_MAP_SIZE_X</code></a></li><li><a href="#m_uncorrected_depth_map_size_y" class="table-of-contents__link toc-highlight"><code>M_UNCORRECTED_DEPTH_MAP_SIZE_Y</code></a></li><li><a href="#for-retrieving-results-from-a-3d-alignment-result-buffer" class="table-of-contents__link toc-highlight">For retrieving results from a 3D alignment result buffer.</a></li><li><a href="#m_3d_scale_y" class="table-of-contents__link toc-highlight"><code>M_3D_SCALE_Y</code></a></li><li><a href="#m_3d_shear_x" class="table-of-contents__link toc-highlight"><code>M_3D_SHEAR_X</code></a></li><li><a href="#m_3d_shear_z" class="table-of-contents__link toc-highlight"><code>M_3D_SHEAR_Z</code></a></li><li><a href="#m_holes_found" class="table-of-contents__link toc-highlight"><code>M_HOLES_FOUND</code></a></li><li><a href="#m_pyramid_corners_x" class="table-of-contents__link toc-highlight"><code>M_PYRAMID_CORNERS_X</code></a></li><li><a href="#m_pyramid_corners_y" class="table-of-contents__link toc-highlight"><code>M_PYRAMID_CORNERS_Y</code></a></li><li><a href="#m_pyramid_corners_z" class="table-of-contents__link toc-highlight"><code>M_PYRAMID_CORNERS_Z</code></a></li><li><a href="#m_rms_error" class="table-of-contents__link toc-highlight"><code>M_RMS_ERROR</code></a></li><li><a href="#m_sensor_pitch" class="table-of-contents__link toc-highlight"><code>M_SENSOR_PITCH</code></a></li><li><a href="#m_sensor_pitch_before_yaw" class="table-of-contents__link toc-highlight"><code>M_SENSOR_PITCH_BEFORE_YAW</code></a></li><li><a href="#m_sensor_yaw" class="table-of-contents__link toc-highlight"><code>M_SENSOR_YAW</code></a></li><li><a href="#m_sensor_yaw_before_pitch" class="table-of-contents__link toc-highlight"><code>M_SENSOR_YAW_BEFORE_PITCH</code></a></li><li><a href="#m_status" class="table-of-contents__link toc-highlight"><code>M_STATUS</code></a></li><li><a href="#m_step_length" class="table-of-contents__link toc-highlight"><code>M_STEP_LENGTH</code></a></li><li><a href="#m_y_mirrored" class="table-of-contents__link toc-highlight"><code>M_Y_MIRRORED</code></a></li><li><a href="#combination-constants--for-determining-the-required-array-size-number-of-elements-to-store-the-returned-values" class="table-of-contents__link toc-highlight">Combination Constants — For determining the required array size (number of elements) to store the returned values</a></li><li><a href="#combination-constants--for-determining-whether-results-are-available" class="table-of-contents__link toc-highlight">Combination Constants — For determining whether results are available</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>

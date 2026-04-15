@@ -1,0 +1,2182 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Reference/col/McolInquire" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">McolInquire | Aurora Imaging Library</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="McolInquire | Aurora Imaging Library"><meta data-rh="true" name="description" content="| Board | Supported |"><meta data-rh="true" property="og:description" content="| Board | Supported |"><link data-rh="true" rel="icon" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"col","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"},{"@type":"ListItem","position":2,"name":"McolInquire","item":"https://your-docusaurus-site.example.com/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"}]}</script><link rel="stylesheet" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/css/styles.25ba2b73.css">
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/runtime~main.c07c37f5.js" defer="defer"></script>
+<script src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/assets/js/main.8dd590ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><div class="navbar__logo"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/img/logo.png" alt="Zebra Technologies" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Aurora Imaging Library</b></a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/UserGuide/toc">User Guide</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc">Reference</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/BoardSpecificNotes/toc">Board-Specific Notes</a><a class="navbar__item navbar__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Examples/toc">Examples</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" aria-label="Search" class="navbar__search-button" style="display:flex;align-items:center;gap:0.4rem;padding:0.3rem 0.75rem;border:1px solid var(--ifm-toc-border-color);border-radius:999px;background:transparent;color:var(--ifm-font-color-secondary);font-size:0.8125rem;cursor:pointer;transition:border-color 0.15s, color 0.15s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>Search<kbd style="margin-left:0.25rem;padding:0.1rem 0.35rem;font-size:0.7rem;border:1px solid var(--ifm-toc-border-color);border-radius:4px;opacity:0.6;font-family:inherit">⌘K</kbd></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/toc"><span title="Table of Contents" class="linkLabel_WmDU">Table of Contents</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dblob/"><span title="3dblob" class="categoryLinkLabel_W154">3dblob</span></a><button aria-label="Expand sidebar category &#x27;3dblob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3ddisp/"><span title="3ddisp" class="categoryLinkLabel_W154">3ddisp</span></a><button aria-label="Expand sidebar category &#x27;3ddisp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgeo/"><span title="3dgeo" class="categoryLinkLabel_W154">3dgeo</span></a><button aria-label="Expand sidebar category &#x27;3dgeo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dgra/"><span title="3dgra" class="categoryLinkLabel_W154">3dgra</span></a><button aria-label="Expand sidebar category &#x27;3dgra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dim/"><span title="3dim" class="categoryLinkLabel_W154">3dim</span></a><button aria-label="Expand sidebar category &#x27;3dim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmap/"><span title="3dmap" class="categoryLinkLabel_W154">3dmap</span></a><button aria-label="Expand sidebar category &#x27;3dmap&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmeas/"><span title="3dmeas" class="categoryLinkLabel_W154">3dmeas</span></a><button aria-label="Expand sidebar category &#x27;3dmeas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmet/"><span title="3dmet" class="categoryLinkLabel_W154">3dmet</span></a><button aria-label="Expand sidebar category &#x27;3dmet&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dmod/"><span title="3dmod" class="categoryLinkLabel_W154">3dmod</span></a><button aria-label="Expand sidebar category &#x27;3dmod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/3dreg/"><span title="3dreg" class="categoryLinkLabel_W154">3dreg</span></a><button aria-label="Expand sidebar category &#x27;3dreg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/agm/"><span title="agm" class="categoryLinkLabel_W154">agm</span></a><button aria-label="Expand sidebar category &#x27;agm&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/app/"><span title="app" class="categoryLinkLabel_W154">app</span></a><button aria-label="Expand sidebar category &#x27;app&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/bead/"><span title="bead" class="categoryLinkLabel_W154">bead</span></a><button aria-label="Expand sidebar category &#x27;bead&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/blob/"><span title="blob" class="categoryLinkLabel_W154">blob</span></a><button aria-label="Expand sidebar category &#x27;blob&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/buf/"><span title="buf" class="categoryLinkLabel_W154">buf</span></a><button aria-label="Expand sidebar category &#x27;buf&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/cal/"><span title="cal" class="categoryLinkLabel_W154">cal</span></a><button aria-label="Expand sidebar category &#x27;cal&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/class/"><span title="class" class="categoryLinkLabel_W154">class</span></a><button aria-label="Expand sidebar category &#x27;class&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/code/"><span title="code" class="categoryLinkLabel_W154">code</span></a><button aria-label="Expand sidebar category &#x27;code&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span title="col" class="categoryLinkLabel_W154">col</span></a><button aria-label="Collapse sidebar category &#x27;col&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><span title="McolAlloc" class="linkLabel_WmDU">McolAlloc</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAllocResult"><span title="McolAllocResult" class="linkLabel_WmDU">McolAllocResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><span title="McolControl" class="linkLabel_WmDU">McolControl</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><span title="McolDefine" class="linkLabel_WmDU">McolDefine</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDistance"><span title="McolDistance" class="linkLabel_WmDU">McolDistance</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><span title="McolDraw" class="linkLabel_WmDU">McolDraw</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolFree"><span title="McolFree" class="linkLabel_WmDU">McolFree</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolGetResult"><span title="McolGetResult" class="linkLabel_WmDU">McolGetResult</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><span title="McolInquire" class="linkLabel_WmDU">McolInquire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMask"><span title="McolMask" class="linkLabel_WmDU">McolMask</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><span title="McolMatch" class="linkLabel_WmDU">McolMatch</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolPreprocess"><span title="McolPreprocess" class="linkLabel_WmDU">McolPreprocess</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolProject"><span title="McolProject" class="linkLabel_WmDU">McolProject</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolRestore"><span title="McolRestore" class="linkLabel_WmDU">McolRestore</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSave"><span title="McolSave" class="linkLabel_WmDU">McolSave</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><span title="McolSetMethod" class="linkLabel_WmDU">McolSetMethod</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolStream"><span title="McolStream" class="linkLabel_WmDU">McolStream</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolTransform"><span title="McolTransform" class="linkLabel_WmDU">McolTransform</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/com/"><span title="com" class="categoryLinkLabel_W154">com</span></a><button aria-label="Expand sidebar category &#x27;com&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dig/"><span title="dig" class="categoryLinkLabel_W154">dig</span></a><button aria-label="Expand sidebar category &#x27;dig&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/disp/"><span title="disp" class="categoryLinkLabel_W154">disp</span></a><button aria-label="Expand sidebar category &#x27;disp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dlocr/"><span title="dlocr" class="categoryLinkLabel_W154">dlocr</span></a><button aria-label="Expand sidebar category &#x27;dlocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/dmr/"><span title="dmr" class="categoryLinkLabel_W154">dmr</span></a><button aria-label="Expand sidebar category &#x27;dmr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/edge/"><span title="edge" class="categoryLinkLabel_W154">edge</span></a><button aria-label="Expand sidebar category &#x27;edge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/fpga/"><span title="fpga" class="categoryLinkLabel_W154">fpga</span></a><button aria-label="Expand sidebar category &#x27;fpga&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/func/"><span title="func" class="categoryLinkLabel_W154">func</span></a><button aria-label="Expand sidebar category &#x27;func&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gen/"><span title="gen" class="categoryLinkLabel_W154">gen</span></a><button aria-label="Expand sidebar category &#x27;gen&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/gra/"><span title="gra" class="categoryLinkLabel_W154">gra</span></a><button aria-label="Expand sidebar category &#x27;gra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/im/"><span title="im" class="categoryLinkLabel_W154">im</span></a><button aria-label="Expand sidebar category &#x27;im&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/meas/"><span title="meas" class="categoryLinkLabel_W154">meas</span></a><button aria-label="Expand sidebar category &#x27;meas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/met/"><span title="met" class="categoryLinkLabel_W154">met</span></a><button aria-label="Expand sidebar category &#x27;met&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/mod/"><span title="mod" class="categoryLinkLabel_W154">mod</span></a><button aria-label="Expand sidebar category &#x27;mod&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/obj/"><span title="obj" class="categoryLinkLabel_W154">obj</span></a><button aria-label="Expand sidebar category &#x27;obj&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/ocr/"><span title="ocr" class="categoryLinkLabel_W154">ocr</span></a><button aria-label="Expand sidebar category &#x27;ocr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/pat/"><span title="pat" class="categoryLinkLabel_W154">pat</span></a><button aria-label="Expand sidebar category &#x27;pat&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/reg/"><span title="reg" class="categoryLinkLabel_W154">reg</span></a><button aria-label="Expand sidebar category &#x27;reg&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/seq/"><span title="seq" class="categoryLinkLabel_W154">seq</span></a><button aria-label="Expand sidebar category &#x27;seq&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/str/"><span title="str" class="categoryLinkLabel_W154">str</span></a><button aria-label="Expand sidebar category &#x27;str&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/"><span title="sys" class="categoryLinkLabel_W154">sys</span></a><button aria-label="Expand sidebar category &#x27;sys&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sysIo/"><span title="sysIo" class="categoryLinkLabel_W154">sysIo</span></a><button aria-label="Expand sidebar category &#x27;sysIo&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/thr/"><span title="thr" class="categoryLinkLabel_W154">thr</span></a><button aria-label="Expand sidebar category &#x27;thr&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/"><span>col</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">McolInquire</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>McolInquire</h1></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Board</th><th>Supported</th></tr></thead><tbody><tr><td>Host System</td><td>Yes</td></tr><tr><td>V4L2</td><td>Yes</td></tr><tr><td>Clarity UHD</td><td>Yes</td></tr><tr><td>Concord PoE</td><td>No</td></tr><tr><td>GenTL</td><td>Yes</td></tr><tr><td>GevIQ</td><td>Yes</td></tr><tr><td>GigE Vision</td><td>Yes</td></tr><tr><td>Indio</td><td>No</td></tr><tr><td>Iris GTX</td><td>Yes</td></tr><tr><td>Radient eV-CL</td><td>Yes</td></tr><tr><td>Rapixo CL</td><td>Yes</td></tr><tr><td>Rapixo CoF</td><td>Yes</td></tr><tr><td>Rapixo CXP</td><td>Yes</td></tr><tr><td>USB3 Vision</td><td>Yes</td></tr></tbody></table>
+<blockquote>
+<p>Inquire information about a color matching or relative color calibration context, color-sample, color element, or a color matching result.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syntax">Syntax<a href="#syntax" class="hash-link" aria-label="Direct link to Syntax" title="Direct link to Syntax" translate="no">​</a></h2>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-c codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AIL_INT </span><span class="token function" style="color:#d73a49">McolInquire</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_ID    ContextOrResultId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT   IndexOrLabel</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">       </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    AIL_INT64 InquireType</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">//in</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">    UserVarPtr          </span><span class="token comment" style="color:#999988;font-style:italic">//out</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>This function inquires information about a specified color matching or relative color calibration context, a color-sample contained within the context, a color element contained within a specified color-sample, or a color matching result buffer.</p>
+<p>If the inquired setting is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_DEFAULT</code></a> (for example, in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a>), <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>McolInquire</code></a> will return <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_DEFAULT</code></a>. To inquire the actual default value, add <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_DEFAULT</code></a> to the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>InquireType</code></a> parameter.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="contextorresultid-in-ail_id"><code>ContextOrResultId</code> <em>(in, AIL_ID)</em><a href="#contextorresultid-in-ail_id" class="hash-link" aria-label="Direct link to contextorresultid-in-ail_id" title="Direct link to contextorresultid-in-ail_id" translate="no">​</a></h3>
+<p>Specifies the identifier of the context or result buffer about which to inquire information. Both the context and the result buffer must have been previously allocated on the required system using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>McolAlloc</code></a> (with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_COLOR_MATCHING</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_COLOR_CALIBRATION_RELATIVE</code></a>) or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAllocResult"><code>McolAllocResult</code></a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="indexorlabel-in-ail_int"><code>IndexOrLabel</code> <em>(in, AIL_INT)</em><a href="#indexorlabel-in-ail_int" class="hash-link" aria-label="Direct link to indexorlabel-in-ail_int" title="Direct link to indexorlabel-in-ail_int" translate="no">​</a></h3>
+<p>Specifies what to inquire.</p>
+<p><em>For inquiring about a context or result</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Specifies the default.</td></tr></tbody></table>
+<p>If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>ContextOrResultId</code></a> is set to a context, the default is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_CONTEXT</code></a>.</p>
+<p>If <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>ContextOrResultId</code></a> is set to a color matching result, the default is the same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_GENERAL</code></a>. |
+| <code>M_CONTEXT</code> | Inquires information about a global setting of either a color matching or relative color calibration context, depending on the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>ContextOrResultId</code></a> parameter setting. |
+| <code>M_GENERAL</code> | Inquires information about a setting of a color matching result buffer. In this case, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>ContextOrResultId</code></a> must specify a color matching result buffer. |</p>
+<p><em>For inquiring about a color-sample or color element</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_REFERENCE_SAMPLE_ITEM</code></td><td>Specifies the index of a color element (item), relative to the reference color-sample. This value only applies to relative color calibration contexts (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>ContextOrResultId</code></a>).</td></tr><tr><td><code>M_SAMPLE_INDEX</code></td><td>Specifies the index of a color-sample.</td></tr><tr><td><code>M_SAMPLE_INDEX_ITEM</code></td><td>Specifies the index of a color element (item), relative to a color-sample index.</td></tr><tr><td><code>M_SAMPLE_LABEL</code></td><td>Specifies the label of a color-sample.</td></tr><tr><td><code>M_SAMPLE_LABEL_ITEM</code></td><td>Specifies the index of a color element (item), relative to a color-sample label.</td></tr><tr><td><code>M_REFERENCE_SAMPLE</code></td><td>Specifies the reference color-sample. This value only applies to relative color calibration contexts (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>ContextOrResultId</code></a>).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inquiretype-in-ail_int64"><code>InquireType</code> <em>(in, AIL_INT64)</em><a href="#inquiretype-in-ail_int64" class="hash-link" aria-label="Direct link to inquiretype-in-ail_int64" title="Direct link to inquiretype-in-ail_int64" translate="no">​</a></h3>
+<p>Specifies the type of setting about which to inquire.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uservarptr-out-void"><code>UserVarPtr</code> *(out, <em>void)</em><a href="#uservarptr-out-void" class="hash-link" aria-label="Direct link to uservarptr-out-void" title="Direct link to uservarptr-out-void" translate="no">​</a></h3>
+<p>Specifies the address in which to write the requested information. Since the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>McolInquire</code></a> function also returns the requested information, you can set this parameter to <code>M_NULL</code>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parameter-associations">Parameter Associations<a href="#parameter-associations" class="hash-link" aria-label="Direct link to Parameter Associations" title="Direct link to Parameter Associations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-general-settings-about-a-context">For inquiring general settings about a context<a href="#for-inquiring-general-settings-about-a-context" class="hash-link" aria-label="Direct link to For inquiring general settings about a context" title="Direct link to For inquiring general settings about a context" translate="no">​</a></h3>
+<p>To inquire about general settings of a context, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>InquireType</code></a> parameter to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>IndexOrLabel</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_CONTEXT</code></a> and the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>ContextOrResultId</code></a> parameter to a color matching or relative color calibration context, as required by the setting. Unless otherwise specified, the following settings only apply to color matching contexts.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance"><code>M_ACCEPTANCE</code><a href="#m_acceptance" class="hash-link" aria-label="Direct link to m_acceptance" title="Direct link to m_acceptance" translate="no">​</a></h3>
+<p>Inquires the acceptance level for the color-sample&#x27;s score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies an acceptable score, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_acceptance_relevance"><code>M_ACCEPTANCE_RELEVANCE</code><a href="#m_acceptance_relevance" class="hash-link" aria-label="Direct link to m_acceptance_relevance" title="Direct link to m_acceptance_relevance" translate="no">​</a></h3>
+<p>Inquires the acceptance level for the target area&#x27;s relevance score.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>0.0 &lt;= Value &lt;= 100.0</code> <em>(default)</em></td><td>Specifies an acceptable relevance score, as a percentage.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_background_draw_color"><code>M_BACKGROUND_DRAW_COLOR</code><a href="#m_background_draw_color" class="hash-link" aria-label="Direct link to m_background_draw_color" title="Direct link to m_background_draw_color" translate="no">​</a></h3>
+<p>Inquires the background pixel color, when applicable. This value applies to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_AREA_MATCH_USING_COLOR</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_PIXEL_MATCH_USING_COLOR</code></a>, or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_DISTANCE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_COLOR888</code></td><td>Specifies a 24-bit color value (eight bits per band) with which to set the background pixels.</td></tr><tr><td><code>M_TRANSPARENT</code> <em>(default)</em></td><td>Specifies not to change the background.</td></tr><tr><td><code>Value &gt; 0</code></td><td>Specifies a grayscale value for the background pixels, as a <em>double</em> or <em>integer</em>.</td></tr><tr><td><code>Byte-encoded RGB value</code></td><td>Specifies an encoded RGB value. To verify if the value is a byte-encoded RGB value, use the<strong>M_IS_RGB888</strong> macro. To retrieve the R, G, and B bands, use the <strong>M_RGB888_R</strong>, <strong>M_RGB888_G</strong>, and <strong>M_RGB888_B</strong> macros.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_band_mode"><code>M_BAND_MODE</code><a href="#m_band_mode" class="hash-link" aria-label="Direct link to m_band_mode" title="Direct link to m_band_mode" translate="no">​</a></h3>
+<p>Inquires the color bands to use when performing <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ALL_BANDS</code> <em>(default)</em></td><td>Specifies to use all bands.</td></tr><tr><td><code>M_COLOR_BAND_0</code></td><td>Specifies to use band 0.</td></tr><tr><td><code>M_COLOR_BAND_0 + M_COLOR_BAND_1</code></td><td>Specifies to use bands 0 and 1.</td></tr><tr><td><code>M_COLOR_BAND_0 + M_COLOR_BAND_2</code></td><td>Specifies to use bands 0 and 2.</td></tr><tr><td><code>M_COLOR_BAND_1</code></td><td>Specifies to use band 1.</td></tr><tr><td><code>M_COLOR_BAND_1 + M_COLOR_BAND_2</code></td><td>Specifies to use bands 1 and 2.</td></tr><tr><td><code>M_COLOR_BAND_2</code></td><td>Specifies to use band 2.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calibration_compute_option"><code>M_CALIBRATION_COMPUTE_OPTION</code><a href="#m_calibration_compute_option" class="hash-link" aria-label="Direct link to m_calibration_compute_option" title="Direct link to m_calibration_compute_option" translate="no">​</a></h3>
+<p>Inquires whether the relative color calibration was performed using pixel values or color statistics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ConversionModeOrComputeOption</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calibration_intent"><code>M_CALIBRATION_INTENT</code><a href="#m_calibration_intent" class="hash-link" aria-label="Direct link to m_calibration_intent" title="Direct link to m_calibration_intent" translate="no">​</a></h3>
+<p>Inquires the transformation precision with which to perform relative color calibration.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>DistTypeOrCalIntent</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_calibration_mode"><code>M_CALIBRATION_MODE</code><a href="#m_calibration_mode" class="hash-link" aria-label="Direct link to m_calibration_mode" title="Direct link to m_calibration_mode" translate="no">​</a></h3>
+<p>Inquires the transformation operation with which to perform relative color calibration.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_HISTOGRAM_BASED</code></a>.</td></tr><tr><td><code>M_COLOR_TO_COLOR</code></td><td>Specifies that a color-sample&#x27;s mapping is based on transforming its color to the color of the reference color-sample on a point-to-point basis.</td></tr><tr><td><code>M_GLOBAL_MEAN_VARIANCE</code></td><td>Specifies that a color-sample&#x27;s mapping is based on transforming its mean and variance (standard deviation) to resemble the mean and variance of the reference color-sample.</td></tr><tr><td><code>M_HISTOGRAM_BASED</code></td><td>Specifies that a color-sample&#x27;s mapping is based on using enhanced color distribution information to transform its color data to better resemble the color data of the reference color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_color_space"><code>M_COLOR_SPACE</code><a href="#m_color_space" class="hash-link" aria-label="Direct link to m_color_space" title="Direct link to m_color_space" translate="no">​</a></h3>
+<p>Inquires the context&#x27;s color space.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_RGB</code></a>.</td></tr><tr><td><code>M_CIELAB</code></td><td>Specifies a CIELAB (or LAB) color space.</td></tr><tr><td><code>M_HSL</code></td><td>Specifies an HSL color space.</td></tr><tr><td><code>M_RGB</code></td><td>Specifies an RGB color space.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_context_type"><code>M_CONTEXT_TYPE</code><a href="#m_context_type" class="hash-link" aria-label="Direct link to m_context_type" title="Direct link to m_context_type" translate="no">​</a></h3>
+<p>Inquires the type of context used.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_COLOR_CALIBRATION_RELATIVE</code></td><td>Allocates a relative color calibration context for use with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolTransform"><code>McolTransform</code></a>.</td></tr><tr><td><code>M_COLOR_MATCHING</code></td><td>Allocates a color matching context for use with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_conversion_gamma"><code>M_CONVERSION_GAMMA</code><a href="#m_conversion_gamma" class="hash-link" aria-label="Direct link to m_conversion_gamma" title="Direct link to m_conversion_gamma" translate="no">​</a></h3>
+<p>Inquires whether gamma correction is performed when converting colors before the match operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code></td><td>Specifies not to remove gamma correction.</td></tr><tr><td><code>M_ENABLE</code> <em>(default)</em></td><td>Specifies to remove gamma correction.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_conversion_mode"><code>M_CONVERSION_MODE</code><a href="#m_conversion_mode" class="hash-link" aria-label="Direct link to m_conversion_mode" title="Direct link to m_conversion_mode" translate="no">​</a></h3>
+<p>Inquires the mode used to internally convert colors before the matching operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>ConversionModeOrComputeOption</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance_image_normalize"><code>M_DISTANCE_IMAGE_NORMALIZE</code><a href="#m_distance_image_normalize" class="hash-link" aria-label="Direct link to m_distance_image_normalize" title="Direct link to m_distance_image_normalize" translate="no">​</a></h3>
+<p>Inquires the normalization factor when drawing or generating <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_DISTANCE</code></a>, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_MAX_NORMALIZE</code></td><td>Specifies to normalize distance values according to the greatest calculated distance.</td></tr><tr><td><code>M_NO_NORMALIZE</code> <em>(default)</em></td><td>Specifies no normalization.</td></tr><tr><td><code>Value &gt; 0.0</code></td><td>Specifies to normalize distance values according to the specified normalization value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance_tolerance_mode"><code>M_DISTANCE_TOLERANCE_MODE</code><a href="#m_distance_tolerance_mode" class="hash-link" aria-label="Direct link to m_distance_tolerance_mode" title="Direct link to m_distance_tolerance_mode" translate="no">​</a></h3>
+<p>Inquires the strategy used to calculate the tolerance for an acceptable color distance between the color-sample and a target area.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_ABSOLUTE</code> <em>(default)</em></td><td>Specifies that the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_DISTANCE_TOLERANCE</code></a> value will be untouched and used as the acceptable distance tolerance.</td></tr><tr><td><code>M_RELATIVE</code></td><td></td></tr><tr><td><code>M_SAMPLE_STDDEV</code></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance_type"><code>M_DISTANCE_TYPE</code><a href="#m_distance_type" class="hash-link" aria-label="Direct link to m_distance_type" title="Direct link to m_distance_type" translate="no">​</a></h3>
+<p>Inquires the type of distance calculated when matching colors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><em>(see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>DistTypeOrCalIntent</code></a>)</em></td><td></td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_generate_distance_image"><code>M_GENERATE_DISTANCE_IMAGE</code><a href="#m_generate_distance_image" class="hash-link" aria-label="Direct link to m_generate_distance_image" title="Direct link to m_generate_distance_image" translate="no">​</a></h3>
+<p>Inquires whether the distance image was generated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to generate the image.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to generate the image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_generate_pixel_match"><code>M_GENERATE_PIXEL_MATCH</code><a href="#m_generate_pixel_match" class="hash-link" aria-label="Direct link to m_generate_pixel_match" title="Direct link to m_generate_pixel_match" translate="no">​</a></h3>
+<p>Inquires whether the image containing the color-sample label for which each pixel voted was generated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to generate the image.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to generate the image.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_generate_sample_color_lut"><code>M_GENERATE_SAMPLE_COLOR_LUT</code><a href="#m_generate_sample_color_lut" class="hash-link" aria-label="Direct link to m_generate_sample_color_lut" title="Direct link to m_generate_sample_color_lut" translate="no">​</a></h3>
+<p>Inquires whether the color-sample label LUT was generated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to generate the LUT.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to generate the LUT.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_match_mode"><code>M_MATCH_MODE</code><a href="#m_match_mode" class="hash-link" aria-label="Direct link to m_match_mode" title="Direct link to m_match_mode" translate="no">​</a></h3>
+<p>Inquires the operation mode used when matching colors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td>Same as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_STAT_MIN_DIST</code></a>.</td></tr><tr><td><code>M_HISTOGRAM_MATCHING</code></td><td>Specifies a minimum distance operation, based on color histograms.</td></tr><tr><td><code>M_HISTOGRAM_VOTE</code></td><td>Specifies a match operation based on histogram voting.</td></tr><tr><td><code>M_MIN_DIST_VOTE</code></td><td>Specifies a minimum distance operation, based on pixel voting.</td></tr><tr><td><code>M_STAT_MIN_DIST</code></td><td>Specifies a minimum distance operation, based on pixel statistics.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_modification_count"><code>M_MODIFICATION_COUNT</code><a href="#m_modification_count" class="hash-link" aria-label="Direct link to m_modification_count" title="Direct link to m_modification_count" translate="no">​</a></h3>
+<p>Inquires the current value of the modification counter. The modification counter is increased by one each time settings for the context are modified.  Although you cannot identify the modification counter&#x27;s contents, you can compare them throughout your application to inquire if the context has been altered. If the modification counter has changed you can, for example, prompt the user to save before closing the application.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the current value of the modification counter.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_bins_band_0"><code>M_NB_BINS_BAND_0</code><a href="#m_nb_bins_band_0" class="hash-link" aria-label="Direct link to m_nb_bins_band_0" title="Direct link to m_nb_bins_band_0" translate="no">​</a></h3>
+<p>Inquires the number of histogram bins for color band 0. Relevant only when matching colors using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_MATCHING</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_VOTE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the number of histogram bins for color band 0.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_bins_band_1"><code>M_NB_BINS_BAND_1</code><a href="#m_nb_bins_band_1" class="hash-link" aria-label="Direct link to m_nb_bins_band_1" title="Direct link to m_nb_bins_band_1" translate="no">​</a></h3>
+<p>Inquires the number of histogram bins for color band 1. Relevant only when matching colors using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_MATCHING</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_VOTE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Number of histogram bins for color band 1.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_nb_bins_band_2"><code>M_NB_BINS_BAND_2</code><a href="#m_nb_bins_band_2" class="hash-link" aria-label="Direct link to m_nb_bins_band_2" title="Direct link to m_nb_bins_band_2" translate="no">​</a></h3>
+<p>Inquires the number of histogram bins for color band 2. Relevant only when matching colors using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_MATCHING</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_VOTE</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Number of histogram bins for color band 2.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_samples"><code>M_NUMBER_OF_SAMPLES</code><a href="#m_number_of_samples" class="hash-link" aria-label="Direct link to m_number_of_samples" title="Direct link to m_number_of_samples" translate="no">​</a></h3>
+<p>Inquires the number of color-samples defined in the context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a>).  For relative color calibration contexts, the number of color-samples does not include the reference color-sample.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of color-samples.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_outlier_draw_color"><code>M_OUTLIER_DRAW_COLOR</code><a href="#m_outlier_draw_color" class="hash-link" aria-label="Direct link to m_outlier_draw_color" title="Direct link to m_outlier_draw_color" translate="no">​</a></h3>
+<p>Inquires the color used for outlier pixels when drawing the color of the best-matched color-sample, the color of the color-sample for which each pixel voted, or the distance between the color of the target area/target pixel and the color of its best-matched color-sample (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_AREA_MATCH_USING_COLOR</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_PIXEL_MATCH_USING_COLOR</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_DISTANCE</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_COLOR888</code></td><td>Specifies a 24-bit color value (eight bits per band) with which to set the outlier pixels.</td></tr><tr><td><code>M_TRANSPARENT</code></td><td>Specifies not to change the value of the outlier pixels.</td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies a grayscale value for the outlier pixels, as a <em>double</em> or <em>integer</em>.</td></tr><tr><td><code>Byte-encoded RGB value</code></td><td>Specifies an encoded RGB value. To verify if the value is a byte-encoded RGB value, use the<strong>M_IS_RGB888</strong> macro. To retrieve the R, G, and B bands, use the <strong>M_RGB888_R</strong>, <strong>M_RGB888_G</strong>, and <strong>M_RGB888_B</strong> macros.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_outlier_label"><code>M_OUTLIER_LABEL</code><a href="#m_outlier_label" class="hash-link" aria-label="Direct link to m_outlier_label" title="Direct link to m_outlier_label" translate="no">​</a></h3>
+<p>Inquires the label used for outlier pixels when drawing the label of the best-matched color-sample or the label of the color-sample for which each pixel voted (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_AREA_MATCH_USING_LABEL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_PIXEL_MATCH_USING_LABEL</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the label of the outlier pixels, as an <em>integer</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_preprocessed"><code>M_PREPROCESSED</code><a href="#m_preprocessed" class="hash-link" aria-label="Direct link to m_preprocessed" title="Direct link to m_preprocessed" translate="no">​</a></h3>
+<p>Inquires whether the context is preprocessed. The context must be preprocessed (using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolPreprocess"><code>McolPreprocess</code></a>) before calling <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolTransform"><code>McolTransform</code></a>. After certain settings of the context are changed (for example, with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a>), this inquire type will indicate that the context is no longer in its preprocessed state.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the context is not preprocessed.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the context is preprocessed.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_label_size_bit"><code>M_SAMPLE_LABEL_SIZE_BIT</code><a href="#m_sample_label_size_bit" class="hash-link" aria-label="Direct link to m_sample_label_size_bit" title="Direct link to m_sample_label_size_bit" translate="no">​</a></h3>
+<p>Inquires the depth per band required for the image buffer in which to draw the label of the best-matched color-sample or the label of the color-sample for which each pixel voted (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_AREA_MATCH_USING_LABEL</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_PIXEL_MATCH_USING_LABEL</code></a>).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1</code></td><td>Specifies that the data depth is 1 bit per band.</td></tr><tr><td><code>8</code></td><td>Specifies that the data depth is 8 bits per band.</td></tr><tr><td><code>16</code></td><td>Specifies that the data depth is 16 bits per band.</td></tr><tr><td><code>32</code></td><td>Specifies that the data depth is 32 bits per band.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_lut_sign"><code>M_SAMPLE_LUT_SIGN</code><a href="#m_sample_lut_sign" class="hash-link" aria-label="Direct link to m_sample_lut_sign" title="Direct link to m_sample_lut_sign" translate="no">​</a></h3>
+<p>Inquires the data type required for the image buffer in which to draw the 3-band color-sample label LUT (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_SAMPLE_COLOR_LUT</code></a>). This LUT associates the label value of each color-sample with its average color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED</code></td><td>Specifies that the data type is unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_lut_size_band"><code>M_SAMPLE_LUT_SIZE_BAND</code><a href="#m_sample_lut_size_band" class="hash-link" aria-label="Direct link to m_sample_lut_size_band" title="Direct link to m_sample_lut_size_band" translate="no">​</a></h3>
+<p>Inquires the number of color bands that are required for the image buffer in which to draw the 3-band color-sample label LUT (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_SAMPLE_COLOR_LUT</code></a>). This LUT associates the label value of each color-sample with its average color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>3</code></td><td>Specifies that 3 color bands are required.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_lut_size_bit"><code>M_SAMPLE_LUT_SIZE_BIT</code><a href="#m_sample_lut_size_bit" class="hash-link" aria-label="Direct link to m_sample_lut_size_bit" title="Direct link to m_sample_lut_size_bit" translate="no">​</a></h3>
+<p>Inquires the depth per band required for the image buffer in which to draw the 3-band color-sample label LUT (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_SAMPLE_COLOR_LUT</code></a>). This LUT associates the label value of each color-sample with its average color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>8</code></td><td>Specifies that the data depth is 8 bits per band.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_lut_size_x"><code>M_SAMPLE_LUT_SIZE_X</code><a href="#m_sample_lut_size_x" class="hash-link" aria-label="Direct link to m_sample_lut_size_x" title="Direct link to m_sample_lut_size_x" translate="no">​</a></h3>
+<p>Inquires the width required for the image buffer in which to draw the 3-band color-sample label LUT (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_SAMPLE_COLOR_LUT</code></a>). This LUT associates the label value of each color-sample with its average color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the width of the image buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_lut_size_y"><code>M_SAMPLE_LUT_SIZE_Y</code><a href="#m_sample_lut_size_y" class="hash-link" aria-label="Direct link to m_sample_lut_size_y" title="Direct link to m_sample_lut_size_y" translate="no">​</a></h3>
+<p>Inquires the height required for the image buffer in which to draw the 3-band color-sample label LUT (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_SAMPLE_COLOR_LUT</code></a>). This LUT associates the label value of each color-sample with its average color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the height of the image buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_lut_type"><code>M_SAMPLE_LUT_TYPE</code><a href="#m_sample_lut_type" class="hash-link" aria-label="Direct link to m_sample_lut_type" title="Direct link to m_sample_lut_type" translate="no">​</a></h3>
+<p>Inquires the data type and depth required for the image buffer in which to draw the 3-band color-sample label LUT (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>McolDraw</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDraw"><code>M_DRAW_SAMPLE_COLOR_LUT</code></a>). This LUT associates the label value of each color-sample with its average color.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies that the data is 8-bit unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_save_area_image"><code>M_SAVE_AREA_IMAGE</code><a href="#m_save_area_image" class="hash-link" aria-label="Direct link to m_save_area_image" title="Direct link to m_save_area_image" translate="no">​</a></h3>
+<p>Inquires whether the area identifier image was saved.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_DISABLE</code> <em>(default)</em></td><td>Specifies not to save the image.</td></tr><tr><td><code>M_ENABLE</code></td><td>Specifies to save the image.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-color-matching-context-settings-that-are-used-for-color-space-encoding">For inquiring color matching context settings that are used for color space encoding<a href="#for-inquiring-color-matching-context-settings-that-are-used-for-color-space-encoding" class="hash-link" aria-label="Direct link to For inquiring color matching context settings that are used for color space encoding" title="Direct link to For inquiring color matching context settings that are used for color space encoding" translate="no">​</a></h3>
+<p>To inquire about color matching context settings that are used for color space encoding, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>InquireType</code></a> parameter to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>IndexOrLabel</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_CONTEXT</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_encoding"><code>M_ENCODING</code><a href="#m_encoding" class="hash-link" aria-label="Direct link to m_encoding" title="Direct link to m_encoding" translate="no">​</a></h3>
+<p>Inquires the color space encoding.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_8BIT</code> <em>(default)</em></td><td>Specifies an internally defined color space encoding for 8-bit images.</td></tr><tr><td><code>M_10BIT</code></td><td>Specifies an internally defined color space encoding for 10-bit images.</td></tr><tr><td><code>M_12BIT</code></td><td>Specifies an internally defined color space encoding for 12-bit images.</td></tr><tr><td><code>M_14BIT</code></td><td>Specifies an internally defined color space encoding for 14-bit images.</td></tr><tr><td><code>M_16BIT</code></td><td>Specifies an internally defined color space encoding for 16-bit images.</td></tr><tr><td><code>M_USER_DEFINED</code></td><td>Specifies that the color space encoding is defined using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_OFFSET_BAND_n</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SCALE_BAND_n</code></a>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_offset_band_0"><code>M_OFFSET_BAND_0</code><a href="#m_offset_band_0" class="hash-link" aria-label="Direct link to m_offset_band_0" title="Direct link to m_offset_band_0" translate="no">​</a></h3>
+<p>Inquires the offset for the color space encoding, for band 0.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the offset, as a <em>double</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_offset_band_1"><code>M_OFFSET_BAND_1</code><a href="#m_offset_band_1" class="hash-link" aria-label="Direct link to m_offset_band_1" title="Direct link to m_offset_band_1" translate="no">​</a></h3>
+<p>Inquires the offset for the color space encoding, for band 1.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the offset, as a <em>double</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_offset_band_2"><code>M_OFFSET_BAND_2</code><a href="#m_offset_band_2" class="hash-link" aria-label="Direct link to m_offset_band_2" title="Direct link to m_offset_band_2" translate="no">​</a></h3>
+<p>Inquires the offset for the color space encoding, for band 2.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the offset, as a <em>double</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_band_0"><code>M_SCALE_BAND_0</code><a href="#m_scale_band_0" class="hash-link" aria-label="Direct link to m_scale_band_0" title="Direct link to m_scale_band_0" translate="no">​</a></h3>
+<p>Inquires the scale for the color space encoding, for band 0.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the scale, as a <em>double</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_band_1"><code>M_SCALE_BAND_1</code><a href="#m_scale_band_1" class="hash-link" aria-label="Direct link to m_scale_band_1" title="Direct link to m_scale_band_1" translate="no">​</a></h3>
+<p>Inquires the scale for the color space encoding, for band 1.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the scale, as a <em>double</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_scale_band_2"><code>M_SCALE_BAND_2</code><a href="#m_scale_band_2" class="hash-link" aria-label="Direct link to m_scale_band_2" title="Direct link to m_scale_band_2" translate="no">​</a></h3>
+<p>Inquires the scale for the color space encoding, for band 2.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the scale, as a <em>double</em>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-general-setting-of-a-color-sample-defined-in-a-context">For inquiring about a general setting of a color-sample defined in a context<a href="#for-inquiring-about-a-general-setting-of-a-color-sample-defined-in-a-context" class="hash-link" aria-label="Direct link to For inquiring about a general setting of a color-sample defined in a context" title="Direct link to For inquiring about a general setting of a color-sample defined in a context" translate="no">​</a></h3>
+<p>To inquire about a general setting of a color-sample defined in a context, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>InquireType</code></a> parameter to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>IndexOrLabel</code></a> parameter to the index or label of a color-sample (not an element of a color-sample). Unless otherwise specified, the following settings apply to color matching and relative color calibration contexts.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_distance_tolerance"><code>M_DISTANCE_TOLERANCE</code><a href="#m_distance_tolerance" class="hash-link" aria-label="Direct link to m_distance_tolerance" title="Direct link to m_distance_tolerance" translate="no">​</a></h3>
+<p>Inquires the acceptable tolerance for the color distance between the color-sample and a target area.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>M_AUTO</code> <em>(default)</em></td><td>Specifies the tolerance automatically.</td></tr><tr><td><code>M_INFINITE</code></td><td>Specifies an infinite tolerance.</td></tr><tr><td><code>Value &gt;= 0.0</code></td><td>Specifies the tolerance value.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_histogram_frequency_threshold"><code>M_HISTOGRAM_FREQUENCY_THRESHOLD</code><a href="#m_histogram_frequency_threshold" class="hash-link" aria-label="Direct link to m_histogram_frequency_threshold" title="Direct link to m_histogram_frequency_threshold" translate="no">​</a></h3>
+<p>Inquires the minimal frequency, in pixels, for a histogram bin to count in the matching process.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT</code></td><td></td></tr><tr><td><code>Value &gt; 0</code> <em>(default)</em></td><td>Specifies the minimal frequency, as an <em>integer</em>.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_match_sample_color_band_0"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code><a href="#m_match_sample_color_band_0" class="hash-link" aria-label="Direct link to m_match_sample_color_band_0" title="Direct link to m_match_sample_color_band_0" translate="no">​</a></h3>
+<p>Inquires the band 0 value of the color-sample that will be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>.  If you specified a color conversion mode using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a> returns the converted value. To return the unconverted value, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a>. For example, if you are using RGB images in an RBG color matching context, and you specify an HSL conversion mode (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a>), <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a> returns the average value for band 0 (hue) of the HSL color (as used by the match operation), while <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a> returns the value for band 0 (red) of the RGB color (as defined in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a>). If you have not performed a color conversion, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a> returns the same value as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the band 0 value of the color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_match_sample_color_band_1"><code>M_MATCH_SAMPLE_COLOR_BAND_1</code><a href="#m_match_sample_color_band_1" class="hash-link" aria-label="Direct link to m_match_sample_color_band_1" title="Direct link to m_match_sample_color_band_1" translate="no">​</a></h3>
+<p>Inquires the band 1 value of the color-sample that will be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the band 1 value of the color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_match_sample_color_band_2"><code>M_MATCH_SAMPLE_COLOR_BAND_2</code><a href="#m_match_sample_color_band_2" class="hash-link" aria-label="Direct link to m_match_sample_color_band_2" title="Direct link to m_match_sample_color_band_2" translate="no">​</a></h3>
+<p>Inquires the band 2 value of the color-sample that will be used with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the band 2 value of the color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_number_of_color_items"><code>M_NUMBER_OF_COLOR_ITEMS</code><a href="#m_number_of_color_items" class="hash-link" aria-label="Direct link to m_number_of_color_items" title="Direct link to m_number_of_color_items" translate="no">​</a></h3>
+<p>Inquires the number of color elements items in the specified color-sample.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the number of color elements in the color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_8bit_average_color_band_0"><code>M_SAMPLE_8BIT_AVERAGE_COLOR_BAND_0</code><a href="#m_sample_8bit_average_color_band_0" class="hash-link" aria-label="Direct link to m_sample_8bit_average_color_band_0" title="Direct link to m_sample_8bit_average_color_band_0" translate="no">​</a></h3>
+<p>Inquires the average color of the color-sample for band 0 (as an 8-bit value). This inquire type is useful for displaying the sample&#x27;s color. This value is not used in the operation (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the average color of the color-sample for band 0.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_8bit_average_color_band_1"><code>M_SAMPLE_8BIT_AVERAGE_COLOR_BAND_1</code><a href="#m_sample_8bit_average_color_band_1" class="hash-link" aria-label="Direct link to m_sample_8bit_average_color_band_1" title="Direct link to m_sample_8bit_average_color_band_1" translate="no">​</a></h3>
+<p>Inquires the average color of the color-sample for band 1 (as an 8-bit value). This inquire type is useful for displaying the sample&#x27;s color. This value is not used in the operation (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the average color of the color-sample for band 1.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_8bit_average_color_band_2"><code>M_SAMPLE_8BIT_AVERAGE_COLOR_BAND_2</code><a href="#m_sample_8bit_average_color_band_2" class="hash-link" aria-label="Direct link to m_sample_8bit_average_color_band_2" title="Direct link to m_sample_8bit_average_color_band_2" translate="no">​</a></h3>
+<p>Inquires the average color of the color-sample for band 2 (as an 8-bit value). This inquire type is useful for displaying the sample&#x27;s color. This value is not used in the operation (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the average color of the color-sample for band 2.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_absolute_tolerance"><code>M_SAMPLE_ABSOLUTE_TOLERANCE</code><a href="#m_sample_absolute_tolerance" class="hash-link" aria-label="Direct link to m_sample_absolute_tolerance" title="Direct link to m_sample_absolute_tolerance" translate="no">​</a></h3>
+<p>Inquires the maximum distance a color-sample can have for it to be matched. To retrieve this information, you must first preprocess the context, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolPreprocess"><code>McolPreprocess</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_INFINITE</code></td><td>Specifies that the maximum distance is infinite. This value is returned when only one color-sample has been defined.</td></tr><tr><td><code>Value</code></td><td>Specifies the maximum distance.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_average_color_band_0"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code><a href="#m_sample_average_color_band_0" class="hash-link" aria-label="Direct link to m_sample_average_color_band_0" title="Direct link to m_sample_average_color_band_0" translate="no">​</a></h3>
+<p>Inquires the band 0 value of the color-sample, as it was defined using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a>. For color-samples defined from an image (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>M_IMAGE</code></a>), the band 0 value returned refers to the estimated version of the color (for example, the average).  If you specified a color conversion mode before the match operation using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a>, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a> returns the unconverted value. To return the converted value, use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a>. For example, if you are using RGB images in an RBG color matching context, and you specify an HSL conversion mode (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a>), <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a> returns the value for band 0 (red) of the RGB color (as defined in <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a>), while <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a> returns the average value for band 0 (hue) of the HSL color (as used by the match operation). If you have not performed a color conversion, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a> returns the same value as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the band 0 value of the color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_average_color_band_1"><code>M_SAMPLE_AVERAGE_COLOR_BAND_1</code><a href="#m_sample_average_color_band_1" class="hash-link" aria-label="Direct link to m_sample_average_color_band_1" title="Direct link to m_sample_average_color_band_1" translate="no">​</a></h3>
+<p>Inquires the band 1 value of the color-sample, as it was defined using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a>. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the band 1 value of the color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_average_color_band_2"><code>M_SAMPLE_AVERAGE_COLOR_BAND_2</code><a href="#m_sample_average_color_band_2" class="hash-link" aria-label="Direct link to m_sample_average_color_band_2" title="Direct link to m_sample_average_color_band_2" translate="no">​</a></h3>
+<p>Inquires the band 2 value of the color-sample, as it was defined using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a>. For more information, see <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the band 2 value of the color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_label_value"><code>M_SAMPLE_LABEL_VALUE</code><a href="#m_sample_label_value" class="hash-link" aria-label="Direct link to m_sample_label_value" title="Direct link to m_sample_label_value" translate="no">​</a></h3>
+<p>Inquires the current label of the color-sample.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the current label of the color-sample.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_dont_care_sign"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIGN</code><a href="#m_sample_mosaic_dont_care_sign" class="hash-link" aria-label="Direct link to m_sample_mosaic_dont_care_sign" title="Direct link to m_sample_mosaic_dont_care_sign" translate="no">​</a></h3>
+<p>Inquires the data type of the color-sample&#x27;s mask mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED</code></td><td>Specifies that the color-sample&#x27;s mask mosaic buffer is of data type unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_dont_care_size_band"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIZE_BAND</code><a href="#m_sample_mosaic_dont_care_size_band" class="hash-link" aria-label="Direct link to m_sample_mosaic_dont_care_size_band" title="Direct link to m_sample_mosaic_dont_care_size_band" translate="no">​</a></h3>
+<p>Inquires the number of bands of the color-sample&#x27;s mask mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1</code></td><td>Specifies that the color-sample&#x27;s mask mosaic buffer has 1 band.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_dont_care_size_bit"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIZE_BIT</code><a href="#m_sample_mosaic_dont_care_size_bit" class="hash-link" aria-label="Direct link to m_sample_mosaic_dont_care_size_bit" title="Direct link to m_sample_mosaic_dont_care_size_bit" translate="no">​</a></h3>
+<p>Inquires the depth per band of the color-sample&#x27;s mask mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1</code></td><td>Specifies that the data depth is 1 bit per band.</td></tr><tr><td><code>8</code></td><td>Specifies that the data depth is 8 bits per band.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_dont_care_size_x"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIZE_X</code><a href="#m_sample_mosaic_dont_care_size_x" class="hash-link" aria-label="Direct link to m_sample_mosaic_dont_care_size_x" title="Direct link to m_sample_mosaic_dont_care_size_x" translate="no">​</a></h3>
+<p>Inquires the X-size (width) of the color-sample&#x27;s mask mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-size (width) of the color-sample&#x27;s mask mosaic buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_dont_care_size_y"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIZE_Y</code><a href="#m_sample_mosaic_dont_care_size_y" class="hash-link" aria-label="Direct link to m_sample_mosaic_dont_care_size_y" title="Direct link to m_sample_mosaic_dont_care_size_y" translate="no">​</a></h3>
+<p>Inquires the Y-size (height) of the color-sample&#x27;s mask mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-size (height) of the color-sample&#x27;s mask mosaic buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_dont_care_type"><code>M_SAMPLE_MOSAIC_DONT_CARE_TYPE</code><a href="#m_sample_mosaic_dont_care_type" class="hash-link" aria-label="Direct link to m_sample_mosaic_dont_care_type" title="Direct link to m_sample_mosaic_dont_care_type" translate="no">​</a></h3>
+<p>Inquires the data type and depth of the color-sample&#x27;s mask buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED + 1</code></td><td>Specifies that the data is 1-bit unsigned.</td></tr><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies that the data is 8-bit unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_sign"><code>M_SAMPLE_MOSAIC_SIGN</code><a href="#m_sample_mosaic_sign" class="hash-link" aria-label="Direct link to m_sample_mosaic_sign" title="Direct link to m_sample_mosaic_sign" translate="no">​</a></h3>
+<p>Inquires the data type of the color-sample&#x27;s mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED</code></td><td>Specifies that the color-sample&#x27;s mosaic buffer is of data type unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_size_band"><code>M_SAMPLE_MOSAIC_SIZE_BAND</code><a href="#m_sample_mosaic_size_band" class="hash-link" aria-label="Direct link to m_sample_mosaic_size_band" title="Direct link to m_sample_mosaic_size_band" translate="no">​</a></h3>
+<p>Inquires the number of bands of the color-sample&#x27;s mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>3</code></td><td>Specifies that the color-sample&#x27;s mosaic buffer has 3 bands.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_size_bit"><code>M_SAMPLE_MOSAIC_SIZE_BIT</code><a href="#m_sample_mosaic_size_bit" class="hash-link" aria-label="Direct link to m_sample_mosaic_size_bit" title="Direct link to m_sample_mosaic_size_bit" translate="no">​</a></h3>
+<p>Inquires the depth per band of the color-sample&#x27;s mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>8</code></td><td>Specifies that the data depth is 8 bits per band.</td></tr><tr><td><code>16</code></td><td>Specifies that the data depth is 16 bits per band.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_size_x"><code>M_SAMPLE_MOSAIC_SIZE_X</code><a href="#m_sample_mosaic_size_x" class="hash-link" aria-label="Direct link to m_sample_mosaic_size_x" title="Direct link to m_sample_mosaic_size_x" translate="no">​</a></h3>
+<p>Inquires the X-size (width) of the color-sample&#x27;s mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the X-size (width) of the color-sample&#x27;s mosaic buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_size_y"><code>M_SAMPLE_MOSAIC_SIZE_Y</code><a href="#m_sample_mosaic_size_y" class="hash-link" aria-label="Direct link to m_sample_mosaic_size_y" title="Direct link to m_sample_mosaic_size_y" translate="no">​</a></h3>
+<p>Inquires the Y-size (height) of the color-sample&#x27;s mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the Y-size (height) of the color-sample&#x27;s mosaic buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mosaic_type"><code>M_SAMPLE_MOSAIC_TYPE</code><a href="#m_sample_mosaic_type" class="hash-link" aria-label="Direct link to m_sample_mosaic_type" title="Direct link to m_sample_mosaic_type" translate="no">​</a></h3>
+<p>Inquires the type of the color-sample&#x27;s mosaic buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies that the data is 8-bit unsigned.</td></tr><tr><td><code>M_UNSIGNED + 16</code></td><td>Specifies that the data is 16-bit unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_type"><code>M_SAMPLE_TYPE</code><a href="#m_sample_type" class="hash-link" aria-label="Direct link to m_sample_type" title="Direct link to m_sample_type" translate="no">​</a></h3>
+<p>Inquires the type of the color-sample.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_IMAGE</code></td><td>Specifies that the color-sample was added from an image.</td></tr><tr><td><code>M_TRIPLET</code></td><td>Specifies that the color-sample was added from three explicit color band values (RGB, HSL, or CIELAB).</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-about-a-general-setting-of-a-color-element-item-defined-in-a-context">For inquiring about a general setting of a color element (item) defined in a context<a href="#for-inquiring-about-a-general-setting-of-a-color-element-item-defined-in-a-context" class="hash-link" aria-label="Direct link to For inquiring about a general setting of a color element (item) defined in a context" title="Direct link to For inquiring about a general setting of a color element (item) defined in a context" translate="no">​</a></h3>
+<p>To inquire about a general setting of a color element defined in a color-sample, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>InquireType</code></a> parameter to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>IndexOrLabel</code></a> parameter to the index or label of a color-sample element.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_color_band_0"><code>M_SAMPLE_COLOR_BAND_0</code><a href="#m_sample_color_band_0" class="hash-link" aria-label="Direct link to m_sample_color_band_0" title="Direct link to m_sample_color_band_0" translate="no">​</a></h3>
+<p>Inquires the color value for band 0 of a triplet color element.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the color value for band 0 of a triplet color element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_color_band_1"><code>M_SAMPLE_COLOR_BAND_1</code><a href="#m_sample_color_band_1" class="hash-link" aria-label="Direct link to m_sample_color_band_1" title="Direct link to m_sample_color_band_1" translate="no">​</a></h3>
+<p>Inquires the color value for band 1 of a triplet color element.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the color value for band 1 of a triplet color element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_color_band_2"><code>M_SAMPLE_COLOR_BAND_2</code><a href="#m_sample_color_band_2" class="hash-link" aria-label="Direct link to m_sample_color_band_2" title="Direct link to m_sample_color_band_2" translate="no">​</a></h3>
+<p>Inquires the color value for band 2 of a triplet color element.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the color value for band 2 of a triplet color element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_image_sign"><code>M_SAMPLE_IMAGE_SIGN</code><a href="#m_sample_image_sign" class="hash-link" aria-label="Direct link to m_sample_image_sign" title="Direct link to m_sample_image_sign" translate="no">​</a></h3>
+<p>Inquires the data type of the image from which the color element was defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED</code></td><td>Specifies that the data type is unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_image_size_band"><code>M_SAMPLE_IMAGE_SIZE_BAND</code><a href="#m_sample_image_size_band" class="hash-link" aria-label="Direct link to m_sample_image_size_band" title="Direct link to m_sample_image_size_band" translate="no">​</a></h3>
+<p>Inquires the number of color bands of the image buffer from which the color element was defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>3</code></td><td>Specifies that the image buffer has 3 color bands.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_image_size_bit"><code>M_SAMPLE_IMAGE_SIZE_BIT</code><a href="#m_sample_image_size_bit" class="hash-link" aria-label="Direct link to m_sample_image_size_bit" title="Direct link to m_sample_image_size_bit" translate="no">​</a></h3>
+<p>Inquires the depth per band of the image buffer from which the color element was defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>8</code></td><td>Specifies that the data depth is 8 bits per band.</td></tr><tr><td><code>16</code></td><td>Specifies that the data depth is 16 bits per band.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_image_size_x"><code>M_SAMPLE_IMAGE_SIZE_X</code><a href="#m_sample_image_size_x" class="hash-link" aria-label="Direct link to m_sample_image_size_x" title="Direct link to m_sample_image_size_x" translate="no">​</a></h3>
+<p>Inquires the width of the image from which the color element was defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the width of the image, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_image_size_y"><code>M_SAMPLE_IMAGE_SIZE_Y</code><a href="#m_sample_image_size_y" class="hash-link" aria-label="Direct link to m_sample_image_size_y" title="Direct link to m_sample_image_size_y" translate="no">​</a></h3>
+<p>Inquires the height of the image from which the color element was defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the height of the image, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_image_type"><code>M_SAMPLE_IMAGE_TYPE</code><a href="#m_sample_image_type" class="hash-link" aria-label="Direct link to m_sample_image_type" title="Direct link to m_sample_image_type" translate="no">​</a></h3>
+<p>Inquires the data type and depth of the image from which the color element was defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies that the data is 8-bit unsigned.</td></tr><tr><td><code>M_UNSIGNED + 16</code></td><td>Specifies that the data is 16-bit unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mask_sign"><code>M_SAMPLE_MASK_SIGN</code><a href="#m_sample_mask_sign" class="hash-link" aria-label="Direct link to m_sample_mask_sign" title="Direct link to m_sample_mask_sign" translate="no">​</a></h3>
+<p>Inquires the data type of the color element&#x27;s mask buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED</code></td><td>Specifies that the data type is unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mask_size_band"><code>M_SAMPLE_MASK_SIZE_BAND</code><a href="#m_sample_mask_size_band" class="hash-link" aria-label="Direct link to m_sample_mask_size_band" title="Direct link to m_sample_mask_size_band" translate="no">​</a></h3>
+<p>Inquires the number of color bands of the color element&#x27;s mask buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1</code></td><td>Specifies that there is 1 band in the color element&#x27;s mask buffer.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mask_size_bit"><code>M_SAMPLE_MASK_SIZE_BIT</code><a href="#m_sample_mask_size_bit" class="hash-link" aria-label="Direct link to m_sample_mask_size_bit" title="Direct link to m_sample_mask_size_bit" translate="no">​</a></h3>
+<p>Inquires the depth per band of the color element&#x27;s mask buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>1</code></td><td>Specifies that the data depth is 1 bit per band.</td></tr><tr><td><code>8</code></td><td>Specifies that the data depth is 8 bits per band.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mask_size_x"><code>M_SAMPLE_MASK_SIZE_X</code><a href="#m_sample_mask_size_x" class="hash-link" aria-label="Direct link to m_sample_mask_size_x" title="Direct link to m_sample_mask_size_x" translate="no">​</a></h3>
+<p>Inquires the width of the color element&#x27;s mask buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the width of the color element&#x27;s mask buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mask_size_y"><code>M_SAMPLE_MASK_SIZE_Y</code><a href="#m_sample_mask_size_y" class="hash-link" aria-label="Direct link to m_sample_mask_size_y" title="Direct link to m_sample_mask_size_y" translate="no">​</a></h3>
+<p>Inquires the height of the color element&#x27;s mask buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the height of the color element&#x27;s mask buffer, in pixels.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_mask_type"><code>M_SAMPLE_MASK_TYPE</code><a href="#m_sample_mask_type" class="hash-link" aria-label="Direct link to m_sample_mask_type" title="Direct link to m_sample_mask_type" translate="no">​</a></h3>
+<p>Inquires the data type and depth of the color element&#x27;s mask buffer.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_UNSIGNED + 1</code></td><td>Specifies that the data is 1-bit unsigned.</td></tr><tr><td><code>M_UNSIGNED + 8</code></td><td>Specifies that the data is 8-bit unsigned.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_masked"><code>M_SAMPLE_MASKED</code><a href="#m_sample_masked" class="hash-link" aria-label="Direct link to m_sample_masked" title="Direct link to m_sample_masked" translate="no">​</a></h3>
+<p>Inquires whether a mask for the color element was defined.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that a mask was not defined.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that a mask was defined.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-information-about-the-pca-of-a-color-sample-in-a-color-matching-context">For inquiring information about the PCA of a color-sample in a color matching context<a href="#for-inquiring-information-about-the-pca-of-a-color-sample-in-a-color-matching-context" class="hash-link" aria-label="Direct link to For inquiring information about the PCA of a color-sample in a color matching context" title="Direct link to For inquiring information about the PCA of a color-sample in a color matching context" translate="no">​</a></h3>
+<p>To inquire information about the principal component analysis (PCA) of a color-sample in a color matching context, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>InquireType</code></a> parameter to one of the following values. In this case, you must set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>IndexOrLabel</code></a> parameter to <strong>M_SAMPLE_INDEX()</strong> or <strong>M_SAMPLE_LABEL()</strong>; you must have also preprocessed the context, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolPreprocess"><code>McolPreprocess</code></a>.  A PCA is a mathematical analysis which, when applied to a color image&#x27;s data, results in vectors pointing towards the direction of maximum color variance. Each vector is considered a principal component, and there are as many principal components as there are color bands. Since color-samples are based on three bands, the PCA results in three vectors about which to inquire. These PCA values are not applied in the actual operation (for example, <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a> and should only be inquired by advanced users who might, for example, want to perform some statistical analysis. Typically, color operations such as <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMatch"><code>McolMatch</code></a> and <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolProject"><code>McolProject</code></a> use what is referred to as the first principal component, which is the strongest principal component computed from a PCA. If no principal component is the strongest, one is arbitrarily considered the first principal component.  Aurora Imaging Library calculates the PCA values according to the context&#x27;s source color space; these values are not available when using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolAlloc"><code>M_HSL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_var1"><code>M_SAMPLE_PCA_VAR1</code><a href="#m_sample_pca_var1" class="hash-link" aria-label="Direct link to m_sample_pca_var1" title="Direct link to m_sample_pca_var1" translate="no">​</a></h3>
+<p>Inquires the variance in the direction of the color-sample&#x27;s first principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the variance.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_var2"><code>M_SAMPLE_PCA_VAR2</code><a href="#m_sample_pca_var2" class="hash-link" aria-label="Direct link to m_sample_pca_var2" title="Direct link to m_sample_pca_var2" translate="no">​</a></h3>
+<p>Inquires the variance in the direction of the color-sample&#x27;s second principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the variance.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_var3"><code>M_SAMPLE_PCA_VAR3</code><a href="#m_sample_pca_var3" class="hash-link" aria-label="Direct link to m_sample_pca_var3" title="Direct link to m_sample_pca_var3" translate="no">​</a></h3>
+<p>Inquires the variance in the direction of the color-sample&#x27;s third principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the variance.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector1_1"><code>M_SAMPLE_PCA_VECTOR1_1</code><a href="#m_sample_pca_vector1_1" class="hash-link" aria-label="Direct link to m_sample_pca_vector1_1" title="Direct link to m_sample_pca_vector1_1" translate="no">​</a></h3>
+<p>Inquires the first element of the color-sample&#x27;s first principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector1_2"><code>M_SAMPLE_PCA_VECTOR1_2</code><a href="#m_sample_pca_vector1_2" class="hash-link" aria-label="Direct link to m_sample_pca_vector1_2" title="Direct link to m_sample_pca_vector1_2" translate="no">​</a></h3>
+<p>Inquires the second element of the color-sample&#x27;s first principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector1_3"><code>M_SAMPLE_PCA_VECTOR1_3</code><a href="#m_sample_pca_vector1_3" class="hash-link" aria-label="Direct link to m_sample_pca_vector1_3" title="Direct link to m_sample_pca_vector1_3" translate="no">​</a></h3>
+<p>Inquires the third element of the color-sample&#x27;s first principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector2_1"><code>M_SAMPLE_PCA_VECTOR2_1</code><a href="#m_sample_pca_vector2_1" class="hash-link" aria-label="Direct link to m_sample_pca_vector2_1" title="Direct link to m_sample_pca_vector2_1" translate="no">​</a></h3>
+<p>Inquires the first element of the color-sample&#x27;s second principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector2_2"><code>M_SAMPLE_PCA_VECTOR2_2</code><a href="#m_sample_pca_vector2_2" class="hash-link" aria-label="Direct link to m_sample_pca_vector2_2" title="Direct link to m_sample_pca_vector2_2" translate="no">​</a></h3>
+<p>Inquires the second element of the color-sample&#x27;s second principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector2_3"><code>M_SAMPLE_PCA_VECTOR2_3</code><a href="#m_sample_pca_vector2_3" class="hash-link" aria-label="Direct link to m_sample_pca_vector2_3" title="Direct link to m_sample_pca_vector2_3" translate="no">​</a></h3>
+<p>Inquires the third element of the color-sample&#x27;s second principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector3_1"><code>M_SAMPLE_PCA_VECTOR3_1</code><a href="#m_sample_pca_vector3_1" class="hash-link" aria-label="Direct link to m_sample_pca_vector3_1" title="Direct link to m_sample_pca_vector3_1" translate="no">​</a></h3>
+<p>Inquires the first element of the color-sample&#x27;s third principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector3_2"><code>M_SAMPLE_PCA_VECTOR3_2</code><a href="#m_sample_pca_vector3_2" class="hash-link" aria-label="Direct link to m_sample_pca_vector3_2" title="Direct link to m_sample_pca_vector3_2" translate="no">​</a></h3>
+<p>Inquires the second element of the color-sample&#x27;s third principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_sample_pca_vector3_3"><code>M_SAMPLE_PCA_VECTOR3_3</code><a href="#m_sample_pca_vector3_3" class="hash-link" aria-label="Direct link to m_sample_pca_vector3_3" title="Direct link to m_sample_pca_vector3_3" translate="no">​</a></h3>
+<p>Inquires the third element of the color-sample&#x27;s third principal component vector.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>Value</code></td><td>Specifies the vector element.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-inquiring-context-or-result-buffer-settings">For inquiring context or result buffer settings<a href="#for-inquiring-context-or-result-buffer-settings" class="hash-link" aria-label="Direct link to For inquiring context or result buffer settings" title="Direct link to For inquiring context or result buffer settings" translate="no">​</a></h3>
+<p>To inquire about context or result buffer settings, the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>InquireType</code></a> parameter can be set to one of the following values. When inquiring about a context, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>IndexOrLabel</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_CONTEXT</code></a>. When inquiring about a result buffer, set the <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>IndexOrLabel</code></a> parameter to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolInquire"><code>M_GENERAL</code></a>.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_owner_system"><code>M_OWNER_SYSTEM</code><a href="#m_owner_system" class="hash-link" aria-label="Direct link to m_owner_system" title="Direct link to m_owner_system" translate="no">​</a></h3>
+<p>Inquires the identifier of the system on which either the context or result buffer has been allocated.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_DEFAULT_HOST</code></td><td>Specifies the default Host system of the current Aurora Imaging Library application.</td></tr><tr><td><code>System identifier</code></td><td>Specifies a valid system identifier, previously allocated using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/sys/MsysAlloc"><code>MsysAlloc</code></a>.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-the-default-value-of-an-inquire-type">Combination Constants — For inquiring the default value of an inquire type<a href="#combination-constants--for-inquiring-the-default-value-of-an-inquire-type" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring the default value of an inquire type" title="Direct link to Combination Constants — For inquiring the default value of an inquire type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine the default value of an inquire type, regardless of the current value of the inquire type.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_default"><code>M_DEFAULT</code><a href="#m_default" class="hash-link" aria-label="Direct link to m_default" title="Direct link to m_default" translate="no">​</a></h4>
+<p>Inquires the default value of the specified inquire type.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-inquiring-whether-an-inquire-type-is-supported">Combination Constants — For inquiring whether an inquire type is supported<a href="#combination-constants--for-inquiring-whether-an-inquire-type-is-supported" class="hash-link" aria-label="Direct link to Combination Constants — For inquiring whether an inquire type is supported" title="Direct link to Combination Constants — For inquiring whether an inquire type is supported" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to determine whether an inquire type is supported.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_supported"><code>M_SUPPORTED</code><a href="#m_supported" class="hash-link" aria-label="Direct link to m_supported" title="Direct link to m_supported" translate="no">​</a></h4>
+<p>Inquires whether the specified inquire type is supported.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>M_FALSE</code></td><td>Specifies that the inquire type is not supported.</td></tr><tr><td><code>M_TRUE</code></td><td>Specifies that the inquire type is supported.</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="combination-constants--for-specifying-the-data-type">Combination Constants — For specifying the data type<a href="#combination-constants--for-specifying-the-data-type" class="hash-link" aria-label="Direct link to Combination Constants — For specifying the data type" title="Direct link to Combination Constants — For specifying the data type" translate="no">​</a></h3>
+<blockquote>
+<p><em>Optional.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Usage:</strong> You can add one of the following values to the above-mentioned values to cast the requested information to the required data type.</p>
+</blockquote>
+<p>Some inquired information might be altered if it does not fit numerically in the data type that you specify. For example, if you cast a value of 300 to a <em>char</em>, information will be lost. The default data type, <em>double</em>, will never result in lost information.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_double"><code>M_TYPE_AIL_DOUBLE</code><a href="#m_type_ail_double" class="hash-link" aria-label="Direct link to m_type_ail_double" title="Direct link to m_type_ail_double" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_DOUBLE</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_float"><code>M_TYPE_AIL_FLOAT</code><a href="#m_type_ail_float" class="hash-link" aria-label="Direct link to m_type_ail_float" title="Direct link to m_type_ail_float" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_FLOAT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_id"><code>M_TYPE_AIL_ID</code><a href="#m_type_ail_id" class="hash-link" aria-label="Direct link to m_type_ail_id" title="Direct link to m_type_ail_id" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_ID</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int"><code>M_TYPE_AIL_INT</code><a href="#m_type_ail_int" class="hash-link" aria-label="Direct link to m_type_ail_int" title="Direct link to m_type_ail_int" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int16"><code>M_TYPE_AIL_INT16</code><a href="#m_type_ail_int16" class="hash-link" aria-label="Direct link to m_type_ail_int16" title="Direct link to m_type_ail_int16" translate="no">​</a></h4>
+<p>Casts the requested results to an <em>AIL_INT16</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int32"><code>M_TYPE_AIL_INT32</code><a href="#m_type_ail_int32" class="hash-link" aria-label="Direct link to m_type_ail_int32" title="Direct link to m_type_ail_int32" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT32</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="m_type_ail_int64"><code>M_TYPE_AIL_INT64</code><a href="#m_type_ail_int64" class="hash-link" aria-label="Direct link to m_type_ail_int64" title="Direct link to m_type_ail_int64" translate="no">​</a></h4>
+<p>Casts the requested information to an <em>AIL_INT64</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="return-value">Return Value<a href="#return-value" class="hash-link" aria-label="Direct link to Return Value" title="Direct link to Return Value" translate="no">​</a></h2>
+<p><strong>Type:</strong> <code>AIL_INT</code></p>
+<p>The returned value is the requested information, cast to an <em>AIL_INT</em>. If the requested information does not fit into an <em>AIL_INT</em>, this function will return <code>M_NULL</code>or truncate the information.</p>
+<p>This inquire type is only available for relative color calibration contexts.</p>
+<p>This inquire type is available for color matching and relative color calibration contexts.</p>
+<p>This inquire is only applicable if you use <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_ENCODING</code></a> set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_USER_DEFINED</code></a>.</p>
+<p>This inquire type is only available if you have defined a mask for the color-sample, using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMask"><code>McolMask</code></a>.</p>
+<p>This inquire type is only available if you have selected the band (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>McolControl</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolControl"><code>M_BAND_MODE</code></a>) and have preprocessed the context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolPreprocess"><code>McolPreprocess</code></a>).</p>
+<p>This inquire type is only available if you have preprocessed the context (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolPreprocess"><code>McolPreprocess</code></a>).</p>
+<p>This inquire type is not available if the operation mode is set to <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_MATCHING</code></a> or <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>M_HISTOGRAM_VOTE</code></a> (<a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolSetMethod"><code>McolSetMethod</code></a>).</p>
+<p>This inquire type is only available for color matching contexts.</p>
+<p>This inquire type is only available for color elements that you define using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>M_TRIPLET</code></a>.</p>
+<p>This inquire type is only available for color elements that you define using <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>McolDefine</code></a> with <a class="" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolDefine"><code>M_IMAGE</code></a>.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolGetResult"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">McolGetResult</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/DOC_PUBLIC_AIL11_MD_HELP_SOURCE/Reference/col/McolMask"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">McolMask</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#syntax" class="table-of-contents__link toc-highlight">Syntax</a></li><li><a href="#description" class="table-of-contents__link toc-highlight">Description</a></li><li><a href="#parameters" class="table-of-contents__link toc-highlight">Parameters</a><ul><li><a href="#contextorresultid-in-ail_id" class="table-of-contents__link toc-highlight"><code>ContextOrResultId</code> <em>(in, AIL_ID)</em></a></li><li><a href="#indexorlabel-in-ail_int" class="table-of-contents__link toc-highlight"><code>IndexOrLabel</code> <em>(in, AIL_INT)</em></a></li><li><a href="#inquiretype-in-ail_int64" class="table-of-contents__link toc-highlight"><code>InquireType</code> <em>(in, AIL_INT64)</em></a></li><li><a href="#uservarptr-out-void" class="table-of-contents__link toc-highlight"><code>UserVarPtr</code> *(out, <em>void)</em></a></li></ul></li><li><a href="#parameter-associations" class="table-of-contents__link toc-highlight">Parameter Associations</a><ul><li><a href="#for-inquiring-general-settings-about-a-context" class="table-of-contents__link toc-highlight">For inquiring general settings about a context</a></li><li><a href="#m_acceptance" class="table-of-contents__link toc-highlight"><code>M_ACCEPTANCE</code></a></li><li><a href="#m_acceptance_relevance" class="table-of-contents__link toc-highlight"><code>M_ACCEPTANCE_RELEVANCE</code></a></li><li><a href="#m_background_draw_color" class="table-of-contents__link toc-highlight"><code>M_BACKGROUND_DRAW_COLOR</code></a></li><li><a href="#m_band_mode" class="table-of-contents__link toc-highlight"><code>M_BAND_MODE</code></a></li><li><a href="#m_calibration_compute_option" class="table-of-contents__link toc-highlight"><code>M_CALIBRATION_COMPUTE_OPTION</code></a></li><li><a href="#m_calibration_intent" class="table-of-contents__link toc-highlight"><code>M_CALIBRATION_INTENT</code></a></li><li><a href="#m_calibration_mode" class="table-of-contents__link toc-highlight"><code>M_CALIBRATION_MODE</code></a></li><li><a href="#m_color_space" class="table-of-contents__link toc-highlight"><code>M_COLOR_SPACE</code></a></li><li><a href="#m_context_type" class="table-of-contents__link toc-highlight"><code>M_CONTEXT_TYPE</code></a></li><li><a href="#m_conversion_gamma" class="table-of-contents__link toc-highlight"><code>M_CONVERSION_GAMMA</code></a></li><li><a href="#m_conversion_mode" class="table-of-contents__link toc-highlight"><code>M_CONVERSION_MODE</code></a></li><li><a href="#m_distance_image_normalize" class="table-of-contents__link toc-highlight"><code>M_DISTANCE_IMAGE_NORMALIZE</code></a></li><li><a href="#m_distance_tolerance_mode" class="table-of-contents__link toc-highlight"><code>M_DISTANCE_TOLERANCE_MODE</code></a></li><li><a href="#m_distance_type" class="table-of-contents__link toc-highlight"><code>M_DISTANCE_TYPE</code></a></li><li><a href="#m_generate_distance_image" class="table-of-contents__link toc-highlight"><code>M_GENERATE_DISTANCE_IMAGE</code></a></li><li><a href="#m_generate_pixel_match" class="table-of-contents__link toc-highlight"><code>M_GENERATE_PIXEL_MATCH</code></a></li><li><a href="#m_generate_sample_color_lut" class="table-of-contents__link toc-highlight"><code>M_GENERATE_SAMPLE_COLOR_LUT</code></a></li><li><a href="#m_match_mode" class="table-of-contents__link toc-highlight"><code>M_MATCH_MODE</code></a></li><li><a href="#m_modification_count" class="table-of-contents__link toc-highlight"><code>M_MODIFICATION_COUNT</code></a></li><li><a href="#m_nb_bins_band_0" class="table-of-contents__link toc-highlight"><code>M_NB_BINS_BAND_0</code></a></li><li><a href="#m_nb_bins_band_1" class="table-of-contents__link toc-highlight"><code>M_NB_BINS_BAND_1</code></a></li><li><a href="#m_nb_bins_band_2" class="table-of-contents__link toc-highlight"><code>M_NB_BINS_BAND_2</code></a></li><li><a href="#m_number_of_samples" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_SAMPLES</code></a></li><li><a href="#m_outlier_draw_color" class="table-of-contents__link toc-highlight"><code>M_OUTLIER_DRAW_COLOR</code></a></li><li><a href="#m_outlier_label" class="table-of-contents__link toc-highlight"><code>M_OUTLIER_LABEL</code></a></li><li><a href="#m_preprocessed" class="table-of-contents__link toc-highlight"><code>M_PREPROCESSED</code></a></li><li><a href="#m_sample_label_size_bit" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_LABEL_SIZE_BIT</code></a></li><li><a href="#m_sample_lut_sign" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_LUT_SIGN</code></a></li><li><a href="#m_sample_lut_size_band" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_LUT_SIZE_BAND</code></a></li><li><a href="#m_sample_lut_size_bit" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_LUT_SIZE_BIT</code></a></li><li><a href="#m_sample_lut_size_x" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_LUT_SIZE_X</code></a></li><li><a href="#m_sample_lut_size_y" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_LUT_SIZE_Y</code></a></li><li><a href="#m_sample_lut_type" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_LUT_TYPE</code></a></li><li><a href="#m_save_area_image" class="table-of-contents__link toc-highlight"><code>M_SAVE_AREA_IMAGE</code></a></li><li><a href="#for-inquiring-color-matching-context-settings-that-are-used-for-color-space-encoding" class="table-of-contents__link toc-highlight">For inquiring color matching context settings that are used for color space encoding</a></li><li><a href="#m_encoding" class="table-of-contents__link toc-highlight"><code>M_ENCODING</code></a></li><li><a href="#m_offset_band_0" class="table-of-contents__link toc-highlight"><code>M_OFFSET_BAND_0</code></a></li><li><a href="#m_offset_band_1" class="table-of-contents__link toc-highlight"><code>M_OFFSET_BAND_1</code></a></li><li><a href="#m_offset_band_2" class="table-of-contents__link toc-highlight"><code>M_OFFSET_BAND_2</code></a></li><li><a href="#m_scale_band_0" class="table-of-contents__link toc-highlight"><code>M_SCALE_BAND_0</code></a></li><li><a href="#m_scale_band_1" class="table-of-contents__link toc-highlight"><code>M_SCALE_BAND_1</code></a></li><li><a href="#m_scale_band_2" class="table-of-contents__link toc-highlight"><code>M_SCALE_BAND_2</code></a></li><li><a href="#for-inquiring-about-a-general-setting-of-a-color-sample-defined-in-a-context" class="table-of-contents__link toc-highlight">For inquiring about a general setting of a color-sample defined in a context</a></li><li><a href="#m_distance_tolerance" class="table-of-contents__link toc-highlight"><code>M_DISTANCE_TOLERANCE</code></a></li><li><a href="#m_histogram_frequency_threshold" class="table-of-contents__link toc-highlight"><code>M_HISTOGRAM_FREQUENCY_THRESHOLD</code></a></li><li><a href="#m_match_sample_color_band_0" class="table-of-contents__link toc-highlight"><code>M_MATCH_SAMPLE_COLOR_BAND_0</code></a></li><li><a href="#m_match_sample_color_band_1" class="table-of-contents__link toc-highlight"><code>M_MATCH_SAMPLE_COLOR_BAND_1</code></a></li><li><a href="#m_match_sample_color_band_2" class="table-of-contents__link toc-highlight"><code>M_MATCH_SAMPLE_COLOR_BAND_2</code></a></li><li><a href="#m_number_of_color_items" class="table-of-contents__link toc-highlight"><code>M_NUMBER_OF_COLOR_ITEMS</code></a></li><li><a href="#m_sample_8bit_average_color_band_0" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_8BIT_AVERAGE_COLOR_BAND_0</code></a></li><li><a href="#m_sample_8bit_average_color_band_1" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_8BIT_AVERAGE_COLOR_BAND_1</code></a></li><li><a href="#m_sample_8bit_average_color_band_2" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_8BIT_AVERAGE_COLOR_BAND_2</code></a></li><li><a href="#m_sample_absolute_tolerance" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_ABSOLUTE_TOLERANCE</code></a></li><li><a href="#m_sample_average_color_band_0" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_AVERAGE_COLOR_BAND_0</code></a></li><li><a href="#m_sample_average_color_band_1" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_AVERAGE_COLOR_BAND_1</code></a></li><li><a href="#m_sample_average_color_band_2" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_AVERAGE_COLOR_BAND_2</code></a></li><li><a href="#m_sample_label_value" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_LABEL_VALUE</code></a></li><li><a href="#m_sample_mosaic_dont_care_sign" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIGN</code></a></li><li><a href="#m_sample_mosaic_dont_care_size_band" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIZE_BAND</code></a></li><li><a href="#m_sample_mosaic_dont_care_size_bit" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIZE_BIT</code></a></li><li><a href="#m_sample_mosaic_dont_care_size_x" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIZE_X</code></a></li><li><a href="#m_sample_mosaic_dont_care_size_y" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_DONT_CARE_SIZE_Y</code></a></li><li><a href="#m_sample_mosaic_dont_care_type" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_DONT_CARE_TYPE</code></a></li><li><a href="#m_sample_mosaic_sign" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_SIGN</code></a></li><li><a href="#m_sample_mosaic_size_band" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_SIZE_BAND</code></a></li><li><a href="#m_sample_mosaic_size_bit" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_SIZE_BIT</code></a></li><li><a href="#m_sample_mosaic_size_x" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_SIZE_X</code></a></li><li><a href="#m_sample_mosaic_size_y" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_SIZE_Y</code></a></li><li><a href="#m_sample_mosaic_type" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MOSAIC_TYPE</code></a></li><li><a href="#m_sample_type" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_TYPE</code></a></li><li><a href="#for-inquiring-about-a-general-setting-of-a-color-element-item-defined-in-a-context" class="table-of-contents__link toc-highlight">For inquiring about a general setting of a color element (item) defined in a context</a></li><li><a href="#m_sample_color_band_0" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_COLOR_BAND_0</code></a></li><li><a href="#m_sample_color_band_1" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_COLOR_BAND_1</code></a></li><li><a href="#m_sample_color_band_2" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_COLOR_BAND_2</code></a></li><li><a href="#m_sample_image_sign" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_IMAGE_SIGN</code></a></li><li><a href="#m_sample_image_size_band" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_IMAGE_SIZE_BAND</code></a></li><li><a href="#m_sample_image_size_bit" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_IMAGE_SIZE_BIT</code></a></li><li><a href="#m_sample_image_size_x" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_IMAGE_SIZE_X</code></a></li><li><a href="#m_sample_image_size_y" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_IMAGE_SIZE_Y</code></a></li><li><a href="#m_sample_image_type" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_IMAGE_TYPE</code></a></li><li><a href="#m_sample_mask_sign" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MASK_SIGN</code></a></li><li><a href="#m_sample_mask_size_band" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MASK_SIZE_BAND</code></a></li><li><a href="#m_sample_mask_size_bit" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MASK_SIZE_BIT</code></a></li><li><a href="#m_sample_mask_size_x" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MASK_SIZE_X</code></a></li><li><a href="#m_sample_mask_size_y" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MASK_SIZE_Y</code></a></li><li><a href="#m_sample_mask_type" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MASK_TYPE</code></a></li><li><a href="#m_sample_masked" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_MASKED</code></a></li><li><a href="#for-inquiring-information-about-the-pca-of-a-color-sample-in-a-color-matching-context" class="table-of-contents__link toc-highlight">For inquiring information about the PCA of a color-sample in a color matching context</a></li><li><a href="#m_sample_pca_var1" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VAR1</code></a></li><li><a href="#m_sample_pca_var2" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VAR2</code></a></li><li><a href="#m_sample_pca_var3" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VAR3</code></a></li><li><a href="#m_sample_pca_vector1_1" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR1_1</code></a></li><li><a href="#m_sample_pca_vector1_2" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR1_2</code></a></li><li><a href="#m_sample_pca_vector1_3" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR1_3</code></a></li><li><a href="#m_sample_pca_vector2_1" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR2_1</code></a></li><li><a href="#m_sample_pca_vector2_2" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR2_2</code></a></li><li><a href="#m_sample_pca_vector2_3" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR2_3</code></a></li><li><a href="#m_sample_pca_vector3_1" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR3_1</code></a></li><li><a href="#m_sample_pca_vector3_2" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR3_2</code></a></li><li><a href="#m_sample_pca_vector3_3" class="table-of-contents__link toc-highlight"><code>M_SAMPLE_PCA_VECTOR3_3</code></a></li><li><a href="#for-inquiring-context-or-result-buffer-settings" class="table-of-contents__link toc-highlight">For inquiring context or result buffer settings</a></li><li><a href="#m_owner_system" class="table-of-contents__link toc-highlight"><code>M_OWNER_SYSTEM</code></a></li><li><a href="#combination-constants--for-inquiring-the-default-value-of-an-inquire-type" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring the default value of an inquire type</a></li><li><a href="#combination-constants--for-inquiring-whether-an-inquire-type-is-supported" class="table-of-contents__link toc-highlight">Combination Constants — For inquiring whether an inquire type is supported</a></li><li><a href="#combination-constants--for-specifying-the-data-type" class="table-of-contents__link toc-highlight">Combination Constants — For specifying the data type</a></li></ul></li><li><a href="#return-value" class="table-of-contents__link toc-highlight">Return Value</a></li></ul></div></div></div></div></main></div></div></div><div class="footerBar_TWO7"><span>Copyright © <!-- -->2026<!-- --> Zebra Technologies.</span></div></div>
+</body>
+</html>
